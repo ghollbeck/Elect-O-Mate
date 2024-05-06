@@ -1,0 +1,83 @@
+import os
+from langchain_community.document_loaders import PyPDFLoader
+
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+
+from langchain_community.chat_models import ChatOpenAI
+from langchain_community.vectorstores import Chroma
+
+from langchain.vectorstores import FAISS
+from langchain.embeddings.openai import OpenAIEmbeddings
+
+
+
+
+ChromaDB_Directory = '/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/Sources/ChromaDB'
+SourceDirectory = '/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/Sources/Wahlprogramme'
+
+
+
+# csu_loader = PyPDFLoader("/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/ChatWahlOMat/csu.pdf")
+# csu_pages = csu_loader.load()
+
+# freiewaehler_loader = PyPDFLoader("/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/ChatWahlOMat/freiewähler.pdf")
+# freiewaehler_pages = freiewaehler_loader.load()
+
+# grune_loader = PyPDFLoader("/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/ChatWahlOMat/grüne.pdf")
+# gruene_pages = grune_loader.load()
+
+# all_pages = csu_pages + freiewaehler_pages + gruene_pages
+
+
+
+
+
+def CreateEmbedding4():
+
+
+    # csu_loader = PyPDFLoader("/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/ChatWahlOMat/csu.pdf")
+    # csu_pages = csu_loader.load()
+
+    # freiewaehler_loader = PyPDFLoader("/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/ChatWahlOMat/freiewähler.pdf")
+    # freiewaehler_pages = freiewaehler_loader.load()
+
+    # grune_loader = PyPDFLoader("/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/ChatWahlOMat/grüne.pdf")
+    # gruene_pages = grune_loader.load()
+
+    # all_pages = csu_pages + freiewaehler_pages + gruene_pages
+
+
+
+    for filename in os.listdir(SourceDirectory):
+        if filename.endswith('.pdf'):
+                # construct full file path
+                full_file_path = os.path.join(SourceDirectory, filename)
+
+                file = PyPDFLoader(full_file_path).load()
+                
+                all_pages += file
+                
+                #print (file)
+                # with open(file, 'r') as f:
+                #     fileContent = f.read()
+                #     filecontent = f"folgender Text stammt aus dem {filename}: {fileContent}"
+                # # Call your function on the file content
+                # print(f"adding document {file}")
+                
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+    chunks = text_splitter.split_documents(all_pages)
+    text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=250,
+    chunk_overlap=20,
+    )
+
+    documents = text_splitter.split_documents(all_pages)
+    print("Anzahl pages: ", len(documents))
+    
+    print(documents)
+
+documents=CreateEmbedding4()
+faiss_inxdex = FAISS.from_documents(documents, OpenAIEmbeddings())
+
+#CreateEmbedding()
