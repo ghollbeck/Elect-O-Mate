@@ -119,7 +119,7 @@ def AskOllama(prompt:str):
         {"role": "user", "content": prompt},
     ]
 
-    response = ollama.chat(model='llama2', messages=messages)
+    response = ollama.chat(model='llama3', messages=messages)
 
     return(response['message']['content'])
 
@@ -147,5 +147,5 @@ while True:
     if prompt.lower() in ["exit", "quit", "bye"]:
         print("Goodbye!")
         break
-    response = AskChatGPT(prompt)
+    response = AskOllama(prompt)
     print(f"Bot: {response}")
