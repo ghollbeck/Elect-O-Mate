@@ -1,5 +1,5 @@
 cloudflare:
-	./cloudflare.sh
+	./start_tunnel.sh
 
 backend:
 	python main.py
