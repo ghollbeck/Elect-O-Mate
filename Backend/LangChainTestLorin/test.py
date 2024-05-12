@@ -7,6 +7,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import CharacterTextSplitter
 
+from typing import List
 
 from dotenv import load_dotenv
 import os
@@ -20,6 +21,17 @@ def load_dotenv_file():
 load_dotenv_file()
 
 
+def get_urls(filename: str) -> List[str]:
+
+def load_web():
+    loader = WebBaseLoader("https://www.bpb.de/themen/parteien/wer-steht-zur-wahl/europawahl-2024/548019/aktion-partei-fuer-tierschutz/")
+    documents = loader.load()
+    text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
+    texts = text_splitter.split_documents(documents)
+    return texts
+
+
+
 template = """Answer the question based only on the following context and give the source you used as a bullet point list in the bottom:
 
 {context}
@@ -30,12 +42,10 @@ Question: {question}
 prompt = ChatPromptTemplate.from_template(template)
 model = ChatOpenAI()
 
-loader = WebBaseLoader("https://www.bpb.de/themen/parteien/wer-steht-zur-wahl/europawahl-2024/548019/aktion-partei-fuer-tierschutz/")
 
-documents = loader.load()
-text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
-texts = text_splitter.split_documents(documents)
+
 embeddings = OpenAIEmbeddings()
+texts = load_web()
 db = FAISS.from_documents(texts, embeddings)
 
 
