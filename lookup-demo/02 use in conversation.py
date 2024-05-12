@@ -38,9 +38,9 @@ def search_db(**kwargs):
         for doc in docs
     ]
     docs = "\n".join(docs)
-
+    
     if not docs:
-        return "No results found."
+        docs = "No documents found."
 
     return docs
 
