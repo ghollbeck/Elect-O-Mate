@@ -36,9 +36,8 @@
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
-
-def get_suburls(url):
-    """Extract sub-URLs from the given URL."""
+def get_all_urls(url):
+    """Extract all URLs from the given URL."""
     try:
         # Send a HTTP request to the given URL
         response = requests.get(url)
@@ -49,24 +48,23 @@ def get_suburls(url):
 
     # Parse the HTML content of the page
     soup = BeautifulSoup(response.text, 'html.parser')
-    suburls = set()  # Use a set to avoid duplicate URLs
+    urls = set()  # Use a set to avoid duplicate URLs
 
     # Find all anchor tags and extract the href attribute
     for a_tag in soup.find_all('a', href=True):
         href = a_tag['href']
-        # Create absolute URL and ensure it's part of the same domain
+        # Create absolute URL
         absolute_url = urljoin(url, href)
-        if urlparse(absolute_url).netloc == urlparse(url).netloc:
-            suburls.add(absolute_url)
+        urls.add(absolute_url)
 
-    return list(suburls)
+    return list(urls)
 
 def main():
-    url = input("Enter the URL to extract sub-URLs from: ")
-    suburls = get_suburls(url)
-    with open('suburls.txt', 'w') as f:
-        for suburl in suburls:
-            f.write(suburl + '\n')
+    url = input("Enter the URL to extract URLs from: ")
+    urls = get_all_urls(url)
+    with open('urls.txt', 'w') as f:
+        for url in urls:
+            f.write(url + '\n')
 
 if __name__ == "__main__":
     main()
