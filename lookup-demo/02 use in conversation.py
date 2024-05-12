@@ -36,6 +36,8 @@ def search_db(**kwargs):
         for doc in docs
     ]
     docs = "\n".join(docs)
+    if not docs:
+        docs = "No documents found."
     return docs
 
 issues = db.docs.distinct("issue")
