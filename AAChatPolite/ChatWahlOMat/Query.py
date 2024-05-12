@@ -109,7 +109,7 @@ def AskOllama(prompt:str):
 
     response = ollama.chat(model='llama3', messages=messages)
 
-    return(response['message']['content'])
+    return(response['message']['content'],results['documents'])
 
 
 
@@ -164,9 +164,8 @@ while True:
         os.system('clear')
         print("Goodbye!")
         break
-    response, results = AskGroq(prompt)
+    response,results = AskOllama(prompt)
     print(f"Kontext: {results}")
     print(f"Bot: {response}")
 
 
-#

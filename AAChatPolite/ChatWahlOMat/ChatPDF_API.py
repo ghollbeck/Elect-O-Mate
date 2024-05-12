@@ -80,6 +80,7 @@ def chat_with_pdf(source_id, api_key, message):
 
 # Example usage
 #message = "how much has the venus warmed by now? provide a source"
-message = "what is the current state of the climate crisis? answer in bulletpoints"
+message = "bis wann will die AFD Klimaneutralität erreichen, steht da was im parteiprogram zu?"
+
 source_id = "src_IKloKJEQqqiPF2ndwYGSr"
 chat_with_pdf(source_id, api_key, message)
