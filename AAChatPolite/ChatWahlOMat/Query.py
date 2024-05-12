@@ -155,7 +155,7 @@ def AskGroq(prompt:str):
 
 # bis wann will die CDU Klimaneutralität erreichen
 
-# bis wann will die AFD Klimaneutralität erreichen
+# bis wann will die AFD Klimaneutralität erreichen, steht da was im parteiprogram zu?
 
 
 while True:
@@ -167,3 +167,6 @@ while True:
     response, results = AskGroq(prompt)
     print(f"Kontext: {results}")
     print(f"Bot: {response}")
+
+
+#
