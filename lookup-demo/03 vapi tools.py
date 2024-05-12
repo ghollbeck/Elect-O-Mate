@@ -37,7 +37,6 @@ def index():
     print(res)
 
     return Response(res, mimetype='text/plain')
-    
 
 # run on port 8007
 app.run(port=8007)
