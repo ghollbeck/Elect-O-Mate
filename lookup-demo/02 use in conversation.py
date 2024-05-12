@@ -25,6 +25,8 @@ a = t.create_assistant(
     instructions=(
         "You are a helpful assistant for politics. "
         "You can help answer questions about the stances of various political parties, try to match individuals to the party that best represents their views, or provide information on the political process. "
+        "Always answer in a neutral and informative manner. "
+        "Keep your responses as short as possible. This should be a conversation, not a lecture. "
     ),
     model = gpt_big
 )
@@ -36,16 +38,14 @@ def search_db(**kwargs):
         for doc in docs
     ]
     docs = "\n".join(docs)
+
+    if not docs:
+        return "No results found."
+
     return docs
 
 issues = db.docs.distinct("issue")
 parties = db.docs.distinct("party")
-
-x = "The issue to search for. One of " + ", ".join(issues)
-y = "The party to search for. One of " + ", ".join(parties)
-
-print(x)
-print(y)
 
 a.add_tool(
     name="search_db",
