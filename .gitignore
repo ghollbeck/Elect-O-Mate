@@ -6,6 +6,3 @@ __pycache__/*
 .env
 .vscode/
 .vscode/*
-cache/
-cache/*
-*.pkl
