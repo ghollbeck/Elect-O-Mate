@@ -1,18 +1,7 @@
 #!/bin/bash
 
-# Check if Cloudflared is already installed
-if ! command -v cloudflared &> /dev/null; then
-    echo "Cloudflared is not installed. Installing..."
+brew install ngrok/ngrok/ngrok
 
-    # Download Cloudflared binary
-    
-    brew install cloudflared
+ngrok config add-authtoken 2gNjazwTbTn1muhj2P5Eu9K3cBo_865V42dncc1K498x3rdA9
 
-    echo "Cloudflared has been installed."
-else
-    echo "Cloudflared is already installed."
-fi
-
-cloudflared tunnel login eyJhIjoiYzQ3NDQ0NGQwOWIzYjVmZmFhMTk0NDY5MTZlYzJhZjUiLCJzIjoibGVjUCtjMUVZQlVUSnQvTkE4bWhubXdJZjhRZDVrd0dIK3hTRWhkYk9RUT0iLCJ0IjoiZjE2OWU0MmItNzk5MC00NzcxLThmN2QtMjlmOWJhZWZmOGRlIn0=
-
-cloudflared tunnel run --url http://localhost:8000 wahl-o-smart > /dev/null 2>&1 &
+ngrok http --domain=amazing-koi-maximum.ngrok-free.app 8000 > /dev/null 2>&1 &
