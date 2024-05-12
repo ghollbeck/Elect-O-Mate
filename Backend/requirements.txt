@@ -1,0 +1,8 @@
+langchain
+langchain-openai
+langchain-community
+langserve
+fastapi
+faiss-cpu
+sse_starlette
+pydantic==1.10.13

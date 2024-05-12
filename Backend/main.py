@@ -1,10 +1,10 @@
 from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 
-from langchain_community.llms import Ollama
-from langchain_community.embeddings.ollama import OllamaEmbeddings
+# from langchain_community.llms import Ollama
+# from langchain_community.embeddings.ollama import OllamaEmbeddings
 
-from langchain_groq import ChatGroq
+# from langchain_groq import ChatGroq
 
 from langchain.retrievers import EnsembleRetriever
 from langchain_core.prompts import ChatPromptTemplate
@@ -37,7 +37,7 @@ app = FastAPI(
 
 def load_dotenv_file():
     
-    load_dotenv('../../.env')
+    load_dotenv('./.env')
     openai_key = os.getenv("OPENAI_API_KEY")
     groq_key = os.getenv("GROQ_API_KEY")
 
@@ -61,13 +61,13 @@ def load_web():
 
 def get_url_text() -> List[str]:
     # check if url texts are already in cache
-    if os.path.isfile("/Users/lorinurbantat/Documents/GPT-4-Elections/Backend/LangChainTestLorin/url_texts.pkl"):
-        with open("/Users/lorinurbantat/Documents/GPT-4-Elections/Backend/LangChainTestLorin/url_texts.pkl", "rb") as f:
+    if os.path.isfile("./cache/url_texts.pkl"):
+        with open("./cache/url_texts.pkl", "rb") as f:
             texts = pickle.load(f)
         
     else:
         texts = load_web()
-        with open("url_texts.pkl", "wb") as f:
+        with open("./cache/url_texts.pkl", "wb") as f:
             pickle.dump(texts, f)
         
     return texts
@@ -81,8 +81,10 @@ def get_pdfs():
     return pdfs
 
 def load_pdfs():
-    if os.path.exists("/Users/lorinurbantat/Documents/GPT-4-Elections/Backend/LangChainTestLorin/pdf_documents.pkl"):
-        with open("/Users/lorinurbantat/Documents/GPT-4-Elections/Backend/LangChainTestLorin/pdf_documents.pkl", "rb") as f:
+    doc_file = "./cache/pdf_documents.pkl"
+    text_file = "./cache/pdf_texts.pkl"
+    if os.path.exists(doc_file):
+        with open(doc_file, "rb") as f:
             documents = pickle.load(f)
     else:
         pdfs = get_pdfs()
@@ -90,18 +92,18 @@ def load_pdfs():
         for file in pdfs:
             loader = PyPDFLoader(file)
             documents.append(loader.load())
-        with open("/Users/lorinurbantat/Documents/GPT-4-Elections/Backend/LangChainTestLorin/pdf_documents.pkl", "wb") as f:
+        with open(doc_file, "wb") as f:
             pickle.dump(documents, f)
     
     documents = [page for pdf in documents for page in pdf]
 
-    if os.path.exists("/Users/lorinurbantat/Documents/GPT-4-Elections/Backend/LangChainTestLorin/pdf_texts.pkl"):
-        with open("/Users/lorinurbantat/Documents/GPT-4-Elections/Backend/LangChainTestLorin/pdf_texts.pkl", "rb") as f:
+    if os.path.exists(text_file):
+        with open(text_file, "rb") as f:
             texts = pickle.load(f)
     else:
         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
         texts = text_splitter.split_documents(documents)
-        with open("/Users/lorinurbantat/Documents/GPT-4-Elections/Backend/LangChainTestLorin/pdf_texts.pkl", "wb") as f:
+        with open(text_file, "wb") as f:
             pickle.dump(texts, f)
     return texts
 
@@ -122,15 +124,15 @@ prompt = ChatPromptTemplate.from_template(template)
 openai = ChatOpenAI()
 embeddings_openai = OpenAIEmbeddings()
 
-groq = ChatGroq(model_name="llama3-70b-8192")
+# groq = ChatGroq(model_name="llama3-70b-8192")
 
-model = Ollama(model="llama2")
-embeddings_ollama = OllamaEmbeddings()
+# ollama = Ollama(model="llama2")
+# embeddings_ollama = OllamaEmbeddings()
 
-embedding_cache = LocalFileStore("./cache/")
+embedding_cache = LocalFileStore("./cache/embedding_cache")
 
 cached_embedder_openai = CacheBackedEmbeddings.from_bytes_store(embeddings_openai, embedding_cache, namespace=embeddings_openai.model)
-cached_embedder_ollama = CacheBackedEmbeddings.from_bytes_store(embeddings_ollama, embedding_cache, namespace=embeddings_ollama.model)
+# cached_embedder_ollama = CacheBackedEmbeddings.from_bytes_store(embeddings_ollama, embedding_cache, namespace=embeddings_ollama.model)
 
 
 print("getting website content")
@@ -144,55 +146,53 @@ print("building vector db for website content")
 url_db_openai = FAISS.from_documents(url_texts, cached_embedder_openai)
 pdf_db_openai = FAISS.from_documents(pdf_texts, cached_embedder_openai)
 
-url_db_ollama = FAISS.from_documents(url_texts, cached_embedder_ollama)
-pdf_db_ollama = FAISS.from_documents(pdf_texts, cached_embedder_ollama)
+# url_db_ollama = FAISS.from_documents(url_texts, cached_embedder_ollama)
+# pdf_db_ollama = FAISS.from_documents(pdf_texts, cached_embedder_ollama)
 
 retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), pdf_db_openai.as_retriever()], weights=[0.5, 0.5])
-retriever_ollama = EnsembleRetriever(retrievers=[url_db_ollama.as_retriever(), pdf_db_ollama.as_retriever()], weights=[0.5, 0.5])
+# retriever_ollama = EnsembleRetriever(retrievers=[url_db_ollama.as_retriever(), pdf_db_ollama.as_retriever()], weights=[0.5, 0.5])
 
 chain_openai = (
     {"context": retriever_openai , "question": RunnablePassthrough()}
     | prompt
-    | model
+    | openai
     | StrOutputParser()
 )
-chain_ollama = (
-    {"context": retriever_ollama , "question": RunnablePassthrough()}
-    | prompt
-    | model
-    | StrOutputParser()
-)
-chain_groq = (
-    {"context": retriever_ollama, "question": RunnablePassthrough()}
-    | prompt
-    | groq
-    | StrOutputParser()
-)
-
-print("Ready to chat \n\n")
+# chain_ollama = (
+#     {"context": retriever_ollama , "question": RunnablePassthrough()}
+#     | prompt
+#     | model
+#     | StrOutputParser()
+# )
+# chain_groq = (
+#     {"context": retriever_ollama, "question": RunnablePassthrough()}
+#     | prompt
+#     | groq
+#     | StrOutputParser()
+# )
 
 add_routes(
     app,
-    chains=chain_openai,
+    chain_openai,
     path="/openai",
 )
 
-add_routes(
-    app,
-    chains=chain_ollama,
-    path="/ollama",
-)
+# add_routes(
+#     app,
+#     chains=chain_ollama,
+#     path="/ollama",
+# )
 
-add_routes(
-    app,
-    chains=chain_groq,
-    path="/groq",
-)
+# add_routes(
+#     app,
+#     chains=chain_groq,
+#     path="/groq",
+# )
 
 if __name__ == "__main__":
     import uvicorn
     print("starting server...")
-    uvicorn.run(app, host="localhost", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 # while True:
 #     m = input("> ")
