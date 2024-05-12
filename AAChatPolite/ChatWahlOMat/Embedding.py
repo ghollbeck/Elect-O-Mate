@@ -38,29 +38,22 @@ def CreateEmbedding():
 
 
 
-#CreateEmbedding()
-
-
 def access_collection():
     chroma_client = chromadb.PersistentClient(ChromaDB_Directory)
     collection = chroma_client.get_collection(name="DataCollection")
     if collection is None:
         print("No collection found.")
-    #else:
-        #first_entry = collection.peek(limit=1)
-        #print(first_entry)
     return collection
-    
 
 #print(access_collection())
 
 def query_collection(question):
     collection = access_collection()
-    results = collection.query(query_texts=[question], n_results=1)
+    results = collection.query(query_texts=[question], n_results=4)
     return results
 
 
-print(query_collection("CDU"))
+#print(query_collection("CDU"))
 
 
 # # = "What were the sport in the ancient olympics?" #@param {type:"string"}

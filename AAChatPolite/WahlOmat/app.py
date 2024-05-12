@@ -7,7 +7,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 #openai.api_key = 'sk-proj-poVcYbfC5Cy3NgbvNhUIT3BlbkFJqtLU4GwHwGKkKq7iFANg'
 client = OpenAI()
 
-def get_data(query):
+def get_data():
   completion = client.chat.completions.create(
   model="gpt-3.5-turbo",
   messages=[
@@ -20,20 +20,19 @@ def get_data(query):
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    if request.method == "POST":
-        query = request.form['q']
-        # Setze die Abfrage in der Session
-        session['query'] += "Question: " + query + "\n"
-        session.modified = True
-        # Abrufen der Daten
-        response = get_data(query)
-        session['query'] += "You answered: " + response + "\n"
-        session.modified = True
-        
-        return render_template("index.html", question=query, response=response)
-    # Wenn GET-Anfrage, zeige einfach das Formular an
-    return render_template("index.html", question='query', response="response")
+  if request.method == "POST":
+    query = request.form['q']
+    # Setze die Abfrage in der Session
+    session['query'] += "Question: " + query + "\n"
+    session.modified = True
+    # Abrufen der Daten
+    response = get_data()
+    session['query'] += "You answered: " + response + "\n"
+    session.modified = True
+    
+    return render_template("index.html", question=query, response=response)
+  # Wenn GET-Anfrage, zeige einfach das Formular an
+  return render_template("index.html", question='query', response="response")
 
 if __name__ == '__main__':
     app.run(debug=True)
- 

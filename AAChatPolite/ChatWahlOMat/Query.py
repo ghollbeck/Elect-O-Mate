@@ -5,35 +5,23 @@ from openai import OpenAI
 import ollama
 
 
-from IPython.display import display, Markdown
+#from IPython.display import display, Markdown
+os.environ['GROQ_API_KEY'] = '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'
+from groq import Groq
+client = Groq(
+    api_key=os.environ.get("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"),)
+os.environ['GROQ_API_KEY'] = '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'
 
-
-import os
 
 # Disable parallelism for tokenizers
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
 # Now you can import the tokenizers library
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-
-
-
-# collection = access_collection()
-# nr_of_results = 4
-# #Search Vector Database
-# results = collection.query(query_texts=[prompt], n_results=nr_of_results)
-# #print(results['documents'])
 
 
 os.environ['OPENAI_API_KEY'] = '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'
 api_key ='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'
 openai_client = OpenAI(api_key=api_key)
-
-
-
-
-
-
 
 
 
@@ -112,7 +100,7 @@ def AskOllama(prompt:str):
 
     QUESTION: {prompt}
     """
-    print(prompt)
+    # print(prompt)
     ### This is the final prompt
     messages=[
         {"role": "system", "content": behaviour},
@@ -126,26 +114,56 @@ def AskOllama(prompt:str):
 
 
 
-#bis wann will die CDU Klimaneutralität erreichen
 
-#bis wann will die AFD Klimaneutralität erreichen
-"""""
+def AskGroq(prompt:str):
+    
+    collection = access_collection()
+    nr_of_results = 5
+    results = collection.query(query_texts=[prompt], n_results=nr_of_results)   #Search Vector Database
+
+    # System Prompt Behaviour
+    behaviour = f"""\
+        create/extract the most important keywords out of the prompt. focus on topics
+    """
+
+#    Du bist ein hilfreicher Assistent, der User bei der Wahlentscheidung zur Europawahl hilft.
+#     Erstelle aus der Frage und dem Context eine finale Antwort für den User. Falls zur Frage keine Informationen im Kontext gibt, antworten Sie mit "Tut mir leid, die Antwort steht nicht im Kontext".
+#     Antworte auf Deutsch und halte deine Antwort kurz und prägnant.
+
+
+    # Question + Context
+    #prompt = f"""\
+    #CONTEXT: {results['documents']}
+
+    #QUESTION: {prompt}
+    #"""
+
+    messages=[
+        {"role": "system", "content": behaviour},
+        {"role": "user", "content": prompt},
+    ]
+
+    chat_completion = client.chat.completions.create(
+    messages=messages,
+    model="mixtral-8x7b-32768", #mixtral-8x7b-32768, llama3-8b-8192
+    )
+
+    return chat_completion.choices[0].message.content , results['documents']
+
+
+
+
+# bis wann will die CDU Klimaneutralität erreichen
+
+# bis wann will die AFD Klimaneutralität erreichen
+
 
 while True:
     prompt = input("You: ")
-    if prompt.lower() in ["exit", "quit", "bye"]:
+    if prompt.lower() in ["exit", "quit", "bye","."]:
+        os.system('clear')
         print("Goodbye!")
         break
-    response = AskOllama(prompt)
-    print("Bot: " + response)
-
-"""""
-
-
-while True:
-    prompt = input("You: ")
-    if prompt.lower() in ["exit", "quit", "bye"]:
-        print("Goodbye!")
-        break
-    response = AskOllama(prompt)
+    response, results = AskGroq(prompt)
+    print(f"Kontext: {results}")
     print(f"Bot: {response}")

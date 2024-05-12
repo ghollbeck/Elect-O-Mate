@@ -50,7 +50,7 @@ def pdf_to_md(pdf_file_path: str):
                     f.write(page.page_content)  # write in the .md file the raw text
                     print(f"Markdown for document {pdf_name}, page {page.metadata['page']+1}/{page.metadata['total_pages']} saved to {output_path}")
 
-pdf_to_md(SourceDirectory)
+#epdf_to_md(SourceDirectory)
 
 
 

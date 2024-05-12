@@ -35,17 +35,17 @@ from dotenv import load_dotenv, find_dotenv
 # print("Anzahl pages: ", len(all_pages))
 
 
-# text_splitter = RecursiveCharacterTextSplitter(
-#     chunk_size=250,
-#     chunk_overlap=20,
-# )
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=250,
+    chunk_overlap=20,
+)
 
-# documents = text_splitter.split_documents(all_pages)
-# print("Anzahl pages: ", len(documents))
+documents = text_splitter.split_documents(all_pages)
+print("Anzahl pages: ", len(documents))
 
-# # Save the documents list to a file
-# with open("/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/ChatWahlOMat/documents.pkl", "wb") as f:
-#     pickle.dump(documents, f)
+# Save the documents list to a file
+with open("/Users/gaborhollbeck/Library/Mobile Documents/com~apple~CloudDocs/Dokumente Sync./2024/AAChatPolite/ChatWahlOMat/documents.pkl", "wb") as f:
+    pickle.dump(documents, f)
 
 
 
