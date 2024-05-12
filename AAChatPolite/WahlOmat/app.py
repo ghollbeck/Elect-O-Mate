@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = b'sk-proj-poVcYbfC5Cy3NgbvNhUIT3BlbkFJqtLU4GwHwGKkKq7iFANg'
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 #openai.api_key = 'sk-proj-poVcYbfC5Cy3NgbvNhUIT3BlbkFJqtLU4GwHwGKkKq7iFANg'
-client = OpenAI()
+client = OpenAI(api_key='sk-proj-FxajJi8pFr1pSy3RtLVxT3BlbkFJZ3JDd11tRwY4ulijWZdz')
 
 def get_data():
   completion = client.chat.completions.create(
