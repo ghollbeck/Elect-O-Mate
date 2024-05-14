@@ -28,22 +28,22 @@ function App() {
         </div>
       </div>
 
-
       <div className='bg-black flex justify-center z-10'>
         <div className='w-1/2'>
           <OpenSource />
         </div>
       </div>
 
-      <div ref={targetRef} className="flex justify-center">
-        <div className='w-1/2 py-40'>
+      <div ref={targetRef} className="flex justify-center bg-gradient-to-r from-blue-50 to-blue-100">
+        <div className='w-1/2 my-10 py-20'>
+          <header className="text-black m-10 text-center">
+            <h1 className="text-6xl font-extrabold">Elect-O-Mate</h1>
+          </header>
           <Chat />
         </div>
       </div>
 
-
-
-      <div className="mt-auto w-full">
+      <div className="w-full">
         <Footer />
       </div>
 

@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function App() {
   return (
-    <footer className="bg-gray-800 text-center text-white pt-">
+    <footer className="bg-gray-800 text-center text-white">
       <div className="container mx-auto">
         <section className="mb-4">
           <form action="">
-            <div className="m-4">
+            <div className="mb-4">
               <p className="pt-2">
                 <strong>Sign up for impotant updates </strong>
               </p>
@@ -36,7 +36,7 @@ export default function App() {
           </p>
         </section>
       </div>
-      <div className="bg-gray-900 text-center p-3">
+      <div className="bg-gray-900 text-center">
         © 2024 Copyright: 
         <a className="text-white ml-2" href="https://elect-o-mate.eu/">
           Elect-O-Mate
