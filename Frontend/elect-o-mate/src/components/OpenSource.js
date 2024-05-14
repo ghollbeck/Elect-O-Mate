@@ -2,14 +2,12 @@ import React from 'react';
 
 const OpenSourceSection = () => {
   return (
-    <section className="bg-black text-white py-16">
+    <section className="bg-[#010101] text-white py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-6">Open Source</h2>
+
         <p className="mb-6">
-          We acknowledge the dangers a political advisory tool can have. LLMs are proven to hallucinate, show bias or also deliver wrong sources. We decided to be fully transparent to provide a basis of trust in this uncertain realm of AI application and societal acceptance.
-        </p>
-        <p className="mb-6">
-          With Wahl-O-Smart we have developed an election tool with an AI chatbot integration and are deeply conscious of the ethical implications this entails. Recognizing the potential risks, such as misinformation and bias, inherent in AI technologies, we are committed to transparency and responsibility. Here’s how we’re approaching this:
+          With Elect-O-Mate we have developed an election tool with an AI chatbot integration and are deeply conscious of the ethical implications this entails. Recognizing the potential risks, such as misinformation and bias, inherent in AI technologies, we are committed to transparency and responsibility. Here’s how we’re approaching this:
         </p>
         <ul className="list-disc list-inside mb-6">
           <li className="mb-2"><strong>Transparency:</strong> We Open Source everything</li>
