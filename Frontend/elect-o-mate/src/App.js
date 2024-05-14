@@ -36,7 +36,7 @@ function App() {
       </div>
 
       <div ref={targetRef} className="flex justify-center">
-        <div className='w-1/2 m-5'>
+        <div className='w-1/2 py-40'>
           <Chat />
         </div>
       </div>

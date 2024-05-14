@@ -17,23 +17,23 @@ const TextInput = ({ onSendMessage }) => {
   };
 
   return (
-    <div className="p-4">
-    <form onSubmit={handleSubmit} className="flex items-center">
-      <div className="flex w-full">
-        <input
-          id="input-field"
-          placeholder="Enter a question..."
-          type="text"
-          value={inputValue}
-          onChange={handleChange}
-          className="shadow appearance-none border rounded-l w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        />
-        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline">
-          Send
-        </button>
-      </div>
-    </form>
-  </div>
+    <div className="w-full m-0 p-0">
+      <form onSubmit={handleSubmit} className="flex items-center w-full">
+        <div className="flex w-full">
+          <input
+            id="input-field"
+            placeholder="Enter a question..."
+            type="text"
+            value={inputValue}
+            onChange={handleChange}
+            className="shadow appearance-none border rounded-l w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 
@@ -52,19 +52,18 @@ const Chat = () => {
       setMessages(prevMessages => [...prevMessages, { text: response.data, isUser: false }]);
     } catch (error) {
       // Fehlermeldung zum Chat hinzufügen
-      setMessages(prevMessages => [...prevMessages, {isUser: false, isError: true }]);
+      setMessages(prevMessages => [...prevMessages, { text: 'An error occurred. Please try again.', isUser: false, isError: true }]);
     }
   };
 
   return (
     <div>
-      <ChatWindow messages={messages} />
-      <TextInput onSendMessage={handleSendMessage} />
+      <ChatWindow messages={messages} onSendMessage={handleSendMessage} />
     </div>
   );
 };
 
-const ChatWindow = ({ messages }) => {
+const ChatWindow = ({ messages, onSendMessage }) => {
   const chatWindowRef = useRef(null);
 
   useEffect(() => {
@@ -74,27 +73,33 @@ const ChatWindow = ({ messages }) => {
   }, [messages]);
 
   return (
-    <div className="overflow-y-auto h-64 border border-gray-300 p-4 rounded-lg" ref={chatWindowRef}>
-      {messages.map((message, index) => (
-        <div key={index} className="mb-2">
-          {message.isUser ? (
-            <div>
-              <p className="font-bold text-gray-700">You</p>
-              <p className="text-gray-600">{message.text}</p>
+    <div className="overflow-y-auto h-80 border shadow-xl border-gray-300 rounded-lg flex flex-col justify-between" ref={chatWindowRef}>
+      <div className='p-4'>
+        <div className="mb-2 flex-grow">
+          {messages.map((message, index) => (
+            <div key={index} className="mb-2">
+              {message.isUser ? (
+                <div>
+                  <p className="font-bold text-gray-700">You</p>
+                  <p className="text-gray-600">{message.text}</p>
+                </div>
+              ) : (
+                <div>
+                  <p className={`font-bold ${message.isError ? 'text-red-700' : 'text-blue-700'}`}>
+                    {message.isError ? 'Error' : 'Elect-O-Mate'}
+                  </p>
+                  <p className="text-gray-600">{message.text}</p>
+                </div>
+              )}
             </div>
-          ) : (
-            <div>
-              <p className={`font-bold ${message.isError ? 'text-red-700' : 'text-blue-700'}`}>
-                {message.isError ? 'Error' : 'Elect-O-Mate'}
-              </p>
-              <p className="text-gray-600">{message.text}</p>
-            </div>
-          )}
+          ))}
         </div>
-      ))}
+      </div>
+      <div className='w-full'>
+        <TextInput onSendMessage={onSendMessage} />
+      </div>
     </div>
   );
 };
-
 
 export default Chat;
