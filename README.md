@@ -4,6 +4,12 @@ Build Your Opinion for the upcoming EU Elections. This tool offers you additiona
 
 ![Example Image](./pictures/Electomate_Image_Provisional.png)
 
+## Demo
+
+Demo Screenrecording
+
+## Safety
+
 We acknowledge the dangers a political advisory tool can have. LLMs are proven to halucinate, show bias or also deliver wrong sources.
 
 We decided to be fully transparent to provide a basis of trust in this uncertain realm of AI application and societal acceptance.
@@ -23,37 +29,35 @@ With Wahl-O-Smart we have developed a election tool with an AI chatbot integrati
 
 In navigating the intersection of technology and democracy, Wahl-O-Mat pledges to uphold the highest standards, ensuring our AI tools enhance informed opinion building, decision making, decrease political apathy and make the existing tools shorter as well as more accessibale.
 
-
-# Backend Structure
-
-Lorem Ipsum..... \
-Lorem Ipsum..... \
-Lorem Ipsum..... \
-Lorem Ipsum.....
-
-
-# Evaluation 
-
+## Backend Structure
 
 Lorem Ipsum..... \
 Lorem Ipsum..... \
 Lorem Ipsum..... \
 Lorem Ipsum.....
 
-# Install
+## Evaluation
 
 Lorem Ipsum..... \
 Lorem Ipsum..... \
 Lorem Ipsum..... \
 Lorem Ipsum.....
 
-# References and acknowledgment
+## Install
+
+Lorem Ipsum..... \
+Lorem Ipsum..... \
+Lorem Ipsum..... \
+Lorem Ipsum.....
+
+## References and acknowledgment
 
 * ChatClimate
 * Wahl-O-Mat
 * SmartVote
-* Papers: 
+* Papers:
+  
   * RAG
   * Enhanced RAG
   * Evaluation
-  * 
+  
