@@ -17,22 +17,22 @@ const TextInput = ({ onSendMessage }) => {
 
   return (
     <div className="p-4">
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="input-field" className="block text-gray-700 text-sm font-bold mb-2">
-          Enter Text:
-        </label>
+    <form onSubmit={handleSubmit} className="flex items-center">
+      <div className="flex w-full">
         <input
           id="input-field"
+          placeholder="Enter a question..."
           type="text"
           value={inputValue}
           onChange={handleChange}
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow appearance-none border rounded-l w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         />
-        <button type="submit" className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline">
           Send
         </button>
-      </form>
-    </div>
+      </div>
+    </form>
+  </div>
   );
 };
 
@@ -46,7 +46,7 @@ const ChatWindow = ({ messages }) => {
   }, [messages]);
 
   return (
-    <div className="overflow-y-auto h-64 border border-gray-300 p-4" ref={chatWindowRef}>
+    <div className="overflow-y-auto h-64 border border-gray-300 p-4 rounded-lg" ref={chatWindowRef}>
       {messages.map((message, index) => (
         <div key={index} className="mb-2">
           {message.isUser ? (

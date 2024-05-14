@@ -2,9 +2,9 @@ import React from 'react';
 
 const Top = ({ onButtonClick }) => {
   return (
-    <header className="text-black px-20 text-center">
+    <header className="text-black py-30 text-center">
       <h1 className="text-7xl font-extrabold">Elect-O-Mate</h1>
-      <p className="mt-4 ">
+      <p className="mt-4">
         This tool offers you <span className="font-bold">additional information</span>. Additionally, you can have a chat with an expert <span className="font-bold">AI ChatBot</span> or just <span className="font-bold">voice call</span> with the database & web.
       </p>
       <button 
