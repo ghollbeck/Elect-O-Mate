@@ -2,26 +2,33 @@ import React from 'react';
 
 const OpenSourceSection = () => {
   return (
-    <section className="bg-gray-100 py-12">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">Open Source Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Replace the placeholders with your open-source project components */}
-          <OpenSourceProjectCard title="Project 1" description="Description of project 1" />
-          <OpenSourceProjectCard title="Project 2" description="Description of project 2" />
-          <OpenSourceProjectCard title="Project 3" description="Description of project 3" />
+    <section className="bg-black text-white py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold mb-6">Open Source</h2>
+        <p className="mb-6">
+          We acknowledge the dangers a political advisory tool can have. LLMs are proven to hallucinate, show bias or also deliver wrong sources. We decided to be fully transparent to provide a basis of trust in this uncertain realm of AI application and societal acceptance.
+        </p>
+        <p className="mb-6">
+          With Wahl-O-Smart we have developed an election tool with an AI chatbot integration and are deeply conscious of the ethical implications this entails. Recognizing the potential risks, such as misinformation and bias, inherent in AI technologies, we are committed to transparency and responsibility. Here’s how we’re approaching this:
+        </p>
+        <ul className="list-disc list-inside mb-6">
+          <li className="mb-2"><strong>Transparency:</strong> We Open Source everything</li>
+          <li className="mb-2"><strong>Accuracy and Fairness:</strong> Advanced RAG-Pipeline for frontier source accuracy and LLM rule checkers for fairness maximization</li>
+          <li className="mb-2"><strong>Ethical Engagement:</strong> We supervised the preferred sources by political experts and openly take part in the global discussion around AI Safety and Alignment</li>
+        </ul>
+        <p className="mb-6">
+          In navigating the intersection of technology and democracy, Wahl-O-Mat pledges to uphold the highest standards, ensuring our AI tools enhance informed opinion building, decision making, decrease political apathy and make the existing tools shorter as well as more accessible.
+        </p>
+        <div className="flex space-x-4">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Read Technical Report
+          </button>
+          <button className="bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
+            <i className="fab fa-github"></i> GitHub
+          </button>
         </div>
       </div>
     </section>
-  );
-};
-
-const OpenSourceProjectCard = ({ title, description }) => {
-  return (
-    <div className="bg-white rounded-lg shadow-md p-6">
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-700">{description}</p>
-    </div>
   );
 };
 
