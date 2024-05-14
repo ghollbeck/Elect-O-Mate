@@ -8,6 +8,7 @@ embeddings = []
 data = []
 nn = None
 fitted = False
+fitted = False
 
 
 def fit(data_input, batch=1000, n_neighbors=5):
