@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import axios from 'axios'; // Importiere axios für HTTP-Anfragen
 
 const TextInput = ({ onSendMessage }) => {
   const [inputValue, setInputValue] = useState('');
@@ -36,6 +37,33 @@ const TextInput = ({ onSendMessage }) => {
   );
 };
 
+const Chat = () => {
+  const [messages, setMessages] = useState([]);
+
+  const handleSendMessage = async (text) => {
+    // Hinzufügen der Nachricht des Benutzers zum Chat
+    setMessages(prevMessages => [...prevMessages, { text, isUser: true }]);
+    
+    try {
+      // API-Anfrage durchführen
+      const response = await axios.post('https://backend.bruol.me/openai/invoke?config_hash=', { prompt: text });
+
+      // Antwort der API zum Chat hinzufügen
+      setMessages(prevMessages => [...prevMessages, { text: response.data, isUser: false }]);
+    } catch (error) {
+      // Fehlermeldung zum Chat hinzufügen
+      setMessages(prevMessages => [...prevMessages, {isUser: false, isError: true }]);
+    }
+  };
+
+  return (
+    <div>
+      <ChatWindow messages={messages} />
+      <TextInput onSendMessage={handleSendMessage} />
+    </div>
+  );
+};
+
 const ChatWindow = ({ messages }) => {
   const chatWindowRef = useRef(null);
 
@@ -51,13 +79,14 @@ const ChatWindow = ({ messages }) => {
         <div key={index} className="mb-2">
           {message.isUser ? (
             <div>
-              <p className="700" style={{ fontWeight: 'bold' }}>You</p>
+              <p className="font-bold text-gray-700">You</p>
               <p className="text-gray-600">{message.text}</p>
             </div>
-          
           ) : (
             <div>
-              <p className="text-blue-700" style={{ fontWeight: 'bold' }}>Elect-O-Mate</p>
+              <p className={`font-bold ${message.isError ? 'text-red-700' : 'text-blue-700'}`}>
+                {message.isError ? 'Error' : 'Elect-O-Mate'}
+              </p>
               <p className="text-gray-600">{message.text}</p>
             </div>
           )}
@@ -67,20 +96,5 @@ const ChatWindow = ({ messages }) => {
   );
 };
 
-const Chat = () => {
-  const [messages, setMessages] = useState([]);
-
-  const handleSendMessage = (text) => {
-    setMessages([...messages, { text, isUser: true }]);
-    // Hier könntest du die Antwort des Bots erhalten und sie dem Chat hinzufügen
-  };
-
-  return (
-    <div>
-      <ChatWindow messages={messages} />
-      <TextInput onSendMessage={handleSendMessage} />
-    </div>
-  );
-};
 
 export default Chat;
