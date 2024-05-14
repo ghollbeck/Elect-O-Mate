@@ -2,16 +2,16 @@ import React from 'react';
 
 export default function App() {
   return (
-    <footer className="bg-gray-800 text-center text-white py-4">
-      <div className="container mx-auto p-4">
+    <footer className="bg-gray-800 text-center text-white pt-">
+      <div className="container mx-auto">
         <section className="mb-4">
           <form action="">
+            <div className="m-4">
+              <p className="pt-2">
+                <strong>Sign up for impotant updates </strong>
+              </p>
+            </div>
             <div className="flex justify-center items-center">
-              <div className="mr-2">
-                <p className="pt-2">
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </div>
               <div className="relative">
                 <input
                   type="email"
@@ -32,15 +32,17 @@ export default function App() {
         </section>
         <section className="mb-4">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Made with love from people all over the world.
           </p>
         </section>
       </div>
-      <div className="bg-gray-900 text-center p-3">
-        © 2020 Copyright: 
-        <a className="text-white ml-2" href="https://elect-o-mate.eu/">
-          Elect-O-Mate
-        </a>
+      <div className='pb-0 mb-0 bg-red-500'>
+        <div className="bg-gray-900 text-center p-3">
+          © 2020 Copyright: 
+          <a className="text-white ml-2" href="https://elect-o-mate.eu/">
+            Elect-O-Mate
+          </a>
+        </div>
       </div>
     </footer>
   );

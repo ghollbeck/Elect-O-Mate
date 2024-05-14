@@ -43,7 +43,7 @@ function App() {
 
 
 
-      <div className="mt-auto w-full bg-gradient-to-r from-orange-50 via-orange-100 to-orange-300">
+      <div className="mt-auto w-full">
         <Footer />
       </div>
 
