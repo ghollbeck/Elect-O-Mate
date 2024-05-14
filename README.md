@@ -1,8 +1,8 @@
-# This is gonna be the ReadMe file
+# Elect-O-Mate
 
 Build Your Opinion for the upcoming EU Elections. This tool offers you additional information. Additionally you can have a chat with an expert AI ChatBot or just voice call with the the database & web.
 
-![Example Image](./pictures/Electomate_Image_Provisional.png)
+![Example Image](./pictures/ElectomateIphone.png)
 
 ## Demo
 
