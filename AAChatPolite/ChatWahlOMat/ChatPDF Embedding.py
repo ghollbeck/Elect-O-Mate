@@ -9,6 +9,7 @@ data = []
 nn = None
 fitted = False
 
+
 def fit(data_input, batch=1000, n_neighbors=5):
     global embeddings, nn, fitted
     data.extend(data_input)
