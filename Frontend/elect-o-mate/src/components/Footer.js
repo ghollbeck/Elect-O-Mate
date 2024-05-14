@@ -36,13 +36,11 @@ export default function App() {
           </p>
         </section>
       </div>
-      <div className='pb-0 mb-0 bg-red-500'>
-        <div className="bg-gray-900 text-center p-3">
-          © 2020 Copyright: 
-          <a className="text-white ml-2" href="https://elect-o-mate.eu/">
-            Elect-O-Mate
-          </a>
-        </div>
+      <div className="bg-gray-900 text-center p-3">
+        © 2024 Copyright: 
+        <a className="text-white ml-2" href="https://elect-o-mate.eu/">
+          Elect-O-Mate
+        </a>
       </div>
     </footer>
   );
