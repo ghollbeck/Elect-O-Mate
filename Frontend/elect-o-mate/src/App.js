@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Chat from './components/Chat';
 import Top from './components/Top';
 import OpenSource from './components/OpenSource'
+import Spline from './components/Spline'
 
 function App() {
   const targetRef = useRef(null);
@@ -17,11 +18,16 @@ function App() {
     <div className="flex flex-col relative overflow-hidden">
       <div className="absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] bg-gradient-to-r from-orange-200 to-orange-50  rounded-full z-0"></div>
 
-      <div className="flex justify-center w-full z-10">
-        <div className='w-1/2 m-20 z-10'>
+
+      <div className="flex flex-col items-center w-full z-10">
+        <div className='w-1/2 mt-60 z-10'>
           <Top onButtonClick={handleButtonClick} />
         </div>
+        <div className='w-30px h-30px'>
+        <Spline className="w-full h-full p-0 m-0"/>
+        </div>
       </div>
+
 
       <div className='bg-black flex justify-center z-10'>
         <div className='w-1/2'>
@@ -29,8 +35,10 @@ function App() {
         </div>
       </div>
 
-      <div ref={targetRef} className="flex-grow-0 py-4">
-        <Chat />
+      <div ref={targetRef} className="flex justify-center">
+        <div className='w-1/2 m-5'>
+          <Chat />
+        </div>
       </div>
 
 
