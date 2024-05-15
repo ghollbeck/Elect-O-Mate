@@ -49,12 +49,14 @@ const Chat = () => {
     
     try {
       // API-Anfrage durchführen
-      const response = await axios.post('https://backend.bruol.me/openai/invoke?config_hash=', { prompt: text });
+      const response = await axios.post('http://localhost:8000/openai/invoke', { input: text });
+      console.log(response.data)
 
       // Antwort der API zum Chat hinzufügen
-      setMessages(prevMessages => [...prevMessages, { text: response.data, isUser: false }]);
+      setMessages(prevMessages => [...prevMessages, { text: response.data.output, isUser: false }]);
     } catch (error) {
       // Fehlermeldung zum Chat hinzufügen
+      console.log(error)
       setMessages(prevMessages => [...prevMessages, { text: 'An error occurred. Please try again.', isUser: false, isError: true }]);
     }
   };
