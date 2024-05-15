@@ -8,9 +8,42 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 const TextInput = ({ onSendMessage, isSending }) => {
   const [inputValue, setInputValue] = useState('');
+  const textareaRef = useRef(null);
 
   const handleChange = (event) => {
     setInputValue(event.target.value);
+    resizeTextarea();
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault();
+      handleSubmit(event);
+    }
+  };
+
+  const resizeTextarea = () => {
+    const textarea = textareaRef.current;
+    if (textarea) {
+      const computedStyle = window.getComputedStyle(textarea);
+      const lineHeight = parseFloat(computedStyle.lineHeight);
+      const marginTop = parseFloat(computedStyle.marginTop);
+      const marginBottom = parseFloat(computedStyle.marginBottom);
+  
+      textarea.style.height = 'auto';
+      textarea.style.height = `${textarea.scrollHeight}px`; 
+      
+      const totalMargin = marginTop + marginBottom;
+      const maxLines = Math.floor((textarea.clientHeight - totalMargin) / lineHeight);
+      
+      if (maxLines >= 7) {
+        textarea.style.height = `${7 * lineHeight + totalMargin}px`; // Kinda weird, that total Margin is not added
+        // textarea.style.overflowY = 'scroll';                     //do you wanna scroll? otherwise just define it in textarea
+        textarea.style.overflowY = 'hidden';
+      } else {
+        textarea.style.overflowY = 'hidden';
+      }
+    }
   };
 
   const handleSubmit = async (event) => {
@@ -25,17 +58,19 @@ const TextInput = ({ onSendMessage, isSending }) => {
     <div className="w-full m-0 p-0 border-b border-r border-l rounded-lg">
       <form onSubmit={handleSubmit} className="flex items-center w-full">
         <div className="flex w-full">
-          <input
+                                          {/* I do not know how to set the minimal height value of textarea to 1 row. */}
+          <textarea                                       
+            ref={textareaRef}
             id="input-field"
             placeholder="Enter a question..."
-            type="text"
             value={inputValue}
             onChange={handleChange}
-            className="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            onKeyDown={handleKeyDown}
+            className="shadow resize-none appearance-none overflow-y-hidden border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
           <Button
             type="submit"
-            disabled={isSending} // Disable button while sending
+            disabled={isSending}
             className="py-4 px-5 pt-2 bg-gradient-to-r from-orange-200 to-white font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
             variant="contained"
             style={{ color: "black" }}
@@ -91,7 +126,8 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
       chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
     }
   }, [messages]);
-
+  
+  // linebreaks are not displayed in the chat window
   return (
     <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px' }} ref={chatWindowRef}>
       <div className="p-4">
