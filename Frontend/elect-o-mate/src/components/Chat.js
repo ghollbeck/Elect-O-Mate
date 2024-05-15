@@ -49,7 +49,7 @@ const Chat = () => {
     
     try {
       // API-Anfrage durchführen
-      const response = await axios.post('http://localhost:8000/openai/invoke', { input: text });
+      const response = await axios.post('https://backend.bruol.me/openai/invoke', { input: text });
       console.log(response.data)
 
       // Antwort der API zum Chat hinzufügen
