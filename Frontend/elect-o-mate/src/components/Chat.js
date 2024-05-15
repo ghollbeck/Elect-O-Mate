@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios'; // Importiere axios für HTTP-Anfragen
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import chatbot from '@mui/icons-material/Bot.png'; //added this icon to @mui
+import chatbot from './../pictures/Bot.png'; //added this icon to @mui
 import CircularProgress from '@mui/material/CircularProgress';
 
 
