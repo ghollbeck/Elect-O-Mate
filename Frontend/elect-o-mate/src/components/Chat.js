@@ -22,17 +22,19 @@ const TextInput = ({ onSendMessage }) => {
     <div className="w-full m-0 p-0">
       <form onSubmit={handleSubmit} className="flex items-center w-full">
         <div className="flex w-full">
-          <input
-            id="input-field"
-            placeholder="Enter a question ..."
-            type="text"
-            value={inputValue}
-            onChange={handleChange}
-            className="shadow appearance-none border rounded-l w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-          />
+        <input
+          id="input-field"
+          placeholder="Enter a question..."
+          type="text"
+          value={inputValue}
+          onChange={handleChange}
+          className="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+
          
-          <Button type="submit" variant="contained" endIcon={<SendIcon />}>
+          <Button type="submit" className=" py-4 px-5 pt-2 bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl" variant="contained" endIcon={<SendIcon />} >
         Send
+        
       </Button>
         </div>
       </form>
@@ -82,16 +84,27 @@ const ChatWindow = ({ messages, onSendMessage }) => {
           {messages.map((message, index) => (
             <div key={index} className={`mb-2 ${message.isUser ? 'text-right' : 'text-left'}`}>
               {message.isUser ? (
-                <div className="flex flex-col items-end">
+                <div className="flex flex-col items-end overflow-y-auto"
+                  // style={{
+                  //   wordWrap: 'break-word', // Automatischer Zeilenumbruch bei zu langen Wörtern
+                  //   overflowWrap: 'break-word', // Alternative für ältere Browser
+                  // }}
+                >
                   <p className="font-bold text-gray-700">You</p>
                   <p className="text-gray-600 bg-gray-200 p-2 rounded-md">{message.text}</p>
                 </div>
               ) : (
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start" 
+                  // style={{
+                  //   height: 'auto',
+                  //   wordWrap: 'break-word', // Automatischer Zeilenumbruch bei zu langen Wörtern
+                  //   overflowWrap: 'break-word', // Alternative für ältere Browser
+                  // }}
+                >
                   <p className={`font-bold ${message.isError ? 'text-red-700' : 'text-blue-700'}`}>
                     {message.isError ? 'Error' : 'Elect-O-Mate'}
                   </p>
-                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md">{message.text}</p>
+                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md">{message.text} </p>
                 </div>
               )}
             </div>
