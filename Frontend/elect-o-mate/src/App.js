@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="flex flex-col relative overflow-hidden">
-      <div className="absolute top-[-700px] right-[-400px] w-[1600px] h-[1600px] bg-gradient-to-r from-orange-200 via-white to-white  rounded-full z-0"></div>
+      <div className="absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] bg-gradient-to-r from-orange-200 to-orange-50  rounded-full z-0"></div>
 
 
       <div className="flex flex-col items-center pt-20 pb-10 w-full  z-10">
@@ -28,22 +28,22 @@ function App() {
         </div>
       </div>
 
+
       <div className='bg-black flex justify-center z-10'>
         <div className='w-1/2'>
           <OpenSource />
         </div>
       </div>
 
-      <div ref={targetRef} className="flex justify-center bg-gradient-to-r from-blue-50 to-blue-100">
-        <div className='w-1/2 my-10 py-20'>
-          <header className="text-black m-10 text-center">
-            <h1 className="text-6xl font-extrabold">Elect-O-Mate</h1>
-          </header>
+      <div ref={targetRef} className="flex justify-center">
+        <div className='w-1/2 m-5'>
           <Chat />
         </div>
       </div>
 
-      <div className="w-full">
+
+
+      <div className="mt-auto w-full bg-gradient-to-r from-orange-50 via-orange-100 to-orange-300">
         <Footer />
       </div>
 
