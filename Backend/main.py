@@ -20,6 +20,7 @@ from langserve import add_routes
 from langchain.text_splitter import CharacterTextSplitter
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 
 from typing import List
@@ -34,6 +35,15 @@ app = FastAPI(
     version="1.0",
     description="A simple api server using Langchain's Runnable interfaces",
 )
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # You can allow specific origins
+    allow_credentials=True,
+    allow_methods=["*"],  # You can restrict methods if needed
+    allow_headers=["*"],  # You can restrict headers if needed
+)
+
 
 def load_dotenv_file():
     
