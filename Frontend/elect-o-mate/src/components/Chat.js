@@ -57,8 +57,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
   return (
     <div className="mt-9 rounded- shadow-full relative border-none ">
       <form onSubmit={handleSubmit} className="flex items-center w-full ">
-        <div className="flex flex-col-reverse w-full ">
-          <div className="flex w-full ">
+        
             <textarea
               ref={textareaRef}
               id="input-field"
@@ -81,8 +80,6 @@ const TextInput = ({ onSendMessage, isSending }) => {
             >
               {isSending ? 'Sending' : 'Send'}
             </Button>
-          </div>
-        </div>
       </form>
     </div>
   );
