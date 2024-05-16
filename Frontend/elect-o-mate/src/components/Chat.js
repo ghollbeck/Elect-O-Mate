@@ -16,7 +16,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
   };
 
   const handleKeyDown = (event) => {
-    if (event.key === 'Enter' && !event.shiftKey) {
+    if (event.key === 'Enter' && !event.shiftKey && !isSending) {
       event.preventDefault();
       handleSubmit(event);
     }
@@ -127,7 +127,7 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
   }, [messages]);
   // linebreaks are not displayed in the chat window
   return (
-    <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px' }} ref={chatWindowRef}>
+    <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderRadius: '10px' }} ref={chatWindowRef}>
       <div className="p-4">
         <div className="mb-2 flex-grow">
           {messages.map((message, index) => (
