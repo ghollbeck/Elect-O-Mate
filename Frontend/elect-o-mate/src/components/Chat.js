@@ -18,6 +18,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
     if (event.key === 'Enter' && !event.shiftKey && !isSending) {
       event.preventDefault();
       handleSubmit(event);
+      resizeTextarea(); 
     }
   };
 
@@ -66,15 +67,16 @@ const TextInput = ({ onSendMessage, isSending }) => {
               onChange={handleChange}
               onKeyDown={handleKeyDown}
               autoComplete='off'
-              className="shadow resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              style={{ position: 'absolute', bottom: 0}} // Position the textarea at the bottom
+              rows='1'
+              className="shadow  bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              style={{ position: 'absolute', bottom: 0, borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px'}} // Position the textarea at the bottom
             />
             <Button
               type="submit"
               disabled={isSending}
               className="py-4 px-5 pt-2 bg-gradient-to-r from-green-500 to-blue-500 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
               variant="contained"
-              style={{ color: "black", position: 'absolute', right: 7, bottom: 9 }}
+              style={{ color: "black", position: 'absolute', right: 0, bottom: 0 }}
               endIcon={isSending ? <CircularProgress size={12} sx={{ color: "black" }} /> : <SendIcon sx={{ color: "black" }} />}
             >
               {isSending ? 'Sending' : 'Send'}
@@ -145,7 +147,7 @@ const convertTextToLinks = (text) => {
 
   // linebreaks are not displayed in the chat window
   return (
-    <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderTopLeftRadius: '10px', borderTopRightRadius: '10px' }} ref={chatWindowRef}>
+    <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderRadius: '10px'}} ref={chatWindowRef}>
       <div className="p-4">
         <div className="mb-2 flex-grow">
           {messages.map((message, index) => (
