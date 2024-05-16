@@ -18,12 +18,13 @@ const OpenSourceSection = () => {
           In navigating the intersection of technology and democracy, Wahl-O-Mat pledges to uphold the highest standards, ensuring our AI tools enhance informed opinion building, decision making, decrease political apathy and make the existing tools shorter as well as more accessible.
         </p>
         <div className="flex space-x-4">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Read Technical Report
-          </button>
           <button className="bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
             <i className="fab fa-github"></i> GitHub
           </button>
+          <button className="bg-gradient-to-r from-orange-50 to-orange-300 hover:bg-gradient-to-r hover:from-orange-100 hover:to-orange-400 text-black font-bold py-2 px-4 rounded">
+            Read Technical Report
+          </button>
+
         </div>
       </div>
     </section>
