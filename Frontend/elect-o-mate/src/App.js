@@ -22,6 +22,12 @@ function App() {
     });
   };
 
+
+  const changeLanguage = (lang) => {
+    setUserLanguage(lang);
+    i18n.changeLanguage(lang);
+  };
+
   const getUserCountryFromIP = async () => {
     try {
       const response = await fetch('https://ipinfo.io/json');
@@ -53,7 +59,9 @@ function App() {
     <div className="flex flex-col relative overflow-hidden">
       <div className="absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] bg-gradient-to-r from-orange-200 to-orange-50  rounded-full z-0"/>
 
-      <LanguageSelector />
+      <div className=''>
+        <LanguageSelector changeLanguage={changeLanguage}/>
+      </div>
 
       <div className="flex flex-col items-center pt-20 pb-10 w-full  z-10">
         <div className='w-1/2 z-10 pt-25'>
