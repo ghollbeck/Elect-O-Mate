@@ -18,9 +18,8 @@
     "bot_greeting" : "Hello, I am here to help you. Please ask me a question!",
     "send_button_sending" : "sending",
     "send_button_send" : "send",
-    "chat_YOU" : "You"
-
-
+    "chat_YOU" : "You",
+    "chat_placeholder" : "Enter a question..."
 
 }
   

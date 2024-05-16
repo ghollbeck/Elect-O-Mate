@@ -1,0 +1,23 @@
+{
+    "subheading": "Den Wählern klare und prägnante Informationen zur Verfügung stellen, um fundierte Entscheidungen bei Wahlen zu ermöglichen.",
+    "start_button": "Jetzt starten!",
+    "sign_up" : "Melden Sie sich für wichtige Updates an",
+    "email_placeholder" : "E-Mail-Adresse",
+    "subscribe_to_newsletter" : "Abonnieren",
+    "made_with_love" : "Mit Liebe gemacht von Menschen aus der ganzen Welt.",
+    "open_source" : "Open Source",
+    "open_source_p1" : "Mit Elect-O-Mate haben wir ein Wahltool mit einer AI-Chatbot-Integration entwickelt und sind uns der ethischen Implikationen, die dies mit sich bringt, sehr bewusst. Angesichts der potenziellen Risiken, wie Fehlinformationen und Voreingenommenheit, die in AI-Technologien inherent sind, verpflichten wir uns zu Transparenz und Verantwortung. Hier ist, wie wir das angehen:",
+    "transparency" : "Transparenz:",
+    "transparency_content" : " Unser gesamter Code ist Open Source",
+    "accuracy" : "Genauigkeit und Fairness:",
+    "accuracy_content" : "Fortschrittliche RAG-Pipeline für höchste Quellengenauigkeit und LLM-Regelprüfer zur Maximierung der Fairness",
+    "ethics" : "Ethisches Engagement:", 
+    "ethics_content" : " Wir haben die bevorzugten Quellen von politischen Experten beaufsichtigen lassen und nehmen offen an der globalen Diskussion über AI-Sicherheit und -Ausrichtung teil",
+    "open_source_p2" : "Bei der Navigation an der Schnittstelle von Technologie und Demokratie verpflichtet sich Wahl-O-Mat, die höchsten Standards einzuhalten und sicherzustellen, dass unsere AI-Tools die informierte Meinungsbildung, Entscheidungsfindung, Verringerung politischer Apathie und die Verkürzung sowie Zugänglichkeit bestehender Tools verbessern.",
+    "tech_report" : "Technischen Bericht lesen",
+    "bot_greeting" : "Hallo, ich bin hier, um Ihnen zu helfen. Bitte stellen Sie mir eine Frage!",
+    "send_button_sending" : "senden",
+    "send_button_send" : "senden",
+    "chat_YOU" : "Du",
+    "chat_placeholder" : "Stelle eine Frage..."
+}

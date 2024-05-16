@@ -65,7 +65,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
             <textarea
               ref={textareaRef}
               id="input-field"
-              placeholder="Enter a question..."
+              placeholder={t('chat_placeholder')}
               value={inputValue}
               onKeyDown={handleKeyDown}
               onChange={handleChange}
