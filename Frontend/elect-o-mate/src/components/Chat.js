@@ -71,9 +71,10 @@ const TextInput = ({ onSendMessage, isSending }) => {
           <Button
             type="submit"
             disabled={isSending}
-            className="py-4 px-5 pt-2 bg-gradient-to-r from-green-500  to-blue-500 text-white font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
+            className="py-4 px-5 pt-2 bg-gradient-to-r from-green-500  to-blue-500  transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 "
             variant="contained"
-            endIcon={isSending ? <CircularProgress size={12} sx={{ color: "black" }}/> : <SendIcon sx={{ color: "white" }}/>}
+            style={{color: "white", fontWeight: "bolder"}}
+            endIcon={isSending ? <CircularProgress size={12} sx={{ color: "white" }}/> : <SendIcon sx={{ color: "white" }}/>}
           >
             {isSending ? 'Sending' : 'Send'}
           </Button>
