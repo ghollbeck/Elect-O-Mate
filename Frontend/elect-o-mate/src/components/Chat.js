@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import axios from 'axios'; // Importiere axios für HTTP-Anfragen
+import axios from 'axios'; // Import axios for HTTP requests
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import chatbot from './../pictures/Bot.png'; //added this icon to @mui
+import chatbot from './../pictures/Bot.png'; // Add this icon to @mui
 import CircularProgress from '@mui/material/CircularProgress';
-
 
 const TextInput = ({ onSendMessage, isSending }) => {
   const [inputValue, setInputValue] = useState('');
@@ -31,15 +30,16 @@ const TextInput = ({ onSendMessage, isSending }) => {
             type="text"
             value={inputValue}
             onChange={handleChange}
+            autoComplete='off'
             className="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
           <Button
             type="submit"
             disabled={isSending} // Disable button while sending
-            className="py-4 px-5 pt-2 bg-gradient-to-r from-orange-200 to-white font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
+            className="py-4 px-5 pt-2 bg-gradient-to-r  from-green-500  to-blue-500 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
             variant="contained"
             style={{ color: "black" }}
-            endIcon={isSending ? <CircularProgress size={12} sx={{ color: "black" }}/> : <SendIcon sx={{ color: "black" }}/>}
+            endIcon={isSending ? <CircularProgress size={12} sx={{ color: "black" }} /> : <SendIcon sx={{ color: "black" }} />}
           >
             {isSending ? 'Sending' : 'Send'}
           </Button>
@@ -54,20 +54,18 @@ const Chat = () => {
   const [isSending, setIsSending] = useState(false);
 
   const handleSendMessage = async (text) => {
-    // Hinzufügen der Nachricht des Benutzers zum Chat
+    // Add user's message to chat
     setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
     setIsSending(true); // Set isSending to true when sending message
 
     try {
-      // API-Anfrage durchführen
+      // Perform API request
       const response = await axios.post('https://backend.bruol.me/openai/invoke', { input: text });
-      console.log(response.data);
 
-      // Antwort der API zum Chat hinzufügen
+      // Add API response to chat
       setMessages((prevMessages) => [...prevMessages, { text: response.data.output, isUser: false }]);
     } catch (error) {
-      // Fehlermeldung zum Chat hinzufügen
-      console.error(error);
+      // Add error message to chat
       setMessages((prevMessages) => [...prevMessages, { text: 'An error occurred. Please try again.', isUser: false, isError: true }]);
     } finally {
       setIsSending(false); // Reset isSending after API call completes
@@ -82,7 +80,6 @@ const Chat = () => {
   );
 };
 
-
 const ChatWindow = ({ messages, onSendMessage, isSending }) => {
   const chatWindowRef = useRef(null);
 
@@ -91,6 +88,18 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
       chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
     }
   }, [messages]);
+
+const convertTextToLinks = (text) => {
+  const urlRegex = /(\b(?:https?|ftp|file):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/ig;
+  return text.split(urlRegex).map((part, index) => {
+    if (urlRegex.test(part)) {
+      return <a key={index} href={part} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">{part}</a>;
+    }
+    return part;
+  });
+};
+
+
 
   return (
     <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px' }} ref={chatWindowRef}>
@@ -111,7 +120,7 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
                     </span>
                     {message.isError ? 'Error' : 'Elect-O-Mate'}
                   </p>
-                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md">{message.text} </p>
+                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md">{convertTextToLinks(message.text)}</p>
                 </div>
               )}
             </div>

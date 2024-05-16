@@ -35,8 +35,8 @@ function App() {
         </div>
       </div>
 
-      <div ref={targetRef} className="flex justify-center">
-        <div className='w-1/2 m-5'>
+      <div ref={targetRef} className="flex justify-center h-screen">
+        <div className='w-1/2 m-20'>
           <Chat />
         </div>
       </div>
