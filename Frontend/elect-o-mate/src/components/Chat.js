@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import chatbot from './../pictures/Bot.png'; // Add this icon to @mui
 import CircularProgress from '@mui/material/CircularProgress';
+import { useTranslation } from 'react-i18next';
+
 
 const TextInput = ({ onSendMessage, isSending }) => {
   const [inputValue, setInputValue] = useState('');
@@ -53,8 +55,10 @@ const TextInput = ({ onSendMessage, isSending }) => {
     }
   };
   
+  const { t } = useTranslation();
 
   return (
+    
     <div className="mt-9 rounded- shadow-full relative border-none ">
       <form onSubmit={handleSubmit} className="flex items-center w-full ">
         
@@ -78,7 +82,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
               style={{ color: "black", position: 'absolute', right: 0, bottom: 1 }}
               endIcon={isSending ? <CircularProgress size={12} sx={{ color: "black" }} /> : <SendIcon sx={{ color: "black" }} />}
             >
-              {isSending ? 'Sending' : 'Send'}
+              {isSending ? t('send_button_sending') : t('send_button_send')}
             </Button>
       </form>
     </div>
@@ -87,11 +91,12 @@ const TextInput = ({ onSendMessage, isSending }) => {
 
 
 const Chat = () => {
+  const { t } = useTranslation();
   const [messages, setMessages] = useState([]);
   const [isSending, setIsSending] = useState(false);
 
   useEffect(() => {
-    setMessages([{ text: "Hello, I am here to help you. Please ask me a question!", isUser: false }]);
+    setMessages([{ text: t('bot_greeting'), isUser: false }]);
   }, []); // Empty dependency array ensures it only runs once on mount
 
   const handleSendMessage = async (text) => {
@@ -123,6 +128,7 @@ const Chat = () => {
 
 
 const ChatWindow = ({ messages, onSendMessage, isSending }) => {
+  const { t } = useTranslation();
   const chatWindowRef = useRef(null);
 
   useEffect(() => {
@@ -149,7 +155,7 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
             <div key={index} className={`mb-2 ${message.isUser ? 'text-right' : 'text-left'}`}>
               {message.isUser ? (
                 <div className="flex flex-col items-end overflow-y-auto">
-                  <p className="font-bold text-gray-700">You</p>
+                  <p className="font-bold text-gray-700">{t('chat_YOU')}</p>
                   <p className="text-gray-600 bg-green-200 p-2 rounded-md text-left" style={{ wordBreak: 'break-word' }}>{message.text}</p>
                 </div>
               ) : (

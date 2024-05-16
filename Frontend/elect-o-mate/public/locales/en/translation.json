@@ -1,5 +1,26 @@
 {
     "subheading": "Providing voters with clear and concise information to enable informed decisions during elections.",
-    "start_button": "Start Now!"
+    "start_button": "Start Now!",
+    "sign_up" : "Sign up for impotant updates",
+    "email_placeholder" : "email address",
+    "subscribe_to_newsletter" : "subscribe",
+    "made_with_love" : "Made with love from people all over the world.",
+    "open_source" : "Open Source",
+    "open_source_p1" : "With Elect-O-Mate we have developed an election tool with an AI chatbot integration and are deeply conscious of the ethical implications this entails. Recognizing the potential risks, such as misinformation and bias, inherent in AI technologies, we are committed to transparency and responsibility. Here’s how we’re approaching this:",
+    "transparency" : "Transparency:",
+    "transparency_content" : " All of our code is Open Source",
+    "accuracy" : " Accuracy and Fairness:",
+    "accuracy_content" : " Advanced RAG-Pipeline for frontier source accuracy and LLM rule checkers for fairness maximization",
+    "ethics" : "Ethical Engagement:", 
+    "ethics_content" : " We supervised the preferred sources by political experts and openly take part in the global discussion around AI Safety and Alignment",
+    "open_source_p2" : "In navigating the intersection of technology and democracy, Wahl-O-Mat pledges to uphold the highest standards, ensuring our AI tools enhance informed opinion building, decision making, decrease political apathy and make the existing tools shorter as well as more accessible.",
+    "tech_report" : "Read Technical Report",
+    "bot_greeting" : "Hello, I am here to help you. Please ask me a question!",
+    "send_button_sending" : "sending",
+    "send_button_send" : "send",
+    "chat_YOU" : "You"
+
+
+
 }
   

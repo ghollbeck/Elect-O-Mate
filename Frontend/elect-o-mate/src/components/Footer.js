@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 export default function App() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-gray-800 text-center text-white">
       <div className="container mx-auto">
@@ -8,7 +11,7 @@ export default function App() {
           <form action="">
             <div className="mb-4">
               <p className="pt-2">
-                <strong>Sign up for impotant updates </strong>
+                <strong>{t('sign_up')}</strong>
               </p>
             </div>
             <div className="flex justify-center items-center">
@@ -16,7 +19,7 @@ export default function App() {
                 <input
                   type="email"
                   className="mb-4 p-2 rounded-sm text-gray-800"
-                  placeholder="Email address"
+                  placeholder={t('email_placeholder')}
                 />
               </div>
               <div className="ml-2">
@@ -24,7 +27,7 @@ export default function App() {
                   type="submit"
                   className="mb-4 px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-800 transition duration-300"
                 >
-                  Subscribe
+                  {t('subscribe_to_newsletter')}
                 </button>
               </div>
             </div>
@@ -32,7 +35,7 @@ export default function App() {
         </section>
         <section className="mb-4">
           <p>
-            Made with love from people all over the world.
+            {t('made_with_love')}
           </p>
         </section>
       </div>
