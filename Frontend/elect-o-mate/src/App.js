@@ -8,11 +8,6 @@ import OpenSource from './components/OpenSource'
 import Spline from './components/Spline'
 import Questions from './components/Questionnaire';
 
-const questions = [
-  { text: 'Die EU soll eigene Steuern erheben dürfen.' },
-  // Add more questions here
-];
-
 function App() {
   const targetRef = useRef(null);
 
@@ -35,7 +30,7 @@ function App() {
       </div>
 
       <div className="relative mb-20 z-10">
-        <Questions questions={questions} />
+        <Questions/>
       </div>
 
 

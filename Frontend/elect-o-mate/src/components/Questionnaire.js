@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import QuestionCard from './QuestionCard';
+import questionsData from '../data/questions.json';
 
-const Questionnaire = ({ questions }) => {
+const Questionnaire = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState([]);
+  const [questions, setQuestions] = useState([]);
+
+  useEffect(() => {
+    setQuestions(questionsData);
+  }, []);
 
   const handleAnswer = (answer) => {
     setAnswers([...answers, { question: questions[currentQuestionIndex], answer }]);
@@ -12,7 +18,7 @@ const Questionnaire = ({ questions }) => {
 
   return (
     <div className="flex-grow bg-red m-20 h-auto py-20 flex items-center justify-center">
-      <div className="absolute py-20 top-0 left-0 w-full bg-gradient-to-r from-green-900 to-blue-900 transform skew-y-3" style={{ height: '110%' }} />
+      <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-900 to-blue-900 transform skew-y-3" style={{ height: '110%' }}></div>
       <div className="container mx-auto px-4 relative z-10 w-1/2">
         {currentQuestionIndex < questions.length ? (
           <QuestionCard
