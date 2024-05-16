@@ -2,7 +2,7 @@ import React from 'react';
 
 const OpenSourceSection = () => {
   return (
-    <section className="bg-transparent text-white py-10">
+    <section className="bg-transparent text-white pb-10">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-6">Open Source</h2>
 

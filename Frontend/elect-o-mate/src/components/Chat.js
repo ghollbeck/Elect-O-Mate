@@ -55,7 +55,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
   
 
   return (
-    <div className="mt-9 rounded-full shadow-full m-0 p-0 border-b border-r border-l rounded-lg relative border-none ">
+    <div className="mt-9 rounded- shadow-full relative border-none ">
       <form onSubmit={handleSubmit} className="flex items-center w-full ">
         <div className="flex flex-col-reverse w-full ">
           <div className="flex w-full ">
@@ -148,7 +148,7 @@ const convertTextToLinks = (text) => {
 
   // linebreaks are not displayed in the chat window
   return (
-    <div className="bg-gradient-to-r from-orange-50 to-orange-100 overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderTopRadius: '10px'}} ref={chatWindowRef}>
+    <div className="bg-gradient-to-r from-orange-50 to-orange-100 overflow-y-auto border-none shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderTopRadius: '10px'}} ref={chatWindowRef}>
       <div className="p-4">
         <div className="mb-2 flex-grow">
           {messages.map((message, index) => (

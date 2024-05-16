@@ -35,13 +35,13 @@ function App() {
 
 
       <div ref={targetRef} className="flex justify-center h-screen">
-        <div className='w-1/2 my-20'>
+        <div className='w-1/2 my-10'>
           <Chat />
         </div>
       </div>
 
 
-      <div className="relative mt-10 mb-20">
+      <div className="relative mb-20">
         {/* if we want the black background back :)
         <div className="absolute top-0 left-0 w-full bg-[#010101] transform skew-y-3"  style={{ height: '110%' }}></div> */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform skew-y-3"  style={{ height: '110%' }}/>
