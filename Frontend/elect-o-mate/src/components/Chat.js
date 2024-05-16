@@ -66,7 +66,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
             onChange={handleChange}
             onKeyDown={handleKeyDown}
             autoComplete='off'
-            className="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
           <Button
             type="submit"
