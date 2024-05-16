@@ -156,7 +156,7 @@ const convertTextToLinks = (text) => {
               {message.isUser ? (
                 <div className="flex flex-col items-end overflow-y-auto">
                   <p className="font-bold text-gray-700">You</p>
-                  <p className="text-gray-600 bg-green-200 p-2 rounded-md">{message.text}</p>
+                  <p className="text-gray-600 bg-green-200 p-2 rounded-md text-left ">{message.text}</p>
                 </div>
               ) : (
                 <div className="flex flex-col items-start">
@@ -166,7 +166,7 @@ const convertTextToLinks = (text) => {
                     </span>
                     {message.isError ? 'Error' : 'Elect-O-Mate'}
                   </p>
-                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md">{convertTextToLinks(message.text)}</p>
+                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md text-left">{convertTextToLinks(message.text)}</p>
                 </div>
               )}
             </div>
