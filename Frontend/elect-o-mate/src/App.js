@@ -1,15 +1,16 @@
-// src/App.js
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './index.css';
 import Footer from './components/Footer';
 import Chat from './components/Chat';
 import Top from './components/Top';
-import OpenSource from './components/OpenSource'
-import Spline from './components/Spline'
+import OpenSource from './components/OpenSource';
+import Spline from './components/Spline';
 import Questionnaire from './components/Questionnaire';
 
 function App() {
   const targetRef = useRef(null);
+  //in userLanguage ist die Sprache/das Land gespeichert
+  const [userLanguage, setUserLanguage] = useState('en'); // Default to English
 
   const handleButtonClick = () => {
     targetRef.current.scrollIntoView({
@@ -18,24 +19,48 @@ function App() {
     });
   };
 
+ 
+const getUserCountryFromIP = async () => {
+  try {
+    const response = await fetch('https://ipinfo.io/json');
+    const data = await response.json();
+    return data.country; 
+  } catch (error) {
+    console.error('Fehler beim Abrufen des Landes aus der IP-Adresse:', error);
+    return null;
+  }
+};
+
+  useEffect(() => {
+    const fetchUserLocationAndSetLanguage = async () => {
+      try {
+        const userCountry = await getUserCountryFromIP();
+        setUserLanguage(userCountry);
+      } catch (error) {
+        console.error('Error fetching user location:', error);
+        setUserLanguage('en');
+      }
+    };
+
+    fetchUserLocationAndSetLanguage();
+  }, []);
+
   return (
     <div className="flex flex-col relative overflow-hidden">
       <div className="absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] bg-gradient-to-r from-orange-200 to-orange-50  rounded-full z-0"/>
-
 
       <div className="flex flex-col items-center pt-20 pb-10 w-full  z-10">
         <div className='w-1/2 z-10 pt-25'>
           <Top onButtonClick={handleButtonClick} />
         </div>
         <div className='w-30px h-30px'>
-        <Spline />
+          <Spline />
         </div>
       </div>
 
       <div className="relative mb-20 z-10">
         <Questionnaire />
       </div>
-
 
       <div ref={targetRef} className="flex justify-center">
         <div className='w-1/2 my-20'>
@@ -44,8 +69,6 @@ function App() {
       </div>
 
       <div className="relative mt-10 mb-20">
-        {/* if we want the black background back :)
-        <div className="absolute top-0 left-0 w-full bg-[#010101] transform skew-y-3"  style={{ height: '110%' }}></div> */}
         <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform skew-y-3"  style={{ height: '110%' }}/>
           <div className="container mx-auto px-4 relative z-10 w-1/2">
             <OpenSource />
