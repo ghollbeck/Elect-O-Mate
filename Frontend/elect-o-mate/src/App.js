@@ -6,7 +6,7 @@ import Chat from './components/Chat';
 import Top from './components/Top';
 import OpenSource from './components/OpenSource'
 import Spline from './components/Spline'
-import Questions from './components/Questionnaire';
+import Questionnaire from './components/Questionnaire';
 
 function App() {
   const targetRef = useRef(null);
@@ -30,7 +30,7 @@ function App() {
       </div>
 
       <div className="relative mb-20 z-10">
-        <Questions/>
+        <Questionnaire />
       </div>
 
 

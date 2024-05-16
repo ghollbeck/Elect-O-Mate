@@ -1,6 +1,20 @@
 [
-    { "text": "Die EU soll eigene Steuern erheben dürfen." },
-    { "text": "Frage 2 Beispieltext." },
-    { "text": "Frage 3 Beispieltext." }
-  ]
-  
+  { "text": "Die EU soll eigene Steuern erheben dürfen." },
+  { "text": "Sollte die EU eine gemeinsame Außenpolitik haben?" },
+  { "text": "Brauchen wir strengere Umweltgesetze?" },
+  { "text": "Sollten soziale Medien stärker reguliert werden?" },
+  { "text": "Ist die Nutzung von Kernenergie sinnvoll?" },
+  { "text": "Sollte das bedingungslose Grundeinkommen eingeführt werden?" },
+  { "text": "Ist eine Vier-Tage-Woche eine gute Idee?" },
+  { "text": "Sollten Tabakprodukte komplett verboten werden?" },
+  { "text": "Müssen Autos mit Verbrennungsmotoren verboten werden?" },
+  { "text": "Sollten private Krankenversicherungen abgeschafft werden?" },
+  { "text": "Ist ein verpflichtendes soziales Jahr sinnvoll?" },
+  { "text": "Sollte Cannabis legalisiert werden?" },
+  { "text": "Brauchen wir mehr Überwachung im öffentlichen Raum?" },
+  { "text": "Ist die Einführung einer Vermögenssteuer gerecht?" },
+  { "text": "Sollten Schüler:innen das Wahlrecht haben?" },
+  { "text": "Brauchen wir eine Frauenquote in Vorständen?" },
+  { "text": "Sollte Homeschooling erlaubt sein?" },
+  { "text": "Sind Studiengebühren gerechtfertigt?" }
+]
