@@ -1,4 +1,5 @@
 [
+  { "text": "" },
   { "text": "Die EU soll eigene Steuern erheben dürfen." },
   { "text": "Die EU soll eigene Steuern erheben dürfen um so viele tolle Projekte zu finanzieren." },
   { "text": "Sollte die EU eine gemeinsame Außenpolitik haben?" },
@@ -17,5 +18,6 @@
   { "text": "Sollten Schüler:innen das Wahlrecht haben?" },
   { "text": "Brauchen wir eine Frauenquote in Vorständen?" },
   { "text": "Sollte Homeschooling erlaubt sein?" },
-  { "text": "Sind Studiengebühren gerechtfertigt?" }
+  { "text": "Sind Studiengebühren gerechtfertigt?" },
+  { "text": "" }
 ]

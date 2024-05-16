@@ -4,7 +4,7 @@ import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 
 const Questionnaire = () => {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [answers, setAnswers] = useState([]);
   const [questions, setQuestions] = useState([]);
   const containerRef = useRef(null);
@@ -34,7 +34,18 @@ const Questionnaire = () => {
     if (containerRef.current && containerRef.current.firstChild) {
       isButtonScroll.current = true;  // Indicate button click
       const cardWidth = containerRef.current.firstChild.offsetWidth;
-      const scrollPosition = cardWidth * index - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
+      let scrollPosition;
+  
+      if (index === 0) { // Skip the first card
+        scrollPosition = 0;
+      } else if (index === questions.length - 2) { // Second last card
+        scrollPosition = cardWidth * (index + 1) - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
+      } else if (index === questions.length - 1) { // Last card
+        scrollPosition = containerRef.current.scrollWidth - containerRef.current.offsetWidth;
+      } else {
+        scrollPosition = cardWidth * index - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
+      }
+  
       containerRef.current.scrollTo({
         left: scrollPosition,
         behavior: 'smooth'
@@ -42,14 +53,16 @@ const Questionnaire = () => {
       setCurrentQuestionIndex(index);
     }
   };
-
+  
+  
   const handleLeft = () => {
-    scrollToIndex(Math.max(currentQuestionIndex - 1, 0));
+    scrollToIndex(Math.max(currentQuestionIndex - 1, 1)); // Skip the first card
   };
-
+  
   const handleRight = () => {
-    scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
+    scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 2)); // Skip the last card
   };
+  
 
   useEffect(() => {
     const handleScroll = throttle(() => {
@@ -101,23 +114,26 @@ const Questionnaire = () => {
         <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-slate-950 to-transparent z-20 pointer-events-none" />
         <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-purple-950 to-transparent z-20 pointer-events-none" />
 
-        <button 
-          onClick={handleLeft} 
-          disabled={currentQuestionIndex === 0}
-          className="absolute left-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30">
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M15 19l-7-7 7-7"></path>
-            </svg>
-        </button>
+        {currentQuestionIndex !== 1 && (
+          <button 
+            onClick={handleLeft} 
+            className="absolute left-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M15 19l-7-7 7-7"></path>
+              </svg>
+          </button>
+        )}
 
-        <button 
-          onClick={handleRight} 
-          disabled={currentQuestionIndex === questions.length - 1}
-          className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30">
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
+        {currentQuestionIndex < questions.length - 2 && (
+          <button 
+            onClick={handleRight} 
+            className="absolute right-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
           </svg>
-        </button>
+          </button>
+        )}
+
 
         <div ref={containerRef} className="w-full px-4 py-20 flex space-x-4 overflow-x-scroll relative snap-x snap-mandatory"
              style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch' }}>
