@@ -9,7 +9,7 @@ import Questionnaire from './components/Questionnaire';
 
 function App() {
   const targetRef = useRef(null);
-  //in userLanguage ist die Sprache/das Land gespeichert
+  // in userLanguage ist die Sprache/das Land gespeichert
   const [userLanguage, setUserLanguage] = useState('en'); // Default to English
 
   const handleButtonClick = () => {
@@ -19,17 +19,16 @@ function App() {
     });
   };
 
- 
-const getUserCountryFromIP = async () => {
-  try {
-    const response = await fetch('https://ipinfo.io/json');
-    const data = await response.json();
-    return data.country; 
-  } catch (error) {
-    console.error('Fehler beim Abrufen des Landes aus der IP-Adresse:', error);
-    return null;
-  }
-};
+  const getUserCountryFromIP = async () => {
+    try {
+      const response = await fetch('https://ipinfo.io/json');
+      const data = await response.json();
+      return data.country; 
+    } catch (error) {
+      console.error('Fehler beim Abrufen des Landes aus der IP-Adresse:', error);
+      return null;
+    }
+  };
 
   useEffect(() => {
     const fetchUserLocationAndSetLanguage = async () => {
@@ -48,7 +47,7 @@ const getUserCountryFromIP = async () => {
   return (
     <div className="flex flex-col relative overflow-hidden">
       <div className="absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] bg-gradient-to-r from-orange-200 to-orange-50  rounded-full z-0"/>
-
+      
       <div className="flex flex-col items-center pt-20 pb-10 w-full  z-10">
         <div className='w-1/2 z-10 pt-25'>
           <Top onButtonClick={handleButtonClick} />

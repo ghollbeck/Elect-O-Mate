@@ -43,11 +43,11 @@ const Questionnaire = () => {
 
   return (
     <div className="flex-grow bg-red my-20 h-auto py-20 flex items-center justify-center relative w-full">
-      <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-900 to-blue-900 transform skew-y-3" style={{ height: '110%' }} />
+      <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-400 to-blue-400 transform skew-y-3" style={{ height: '110%' }} />
       
       <div className="relative w-full overflow-x-hidden">
-        <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-green-900 to-transparent z-20 pointer-events-none" />
-        <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-blue-900 to-transparent z-20 pointer-events-none" />
+        <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-green-400 to-transparent z-20 pointer-events-none" />
+        <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-blue-400 to-transparent z-20 pointer-events-none" />
 
         <button 
           onClick={handleLeft} 
@@ -71,7 +71,7 @@ const Questionnaire = () => {
         <div ref={containerRef} className="w-full px-4 py-20 flex space-x-4 overflow-x-scroll relative"
              style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch', overflowX: 'scroll', display: 'flex' }}>
           {questions.map((question, index) => (
-            <div key={index} className={`shrink-0 w-80 transition-opacity duration-300 ${index === currentQuestionIndex ? 'opacity-100' : 'opacity-50'}`}>
+            <div key={index} className={`shrink-0 w-120 h-80 transition-opacity duration-800 ${index === currentQuestionIndex ? 'transform scale-110 opacity-100' : 'transform scale-100 opacity-50'}`}>
               <QuestionCard
                 question={question}
                 onAnswer={handleAnswer}

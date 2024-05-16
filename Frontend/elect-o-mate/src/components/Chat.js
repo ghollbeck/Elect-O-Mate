@@ -142,7 +142,6 @@ const convertTextToLinks = (text) => {
 };
 
 
-
   // linebreaks are not displayed in the chat window
   return (
     <div className="bg-gradient-to-r from-orange-50 to-orange-100 overflow-y-auto border-none shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderTopRadius: '10px'}} ref={chatWindowRef}>
