@@ -131,18 +131,16 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
     }
   }, [messages]);
 
-const convertTextToLinks = (text) => {
-  const urlRegex = /(\b(?:https?|ftp|file):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/ig;
-  return text.split(urlRegex).map((part, index) => {
-    if (urlRegex.test(part)) {
-      return <a key={index} href={part} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">{part}</a>;
-    }
-    return part;
-  });
-};
+  const convertTextToLinks = (text) => {
+    const urlRegex = /(\b(?:https?|ftp|file):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/ig;
+    return text.split(urlRegex).map((part, index) => {
+      if (urlRegex.test(part)) {
+        return <a key={index} href={part} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">{part}</a>;
+      }
+      return part;
+    });
+  };
 
-
-  // linebreaks are not displayed in the chat window
   return (
     <div className="bg-gradient-to-r from-orange-50 to-orange-100 overflow-y-auto border-none shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderTopRadius: '10px'}} ref={chatWindowRef}>
       <div className="p-4">
@@ -152,7 +150,7 @@ const convertTextToLinks = (text) => {
               {message.isUser ? (
                 <div className="flex flex-col items-end overflow-y-auto">
                   <p className="font-bold text-gray-700">You</p>
-                  <p className="text-gray-600 bg-green-200 p-2 rounded-md text-left ">{message.text}</p>
+                  <p className="text-gray-600 bg-green-200 p-2 rounded-md text-left" style={{ wordBreak: 'break-word' }}>{message.text}</p>
                 </div>
               ) : (
                 <div className="flex flex-col items-start">
@@ -162,7 +160,7 @@ const convertTextToLinks = (text) => {
                     </span>
                     {message.isError ? 'Error' : 'Elect-O-Mate'}
                   </p>
-                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md text-left">{convertTextToLinks(message.text)}</p>
+                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md text-left break-words">{convertTextToLinks(message.text)}</p>
                 </div>
               )}
             </div>
