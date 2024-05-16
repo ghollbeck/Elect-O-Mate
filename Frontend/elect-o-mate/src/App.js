@@ -7,6 +7,7 @@ import Top from './components/Top';
 import OpenSource from './components/OpenSource'
 import Spline from './components/Spline'
 import Questionnaire from './components/Questionnaire';
+// import HowItWorks from './components/HowItWorks';
 
 function App() {
   const targetRef = useRef(null);
@@ -36,6 +37,12 @@ function App() {
         <Questionnaire />
       </div>
 
+  {/*     <div className="relative mt-10 mb-20">
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform -skew-y-3"  style={{ height: '110%' }}/>
+          <div className="container mx-auto px-4 relative z-10 w-1/2">
+            <HowItWorks />
+        </div>
+      </div> */}
 
       <div ref={targetRef} className="flex justify-center">
         <div className='w-1/2 my-20'>
@@ -46,7 +53,7 @@ function App() {
       <div className="relative mt-10 mb-20">
         {/* if we want the black background back :)
         <div className="absolute top-0 left-0 w-full bg-[#010101] transform skew-y-3"  style={{ height: '110%' }}></div> */}
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform skew-y-3"  style={{ height: '110%' }}/>
+        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-400  to-blue-400 transform skew-y-3"  style={{ height: '110%' }}/>
           <div className="container mx-auto px-4 relative z-10 w-1/2">
             <OpenSource />
         </div>
