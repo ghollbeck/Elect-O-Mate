@@ -64,6 +64,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
             placeholder="Enter a question..."
             value={inputValue}
             onChange={handleChange}
+            onKeyDown={handleKeyDown}
             autoComplete='off'
             className="shadow appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
