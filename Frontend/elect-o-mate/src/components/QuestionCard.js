@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuestionCard = ({ question, onAnswer }) => {
   return (
-    <div className="flex-col h-80 w-[600px] items-center justify-center p-6 bg-gray-800 text-white rounded-lg shadow-md inline-flex flex-shrink-0">
+    <div className="flex-col h-80 w-[600px] items-center justify-center p-6 bg-gray-700 text-white rounded-lg shadow-md inline-flex flex-shrink-0">
       <h2 className="text-lg font-semibold mb-4 text-center overflow-hidden w-5/6 break-words">
         {question.text}
       </h2>

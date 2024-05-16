@@ -33,7 +33,7 @@ function App() {
         </div>
       </div>
 
-      <div className="relative mb-20 z-10">
+      <div className="relative mb-10 z-10">
         <Questionnaire />
       </div>
 

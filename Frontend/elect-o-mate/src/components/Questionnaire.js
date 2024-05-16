@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import QuestionCard from './QuestionCard';
 import questionsData from '../data/questions.json';
+import { throttle } from 'lodash';
 
 const Questionnaire = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [questions, setQuestions] = useState([]);
   const containerRef = useRef(null);
+  const isButtonScroll = useRef(false);  // Track button clicks
 
   useEffect(() => {
     setQuestions(questionsData);
@@ -21,20 +23,70 @@ const Questionnaire = () => {
         behavior: 'smooth'
       });
     }
-  }, [currentQuestionIndex, questions]);
+  }, [currentQuestionIndex]);
 
   const handleAnswer = (answer) => {
     setAnswers([...answers, { question: questions[currentQuestionIndex], answer }]);
-    setCurrentQuestionIndex(prevIndex => Math.min(prevIndex + 1, questions.length - 1));
+    scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
+  };
+
+  const scrollToIndex = (index) => {
+    if (containerRef.current && containerRef.current.firstChild) {
+      isButtonScroll.current = true;  // Indicate button click
+      const cardWidth = containerRef.current.firstChild.offsetWidth;
+      const scrollPosition = cardWidth * index - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
+      containerRef.current.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+      });
+      setCurrentQuestionIndex(index);
+    }
   };
 
   const handleLeft = () => {
-    setCurrentQuestionIndex(prevIndex => Math.max(prevIndex - 1, 0));
+    scrollToIndex(Math.max(currentQuestionIndex - 1, 0));
   };
 
   const handleRight = () => {
-    setCurrentQuestionIndex(prevIndex => Math.min(prevIndex + 1, questions.length - 1));
+    scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
   };
+
+  useEffect(() => {
+    const handleScroll = throttle(() => {
+      if (isButtonScroll.current) {
+        isButtonScroll.current = false;  // Reset button scroll flag
+        return;
+      }
+      if (containerRef.current) {
+        const container = containerRef.current;
+        const containerCenter = container.offsetWidth / 2;
+        const cards = Array.from(container.children);
+        let closestIndex = 0;
+        let closestDistance = Infinity;
+
+        cards.forEach((card, index) => {
+          const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+          const distance = Math.abs(cardCenter - container.scrollLeft - containerCenter);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+          }
+        });
+
+        setCurrentQuestionIndex(closestIndex);
+      }
+    }, 100);
+
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener('scroll', handleScroll);
+    }
+    return () => {
+      if (container) {
+        container.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [questions]);
 
   const scrollBarHideStyle = {
     scrollbarWidth: 'none', // Firefox
@@ -43,11 +95,11 @@ const Questionnaire = () => {
 
   return (
     <div className="flex-grow bg-red my-20 h-auto py-20 flex items-center justify-center relative w-full">
-      <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-400 to-blue-400 transform skew-y-3" style={{ height: '110%' }} />
+      <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-slate-950 to-purple-950 transform skew-y-3" style={{ height: '110%' }} />
       
       <div className="relative w-full overflow-x-hidden">
-        <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-green-400 to-transparent z-20 pointer-events-none" />
-        <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-blue-400 to-transparent z-20 pointer-events-none" />
+        <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-slate-950 to-transparent z-20 pointer-events-none" />
+        <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-purple-950 to-transparent z-20 pointer-events-none" />
 
         <button 
           onClick={handleLeft} 
@@ -58,7 +110,6 @@ const Questionnaire = () => {
             </svg>
         </button>
 
-
         <button 
           onClick={handleRight} 
           disabled={currentQuestionIndex === questions.length - 1}
@@ -68,10 +119,10 @@ const Questionnaire = () => {
           </svg>
         </button>
 
-        <div ref={containerRef} className="w-full px-4 py-20 flex space-x-4 overflow-x-scroll relative"
-             style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch', overflowX: 'scroll', display: 'flex' }}>
+        <div ref={containerRef} className="w-full px-4 py-20 flex space-x-4 overflow-x-scroll relative snap-x snap-mandatory"
+             style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch' }}>
           {questions.map((question, index) => (
-            <div key={index} className={`shrink-0 w-120 h-80 transition-opacity duration-800 ${index === currentQuestionIndex ? 'transform scale-110 opacity-100' : 'transform scale-100 opacity-50'}`}>
+            <div key={index} className={`shrink-0 w-120 h-80 transition-opacity duration-800 snap-center ${index === currentQuestionIndex ? 'transform scale-110 opacity-100' : 'transform scale-100 opacity-50'}`}>
               <QuestionCard
                 question={question}
                 onAnswer={handleAnswer}
