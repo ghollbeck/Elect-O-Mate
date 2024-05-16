@@ -88,20 +88,20 @@ const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [isSending, setIsSending] = useState(false);
 
+  useEffect(() => {
+    setMessages([{ text: "Hello, I am here to help you. Please ask me a question!", isUser: false }]);
+  }, []); // Empty dependency array ensures it only runs once on mount
+
   const handleSendMessage = async (text) => {
     // Hinzufügen der Nachricht des Benutzers zum Chat
     setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
-    setIsSending(true); // Set isSending to true when sending message
+    setIsSending(true); 
 
-    try {
-      // API-Anfrage durchführen
+    try { // Antwort posten
       const response = await axios.post('https://backend.bruol.me/openai/invoke', { input: text });
       console.log(response.data);
-
-      // Antwort der API zum Chat hinzufügen
       setMessages((prevMessages) => [...prevMessages, { text: response.data.output, isUser: false }]);
-    } catch (error) {
-      // Fehlermeldung zum Chat hinzufügen
+    } catch (error) { // Fehlermeldung 
       console.error(error);
       setMessages((prevMessages) => [...prevMessages, { text: 'An error occurred. Please try again.', isUser: false, isError: true }]);
     } finally {
@@ -117,7 +117,6 @@ const Chat = () => {
   );
 };
 
-
 const ChatWindow = ({ messages, onSendMessage, isSending }) => {
   const chatWindowRef = useRef(null);
 
@@ -126,7 +125,6 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
       chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
     }
   }, [messages]);
-  
   // linebreaks are not displayed in the chat window
   return (
     <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px' }} ref={chatWindowRef}>
