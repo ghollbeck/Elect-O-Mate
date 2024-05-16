@@ -18,7 +18,6 @@ const TextInput = ({ onSendMessage, isSending }) => {
     if (event.key === 'Enter' && !event.shiftKey && !isSending) {
       event.preventDefault();
       handleSubmit(event);
-      resizeTextarea(); 
     }
   };
 
@@ -45,30 +44,31 @@ const TextInput = ({ onSendMessage, isSending }) => {
   };
 
   const handleSubmit = async (event) => {
+    const textarea = textareaRef.current;
     event.preventDefault();
     if (inputValue.trim() !== '') {
       onSendMessage(inputValue);
       setInputValue('');
-      resizeTextarea(); 
+      textarea.style.height = 'auto';
     }
   };
   
 
   return (
-    <div className="w-full m-0 p-0 border-b border-r border-l rounded-lg relative">
-      <form onSubmit={handleSubmit} className="flex items-center w-full">
-        <div className="flex flex-col-reverse w-full">
+    <div className="mt-9 rounded-full shadow-full m-0 p-0 border-b border-r border-l rounded-lg relative border-none ">
+      <form onSubmit={handleSubmit} className="flex items-center w-full ">
+        <div className="flex flex-col-reverse w-full ">
           <div className="flex w-full ">
             <textarea
               ref={textareaRef}
               id="input-field"
               placeholder="Enter a question..."
               value={inputValue}
-              onChange={handleChange}
               onKeyDown={handleKeyDown}
+              onChange={handleChange}
               autoComplete='off'
               rows='1'
-              className="shadow  bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               style={{ position: 'absolute', bottom: 0, borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px'}} // Position the textarea at the bottom
             />
             <Button
@@ -76,7 +76,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
               disabled={isSending}
               className="py-4 px-5 pt-2 bg-gradient-to-r from-green-500 to-blue-500 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
               variant="contained"
-              style={{ color: "black", position: 'absolute', right: 0, bottom: 0 }}
+              style={{ color: "black", position: 'absolute', right: 0, bottom: 1 }}
               endIcon={isSending ? <CircularProgress size={12} sx={{ color: "black" }} /> : <SendIcon sx={{ color: "black" }} />}
             >
               {isSending ? 'Sending' : 'Send'}
@@ -117,12 +117,13 @@ const Chat = () => {
   };
 
   return (
-    <div>
+    <div > {/* Add margin-top */}
       <ChatWindow messages={messages} onSendMessage={handleSendMessage} isSending={isSending} />
       <TextInput onSendMessage={handleSendMessage} isSending={isSending} />
     </div>
   );
 };
+
 
 const ChatWindow = ({ messages, onSendMessage, isSending }) => {
   const chatWindowRef = useRef(null);
@@ -147,7 +148,7 @@ const convertTextToLinks = (text) => {
 
   // linebreaks are not displayed in the chat window
   return (
-    <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderRadius: '10px'}} ref={chatWindowRef}>
+    <div className="bg-gradient-to-r from-orange-50 to-orange-100 overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderTopRadius: '10px'}} ref={chatWindowRef}>
       <div className="p-4">
         <div className="mb-2 flex-grow">
           {messages.map((message, index) => (
@@ -155,7 +156,7 @@ const convertTextToLinks = (text) => {
               {message.isUser ? (
                 <div className="flex flex-col items-end overflow-y-auto">
                   <p className="font-bold text-gray-700">You</p>
-                  <p className="text-gray-600 bg-gray-200 p-2 rounded-md">{message.text}</p>
+                  <p className="text-gray-600 bg-green-200 p-2 rounded-md">{message.text}</p>
                 </div>
               ) : (
                 <div className="flex flex-col items-start">
