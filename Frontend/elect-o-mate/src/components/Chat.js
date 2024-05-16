@@ -7,9 +7,42 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 const TextInput = ({ onSendMessage, isSending }) => {
   const [inputValue, setInputValue] = useState('');
+  const textareaRef = useRef(null);
 
   const handleChange = (event) => {
     setInputValue(event.target.value);
+    resizeTextarea();
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' && !event.shiftKey && !isSending) {
+      event.preventDefault();
+      handleSubmit(event);
+    }
+  };
+
+  const resizeTextarea = () => {
+    const textarea = textareaRef.current;
+    if (textarea) {
+      const computedStyle = window.getComputedStyle(textarea);
+      const lineHeight = parseFloat(computedStyle.lineHeight);
+      const marginTop = parseFloat(computedStyle.marginTop);
+      const marginBottom = parseFloat(computedStyle.marginBottom);
+  
+      textarea.style.height = 'auto';
+      textarea.style.height = `${textarea.scrollHeight}px`; 
+      
+      const totalMargin = marginTop + marginBottom;
+      const maxLines = Math.floor((textarea.clientHeight - totalMargin) / lineHeight);
+      
+      if (maxLines >= 7) {
+        textarea.style.height = `${7 * lineHeight + totalMargin}px`; // Kinda weird, that total Margin is not added
+        // textarea.style.overflowY = 'scroll';                     //do you wanna scroll? otherwise just define it in textarea
+        textarea.style.overflowY = 'hidden';
+      } else {
+        textarea.style.overflowY = 'hidden';
+      }
+    }
   };
 
   const handleSubmit = async (event) => {
@@ -24,10 +57,11 @@ const TextInput = ({ onSendMessage, isSending }) => {
     <div className="w-full m-0 p-0 border-b border-r border-l rounded-lg">
       <form onSubmit={handleSubmit} className="flex items-center w-full">
         <div className="flex w-full">
-          <input
+                                          {/* I do not know how to set the minimal height value of textarea to 1 row. */}
+          <textarea                                       
+            ref={textareaRef}
             id="input-field"
             placeholder="Enter a question..."
-            type="text"
             value={inputValue}
             onChange={handleChange}
             autoComplete='off'
@@ -53,10 +87,14 @@ const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [isSending, setIsSending] = useState(false);
 
+  useEffect(() => {
+    setMessages([{ text: "Hello, I am here to help you. Please ask me a question!", isUser: false }]);
+  }, []); // Empty dependency array ensures it only runs once on mount
+
   const handleSendMessage = async (text) => {
     // Add user's message to chat
     setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
-    setIsSending(true); // Set isSending to true when sending message
+    setIsSending(true); 
 
     try {
       // Perform API request
@@ -101,8 +139,9 @@ const convertTextToLinks = (text) => {
 
 
 
+  // linebreaks are not displayed in the chat window
   return (
-    <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px' }} ref={chatWindowRef}>
+    <div className="bg-white overflow-y-auto border-t border-r border-l shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderRadius: '10px' }} ref={chatWindowRef}>
       <div className="p-4">
         <div className="mb-2 flex-grow">
           {messages.map((message, index) => (
