@@ -1,6 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 const QuestionCard = ({ question, onAnswer }) => {
+  const { t } = useTranslation();
+
   // If question is empty, render an empty card
   if (!question || !question.text) {
     return (
@@ -19,26 +23,26 @@ const QuestionCard = ({ question, onAnswer }) => {
           className="bg-green-500 w-40 h-10 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => onAnswer('agree')}
         >
-          agree
+          {t('agree_button')}
         </button>
         <button
           className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => onAnswer('neutral')}
         >
-          neutral
+          {t('neutral_button')}
         </button>
         <button
           className="bg-red-500 w-40 h-10 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => onAnswer('disagree')}
         >
-          disagree
+          {t('disagree_button')}
         </button>
       </div>
       <button
         className="mt-4 text-gray-400 hover:text-gray-200"
         onClick={() => onAnswer('skip')}
       >
-        skip
+        {t('skip_button')}
       </button>
     </div>
   );
