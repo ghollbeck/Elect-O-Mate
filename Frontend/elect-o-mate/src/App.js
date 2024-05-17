@@ -22,11 +22,10 @@ function App() {
     });
   };
 
-
-  const changeLanguage = (lang) => {
+    const changeLanguage = (lang) => {
     setUserLanguage(lang);
     i18n.changeLanguage(lang);
-  };
+  }
 
   const getUserCountryFromIP = async () => {
     try {
