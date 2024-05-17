@@ -19,7 +19,26 @@
     "send_button_sending" : "sending",
     "send_button_send" : "send",
     "chat_YOU" : "You",
-    "chat_placeholder" : "Enter a question..."
-
+    "chat_placeholder" : "Enter a question...",
+    "q1": "Should the EU increase its budget for climate change initiatives?",
+    "q2": "Should the EU implement stricter regulations on digital privacy?",
+    "q3": "Should the EU establish a minimum corporate tax rate across member states?",
+    "q4": "Should the EU enhance its military capabilities through a joint EU army?",
+    "q5": "Should the EU enforce stricter immigration controls?",
+    "q6": "Should the EU provide more funding for research and innovation?",
+    "q7": "Should the EU implement policies to reduce economic disparities between member states?",
+    "q8": "Should the EU expand its membership to include new countries?",
+    "q9": "Should the EU prioritize renewable energy sources over fossil fuels?",
+    "q10": "Should the EU increase its involvement in global trade agreements?",
+    "q11": "Should the EU introduce more measures to protect workers' rights?",
+    "q12": "Should the EU standardize education systems across member states?",
+    "q13": "Should the EU impose sanctions on countries that violate human rights?",
+    "q14": "Should the EU increase its efforts to combat tax evasion?",
+    "q15": "Should the EU provide more support for small and medium-sized enterprises (SMEs)?",
+    "q16": "Should the EU establish a universal basic income for all citizens?",
+    "q17": "Should the EU take stronger action to protect biodiversity?",
+    "q18": "Should the EU increase its cybersecurity measures?",
+    "q19": "Should the EU reform the Common Agricultural Policy to make it more sustainable?",
+    "q20": "Should the EU promote multilingualism by providing more language learning resources?"
 }
   

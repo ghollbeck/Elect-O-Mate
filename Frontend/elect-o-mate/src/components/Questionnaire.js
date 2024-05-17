@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import QuestionCard from './QuestionCard';
 import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
+import { useTranslation } from 'react-i18next';
 
 const Questionnaire = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
@@ -105,6 +106,7 @@ const Questionnaire = () => {
     scrollbarWidth: 'none', // Firefox
     msOverflowStyle: 'none', // IE and Edge
   };
+  const { t } = useTranslation();
 
   return (
     <div className="flex-grow bg-red my-20 h-auto py-20 flex items-center justify-center relative w-full">
@@ -115,7 +117,7 @@ const Questionnaire = () => {
         <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-purple-950 to-transparent z-20 pointer-events-none" />
 
         {currentQuestionIndex !== 1 && (
-          <button 
+          <button z
             onClick={handleLeft} 
             className="absolute left-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +142,8 @@ const Questionnaire = () => {
           {questions.map((question, index) => (
             <div key={index} className={`shrink-0 w-120 h-80 transition-opacity duration-800 snap-center ${index === currentQuestionIndex ? 'transform scale-110 opacity-100' : 'transform scale-100 opacity-50'}`}>
               <QuestionCard
-                question={question}
+              question={{ ...question, text: t(question.text) }} // Translating the text property
+         
                 onAnswer={handleAnswer}
               />
             </div>
