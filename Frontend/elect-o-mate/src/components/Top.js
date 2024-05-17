@@ -10,7 +10,7 @@ const Top = ({ onButtonClick }) => {
       {t('subheading')}
       </p>
       <button 
-      className="m-8 py-4 px-9 pt-2 bg-gradient-to-r from-green-500  to-blue-500 text-white rounded-full font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 hover:scale-110 text-xl"
+      className="m-8 py-4 px-9 bg-gradient-to-r from-green-500  to-blue-500 text-white rounded-full font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 hover:scale-110 text-xl"
         onClick={onButtonClick}
       >
         {t('start_button')}

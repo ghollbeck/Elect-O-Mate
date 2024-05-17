@@ -44,6 +44,7 @@ const Questionnaire = () => {
         left: scrollPosition,
         behavior: 'smooth'
       });
+
       setCurrentQuestionIndex(index);
     }
   }, 200);
@@ -106,7 +107,7 @@ const Questionnaire = () => {
     <div className="flex-grow bg-red my-20 h-auto py-20 flex items-center justify-center relative w-full">
       <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-slate-950 to-purple-950 transform skew-y-3" style={{ height: '110%' }} />
       
-      <div className="relative w-full overflow-x-hidden">
+      <div className="relative w-full overflow-x-hidden ">
         <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-slate-950 to-transparent z-20 pointer-events-none" />
         <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-purple-950 to-transparent z-20 pointer-events-none" />
 
@@ -131,7 +132,7 @@ const Questionnaire = () => {
         )}
 
 
-        <div ref={containerRef} className="w-full px-0 py-20 flex space-x overflow-x-scroll relative snap-x snap-mandatory"
+        <div ref={containerRef} className="w-full px-0 py-20 flex space-x overflow-x-auto height-100 relative snap-x snap-mandatory"
              style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch' }}>
           {questions.map((question, index) => (
             <div key={index} className={`shrink-0 transition-opacity duration-800 snap-center ${index === currentQuestionIndex ? 'transform scale-125 opacity-100 transition-transform duration-200' : 'transform scale-100 opacity-50 transition-transform duration-200'}`}>
