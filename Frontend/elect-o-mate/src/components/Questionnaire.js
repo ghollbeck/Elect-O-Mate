@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import QuestionCard from './QuestionCard';
 import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
@@ -15,37 +15,31 @@ const Questionnaire = () => {
     setQuestions(questionsData);
   }, []);
 
-  useEffect(() => {
+  useEffect(throttle(() => {
     if (containerRef.current && containerRef.current.firstChild) {
-      const cardWidth = containerRef.current.firstChild.offsetWidth;
+      const cardWidth = 600;
       const scrollPosition = cardWidth * currentQuestionIndex - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
       containerRef.current.scrollTo({
         left: scrollPosition,
         behavior: 'smooth'
       });
     }
-  }, [currentQuestionIndex]);
+  }, [currentQuestionIndex]), 1000);
 
   const handleAnswer = (answer) => {
     setAnswers([...answers, { question: questions[currentQuestionIndex], answer }]);
     scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
   };
-
-  const scrollToIndex = (index) => {
+  
+  
+  const scrollToIndex = throttle((index) => {
     if (containerRef.current && containerRef.current.firstChild) {
+      console.log("in if " + index)
       isButtonScroll.current = true;  // Indicate button click
       const cardWidth = containerRef.current.firstChild.offsetWidth;
       let scrollPosition;
   
-      if (index === 0) { // Skip the first card
-        scrollPosition = 0;
-      } else if (index === questions.length - 2) { // Second last card
-        scrollPosition = cardWidth * (index + 1) - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
-      } else if (index === questions.length - 1) { // Last card
-        scrollPosition = containerRef.current.scrollWidth - containerRef.current.offsetWidth;
-      } else {
-        scrollPosition = cardWidth * index - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
-      }
+      scrollPosition = cardWidth * index - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
   
       containerRef.current.scrollTo({
         left: scrollPosition,
@@ -53,16 +47,18 @@ const Questionnaire = () => {
       });
       setCurrentQuestionIndex(index);
     }
-  };
+    console.log("out if " + index)
+  }, 1000);
+
   
   
-  const handleLeft = () => {
+  const handleLeft = throttle(() => {
     scrollToIndex(Math.max(currentQuestionIndex - 1, 1)); // Skip the first card
-  };
+  }, 1000);
   
-  const handleRight = () => {
+  const handleRight = throttle(() => {
     scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 2)); // Skip the last card
-  };
+  }, 1000);
   
 
   useEffect(() => {
@@ -89,7 +85,7 @@ const Questionnaire = () => {
 
         setCurrentQuestionIndex(closestIndex);
       }
-    }, 100);
+    }, 1000);
 
     const container = containerRef.current;
     if (container) {
@@ -137,10 +133,10 @@ const Questionnaire = () => {
         )}
 
 
-        <div ref={containerRef} className="w-full px-4 py-20 flex space-x-4 overflow-x-scroll relative snap-x snap-mandatory"
+        <div ref={containerRef} className="w-full px-0 py-20 flex space-x overflow-x-scroll relative snap-x snap-mandatory"
              style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch' }}>
           {questions.map((question, index) => (
-            <div key={index} className={`shrink-0 w-120 h-80 transition-opacity duration-800 snap-center ${index === currentQuestionIndex ? 'transform scale-110 opacity-100' : 'transform scale-100 opacity-50'}`}>
+            <div key={index} className={`shrink-0 transition-opacity duration-800 snap-center ${index === currentQuestionIndex ? 'transform scale-125 opacity-100' : 'transform scale-100 opacity-50'}`}>
               <QuestionCard
               question={{ ...question, text: t(question.text) }} // Translating the text property
          
