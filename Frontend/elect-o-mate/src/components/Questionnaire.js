@@ -17,14 +17,14 @@ const Questionnaire = () => {
 
   useEffect(throttle(() => {
     if (containerRef.current && containerRef.current.firstChild) {
-      const cardWidth = 600;
+      const cardWidth = containerRef.current.firstChild.offsetWidth; // This is the cardwidth PLUS Marging/Padding
       const scrollPosition = cardWidth * currentQuestionIndex - (containerRef.current.offsetWidth / 2 - cardWidth / 2);
       containerRef.current.scrollTo({
         left: scrollPosition,
         behavior: 'smooth'
       });
     }
-  }, [currentQuestionIndex]), 1000);
+  }, [currentQuestionIndex]), 200);
 
   const handleAnswer = (answer) => {
     setAnswers([...answers, { question: questions[currentQuestionIndex], answer }]);
@@ -48,17 +48,17 @@ const Questionnaire = () => {
       setCurrentQuestionIndex(index);
     }
     console.log("out if " + index)
-  }, 1000);
+  }, 200);
 
   
   
   const handleLeft = throttle(() => {
     scrollToIndex(Math.max(currentQuestionIndex - 1, 1)); // Skip the first card
-  }, 1000);
+  }, 200);
   
   const handleRight = throttle(() => {
     scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 2)); // Skip the last card
-  }, 1000);
+  }, 200);
   
 
   useEffect(() => {
@@ -85,7 +85,7 @@ const Questionnaire = () => {
 
         setCurrentQuestionIndex(closestIndex);
       }
-    }, 1000);
+    }, 200);
 
     const container = containerRef.current;
     if (container) {
