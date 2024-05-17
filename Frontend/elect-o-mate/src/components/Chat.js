@@ -111,7 +111,7 @@ const Chat = () => {
 
   useEffect(() => {
     setMessages([{ text: t('bot_greeting'), isUser: false }]);
-  }, []); // Empty dependency array ensures it only runs once on mount
+  }, [t]); // Empty dependency array ensures it only runs once on mount
 
   const handleSendMessage = async (text) => {
     // Add user's message to chat
