@@ -17,7 +17,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
   useEffect(() => {
     if (buttonRef.current) {
       const buttonWidth = buttonRef.current.offsetWidth;
-      setTextareaWidth(`calc(100% - ${buttonWidth}px)`);
+      setTextareaWidth(`calc(100% - ${buttonWidth + 1}px)`);
     }
   }, [buttonRef.current?.offsetWidth]);
 
@@ -78,12 +78,11 @@ const TextInput = ({ onSendMessage, isSending }) => {
           onChange={handleChange}
           autoComplete="off"
           rows="1"
-          className="bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow-xl bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           style={{
             position: 'absolute',
             bottom: 0,
-            borderBottomLeftRadius: '10px',
-            borderBottomRightRadius: '10px',
+            borderRadius: '10px',
             width: textareaWidth,
           }} // Position the textarea at the bottom
         />
@@ -94,10 +93,11 @@ const TextInput = ({ onSendMessage, isSending }) => {
           className="py-4 px-5 pt-2 bg-gradient-to-r from-green-500 to-blue-500 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
           variant="contained"
           style={{ color: 'black', position: 'absolute', right: 0, bottom: 1 }}
-          endIcon={isSending ? <CircularProgress size={12} sx={{ color: 'black' }} /> : <SendIcon sx={{ color: 'black' }} />}
+          endIcon={isSending ? <CircularProgress size={23} sx={{ color: 'black' }} /> : <SendIcon style={{ fontSize: 22, color: 'black' }} />}
         >
-          {isSending ? t('send_button_sending') : t('send_button_send')}
+          {/* {isSending ? t('send_button_sending') : t('send_button_send')} */}
         </Button>
+
       </form>
     </div>
   );
@@ -163,7 +163,7 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-orange-50 to-orange-100 overflow-y-auto border-none shadow-xl border-gray-300 rounded-t-lg flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderTopRadius: '10px'}} ref={chatWindowRef}>
+    <div className="bg-gradient-to-r from-orange-50 to-orange-100 overflow-y-auto border-none shadow-xl border-gray-300 flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderRadius: '10px'}} ref={chatWindowRef}>
       <div className="p-4">
         <div className="mb-2 flex-grow">
           {messages.map((message, index) => (
