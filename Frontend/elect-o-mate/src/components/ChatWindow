@@ -1,0 +1,45 @@
+import React, { useRef, useEffect } from 'react';
+
+const ChatWindow = ({ messages, isSending, onSendMessage }) => {
+  const chatWindowRef = useRef(null);
+
+  useEffect(() => {
+    if (chatWindowRef.current) {
+      chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  return (
+    <div className="bg-white overflow-y-auto border shadow-xl border-gray-300 rounded-lg flex flex-col justify-between" style={{ height: '700px' }} ref={chatWindowRef}>
+      <div className="p-4">
+        <div className="mb-2 flex-grow">
+          {messages.map((message, index) => (
+            <div key={index} className={`mb-2 ${message.isUser ? 'text-right' : 'text-left'}`}>
+              {message.isUser ? (
+                <div className="flex flex-col items-end overflow-y-auto">
+                  <p className="font-bold text-gray-700">You</p>
+                  <p className="text-gray-600 bg-gray-200 p-2 rounded-md">{message.text}</p>
+                </div>
+              ) : (
+                <div className="flex flex-col items-start">
+                  <p className={`font-bold ${message.isError ? 'text-red-700' : 'text-blue-700'}`}>
+                    <span className="inline-block align-middle rounded-full overflow-hidden m-2">
+                      <img src={chatbot} alt="Bot Profile" style={{ height: '1.9em', width: '1.9em' }} />
+                    </span>
+                    {message.isError ? 'Error' : 'Elect-O-Mate'}
+                  </p>
+                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md">{message.text} </p>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="w-full">
+        <TextInput onSendMessage={onSendMessage} isSending={isSending} />
+      </div>
+    </div>
+  );
+};
+
+export default ChatWindow;

@@ -8,8 +8,18 @@ import { useTranslation } from 'react-i18next';
 
 
 const TextInput = ({ onSendMessage, isSending }) => {
+  const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
   const textareaRef = useRef(null);
+  const buttonRef = useRef(null);
+  const [textareaWidth, setTextareaWidth] = useState('100%');
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      const buttonWidth = buttonRef.current.offsetWidth;
+      setTextareaWidth(`calc(100% - ${buttonWidth}px)`);
+    }
+  }, [buttonRef.current?.offsetWidth]);
 
   const handleChange = (event) => {
     setInputValue(event.target.value);
@@ -55,39 +65,44 @@ const TextInput = ({ onSendMessage, isSending }) => {
     }
   };
   
-  const { t } = useTranslation();
 
   return (
-    
-    <div className="mt-9 rounded- shadow-full relative border-none ">
-      <form onSubmit={handleSubmit} className="flex items-center w-full ">
-        
-            <textarea
-              ref={textareaRef}
-              id="input-field"
-              placeholder={t('chat_placeholder')}
-              value={inputValue}
-              onKeyDown={handleKeyDown}
-              onChange={handleChange}
-              autoComplete='off'
-              rows='1'
-              className="bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              style={{ position: 'absolute', bottom: 0, borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px'}} // Position the textarea at the bottom
-            />
-            <Button
-              type="submit"
-              disabled={isSending}
-              className="py-4 px-5 pt-2 bg-gradient-to-r from-green-500 to-blue-500 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
-              variant="contained"
-              style={{ color: "black", position: 'absolute', right: 0, bottom: 1 }}
-              endIcon={isSending ? <CircularProgress size={12} sx={{ color: "black" }} /> : <SendIcon sx={{ color: "black" }} />}
-            >
-              {isSending ? t('send_button_sending') : t('send_button_send')}
-            </Button>
+    <div className="mt-9 rounded- shadow-full relative border-none">
+      <form onSubmit={handleSubmit} className="flex items-center w-full relative">
+        <textarea
+          ref={textareaRef}
+          id="input-field"
+          placeholder={t('chat_placeholder')}
+          value={inputValue}
+          onKeyDown={handleKeyDown}
+          onChange={handleChange}
+          autoComplete="off"
+          rows="1"
+          className="bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            borderBottomLeftRadius: '10px',
+            borderBottomRightRadius: '10px',
+            width: textareaWidth,
+          }} // Position the textarea at the bottom
+        />
+        <Button
+          ref={buttonRef}
+          type="submit"
+          disabled={isSending}
+          className="py-4 px-5 pt-2 bg-gradient-to-r from-green-500 to-blue-500 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
+          variant="contained"
+          style={{ color: 'black', position: 'absolute', right: 0, bottom: 1 }}
+          endIcon={isSending ? <CircularProgress size={12} sx={{ color: 'black' }} /> : <SendIcon sx={{ color: 'black' }} />}
+        >
+          {isSending ? t('send_button_sending') : t('send_button_send')}
+        </Button>
       </form>
     </div>
   );
 };
+
 
 
 const Chat = () => {
