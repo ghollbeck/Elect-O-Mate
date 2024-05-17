@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import QuestionCard from './QuestionCard';
 import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
@@ -34,7 +34,6 @@ const Questionnaire = () => {
   
   const scrollToIndex = throttle((index) => {
     if (containerRef.current && containerRef.current.firstChild) {
-      console.log("in if " + index)
       isButtonScroll.current = true;  // Indicate button click
       const cardWidth = containerRef.current.firstChild.offsetWidth;
       let scrollPosition;
@@ -47,7 +46,6 @@ const Questionnaire = () => {
       });
       setCurrentQuestionIndex(index);
     }
-    console.log("out if " + index)
   }, 200);
 
   
