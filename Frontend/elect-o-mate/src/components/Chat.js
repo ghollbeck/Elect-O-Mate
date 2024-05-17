@@ -17,7 +17,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
   useEffect(() => {
     if (buttonRef.current) {
       const buttonWidth = buttonRef.current.offsetWidth;
-      setTextareaWidth(`calc(100% - ${buttonWidth + 1}px)`);
+      setTextareaWidth(`calc(100% - ${buttonWidth + 2}px)`);
     }
   }, [buttonRef.current?.offsetWidth]);
 
@@ -68,7 +68,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
 
   return (
     <div className="mt-9 rounded- shadow-full relative border-none">
-      <form onSubmit={handleSubmit} className="flex items-center w-full relative">
+      <form onSubmit={handleSubmit} className="flex items-center w-full relative pb-[1px]">
         <textarea
           ref={textareaRef}
           id="input-field"
@@ -78,19 +78,18 @@ const TextInput = ({ onSendMessage, isSending }) => {
           onChange={handleChange}
           autoComplete="off"
           rows="1"
-          className="shadow-xl bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          className="shadow-xl bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-md box-border"
           style={{
             position: 'absolute',
             bottom: 0,
-            borderRadius: '10px',
             width: textareaWidth,
-          }} // Position the textarea at the bottom
+          }} 
         />
         <Button
           ref={buttonRef}
           type="submit"
           disabled={isSending}
-          className="py-4 px-5 pt-2 bg-gradient-to-r from-green-500 to-blue-500 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
+          className="bg-gradient-to-r from-green-500 to-blue-500 scale-105 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl"
           variant="contained"
           style={{ color: 'black', position: 'absolute', right: 0, bottom: 1 }}
           endIcon={isSending ? <CircularProgress size={23} sx={{ color: 'black' }} /> : <SendIcon style={{ fontSize: 22, color: 'black' }} />}
