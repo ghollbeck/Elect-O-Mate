@@ -9,13 +9,13 @@ function LanguageSelector({ changeLanguage }) {
   return (
     <div className="m-2 relative">
       <button
-        className="flex items-center px-4 py-4 rounded-full bg-blue-500 text-white hover:bg-blue-700"
+        className="flex items-center px-4 py-4 rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:scale-110 transition-transform duration-200"
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
         <LanguageIcon className="w-6 h-6" />
       </button>
       {dropdownVisible && (
-        <div className="absolute mt-2 w-32 bg-white border-none bg-transparent rounded shadow-lg z-20">
+        <div className="absolute mt-2 w-32 bg-white border-none bg-transparent rounded shadow-lg z-20 max-h-96 overflow-y-auto">
           {options.map((option) => (
             <button
               key={option.value}
