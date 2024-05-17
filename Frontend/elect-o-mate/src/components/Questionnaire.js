@@ -136,7 +136,7 @@ const Questionnaire = () => {
         <div ref={containerRef} className="w-full px-0 py-20 flex space-x overflow-x-scroll relative snap-x snap-mandatory"
              style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch' }}>
           {questions.map((question, index) => (
-            <div key={index} className={`shrink-0 transition-opacity duration-800 snap-center ${index === currentQuestionIndex ? 'transform scale-125 opacity-100' : 'transform scale-100 opacity-50'}`}>
+            <div key={index} className={`shrink-0 transition-opacity duration-800 snap-center ${index === currentQuestionIndex ? 'transform scale-125 opacity-100 transition-transform duration-200' : 'transform scale-100 opacity-50 transition-transform duration-200'}`}>
               <QuestionCard
               question={{ ...question, text: t(question.text) }} // Translating the text property
          
