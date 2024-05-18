@@ -90,17 +90,17 @@ function App() {
         </div>
       </div>
 
-      <div className='relative mt-10 mb-20'>
+      <div className='relative mt-10'>
         <div
-          className='absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform skew-y-3'
+          className='absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform skew-y-3 h-100'
           style={{ height: '110%' }}
         />
-        <div className='container mx-auto px- relative z-10 w-full md:w-1/2'>
+        <div className='container mx-auto relative z-10 w-full md:w-1/2'>
           <OpenSource />
         </div>
       </div>
 
-      <div className='mt-5 w-full bg-gradient-to-r from-orange-50 via-orange-100 to-orange-300'>
+      <div className='w-full'>
         <Footer />
       </div>
     </div>
