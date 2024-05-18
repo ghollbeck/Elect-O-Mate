@@ -122,8 +122,10 @@ const Questionnaire = () => {
       />
 
       <div className='relative w-full overflow-x-hidden'>
-        <div className='absolute left-0 top-0 h-full z-20 w-60 pointer-events-none bg-gradient-to-r from-[#3D6964] to-[#00000000]' />
-        <div className='absolute right-0 top-0 h-full w-60 z-20 pointer-events-none bg-gradient-to-r from-[#00000000] via to-[#FDFDFDCF]' />
+        {/* bg-gradient-to-r from-[#3D6964] to-[#00000000] */}
+        <div className='absolute left-0 top-0 h-full z-20 w-60 pointer-events-none' />
+        {/* bg-gradient-to-r from-[#00000000] via to-[#FDFDFDCF] */}
+        <div className='absolute right-0 top-0 h-full w-60 z-20 pointer-events-none' />
 
         {currentQuestionIndex !== 1 && (
           <button
@@ -185,8 +187,13 @@ const Questionnaire = () => {
               }`}
             >
               <QuestionCard
+                length={questions.length}
                 index={index}
-                question={{ ...question, text: t(question.text) }} // Translating the text property
+                question={{
+                  ...question,
+                  text: t(question.text),
+                  title: t(question.title),
+                }} // Translating the text property
                 answer={answers[index]}
                 onAnswer={handleAnswer}
               />
