@@ -14,6 +14,10 @@ const Questionnaire = () => {
     setQuestions(questionsData);
   }, []);
 
+  useEffect(() => {
+    scrollToIndex(1); // Scroll to index 1 when component mounts
+  }, []); // Empty dependency array means it only runs once, on mount
+
   useEffect(
     throttle(() => {
       if (containerRef.current && containerRef.current.firstChild) {
