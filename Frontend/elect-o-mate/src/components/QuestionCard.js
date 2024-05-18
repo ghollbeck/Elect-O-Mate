@@ -58,7 +58,7 @@ const QuestionCard = ({ length, index, question, answer, onAnswer }) => {
       </div>
       <button
         className='mt-4 text-gray-400 hover:text-gray-200'
-        onClick={() => onAnswer(answer)}
+        onClick={() => onAnswer(-2)}
       >
         {t('skip_button')}
       </button>
