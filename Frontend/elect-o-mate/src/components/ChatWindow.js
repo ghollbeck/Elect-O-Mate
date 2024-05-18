@@ -1,11 +1,11 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import chatbot from './../pictures/Bot.png'; // Import this icon to @mui
 import { useTranslation } from 'react-i18next';
 
-const ChatWindow = ({ messages, onSendMessage, isSending }) => {
+const ChatWindow = ({messages}) => {
   const { t } = useTranslation();
   const chatWindowRef = useRef(null);
-
+  
   useEffect(() => {
     if (chatWindowRef.current) {
       chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;

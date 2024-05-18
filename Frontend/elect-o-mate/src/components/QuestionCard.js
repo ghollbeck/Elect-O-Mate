@@ -1,40 +1,18 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import TextInputCard from './TextInputCard';
-import axios from 'axios';
+import TextInput from './TextInput';
 
-const QuestionCard = ({ length, index, question, answer, onAnswer }) => {
+const QuestionCard = ({
+  length,
+  index,
+  question,
+  answer,
+  onAnswer,
+  isSending,
+  onSendMessage,
+  scrollToChat,
+}) => {
   const { t } = useTranslation();
-  const [messages, setMessages] = useState([]);
-
-  const handleSendMessage = async (text) => {
-    // Add user's message to chat
-    setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
-
-    try {
-      // Perform API request
-      const response = await axios.post(
-        'https://backend.bruol.me/openai/invoke',
-        { input: text }
-      );
-
-      // Add API response to chat
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        { text: response.data.output, isUser: false },
-      ]);
-    } catch (error) {
-      // Add error message to chat
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        {
-          text: 'An error occurred. Please try again.',
-          isUser: false,
-          isError: true,
-        },
-      ]);
-    }
-  };
 
   // If question is empty, render an empty card
   if (!question || !question.text) {
@@ -96,7 +74,7 @@ const QuestionCard = ({ length, index, question, answer, onAnswer }) => {
       </div>
 
       <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0'>
-        <TextInputCard onSendMessage={handleSendMessage} isSending={false} />
+        <TextInput onSendMessage={onSendMessage} isSending={isSending} scrollToChat={scrollToChat}/>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
 
-const Questionnaire = () => {
+const Questionnaire = ({ onSendMessage, isSending, scrollToChat }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [questions, setQuestions] = useState([]);
   const containerRef = useRef(null);
@@ -204,6 +204,9 @@ const Questionnaire = () => {
                 }} // Translating the text property
                 answer={answers[index]}
                 onAnswer={handleAnswer}
+                onSendMessage={onSendMessage}
+                isSending={isSending}
+                scrollToChat={scrollToChat}
               />
             </div>
           ))}

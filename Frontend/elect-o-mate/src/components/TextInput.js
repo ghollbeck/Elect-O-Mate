@@ -4,7 +4,7 @@ import SendIcon from '@mui/icons-material/Send';
 import CircularProgress from '@mui/material/CircularProgress';
 import { useTranslation } from 'react-i18next';
 
-const TextInput = ({ onSendMessage, isSending }) => {
+const TextInput = ({ onSendMessage, isSending, scrollToChat }) => {
   const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
   const textareaRef = useRef(null);
@@ -61,6 +61,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
       onSendMessage(inputValue);
       setInputValue('');
       textarea.style.height = 'auto';
+      scrollToChat();
     }
   };
 
@@ -96,6 +97,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
             backgroundColor: 'black', // Set button background color to black
             color: 'white', // Set button text color to white
             position: 'absolute',
+
             right: 0,
             bottom: 1,
             borderColor: 'white', // Set border color to white
