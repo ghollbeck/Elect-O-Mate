@@ -76,7 +76,7 @@ const Questionnaire = () => {
         const container = containerRef.current;
         const containerCenter = container.offsetWidth / 2;
         const cards = Array.from(container.children);
-        let closestIndex = 0;
+        let closestIndex = 1;
         let closestDistance = Infinity;
 
         cards.forEach((card, index) => {
@@ -91,6 +91,12 @@ const Questionnaire = () => {
         });
 
         setCurrentQuestionIndex(closestIndex);
+        if (closestIndex <= 1) {
+          scrollToIndex(1);
+        }
+        if (closestIndex >= questions.length - 2) {
+          scrollToIndex(questions.length - 2);
+        }
       }
     }, 200);
 
@@ -127,7 +133,7 @@ const Questionnaire = () => {
         {/* bg-gradient-to-r from-[#00000000] via to-[#FDFDFDCF] */}
         <div className='absolute right-0 top-0 h-full w-60 z-20 pointer-events-none' />
 
-        {currentQuestionIndex !== 1 && (
+        {currentQuestionIndex > 1 && (
           <button
             z
             onClick={handleLeft}
