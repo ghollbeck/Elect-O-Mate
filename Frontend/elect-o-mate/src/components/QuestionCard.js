@@ -52,50 +52,47 @@ const QuestionCard = ({ length, index, question, answer, onAnswer }) => {
         {index}/{length - 2} {question.title}
       </h2>
 
-        <h2 className='text-sm md:text-lg font-semibold mb-4 text-center overflow-hidden w-5/6 break-words'>
-          {question.text}
-        </h2>
-
-        <div className='flex space-x-4'>
-          <button
-            className={`border w-full md:w-40 h-10 ${
-              answer === 1
-                ? 'text-black bg-blue-100'
-                : 'hover:bg-blue-100 hover:text-black'
-            } font-bold py-1 md:py-2 px-2 md:px-4 rounded`}
-            onClick={() => onAnswer(1)}
-          >
-            {t('agree_button')}
-          </button>
-          <button
-            className={`border w-full md:w-40 h-10 ${
-              answer === 0
-                ? 'bg-blue-100 text-black'
-                : 'hover:bg-blue-100 hover:text-black'
-            }  font-bold py-1 md:py-2 px-2 md:px-4 rounded`}
-            onClick={() => onAnswer(0)}
-          >
-            {t('neutral_button')}
-          </button>
-          <button
-            className={`border w-full md:w-40 h-10 ${
-              answer === -1
-                ? 'bg-blue-100 text-black'
-                : 'hover:bg-blue-100 hover:text-black'
-            }  font-bold py-1 md:py-2 px-2 md:px-4 rounded`}
-            onClick={() => onAnswer(-1)}
-          >
-            {t('disagree_button')}
-          </button>
-        </div>
+      <h2 className='text-lg font-semibold mb-4 text-center overflow-hidden w-5/6 break-words'>
+        {question.text}
+      </h2>
+      <div className='flex space-x-4'>
         <button
-          className='mt-4 text-gray-400 hover:text-gray-200'
-          onClick={() => onAnswer(-2)}
+          className={`border w-40 h-10 ${
+            answer === 1
+              ? 'text-black bg-blue-100'
+              : 'hover:bg-blue-100 hover:text-black'
+          } font-bold py-2 px-4 rounded`}
+          onClick={() => onAnswer(1)}
         >
-          {t('skip_button')}
+          {t('agree_button')}
+        </button>
+        <button
+          className={`border w-40 h-10 ${
+            answer === 0
+              ? 'bg-blue-100 text-black'
+              : 'hover:bg-blue-100 hover:text-black'
+          }  font-bold py-2 px-4 rounded`}
+          onClick={() => onAnswer(0)}
+        >
+          {t('neutral_button')}
+        </button>
+        <button
+          className={`border w-40 h-10 ${
+            answer === -1
+              ? 'bg-blue-100 text-black'
+              : 'hover:bg-blue-100 hover:text-black'
+          }  font-bold py-2 px-4 rounded`}
+          onClick={() => onAnswer(-1)}
+        >
+          {t('disagree_button')}
         </button>
       </div>
-      <TextInput onSendMessage={handleSendMessage} isSending={false} />
+      <button
+        className='mt-4 text-gray-400 hover:text-gray-200'
+        onClick={() => onAnswer(answer)}
+      >
+        {t('skip_button')}
+      </button>
     </div>
   );
 };
