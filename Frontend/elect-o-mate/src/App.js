@@ -9,6 +9,7 @@ import Spline from './components/Spline';
 import Questionnaire from './components/Questionnaire';
 import LanguageSelector from './components/LanguageSelector';
 import './i18n';
+import Logo from './pictures/protologo.png';
 
 function App() {
   const targetRef = useRef(null);
@@ -55,13 +56,13 @@ function App() {
   }, [i18n]);
 
   return (
-    <div className="flex flex-col relative overflow-hidden">
-      <div className="absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] bg-gradient-to-r from-orange-200 to-orange-50  rounded-full z-0"/>
-
+    <div className="flex flex-col relative overflow-hidden" style={{backgroundImage: 'radial-gradient(#474747, #030303)',}}>
+      <div className="absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] rounded-full z-0" style={{backgroundImage: 'linear-gradient(to top right, rgba(248, 229, 127, 0.8), rgba(222, 68, 8, 0.5))',}}/>
+      
       <div className=''>
         <LanguageSelector changeLanguage={changeLanguage}/>
       </div>
-
+      {/* <img src={Logo} alt="Logo" className='z-0 size-[600px] absolute top-[100px] left-[100px]'/> */}
       <div className="flex flex-col items-center pt-20 pb-10 w-full  z-10">
         <div className='w-1/2 z-10 pt-25'>
           <Top onButtonClick={handleButtonClick} />

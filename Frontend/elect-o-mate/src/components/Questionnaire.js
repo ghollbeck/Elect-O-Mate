@@ -6,11 +6,10 @@ import { useTranslation } from 'react-i18next';
 
 const Questionnaire = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
-  const [answers, setAnswers] = useState([]);
   const [questions, setQuestions] = useState([]);
   const containerRef = useRef(null);
   const isButtonScroll = useRef(false);  // Track button clicks
-
+  const [answers, setAnswers] = useState(Array(questions.length).fill(null));
   useEffect(() => {
     setQuestions(questionsData);
   }, []);
@@ -27,7 +26,11 @@ const Questionnaire = () => {
   }, [currentQuestionIndex]), 200);
 
   const handleAnswer = (answer) => {
-    setAnswers([...answers, { question: questions[currentQuestionIndex], answer }]);
+    setAnswers(prevAnswers => {
+      const updatedAnswers = [...prevAnswers];
+      updatedAnswers[currentQuestionIndex] = answer;
+      return updatedAnswers;
+  });
     scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
   };
   
@@ -63,28 +66,28 @@ const Questionnaire = () => {
   useEffect(() => {
     const handleScroll = throttle(() => {
       if (isButtonScroll.current) {
-        isButtonScroll.current = false;  // Reset button scroll flag
-        return;
+          isButtonScroll.current = false;  // Reset button scroll flag
+          return;
       }
       if (containerRef.current) {
-        const container = containerRef.current;
-        const containerCenter = container.offsetWidth / 2;
-        const cards = Array.from(container.children);
-        let closestIndex = 0;
-        let closestDistance = Infinity;
+          const container = containerRef.current;
+          const containerCenter = container.offsetWidth / 2;
+          const cards = Array.from(container.children);
+          let closestIndex = 0;
+          let closestDistance = Infinity;
 
-        cards.forEach((card, index) => {
-          const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-          const distance = Math.abs(cardCenter - container.scrollLeft - containerCenter);
-          if (distance < closestDistance) {
-            closestDistance = distance;
-            closestIndex = index;
-          }
-        });
+          cards.forEach((card, index) => {
+              const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+              const distance = Math.abs(cardCenter - container.scrollLeft - containerCenter);
+              if (distance < closestDistance) {
+                  closestDistance = distance;
+                  closestIndex = index;
+              }
+          });
 
-        setCurrentQuestionIndex(closestIndex);
+          setCurrentQuestionIndex(closestIndex);
       }
-    }, 200);
+  }, 200);  
 
     const container = containerRef.current;
     if (container) {
@@ -105,11 +108,12 @@ const Questionnaire = () => {
 
   return (
     <div className="flex-grow bg-red my-20 h-auto py-20 flex items-center justify-center relative w-full">
-      <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-slate-950 to-purple-950 transform skew-y-3" style={{ height: '110%' }} />
+      <div className="absolute top-0 left-0 w-full transform skew-y-3" style={{ height: '110%' , backgroundImage: 'linear-gradient(to right, #3D6964, #FDFFFD)',}} />
       
       <div className="relative w-full overflow-x-hidden ">
-        <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-slate-950 to-transparent z-20 pointer-events-none" />
-        <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-purple-950 to-transparent z-20 pointer-events-none" />
+      <div className="absolute left-0 top-0 h-full z-20 w-60 pointer-events-none bg-gradient-to-r from-[#3D6964] to-[#00000000]" />
+<div className="absolute right-0 top-0 h-full w-60 z-20 pointer-events-none bg-gradient-to-r from-[#00000000] via to-[#FDFDFDCF]"/>
+
 
         {currentQuestionIndex !== 1 && (
           <button z
@@ -132,18 +136,20 @@ const Questionnaire = () => {
         )}
 
 
-        <div ref={containerRef} className="w-full px-0 py-20 flex space-x overflow-x-auto height-100 relative snap-x snap-mandatory"
-             style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch' }}>
-          {questions.map((question, index) => (
-            <div key={index} className={`shrink-0 transition-opacity duration-800 snap-center ${index === currentQuestionIndex ? 'transform scale-125 opacity-100 transition-transform duration-200' : 'transform scale-100 opacity-50 transition-transform duration-200'}`}>
-              <QuestionCard
-              question={{ ...question, text: t(question.text) }} // Translating the text property
-         
-                onAnswer={handleAnswer}
-              />
-            </div>
-          ))}
-        </div>
+<div ref={containerRef} className="w-full px-0 py-20 flex space-x overflow-x-auto height-100 relative snap-x snap-mandatory"
+     style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch' }}>
+  {questions.map((question, index) => (
+    <div key={index} className={`shrink-0 transition-opacity duration-800 snap-center relative ${index === currentQuestionIndex ? 'transform scale-125 opacity-100 z-10 transition-transform duration-200' : 'transform scale-100 opacity-100 z-0 transition-transform duration-200'}`}>
+      <QuestionCard
+        index={index}
+        question={{ ...question, text: t(question.text) }} // Translating the text property
+        answer={answers[index]}
+        onAnswer={handleAnswer}
+      />
+    </div>
+  ))}
+</div>
+
       </div>
     </div>
   );

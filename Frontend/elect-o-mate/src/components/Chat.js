@@ -133,7 +133,7 @@ const Chat = () => {
   };
 
   return (
-    <div > {/* Add margin-top */}
+    <div className='mb-[100px]'> {/* Add margin-top */}
       <ChatWindow messages={messages} onSendMessage={handleSendMessage} isSending={isSending} />
       <TextInput onSendMessage={handleSendMessage} isSending={isSending} />
     </div>
@@ -162,15 +162,15 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-orange-50 to-orange-100 overflow-y-auto border-none shadow-xl border-gray-300 flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', borderRadius: '10px'}} ref={chatWindowRef}>
+    <div className="overflow-y-auto border-none shadow-xl border-gray-300 flex flex-col justify-between" style={{ height: '700px', overflowY: 'auto', WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin', scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)', backgroundImage: 'linear-gradient(to top right, rgba(248, 229, 127, 0.5), rgba(222, 68, 8, 0.5))', borderRadius: '10px'}} ref={chatWindowRef}>
       <div className="p-4">
         <div className="mb-2 flex-grow">
           {messages.map((message, index) => (
             <div key={index} className={`mb-2 ${message.isUser ? 'text-right' : 'text-left'}`}>
               {message.isUser ? (
                 <div className="flex flex-col items-end overflow-y-auto">
-                  <p className="font-bold text-gray-700">{t('chat_YOU')}</p>
-                  <p className="text-gray-600 bg-green-200 p-2 rounded-md text-left" style={{ wordBreak: 'break-word' }}>{message.text}</p>
+                  <p className="font-bold text-gray-700" >{t('chat_YOU')}</p>
+                  <p className="text-gray-600 p-2 rounded-md text-left" style={{ wordBreak: 'break-word', background:"#A1BBB8" }}>{message.text}</p>
                 </div>
               ) : (
                 <div className="flex flex-col items-start">
@@ -180,7 +180,7 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
                     </span>
                     {message.isError ? 'Error' : 'Elect-O-Mate'}
                   </p>
-                  <p className="text-gray-600 bg-blue-100 p-2 rounded-md text-left break-words">{convertTextToLinks(message.text)}</p>
+                  <p className="text-gray-600 p-2 rounded-md text-left break-words" style={{background:"#A1BBB8"}}>{convertTextToLinks(message.text)}</p>
                 </div>
               )}
             </div>
