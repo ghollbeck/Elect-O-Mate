@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import TextInput from './TextInput';
 import axios from 'axios';
+import ChatWindow from './ChatWindow';
 
 const QuestionCard = ({ length, index, question, answer, onAnswer }) => {
   const { t } = useTranslation();
@@ -87,12 +88,9 @@ const QuestionCard = ({ length, index, question, answer, onAnswer }) => {
           {t('disagree_button')}
         </button>
       </div>
-      <button
-        className='mt-4 text-gray-400 hover:text-gray-200'
-        onClick={() => onAnswer(answer)}
-      >
-        {t('skip_button')}
-      </button>
+      <div className='mt-20 text-gray-400 hover:text-gray-200 w-full'>
+        <TextInput onSendMessage={handleSendMessage} isSending={false} />
+      </div>
     </div>
   );
 };
