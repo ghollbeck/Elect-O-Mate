@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const Top = ({ onButtonClick }) => {
   const { t } = useTranslation();
   return (
-    <div className='mb-[100px]'>
+    <div className='md:mb-[100px]'>
       <header
         className='text-black md:pt-40 my-10 text-center'
         style={{ color: '#C5D5D3' }}

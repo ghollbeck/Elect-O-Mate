@@ -75,7 +75,7 @@ function App() {
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={handleButtonClick} />
         </div>
-        <div className='w-30px h-30px bg-black'>
+        <div className='w-30px h-30px'>
           <Spline />
         </div>
       </div>
