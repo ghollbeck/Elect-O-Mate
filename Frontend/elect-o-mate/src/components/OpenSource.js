@@ -25,10 +25,10 @@ const OpenSourceSection = () => {
         </ul>
         <p className='mb-6'>{t('open_source_p2')}</p>
         <div className='flex space-x-4'>
-          <button className='bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded'>
+          <button className='bg-black transition duration-300 ease-in-out transform hover:scale-110 text-white font-bold py-2 px-4 rounded'>
             <i className='fab fa-github'></i> GitHub
           </button>
-          <button className='bg-gradient-to-r from-orange-50 to-orange-300 hover:bg-gradient-to-r hover:from-orange-100 hover:to-orange-400 text-black font-bold py-2 px-4 rounded'>
+          <button className='bg-black transition duration-300 ease-in-out transform hover:scale-110 text-white font-bold py-2 px-4 rounded'>
             {t('tech_report')}
           </button>
         </div>

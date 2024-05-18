@@ -35,15 +35,12 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
 
   return (
     <div
-      className='overflow-y-auto border-none shadow-xl border-gray-300 flex flex-col justify-between'
+      className='overflow-y-auto border-none shadow-xl border-gray-300 flex flex-col justify-between bg-white'
       style={{
         height: '700px',
         overflowY: 'auto',
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',
-        scrollbarColor: 'rgba(155, 155, 155, 0.5) rgba(255, 255, 255, 0.5)',
-        backgroundImage:
-          'linear-gradient(to top right, rgba(248, 229, 127, 0.5), rgba(222, 68, 8, 0.5))',
         borderRadius: '10px',
       }}
       ref={chatWindowRef}
@@ -97,4 +94,3 @@ const ChatWindow = ({ messages, onSendMessage, isSending }) => {
   );
 };
 export default ChatWindow;
-

@@ -79,7 +79,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
           onChange={handleChange}
           autoComplete='off'
           rows='1'
-          className='shadow-xl bg-gradient-to-r from-blue-100 to-green-100 resize-none appearance-none border-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-md box-border'
+          className='shadow-xl bg-white resize-none appearance-none border-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-md box-border'
           style={{
             position: 'absolute',
             bottom: 0,
@@ -90,14 +90,23 @@ const TextInput = ({ onSendMessage, isSending }) => {
           ref={buttonRef}
           type='submit'
           disabled={isSending}
-          className='bg-gradient-to-r from-green-500 to-blue-500 scale-105 font-semibold transition duration-300 ease-in-out transform hover:bg-gradient-to-r hover:from-pink-500 hover:to-indigo-500 text-xl'
+          className='bg-red-300 scale-105 font-semibold transition duration-300 ease-in-out transform hover:scale-110 text-xl'
           variant='contained'
-          style={{ color: 'black', position: 'absolute', right: 0, bottom: 1 }}
+          style={{
+            backgroundColor: 'black', // Set button background color to black
+            color: 'white', // Set button text color to white
+            position: 'absolute',
+            right: 0,
+            bottom: 1,
+            borderColor: 'white', // Set border color to white
+            borderWidth: '1px', // Set border width to 2px to make it visible
+            borderStyle: 'solid', // Set border style to solid
+          }}
           endIcon={
             isSending ? (
               <CircularProgress size={23} sx={{ color: 'black' }} />
             ) : (
-              <SendIcon style={{ fontSize: 22, color: 'black' }} />
+              <SendIcon style={{ fontSize: 22, color: 'white' }} />
             )
           }
         >

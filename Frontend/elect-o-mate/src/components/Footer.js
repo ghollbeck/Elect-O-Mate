@@ -24,7 +24,7 @@ export default function App() {
               <div className='ml-2'>
                 <button
                   type='submit'
-                  className='mb-4 px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-gray-800 transition duration-300'
+                  className='mb-4 px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition duration-300 font-bold'
                 >
                   {t('subscribe_to_newsletter')}
                 </button>
