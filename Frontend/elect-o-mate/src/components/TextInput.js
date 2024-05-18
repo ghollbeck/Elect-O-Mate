@@ -4,7 +4,6 @@ import SendIcon from '@mui/icons-material/Send';
 import CircularProgress from '@mui/material/CircularProgress';
 import { useTranslation } from 'react-i18next';
 
-
 const TextInput = ({ onSendMessage, isSending }) => {
   const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
@@ -66,7 +65,7 @@ const TextInput = ({ onSendMessage, isSending }) => {
   };
 
   return (
-    <div className='mt-9 rounded- shadow-full relative border-none'>
+    <div className='mt-9 shadow-full relative border-none'>
       <form
         onSubmit={handleSubmit}
         className='flex items-center w-full relative pb-[1px]'

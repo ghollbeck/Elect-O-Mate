@@ -10,6 +10,7 @@ import Questionnaire from './components/Questionnaire';
 import LanguageSelector from './components/LanguageSelector';
 import './i18n';
 import Logo from './pictures/protologo.png';
+import OrangeCircle from './components/OrangeCircle';
 
 function App() {
   const targetRef = useRef(null);
@@ -63,23 +64,18 @@ function App() {
       className='flex flex-col relative overflow-hidden'
       style={{ backgroundImage: 'radial-gradient(#474747, #030303)' }}
     >
-      <div
-        className='absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] rounded-full z-0'
-        style={{
-          backgroundImage:
-            'linear-gradient(to top right, rgba(248, 229, 127, 0.8), rgba(222, 68, 8, 0.5))',
-        }}
-      />
+      <OrangeCircle />
 
-      <div className=''>
+      <div className='flex justify-end z-20'>
         <LanguageSelector changeLanguage={changeLanguage} />
       </div>
+
       {/* <img src={Logo} alt="Logo" className='z-0 size-[600px] absolute top-[100px] left-[100px]'/> */}
-      <div className='flex flex-col items-center pt-0 md:pt-20 pb-0 md:pb-10 w-full z-10'>
+      <div className='flex flex-col items-center pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={handleButtonClick} />
         </div>
-        <div className='w-30px h-30px'>
+        <div className='w-30px h-30px bg-black'>
           <Spline />
         </div>
       </div>
@@ -99,7 +95,7 @@ function App() {
           className='absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform skew-y-3'
           style={{ height: '110%' }}
         />
-        <div className='container mx-auto px-4 relative z-10 w-full md:w-1/2'>
+        <div className='container mx-auto px- relative z-10 w-full md:w-1/2'>
           <OpenSource />
         </div>
       </div>

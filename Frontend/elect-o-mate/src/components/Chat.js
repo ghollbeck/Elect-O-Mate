@@ -46,7 +46,7 @@ const Chat = () => {
   };
 
   return (
-    <div className='mb-[100px]'>
+    <div className='md:mb-[100px]'>
       {' '}
       {/* Add margin-top */}
       <ChatWindow
