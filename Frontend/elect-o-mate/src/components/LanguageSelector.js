@@ -10,9 +10,9 @@ function LanguageSelector({ changeLanguage }) {
 
   const handleClickOutside = (event) => {
     if (
-      dropdownRef.current && 
-      !dropdownRef.current.contains(event.target) && 
-      buttonRef.current && 
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target) &&
+      buttonRef.current &&
       !buttonRef.current.contains(event.target)
     ) {
       setDropdownVisible(false);
@@ -31,18 +31,18 @@ function LanguageSelector({ changeLanguage }) {
   }, [dropdownVisible]);
 
   return (
-    <div className="m-2 relative">
+    <div className='relative m-2'>
       <button
         ref={buttonRef}
-        className="flex items-center px-4 py-4 rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:scale-110 transition-transform duration-200"
+        className='flex items-center px-4 py-4 rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:scale-110 transition-transform duration-200'
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
-        <LanguageIcon className="w-6 h-6" />
+        <LanguageIcon className='w-6 h-6' />
       </button>
       {dropdownVisible && (
         <div
           ref={dropdownRef}
-          className="absolute mt-2 w-32 bg-white border-none bg-transparent rounded shadow-lg z-20 max-h-96 overflow-y-auto"
+          className='absolute right-0 mt-2 w-32 bg-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto'
         >
           {options.map((option) => (
             <button
@@ -51,7 +51,7 @@ function LanguageSelector({ changeLanguage }) {
                 setDropdownVisible(false);
                 changeLanguage(option.value);
               }}
-              className="flex items-center p-2 w-full text-left hover:bg-gray-200 cursor-pointer"
+              className='flex items-center p-2 w-full text-left hover:bg-gray-200 cursor-pointer'
             >
               <ReactCountryFlag
                 countryCode={option.countryCode}
