@@ -122,7 +122,7 @@ const Questionnaire = () => {
   const { t } = useTranslation();
 
   return (
-    <div className='flex-grow bg-red my-20 h-auto py-20 flex items-center justify-center relative w-full'>
+    <div className='flex-grow bg-red my-20 h-auto md:py-20 flex items-center justify-center relative w-full'>
       <div
         className='absolute top-0 left-0 w-full transform skew-y-3'
         style={{
@@ -132,16 +132,14 @@ const Questionnaire = () => {
       />
 
       <div className='relative w-full overflow-x-hidden'>
-        {/* bg-gradient-to-r from-[#3D6964] to-[#00000000] */}
-        <div className='absolute left-0 top-0 h-full z-20 w-60 pointer-events-none' />
-        {/* bg-gradient-to-r from-[#00000000] via to-[#FDFDFDCF] */}
-        <div className='absolute right-0 top-0 h-full w-60 z-20 pointer-events-none' />
+        {/*        <div className='absolute left-0 top-0 h-full z-20 w-60 pointer-events-none  bg-gradient-to-r from-[#3D6964] to-[#00000000]' />
+        <div className='absolute right-0 top-0 h-full w-60 z-20 pointer-events-none bg-gradient-to-r from-[#00000000] via to-[#FDFDFDCF]' /> */}
 
         {currentQuestionIndex > 1 && (
           <button
             z
             onClick={handleLeft}
-            className='absolute left-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
+            className='hidden md:block absolute left-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
           >
             <svg
               className='w-8 h-8'
@@ -163,7 +161,7 @@ const Questionnaire = () => {
         {currentQuestionIndex < questions.length - 2 && (
           <button
             onClick={handleRight}
-            className='absolute right-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
+            className='hidden md:block absolute right-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
           >
             <svg
               className='w-8 h-8'

@@ -23,10 +23,10 @@ function App() {
     });
   };
 
-    const changeLanguage = (lang) => {
+  const changeLanguage = (lang) => {
     setUserLanguage(lang);
     i18n.changeLanguage(lang);
-  }
+  };
 
   const getUserCountryFromIP = async () => {
     try {
@@ -34,7 +34,10 @@ function App() {
       const data = await response.json();
       return data.country;
     } catch (error) {
-      console.error('Fehler beim Abrufen des Landes aus der IP-Adresse:', error);
+      console.error(
+        'Fehler beim Abrufen des Landes aus der IP-Adresse:',
+        error
+      );
       return null;
     }
   };
@@ -56,15 +59,24 @@ function App() {
   }, [i18n]);
 
   return (
-    <div className="flex flex-col relative overflow-hidden" style={{backgroundImage: 'radial-gradient(#474747, #030303)',}}>
-      <div className="absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] rounded-full z-0" style={{backgroundImage: 'linear-gradient(to top right, rgba(248, 229, 127, 0.8), rgba(222, 68, 8, 0.5))',}}/>
-      
+    <div
+      className='flex flex-col relative overflow-hidden'
+      style={{ backgroundImage: 'radial-gradient(#474747, #030303)' }}
+    >
+      <div
+        className='absolute top-[-500px] right-[-500px] w-[1600px] h-[1600px] rounded-full z-0'
+        style={{
+          backgroundImage:
+            'linear-gradient(to top right, rgba(248, 229, 127, 0.8), rgba(222, 68, 8, 0.5))',
+        }}
+      />
+
       <div className=''>
-        <LanguageSelector changeLanguage={changeLanguage}/>
+        <LanguageSelector changeLanguage={changeLanguage} />
       </div>
       {/* <img src={Logo} alt="Logo" className='z-0 size-[600px] absolute top-[100px] left-[100px]'/> */}
-      <div className="flex flex-col items-center pt-20 pb-10 w-full  z-10">
-        <div className='w-1/2 z-10 pt-25'>
+      <div className='flex flex-col items-center pt-0 md:pt-20 pb-0 md:pb-10 w-full z-10'>
+        <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={handleButtonClick} />
         </div>
         <div className='w-30px h-30px'>
@@ -72,24 +84,27 @@ function App() {
         </div>
       </div>
 
-      <div className="relative mb-10 z-10">
+      <div className='relative mb-10 z-10'>
         <Questionnaire />
       </div>
 
-      <div ref={targetRef} className="flex justify-center">
-        <div className='w-1/2 my-20'>
+      <div ref={targetRef} className='flex justify-center'>
+        <div className='w-full mx-2 md:w-1/2 md:my-20'>
           <Chat />
         </div>
       </div>
 
-      <div className="relative mt-10 mb-20">
-        <div className="absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform skew-y-3"  style={{ height: '110%' }}/>
-        <div className="container mx-auto px-4 relative z-10 w-1/2">
+      <div className='relative mt-10 mb-20'>
+        <div
+          className='absolute top-0 left-0 w-full bg-gradient-to-r from-green-900  to-blue-900 transform skew-y-3'
+          style={{ height: '110%' }}
+        />
+        <div className='container mx-auto px-4 relative z-10 w-full md:w-1/2'>
           <OpenSource />
         </div>
       </div>
 
-      <div className="mt-5 w-full bg-gradient-to-r from-orange-50 via-orange-100 to-orange-300">
+      <div className='mt-5 w-full bg-gradient-to-r from-orange-50 via-orange-100 to-orange-300'>
         <Footer />
       </div>
     </div>
