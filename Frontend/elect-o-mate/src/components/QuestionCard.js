@@ -23,7 +23,7 @@ const QuestionCard = ({
 
   return (
     <div
-      className='flex flex-col h-60 md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-lg shadow-md bg-white'
+      className='flex flex-col h-100 md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-lg shadow-md bg-white'
       style={{ backgroundImage: 'radial-gradient(circle, #474747, #030303)' }}
     >
       <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
@@ -74,7 +74,12 @@ const QuestionCard = ({
       </div>
 
       <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0'>
-        <TextInput onSendMessage={onSendMessage} isSending={isSending} scrollToChat={scrollToChat}/>
+        <TextInput
+          onSendMessage={onSendMessage}
+          isSending={isSending}
+          scrollToChat={scrollToChat}
+          followup={question.followup}
+        />
       </div>
     </div>
   );

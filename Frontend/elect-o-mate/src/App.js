@@ -20,6 +20,7 @@ function App() {
   ]);
   const [isSending, setIsSending] = useState(false);
   const toChat = useRef(null);
+  const toQuestionnaire = useRef(null);
   const [userLanguage, setUserLanguage] = useState('en'); // Default to English
 
   const handleSendMessage = async (text) => {
@@ -52,6 +53,13 @@ function App() {
     } finally {
       setIsSending(false); // Reset isSending after API call completes
     }
+  };
+
+  const scrollToQuestionnaire = () => {
+    toQuestionnaire.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    });
   };
 
   const scrollToChat = () => {
@@ -110,14 +118,14 @@ function App() {
       {/* <img src={Logo} alt="Logo" className='z-0 size-[600px] absolute top-[100px] left-[100px]'/> */}
       <div className='flex flex-col items-center pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
-          <Top onButtonClick={scrollToChat} />
+          <Top onButtonClick={scrollToQuestionnaire} />
         </div>
         <div className='w-30px h-30px'>
           <Spline />
         </div>
       </div>
 
-      <div className='relative mb-10 z-10'>
+      <div ref={toQuestionnaire} className='relative mb-10 z-10'>
         <Questionnaire
           scrollToChat={scrollToChat}
           onSendMessage={handleSendMessage}
@@ -125,9 +133,11 @@ function App() {
         />
       </div>
 
-      <div ref={toChat} className='flex justify-center'>
+      <div ref={toChat} className='flex justify-center relative'>
         <div className='w-full mx-2 md:w-1/2 md:my-20'>
           <Chat
+            scrollToQuestionnaire={scrollToQuestionnaire}
+            scrolltoChat={scrollToChat}
             messages={messages}
             handleSendMessage={handleSendMessage}
             isSending={isSending}

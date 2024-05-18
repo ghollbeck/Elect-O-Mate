@@ -4,7 +4,7 @@ import SendIcon from '@mui/icons-material/Send';
 import CircularProgress from '@mui/material/CircularProgress';
 import { useTranslation } from 'react-i18next';
 
-const TextInput = ({ onSendMessage, isSending, scrollToChat }) => {
+const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
   const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
   const textareaRef = useRef(null);
@@ -14,7 +14,7 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat }) => {
   useEffect(() => {
     if (buttonRef.current) {
       const buttonWidth = buttonRef.current.offsetWidth;
-      setTextareaWidth(`calc(100% - ${buttonWidth + 2}px)`);
+      setTextareaWidth(`calc(100% - ${buttonWidth + 5}px)`);
     }
   }, [buttonRef.current?.offsetWidth]);
 
@@ -74,7 +74,7 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat }) => {
         <textarea
           ref={textareaRef}
           id='input-field'
-          placeholder={t('chat_placeholder')}
+          placeholder={t(followup)}
           value={inputValue}
           onKeyDown={handleKeyDown}
           onChange={handleChange}
@@ -94,14 +94,12 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat }) => {
           className='bg-red-300 scale-105 font-semibold transition duration-300 ease-in-out transform hover:scale-110 text-xl'
           variant='contained'
           style={{
-            backgroundColor: 'black', // Set button background color to black
+            backgroundImage:
+              'linear-gradient(to top right, rgba(248, 229, 127), rgba(222, 68, 8))',
             color: 'white', // Set button text color to white
             position: 'absolute',
-
-            right: 0,
+            right: 1,
             bottom: 1,
-            borderColor: 'white', // Set border color to white
-            borderWidth: '1px', // Set border width to 2px to make it visible
             borderStyle: 'solid', // Set border style to solid
           }}
           endIcon={

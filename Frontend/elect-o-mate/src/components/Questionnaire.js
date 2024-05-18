@@ -4,7 +4,12 @@ import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
 
-const Questionnaire = ({ onSendMessage, isSending, scrollToChat }) => {
+const Questionnaire = ({
+  onSendMessage,
+  isSending,
+  scrollToChat,
+  scrollToQuestionnaire,
+}) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [questions, setQuestions] = useState([]);
   const containerRef = useRef(null);
@@ -124,7 +129,7 @@ const Questionnaire = ({ onSendMessage, isSending, scrollToChat }) => {
   return (
     <div className='flex-grow bg-red my-20 h-auto md:py-20 flex items-center justify-center relative w-full'>
       <div
-        className='absolute top-0 left-0 w-full transform skew-y-3'
+        className='absolute top-0 left-0 w-full transform scale-125 skew-y-3'
         style={{
           height: '110%',
           backgroundImage: 'linear-gradient(to right, #3D6964, #FDFFFD)',
@@ -201,6 +206,7 @@ const Questionnaire = ({ onSendMessage, isSending, scrollToChat }) => {
                   ...question,
                   text: t(question.text),
                   title: t(question.title),
+                  followup: t(question.followup),
                 }} // Translating the text property
                 answer={answers[index]}
                 onAnswer={handleAnswer}
