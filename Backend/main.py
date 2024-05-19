@@ -127,19 +127,36 @@ def download_pdf(url: str, local_path: str):
         f.write(response.content)
         
 def load_git_pdfs(pdf_files: List[str]):
-    pdf_contents = []
-    for pdf_file in pdf_files:
-        with open(pdf_file, 'rb') as f:
-            reader = PyPDF2.PdfFileReader(f)
-            content = ""
-            for page_num in range(reader.numPages):
-                page = reader.getPage(page_num)
-                content += page.extract_text()
-            pdf_contents.append(content)
-    return pdf_contents
+    doc_file = "./cache/pdf_documents.pkl"
+    text_file = "./cache/pdf_texts.pkl"
+    local_pdf_dir = "./cache/pdfs" 
+    
+    if os.path.exists(doc_file):
+        with open(doc_file, "rb") as f:
+            documents = pickle.load(f)
+    else:
+        pdfs = get_pdfs_from_git(local_pdf_dir)
+        documents = []
+        for file in pdfs:
+            loader = PyPDFLoader(file)
+            documents.append(loader.load())
+        with open(doc_file, "wb") as f:
+            pickle.dump(documents, f)
+    
+    documents = [page for pdf in documents for page in pdf]
 
-local_pdf_dir = "/context/pdfs"
-pdf_files = get_pdfs_from_git(local_pdf_dir)
+    if os.path.exists(text_file):
+        with open(text_file, "rb") as f:
+            texts = pickle.load(f)
+    else:
+        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
+        texts = text_splitter.split_documents(documents)
+        with open(text_file, "wb") as f:
+            pickle.dump(texts, f)
+    
+    return texts
+
+
 
 #def load_pdfs():
 #    doc_file = "./cache/pdf_documents.pkl"
@@ -201,7 +218,7 @@ url_texts = get_url_text()
 
 print("getting pdf content")
 #pdf_texts = load_pdfs()
-pdf_texts = load_git_pdfs(pdf_files)
+pdf_texts = load_git_pdfs()
 
 
 print("building vector db for website content")
