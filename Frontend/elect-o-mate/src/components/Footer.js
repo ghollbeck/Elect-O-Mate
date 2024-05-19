@@ -1,36 +1,55 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { FaXTwitter } from 'react-icons/fa6';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  WhatsappShareButton,
+  TelegramShareButton,
+  EmailShareButton,
+  RedditShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+  TelegramIcon,
+  EmailIcon,
+  RedditIcon,
+} from 'react-share';
 
 export default function App() {
   const { t } = useTranslation();
+  const url = 'https://elect-o-mate.eu/'; // Your website URL
+  const title = 'Check out this website!'; // Title for sharing
+
   return (
     <footer className='bg-black text-center text-white pt-40 -z-10'>
       <div className='container mx-auto'>
         <section className='mb-4'>
-          <form action=''>
-            <div className='mb-4'>
-              <p className='pt-2'>
-                <strong>{t('sign_up')}</strong>
-              </p>
-            </div>
-            <div className='flex justify-center items-center'>
-              <div className='relative'>
-                <input
-                  type='email'
-                  className='mb-4 p-2 rounded-sm text-gray-800'
-                  placeholder={t('email_placeholder')}
-                />
-              </div>
-              <div className='ml-2'>
-                <button
-                  type='submit'
-                  className='mb-4 px-4 py-2 border border-white text-white rounded hover:bg-white hover:text-black transition duration-300 font-bold'
-                >
-                  {t('subscribe_to_newsletter')}
-                </button>
-              </div>
-            </div>
-          </form>
+          <div className='flex justify-center items-center space-x-4'>
+            <FacebookShareButton url={url}>
+              <FacebookIcon size={32} round />
+            </FacebookShareButton>
+            <TwitterShareButton url={url} title={title}>
+              <FaXTwitter size={32} round />
+            </TwitterShareButton>
+            <LinkedinShareButton url={url} title={title}>
+              <LinkedinIcon size={32} round />
+            </LinkedinShareButton>
+            <WhatsappShareButton url={url} title={title}>
+              <WhatsappIcon size={32} round />
+            </WhatsappShareButton>
+            <TelegramShareButton url={url} title={title}>
+              <TelegramIcon size={32} round />
+            </TelegramShareButton>
+            <EmailShareButton url={url} subject={title} body={t('email_body')}>
+              <EmailIcon size={32} round />
+            </EmailShareButton>
+            <RedditShareButton url={url} title={title}>
+              <RedditIcon size={32} round />
+            </RedditShareButton>
+          </div>
         </section>
         <section className='mb-8'>
           <p>{t('made_with_love')}</p>
