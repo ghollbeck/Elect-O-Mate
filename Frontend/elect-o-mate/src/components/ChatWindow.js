@@ -88,7 +88,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
         ))}
       </div>
       <button
-        className='absolute py-5 px-5 text-black rounded-full font-thin transition duration-300 ease-in-out transform hover:scale-110 text-xl right-5 bottom-5 z-10 bg-black bg-opacity-20 backdrop-blur-lg'
+        className='absolute px-5 py-2 text-black rounded-full font-thin transition duration-300 ease-in-out transform hover:scale-110 text-xl right-1 bottom-1 bg-black bg-opacity-20 backdrop-blur-lg'
         onClick={scrollToQuestionnaire}
       >
         <ArrowUpwardIcon />
