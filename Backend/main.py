@@ -31,6 +31,8 @@ import pickle
 
 import requests
 
+import PyPDF2
+
 
 app = FastAPI(
     title="LangChain Server",
@@ -99,32 +101,72 @@ def get_pdfs():
             pdfs.append(f"/Users/lorinurbantat/Documents/GPT-4-Elections/AAChatPolite/Sources/PDFs/{filename}")
     return pdfs
 
-def load_pdfs():
-    doc_file = "./cache/pdf_documents.pkl"
-    text_file = "./cache/pdf_texts.pkl"
-    if os.path.exists(doc_file):
-        with open(doc_file, "rb") as f:
-            documents = pickle.load(f)
-    else:
-        pdfs = get_pdfs()
-        documents = []
-        for file in pdfs:
-            loader = PyPDFLoader(file)
-            documents.append(loader.load())
-        with open(doc_file, "wb") as f:
-            pickle.dump(documents, f)
+def get_pdfs_from_git(local_dir: str) -> List[str]:
+    api_url = f"https://api.github.com/repos/ghollbeck/Elect-O-Mate/contents/Old_Version_Gabor_Not_Used/Sources/PDFs?ref=8246ed94cb735d4af12af18d8db326d1c76dda09"
+    response = requests.get(api_url)
+    response.raise_for_status() #Bad responses again
+    contents = response.json()
     
-    documents = [page for pdf in documents for page in pdf]
+    if not os.path.exists(local_dir):
+        os.makedirs(local_dir)
+    
+    pdf_files = []
+    for item in contents:
+        if item['name'].endswith(".pdf"):
+            pdf_url = f"https://raw.githubusercontent.com/ghollbeck/Elect-O-Mate/8246ed94cb735d4af12af18d8db326d1c76dda09/Old_Version_Gabor_Not_Used/Sources/PDFs/{item['name']}"
+            pdf_path = os.path.join(local_dir, item['name'])
+            download_pdf(pdf_url, pdf_path)
+            pdf_files.append(pdf_path)
+            
+    return pdf_files
 
-    if os.path.exists(text_file):
-        with open(text_file, "rb") as f:
-            texts = pickle.load(f)
-    else:
-        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
-        texts = text_splitter.split_documents(documents)
-        with open(text_file, "wb") as f:
-            pickle.dump(texts, f)
-    return texts
+def download_pdf(url: str, local_path: str):
+    response = requests.get(url)
+    response.raise_for_status() #Baddd responses
+    with open(local_path, 'wb') as f:
+        f.write(response.content)
+        
+def load_git_pdfs(pdf_files: List[str]):
+    pdf_contents = []
+    for pdf_file in pdf_files:
+        with open(pdf_file, 'rb') as f:
+            reader = PyPDF2.PdfFileReader(f)
+            content = ""
+            for page_num in range(reader.numPages):
+                page = reader.getPage(page_num)
+                content += page.extract_text()
+            pdf_contents.append(content)
+    return pdf_contents
+
+local_pdf_dir = "/context/pdfs"
+pdf_files = get_pdfs_from_git(local_pdf_dir)
+
+#def load_pdfs():
+#    doc_file = "./cache/pdf_documents.pkl"
+#    text_file = "./cache/pdf_texts.pkl"
+#    if os.path.exists(doc_file):
+#        with open(doc_file, "rb") as f:
+#            documents = pickle.load(f)
+#    else:
+#        pdfs = get_pdfs()
+#        documents = []
+#        for file in pdfs:
+#            loader = PyPDFLoader(file)
+#            documents.append(loader.load())
+#        with open(doc_file, "wb") as f:
+#            pickle.dump(documents, f)
+#    
+#    documents = [page for pdf in documents for page in pdf]
+#
+#    if os.path.exists(text_file):
+#        with open(text_file, "rb") as f:
+#            texts = pickle.load(f)
+#    else:
+#        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
+#        texts = text_splitter.split_documents(documents)
+#        with open(text_file, "wb") as f:
+#            pickle.dump(texts, f)
+#    return texts
 
 
 template = """Answer the question based only on the following context including a bullet point list of sources (filename or url) in the bottom of the answer:
@@ -158,7 +200,8 @@ print("getting website content")
 url_texts = get_url_text()
 
 print("getting pdf content")
-pdf_texts = load_pdfs()
+#pdf_texts = load_pdfs()
+pdf_texts = load_git_pdfs(pdf_files)
 
 
 print("building vector db for website content")
