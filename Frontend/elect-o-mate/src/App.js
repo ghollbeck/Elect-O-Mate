@@ -73,34 +73,39 @@ function App() {
     i18n.changeLanguage(lang);
   };
 
-  const getUserCountryFromIP = async () => {
+  const countryLanguageMap = {
+    US: 'en', // Default to English for US
+    DE: 'de', // German for Germany
+    // Add more mappings as needed
+    CH: 'de',
+  };
+
+  const getUserLanguageFromIP = async () => {
     try {
       const response = await fetch('https://ipinfo.io/json');
       const data = await response.json();
-      return data.country;
+      const countryCode = data.country;
+      return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
     } catch (error) {
-      console.error(
-        'Fehler beim Abrufen des Landes aus der IP-Adresse:',
-        error
-      );
-      return null;
+      console.error('Error fetching user language:', error);
+      return 'en'; // Default to English in case of error
     }
   };
 
   useEffect(() => {
-    const fetchUserLocationAndSetLanguage = async () => {
+    const fetchUserLanguageAndSetLanguage = async () => {
       try {
-        const userCountry = await getUserCountryFromIP();
-        setUserLanguage(userCountry);
-        i18n.changeLanguage(userCountry);
+        const userLanguage = await getUserLanguageFromIP();
+        setUserLanguage(userLanguage);
+        i18n.changeLanguage(userLanguage);
       } catch (error) {
-        console.error('Error fetching user location:', error);
+        console.error('Error fetching user language:', error);
         setUserLanguage('en');
         i18n.changeLanguage('en');
       }
     };
 
-    fetchUserLocationAndSetLanguage();
+    fetchUserLanguageAndSetLanguage();
   }, [i18n]);
 
   return (
