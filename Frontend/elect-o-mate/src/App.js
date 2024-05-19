@@ -186,6 +186,7 @@ function App() {
   const scrollToQuestionnaire = () => {
     smoothScrollTo(toQuestionnaire, 1000);
   };
+  
 
   const scrollToChat = () => {
     smoothScrollTo(toChat, 1000);
@@ -278,6 +279,7 @@ function App() {
           handleSendMessage={handleSendMessage}
           scrollToQuestionnaire={scrollToQuestionnaire}
           isSending={isSending}
+          smoothScrollTo={smoothScrollTo}
         />
       </div>
 

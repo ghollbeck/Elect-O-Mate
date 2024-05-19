@@ -9,8 +9,10 @@ const QuestionCard = ({
   answer,
   onAnswer,
   isSending,
-  handleSendMessage,
+  onSendMessage,
   scrollToChat,
+  pressable,
+  scrollToQuestionnaire,
 }) => {
   const { t } = useTranslation();
 
@@ -44,29 +46,35 @@ const QuestionCard = ({
             className={`border w-full h-8 md:h-10 ${
               answer === 1
                 ? 'text-black bg-blue-100'
-                : 'hover:bg-blue-100 hover:text-black'
+                : pressable
+                ? 'hover:bg-blue-100 hover:text-black'
+                : ''
             } font-bold py-1 md:py-2 px-4 rounded`}
-            onClick={() => onAnswer(1)}
+            onClick={() => (pressable ? onAnswer(1) : null)}
           >
             {t('agree_button')}
           </button>
           <button
             className={`border w-full h-8 md:h-10 ${
               answer === 0
-                ? 'bg-blue-100 text-black'
-                : 'hover:bg-blue-100 hover:text-black'
+                ? 'text-black bg-blue-100'
+                : pressable
+                ? 'hover:bg-blue-100 hover:text-black'
+                : ''
             } font-bold py-1 md:py-2 px-4 rounded`}
-            onClick={() => onAnswer(0)}
+            onClick={() => (pressable ? onAnswer(0) : null)}
           >
             {t('neutral_button')}
           </button>
           <button
             className={`border w-full h-8 md:h-10 ${
               answer === -1
-                ? 'bg-blue-100 text-black'
-                : 'hover:bg-blue-100 hover:text-black'
+                ? 'text-black bg-blue-100'
+                : pressable
+                ? 'hover:bg-blue-100 hover:text-black'
+                : ''
             } font-bold py-1 md:py-2 px-4 rounded`}
-            onClick={() => onAnswer(-1)}
+            onClick={() => (pressable ? onAnswer(-1) : null)}
           >
             {t('disagree_button')}
           </button>
@@ -75,7 +83,7 @@ const QuestionCard = ({
 
       <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0 text-base'>
         <TextInput
-          handleSendMessage={handleSendMessage}
+          onSendMessage={onSendMessage}
           isSending={isSending}
           scrollToChat={scrollToChat}
           followup='folloup placeholder' //{question.followup}

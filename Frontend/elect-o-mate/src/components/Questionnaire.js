@@ -210,13 +210,14 @@ const Questionnaire = ({
                   text: t(question.text),
                   title: t(question.title),
                   followup: t(question.followup),
-                }} // Translating the text property
+                }}
                 answer={answers[index]}
                 onAnswer={handleAnswer}
                 handleSendMessage={handleSendMessage}
                 isSending={isSending}
                 scrollToChat={scrollToChat}
                 scrollToQuestionnaire={scrollToQuestionnaire}
+                pressable={index === currentQuestionIndex}
               />
             </div>
           ))}
