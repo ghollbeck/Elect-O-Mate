@@ -29,6 +29,8 @@ from dotenv import load_dotenv
 import os
 import pickle
 
+import requests
+
 
 app = FastAPI(
     title="LangChain Server",
@@ -54,15 +56,22 @@ def load_dotenv_file():
 load_dotenv_file()
 
 
-def get_urls(filename: str = "/Users/lorinurbantat/Documents/GPT-4-Elections/AAChatPolite/Sources/URLS/bpb_2_Wahlomat.txt") -> List[str]:
-    with open(filename, "r") as f:
-        urls = f.readlines()
+#def get_urls(filename: str = "/Users/lorinurbantat/Documents/GPT-4-Elections/AAChatPolite/Sources/URLS/bpb_2_Wahlomat.txt") -> List[str]:
+#    with open(filename, "r") as f:
+#        urls = f.readlines()
     # remove the newline character
-    urls = [url.strip() for url in urls]
-    return urls
+#    urls = [url.strip() for url in urls]
+#    return urls
+
+def get_urls_from_git(url: str) -> List[str]:
+    response = requests.get(url)
+    response.raise_for_status(url) #Notice bad responses
+    urls = response.text.splitlines()
+    return [url.strip() for url in urls]
 
 def load_web():
-    urls = get_urls()
+    #urls = get_urls()
+    urls = get_urls_from_git('https://github.com/ghollbeck/Elect-O-Mate/blob/cfd1bee938d7b0326055f817ced7adf73361c191/Old_Version_Gabor_Not_Used/Sources/URLS/bpb_2_Wahlomat.txt')
     loader = WebBaseLoader(urls)
     documents = loader.load()
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
