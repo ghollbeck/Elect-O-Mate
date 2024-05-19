@@ -13,7 +13,7 @@ const Chat = ({
   // Props als Objekt dekonstruieren
 
   return (
-    <div className='md:mb-[100px]'>
+    <div className=''>
       <ChatWindow
         messages={messages}
         scrollToQuestionnaire={scrollToQuestionnaire}
