@@ -17,7 +17,7 @@ const QuestionCard = ({
   // If question is empty, render an empty card
   if (!question || !question.text) {
     return (
-      <div className='flex flex-col h-60 md:h-80 w-[300px] md:w-[800px] items-center justify-center p-6 bg-transparent text-white  flex-shrink-0'></div>
+      <div className='flex flex-col h-60 md:h-80 w-[270px] md:w-[800px] items-center justify-center p-6 bg-transparent text-white  flex-shrink-0'></div>
     );
   }
 
