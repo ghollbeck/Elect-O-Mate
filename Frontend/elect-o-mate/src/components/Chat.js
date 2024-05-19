@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ChatWindow from './ChatWindow';
 import TextInput from './TextInput';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const Chat = ({
   scrollToQuestionnaire,
@@ -9,6 +8,7 @@ const Chat = ({
   messages,
   handleSendMessage,
   isSending,
+  setIsSending,
 }) => {
   // Props als Objekt dekonstruieren
 
@@ -20,9 +20,10 @@ const Chat = ({
       />
       {/* Korrekt: messages als Prop übergeben */}
       <TextInput
-        onSendMessage={handleSendMessage}
+        handleSendMessage={handleSendMessage}
         isSending={isSending}
         scrollToChat={scrolltoChat}
+        setIsSending={setIsSending}
       />
     </div>
   );

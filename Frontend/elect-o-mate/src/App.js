@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './index.css';
-import axios from 'axios'; // Import axios for HTTP requests
 import Footer from './components/Footer';
 import Chat from './components/Chat';
 import Top from './components/Top';
@@ -11,7 +10,6 @@ import Questionnaire from './components/Questionnaire';
 import LanguageSelector from './components/LanguageSelector';
 import './i18n';
 import OrangeCircle from './components/OrangeCircle';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -22,12 +20,12 @@ function App() {
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
 
-  const handleSendMessage = async (text) => {
+  /*   const handleSendMessage = async (text) => {
     // Add user's message to chat
     setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
     setIsSending(true);
 
-    try {
+       try {
       // Perform API request
       const response = await axios.post(
         'https://backend.bruol.me/openai/invoke',
@@ -51,33 +49,112 @@ function App() {
       ]);
     } finally {
       setIsSending(false); // Reset isSending after API call completes
+    }  
+  }; */
+
+  // ----------------- STREAM ----------------------
+
+  const handleSendMessage = async (text, abortController) => {
+    // Add user's message to chat
+    setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
+    setIsSending(true);
+
+    try {
+      // Perform API request with streaming using Fetch API and AbortController
+      const response = await fetch('https://backend.bruol.me/openai/stream', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ input: text }),
+        signal: abortController.signal,
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      // Use TextDecoderStream to decode the response stream
+      const reader = response.body
+        .pipeThrough(new TextDecoderStream())
+        .getReader();
+
+      // Process the streaming response
+      let buffer = '';
+
+      // Add an initial bot message to update
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: '', isUser: false },
+      ]);
+
+      // Define a variable to hold the ongoing content
+      let ongoingContent = '';
+
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+
+        buffer += value;
+
+        // Split buffer by newlines to process individual events
+        let lines = buffer.split('\n');
+        buffer = lines.pop(); // Save the last line as it might be incomplete
+
+        let content = '';
+        for (let line of lines) {
+          if (line.startsWith('data: ')) {
+            const t = line.slice(6).trim().slice(1, -1);
+            if (!t.startsWith('"run_id":')) {
+              content += line.slice(6).trim().slice(1, -1); // Remove 'data: ' prefix and trim whitespace
+            }
+          }
+        }
+
+        if (content) {
+          // Append streamed response to the ongoing content
+          ongoingContent += content;
+
+          // Update the last message with the new ongoing content
+          setMessages((prevMessages) => {
+            const lastMessage = prevMessages[prevMessages.length - 1];
+            if (lastMessage && !lastMessage.isUser) {
+              // If the last message is not a user message, append to it
+              return [
+                ...prevMessages.slice(0, -1),
+                { ...lastMessage, text: ongoingContent },
+              ];
+            } else {
+              // Otherwise, add a new bot message
+              return [...prevMessages, { text: ongoingContent, isUser: false }];
+            }
+          });
+        }
+      }
+
+      console.log('Stream ended');
+    } catch (error) {
+      if (error.name === 'AbortError') {
+        console.log('Stream aborted');
+      } else {
+        console.error('Error during stream:', error);
+
+        // Add error message to chat
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          {
+            text: 'An error occurred. Please try again.',
+            isUser: false,
+            isError: true,
+          },
+        ]);
+      }
+    } finally {
+      setIsSending(false); // Reset isSending after API call completes
     }
   };
 
-  function smoothScroll(target, duration) {
-    const targetPosition = target.offsetTop;
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    let startTime = null;
-
-    function animation(currentTime) {
-      if (startTime === null) startTime = currentTime;
-      const timeElapsed = currentTime - startTime;
-      const run = ease(timeElapsed, startPosition, distance, duration);
-      window.scrollTo(0, run);
-      if (timeElapsed < duration) requestAnimationFrame(animation);
-    }
-
-    function ease(t, b, c, d) {
-      // Easing function, for example, easeInOutQuad
-      t /= d / 2;
-      if (t < 1) return (c / 2) * t * t + b;
-      t--;
-      return (-c / 2) * (t * (t - 2) - 1) + b;
-    }
-
-    requestAnimationFrame(animation);
-  }
+  // ----------------- STREAM ----------------------
 
   // Use this function to scroll smoothly to a target element
   const smoothScrollTo = (ref, duration) => {
@@ -212,6 +289,7 @@ function App() {
             messages={messages}
             handleSendMessage={handleSendMessage}
             isSending={isSending}
+            setIsSending={setIsSending}
           />
         </div>
       </div>

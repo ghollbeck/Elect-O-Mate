@@ -1,10 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import CircularProgress from '@mui/material/CircularProgress';
+import StopCircleIcon from '@mui/icons-material/StopCircle';
 import { useTranslation } from 'react-i18next';
 
-const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
+const TextInput = ({
+  handleSendMessage,
+  isSending,
+  scrollToChat,
+  followup,
+  setIsSending,
+}) => {
   const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
   const textareaRef = useRef(null);
@@ -55,17 +61,6 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
     }
   };
 
-  const handleSubmit = async (event) => {
-    const textarea = textareaRef.current;
-    event.preventDefault();
-    if (inputValue.trim() !== '') {
-      onSendMessage(inputValue);
-      setInputValue('');
-      textarea.style.height = 'auto';
-      scrollToChat();
-    }
-  };
-
   const handleTextareaClick = () => {
     // Block automatic scrolling when keyboard appears on mobile devices
     if (
@@ -90,6 +85,28 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
     window.removeEventListener('resize', handleResize);
     // Return to the original scroll position
     window.scrollTo(0, scrollPosition);
+  };
+
+  const abortControllerRef = useRef(null);
+
+  const handleSubmit = async (event) => {
+    const textarea = textareaRef.current;
+    abortControllerRef.current = new AbortController();
+
+    event.preventDefault();
+    if (inputValue.trim() !== '') {
+      handleSendMessage(inputValue, abortControllerRef.current);
+      setInputValue('');
+      textarea.style.height = 'auto';
+      scrollToChat();
+    }
+  };
+
+  const stopStreaming = () => {
+    if (abortControllerRef.current && isSending) {
+      abortControllerRef.current.abort();
+      setIsSending(false);
+    }
   };
 
   return (
@@ -118,8 +135,9 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
         <Button
           ref={buttonRef}
           type='submit'
-          disabled={isSending}
-          className='bg-red-300 scale-105 font-semibold transition duration-300 ease-in-out transform hover:scale-110 text-xl'
+          //disabled={isSending}
+          onClick={stopStreaming} // stiopStreaming checks if isSending is true
+          className='bg-red-300 scale-105 transition duration-300 ease-in-out transform hover:scale-110'
           variant='contained'
           style={{
             backgroundImage:
@@ -132,14 +150,12 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
           }}
           endIcon={
             isSending ? (
-              <CircularProgress size={23} sx={{ color: 'black' }} />
+              <StopCircleIcon className='font-semibold scale-150' />
             ) : (
-              <SendIcon style={{ fontSize: 22, color: 'white' }} />
+              <SendIcon className='font-semibold' />
             )
           }
-        >
-          {/* {isSending ? t('send_button_sending') : t('send_button_send')} */}
-        </Button>
+        ></Button>
       </form>
     </div>
   );
