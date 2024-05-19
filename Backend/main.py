@@ -208,7 +208,7 @@ embeddings_openai = OpenAIEmbeddings()
 # ollama = Ollama(model="llama2")
 # embeddings_ollama = OllamaEmbeddings()
 
-embedding_cache = LocalFileStore("./cache/embedding_cache")
+embedding_cache = LocalFileStore(str((BASE / "cache/embedding_cache").resolve()))
 
 cached_embedder_openai = CacheBackedEmbeddings.from_bytes_store(embeddings_openai, embedding_cache, namespace=embeddings_openai.model)
 # cached_embedder_ollama = CacheBackedEmbeddings.from_bytes_store(embeddings_ollama, embedding_cache, namespace=embeddings_ollama.model)
