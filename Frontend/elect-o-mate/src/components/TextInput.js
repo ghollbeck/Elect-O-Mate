@@ -10,6 +10,7 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
   const textareaRef = useRef(null);
   const buttonRef = useRef(null);
   const [textareaWidth, setTextareaWidth] = useState('100%');
+  const [scrollPosition, setScrollPosition] = useState(0); // State to store scroll position
 
   useEffect(() => {
     if (buttonRef.current) {
@@ -65,6 +66,32 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
     }
   };
 
+  const handleTextareaClick = () => {
+    // Block automatic scrolling when keyboard appears on mobile devices
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      // Store current scroll position
+      setScrollPosition(window.scrollY);
+      // Listen for the keyboard appearance event
+      window.addEventListener('resize', handleResize);
+    }
+  };
+
+  const handleResize = () => {
+    // When keyboard appears, scroll to the bottom of the textarea
+    setTimeout(() => {
+      textareaRef.current.scrollIntoView(false);
+    }, 0);
+
+    // Remove the event listener after handling the keyboard appearance
+    window.removeEventListener('resize', handleResize);
+    // Return to the original scroll position
+    window.scrollTo(0, scrollPosition);
+  };
+
   return (
     <div className='mt-9 shadow-full relative border-none'>
       <form
@@ -86,6 +113,7 @@ const TextInput = ({ onSendMessage, isSending, scrollToChat, followup }) => {
             bottom: 0,
             width: textareaWidth,
           }}
+          onClick={handleTextareaClick} // Add onClick event handler
         />
         <Button
           ref={buttonRef}
