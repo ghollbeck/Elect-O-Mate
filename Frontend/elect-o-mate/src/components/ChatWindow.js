@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import chatbot from './../pictures/Bot.png'; // Import this icon to @mui
 import { useTranslation } from 'react-i18next';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import FormatMessages from './FormatMessages';
 
 const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
   const { t } = useTranslation();
@@ -12,27 +13,6 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
       chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
     }
   }, [messages]);
-
-  const convertTextToLinks = (text) => {
-    const urlRegex =
-      /(\b(?:https?|ftp|file):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/gi;
-    return text.split(urlRegex).map((part, index) => {
-      if (urlRegex.test(part)) {
-        return (
-          <a
-            key={index}
-            href={part}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='text-blue-500 hover:underline'
-          >
-            {part}
-          </a>
-        );
-      }
-      return part;
-    });
-  };
 
   return (
     <div
@@ -53,11 +33,8 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
             {message.isUser ? (
               <div className='flex flex-col items-end'>
                 <p className='font-bold text-gray-700'>{t('chat_YOU')}</p>
-                <p
-                  className='text-gray-600 p-2 rounded-md text-left'
-                  style={{ wordBreak: 'break-word', background: '#A1BBB8' }}
-                >
-                  {message.text}
+                <p className='text-gray-600 p-2 rounded-md text-left bg-[#A1BBB8] break-words'>
+                  <FormatMessages text={message.text} />
                 </p>
               </div>
             ) : (
@@ -76,11 +53,8 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
                   </span>
                   {message.isError ? 'Error' : 'Elect-O-Mate'}
                 </p>
-                <p
-                  className='text-gray-600 p-2 rounded-md text-left'
-                  style={{ wordBreak: 'break-word', background: '#A1BBB8' }}
-                >
-                  {convertTextToLinks(message.text)}
+                <p className='text-gray-600 p-2 rounded-md text-left break-words bg-[#A1BBB8]'>
+                  <FormatMessages text={message.text} />
                 </p>
               </div>
             )}
