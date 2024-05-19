@@ -54,18 +54,64 @@ function App() {
     }
   };
 
+  function smoothScroll(target, duration) {
+    const targetPosition = target.offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+      // Easing function, for example, easeInOutQuad
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+  }
+
+  // Use this function to scroll smoothly to a target element
+  const smoothScrollTo = (ref, duration) => {
+    const targetPosition = ref.current.offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const timeElapsed = currentTime - startTime;
+      const run = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run);
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+      // Easing function, for example, easeInOutQuad
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+  };
+
+  // Update scrollToQuestionnaire and scrollToChat to use smoothScrollTo with references
   const scrollToQuestionnaire = () => {
-    toQuestionnaire.current.scrollIntoView({
-      behavior: 'auto',
-      block: 'center',
-    });
+    smoothScrollTo(toQuestionnaire, 1000);
   };
 
   const scrollToChat = () => {
-    toChat.current.scrollIntoView({
-      behavior: 'auto',
-      block: 'center',
-    });
+    smoothScrollTo(toChat, 1000);
   };
 
   const changeLanguage = (lang) => {
@@ -140,7 +186,6 @@ function App() {
         <LanguageSelector changeLanguage={changeLanguage} />
       </div>
 
-      {/* <img src={Logo} alt="Logo" className='z-0 size-[600px] absolute top-[100px] left-[100px]'/> */}
       <div className='flex flex-col items-center pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={scrollToQuestionnaire} />
