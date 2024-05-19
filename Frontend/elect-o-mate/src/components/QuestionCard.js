@@ -11,6 +11,7 @@ const QuestionCard = ({
   isSending,
   onSendMessage,
   scrollToChat,
+  scrollToQuestionnaire,
 }) => {
   const { t } = useTranslation();
 

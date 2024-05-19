@@ -46,6 +46,7 @@ const Questionnaire = ({
       return updatedAnswers;
     });
     scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
+    scrollToQuestionnaire();
   };
 
   const scrollToIndex = throttle((index) => {
@@ -69,10 +70,12 @@ const Questionnaire = ({
 
   const handleLeft = throttle(() => {
     scrollToIndex(Math.max(currentQuestionIndex - 1, 1)); // Skip the first card
+    scrollToQuestionnaire();
   }, 200);
 
   const handleRight = throttle(() => {
     scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 2)); // Skip the last card
+    scrollToQuestionnaire();
   }, 200);
 
   useEffect(() => {
@@ -213,6 +216,7 @@ const Questionnaire = ({
                 onSendMessage={onSendMessage}
                 isSending={isSending}
                 scrollToChat={scrollToChat}
+                scrollToQuestionnaire={scrollToQuestionnaire}
               />
             </div>
           ))}
