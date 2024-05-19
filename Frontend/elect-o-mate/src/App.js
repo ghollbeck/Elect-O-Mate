@@ -10,7 +10,6 @@ import Spline from './components/Spline';
 import Questionnaire from './components/Questionnaire';
 import LanguageSelector from './components/LanguageSelector';
 import './i18n';
-import Logo from './pictures/protologo.png';
 import OrangeCircle from './components/OrangeCircle';
 
 function App() {
@@ -57,14 +56,14 @@ function App() {
 
   const scrollToQuestionnaire = () => {
     toQuestionnaire.current.scrollIntoView({
-      behavior: 'smooth',
+      behavior: 'auto',
       block: 'center',
     });
   };
 
   const scrollToChat = () => {
     toChat.current.scrollIntoView({
-      behavior: 'smooth',
+      behavior: 'auto',
       block: 'center',
     });
   };

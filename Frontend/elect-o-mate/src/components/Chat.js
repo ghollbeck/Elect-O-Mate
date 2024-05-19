@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ChatWindow from './ChatWindow';
 import TextInput from './TextInput';
-import { useTranslation } from 'react-i18next';
 
 const Chat = ({
   scrollToQuestionnaire,
