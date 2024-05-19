@@ -20,7 +20,6 @@ function App() {
   const [isSending, setIsSending] = useState(false);
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
-  const [userLanguage, setUserLanguage] = useState('en'); // Default to English
 
   const handleSendMessage = async (text) => {
     // Add user's message to chat
@@ -69,15 +68,38 @@ function App() {
   };
 
   const changeLanguage = (lang) => {
-    setUserLanguage(lang);
     i18n.changeLanguage(lang);
   };
 
   const countryLanguageMap = {
-    US: 'en', // Default to English for US
-    DE: 'de', // German for Germany
-    // Add more mappings as needed
+    AT: 'de', // Austria - German
+    BE: 'nl', // Belgium - Dutch
+    BG: 'bg', // Bulgaria - Bulgarian
     CH: 'de',
+    CY: 'el', // Cyprus - Greek
+    CZ: 'cs', // Czech Republic - Czech
+    DE: 'de', // Germany - German
+    DK: 'da', // Denmark - Danish
+    EE: 'et', // Estonia - Estonian
+    ES: 'es', // Spain - Spanish
+    FI: 'fi', // Finland - Finnish
+    FR: 'fr', // France - French
+    GR: 'el', // Greece - Greek
+    HR: 'hr', // Croatia - Croatian
+    HU: 'hu', // Hungary - Hungarian
+    IE: 'en', // Ireland - English
+    IT: 'it', // Italy - Italian
+    LT: 'lt', // Lithuania - Lithuanian
+    LU: 'fr', // Luxembourg - French
+    LV: 'lv', // Latvia - Latvian
+    MT: 'en', // Malta - English
+    NL: 'nl', // Netherlands - Dutch
+    PL: 'pl', // Poland - Polish
+    PT: 'pt', // Portugal - Portuguese
+    RO: 'ro', // Romania - Romanian
+    SE: 'sv', // Sweden - Swedish
+    SI: 'sl', // Slovenia - Slovenian
+    SK: 'sk', // Slovakia - Slovak
   };
 
   const getUserLanguageFromIP = async () => {
@@ -93,20 +115,19 @@ function App() {
   };
 
   useEffect(() => {
-    const fetchUserLanguageAndSetLanguage = async () => {
-      try {
-        const userLanguage = await getUserLanguageFromIP();
-        setUserLanguage(userLanguage);
-        i18n.changeLanguage(userLanguage);
-      } catch (error) {
-        console.error('Error fetching user language:', error);
-        setUserLanguage('en');
-        i18n.changeLanguage('en');
-      }
-    };
+  const fetchUserLanguageAndSetLanguage = async () => {
+    try {
+      const userLanguage = await getUserLanguageFromIP();
+      i18n.changeLanguage(userLanguage);
+    } catch (error) {
+      console.error('Error fetching user language:', error);
+      i18n.changeLanguage('en');
+    }
+  };
 
-    fetchUserLanguageAndSetLanguage();
-  }, [i18n]);
+  fetchUserLanguageAndSetLanguage();
+}, [i18n]); // Include i18n in the dependency array
+
 
   return (
     <div
