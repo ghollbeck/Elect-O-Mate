@@ -20,6 +20,16 @@ for index, row in df.iterrows():
     }
     json_list.append(entry)
 
+for index, row in df.iterrows():
+    entry = {
+        "Question_Number": row[df.columns[2]],
+        "Party_Name": row[df.columns[0]],
+        "Full_Party_Name": row[df.columns[1]],
+        "Question_Label": row[df.columns[3]],
+        "Party_Answer": row[df.columns[5]]
+    }
+    json_list.append(entry)
+
 # Convert the list to JSON
 json_output = json.dumps(json_list, indent=4, ensure_ascii=False)
 

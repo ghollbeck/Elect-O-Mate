@@ -1,40 +1,230 @@
 [
-  { "Question number": "1", "Question_Label": "Die EU soll eigene Steuern erheben dürfen.", "users_answer": -1 },
-  { "Question number": "2", "Question_Label": "Fahrzeuge mit Verbrennungsmotoren sollen auch nach 2035 in der EU neu zugelassen werden können.", "users_answer": 1 },
-  { "Question number": "3", "Question_Label": "Die EU soll eine eigene Seenotrettung im Mittelmeer aufbauen.", "users_answer": 0 },
-  { "Question number": "4", "Question_Label": "Die Ukraine soll Mitglied der EU werden.", "users_answer": -1 },
-  { "Question number": "5", "Question_Label": "Die EU soll vorrangig ökologische Landwirtschaft fördern.", "users_answer": 1 },
-  { "Question number": "6", "Question_Label": "In Deutschland soll der Euro durch eine nationale Währung ersetzt werden.", "users_answer": 0 },
-  { "Question number": "7", "Question_Label": "Die EU soll den Mitgliedstaaten empfehlen, außer „weiblich“ und „männlich“ auch die Eintragung einer anderen Geschlechtsidentität im Pass zu ermöglichen.", "users_answer": 1 },
-  { "Question number": "8", "Question_Label": "Die Jagd von Wölfen soll in Regionen erlaubt sein, in denen der Bestand dadurch nicht gefährdet ist.", "users_answer": -1 },
-  { "Question number": "9", "Question_Label": "Beim Bau neuer Wohngebäude in der EU soll die Errichtung von Photovoltaikanlagen verpflichtend sein.", "users_answer": 0 },
-  { "Question number": "10", "Question_Label": "Mehr außenpolitische Entscheidungen der EU sollen mit Mehrheit statt einstimmig getroffen werden.", "users_answer": 1 },
-  { "Question number": "11", "Question_Label": "Der Flugzeugtreibstoff Kerosin soll für Flüge in der EU steuerfrei sein.", "users_answer": -1 },
-  { "Question number": "12", "Question_Label": "Die gemeinsame europäische Polizeibehörde Europol soll weitere Befugnisse erhalten.", "users_answer": 0 },
-  { "Question number": "13", "Question_Label": "Die EU soll länderübergreifende, mehrsprachige Angebote des öffentlich-rechtlichen Rundfunks stärker finanziell fördern.", "users_answer": 1 },
-  { "Question number": "14", "Question_Label": "Die EU soll das Ziel verwerfen, klimaneutral zu werden.", "users_answer": 0 },
-  { "Question number": "15", "Question_Label": "Bei den Wahlen zum Europäischen Parlament sollen die Parteien weiterhin frei entscheiden können, wie groß der Anteil der Geschlechter auf ihren Listen ist.", "users_answer": -1 },
-  { "Question number": "16", "Question_Label": "Die EU soll Vorgaben für die Höhe der sozialen Grundsicherung in den Mitgliedstaaten machen.", "users_answer": 1 },
-  { "Question number": "17", "Question_Label": "Betreiber sozialer Netzwerke sollen frei entscheiden dürfen, wie sie mit Desinformation auf ihren Plattformen umgehen.", "users_answer": 0 },
-  { "Question number": "18", "Question_Label": "In der EU sollen mehr Flächen als Naturschutzgebiete ausgewiesen werden.", "users_answer": 1 },
-  { "Question number": "19", "Question_Label": "EU-Fördermittel für Mitgliedstaaten, die Regeln und Werte der EU verletzen, sollen weiterhin zurückgehalten werden.", "users_answer": -1 },
-  { "Question number": "20", "Question_Label": "Die EU soll mehr Waffen für die Ukraine finanzieren.", "users_answer": 0 },
-  { "Question number": "21", "Question_Label": "Die zulässige Menge an Fischen, die in EU-Gewässern gefangen werden dürfen, soll gesenkt werden.", "users_answer": 1 },
-  { "Question number": "22", "Question_Label": "Die Einfuhrzölle der EU auf chinesische Elektroautos sollen erhöht werden.", "users_answer": 0 },
-  { "Question number": "23", "Question_Label": "Die EU soll sich dafür einsetzen, dass Schwangerschaftsabbrüche in allen Mitgliedstaaten straffrei möglich sind.", "users_answer": 1 },
-  { "Question number": "24", "Question_Label": "Es sollen wieder dauerhafte Grenzkontrollen zwischen den Mitgliedstaaten der EU stattfinden.", "users_answer": -1 },
-  { "Question number": "25", "Question_Label": "Die Aufnahme neuer Staaten in die EU soll in allen Mitgliedstaaten durch Volksabstimmungen bestätigt werden müssen.", "users_answer": 0 },
-  { "Question number": "26", "Question_Label": "Die EU soll den Anbau von weiteren gentechnisch veränderten Pflanzensorten erlauben.", "users_answer": 1 },
-  { "Question number": "27", "Question_Label": "Geschlechtsspezifische Gewalt gegen Frauen soll europaweit als Asylgrund anerkannt werden.", "users_answer": 0 },
-  { "Question number": "28", "Question_Label": "Urheberrechtlich geschützte Werke (z.B. Fotos, Musik, Literatur) sollen in der EU für nicht-kommerzielle Zwecke kostenlos verwendet werden dürfen.", "users_answer": -1 },
-  { "Question number": "29", "Question_Label": "Die Sanktionen der EU gegen Russland sollen abgebaut werden.", "users_answer": 1 },
-  { "Question number": "30", "Question_Label": "Das Erasmus+ Stipendium für Auslandsaufenthalte soll für Studierende, die über weniger finanzielle Mittel verfügen, höher sein.", "users_answer": 0 },
-  { "Question number": "31", "Question_Label": "Die EU soll Atomkraft weiterhin als nachhaltige Energiequelle einstufen.", "users_answer": -1 },
-  { "Question number": "32", "Question_Label": "Die Einwanderung von Fachkräften in die EU soll vereinfacht werden.", "users_answer": 1 },
-  { "Question number": "33", "Question_Label": "Die Beteiligung außereuropäischer Investoren an Unternehmen im Bereich kritischer Infrastruktur soll in der EU stärker beschränkt werden.", "users_answer": 0 },
-  { "Question number": "34", "Question_Label": "Der Präsident bzw. die Präsidentin der Europäischen Kommission soll von den Bürgerinnen und Bürgern direkt gewählt werden.", "users_answer": 1 },
-  { "Question number": "35", "Question_Label": "In der EU sollen Unternehmen mehr für den Ausstoß von CO₂ zahlen müssen.", "users_answer": -1 },
-  { "Question number": "36", "Question_Label": "Asylbewerberinnen und -bewerber sollen ihren Antrag vor Überschreiten der EU-Außengrenze stellen müssen und dort auf das Ergebnis warten.", "users_answer": 0 },
-  { "Question number": "37", "Question_Label": "Die EU soll weiterhin in gemeinsame europäische Rüstungsprojekte investieren.", "users_answer": 1 },
-  { "Question number": "38", "Question_Label": "Das Europäische Parlament soll weiterhin eine zentrale Rolle in der EU spielen.", "users_answer": 0 }
+  {
+      "Question number": "1",
+      "Question_Label": "Die EU soll eigene Steuern erheben d\u00fcrfen.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "2",
+      "Question_Label": "Fahrzeuge mit Verbrennungsmotoren sollen auch nach 2035 in der EU neu zugelassen werden k\u00f6nnen.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "3",
+      "Question_Label": "Die EU soll eine eigene Seenotrettung im Mittelmeer aufbauen.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "4",
+      "Question_Label": "Die Ukraine soll Mitglied der EU werden.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "5",
+      "Question_Label": "Die EU soll vorrangig \u00f6kologische Landwirtschaft f\u00f6rdern.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "6",
+      "Question_Label": "In Deutschland soll der Euro durch eine nationale W\u00e4hrung ersetzt werden.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "7",
+      "Question_Label": "Die EU soll den Mitgliedstaaten empfehlen, au\u00dfer \u201eweiblich\u201c und \u201em\u00e4nnlich\u201c auch die Eintragung einer anderen Geschlechtsidentit\u00e4t im Pass zu erm\u00f6glichen.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "8",
+      "Question_Label": "Die Jagd von W\u00f6lfen soll in Regionen erlaubt sein, in denen der Bestand dadurch nicht gef\u00e4hrdet ist.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "9",
+      "Question_Label": "Beim Bau neuer Wohngeb\u00e4ude in der EU soll die Errichtung von Photovoltaikanlagen verpflichtend sein.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "10",
+      "Question_Label": "Mehr au\u00dfenpolitische Entscheidungen der EU sollen mit Mehrheit statt einstimmig getroffen werden.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "11",
+      "Question_Label": "Der Flugzeugtreibstoff Kerosin soll f\u00fcr Fl\u00fcge in der EU steuerfrei sein.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "12",
+      "Question_Label": "Die gemeinsame europ\u00e4ische Polizeibeh\u00f6rde Europol soll weitere Befugnisse erhalten.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "13",
+      "Question_Label": "Die EU soll l\u00e4nder\u00fcbergreifende, mehrsprachige Angebote des \u00f6ffentlich-rechtlichen Rundfunks st\u00e4rker finanziell f\u00f6rdern.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "14",
+      "Question_Label": "Die EU soll das Ziel verwerfen, klimaneutral zu werden.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "15",
+      "Question_Label": "Bei den Wahlen zum Europ\u00e4ischen Parlament sollen die Parteien weiterhin frei entscheiden k\u00f6nnen, wie gro\u00df der Anteil der Geschlechter auf ihren Listen ist.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "16",
+      "Question_Label": "Die EU soll Vorgaben f\u00fcr die H\u00f6he der sozialen Grundsicherung in den Mitgliedstaaten machen.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "17",
+      "Question_Label": "Betreiber sozialer Netzwerke sollen frei entscheiden d\u00fcrfen, wie sie mit Desinformation auf ihren Plattformen umgehen.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "18",
+      "Question_Label": "In der EU sollen mehr Fl\u00e4chen als Naturschutzgebiete ausgewiesen werden.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "19",
+      "Question_Label": "EU-F\u00f6rdermittel f\u00fcr Mitgliedstaaten, die Regeln und Werte der EU verletzen, sollen weiterhin zur\u00fcckgehalten werden.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "20",
+      "Question_Label": "Die EU soll mehr Waffen f\u00fcr die Ukraine finanzieren.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "21",
+      "Question_Label": "Die zul\u00e4ssige Menge an Fischen, die in EU-Gew\u00e4ssern gefangen werden d\u00fcrfen, soll gesenkt werden.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "22",
+      "Question_Label": "Die Einfuhrz\u00f6lle der EU auf chinesische Elektroautos sollen erh\u00f6ht werden.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "23",
+      "Question_Label": "Die EU soll sich daf\u00fcr einsetzen, dass Schwangerschaftsabbr\u00fcche in allen Mitgliedstaaten straffrei m\u00f6glich sind.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "24",
+      "Question_Label": "Es sollen wieder dauerhafte Grenzkontrollen zwischen den Mitgliedstaaten der EU stattfinden.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "25",
+      "Question_Label": "Die Aufnahme neuer Staaten in die EU soll in allen Mitgliedstaaten durch Volksabstimmungen best\u00e4tigt werden m\u00fcssen.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "26",
+      "Question_Label": "Die EU soll den Anbau von weiteren gentechnisch ver\u00e4nderten Pflanzensorten erlauben.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "27",
+      "Question_Label": "Geschlechtsspezifische Gewalt gegen Frauen soll europaweit als Asylgrund anerkannt werden.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "28",
+      "Question_Label": "Urheberrechtlich gesch\u00fctzte Werke (z.B. Fotos, Musik, Literatur) sollen in der EU f\u00fcr nicht-kommerzielle Zwecke kostenlos verwendet werden d\u00fcrfen.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "29",
+      "Question_Label": "Die Sanktionen der EU gegen Russland sollen abgebaut werden.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "30",
+      "Question_Label": "Das Erasmus+ Stipendium f\u00fcr Auslandsaufenthalte soll f\u00fcr Studierende, die \u00fcber weniger finanzielle Mittel verf\u00fcgen, h\u00f6her sein.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "31",
+      "Question_Label": "Die EU soll Atomkraft weiterhin als nachhaltige Energiequelle einstufen.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "32",
+      "Question_Label": "Die Einwanderung von Fachkr\u00e4ften in die EU soll vereinfacht werden.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "33",
+      "Question_Label": "Die Beteiligung au\u00dfereurop\u00e4ischer Investoren an Unternehmen im Bereich kritischer Infrastruktur soll in der EU st\u00e4rker beschr\u00e4nkt werden.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "34",
+      "Question_Label": "Der Pr\u00e4sident bzw. die Pr\u00e4sidentin der Europ\u00e4ischen Kommission soll von den B\u00fcrgerinnen und B\u00fcrgern direkt gew\u00e4hlt werden.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "35",
+      "Question_Label": "In der EU sollen Unternehmen mehr f\u00fcr den Aussto\u00df von CO\u2082 zahlen m\u00fcssen.",
+      "users_answer": -1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "36",
+      "Question_Label": "Asylbewerberinnen und -bewerber sollen ihren Antrag vor \u00dcberschreiten der EU-Au\u00dfengrenze stellen m\u00fcssen und dort auf das Ergebnis warten.",
+      "users_answer": 0,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "37",
+      "Question_Label": "Die EU soll weiterhin in gemeinsame europ\u00e4ische R\u00fcstungsprojekte investieren.",
+      "users_answer": 1,
+      "Wheights": "false"
+  },
+  {
+      "Question number": "38",
+      "Question_Label": "Das Europ\u00e4ische Parlament soll weiterhin eine zentrale Rolle in der EU spielen.",
+      "users_answer": 0,
+      "Wheights": "false"
+  }
 ]

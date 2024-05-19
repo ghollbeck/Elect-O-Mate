@@ -1,5 +1,13 @@
 [
     {
+        "Party_Answer": 1,
+        "Party_Name": "CDU / CSU",
+        "Party_Full_Name": "Christlich Demokratische Union Deutschlands / Christlich-Soziale Union in Bayern e.V.",
+        "Party_Statement": "Die EU soll eigene Steuern erheben dürfen.",
+        "Party_Position": "stimme nicht zu"
+    },
+
+    {
         "Question_Number": 1,
         "Party_Name": "GRÜNE",
         "Full_Party_Name": "BÜNDNIS 90/DIE GRÜNEN",
@@ -8788,13 +8796,6 @@
         "Question_Number": 37,
         "Party_Name": "PdF",
         "Full_Party_Name": "Partei des Fortschritts",
-        "Question_Label": "Die EU soll weiterhin in gemeinsame europäische Rüstungsprojekte investieren.",
-        "Party_Answer": 1
-    },
-    {
-        "Question_Number": 37,
-        "Party_Name": "V-Partei³",
-        "Full_Party_Name": "V-Partei³ - Partei für Veränderung, Vegetarier und Veganer",
         "Question_Label": "Die EU soll weiterhin in gemeinsame europäische Rüstungsprojekte investieren.",
         "Party_Answer": 1
     },
