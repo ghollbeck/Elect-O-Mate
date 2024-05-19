@@ -159,8 +159,11 @@ function App() {
   // Use this function to scroll smoothly to a target element
   const smoothScrollTo = (ref, duration) => {
     const targetPosition = ref.current.offsetTop;
+    const viewportHeight = window.innerHeight;
+    const targetCenterPosition =
+      targetPosition - viewportHeight / 2 + ref.current.offsetHeight / 2;
     const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
+    const distance = targetCenterPosition - startPosition;
     let startTime = null;
 
     function animation(currentTime) {
@@ -186,7 +189,6 @@ function App() {
   const scrollToQuestionnaire = () => {
     smoothScrollTo(toQuestionnaire, 1000);
   };
-  
 
   const scrollToChat = () => {
     smoothScrollTo(toChat, 1000);
@@ -264,7 +266,7 @@ function App() {
         <LanguageSelector changeLanguage={changeLanguage} />
       </div>
 
-      <div className='flex flex-col items-center pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
+      <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={scrollToQuestionnaire} />
         </div>
@@ -273,7 +275,7 @@ function App() {
         </div>
       </div>
 
-      <div ref={toQuestionnaire} className='relative mb-10 z-10'>
+      <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
         <Questionnaire
           scrollToChat={scrollToChat}
           handleSendMessage={handleSendMessage}
@@ -283,8 +285,8 @@ function App() {
         />
       </div>
 
-      <div ref={toChat} className='flex justify-center relative'>
-        <div className='w-full mx-2 md:w-1/2 mt-20'>
+      <div ref={toChat} className='flex justify-center relative mt-64'>
+        <div className='w-full mx-2 md:w-1/2 '>
           <Chat
             scrollToQuestionnaire={scrollToQuestionnaire}
             scrolltoChat={scrollToChat}
@@ -296,7 +298,7 @@ function App() {
         </div>
       </div>
 
-      <div className='relative mt-10'>
+      <div className='relative mt-36'>
         <div
           className='absolute top-0 left-0 w-full bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] transform skew-y-3 h-100'
           style={{ height: '110%' }}

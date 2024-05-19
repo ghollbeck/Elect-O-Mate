@@ -130,7 +130,7 @@ const Questionnaire = ({
   const { t } = useTranslation();
 
   return (
-    <div className='flex-grow bg-red my-20 h-auto md:py-20 flex items-center justify-center relative w-full'>
+    <div className='flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full'>
       <div
         className='absolute top-0 left-0 w-full transform scale-125 skew-y-3'
         style={{

@@ -24,7 +24,7 @@ const QuestionCard = ({
 
   return (
     <div
-      className='flex flex-col h-[70vh] md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-lg shadow-md bg-white'
+      className='flex flex-col h-[70dvh] md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-lg shadow-md bg-white'
       style={{ backgroundImage: 'radial-gradient(circle, #474747, #030303)' }}
     >
       <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
