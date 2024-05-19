@@ -154,6 +154,7 @@ function App() {
         <Questionnaire
           scrollToChat={scrollToChat}
           onSendMessage={handleSendMessage}
+          scrollToQuestionnaire={scrollToQuestionnaire}
           isSending={isSending}
         />
       </div>
