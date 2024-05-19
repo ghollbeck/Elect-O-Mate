@@ -9,9 +9,8 @@ const QuestionCard = ({
   answer,
   onAnswer,
   isSending,
-  onSendMessage,
+  handleSendMessage,
   scrollToChat,
-  scrollToQuestionnaire,
 }) => {
   const { t } = useTranslation();
 
@@ -76,7 +75,7 @@ const QuestionCard = ({
 
       <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0 text-base'>
         <TextInput
-          onSendMessage={onSendMessage}
+          handleSendMessage={handleSendMessage}
           isSending={isSending}
           scrollToChat={scrollToChat}
           followup='folloup placeholder' //{question.followup}

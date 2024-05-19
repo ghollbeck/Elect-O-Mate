@@ -5,7 +5,7 @@ import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
 
 const Questionnaire = ({
-  onSendMessage,
+  handleSendMessage,
   isSending,
   scrollToChat,
   scrollToQuestionnaire,
@@ -213,7 +213,7 @@ const Questionnaire = ({
                 }} // Translating the text property
                 answer={answers[index]}
                 onAnswer={handleAnswer}
-                onSendMessage={onSendMessage}
+                handleSendMessage={handleSendMessage}
                 isSending={isSending}
                 scrollToChat={scrollToChat}
                 scrollToQuestionnaire={scrollToQuestionnaire}

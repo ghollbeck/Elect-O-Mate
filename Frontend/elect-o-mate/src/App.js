@@ -275,7 +275,7 @@ function App() {
       <div ref={toQuestionnaire} className='relative mb-10 z-10'>
         <Questionnaire
           scrollToChat={scrollToChat}
-          onSendMessage={handleSendMessage}
+          handleSendMessage={handleSendMessage}
           scrollToQuestionnaire={scrollToQuestionnaire}
           isSending={isSending}
         />
