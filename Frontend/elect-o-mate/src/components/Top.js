@@ -6,7 +6,7 @@ const Top = ({ onButtonClick }) => {
   return (
     <div className='md:mb-[100px]'>
       <header
-        className='text-black md:pt-40 my-10 text-center'
+        className='text-black  my-10 text-center'
         style={{ color: '#C5D5D3' }}
       >
         <h1 className='text-5xl md:text-8xl font-extrabold'>Elect-O-Mate</h1>

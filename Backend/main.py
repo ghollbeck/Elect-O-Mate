@@ -269,48 +269,95 @@ add_routes(
 # )
 
 # for voice, we have a streaming endpoint
-import asyncio
-import os
-from typing import AsyncIterable, Awaitable
-
+import json
+from fastapi import FastAPI, Request, Response
+from fastapi.responses import JSONResponse
 from fastapi.responses import StreamingResponse
-from langchain.callbacks import AsyncIteratorCallbackHandler
-from langchain.schema import HumanMessage
-from pydantic import BaseModel
+import time
+import asyncio
 
-async def send_message(message: str) -> AsyncIterable[str]:
-    callback = AsyncIteratorCallbackHandler()
+def streaming_response_format(x): 
+    return {
+        "id": "chatcmpl-8mcLf78g0quztp4BMtwd3hEj58Uof",
+        "object": "chat.completion",
+        "created": int(time.time()),
+        "model": "gpt-3.5-turbo-0613",
+        "system_fingerprint": None,
+        "choices": [
+            {
+                "index": 0,
+                "delta": x,
+                "logprobs": None,
+                "finish_reason": "stop"
+            }
+        ]
+    }
 
-    async def wrap_done(fn: Awaitable, event: asyncio.Event):
-        """Wrap an awaitable with a event to signal when it's done or an exception is raised."""
-        try:
-            await fn
-        except Exception as e:
-            # TODO: handle exception
-            print(f"Caught exception: {e}")
-        finally:
-            # Signal the aiter to stop.
-            event.set()
+def nonstreaming_response_format(x):
+    return  {
+        "id": "chatcmpl-abc123",
+        "object": "chat.completion",
+        "created": 1677858242,
+        "model": "gpt-3.5-turbo-0613",
+        "usage": {
+            "prompt_tokens": 13,
+            "completion_tokens": 7,
+            "total_tokens": 20
+        },
+        "choices": [
+            {
+                "message": {
+                    "role": "assistant",
+                    "content": x,
+                },
+                "logprobs": None,
+                "finish_reason": "stop",
+                "index": 0
+            }
+        ]
+    }
 
-    # Begin a task that runs in the background.
-    task = asyncio.create_task(wrap_done(
-        chain_openai.agenerate(messages=[[HumanMessage(content=message)]]),
-        callback.done),
-    )
+async def stream_openai_events(last_message):
+    """
+    Function to simulate streaming data.
+    """
+    
+    async for chunk in chain_openai.astream(last_message):
+        ret = streaming_response_format(chunk)
 
-    async for token in callback.aiter():
-        # Use server-sent-events to stream the response
-        yield f"data: {token}\n\n"
+        # I really don't know what goes here now...
+        print(f'data: {chunk}\n\n')
+        yield f'data: {chunk}\n\n'
 
-    await task
+@app.post('/openai/chat/completions')
+async def streaming_handler(request: Request):
 
-class StreamRequest(BaseModel):
-    """Request body for streaming."""
-    message: str
+    body = await request.json()  # Directly converting request body to JSON
+    messages = body['messages']
+    last_message = messages[-1]['content']
 
-@app.post("/openai/chat/completions")
-def stream(body: StreamRequest):
-    return StreamingResponse(send_message(body.message), media_type="text/event-stream")
+    # Assuming 'stream_openai_events' is a function you've defined to handle the streaming
+    try:
+        return StreamingResponse(
+            stream_openai_events(last_message),
+            media_type="text/event-stream",
+        )
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        # Handle the exception (e.g., return an error response to the client)
+        return JSONResponse({"error": str(e)})
+
+# or? fuck streaming?
+#@app.post('/openai/chat/completions')
+async def nonstreaming_handler(request: Request):
+
+    body = await request.json()  # Directly converting request body to JSON
+    messages = body['messages']
+    last_message = messages[-1]['content']
+
+    result = chain_openai.invoke(last_message)
+    print(result)
+    return JSONResponse(nonstreaming_response_format(result))
 
 
 
