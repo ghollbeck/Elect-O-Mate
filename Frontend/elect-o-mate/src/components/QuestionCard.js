@@ -23,11 +23,11 @@ const QuestionCard = ({
 
   return (
     <div
-      className='flex flex-col h-100 md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-lg shadow-md bg-white'
+      className='flex flex-col h-[70vh] md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-lg shadow-md bg-white'
       style={{ backgroundImage: 'radial-gradient(circle, #474747, #030303)' }}
     >
       <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
-        <h2 className='text-xs md:text-xl font-semibold break-words'>
+        <h2 className='text-xs md:text-xl font-thin break-words'>
           {index}/{length - 2} {question.title}
         </h2>
       </div>
@@ -38,7 +38,7 @@ const QuestionCard = ({
         </h2>
       </div>
 
-      <div className='flex justify-center items-end flex-shrink-0 pb-2 md:pb-5'>
+      <div className='flex justify-center items-end flex-shrink-0 pb-2 md:pb-8'>
         <div className='flex space-x-1 md:space-x-4'>
           <button
             className={`border w-full h-8 md:h-10 ${
@@ -73,12 +73,12 @@ const QuestionCard = ({
         </div>
       </div>
 
-      <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0'>
+      <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0 text-base'>
         <TextInput
           onSendMessage={onSendMessage}
           isSending={isSending}
           scrollToChat={scrollToChat}
-          followup={question.followup}
+          followup='folloup placeholder' //{question.followup}
         />
       </div>
     </div>

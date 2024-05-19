@@ -1,11 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react';
 import chatbot from './../pictures/Bot.png'; // Import this icon to @mui
 import { useTranslation } from 'react-i18next';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
-const ChatWindow = ({messages}) => {
+const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
   const { t } = useTranslation();
   const chatWindowRef = useRef(null);
-  
+
   useEffect(() => {
     if (chatWindowRef.current) {
       chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
@@ -35,9 +36,8 @@ const ChatWindow = ({messages}) => {
 
   return (
     <div
-      className='overflow-y-auto border-none shadow-xl border-gray-300 flex flex-col justify-between bg-white'
+      className='relative overflow-y-auto border-none shadow-xl border-gray-300 flex flex-col justify-between bg-white h-[600px] md:[700px]'
       style={{
-        height: '700px',
         overflowY: 'auto',
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',
@@ -45,6 +45,13 @@ const ChatWindow = ({messages}) => {
       }}
       ref={chatWindowRef}
     >
+      <button
+        className='absolute py-5 px-5 text-black rounded-full font-thin transition duration-300 ease-in-out transform hover:scale-110 text-xl right-0 bottom-0 z-10 bg-black bg-opacity-20 backdrop-blur-lg'
+        onClick={scrollToQuestionnaire}
+      >
+        <ArrowUpwardIcon />
+      </button>
+
       <div className='p-4'>
         <div className='mb-2 flex-grow'>
           {messages.map((message, index) => (

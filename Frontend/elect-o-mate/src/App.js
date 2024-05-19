@@ -11,6 +11,7 @@ import Questionnaire from './components/Questionnaire';
 import LanguageSelector from './components/LanguageSelector';
 import './i18n';
 import OrangeCircle from './components/OrangeCircle';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -115,19 +116,18 @@ function App() {
   };
 
   useEffect(() => {
-  const fetchUserLanguageAndSetLanguage = async () => {
-    try {
-      const userLanguage = await getUserLanguageFromIP();
-      i18n.changeLanguage(userLanguage);
-    } catch (error) {
-      console.error('Error fetching user language:', error);
-      i18n.changeLanguage('en');
-    }
-  };
+    const fetchUserLanguageAndSetLanguage = async () => {
+      try {
+        const userLanguage = await getUserLanguageFromIP();
+        i18n.changeLanguage(userLanguage);
+      } catch (error) {
+        console.error('Error fetching user language:', error);
+        i18n.changeLanguage('en');
+      }
+    };
 
-  fetchUserLanguageAndSetLanguage();
-}, [i18n]); // Include i18n in the dependency array
-
+    fetchUserLanguageAndSetLanguage();
+  }, [i18n]); // Include i18n in the dependency array
 
   return (
     <div
@@ -159,7 +159,7 @@ function App() {
       </div>
 
       <div ref={toChat} className='flex justify-center relative'>
-        <div className='w-full mx-2 md:w-1/2 md:my-20'>
+        <div className='w-full mx-2 md:w-1/2 mt-20 md:my-20'>
           <Chat
             scrollToQuestionnaire={scrollToQuestionnaire}
             scrolltoChat={scrollToChat}
