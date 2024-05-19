@@ -33,6 +33,9 @@ import requests
 
 import PyPDF2
 
+from pathlib import Path
+BASE = Path(__file__).resolve().parent
+
 
 app = FastAPI(
     title="LangChain Server",
@@ -82,13 +85,13 @@ def load_web():
 
 def get_url_text() -> List[str]:
     # check if url texts are already in cache
-    if os.path.isfile("./cache/url_texts.pkl"):
-        with open("./cache/url_texts.pkl", "rb") as f:
+    if (BASE / "cache/url_texts.pkl").exists():
+        with (BASE / "cache/url_texts.pkl").open("rb") as f:
             texts = pickle.load(f)
         
     else:
         texts = load_web()
-        with open("./cache/url_texts.pkl", "wb") as f:
+        with (BASE / "cache/url_texts.pkl").open("wb") as f:
             pickle.dump(texts, f)
         
     return texts
@@ -139,34 +142,34 @@ def load_git_pdfs(pdf_files: List[str]):
     return pdf_contents
 
 local_pdf_dir = "/context/pdfs"
-pdf_files = get_pdfs_from_git(local_pdf_dir)
+#pdf_files = get_pdfs_from_git(local_pdf_dir)
 
-#def load_pdfs():
-#    doc_file = "./cache/pdf_documents.pkl"
-#    text_file = "./cache/pdf_texts.pkl"
-#    if os.path.exists(doc_file):
-#        with open(doc_file, "rb") as f:
-#            documents = pickle.load(f)
-#    else:
-#        pdfs = get_pdfs()
-#        documents = []
-#        for file in pdfs:
-#            loader = PyPDFLoader(file)
-#            documents.append(loader.load())
-#        with open(doc_file, "wb") as f:
-#            pickle.dump(documents, f)
-#    
-#    documents = [page for pdf in documents for page in pdf]
-#
-#    if os.path.exists(text_file):
-#        with open(text_file, "rb") as f:
-#            texts = pickle.load(f)
-#    else:
-#        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
-#        texts = text_splitter.split_documents(documents)
-#        with open(text_file, "wb") as f:
-#            pickle.dump(texts, f)
-#    return texts
+def load_pdfs():
+    doc_file = BASE / "cache/pdf_documents.pkl"
+    text_file = BASE / "cache/pdf_texts.pkl"
+    if doc_file.exists():
+        with doc_file.open("rb") as f:
+            documents = pickle.load(f)
+    else:
+        pdfs = get_pdfs()
+        documents = []
+        for file in pdfs:
+            loader = PyPDFLoader(file)
+            documents.append(loader.load())
+        with doc_file.open("wb") as f:
+            pickle.dump(documents, f)
+    
+    documents = [page for pdf in documents for page in pdf]
+
+    if text_file.exists():
+        with text_file.open("rb") as f:
+            texts = pickle.load(f)
+    else:
+        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
+        texts = text_splitter.split_documents(documents)
+        with text_file.open("wb") as f:
+            pickle.dump(texts, f)
+    return texts
 
 
 template = """Answer the question based only on the following context including a bullet point list of sources (filename or url) in the bottom of the answer:
@@ -200,8 +203,8 @@ print("getting website content")
 url_texts = get_url_text()
 
 print("getting pdf content")
-#pdf_texts = load_pdfs()
-pdf_texts = load_git_pdfs(pdf_files)
+pdf_texts = load_pdfs()
+#pdf_texts = load_git_pdfs(pdf_files)
 
 
 print("building vector db for website content")
