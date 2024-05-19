@@ -10,7 +10,6 @@ import {
   EmailShareButton,
   RedditShareButton,
   FacebookIcon,
-  TwitterIcon,
   LinkedinIcon,
   WhatsappIcon,
   TelegramIcon,
@@ -54,6 +53,12 @@ export default function App() {
         <section className='mb-8'>
           <p>{t('made_with_love')}</p>
         </section>
+      </div>
+      <div className='bg-black text-center pb-3'>
+        Contact:
+        <a className='text-white ml-2' href='mailto:brissanikolaus@gmail.com'>
+          brissanikolaus@gmail.com
+        </a>
       </div>
       <div className='bg-black text-center pb-3'>
         © 2024 Copyright:

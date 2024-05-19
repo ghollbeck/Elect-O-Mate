@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import chatbot from './../pictures/Bot.png'; // Import this icon to @mui
 import { useTranslation } from 'react-i18next';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
@@ -6,25 +6,27 @@ import FormatMessages from './FormatMessages';
 
 const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
   const { t } = useTranslation();
-  const chatWindowRef = useRef(null);
+  const chatContentRef = useRef(null);
 
   useEffect(() => {
-    if (chatWindowRef.current) {
-      chatWindowRef.current.scrollTop = chatWindowRef.current.scrollHeight;
+    if (chatContentRef.current) {
+      console.log('scrollHeight:', chatContentRef.current.scrollHeight);
+      console.log('scrollTop before:', chatContentRef.current.scrollTop);
+      chatContentRef.current.scrollTop = chatContentRef.current.scrollHeight;
+      console.log('scrollTop after:', chatContentRef.current.scrollTop);
     }
   }, [messages]);
 
   return (
     <div
-      className='relative flex flex-col overflow-y-auto border-none shadow-xl border-gray-300 bg-white  h-[80dvh]'
+      className='relative flex flex-col overflow-y-auto border-none shadow-xl border-gray-300 bg-white h-[80dvh]'
       style={{
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',
         borderRadius: '10px',
       }}
-      ref={chatWindowRef}
     >
-      <div className='p-4 flex-grow overflow-y-auto'>
+      <div className='p-4 flex-grow overflow-y-auto' ref={chatContentRef}>
         {messages.map((message, index) => (
           <div
             key={index}
