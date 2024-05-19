@@ -77,8 +77,8 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
                   {message.isError ? 'Error' : 'Elect-O-Mate'}
                 </p>
                 <p
-                  className='text-gray-600 p-2 rounded-md text-left break-words'
-                  style={{ background: '#A1BBB8' }}
+                  className='text-gray-600 p-2 rounded-md text-left'
+                  style={{ wordBreak: 'break-word', background: '#A1BBB8' }}
                 >
                   {convertTextToLinks(message.text)}
                 </p>
