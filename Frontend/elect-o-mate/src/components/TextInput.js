@@ -10,6 +10,7 @@ const TextInput = ({
   scrollToChat,
   followup,
   setIsSending,
+  question,
 }) => {
   const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
@@ -31,6 +32,11 @@ const TextInput = ({
   };
 
   const handleKeyDown = (event) => {
+    if (event.key === 'Tab' && !isSending && inputValue.trim() === '') {
+      event.preventDefault();
+      setInputValue(t(followup));
+      textareaRef.current.focus();
+    }
     if (event.key === 'Enter' && !event.shiftKey && !isSending) {
       event.preventDefault();
       handleSubmit(event);
@@ -95,7 +101,7 @@ const TextInput = ({
 
     event.preventDefault();
     if (inputValue.trim() !== '') {
-      handleSendMessage(inputValue, abortControllerRef.current);
+      handleSendMessage(question, inputValue, abortControllerRef.current);
       setInputValue('');
       textarea.style.height = 'auto';
       scrollToChat();
@@ -110,7 +116,7 @@ const TextInput = ({
   };
 
   return (
-    <div className='mt-9 shadow-full relative border-none'>
+    <div className='mt-9 shadow-full relative border-none z-20'>
       <form
         onSubmit={handleSubmit}
         className='flex items-center w-full relative pb-[1px]'
@@ -124,7 +130,7 @@ const TextInput = ({
           onChange={handleChange}
           autoComplete='off'
           rows='1'
-          className='shadow-xl bg-white resize-none appearance-none border-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-md box-border'
+          className='shadow-xl bg-transparent backdrop-blur-md appearance-none border border-white w-full py-2 px-3 text-white leading-tight focus:outline-none rounded-xl box-border placeholder-gray-400 resize-none'
           style={{
             position: 'absolute',
             bottom: 0,
@@ -135,24 +141,47 @@ const TextInput = ({
         <Button
           ref={buttonRef}
           type='submit'
-          //disabled={isSending}
           onClick={stopStreaming} // stiopStreaming checks if isSending is true
-          className='bg-red-300 scale-105 transition duration-300 ease-in-out transform hover:scale-110'
-          variant='contained'
-          style={{
-            backgroundImage:
-              'linear-gradient(to top right, rgba(248, 229, 127), rgba(222, 68, 8))',
-            color: 'white', // Set button text color to white
+          sx={{
+            backgroundColor: 'transparent',
+            border: '1px solid white',
+            borderRadius: '0.75rem',
             position: 'absolute',
-            right: 1,
-            bottom: 1,
-            borderStyle: 'solid', // Set border style to solid
+            right: 0,
+            bottom: 0,
+            background: 'transparent', // fixed: background needs quotes
+            backdropFilter: 'blur(10px)',
           }}
           endIcon={
             isSending ? (
-              <StopCircleIcon className='font-semibold scale-150' />
+              <StopCircleIcon
+                sx={{
+                  fontWeight: '600', // font-semibold
+                  color: 'white', // text-white
+                  transition: 'transform 0.2s ease-in-out', // transition duration-400 ease-in-out
+                  transform: 'scale(1.25)', // initial scale
+                  '&:hover': {
+                    transform: 'scale(1.35)', // hover:scale-125
+                  },
+                  marginRight: '0.35rem', // mr-1
+                  marginY: '0.125rem', // my-0.5
+                }}
+              />
             ) : (
-              <SendIcon className='font-semibold' />
+              <SendIcon
+                sx={{
+                  fontWeight: '600', // font-semibold
+                  color: 'white', // text-white
+                  transition: 'transform 0.2s ease-in-out', // transition duration-400 ease-in-out
+                  transform: 'scale(1.15)', // initial scale
+                  '&:hover': {
+                    transform: 'scale(1.25)', // hover:scale-125
+                  },
+                  marginRight: '0.25rem', // mr-1
+                  marginY: '0.125rem', // my-0.5
+                }}
+                className='font-semibold text-white '
+              />
             )
           }
         ></Button>

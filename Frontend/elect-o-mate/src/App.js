@@ -20,43 +20,30 @@ function App() {
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
 
-  /*   const handleSendMessage = async (text) => {
-    // Add user's message to chat
+  const formatMessage = (question, message) => {
+    const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
+    //console.log(question);
+    return fmessage;
+  };
+
+  const alter = (q, text) => {
     setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
-    setIsSending(true);
+    return formatMessage(q, text);
+  };
 
-       try {
-      // Perform API request
-      const response = await axios.post(
-        'https://backend.bruol.me/openai/invoke',
-        { input: text }
-      );
+  const handleSendMessage = async (question, text, abortController) => {
+    // Add user's message to chat
 
-      // Add API response to chat
+    if (question != '') {
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: response.data.output, isUser: false },
+        { text: question, isUser: true },
       ]);
-    } catch (error) {
-      // Add error message to chat
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        {
-          text: 'An error occurred. Please try again.',
-          isUser: false,
-          isError: true,
-        },
-      ]);
-    } finally {
-      setIsSending(false); // Reset isSending after API call completes
-    }  
-  }; */
 
-  // ----------------- STREAM ----------------------
-
-  const handleSendMessage = async (text, abortController) => {
-    // Add user's message to chat
-    setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
+      text = alter(question, text);
+    } else {
+      setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
+    }
     setIsSending(true);
 
     try {
@@ -131,14 +118,9 @@ function App() {
           });
         }
       }
-
-      console.log('Stream ended');
     } catch (error) {
       if (error.name === 'AbortError') {
-        console.log('Stream aborted');
       } else {
-        console.error('Error during stream:', error);
-
         // Add error message to chat
         setMessages((prevMessages) => [
           ...prevMessages,
@@ -153,8 +135,6 @@ function App() {
       setIsSending(false); // Reset isSending after API call completes
     }
   };
-
-  // ----------------- STREAM ----------------------
 
   // Use this function to scroll smoothly to a target element
   const smoothScrollTo = (ref, duration) => {
@@ -236,7 +216,6 @@ function App() {
       const countryCode = data.country;
       return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
     } catch (error) {
-      console.error('Error fetching user language:', error);
       return 'en'; // Default to English in case of error
     }
   };
@@ -247,7 +226,6 @@ function App() {
         const userLanguage = await getUserLanguageFromIP();
         i18n.changeLanguage(userLanguage);
       } catch (error) {
-        console.error('Error fetching user language:', error);
         i18n.changeLanguage('en');
       }
     };
@@ -257,8 +235,8 @@ function App() {
 
   return (
     <div
-      className='flex flex-col relative overflow-hidden'
-      style={{ backgroundImage: 'radial-gradient(#F0FFFF, #030303)' }}
+      className='flex flex-col relative overflow-hidden bg-gray-800'
+      //style={{ backgroundImage: 'radial-gradient(#F0FFFF, #c8c5c9)' }}
     >
       <OrangeCircle />
 
@@ -282,6 +260,7 @@ function App() {
           scrollToQuestionnaire={scrollToQuestionnaire}
           isSending={isSending}
           smoothScrollTo={smoothScrollTo}
+          setIsSending={setIsSending}
         />
       </div>
 

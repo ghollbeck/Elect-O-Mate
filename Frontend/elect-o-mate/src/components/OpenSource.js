@@ -25,12 +25,18 @@ const OpenSourceSection = () => {
         </ul>
         <p className='mb-6'>{t('open_source_p2')}</p>
         <div className='flex space-x-4'>
-          <button className='bg-black transition duration-300 ease-in-out transform hover:scale-110 text-white font-bold py-2 px-4 rounded'>
+          <button
+            onClick={() =>
+              window.open('https://github.com/ghollbeck/Elect-O-Mate', '_blank')
+            }
+            className='bg-black transition duration-300 ease-in-out transform hover:scale-110 text-white font-bold py-2 px-4 rounded'
+          >
             <i className='fab fa-github'></i> GitHub
           </button>
-          <button className='bg-black transition duration-300 ease-in-out transform hover:scale-110 text-white font-bold py-2 px-4 rounded'>
+
+          {/* <button className='bg-black transition duration-300 ease-in-out transform hover:scale-110 text-white font-bold py-2 px-4 rounded'>
             {t('tech_report')}
-          </button>
+          </button> */}
         </div>
       </div>
     </section>

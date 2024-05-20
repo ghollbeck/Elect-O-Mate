@@ -61,22 +61,23 @@ def load_dotenv_file():
 load_dotenv_file()
 
 
-#def get_urls(filename: str = "/Users/lorinurbantat/Documents/GPT-4-Elections/AAChatPolite/Sources/URLS/bpb_2_Wahlomat.txt") -> List[str]:
-#    with open(filename, "r") as f:
-#        urls = f.readlines()
-    # remove the newline character
-#    urls = [url.strip() for url in urls]
-#    return urls
+def get_urls(filename: str = "./Sources/URLS/bpb_2_Wahlomat.txt") -> List[str]:
+   with open(filename, "r") as f:
+       urls = f.readlines()
+    #remove the newline character
+   urls = [url.strip() for url in urls]
+   return urls
 
+# faulty function test before using the one below
 def get_urls_from_git(url: str) -> List[str]:
     response = requests.get(url)
-    response.raise_for_status(url) #Notice bad responses
+    response.raise_for_status() #Notice bad responses
     urls = response.text.splitlines()
     return [url.strip() for url in urls]
 
 def load_web():
-    #urls = get_urls()
-    urls = get_urls_from_git('https://github.com/ghollbeck/Elect-O-Mate/blob/cfd1bee938d7b0326055f817ced7adf73361c191/Old_Version_Gabor_Not_Used/Sources/URLS/bpb_2_Wahlomat.txt')
+    urls = get_urls()
+    # urls = get_urls_from_git('https://github.com/ghollbeck/Elect-O-Mate/blob/cfd1bee938d7b0326055f817ced7adf73361c191/Old_Version_Gabor_Not_Used/Sources/URLS/bpb_2_Wahlomat.txt')
     loader = WebBaseLoader(urls)
     documents = loader.load()
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
@@ -99,9 +100,9 @@ def get_url_text() -> List[str]:
 
 def get_pdfs():
     pdfs = []
-    for filename in os.listdir("/Users/lorinurbantat/Documents/GPT-4-Elections/AAChatPolite/Sources/PDFs"):
+    for filename in os.listdir("./Sources/PDFs"):
         if filename.endswith(".pdf"):
-            pdfs.append(f"/Users/lorinurbantat/Documents/GPT-4-Elections/AAChatPolite/Sources/PDFs/{filename}")
+            pdfs.append(f"./Sources/PDFs/{filename}")
     return pdfs
 #
 #def get_pdfs_from_git(local_dir: str) -> List[str]:
@@ -322,12 +323,14 @@ async def stream_openai_events(last_message):
     Function to simulate streaming data.
     """
     
-    async for chunk in chain_openai.astream(last_message):
+    async for chunk in chain_openai.astream_events(last_message, version="v1"):
         ret = streaming_response_format(chunk)
+        ret = dict(ret)
+        print(ret)
 
         # I really don't know what goes here now...
         print(f'data: {chunk}\n\n')
-        yield f'data: {chunk}\n\n'
+        yield f'data: {json.dumps(ret)}\n\n'
 
 @app.post('/openai/chat/completions')
 async def streaming_handler(request: Request):

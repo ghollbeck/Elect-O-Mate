@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 const Questionnaire = ({
   handleSendMessage,
   isSending,
+  setIsSending,
   scrollToChat,
   scrollToQuestionnaire,
 }) => {
@@ -124,13 +125,22 @@ const Questionnaire = ({
   }, [questions]);
 
   const scrollBarHideStyle = {
-    scrollbarWidth: 'none', // Firefox
+    overflow: 'auto', // Enable scrolling
     msOverflowStyle: 'none', // IE and Edge
+    scrollbarWidth: 'none', // Firefox
   };
+
+  // Additional style for WebKit browsers
+  const webkitScrollBarHideStyle = {
+    '::-webkit-scrollbar': {
+      display: 'none', // Safari and Chrome
+    },
+  };
+
   const { t } = useTranslation();
 
   return (
-    <div className='flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full'>
+    <div className='flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>
       <div
         className='absolute top-0 left-0 w-full transform scale-125 skew-y-3'
         style={{
@@ -139,15 +149,12 @@ const Questionnaire = ({
         }}
       />
 
-      <div className='relative w-full overflow-x-hidden'>
-        {/*        <div className='absolute left-0 top-0 h-full z-20 w-60 pointer-events-none  bg-gradient-to-r from-[#3D6964] to-[#00000000]' />
-        <div className='absolute right-0 top-0 h-full w-60 z-20 pointer-events-none bg-gradient-to-r from-[#00000000] via to-[#FDFDFDCF]' /> */}
-
+      <div className='relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
         {currentQuestionIndex > 1 && (
           <button
             z
             onClick={handleLeft}
-            className='hidden md:block absolute left-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
+            className='hidden lg:block absolute left-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
           >
             <svg
               className='w-8 h-8'
@@ -169,7 +176,7 @@ const Questionnaire = ({
         {currentQuestionIndex < questions.length - 2 && (
           <button
             onClick={handleRight}
-            className='hidden md:block absolute right-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
+            className='hidden lg:block absolute right-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
           >
             <svg
               className='w-8 h-8'
@@ -191,7 +198,11 @@ const Questionnaire = ({
         <div
           ref={containerRef}
           className='w-full px-0 py-20 flex space-x overflow-x-auto height-100 relative snap-x snap-mandatory'
-          style={{ ...scrollBarHideStyle, WebkitOverflowScrolling: 'touch' }}
+          style={{
+            ...webkitScrollBarHideStyle,
+            ...scrollBarHideStyle,
+            WebkitOverflowScrolling: 'touch',
+          }}
         >
           {questions.map((question, index) => (
             <div
@@ -214,6 +225,7 @@ const Questionnaire = ({
                 answer={answers[index]}
                 onAnswer={handleAnswer}
                 handleSendMessage={handleSendMessage}
+                setIsSending={setIsSending}
                 isSending={isSending}
                 scrollToChat={scrollToChat}
                 scrollToQuestionnaire={scrollToQuestionnaire}
