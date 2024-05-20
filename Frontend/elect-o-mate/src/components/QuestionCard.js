@@ -26,14 +26,14 @@ const QuestionCard = ({
   // If question is empty, render an empty card
   if (!question || !question.text) {
     return (
-      <div className='flex flex-col h-60 md:h-80 w-[270px] md:w-[800px] items-center justify-center p-6 bg-transparent text-white flex-shrink-0'></div>
+      <div className='flex flex-col h-60 md:h-80  w-[75vw] lg:w-[800px] items-center justify-center bg-transparent text-white flex-shrink-0'></div>
     );
   }
 
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
       {/* Front of the card */}
-      <div className='flex flex-col h-[70dvh] md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/80'>
+      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/80 mb-5'>
         <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
           <h2 className='text-xs md:text-xl font-thin break-words'>
             {index}/{length - 2} {question.title}
@@ -111,7 +111,7 @@ const QuestionCard = ({
       </div>
 
       {/* Back of the card */}
-      <div className='flex flex-col h-[70dvh] md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/80'>
+      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/80'>
         <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
           <h2 className='text-xs md:text-xl font-thin break-words'>
             {index}/{length - 2} {t('answer_title')}
