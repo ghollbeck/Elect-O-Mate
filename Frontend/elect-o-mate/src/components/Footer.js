@@ -27,25 +27,53 @@ export default function App() {
       <div className='container mx-auto'>
         <section className='mb-4'>
           <div className='flex justify-center items-center space-x-4'>
-            <FacebookShareButton url={url}>
+            <FacebookShareButton
+              url={url}
+              className='transition-transform ease-in-out transform hover:scale-125'
+            >
               <FacebookIcon size={32} round />
             </FacebookShareButton>
-            <TwitterShareButton url={url} title={title}>
-              <FaXTwitter size={32} round />
+            <TwitterShareButton
+              url={url}
+              title={title}
+              className='transition-transform ease-in-out transform hover:scale-125'
+            >
+              <FaXTwitter size={32} />
             </TwitterShareButton>
-            <LinkedinShareButton url={url} title={title}>
+            <LinkedinShareButton
+              url={url}
+              title={title}
+              className='transition-transform ease-in-out transform hover:scale-125'
+            >
               <LinkedinIcon size={32} round />
             </LinkedinShareButton>
-            <WhatsappShareButton url={url} title={title}>
+            <WhatsappShareButton
+              url={url}
+              title={title}
+              className='transition-transform ease-in-out transform hover:scale-125'
+            >
               <WhatsappIcon size={32} round />
             </WhatsappShareButton>
-            <TelegramShareButton url={url} title={title}>
+            <TelegramShareButton
+              url={url}
+              title={title}
+              className='transition-transform ease-in-out transform hover:scale-125'
+            >
               <TelegramIcon size={32} round />
             </TelegramShareButton>
-            <EmailShareButton url={url} subject={title} body={t('email_body')}>
+            <EmailShareButton
+              url={url}
+              subject={title}
+              body={t('email_body')}
+              className='transition-transform ease-in-out transform hover:scale-125'
+            >
               <EmailIcon size={32} round />
             </EmailShareButton>
-            <RedditShareButton url={url} title={title}>
+            <RedditShareButton
+              url={url}
+              title={title}
+              className='transition-transform ease-in-out transform hover:scale-125'
+            >
               <RedditIcon size={32} round />
             </RedditShareButton>
           </div>
