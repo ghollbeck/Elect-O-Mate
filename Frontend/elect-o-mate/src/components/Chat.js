@@ -13,17 +13,7 @@ const Chat = ({
   // Props als Objekt dekonstruieren
 
   return (
-    <div className=' relative h-[80dvh]'>
-      {/* <ChatWindow
-    messages={messages}
-    scrollToQuestionnaire={scrollToQuestionnaire}
-  />
-  <TextInput
-    handleSendMessage={handleSendMessage}
-    isSending={isSending}
-    scrollToChat={scrolltoChat}
-    setIsSending={setIsSending}
-  /> */}
+    <div className=' relative h-[80dvh] bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] rounded-xl'>
       <div className='absolute inset-0'>
         <ChatWindow
           messages={messages}

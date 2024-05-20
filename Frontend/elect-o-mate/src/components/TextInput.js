@@ -129,7 +129,7 @@ const TextInput = ({
           onChange={handleChange}
           autoComplete='off'
           rows='1'
-          className='shadow-xl bg-transparent resize-none appearance-none border border-white w-full py-2 px-3 text-white leading-tight focus:outline-none rounded-md box-border placeholder-gray-400'
+          className='shadow-xl bg-transparent resize-none appearance-none border border-white w-full py-2 px-3 text-white leading-tight focus:outline-none rounded-xl box-border placeholder-gray-400'
           style={{
             position: 'absolute',
             bottom: 0,
@@ -141,22 +141,13 @@ const TextInput = ({
           ref={buttonRef}
           type='submit'
           onClick={stopStreaming} // stiopStreaming checks if isSending is true
-          /*           className='shadow-xl bg-transparent border-b-2 border-white  py-2 px-3 rounded-md box-border transition duration-300 ease-in-out transform hover:scale-110'
-          style={{
-            position: 'absolute',
-            right: 1,
-            bottom: 1,
-          }} */
           sx={{
             backgroundColor: 'transparent',
             border: '1px solid white',
             paddingY: 1,
             paddingX: 2,
-            borderRadius: 'md',
+            borderRadius: '0.75rem',
             transition: 'transform 300ms ease-in-out',
-            '&:hover': {
-              transform: 'scale(1.1)',
-            },
             position: 'absolute',
             right: 0,
             bottom: 0,
@@ -165,7 +156,7 @@ const TextInput = ({
             isSending ? (
               <StopCircleIcon className='font-semibold scale-150 text-white ' />
             ) : (
-              <SendIcon className='font-semibold text-white' />
+              <SendIcon className='font-semibold text-white hover:scale-110' />
             )
           }
         ></Button>

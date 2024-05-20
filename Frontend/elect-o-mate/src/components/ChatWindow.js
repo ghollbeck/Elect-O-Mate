@@ -19,7 +19,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
 
   return (
     <div
-      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/50 h-[80dvh]'
+      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/80 h-[80dvh]'
       style={{
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',
@@ -34,7 +34,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
           >
             {message.isUser ? (
               <div className='flex flex-col items-end'>
-                <p className='font-bold text-gray-700'>{t('chat_YOU')}</p>
+                <p className='font-bold text-white'>{t('chat_YOU')}</p>
                 <p className='text-gray-600 p-2 rounded-md text-left bg-[#A1BBB8] break-words max-w-full'>
                   <FormatMessages text={message.text} />
                 </p>
@@ -43,7 +43,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
               <div className='flex flex-col items-start'>
                 <p
                   className={`font-bold ${
-                    message.isError ? 'text-red-700' : 'text-blue-700'
+                    message.isError ? 'text-red-700' : 'text-white'
                   }`}
                 >
                   <span className='inline-block align-middle rounded-full overflow-hidden m-2'>
@@ -64,7 +64,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
         ))}
       </div>
       <button
-        className='absolute px-5 py-2 text-white rounded-full font-thin transition duration-300 ease-in-out transform hover:scale-110 text-xl right-1 bottom-11  bg-black bg-opacity-20 backdrop-blur-lg'
+        className='absolute px-2 py-1 text-white rounded-full font-thin transition duration-300 ease-in-out transform hover:scale-110 text-xl right-1 bottom-11  bg-black bg-opacity-20 backdrop-blur-lg'
         onClick={scrollToQuestionnaire}
       >
         <ArrowUpwardIcon />
