@@ -10,6 +10,7 @@ const TextInput = ({
   scrollToChat,
   followup,
   setIsSending,
+  question,
 }) => {
   const { t } = useTranslation();
   const [inputValue, setInputValue] = useState('');
@@ -100,7 +101,7 @@ const TextInput = ({
 
     event.preventDefault();
     if (inputValue.trim() !== '') {
-      handleSendMessage(inputValue, abortControllerRef.current);
+      handleSendMessage(question, inputValue, abortControllerRef.current);
       setInputValue('');
       textarea.style.height = 'auto';
       scrollToChat();

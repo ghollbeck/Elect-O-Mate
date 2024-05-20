@@ -26,6 +26,7 @@ const Chat = ({
           isSending={isSending}
           scrollToChat={scrolltoChat}
           setIsSending={setIsSending}
+          question=''
         />
       </div>
     </div>

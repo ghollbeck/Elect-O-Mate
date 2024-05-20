@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 const Questionnaire = ({
   handleSendMessage,
   isSending,
+  setIsSending,
   scrollToChat,
   scrollToQuestionnaire,
 }) => {
@@ -224,6 +225,7 @@ const Questionnaire = ({
                 answer={answers[index]}
                 onAnswer={handleAnswer}
                 handleSendMessage={handleSendMessage}
+                setIsSending={setIsSending}
                 isSending={isSending}
                 scrollToChat={scrollToChat}
                 scrollToQuestionnaire={scrollToQuestionnaire}

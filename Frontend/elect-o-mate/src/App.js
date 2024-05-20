@@ -20,10 +20,19 @@ function App() {
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
 
-  const handleSendMessage = async (text, abortController) => {
+  const formatMessage = (question, message) => {
+    const fmessage = `The last question was ${question} answer this message from the user ${message}`;
+    return fmessage;
+  };
+
+  const handleSendMessage = async (question, text, abortController) => {
     // Add user's message to chat
     setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
     setIsSending(true);
+
+    if (question != '') {
+      text = formatMessage(question, text);
+    }
 
     try {
       // Perform API request with streaming using Fetch API and AbortController
@@ -246,6 +255,7 @@ function App() {
           scrollToQuestionnaire={scrollToQuestionnaire}
           isSending={isSending}
           smoothScrollTo={smoothScrollTo}
+          setIsSending={setIsSending}
         />
       </div>
 

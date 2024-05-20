@@ -13,6 +13,7 @@ const QuestionCard = ({
   onAnswer,
   isSending,
   handleSendMessage,
+  setIsSending,
   scrollToChat,
   pressable,
 }) => {
@@ -94,17 +95,21 @@ const QuestionCard = ({
           <div className='block md:hidden'>
             <TextInput
               handleSendMessage={handleSendMessage}
+              setIsSending={setIsSending}
               isSending={isSending}
               scrollToChat={scrollToChat}
               followup={t(question.followup_short)}
+              question={question.text}
             />
           </div>
           <div className='hidden md:block'>
             <TextInput
               handleSendMessage={handleSendMessage}
+              setIsSending={setIsSending}
               isSending={isSending}
               scrollToChat={scrollToChat}
               followup={t(question.followup)}
+              question={question.text}
             />
           </div>
         </div>
