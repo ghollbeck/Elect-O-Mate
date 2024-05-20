@@ -16,7 +16,14 @@ const Top = ({ onButtonClick }) => {
           onClick={onButtonClick}
         >
           {t('start_button')}
-        </button>
+        </button>{' '}
+        *
+        {/*         <button
+          className='m-8 py-4 px-9 text-black rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-110 text-xl backdrop-filter backdrop-blur-lg bg-gray-600 bg-opacity-50'
+          onClick={onButtonClick}
+        >
+          {t('start_button')}
+        </button> */}
       </header>
     </div>
   );

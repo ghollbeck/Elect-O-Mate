@@ -24,6 +24,7 @@
   "neutral_button": "neutral",
   "disagree_button": "disagree",
   "skip_button": "skip",
+  "followup": "follow-up questions?",
   "q1": "Should the EU increase its budget for climate protection initiatives?",
   "t1": "EU Climate Protection Initiatives",
   "f1": "How would increased funding for climate initiatives impact the EU's overall budget?",

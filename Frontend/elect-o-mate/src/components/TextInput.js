@@ -31,6 +31,11 @@ const TextInput = ({
   };
 
   const handleKeyDown = (event) => {
+    if (event.key === 'Tab' && !isSending && inputValue.trim() === '') {
+      event.preventDefault();
+      setInputValue(t(followup));
+      textareaRef.current.focus();
+    }
     if (event.key === 'Enter' && !event.shiftKey && !isSending) {
       event.preventDefault();
       handleSubmit(event);
@@ -110,7 +115,7 @@ const TextInput = ({
   };
 
   return (
-    <div className='mt-9 shadow-full relative border-none'>
+    <div className='mt-9 shadow-full relative border-none z-20'>
       <form
         onSubmit={handleSubmit}
         className='flex items-center w-full relative pb-[1px]'
@@ -124,7 +129,7 @@ const TextInput = ({
           onChange={handleChange}
           autoComplete='off'
           rows='1'
-          className='shadow-xl bg-white resize-none appearance-none border-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-md box-border'
+          className='shadow-xl bg-transparent resize-none appearance-none border border-white w-full py-2 px-3 text-white leading-tight focus:outline-none rounded-md box-border placeholder-gray-400'
           style={{
             position: 'absolute',
             bottom: 0,
@@ -135,24 +140,32 @@ const TextInput = ({
         <Button
           ref={buttonRef}
           type='submit'
-          //disabled={isSending}
           onClick={stopStreaming} // stiopStreaming checks if isSending is true
-          className='bg-red-300 scale-105 transition duration-300 ease-in-out transform hover:scale-110'
-          variant='contained'
+          /*           className='shadow-xl bg-transparent border-b-2 border-white  py-2 px-3 rounded-md box-border transition duration-300 ease-in-out transform hover:scale-110'
           style={{
-            backgroundImage:
-              'linear-gradient(to top right, rgba(248, 229, 127), rgba(222, 68, 8))',
-            color: 'white', // Set button text color to white
             position: 'absolute',
             right: 1,
             bottom: 1,
-            borderStyle: 'solid', // Set border style to solid
+          }} */
+          sx={{
+            backgroundColor: 'transparent',
+            border: '1px solid white',
+            paddingY: 1,
+            paddingX: 2,
+            borderRadius: 'md',
+            transition: 'transform 300ms ease-in-out',
+            '&:hover': {
+              transform: 'scale(1.1)',
+            },
+            position: 'absolute',
+            right: 0,
+            bottom: 0,
           }}
           endIcon={
             isSending ? (
-              <StopCircleIcon className='font-semibold scale-150' />
+              <StopCircleIcon className='font-semibold scale-150 text-white ' />
             ) : (
-              <SendIcon className='font-semibold' />
+              <SendIcon className='font-semibold text-white' />
             )
           }
         ></Button>

@@ -20,40 +20,6 @@ function App() {
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
 
-  /*   const handleSendMessage = async (text) => {
-    // Add user's message to chat
-    setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
-    setIsSending(true);
-
-       try {
-      // Perform API request
-      const response = await axios.post(
-        'https://backend.bruol.me/openai/invoke',
-        { input: text }
-      );
-
-      // Add API response to chat
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        { text: response.data.output, isUser: false },
-      ]);
-    } catch (error) {
-      // Add error message to chat
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        {
-          text: 'An error occurred. Please try again.',
-          isUser: false,
-          isError: true,
-        },
-      ]);
-    } finally {
-      setIsSending(false); // Reset isSending after API call completes
-    }  
-  }; */
-
-  // ----------------- STREAM ----------------------
-
   const handleSendMessage = async (text, abortController) => {
     // Add user's message to chat
     setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
@@ -153,8 +119,6 @@ function App() {
       setIsSending(false); // Reset isSending after API call completes
     }
   };
-
-  // ----------------- STREAM ----------------------
 
   // Use this function to scroll smoothly to a target element
   const smoothScrollTo = (ref, duration) => {
