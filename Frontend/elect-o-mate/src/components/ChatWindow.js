@@ -19,7 +19,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
 
   return (
     <div
-      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/80 h-[80dvh]'
+      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/50 h-[80dvh]'
       style={{
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',
@@ -55,7 +55,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
                   </span>
                   {message.isError ? 'Error' : 'Elect-O-Mate'}
                 </p>
-                <p className='text-gray-600 p-2 rounded-md text-left break-words bg-[#A1BBB8] max-w-full'>
+                <p className='text-gray-600 p-2 rounded-md text-left break-words bg-[#A1BBB8] max-w-full mb-5'>
                   <FormatMessages text={message.text} />
                 </p>
               </div>
