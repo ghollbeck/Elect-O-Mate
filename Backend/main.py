@@ -322,12 +322,14 @@ async def stream_openai_events(last_message):
     Function to simulate streaming data.
     """
     
-    async for chunk in chain_openai.astream(last_message):
+    async for chunk in chain_openai.astream_events(last_message, version="v1"):
         ret = streaming_response_format(chunk)
+        ret = dict(ret)
+        print(ret)
 
         # I really don't know what goes here now...
         print(f'data: {chunk}\n\n')
-        yield f'data: {chunk}\n\n'
+        yield f'data: {json.dumps(ret)}\n\n'
 
 @app.post('/openai/chat/completions')
 async def streaming_handler(request: Request):

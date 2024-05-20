@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#vapi-support-btn {
+    z-index: 999;
+}
