@@ -129,7 +129,7 @@ const TextInput = ({
           onChange={handleChange}
           autoComplete='off'
           rows='1'
-          className='shadow-xl bg-transparent resize-none appearance-none border border-white w-full py-2 px-3 text-white leading-tight focus:outline-none rounded-xl box-border placeholder-gray-400'
+          className='shadow-xl bg-transparent appearance-none border border-white w-full py-2 px-3 text-white leading-tight focus:outline-none rounded-xl box-border placeholder-gray-400 resize-none'
           style={{
             position: 'absolute',
             bottom: 0,
@@ -144,19 +144,41 @@ const TextInput = ({
           sx={{
             backgroundColor: 'transparent',
             border: '1px solid white',
-            // paddingY: 1,
-            //paddingX: 2,
             borderRadius: '0.75rem',
-            transition: 'transform 300ms ease-in-out',
             position: 'absolute',
             right: 0,
             bottom: 0,
           }}
           endIcon={
             isSending ? (
-              <StopCircleIcon className='font-semibold scale-150 text-white transition duration-400 ease-in-out transform hover:scale-125' />
+              <StopCircleIcon
+                sx={{
+                  fontWeight: '600', // font-semibold
+                  color: 'white', // text-white
+                  transition: 'transform 0.2s ease-in-out', // transition duration-400 ease-in-out
+                  transform: 'scale(1.25)', // initial scale
+                  '&:hover': {
+                    transform: 'scale(1.35)', // hover:scale-125
+                  },
+                  marginRight: '0.35rem', // mr-1
+                  marginY: '0.125rem', // my-0.5
+                }}
+              />
             ) : (
-              <SendIcon className='font-semibold text-white transition duration-400 ease-in-out transform hover:scale-125 mr-1 my-0.5' />
+              <SendIcon
+                sx={{
+                  fontWeight: '600', // font-semibold
+                  color: 'white', // text-white
+                  transition: 'transform 0.2s ease-in-out', // transition duration-400 ease-in-out
+                  transform: 'scale(1.15)', // initial scale
+                  '&:hover': {
+                    transform: 'scale(1.25)', // hover:scale-125
+                  },
+                  marginRight: '0.25rem', // mr-1
+                  marginY: '0.125rem', // my-0.5
+                }}
+                className='font-semibold text-white'
+              />
             )
           }
         ></Button>
