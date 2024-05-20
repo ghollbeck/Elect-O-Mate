@@ -23,7 +23,7 @@ const QuestionCard = ({
   }
 
   return (
-    <div className='flex flex-col h-[70dvh] md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-lg shadow-lg bg-gray-700/80'>
+    <div className='flex flex-col h-[70dvh] md:h-80 w-[270px] md:w-[800px] p-1 text-white rounded-xl shadow-lg bg-gray-700/80'>
       <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
         <h2 className='text-xs md:text-xl font-thin break-words'>
           {index}/{length - 2} {question.title}
@@ -45,7 +45,7 @@ const QuestionCard = ({
                 : pressable
                 ? 'hover:bg-blue-100 hover:text-black'
                 : ''
-            } font-bold py-1 md:py-2 px-4 rounded`}
+            } font-bold py-1 md:py-2 px-4 rounded-xl`}
             onClick={() => (pressable ? onAnswer(1) : null)}
           >
             {t('agree_button')}
@@ -57,7 +57,7 @@ const QuestionCard = ({
                 : pressable
                 ? 'hover:bg-blue-100 hover:text-black'
                 : ''
-            } font-bold py-1 md:py-2 px-4 rounded`}
+            } font-bold py-1 md:py-2 px-4 rounded-xl`}
             onClick={() => (pressable ? onAnswer(0) : null)}
           >
             {t('neutral_button')}
@@ -69,7 +69,7 @@ const QuestionCard = ({
                 : pressable
                 ? 'hover:bg-blue-100 hover:text-black'
                 : ''
-            } font-bold py-1 md:py-2 px-4 rounded`}
+            } font-bold py-1 md:py-2 px-4 rounded-xl`}
             onClick={() => (pressable ? onAnswer(-1) : null)}
           >
             {t('disagree_button')}

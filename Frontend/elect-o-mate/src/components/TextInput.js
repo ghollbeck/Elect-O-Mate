@@ -144,8 +144,8 @@ const TextInput = ({
           sx={{
             backgroundColor: 'transparent',
             border: '1px solid white',
-            paddingY: 1,
-            paddingX: 2,
+            // paddingY: 1,
+            //paddingX: 2,
             borderRadius: '0.75rem',
             transition: 'transform 300ms ease-in-out',
             position: 'absolute',
@@ -154,9 +154,9 @@ const TextInput = ({
           }}
           endIcon={
             isSending ? (
-              <StopCircleIcon className='font-semibold scale-150 text-white ' />
+              <StopCircleIcon className='font-semibold scale-150 text-white transition duration-400 ease-in-out transform hover:scale-125' />
             ) : (
-              <SendIcon className='font-semibold text-white hover:scale-110' />
+              <SendIcon className='font-semibold text-white transition duration-400 ease-in-out transform hover:scale-125 mr-1 my-0.5' />
             )
           }
         ></Button>
