@@ -5,3 +5,20 @@
 #vapi-support-btn {
     z-index: 999;
 }
+
+/* on small screens */
+@media (max-width: 640px) {
+    /* the title container disappears */
+    #vapi-title-container {
+        display: none;
+    }
+
+    /* and put it in the upper left */
+    #vapi-support-btn {
+        display: block;
+        top: 16px;
+        left: 10px;
+        right: auto;
+        bottom: auto;
+    }
+}
