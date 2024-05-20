@@ -221,7 +221,7 @@ function App() {
 
   return (
     <div
-      className='flex flex-col relative overflow-hidden bg-black'
+      className='flex flex-col relative overflow-hidden bg-gray-800'
       //style={{ backgroundImage: 'radial-gradient(#F0FFFF, #c8c5c9)' }}
     >
       <OrangeCircle />

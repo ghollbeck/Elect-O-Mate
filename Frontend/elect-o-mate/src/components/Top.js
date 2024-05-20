@@ -12,7 +12,7 @@ const Top = ({ onButtonClick }) => {
         <h1 className='text-5xl md:text-8xl font-extrabold'>Elect-O-Mate</h1>
         <p className='mt-4'>{t('subheading')}</p>
         <button
-          className='m-8 py-4 px-9 text-black rounded-full font-semibold bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] transition duration-300 ease-in-out transform hover:scale-110 text-xl'
+          className='m-8 py-4 px-9 text-white rounded-full font-semibold  bg-gray-700/30 transition duration-300 ease-in-out transform hover:scale-110 text-xl shadow-lg'
           onClick={onButtonClick}
         >
           {t('start_button')}

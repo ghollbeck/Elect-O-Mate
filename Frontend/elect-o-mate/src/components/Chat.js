@@ -13,7 +13,7 @@ const Chat = ({
   // Props als Objekt dekonstruieren
 
   return (
-    <div className=' relative h-[80dvh] bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] rounded-xl'>
+    <div className=' relative h-[80dvh] bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] rounded-xl shadow-2xl shadow-gray-500'>
       <div className='absolute inset-0'>
         <ChatWindow
           messages={messages}

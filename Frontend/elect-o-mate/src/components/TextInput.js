@@ -129,7 +129,7 @@ const TextInput = ({
           onChange={handleChange}
           autoComplete='off'
           rows='1'
-          className='shadow-xl bg-transparent appearance-none border border-white w-full py-2 px-3 text-white leading-tight focus:outline-none rounded-xl box-border placeholder-gray-400 resize-none'
+          className='shadow-xl bg-transparent backdrop-blur-md appearance-none border border-white w-full py-2 px-3 text-white leading-tight focus:outline-none rounded-xl box-border placeholder-gray-400 resize-none'
           style={{
             position: 'absolute',
             bottom: 0,
@@ -148,6 +148,8 @@ const TextInput = ({
             position: 'absolute',
             right: 0,
             bottom: 0,
+            background: 'transparent', // fixed: background needs quotes
+            backdropFilter: 'blur(10px)',
           }}
           endIcon={
             isSending ? (
@@ -177,7 +179,7 @@ const TextInput = ({
                   marginRight: '0.25rem', // mr-1
                   marginY: '0.125rem', // my-0.5
                 }}
-                className='font-semibold text-white'
+                className='font-semibold text-white '
               />
             )
           }
