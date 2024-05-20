@@ -21,18 +21,30 @@ function App() {
   const toQuestionnaire = useRef(null);
 
   const formatMessage = (question, message) => {
-    const fmessage = `The last question was ${question} answer this message from the user ${message}`;
+    const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
+    //console.log(question);
     return fmessage;
+  };
+
+  const alter = (q, text) => {
+    setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
+    return formatMessage(q, text);
   };
 
   const handleSendMessage = async (question, text, abortController) => {
     // Add user's message to chat
-    setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
-    setIsSending(true);
 
     if (question != '') {
-      text = formatMessage(question, text);
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: question, isUser: true },
+      ]);
+
+      text = alter(question, text);
+    } else {
+      setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
     }
+    setIsSending(true);
 
     try {
       // Perform API request with streaming using Fetch API and AbortController
@@ -106,14 +118,9 @@ function App() {
           });
         }
       }
-
-      console.log('Stream ended');
     } catch (error) {
       if (error.name === 'AbortError') {
-        console.log('Stream aborted');
       } else {
-        console.error('Error during stream:', error);
-
         // Add error message to chat
         setMessages((prevMessages) => [
           ...prevMessages,
@@ -209,7 +216,6 @@ function App() {
       const countryCode = data.country;
       return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
     } catch (error) {
-      console.error('Error fetching user language:', error);
       return 'en'; // Default to English in case of error
     }
   };
@@ -220,7 +226,6 @@ function App() {
         const userLanguage = await getUserLanguageFromIP();
         i18n.changeLanguage(userLanguage);
       } catch (error) {
-        console.error('Error fetching user language:', error);
         i18n.changeLanguage('en');
       }
     };
