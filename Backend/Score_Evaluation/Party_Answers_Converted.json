@@ -1,10 +1,10 @@
 [
     {
-        "Party_Answer": 1,
+        "Question_Number": 1,
         "Party_Name": "CDU / CSU",
         "Party_Full_Name": "Christlich Demokratische Union Deutschlands / Christlich-Soziale Union in Bayern e.V.",
         "Party_Statement": "Die EU soll eigene Steuern erheben dürfen.",
-        "Party_Position": "stimme nicht zu"
+        "Party_Answer": -1
     },
 
     {
