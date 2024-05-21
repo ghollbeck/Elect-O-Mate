@@ -38,7 +38,7 @@ jobs:
             with:
                 context: ./Backend
                 push: true
-                tags: ghcr.io/Bruol/elect-o-mate-backend:latest
+                tags: ghcr.io/bruol/elect-o-mate-backend:latest
 
         -
             name: Build and push
