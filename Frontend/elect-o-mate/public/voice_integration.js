@@ -1,4 +1,4 @@
-const assistant = '9e51c0fc-e581-4a6e-8e26-52d5a754e507';
+const assistant = '64c5e492-c8c7-4400-9de0-1d159b5e392b';
 const buttonConfig = {
   position: 'bottom-right', // "bottom" | "top" | "left" | "right" | "top-right" | "top-left" | "bottom-left" | "bottom-right"
   offset: '40px', // decide how far the button should be from the edge

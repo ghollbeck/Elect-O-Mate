@@ -207,8 +207,17 @@ template = """Answer the question based only on the following context including 
 Question: {question}
 """
 
-prompt = ChatPromptTemplate.from_template(template)
+voice_template = """Answer the question based only on the following context. Respond with only one to two sentences.
+What you write will be spoken, so write any acronyms with letters separated, for instance, and don't produce bulleted lists.
+Do not give sources in the answer, but be prepared to provide them by name if asked.
 
+{context}
+
+Question: {question}
+"""
+
+prompt = ChatPromptTemplate.from_template(template)
+voice_prompt = ChatPromptTemplate.from_template(voice_template)
 
 
 openai = ChatOpenAI()
@@ -244,7 +253,7 @@ retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), p
 
 chain_openai = (
     {"context": retriever_openai , "question": RunnablePassthrough()}
-    | prompt
+    | prompt  
     | openai
     | StrOutputParser()
 )
@@ -260,6 +269,13 @@ chain_openai = (
 #     | groq
 #     | StrOutputParser()
 # )
+
+voice_chain_openai = (
+    {"context": retriever_openai , "question": RunnablePassthrough()}
+    | voice_prompt
+    | openai
+    | StrOutputParser()
+)
 
 add_routes(
     app,
@@ -279,30 +295,14 @@ add_routes(
 #     path="/groq",
 # )
 
-# for voice, we have a streaming endpoint
+
+# for voice, we need a streaming endpoint
 import json
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import JSONResponse
 from fastapi.responses import StreamingResponse
 import time
 import asyncio
-
-def streaming_response_format(x): 
-    return {
-        "id": "chatcmpl-8mcLf78g0quztp4BMtwd3hEj58Uof",
-        "object": "chat.completion",
-        "created": int(time.time()),
-        "model": "gpt-3.5-turbo-0613",
-        "system_fingerprint": None,
-        "choices": [
-            {
-                "index": 0,
-                "delta": x,
-                "logprobs": None,
-                "finish_reason": "stop"
-            }
-        ]
-    }
 
 def nonstreaming_response_format(x):
     return  {
@@ -328,12 +328,50 @@ def nonstreaming_response_format(x):
         ]
     }
 
+# example dataChunk, from Salil:
+"""
+{
+    id: 'chatcmpl-8c78110d-a5cf-4585-8619-c1f59b714a70',
+    object: 'chat.completion.chunk',
+    created: 1713300428,
+    model: 'gpt-4-1106-preview',
+    system_fingerprint: 'fp_5c95a4634e',
+    choices: [
+    {
+        index: 0,
+        delta: { content: 'Let me think. ' },
+        logprobs: null,
+        finish_reason: null,
+    },
+    ],
+},
+"""
+
+def streaming_response_format(x): 
+    return {
+        "id": "chatcmpl-8mcLf78g0quztp4BMtwd3hEj58Uof",
+        "object": "chat.completion.chunk",
+        "created": int(time.time()),
+        "model": "gpt-3.5-turbo-0613",
+        "system_fingerprint": None,
+        "choices": [
+            {
+                "index": 0,
+                "delta": {"content": x},
+                "logprobs": None,
+
+                # do I need to set this?
+                "finish_reason": None
+            }
+        ]
+    }
+
 async def stream_openai_events(last_message):
     """
     Function to simulate streaming data.
     """
     
-    async for chunk in chain_openai.astream_events(last_message, version="v1"):
+    async for chunk in voice_chain_openai.astream(last_message):#, version="v1"):
         ret = streaming_response_format(chunk)
         ret = dict(ret)
         print(ret)
@@ -345,6 +383,13 @@ async def stream_openai_events(last_message):
 @app.post('/openai/chat/completions')
 async def streaming_handler(request: Request):
 
+    """
+    # from Sahil (Vapi)
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    """
+
     body = await request.json()  # Directly converting request body to JSON
     messages = body['messages']
     last_message = messages[-1]['content']
@@ -354,6 +399,11 @@ async def streaming_handler(request: Request):
         return StreamingResponse(
             stream_openai_events(last_message),
             media_type="text/event-stream",
+            headers={
+                "Cache-Control": "no-cache", 
+                "Connection": "keep-alive",
+                "Content-Type": "text/event-stream",
+            },
         )
     except Exception as e:
         print(f"An error occurred: {e}")
