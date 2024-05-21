@@ -11,13 +11,19 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.document_loaders import WebBaseLoader
+
 from langchain_community.vectorstores import FAISS
+from langchain_community.vectorstores import Chroma
+
 from langchain_text_splitters import CharacterTextSplitter
 from langchain.embeddings import CacheBackedEmbeddings
 from langchain.storage import LocalFileStore
 from langchain_community.document_loaders import PyPDFLoader
-from langserve import add_routes
 from langchain.text_splitter import CharacterTextSplitter
+from langserve import add_routes
+
+from langchain.chains.query_constructor.base import AttributeInfo
+from langchain.retrievers.self_query.base import SelfQueryRetriever
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -30,8 +36,6 @@ import os
 import pickle
 
 import requests
-
-import PyPDF2
 
 from pathlib import Path
 BASE = Path(__file__).resolve().parent
@@ -207,8 +211,17 @@ template = """Answer the question based only on the following context including 
 Question: {question}
 """
 
-prompt = ChatPromptTemplate.from_template(template)
+voice_template = """Answer the question based only on the following context. Respond with only one to two sentences.
+What you write will be spoken, so write any acronyms with letters separated, for instance, and don't produce bulleted lists.
+Do not give sources in the answer, but be prepared to provide them by name if asked.
 
+{context}
+
+Question: {question}
+"""
+
+prompt = ChatPromptTemplate.from_template(template)
+voice_prompt = ChatPromptTemplate.from_template(voice_template)
 
 
 openai = ChatOpenAI()
@@ -233,18 +246,64 @@ pdf_texts = load_pdfs()
 
 
 print("building vector db for website content")
-url_db_openai = FAISS.from_documents(url_texts, cached_embedder_openai)
-pdf_db_openai = FAISS.from_documents(pdf_texts, cached_embedder_openai)
+# url_db_openai = FAISS.from_documents(url_texts, cached_embedder_openai)
+# pdf_db_openai = FAISS.from_documents(pdf_texts, cached_embedder_openai)
 
-# url_db_ollama = FAISS.from_documents(url_texts, cached_embedder_ollama)
-# pdf_db_ollama = FAISS.from_documents(pdf_texts, cached_embedder_ollama)
+url_db_openai = Chroma.from_documents(url_texts, cached_embedder_openai)
+pdf_db_openai = Chroma.from_documents(pdf_texts, cached_embedder_openai)
 
-retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), pdf_db_openai.as_retriever()], weights=[0.5, 0.5])
+metadata_field_info = [
+    AttributeInfo(
+        name="party_name",
+        description="The abbreviated name of the political party",
+        type="string",
+    ),
+    AttributeInfo(
+        name="party_full_name",
+        description="The full name of the party",
+        type="integer",
+    ),
+    AttributeInfo(
+        name="date",
+        description="The date when the source was embedded",
+        type="string",
+    ),
+    AttributeInfo(
+        name="country",
+        description="The country the source is from can also be EU if it is a EU party",
+        type="string",
+    ),
+    AttributeInfo(
+        name="language",
+        description="The language of the source",
+        type="string",
+    ),
+    AttributeInfo(
+        name="url",
+        description="The url of the source",
+        type="string",
+    ),
+        AttributeInfo(
+        name="tags",
+        description="tags associated with the source",
+        type="list",
+    ),
+]
+
+metadata_retreiver = SelfQueryRetriever.from_llm(
+    openai,
+    pdf_db_openai,
+    metadata_field_info=metadata_field_info,
+    document_contents="Political party programmes"
+)
+
+
+retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), metadata_retreiver], weights=[0.5, 0.5])
 # retriever_ollama = EnsembleRetriever(retrievers=[url_db_ollama.as_retriever(), pdf_db_ollama.as_retriever()], weights=[0.5, 0.5])
 
 chain_openai = (
     {"context": retriever_openai , "question": RunnablePassthrough()}
-    | prompt
+    | prompt  
     | openai
     | StrOutputParser()
 )
@@ -260,6 +319,13 @@ chain_openai = (
 #     | groq
 #     | StrOutputParser()
 # )
+
+voice_chain_openai = (
+    {"context": retriever_openai , "question": RunnablePassthrough()}
+    | voice_prompt
+    | openai
+    | StrOutputParser()
+)
 
 add_routes(
     app,
@@ -279,30 +345,14 @@ add_routes(
 #     path="/groq",
 # )
 
-# for voice, we have a streaming endpoint
+
+# for voice, we need a streaming endpoint
 import json
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import JSONResponse
 from fastapi.responses import StreamingResponse
 import time
 import asyncio
-
-def streaming_response_format(x): 
-    return {
-        "id": "chatcmpl-8mcLf78g0quztp4BMtwd3hEj58Uof",
-        "object": "chat.completion",
-        "created": int(time.time()),
-        "model": "gpt-3.5-turbo-0613",
-        "system_fingerprint": None,
-        "choices": [
-            {
-                "index": 0,
-                "delta": x,
-                "logprobs": None,
-                "finish_reason": "stop"
-            }
-        ]
-    }
 
 def nonstreaming_response_format(x):
     return  {
@@ -328,12 +378,50 @@ def nonstreaming_response_format(x):
         ]
     }
 
+# example dataChunk, from Salil:
+"""
+{
+    id: 'chatcmpl-8c78110d-a5cf-4585-8619-c1f59b714a70',
+    object: 'chat.completion.chunk',
+    created: 1713300428,
+    model: 'gpt-4-1106-preview',
+    system_fingerprint: 'fp_5c95a4634e',
+    choices: [
+    {
+        index: 0,
+        delta: { content: 'Let me think. ' },
+        logprobs: null,
+        finish_reason: null,
+    },
+    ],
+},
+"""
+
+def streaming_response_format(x): 
+    return {
+        "id": "chatcmpl-8mcLf78g0quztp4BMtwd3hEj58Uof",
+        "object": "chat.completion.chunk",
+        "created": int(time.time()),
+        "model": "gpt-3.5-turbo-0613",
+        "system_fingerprint": None,
+        "choices": [
+            {
+                "index": 0,
+                "delta": {"content": x},
+                "logprobs": None,
+
+                # do I need to set this?
+                "finish_reason": None
+            }
+        ]
+    }
+
 async def stream_openai_events(last_message):
     """
     Function to simulate streaming data.
     """
     
-    async for chunk in chain_openai.astream_events(last_message, version="v1"):
+    async for chunk in voice_chain_openai.astream(last_message):#, version="v1"):
         ret = streaming_response_format(chunk)
         ret = dict(ret)
         print(ret)
@@ -345,6 +433,13 @@ async def stream_openai_events(last_message):
 @app.post('/openai/chat/completions')
 async def streaming_handler(request: Request):
 
+    """
+    # from Sahil (Vapi)
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    """
+
     body = await request.json()  # Directly converting request body to JSON
     messages = body['messages']
     last_message = messages[-1]['content']
@@ -354,6 +449,11 @@ async def streaming_handler(request: Request):
         return StreamingResponse(
             stream_openai_events(last_message),
             media_type="text/event-stream",
+            headers={
+                "Cache-Control": "no-cache", 
+                "Connection": "keep-alive",
+                "Content-Type": "text/event-stream",
+            },
         )
     except Exception as e:
         print(f"An error occurred: {e}")

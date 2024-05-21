@@ -9,3 +9,6 @@ pydantic==1.10.13
 PyPDF2
 bs4
 pypdf
+python-slugify
+langchain-chroma
+lark
