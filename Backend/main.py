@@ -19,6 +19,9 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
 from langserve import add_routes
 
+from langchain.chains.query_constructor.base import AttributeInfo
+from langchain.retrievers.self_query.base import SelfQueryRetriever
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json
@@ -234,10 +237,54 @@ print("building vector db for website content")
 url_db_openai = FAISS.from_documents(url_texts, cached_embedder_openai)
 pdf_db_openai = FAISS.from_documents(pdf_texts, cached_embedder_openai)
 
-# url_db_ollama = FAISS.from_documents(url_texts, cached_embedder_ollama)
-# pdf_db_ollama = FAISS.from_documents(pdf_texts, cached_embedder_ollama)
 
-retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), pdf_db_openai.as_retriever()], weights=[0.5, 0.5])
+metadata_field_info = [
+    AttributeInfo(
+        name="party_name",
+        description="The abbreviated name of the political party",
+        type="string",
+    ),
+    AttributeInfo(
+        name="party_full_name",
+        description="The full name of the party",
+        type="integer",
+    ),
+    AttributeInfo(
+        name="date",
+        description="The date when the source was embedded",
+        type="string",
+    ),
+    AttributeInfo(
+        name="country",
+        description="The country the source is from can also be EU if it is a EU party",
+        type="string",
+    ),
+    AttributeInfo(
+        name="language",
+        description="The language of the source",
+        type="string",
+    ),
+    AttributeInfo(
+        name="url",
+        description="The url of the source",
+        type="string",
+    ),
+        AttributeInfo(
+        name="tags",
+        description="tags associated with the source",
+        type="list",
+    ),
+]
+
+metadata_retreiver = SelfQueryRetriever.from_llm(
+    openai,
+    pdf_db_openai,
+    metadata_field_info,
+    document_content_description="Political party programmes"
+)
+
+
+retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), metadata_retreiver], weights=[0.5, 0.5])
 # retriever_ollama = EnsembleRetriever(retrievers=[url_db_ollama.as_retriever(), pdf_db_ollama.as_retriever()], weights=[0.5, 0.5])
 
 chain_openai = (
