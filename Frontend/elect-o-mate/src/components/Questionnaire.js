@@ -61,7 +61,7 @@ const Questionnaire = ({
     console.log(jsonData);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/evaluate', {
+      const response = await fetch('http://0.0.0.0:8000/evaluate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -108,12 +108,9 @@ const Questionnaire = ({
       updatedAnswers[currentQuestionIndex] = answer; // first card with content has index 1
       return updatedAnswers;
     });
-    if (currentQuestionIndex === questions.length - 2) {
-      submit();
-    } else {
+     
       scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
       scrollToQuestionnaire();
-    }
   };
 
   const handleLeft = throttle(() => {
@@ -277,6 +274,7 @@ const Questionnaire = ({
                 scrollToChat={scrollToChat}
                 scrollToQuestionnaire={scrollToQuestionnaire}
                 pressable={index === currentQuestionIndex}
+                submit = {submit}
               />
             </div>
           ))}

@@ -21,16 +21,16 @@ function App() {
   const toQuestionnaire = useRef(null);
 
   const questionnaireAnswers = (data, abortController) => {
-    const result = data.result;
+    const lang = i18n.language;
+    const result = data;
+
     const instructions =
-      'Tell the user the first five entries (Number, Partyname) and if the user asks for more details, provide them.';
-
-    // Convert the result array to a JSON string
+      'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results- Please answer in ' +
+      lang +
+      '. ';
     const resultString = JSON.stringify(result);
-    console.warn('DATA');
-
-    console.log(data);
-    sendMessageToAPI('what can you do', abortController);
+    const str = instructions + resultString;
+    sendMessageToAPI(str, abortController);
   };
 
   const formatMessage = (question, message) => {

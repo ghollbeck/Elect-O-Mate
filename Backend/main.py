@@ -402,7 +402,7 @@ async def evaluate(user_answers: UserAnswers):
     # Call the evaluate_answers function with the prepared data
     result = evaluate_answers(data_Party, prepared_data_user)
     print(result)
-    return {"result": result}
+    return {"result": result, "test":"hi"}
 
 
 if __name__ == "__main__":
