@@ -14,8 +14,7 @@ from langchain_community.document_loaders import WebBaseLoader
 
 
 from langchain_community.vectorstores import FAISS
-from langchain_chroma import Chroma
-
+from langchain_community.vectorstores import Chroma
 
 from langchain_community.vectorstores import Chroma
 
