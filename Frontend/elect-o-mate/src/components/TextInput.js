@@ -6,10 +6,10 @@ import { useTranslation } from 'react-i18next';
 
 const TextInput = ({
   handleSendMessage,
+  setIsSending,
   isSending,
   scrollToChat,
   followup,
-  setIsSending,
   question,
 }) => {
   const { t } = useTranslation();

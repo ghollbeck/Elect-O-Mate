@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import './index.css';
 import Footer from './components/Footer';
@@ -34,7 +34,7 @@ function App() {
   const handleSendMessage = async (question, text, abortController) => {
     // Add user's message to chat
 
-    if (question != '') {
+    if (question !== '') {
       setMessages((prevMessages) => [
         ...prevMessages,
         { text: question, isUser: true },
@@ -77,7 +77,6 @@ function App() {
 
       // Define a variable to hold the ongoing content
       let ongoingContent = '';
-
       while (true) {
         const { value, done } = await reader.read();
         if (done) break;
@@ -136,6 +135,8 @@ function App() {
     }
   };
 
+  // ----------------- STREAM ----------------------
+
   // Use this function to scroll smoothly to a target element
   const smoothScrollTo = (ref, duration) => {
     const targetPosition = ref.current.offsetTop;
@@ -178,38 +179,37 @@ function App() {
     i18n.changeLanguage(lang);
   };
 
-  const countryLanguageMap = {
-    AT: 'de', // Austria - German
-    BE: 'nl', // Belgium - Dutch
-    BG: 'bg', // Bulgaria - Bulgarian
-    CH: 'de',
-    CY: 'el', // Cyprus - Greek
-    CZ: 'cs', // Czech Republic - Czech
-    DE: 'de', // Germany - German
-    DK: 'da', // Denmark - Danish
-    EE: 'et', // Estonia - Estonian
-    ES: 'es', // Spain - Spanish
-    FI: 'fi', // Finland - Finnish
-    FR: 'fr', // France - French
-    GR: 'el', // Greece - Greek
-    HR: 'hr', // Croatia - Croatian
-    HU: 'hu', // Hungary - Hungarian
-    IE: 'en', // Ireland - English
-    IT: 'it', // Italy - Italian
-    LT: 'lt', // Lithuania - Lithuanian
-    LU: 'fr', // Luxembourg - French
-    LV: 'lv', // Latvia - Latvian
-    MT: 'en', // Malta - English
-    NL: 'nl', // Netherlands - Dutch
-    PL: 'pl', // Poland - Polish
-    PT: 'pt', // Portugal - Portuguese
-    RO: 'ro', // Romania - Romanian
-    SE: 'sv', // Sweden - Swedish
-    SI: 'sl', // Slovenia - Slovenian
-    SK: 'sk', // Slovakia - Slovak
-  };
-
-  const getUserLanguageFromIP = async () => {
+  const getUserLanguageFromIP = useCallback(async () => {
+    const countryLanguageMap = {
+      AT: 'de', // Austria - German
+      BE: 'nl', // Belgium - Dutch
+      BG: 'bg', // Bulgaria - Bulgarian
+      CH: 'de',
+      CY: 'el', // Cyprus - Greek
+      CZ: 'cs', // Czech Republic - Czech
+      DE: 'de', // Germany - German
+      DK: 'da', // Denmark - Danish
+      EE: 'et', // Estonia - Estonian
+      ES: 'es', // Spain - Spanish
+      FI: 'fi', // Finland - Finnish
+      FR: 'fr', // France - French
+      GR: 'el', // Greece - Greek
+      HR: 'hr', // Croatia - Croatian
+      HU: 'hu', // Hungary - Hungarian
+      IE: 'en', // Ireland - English
+      IT: 'it', // Italy - Italian
+      LT: 'lt', // Lithuania - Lithuanian
+      LU: 'fr', // Luxembourg - French
+      LV: 'lv', // Latvia - Latvian
+      MT: 'en', // Malta - English
+      NL: 'nl', // Netherlands - Dutch
+      PL: 'pl', // Poland - Polish
+      PT: 'pt', // Portugal - Portuguese
+      RO: 'ro', // Romania - Romanian
+      SE: 'sv', // Sweden - Swedish
+      SI: 'sl', // Slovenia - Slovenian
+      SK: 'sk', // Slovakia - Slovak
+    };
     try {
       const response = await fetch('https://ipinfo.io/json');
       const data = await response.json();
@@ -218,7 +218,7 @@ function App() {
     } catch (error) {
       return 'en'; // Default to English in case of error
     }
-  };
+  }, []);
 
   useEffect(() => {
     const fetchUserLanguageAndSetLanguage = async () => {
@@ -231,7 +231,7 @@ function App() {
     };
 
     fetchUserLanguageAndSetLanguage();
-  }, [i18n]); // Include i18n in the dependency array
+  }, [i18n, getUserLanguageFromIP]); // Include i18n in the dependency array`
 
   return (
     <div
