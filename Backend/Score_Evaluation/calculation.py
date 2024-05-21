@@ -3,6 +3,7 @@ import numpy as np
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
 
+
 file_path_My_Answers = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/-1_0_1_User_Answers.json' 
 file_path_Party_Answers = "/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/Party_Answers_Converted.json"
 
@@ -117,9 +118,9 @@ def main():
     combined_list.sort(key=lambda x: x[0], reverse=True)  
 
     # Write JSON file    
-    output_file_path = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Final_Result_Party_Overlap_List.json'
-    with open(output_file_path, 'w') as file:
-        json.dump(combined_list, file)
+    output_file_path = "/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/Final_Result_Party_Overlap_List_Germany.json"
+    with open(output_file_path, 'w',encoding='utf8') as file:
+        json.dump(combined_list, file, ensure_ascii=False)
 
 
     pp.pprint(combined_list[:20])
