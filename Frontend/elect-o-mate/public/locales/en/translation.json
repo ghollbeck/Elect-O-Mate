@@ -141,5 +141,6 @@
   "q38": "Should the European Parliament continue to play a central role in the EU?",
   "f38": "How does the European Parliament contribute to the functioning of the EU?",
   "submit_text": "Thanks for completing the questionnaire! By clicking on the submit button, you will receive your score.",
-  "submit_button": "submit"
+  "submit_button": "submit",
+  "text_resutl":"Matching results"
 }

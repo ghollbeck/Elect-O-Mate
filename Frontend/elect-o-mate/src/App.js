@@ -10,8 +10,10 @@ import Questionnaire from './components/Questionnaire';
 import LanguageSelector from './components/LanguageSelector';
 import './i18n';
 import OrangeCircle from './components/OrangeCircle';
+import HorizontalBarChart from './components/HorizontalBarChart';
 
 function App() {
+  const [data, setData] = useState(null);
   const { t, i18n } = useTranslation();
   const [messages, setMessages] = useState([
     { text: t('bot_greeting'), isUser: false },
@@ -19,11 +21,12 @@ function App() {
   const [isSending, setIsSending] = useState(false);
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
+  const toResult = useRef(null);
 
   const questionnaireAnswers = (data, abortController) => {
     const lang = i18n.language;
     const result = data;
-
+    setData(data);
     const instructions =
       'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results- Please answer in ' +
       lang +
@@ -34,8 +37,11 @@ function App() {
   };
 
   const formatMessage = (question, message) => {
-    const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
-    return fmessage;
+    if (question !== '') {
+      const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
+      return fmessage;
+    }
+    return message;
   };
 
   const alter = (q, text) => {
@@ -56,6 +62,11 @@ function App() {
     }
 
     sendMessageToAPI(text, abortController);
+  };
+
+  const InformationRequest = async (party, abortController) => {
+    const text = `Please provide me with information about the ${party}.`;
+    handleSendMessage('',text, abortController);
   };
 
   const sendMessageToAPI = async (text, abortController) => {
@@ -134,6 +145,7 @@ function App() {
       }
     } catch (error) {
       if (error.name === 'AbortError') {
+        // Handle fetch abortion if needed
       } else {
         // Add error message to chat
         setMessages((prevMessages) => [
@@ -188,9 +200,14 @@ function App() {
     smoothScrollTo(toChat, 1000);
   };
 
+  const scrollToResult = () => {
+    smoothScrollTo(toResult, 1000);
+  };
+
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
+
 
   const getUserLanguageFromIP = useCallback(async () => {
     const countryLanguageMap = {
@@ -275,6 +292,7 @@ function App() {
           smoothScrollTo={smoothScrollTo}
           setIsSending={setIsSending}
           questionnaireAnswers={questionnaireAnswers}
+          scrollToResult={scrollToResult}
         />
       </div>
 
@@ -288,6 +306,19 @@ function App() {
             isSending={isSending}
             setIsSending={setIsSending}
           />
+        </div>
+      </div>
+
+      <div ref={toResult} className='flex justify-center relative mt-24'>
+        <div className='w-full mx-2 md:w-1/2 '>
+          {data !== null ? (
+            <HorizontalBarChart
+              data={data}
+              InformationRequest={InformationRequest}
+            />
+          ) : (
+            ''
+          )}
         </div>
       </div>
 

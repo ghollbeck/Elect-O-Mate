@@ -11,6 +11,7 @@ const Questionnaire = ({
   scrollToChat,
   scrollToQuestionnaire,
   questionnaireAnswers,
+  scrollToResult,
 }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [questions, setQuestions] = useState([]);
@@ -80,7 +81,7 @@ const Questionnaire = ({
         console.error('Error fetching data:', error);
       }
     }
-    scrollToChat();
+    scrollToResult();
   };
 
   const scrollToIndex = throttle((index) => {
@@ -108,9 +109,9 @@ const Questionnaire = ({
       updatedAnswers[currentQuestionIndex] = answer; // first card with content has index 1
       return updatedAnswers;
     });
-     
-      scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
-      scrollToQuestionnaire();
+
+    scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
+    scrollToQuestionnaire();
   };
 
   const handleLeft = throttle(() => {
@@ -274,7 +275,8 @@ const Questionnaire = ({
                 scrollToChat={scrollToChat}
                 scrollToQuestionnaire={scrollToQuestionnaire}
                 pressable={index === currentQuestionIndex}
-                submit = {submit}
+                submit={submit}
+                scrolltoResult={scrollToResult}
               />
             </div>
           ))}

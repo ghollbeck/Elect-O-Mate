@@ -16,7 +16,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
 
   return (
     <div
-      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/80 h-[80dvh]'
+      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/80 h-[80dvh] text-base'
       style={{
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',
