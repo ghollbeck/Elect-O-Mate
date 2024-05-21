@@ -26,6 +26,7 @@ def main():
     pp = pprint.PrettyPrinter(indent=4)
     user_answers_matrix = np.zeros((38, 1))
     user_answers_matrix_Wheights = [0] * 38
+    user_answers_matrix_Skipped = [0] * 38
     data_User = read_json_file(file_path_My_Answers)
     data_Party = read_json_file(file_path_Party_Answers)
 
@@ -43,6 +44,11 @@ def main():
                 user_answers_matrix_Wheights[i] = 1 
             else:
                 user_answers_matrix_Wheights[i] = 0
+        if 'Skipped' in item:
+            if item['Skipped'] == "true":
+                user_answers_matrix_Skipped[i] = 1 
+            else:
+                user_answers_matrix_Skipped[i] = 0
     
     #following not needed, but nice to have for debugging
     #output_csv_file_path = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/user_answers_matrix.csv'
@@ -70,18 +76,18 @@ def main():
     for i in range(len(user_answers_matrix)):
         for j in range(len(party_answers_array[1])):
             Difference_Matrix[i,j] = abs(user_answers_matrix[i] - party_answers_array[i][j])
-
+    print(user_answers_matrix_Skipped)
     counter_wheighted = 0
     counter_skipped = 0
     for i, item in enumerate(data_User):
             wheights_factor = 1
-            if user_answers_matrix_Wheights[i] == 1:
-                    wheights_factor = 2
-                    counter_wheighted += 1
-            if "Skipped" in item:
-                    if "Skipped" == "true":
+            if user_answers_matrix_Skipped[i] == 1:
                         wheights_factor = 0
                         counter_skipped += 1
+            elif user_answers_matrix_Wheights[i] == 1:
+                    wheights_factor = 2
+                    counter_wheighted += 1
+            
             for j in range(34):
                 Difference_Matrix[i,j] = (-1)*(Difference_Matrix[i,j]-2)*wheights_factor # normalizing so that the min difference equals the hights points you get + include wheifghts and skipped questions
                     
@@ -90,7 +96,7 @@ def main():
 
     column_sums = np.array([np.sum(Difference_Matrix[:,i]) for i in range(34)])
     print(f"counter_wheighted: {counter_wheighted}")
-    print(f"counter_wheighted: {counter_skipped}")
+    print(f"counter_skipped: {counter_skipped}")
     # #save as csv for manual checking, not really needed indeed
     # output_csv_file_path = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Difference_Matrix.csv'
     # np.savetxt(output_csv_file_path, Difference_Matrix, delimiter=',')
