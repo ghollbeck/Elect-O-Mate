@@ -36,7 +36,7 @@ def main():
     for i, item in enumerate(data_User):
         if 'users_answer' in item:
             user_answers_matrix[i] = item['users_answer']
-
+#create an array with the whieghts yes/no in 0,1
 #create an array with the whieghts yes/no in 0,1
     for i, item in enumerate(data_User):
         if 'Wheights' in item:
