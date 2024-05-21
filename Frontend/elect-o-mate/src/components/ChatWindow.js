@@ -10,16 +10,13 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
 
   useEffect(() => {
     if (chatContentRef.current) {
-      console.log('scrollHeight:', chatContentRef.current.scrollHeight);
-      console.log('scrollTop before:', chatContentRef.current.scrollTop);
       chatContentRef.current.scrollTop = chatContentRef.current.scrollHeight;
-      console.log('scrollTop after:', chatContentRef.current.scrollTop);
     }
   }, [messages]);
 
   return (
     <div
-      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/80 h-[80dvh]'
+      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/80 h-[80dvh] text-base'
       style={{
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',

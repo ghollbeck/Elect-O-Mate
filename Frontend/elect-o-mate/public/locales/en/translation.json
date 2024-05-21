@@ -139,5 +139,8 @@
   "f37": "What are the advantages and disadvantages of investing in European defense projects?",
   "t38": "Role of the European Parliament",
   "q38": "Should the European Parliament continue to play a central role in the EU?",
-  "f38": "How does the European Parliament contribute to the functioning of the EU?"
+  "f38": "How does the European Parliament contribute to the functioning of the EU?",
+  "submit_text": "Thanks for completing the questionnaire! By clicking on the submit button, you will receive your score.",
+  "submit_button": "submit",
+  "text_resutl":"Matching results"
 }

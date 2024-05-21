@@ -16,6 +16,7 @@ const QuestionCard = ({
   setIsSending,
   scrollToChat,
   pressable,
+  submit,
 }) => {
   const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
@@ -30,14 +31,33 @@ const QuestionCard = ({
       <div className='flex flex-col h-60 md:h-80  w-[75vw] lg:w-[800px] items-center justify-center bg-transparent text-white flex-shrink-0'></div>
     );
   }
+  if (question.text === 'submitcard') {
+    return (
+      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5'>
+        <div className='flex flex-col items-center justify-center h-full pt-2 pl-2 flex-shrink-0'>
+          <h2 className='text-sm md:text-lg font-semibold text-center overflow-hidden w-full break-words leading-tight p-2 md:p-5'>
+            {t('submit_text')}
+          </h2>
+          <button
+            className={`border h-8 md:h-10 ${
+              pressable ? 'hover:bg-blue-100 hover:text-black' : ''
+            } font-bold py-1 md:py-2 px-4 rounded-xl`}
+            onClick={() => (pressable ? submit() : null)}
+          >
+            {t('submit_button')}
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
       {/* Front of the card */}
-      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/80 mb-5'>
+      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5'>
         <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
           <h2 className='text-xs md:text-xl font-thin break-words'>
-            {index}/{length - 2} {question.title}
+            {index}/{length - 3} {question.title}
           </h2>
           <button onClick={handleFlip} className='ml-auto mr-2 text-xl'>
             <MdHelpOutline />
@@ -116,10 +136,10 @@ const QuestionCard = ({
       </div>
 
       {/* Back of the card */}
-      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/80'>
+      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700'>
         <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
           <h2 className='text-xs md:text-xl font-thin break-words'>
-            {index}/{length - 2} {t('answer_title')}
+            {index}/{length - 3} {t('answer_title')}
           </h2>
           <button
             onClick={handleFlip}
