@@ -1,4 +1,4 @@
-FROM python:3.12
+FROM python:3.11
 
 LABEL MAINTAINER="Lorin Urbantat"
 LABEL org.opencontainers.image.source https://github.com/ghollbeck/Elect-O-Mate/
