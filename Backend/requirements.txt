@@ -10,3 +10,4 @@ PyPDF2
 bs4
 pypdf
 python-slugify
+langchain-chroma

@@ -11,7 +11,11 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.document_loaders import WebBaseLoader
+
 from langchain_community.vectorstores import FAISS
+from langchain_chroma import Chroma
+
+
 from langchain_text_splitters import CharacterTextSplitter
 from langchain.embeddings import CacheBackedEmbeddings
 from langchain.storage import LocalFileStore
@@ -243,9 +247,11 @@ pdf_texts = load_pdfs()
 
 
 print("building vector db for website content")
-url_db_openai = FAISS.from_documents(url_texts, cached_embedder_openai)
-pdf_db_openai = FAISS.from_documents(pdf_texts, cached_embedder_openai)
+# url_db_openai = FAISS.from_documents(url_texts, cached_embedder_openai)
+# pdf_db_openai = FAISS.from_documents(pdf_texts, cached_embedder_openai)
 
+url_db_openai = Chroma.from_documents(url_texts, cached_embedder_openai)
+pdf_db_openai = Chroma.from_documents(pdf_texts, cached_embedder_openai)
 
 metadata_field_info = [
     AttributeInfo(
@@ -288,8 +294,8 @@ metadata_field_info = [
 metadata_retreiver = SelfQueryRetriever.from_llm(
     openai,
     pdf_db_openai,
-    metadata_field_info,
-    document_content_description="Political party programmes"
+    metadata_field_info=metadata_field_info,
+    document_contents="Political party programmes"
 )
 
 
