@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import ChatWindow from './ChatWindow';
 import TextInput from './TextInput';
 

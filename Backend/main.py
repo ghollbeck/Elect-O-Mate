@@ -360,7 +360,6 @@ async def streaming_handler(request: Request):
         # Handle the exception (e.g., return an error response to the client)
         return JSONResponse({"error": str(e)})
 
-# or? fuck streaming?
 #@app.post('/openai/chat/completions')
 async def nonstreaming_handler(request: Request):
 
