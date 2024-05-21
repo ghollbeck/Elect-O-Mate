@@ -21,7 +21,7 @@ from langchain.text_splitter import CharacterTextSplitter
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+import json
 
 from typing import List
 
@@ -175,6 +175,16 @@ def load_pdfs():
         with doc_file.open("wb") as f:
             pickle.dump(documents, f)
     
+    # iterate through pages and add metadata
+    for document in documents:
+        document_file_name = document[0].metadata["source"]
+        metadata_file_name = document_file_name.replace(".pdf", ".meta.json")
+        with open (metadata_file_name, "r") as f:
+            metadata = json.load(f)
+        for page in document:
+            page.metadata = {**page.metadata, **metadata}
+            page.metadata["source"] = page.metadata["url"]
+
     documents = [page for pdf in documents for page in pdf]
 
     if text_file.exists():
@@ -188,7 +198,7 @@ def load_pdfs():
     return texts
 
 
-template = """Answer the question based only on the following context including a bullet point list of sources (filename or url) in the bottom of the answer:
+template = """Answer the question based only on the following context including a bullet point list of sources (as urls) in the bottom of the answer:
 
 {context}
 
