@@ -16,8 +16,8 @@ from langchain_text_splitters import CharacterTextSplitter
 from langchain.embeddings import CacheBackedEmbeddings
 from langchain.storage import LocalFileStore
 from langchain_community.document_loaders import PyPDFLoader
-from langserve import add_routes
 from langchain.text_splitter import CharacterTextSplitter
+from langserve import add_routes
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -30,8 +30,6 @@ import os
 import pickle
 
 import requests
-
-import PyPDF2
 
 from pathlib import Path
 BASE = Path(__file__).resolve().parent
