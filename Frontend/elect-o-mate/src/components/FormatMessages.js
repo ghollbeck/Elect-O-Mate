@@ -25,7 +25,6 @@ const convertTextToLinks = (text) => {
 
 const TextWithLineBreaks = ({ text }) => {
   const formattedText = convertTextToLinks(text);
-  console.log(formattedText);
   return <text>{formattedText}</text>;
 };
 

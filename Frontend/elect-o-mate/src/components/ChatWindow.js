@@ -10,10 +10,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
 
   useEffect(() => {
     if (chatContentRef.current) {
-      console.log('scrollHeight:', chatContentRef.current.scrollHeight);
-      console.log('scrollTop before:', chatContentRef.current.scrollTop);
       chatContentRef.current.scrollTop = chatContentRef.current.scrollHeight;
-      console.log('scrollTop after:', chatContentRef.current.scrollTop);
     }
   }, [messages]);
 

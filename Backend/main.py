@@ -19,6 +19,10 @@ from langchain_community.document_loaders import PyPDFLoader
 from langserve import add_routes
 from langchain.text_splitter import CharacterTextSplitter
 
+from pydantic import BaseModel
+from Score_Evaluation.calculation import read_json_file, evaluate_answers 
+from typing import List, Optional
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import json
@@ -371,6 +375,34 @@ async def nonstreaming_handler(request: Request):
     print(result)
     return JSONResponse(nonstreaming_response_format(result))
 
+# Evaluate endpoint
+class Answer(BaseModel):
+    users_answer: Optional[int]  # Optional to allow for null values
+    Wheights: str
+    Skipped: str
+class UserAnswers(BaseModel):
+    answers: List[Answer]
+
+@app.post("/evaluate")
+async def evaluate(user_answers: UserAnswers):
+    data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted.json")
+    data_User = user_answers.answers
+    # Prepare data_User for evaluation
+    prepared_data_user = [
+        {
+            "users_answer": answer.users_answer,
+            "Wheights": answer.Wheights,
+            "Skipped": answer.Skipped
+        }
+        for answer in data_User
+    ]
+    
+    prepared_data_user = prepared_data_user[:0]
+    print(len(prepared_data_user))
+    # Call the evaluate_answers function with the prepared data
+    result = evaluate_answers(data_Party, prepared_data_user)
+    print(result)
+    return {"result": result}
 
 
 if __name__ == "__main__":

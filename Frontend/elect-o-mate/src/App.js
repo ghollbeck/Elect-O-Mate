@@ -20,9 +20,21 @@ function App() {
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
 
+  const questionnaireAnswers = (data, abortController) => {
+    const result = data.result;
+    const instructions =
+      'Tell the user the first five entries (Number, Partyname) and if the user asks for more details, provide them.';
+
+    // Convert the result array to a JSON string
+    const resultString = JSON.stringify(result);
+    console.warn('DATA');
+
+    console.log(data);
+    sendMessageToAPI('what can you do', abortController);
+  };
+
   const formatMessage = (question, message) => {
     const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
-    //console.log(question);
     return fmessage;
   };
 
@@ -32,8 +44,6 @@ function App() {
   };
 
   const handleSendMessage = async (question, text, abortController) => {
-    // Add user's message to chat
-
     if (question !== '') {
       setMessages((prevMessages) => [
         ...prevMessages,
@@ -44,6 +54,11 @@ function App() {
     } else {
       setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
     }
+
+    sendMessageToAPI(text, abortController);
+  };
+
+  const sendMessageToAPI = async (text, abortController) => {
     setIsSending(true);
 
     try {
@@ -134,8 +149,6 @@ function App() {
       setIsSending(false); // Reset isSending after API call completes
     }
   };
-
-  // ----------------- STREAM ----------------------
 
   // Use this function to scroll smoothly to a target element
   const smoothScrollTo = (ref, duration) => {
@@ -261,6 +274,7 @@ function App() {
           isSending={isSending}
           smoothScrollTo={smoothScrollTo}
           setIsSending={setIsSending}
+          questionnaireAnswers={questionnaireAnswers}
         />
       </div>
 
