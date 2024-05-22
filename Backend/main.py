@@ -489,6 +489,9 @@ class UserAnswers(BaseModel):
 
 @app.post("/evaluate")
 async def evaluate(user_answers: UserAnswers):
+    print("GOT SOMETHING")
+    print(user_answers.answers)
+    print(user_answers)
     data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted.json")
     data_User = user_answers.answers
     # Prepare data_User for evaluation

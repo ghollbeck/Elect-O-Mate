@@ -47,14 +47,14 @@ const Questionnaire = ({
 
   const constructJSON = (answers) => {
     return answers.map((message) => ({
-      users_answer: null ? 0 : message,
-      Wheights: 'false',
-      Skipped: message === null ? 'true' : 'false',
+      users_answer: message === null ? 0 : message,
+      Wheights: false,
+      Skipped: message === null,
     }));
   };
 
   const submit = async () => {
-    console.log('SUBMIT');
+    console.warn('SUBMIT');
 
     abortControllerRef.current = new AbortController();
 
@@ -62,7 +62,7 @@ const Questionnaire = ({
     console.log(jsonData);
 
     try {
-      const response = await fetch('https://backend.bruol.me/evaluate', {
+      const response = await fetch('http://0.0.0.0:8000/evaluate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
