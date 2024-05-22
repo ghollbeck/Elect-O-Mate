@@ -10,15 +10,15 @@ data = pd.read_csv(input_file)
 # Extract the relevant columns
 questions = data.iloc[:, 0].tolist()
 arguments = data.iloc[:, 2].tolist()
-
+print(arguments[0])
 # Create a list of dictionaries with the desired structure
 json_data = []
-for i in range(len(questions)):
+for i in range(38):
     json_data.append({
         "question_number": str(i + 1),
-        "question": questions[i-1],
+        "question": questions[i],
         
-        "Arguments": arguments[i-1]
+        "Arguments": arguments[i]
     })
 
 # Save the JSON data to a file
