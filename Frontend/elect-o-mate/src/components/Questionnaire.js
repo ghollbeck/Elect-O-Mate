@@ -81,7 +81,7 @@ const Questionnaire = ({
         console.error('Error fetching data:', error);
       }
     }
-    scrollToResult();
+    scrollToChat();
   };
 
   const scrollToIndex = throttle((index) => {

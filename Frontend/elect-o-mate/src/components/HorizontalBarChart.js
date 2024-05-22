@@ -35,7 +35,7 @@ const HorizontalBarChart = ({ data, InformationRequest }) => {
         data: percentages,
         backgroundColor: 'rgba(75, 192, 192, 0.2)',
         borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 1,
+        borderWidth: 2,
       },
     ],
   };
@@ -47,53 +47,47 @@ const HorizontalBarChart = ({ data, InformationRequest }) => {
         const index = elements[0].index;
         const label = labels[index];
 
-        // Cancel any ongoing request
         if (abortControllerRef.current) {
           abortControllerRef.current.abort();
         }
 
-        // Create a new AbortController
         abortControllerRef.current = new AbortController();
         const abortController = abortControllerRef.current;
 
-        // Call InformationRequest with the label and the new AbortController signal
         InformationRequest(label, abortController);
       }
     },
     scales: {
       x: {
         beginAtZero: true,
-        max: 100, // Set maximum scale to 100
+        max: 100,
       },
     },
-    responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'right',
+        display: false,
       },
       title: {
         display: true,
         text: t('title_results'),
       },
     },
-    layout: {
-      padding: {
-        left: 50, // Adjust as needed
-        right: 50, // Adjust as needed
-      },
-    },
-    categorySpacing: 0.5, // Adjust spacing between bars
   };
 
-  // Inline style to increase height
+  // Calculate height dynamically
+  const chartHeight = `${25 * data.length}px`;
+
   const chartStyle = {
-    height: '500px', // Set your desired height here
+    height: chartHeight,
+    width: '100%', // Ensure it takes full width of the container
   };
 
   return (
-    <div>
-      <Spline />
-      <Bar data={chartData} options={options} style={chartStyle} />
+    <div className='flex flex-col' style={{ height: chartHeight }}>
+      <div className='flex-grow'>
+        <Bar data={chartData} options={options} style={chartStyle} />
+      </div>
     </div>
   );
 };

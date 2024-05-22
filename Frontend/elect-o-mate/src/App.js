@@ -30,7 +30,7 @@ function App() {
     const instructions =
       'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results- Please answer in ' +
       lang +
-      '. ';
+      '. Please add a note, that a graph listing the matching can be found when scrolling down where the user can click on a bar to find more information about the respective party. Offer them further assistance.  DO NOT LIST ANY SOURCES';
     const resultString = JSON.stringify(result);
     const str = instructions + resultString;
     sendMessageToAPI(str, abortController);
@@ -66,7 +66,8 @@ function App() {
 
   const InformationRequest = async (party, abortController) => {
     const text = `Please provide me with information about the ${party}.`;
-    handleSendMessage('',text, abortController);
+    handleSendMessage('', text, abortController);
+    scrollToChat();
   };
 
   const sendMessageToAPI = async (text, abortController) => {
@@ -208,7 +209,6 @@ function App() {
     i18n.changeLanguage(lang);
   };
 
-
   const getUserLanguageFromIP = useCallback(async () => {
     const countryLanguageMap = {
       AT: 'de', // Austria - German
@@ -308,21 +308,20 @@ function App() {
           />
         </div>
       </div>
-
-      <div ref={toResult} className='flex justify-center relative mt-24'>
-        <div className='w-full mx-2 md:w-1/2 '>
-          {data !== null ? (
+      <div ref={toResult} className='flex justify-center mt-24 '>
+        {data !== null ? (
+          <div className='w-full h-[800px] mx-2 md:w-2/3 '>
             <HorizontalBarChart
               data={data}
               InformationRequest={InformationRequest}
             />
-          ) : (
-            ''
-          )}
-        </div>
+          </div>
+        ) : (
+          ''
+        )}
       </div>
 
-      <div className='relative mt-36'>
+      <div className='relative mt-72'>
         <div
           className='absolute top-0 left-0 w-full bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] transform skew-y-3 h-100'
           style={{ height: '110%' }}
