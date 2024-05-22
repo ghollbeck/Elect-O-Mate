@@ -1,3 +1,30 @@
 {
-    "url": "https://www.fdp.de/sites/default/files/2024-01/fdp_europawahlprogramm-2024_vorabversion.pdf"
+    "url": "https://www.fdp.de/sites/default/files/2024-01/fdp_europawahlprogramm-2024_vorabversion.pdf",
+    "party_name": "fdp",
+    "party_full_name": "Freie Demokratische Partei",
+    "tags": [
+        "wirtschaftskraft",
+        "innovation",
+        "fdp",
+        "berufschancen",
+        "demokratie",
+        "bildung",
+        "wohlstand",
+        "energieversorgung",
+        "kunstliche intelligenz",
+        "krisen",
+        "burokratie",
+        "forschung",
+        "migration",
+        "eu",
+        "freiheit",
+        "wachstum",
+        "rechtsstaat",
+        "energie",
+        "technologien",
+        "regulierung"
+    ],
+    "date": "21.05.2024",
+    "country": "DE",
+    "language": "DE"
 }

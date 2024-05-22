@@ -10,12 +10,15 @@ const Questionnaire = ({
   setIsSending,
   scrollToChat,
   scrollToQuestionnaire,
+  questionnaireAnswers,
+  scrollToResult,
 }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [questions, setQuestions] = useState([]);
   const containerRef = useRef(null);
   const isButtonScroll = useRef(false); // Track button clicks
   const [answers, setAnswers] = useState(Array(questions.length).fill(null));
+
   useEffect(() => {
     setQuestions(questionsData);
   }, []);
@@ -40,14 +43,45 @@ const Questionnaire = ({
     200
   );
 
-  const handleAnswer = (answer) => {
-    setAnswers((prevAnswers) => {
-      const updatedAnswers = [...prevAnswers];
-      updatedAnswers[currentQuestionIndex] = answer;
-      return updatedAnswers;
-    });
-    scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
-    scrollToQuestionnaire();
+  const abortControllerRef = useRef(null);
+
+  const constructJSON = (answers) => {
+    return answers.map((message) => ({
+      users_answer: null ? 0 : message,
+      Wheights: 'false',
+      Skipped: message === null ? 'true' : 'false',
+    }));
+  };
+
+  const submit = async () => {
+    console.log('SUBMIT');
+
+    abortControllerRef.current = new AbortController();
+
+    const jsonData = constructJSON(answers);
+    console.log(jsonData);
+
+    try {
+      const response = await fetch('http://0.0.0.0:8000/evaluate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ answers: jsonData }),
+        signal: abortControllerRef.current.signal,
+      });
+
+      const data = await response.json();
+      console.log(data);
+      questionnaireAnswers(data.result, abortControllerRef.current); // Pass the fetched data to questionnaireAnswers function
+    } catch (error) {
+      if (error.name === 'AbortError') {
+        console.log('Fetch aborted');
+      } else {
+        console.error('Error fetching data:', error);
+      }
+    }
+    scrollToChat();
   };
 
   const scrollToIndex = throttle((index) => {
@@ -68,6 +102,17 @@ const Questionnaire = ({
       setCurrentQuestionIndex(index);
     }
   }, 200);
+
+  const handleAnswer = (answer) => {
+    setAnswers((prevAnswers) => {
+      const updatedAnswers = [...prevAnswers];
+      updatedAnswers[currentQuestionIndex] = answer; // first card with content has index 1
+      return updatedAnswers;
+    });
+
+    scrollToIndex(Math.min(currentQuestionIndex + 1, questions.length - 1));
+    scrollToQuestionnaire();
+  };
 
   const handleLeft = throttle(() => {
     scrollToIndex(Math.max(currentQuestionIndex - 1, 1)); // Skip the first card
@@ -132,7 +177,7 @@ const Questionnaire = ({
 
   // Additional style for WebKit browsers
   const webkitScrollBarHideStyle = {
-    '::-webkit-scrollbar': {
+    '::WebkitScrollbar': {
       display: 'none', // Safari and Chrome
     },
   };
@@ -230,6 +275,8 @@ const Questionnaire = ({
                 scrollToChat={scrollToChat}
                 scrollToQuestionnaire={scrollToQuestionnaire}
                 pressable={index === currentQuestionIndex}
+                submit={submit}
+                scrolltoResult={scrollToResult}
               />
             </div>
           ))}

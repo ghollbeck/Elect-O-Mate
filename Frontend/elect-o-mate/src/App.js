@@ -10,8 +10,10 @@ import Questionnaire from './components/Questionnaire';
 import LanguageSelector from './components/LanguageSelector';
 import './i18n';
 import OrangeCircle from './components/OrangeCircle';
+import HorizontalBarChart from './components/HorizontalBarChart';
 
 function App() {
+  const [data, setData] = useState(null);
   const { t, i18n } = useTranslation();
   const [messages, setMessages] = useState([
     { text: t('bot_greeting'), isUser: false },
@@ -19,11 +21,27 @@ function App() {
   const [isSending, setIsSending] = useState(false);
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
+  const toResult = useRef(null);
+
+  const questionnaireAnswers = (data, abortController) => {
+    const lang = i18n.language;
+    const result = data;
+    setData(data);
+    const instructions =
+      'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results- Please answer in ' +
+      lang +
+      '. Please add a note, that a graph listing the matching can be found when scrolling down where the user can click on a bar to find more information about the respective party. Offer them further assistance.  DO NOT LIST ANY SOURCES';
+    const resultString = JSON.stringify(result);
+    const str = instructions + resultString;
+    sendMessageToAPI(str, abortController);
+  };
 
   const formatMessage = (question, message) => {
-    const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
-    //console.log(question);
-    return fmessage;
+    if (question !== '') {
+      const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
+      return fmessage;
+    }
+    return message;
   };
 
   const alter = (q, text) => {
@@ -32,8 +50,6 @@ function App() {
   };
 
   const handleSendMessage = async (question, text, abortController) => {
-    // Add user's message to chat
-
     if (question !== '') {
       setMessages((prevMessages) => [
         ...prevMessages,
@@ -44,6 +60,17 @@ function App() {
     } else {
       setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
     }
+
+    sendMessageToAPI(text, abortController);
+  };
+
+  const InformationRequest = async (party, abortController) => {
+    const text = `Please provide me with information about the ${party}.`;
+    handleSendMessage('', text, abortController);
+    scrollToChat();
+  };
+
+  const sendMessageToAPI = async (text, abortController) => {
     setIsSending(true);
 
     try {
@@ -119,6 +146,7 @@ function App() {
       }
     } catch (error) {
       if (error.name === 'AbortError') {
+        // Handle fetch abortion if needed
       } else {
         // Add error message to chat
         setMessages((prevMessages) => [
@@ -134,8 +162,6 @@ function App() {
       setIsSending(false); // Reset isSending after API call completes
     }
   };
-
-  // ----------------- STREAM ----------------------
 
   // Use this function to scroll smoothly to a target element
   const smoothScrollTo = (ref, duration) => {
@@ -173,6 +199,10 @@ function App() {
 
   const scrollToChat = () => {
     smoothScrollTo(toChat, 1000);
+  };
+
+  const scrollToResult = () => {
+    smoothScrollTo(toResult, 1000);
   };
 
   const changeLanguage = (lang) => {
@@ -239,11 +269,9 @@ function App() {
       //style={{ backgroundImage: 'radial-gradient(#F0FFFF, #c8c5c9)' }}
     >
       <OrangeCircle />
-
       <div className='flex justify-end z-20'>
         <LanguageSelector changeLanguage={changeLanguage} />
       </div>
-
       <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={scrollToQuestionnaire} />
@@ -252,7 +280,6 @@ function App() {
           <Spline />
         </div>
       </div>
-
       <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
         <Questionnaire
           scrollToChat={scrollToChat}
@@ -261,9 +288,10 @@ function App() {
           isSending={isSending}
           smoothScrollTo={smoothScrollTo}
           setIsSending={setIsSending}
+          questionnaireAnswers={questionnaireAnswers}
+          scrollToResult={scrollToResult}
         />
       </div>
-
       <div ref={toChat} className='flex justify-center relative mt-64'>
         <div className='w-full mx-2 md:w-1/2 '>
           <Chat
@@ -276,8 +304,19 @@ function App() {
           />
         </div>
       </div>
-
-      <div className='relative mt-36'>
+      <div ref={toResult} className='flex justify-center mt-24 '>
+        {data !== null ? (
+          <div className='w-full h-[800px] mx-2 md:w-2/3'>
+            <HorizontalBarChart
+              data={data}
+              InformationRequest={InformationRequest}
+            />
+          </div>
+        ) : (
+          ''
+        )}
+      </div>
+      <div className='relative mt-72'>
         <div
           className='absolute top-0 left-0 w-full bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] transform skew-y-3 h-100'
           style={{ height: '110%' }}
@@ -286,7 +325,6 @@ function App() {
           <OpenSource />
         </div>
       </div>
-
       <div className='w-full'>
         <Footer />
       </div>
