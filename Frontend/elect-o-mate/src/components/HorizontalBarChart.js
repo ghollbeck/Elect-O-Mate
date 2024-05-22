@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { useTranslation } from 'react-i18next';
-import Spline from './Spline';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -61,8 +60,20 @@ const HorizontalBarChart = ({ data, InformationRequest }) => {
       x: {
         beginAtZero: true,
         max: 100,
+        ticks: {
+          callback: function (value) {
+            return value + '%'; // Append percent sign
+          },
+          color: '#ffffff',
+        },
+      },
+      y: {
+        ticks: {
+          color: '#ffffff', // Set the y-axis text color to white
+        },
       },
     },
+
     maintainAspectRatio: false,
     plugins: {
       legend: {
