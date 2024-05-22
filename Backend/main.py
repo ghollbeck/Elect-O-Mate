@@ -12,7 +12,11 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.document_loaders import WebBaseLoader
 
+
 from langchain_community.vectorstores import FAISS
+from langchain_chroma import Chroma
+
+
 from langchain_community.vectorstores import Chroma
 
 from langchain_text_splitters import CharacterTextSplitter
@@ -24,6 +28,10 @@ from langserve import add_routes
 
 from langchain.chains.query_constructor.base import AttributeInfo
 from langchain.retrievers.self_query.base import SelfQueryRetriever
+
+from pydantic import BaseModel
+from Score_Evaluation.calculation import read_json_file, evaluate_answers 
+from typing import List, Optional
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -471,6 +479,37 @@ async def nonstreaming_handler(request: Request):
     print(result)
     return JSONResponse(nonstreaming_response_format(result))
 
+# Evaluate endpoint
+class Answer(BaseModel):
+    users_answer: Optional[int]  # Optional to allow for null values
+    Wheights: str
+    Skipped: str
+class UserAnswers(BaseModel):
+    answers: List[Answer]
+
+@app.post("/evaluate")
+async def evaluate(user_answers: UserAnswers):
+    data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted.json")
+    data_User = user_answers.answers
+    # Prepare data_User for evaluation
+    prepared_data_user = [
+        {
+            "users_answer": answer.users_answer,
+            "Wheights": answer.Wheights,
+            "Skipped": answer.Skipped
+        }
+        for answer in data_User
+    ]
+    
+    
+    prepared_data_user = prepared_data_user[1:]
+    print(prepared_data_user)
+    print(len(prepared_data_user))
+    # Call the evaluate_answers function with the prepared data
+    result = evaluate_answers(data_Party, prepared_data_user)
+    print(result)
+    print(len(result))
+    return {"result": result, "test":"hi"}
 
 
 if __name__ == "__main__":

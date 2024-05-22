@@ -11,7 +11,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 
-
+import argparse
 
 import pickle
 
@@ -114,21 +114,33 @@ def initialize_metadata():
                     
 
                 
-def generate_tags():
+def generate_tags(force_generate_tags=False):
+
     pdfs = get_pdf_filenames()
     for pdf in pdfs:
-        print(f"Processing {pdf}\n")
-        text = load_pdf(pdf)
-        keywords = generate_keywords(text)
         meta_filename = pdf.replace(".pdf", ".meta.json")
         with open(meta_filename, "r") as f:
             metadata = json.load(f)
+        if len(metadata["tags"]) > 0 and not force_generate_tags:
+            continue
+        print(f"Processing {pdf}\n")
+        text = load_pdf(pdf)
+        keywords = generate_keywords(text)
         metadata["tags"] = [slugify(keyword).replace("-"," ") for keyword in keywords]
         with open(meta_filename, "w") as f:
             f.write(json.dumps(metadata, indent=4))
         
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='Generate metadata for PDFs')
+
+    parser.add_argument('--force_generate_tags', dest='force_generate_tags', action='store_true',
+                        help='Force the generation of tags')
+
+    args = parser.parse_args()
+
+
     load_dotenv_file()
     initialize_metadata()
-    generate_tags()
+    generate_tags(args.force_generate_tags)

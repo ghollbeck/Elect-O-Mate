@@ -229,9 +229,11 @@
     "followup_short": "followup"
   },
   {
-    "title": "t40",
-    "text": "",
-    "followup": "f40",
-    "followup_short": "followup"
+    "text": "submitcard"
+  },
+  {
+    "title": "",
+    "text": ""
   }
+  
 ]
