@@ -11,4 +11,5 @@ bs4
 pypdf
 python-slugify
 langchain-chroma
+langchain-chroma
 lark
