@@ -269,11 +269,9 @@ function App() {
       //style={{ backgroundImage: 'radial-gradient(#F0FFFF, #c8c5c9)' }}
     >
       <OrangeCircle />
-
       <div className='flex justify-end z-20'>
         <LanguageSelector changeLanguage={changeLanguage} />
       </div>
-
       <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={scrollToQuestionnaire} />
@@ -282,7 +280,6 @@ function App() {
           <Spline />
         </div>
       </div>
-
       <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
         <Questionnaire
           scrollToChat={scrollToChat}
@@ -295,7 +292,6 @@ function App() {
           scrollToResult={scrollToResult}
         />
       </div>
-
       <div ref={toChat} className='flex justify-center relative mt-64'>
         <div className='w-full mx-2 md:w-1/2 '>
           <Chat
@@ -310,7 +306,7 @@ function App() {
       </div>
       <div ref={toResult} className='flex justify-center mt-24 '>
         {data !== null ? (
-          <div className='w-full h-[800px] mx-2 md:w-2/3 '>
+          <div className='w-full h-[800px] mx-2 md:w-2/3'>
             <HorizontalBarChart
               data={data}
               InformationRequest={InformationRequest}
@@ -320,7 +316,6 @@ function App() {
           ''
         )}
       </div>
-
       <div className='relative mt-72'>
         <div
           className='absolute top-0 left-0 w-full bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] transform skew-y-3 h-100'
@@ -330,7 +325,6 @@ function App() {
           <OpenSource />
         </div>
       </div>
-
       <div className='w-full'>
         <Footer />
       </div>

@@ -397,11 +397,14 @@ async def evaluate(user_answers: UserAnswers):
         for answer in data_User
     ]
     
-    prepared_data_user = prepared_data_user[:0]
+    
+    prepared_data_user = prepared_data_user[1:]
+    print(prepared_data_user)
     print(len(prepared_data_user))
     # Call the evaluate_answers function with the prepared data
     result = evaluate_answers(data_Party, prepared_data_user)
     print(result)
+    print(len(result))
     return {"result": result, "test":"hi"}
 
 
