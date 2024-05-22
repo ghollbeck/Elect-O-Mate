@@ -62,7 +62,7 @@ const Questionnaire = ({
     console.log(jsonData);
 
     try {
-      const response = await fetch('http://0.0.0.0:8000/evaluate', {
+      const response = await fetch('https://backend.bruol.me/evaluate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
