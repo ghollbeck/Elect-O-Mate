@@ -14,6 +14,8 @@ from langchain_community.document_loaders import WebBaseLoader
 
 from langchain_community.vectorstores import FAISS
 from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import OpenSearchVectorSearch
+
 
 from langchain_text_splitters import CharacterTextSplitter
 from langchain.embeddings import CacheBackedEmbeddings
@@ -202,7 +204,13 @@ def load_pdfs():
     return texts
 
 
-template = """Answer the question based only on the following context including a bullet point list of sources (as urls) in the bottom of the answer:
+template = """\
+Answer the question based only on the following context adhering to the following rules:
+1) If you can not answer the question say "I am sorry I can not help you with this question" and do not provide any sources
+2) Include a bullet point list of sources (as urls) in the bottom of the answer
+3) answer in the language the question is asked in
+
+Context:
 
 {context}
 
@@ -249,8 +257,34 @@ print("building vector db for website content")
 # url_db_openai = FAISS.from_documents(url_texts, cached_embedder_openai)
 # pdf_db_openai = FAISS.from_documents(pdf_texts, cached_embedder_openai)
 
-url_db_openai = Chroma.from_documents(url_texts, cached_embedder_openai)
-pdf_db_openai = Chroma.from_documents(pdf_texts, cached_embedder_openai)
+
+url_db_openai = OpenSearchVectorSearch.from_documents(
+    url_texts,
+    cached_embedder_openai,
+    opensearch_url="https://localhost:9200",
+    http_auth=("admin", "xnWab4voBSxWmS3X5u%A"),
+    use_ssl = False,
+    verify_certs = False,
+    ssl_assert_hostname = False,
+    ssl_show_warn = False,
+    bulk_size = 1000,
+)
+
+pdf_db_openai = OpenSearchVectorSearch.from_documents(
+    pdf_texts,
+    cached_embedder_openai,
+    opensearch_url="https://localhost:9200",
+    http_auth=("admin", "xnWab4voBSxWmS3X5u%A"),
+    use_ssl = False,
+    verify_certs = False,
+    ssl_assert_hostname = False,
+    ssl_show_warn = False,
+    bulk_size = 1000,
+)
+
+
+#url_db_openai = Chroma.from_documents(url_texts, cached_embedder_openai)
+#pdf_db_openai = Chroma.from_documents(pdf_texts, cached_embedder_openai)
 
 metadata_field_info = [
     AttributeInfo(
@@ -290,15 +324,18 @@ metadata_field_info = [
     ),
 ]
 
+similarity_threshold = 0.8 # lower threshold refers to more similar documents
+
 metadata_retreiver = SelfQueryRetriever.from_llm(
     openai,
     pdf_db_openai,
     metadata_field_info=metadata_field_info,
-    document_contents="Political party programmes"
+    document_contents="Political party programmes",
+    score_threshold=similarity_threshold,
 )
 
 
-retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), metadata_retreiver], weights=[0.5, 0.5])
+retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(score_threshold = similarity_threshold), metadata_retreiver], weights=[0.5, 0.5])
 # retriever_ollama = EnsembleRetriever(retrievers=[url_db_ollama.as_retriever(), pdf_db_ollama.as_retriever()], weights=[0.5, 0.5])
 
 chain_openai = (
@@ -476,6 +513,7 @@ async def nonstreaming_handler(request: Request):
 if __name__ == "__main__":
     import uvicorn
     print("starting server...")
+    print(pdf_db_openai.search("test", search_type="mmr", score_threshold=0.5))
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 # while True:
