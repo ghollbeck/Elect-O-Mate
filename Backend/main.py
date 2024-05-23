@@ -227,7 +227,24 @@ Do not give sources in the answer, but be prepared to provide them by name if as
 Question: {question}
 """
 
+template_response_check = """\
+The Answer below is given by a helpful AI assistant. Check the answer for the following rules:
+
+1. the answer only talks about political parties and their programs
+2. If AI assistant did not find information in the context make sure it did not give sources
+
+If any of the rules are violated just answer: "-1"
+
+Otherwise answer: "1"
+
+AI assistant Answer:
+
+{output}
+
+"""
+
 prompt = ChatPromptTemplate.from_template(template)
+check_prompt = ChatPromptTemplate.from_template(template_response_check)
 voice_prompt = ChatPromptTemplate.from_template(voice_template)
 
 
@@ -311,6 +328,8 @@ retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), m
 chain_openai = (
     {"context": retriever_openai , "question": RunnablePassthrough()}
     | prompt  
+    | openai
+    | check_prompt
     | openai
     | StrOutputParser()
 )
