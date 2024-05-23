@@ -17,7 +17,12 @@ const Questionnaire = ({
   const [questions, setQuestions] = useState([]);
   const containerRef = useRef(null);
   const isButtonScroll = useRef(false); // Track button clicks
-  const [answers, setAnswers] = useState(Array(questions.length).fill(null));
+  const [answers, setAnswers] = useState(
+    Array(questionsData.length).fill({
+      answer: null,
+      wheight: false,
+    })
+  );
 
   useEffect(() => {
     setQuestions(questionsData);
@@ -47,22 +52,22 @@ const Questionnaire = ({
 
   const constructJSON = (answers) => {
     return answers.map((message) => ({
-      users_answer: message === null ? 0 : message,
-      Wheights: false,
-      Skipped: message === null,
+      users_answer: null ? 0 : message.answer,
+      Wheights: message.wheight ? 'true' : 'false',
+      Skipped: message === null ? 'true' : 'false',
     }));
   };
 
   const submit = async () => {
-    console.warn('SUBMIT');
+    console.log('SUBMIT');
 
     abortControllerRef.current = new AbortController();
 
     const jsonData = constructJSON(answers);
-    console.log(jsonData);
+    console.warn({ answers: jsonData });
 
     try {
-      const response = await fetch('https://backend.bruol.me/evaluate', {
+      const response = await fetch('http://0.0.0.0:8000/evaluate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -81,7 +86,7 @@ const Questionnaire = ({
         console.error('Error fetching data:', error);
       }
     }
-    scrollToChat();
+    scrollToResult();
   };
 
   const scrollToIndex = throttle((index) => {
@@ -103,10 +108,25 @@ const Questionnaire = ({
     }
   }, 200);
 
+  const handleWheight = (wheight) => {
+    setAnswers((prevAnswers) => {
+      const updatedAnswers = [...prevAnswers];
+      updatedAnswers[currentQuestionIndex] = {
+        answer: updatedAnswers[currentQuestionIndex].answer,
+        wheight: wheight,
+      }; // first card with content has index 1
+      return updatedAnswers;
+    });
+
+    scrollToQuestionnaire();
+  };
   const handleAnswer = (answer) => {
     setAnswers((prevAnswers) => {
       const updatedAnswers = [...prevAnswers];
-      updatedAnswers[currentQuestionIndex] = answer; // first card with content has index 1
+      updatedAnswers[currentQuestionIndex] = {
+        answer: answer,
+        wheight: updatedAnswers[currentQuestionIndex].wheight,
+      }; // first card with content has index 1
       return updatedAnswers;
     });
 
@@ -267,8 +287,10 @@ const Questionnaire = ({
                   title: t(question.title),
                   followup: t(question.followup),
                 }}
-                answer={answers[index]}
+                wheighted={answers[index].wheight}
+                answer={answers[index].answer}
                 onAnswer={handleAnswer}
+                handleWheight={handleWheight}
                 handleSendMessage={handleSendMessage}
                 setIsSending={setIsSending}
                 isSending={isSending}
