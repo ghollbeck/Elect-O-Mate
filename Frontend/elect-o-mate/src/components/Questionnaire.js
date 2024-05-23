@@ -17,7 +17,12 @@ const Questionnaire = ({
   const [questions, setQuestions] = useState([]);
   const containerRef = useRef(null);
   const isButtonScroll = useRef(false); // Track button clicks
-  const [answers, setAnswers] = useState(Array(questions.length).fill(null));
+  const [answers, setAnswers] = useState(
+    Array(questionsData.length).fill({
+      answer: null,
+      wheight: false,
+    })
+  );
 
   useEffect(() => {
     setQuestions(questionsData);
@@ -47,29 +52,32 @@ const Questionnaire = ({
 
   const constructJSON = (answers) => {
     return answers.map((message) => ({
-      users_answer: message === null ? 0 : message,
-      Wheights: false,
-      Skipped: message === null,
+      users_answer: message.answer === null ? 0 : message.answer,
+      Wheights: message.wheight ? 'true' : 'false',
+      Skipped: message.answer === null ? 'true' : 'false',
     }));
   };
 
   const submit = async () => {
-    console.warn('SUBMIT');
+    console.log('SUBMIT');
 
     abortControllerRef.current = new AbortController();
 
     const jsonData = constructJSON(answers);
-    console.log(jsonData);
+    console.warn({ answers: jsonData });
 
     try {
-      const response = await fetch(process.env.REACT_APP_BACKEND_URL+'/evaluate', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ answers: jsonData }),
-        signal: abortControllerRef.current.signal,
-      });
+      const response = await fetch(
+        process.env.REACT_APP_BACKEND_URL + '/evaluate',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ answers: jsonData }),
+          signal: abortControllerRef.current.signal,
+        }
+      );
 
       const data = await response.json();
       console.log(data);
@@ -81,7 +89,7 @@ const Questionnaire = ({
         console.error('Error fetching data:', error);
       }
     }
-    scrollToChat();
+    scrollToResult();
   };
 
   const scrollToIndex = throttle((index) => {
@@ -103,10 +111,25 @@ const Questionnaire = ({
     }
   }, 200);
 
+  const handleWheight = (wheight) => {
+    setAnswers((prevAnswers) => {
+      const updatedAnswers = [...prevAnswers];
+      updatedAnswers[currentQuestionIndex] = {
+        answer: updatedAnswers[currentQuestionIndex].answer,
+        wheight: wheight,
+      }; // first card with content has index 1
+      return updatedAnswers;
+    });
+
+    scrollToQuestionnaire();
+  };
   const handleAnswer = (answer) => {
     setAnswers((prevAnswers) => {
       const updatedAnswers = [...prevAnswers];
-      updatedAnswers[currentQuestionIndex] = answer; // first card with content has index 1
+      updatedAnswers[currentQuestionIndex] = {
+        answer: answer,
+        wheight: updatedAnswers[currentQuestionIndex].wheight,
+      }; // first card with content has index 1
       return updatedAnswers;
     });
 
@@ -267,8 +290,10 @@ const Questionnaire = ({
                   title: t(question.title),
                   followup: t(question.followup),
                 }}
-                answer={answers[index]}
+                wheighted={answers[index].wheight}
+                answer={answers[index].answer}
                 onAnswer={handleAnswer}
+                handleWheight={handleWheight}
                 handleSendMessage={handleSendMessage}
                 setIsSending={setIsSending}
                 isSending={isSending}
