@@ -52,9 +52,9 @@ const Questionnaire = ({
 
   const constructJSON = (answers) => {
     return answers.map((message) => ({
-      users_answer: null ? 0 : message.answer,
+      users_answer: message.answer === null ? 0 : message.answer,
       Wheights: message.wheight ? 'true' : 'false',
-      Skipped: message === null ? 'true' : 'false',
+      Skipped: message.answer === null ? 'true' : 'false',
     }));
   };
 
