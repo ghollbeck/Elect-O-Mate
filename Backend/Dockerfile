@@ -10,6 +10,7 @@ COPY main.py /app
 COPY requirements.txt /app
 COPY cache /app/cache
 COPY Sources /app/Sources
+COPY Score_Evaluation /app/Score_Evaluation
 
 RUN pip install -r requirements.txt
 

@@ -75,7 +75,7 @@ function App() {
 
     try {
       // Perform API request with streaming using Fetch API and AbortController
-      const response = await fetch('https://backend.bruol.me/openai/stream', {
+      const response = await fetch(process.env.REACT_APP_BACKEND_URL+'/openai/stream', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

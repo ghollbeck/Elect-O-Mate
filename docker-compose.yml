@@ -1,0 +1,18 @@
+services:
+  backend:
+      container_name: backend
+      restart: unless-stopped
+      build: ./Backend
+      environment:
+        - OPENAI_API_KEY=${OPENAI_API_KEY}
+      ports:
+        - 8000:8000
+        
+  frontend:
+      container_name: frontend
+      restart: unless-stopped
+      build: ./Frontend/elect-o-mate
+      environment:
+        - REACT_APP_BACKEND_URL=http://localhost:8000
+      ports:
+        - 80:3000
