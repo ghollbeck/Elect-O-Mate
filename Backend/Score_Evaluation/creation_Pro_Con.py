@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 input_file = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/Wahl-O-Mat Europa 2024_Datensatz_Perplexity.csv'
-output_file = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/Pro_Con_Perplexity_output.json'
+output_file = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/Pro_Con_Perplexity_output_Germany.json'
 
 # Load the CSV file
 data = pd.read_csv(input_file)
