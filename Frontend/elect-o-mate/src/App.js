@@ -75,14 +75,17 @@ function App() {
 
     try {
       // Perform API request with streaming using Fetch API and AbortController
-      const response = await fetch('https://backend.bruol.me/openai/stream', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ input: text }),
-        signal: abortController.signal,
-      });
+      const response = await fetch(
+        process.env.REACT_APP_BACKEND_URL + '/openai/stream',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ input: text }),
+          signal: abortController.signal,
+        }
+      );
 
       if (!response.ok) {
         throw new Error('Network response was not ok');

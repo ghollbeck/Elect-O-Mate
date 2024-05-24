@@ -1,8 +1,7 @@
 import ReactCardFlip from 'react-card-flip';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdHelpOutline } from 'react-icons/md';
-import { MdLoop } from 'react-icons/md';
+import { MdHelpOutline, MdLoop } from 'react-icons/md';
 import TextInput from './TextInput';
 
 const QuestionCard = ({
@@ -10,6 +9,7 @@ const QuestionCard = ({
   index,
   question,
   answer,
+  wheighted,
   onAnswer,
   isSending,
   handleSendMessage,
@@ -17,6 +17,7 @@ const QuestionCard = ({
   scrollToChat,
   pressable,
   submit,
+  handleWheight,
 }) => {
   const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
@@ -28,7 +29,7 @@ const QuestionCard = ({
   // If question is empty, render an empty card
   if (!question || !question.text) {
     return (
-      <div className='flex flex-col h-60 md:h-80  w-[75vw] lg:w-[800px] items-center justify-center bg-transparent text-white flex-shrink-0'></div>
+      <div className='flex flex-col h-60 md:h-80 w-[75vw] lg:w-[800px] items-center justify-center bg-transparent text-white flex-shrink-0'></div>
     );
   }
   if (question.text === 'submitcard') {
@@ -107,6 +108,18 @@ const QuestionCard = ({
               onClick={() => (pressable ? onAnswer(-1) : null)}
             >
               {t('disagree_button')}
+            </button>
+            <button
+              className={`border w-8 h-8 md:w-10 md:h-10 absolute left-0 bottom-14 ${
+                wheighted
+                  ? 'text-black bg-blue-100'
+                  : pressable
+                  ? 'hover:bg-blue-100 hover:text-black'
+                  : ''
+              } font-bold py-1 md:py-2 px-4 rounded-full flex items-center justify-center`}
+              onClick={() => (pressable ? handleWheight(!wheighted) : null)}
+            >
+              x2
             </button>
           </div>
         </div>

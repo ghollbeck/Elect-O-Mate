@@ -29,6 +29,10 @@ With Wahl-O-Smart we have developed a election tool with an AI chatbot integrati
 
 In navigating the intersection of technology and democracy, Wahl-O-Mat pledges to uphold the highest standards, ensuring our AI tools enhance informed opinion building, decision making, decrease political apathy and make the existing tools shorter as well as more accessibale.
 
+## Production
+
+> :warning: **test before pushing to production**: run `make test` and check whether everything works by going to `http://localhost` before pushing to production
+
 ## Backend Structure
 
 Lorem Ipsum..... \

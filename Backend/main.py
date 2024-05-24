@@ -14,8 +14,7 @@ from langchain_community.document_loaders import WebBaseLoader
 
 
 from langchain_community.vectorstores import FAISS
-from langchain_chroma import Chroma
-
+from langchain_community.vectorstores import Chroma
 
 from langchain_community.vectorstores import Chroma
 
@@ -489,6 +488,9 @@ class UserAnswers(BaseModel):
 
 @app.post("/evaluate")
 async def evaluate(user_answers: UserAnswers):
+    print("GOT SOMETHING")
+    print(user_answers.answers)
+    print(user_answers)
     data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted.json")
     data_User = user_answers.answers
     # Prepare data_User for evaluation
@@ -501,8 +503,8 @@ async def evaluate(user_answers: UserAnswers):
         for answer in data_User
     ]
     
-    
-    prepared_data_user = prepared_data_user[1:]
+    prepared_data_user = prepared_data_user[1:39]
+    print(len(prepared_data_user))
     print(prepared_data_user)
     print(len(prepared_data_user))
     # Call the evaluate_answers function with the prepared data

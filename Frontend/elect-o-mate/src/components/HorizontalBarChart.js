@@ -84,6 +84,7 @@ const HorizontalBarChart = ({ data, InformationRequest }) => {
         text: t('title_results'),
       },
     },
+    // Change text color of labels
   };
 
   // Calculate height dynamically
