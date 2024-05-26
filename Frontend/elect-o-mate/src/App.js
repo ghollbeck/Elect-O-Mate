@@ -13,6 +13,7 @@ import OrangeCircle from './components/OrangeCircle';
 import HorizontalBarChart from './components/HorizontalBarChart';
 
 function App() {
+  const [party, setParty] = useState(null);
   const [data, setData] = useState(null);
   const { t, i18n } = useTranslation();
   const [messages, setMessages] = useState([
@@ -30,7 +31,7 @@ function App() {
     const instructions =
       'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results- Please answer in ' +
       lang +
-      '. Please add a note, that a graph listing the matching can be found when scrolling down where the user can click on a bar to find more information about the respective party. Offer them further assistance.  DO NOT LIST ANY SOURCES';
+      '. Please add a note, that a graph listing the matching can be found when scrolling down where the user can click on a bar to find more information about the respective party and their positions can be seen back on the question cards. Offer them further assistance. DO NOT LIST ANY SOURCES!!';
     const resultString = JSON.stringify(result);
     const str = instructions + resultString;
     sendMessageToAPI(str, abortController);
@@ -65,7 +66,8 @@ function App() {
   };
 
   const InformationRequest = async (party, abortController) => {
-    const text = `Please provide me with information about the ${party}.`;
+    setParty(party);
+    const text = t('informationRequest') + ' ' + party;
     handleSendMessage('', text, abortController);
     scrollToChat();
   };
@@ -76,7 +78,8 @@ function App() {
     try {
       // Perform API request with streaming using Fetch API and AbortController
       const response = await fetch(
-        process.env.REACT_APP_BACKEND_URL + '/openai/stream',
+        // process.env.REACT_APP_BACKEND_URL + '/openai/stream',
+        'http://0.0.0.0:8000/openai/stream',
         {
           method: 'POST',
           headers: {
@@ -293,6 +296,8 @@ function App() {
           setIsSending={setIsSending}
           questionnaireAnswers={questionnaireAnswers}
           scrollToResult={scrollToResult}
+          party={party}
+          country={i18n.language}
         />
       </div>
       <div ref={toChat} className='flex justify-center relative mt-64'>
@@ -313,6 +318,7 @@ function App() {
             <HorizontalBarChart
               data={data}
               InformationRequest={InformationRequest}
+              setParty={setParty}
             />
           </div>
         ) : (

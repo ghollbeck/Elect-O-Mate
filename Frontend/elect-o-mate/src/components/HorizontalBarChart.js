@@ -20,7 +20,7 @@ ChartJS.register(
   Legend
 );
 
-const HorizontalBarChart = ({ data, InformationRequest }) => {
+const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
   const abortControllerRef = useRef(null);
   const { t, i18n } = useTranslation();
   const percentages = data.map((item) => item[0]);
@@ -45,14 +45,12 @@ const HorizontalBarChart = ({ data, InformationRequest }) => {
       if (elements.length > 0) {
         const index = elements[0].index;
         const label = labels[index];
-
         if (abortControllerRef.current) {
           abortControllerRef.current.abort();
         }
-
         abortControllerRef.current = new AbortController();
         const abortController = abortControllerRef.current;
-
+        setParty(label)
         InformationRequest(label, abortController);
       }
     },

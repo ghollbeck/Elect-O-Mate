@@ -480,38 +480,44 @@ async def nonstreaming_handler(request: Request):
 
 # Evaluate endpoint
 class Answer(BaseModel):
-    users_answer: Optional[int]  # Optional to allow for null values
+    users_answer: int
     Wheights: str
     Skipped: str
 class UserAnswers(BaseModel):
-    answers: List[Answer]
+    country: str
+    data: List[Answer]
+class JsonData(BaseModel):
+    jsonData: UserAnswers
 
 @app.post("/evaluate")
-async def evaluate(user_answers: UserAnswers):
-    print("GOT SOMETHING")
-    print(user_answers.answers)
-    print(user_answers)
-    data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted.json")
-    data_User = user_answers.answers
+async def evaluate(user_answers: JsonData):
+    # print("GOT SOMETHING")
+    # print(user_answers.jsonData)
+    # print(user_answers)
+    country = user_answers.jsonData.country
+    # print(country)
+    data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted_"+ country +".json")
     # Prepare data_User for evaluation
+    
     prepared_data_user = [
         {
             "users_answer": answer.users_answer,
             "Wheights": answer.Wheights,
             "Skipped": answer.Skipped
         }
-        for answer in data_User
+        for answer in user_answers.jsonData.data
     ]
     
     prepared_data_user = prepared_data_user[1:39]
-    print(len(prepared_data_user))
+    # print(len(prepared_data_user))
     print(prepared_data_user)
-    print(len(prepared_data_user))
+    # print(len(prepared_data_user))
     # Call the evaluate_answers function with the prepared data
     result = evaluate_answers(data_Party, prepared_data_user)
-    print(result)
-    print(len(result))
-    return {"result": result, "test":"hi"}
+    # print(result)
+    # print(len(result))
+    return {"result": result, "party_answers": data_Party['party_answers']}
+    
 
 
 if __name__ == "__main__":
