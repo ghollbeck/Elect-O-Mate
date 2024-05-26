@@ -43,8 +43,8 @@ const QuestionCard = ({
         ? t('neutral_button')
         : t('disagree_button')) +
       t('party_position_request_3') +
-      '\n' +
-      question.text; //example: Wieso stimmt die CDU mit nein bei folgender Frage ab?
+      '\n\n' +
+      question.text;
     handleSendMessage('', text, abortControllerRef.current);
     scrollToChat();
   };
@@ -207,7 +207,7 @@ const QuestionCard = ({
             } font-bold py-1 md:py-2 px-4 rounded-xl`}
             onClick={() => (pressable ? partyPosition() : null)}
           >
-            More Information
+            {t('more_information')}
           </button>
         </div>
       ) : (
