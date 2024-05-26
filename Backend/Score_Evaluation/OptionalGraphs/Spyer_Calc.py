@@ -4,8 +4,14 @@ import pprint
 pp = pprint.PrettyPrinter(indent=4)##
 import os
 print(os.getcwd())
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from scipy.interpolate import make_interp_spline
 
-file_path_Party_Answers = "./Party_Answers_Converted.json"
+img = plt.imread('/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/OptionalGraphs/Spidegrpah_background.png')  # Update this path to your image location
+
+
+file_path_Party_Answers = "/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/Party_Answers_Converted.json"
 file_path_My_Answers = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/-1_0_1_User_Answers.json' 
 party_names = ["CDU / CSU", "GRÜNE", "SPD", "AfD", "DIE LINKE", "FDP", "Die PARTEI", "FREIE WÄHLER", "Tierschutzpartei", "ÖDP", "FAMILIE", "Volt", "PIRATEN", "MERA25", "HEIMAT", "TIERSCHUTZ hier!", "Partei für schulmedizinische Verjüngungsforschung", "BIG", "Bündnis C", "PdH", "MENSCHLICHE WELT", "DKP", "MLPD", "SGP", "ABG", "dieBasis", "BÜNDNIS DEUTSCHLAND", "BSW", "DAVA", "KLIMALISTE", "LETZTE GENERATION", "PDV", "PdF", "V-Partei³"]
 
@@ -121,48 +127,59 @@ categories = list(categories_and_questions.keys())
 
 def PlotSpider(User_data,Party_data1,Party_data2,Party_data3):
 
+    num_vars = len(categories)
 
+    angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
 
     num_vars = len(User_data)
     User = list(User_data)
     Party1 = list(Party_data1)
     Party2 = list(Party_data2)
     Party3  = list(Party_data3)
+    angles += angles[:1]
+
 
     # Compute angle for each axis
-    angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
 
     # Complete the loop
     User += User[:1]
     Party1 += Party1[:1]
     Party2 += Party2[:1]
     Party3 += Party3[:1]
-    angles += angles[:1]
 
     # Plot
     fig, ax = plt.subplots(figsize=(8, 8), subplot_kw=dict(polar=True))
 
+    #IMAGE AS BACKGROUND    
+    ax_img = fig.add_axes([0.01, 0.01, 1.00, 1.00])
+    ax_img.imshow(img)
+    ax_img.axis('off') 
+
+
+    
     # Fill area
-    ax.fill(angles, User, color='grey', alpha=0.25)
+    ax.fill(angles, User, color='green', alpha=0.25)
     ax.fill(angles, Party1, color='red', alpha=0.25)
-    ax.fill(angles, Party2, color='green', alpha=0.25)
-    ax.fill(angles, Party3, color='violet', alpha=0.25)
+    #ax.fill(angles, Party2, color='green', alpha=0.25)
+    ax.fill(angles, Party3, color='blue', alpha=0.25)
     # Plot line
-    ax.plot(angles, User, color='grey', linewidth=2, label='User')
+    ax.plot(angles, User, color='green', linewidth=2, label='User')
     ax.plot(angles, Party1, color='red', linewidth=2, label='CDU')
-    ax.plot(angles, Party2, color='green', linewidth=2, label='Grünen')
-    ax.plot(angles, Party3, color='violet', linewidth=2, label='Volt')
+    #ax.plot(angles, Party2, color='green', linewidth=2, label='Grünen')
+    ax.plot(angles, Party3, color='blue', linewidth=2, label='Volt')
 
-    # Aesthetics
-    #ax.set_yticklabels([])
-    ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(categories, fontsize=10)
-    # Set the scale
-    ax.set_yticks([25, 50, 75, 100])
-    ax.set_rlabel_position(45)
+    ax.set_rlabel_position(68)
+    ax.set_rticks([25, 50, 75, 100])
+    ax.set_xticklabels([])
+    ax.set_ylim(0, 100)
+
+
+
+
     # Add a legend
-    ax.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))
-
+    ax.legend(loc='upper right', bbox_to_anchor=(1.1, 1.1))
+    plt.savefig('/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/OptionalGraphs/Spider_Final_Plot.png', transparent=True)
+    
     plt.show()
 
 
