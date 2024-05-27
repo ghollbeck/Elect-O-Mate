@@ -163,10 +163,10 @@ def PlotSpider(User_data,Party_data1,Party_data2,Party_data3):
     #ax.fill(angles, Party2, color='green', alpha=0.25)
     ax.fill(angles, Party3, color='blue', alpha=0.25)
     # Plot line
-    ax.plot(angles, User, color='green', linewidth=2, label='User')
-    ax.plot(angles, Party1, color='red', linewidth=2, label='CDU')
+    ax.plot(angles, User, color='green', linewidth=0, label='User')
+    ax.plot(angles, Party1, color='red', linewidth=0, label='CDU')
     #ax.plot(angles, Party2, color='green', linewidth=2, label='Grünen')
-    ax.plot(angles, Party3, color='blue', linewidth=2, label='Volt')
+    ax.plot(angles, Party3, color='blue', linewidth=0, label='Volt')
 
     ax.set_rlabel_position(68)
     ax.set_rticks([25, 50, 75, 100])
