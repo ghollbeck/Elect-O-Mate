@@ -50,7 +50,7 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
         }
         abortControllerRef.current = new AbortController();
         const abortController = abortControllerRef.current;
-        setParty(label)
+        setParty(label);
         InformationRequest(label, abortController);
       }
     },
@@ -80,6 +80,7 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
       title: {
         display: true,
         text: t('title_results'),
+        color: '#ffffff',
       },
     },
     // Change text color of labels

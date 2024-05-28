@@ -1,5 +1,5 @@
 {   
-    "party_names" : ["CDU / CSU", "GRÜNE", "SPD", "AfD", "DIE LINKE", "FDP", "Die PARTEI", "FREIE WÄHLER", "Tierschutzpartei", "ÖDP", "FAMILIE", "Volt", "PIRATEN", "MERA25", "HEIMAT", "TIERSCHUTZ hier!", "Partei für schulmedizinische Verjüngungsforschung", "BIG", "Bündnis C", "PdH", "MENSCHLICHE WELT", "DKP", "MLPD", "SGP", "ABG", "dieBasis", "BÜNDNIS DEUTSCHLAND", "BSW", "DAVA", "KLIMALISTE", "LETZTE GENERATION", "PDV", "PdF", "V-Partei³"],
+    "party_names" : ["CDU / CSU", "GRÜNE", "SPD", "AfD", "DIE LINKE", "FDP", "Die PARTEI", "FREIE WÄHLER", "Tierschutzpartei", "ÖDP", "FAMILIE", "Volt", "PIRATEN", "MERA25", "HEIMAT", "TIERSCHUTZ hier!", "PfsV", "BIG", "Bündnis C", "PdH", "MENSCHLICHE WELT", "DKP", "MLPD", "SGP", "ABG", "dieBasis", "BÜNDNIS DEUTSCHLAND", "BSW", "DAVA", "KLIMALISTE", "LETZTE GENERATION", "PDV", "PdF", "V-Partei³"],
     "party_answers" :
     [
         {
@@ -117,7 +117,7 @@
         },
         {
             "Question_Number": 1,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll eigene Steuern erheben dürfen.",
             "Party_Answer": 0
@@ -355,7 +355,7 @@
         },
         {
             "Question_Number": 2,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Fahrzeuge mit Verbrennungsmotoren sollen auch nach 2035 in der EU neu zugelassen werden können.",
             "Party_Answer": 0
@@ -593,7 +593,7 @@
         },
         {
             "Question_Number": 3,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll eine eigene Seenotrettung im Mittelmeer aufbauen.",
             "Party_Answer": 0
@@ -831,7 +831,7 @@
         },
         {
             "Question_Number": 4,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die Ukraine soll Mitglied der EU werden.",
             "Party_Answer": 0
@@ -1069,7 +1069,7 @@
         },
         {
             "Question_Number": 5,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll vorrangig ökologische Landwirtschaft fördern.",
             "Party_Answer": 0
@@ -1307,7 +1307,7 @@
         },
         {
             "Question_Number": 6,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "In Deutschland soll der Euro durch eine nationale Währung ersetzt werden.",
             "Party_Answer": 0
@@ -1545,7 +1545,7 @@
         },
         {
             "Question_Number": 7,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll den Mitgliedstaaten empfehlen, außer „weiblich“ und „männlich“ auch die Eintragung einer anderen Geschlechtsidentität im Pass zu ermöglichen.",
             "Party_Answer": 0
@@ -1783,7 +1783,7 @@
         },
         {
             "Question_Number": 8,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die Jagd von Wölfen soll in Regionen erlaubt sein, in denen der Bestand dadurch nicht gefährdet ist.",
             "Party_Answer": 0
@@ -2021,7 +2021,7 @@
         },
         {
             "Question_Number": 9,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Beim Bau neuer Wohngebäude in der EU soll die Errichtung von Photovoltaikanlagen verpflichtend sein.",
             "Party_Answer": 0
@@ -2259,7 +2259,7 @@
         },
         {
             "Question_Number": 10,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Mehr außenpolitische Entscheidungen der EU sollen mit Mehrheit statt einstimmig getroffen werden.",
             "Party_Answer": 0
@@ -2497,7 +2497,7 @@
         },
         {
             "Question_Number": 11,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Der Flugzeugtreibstoff Kerosin soll für Flüge in der EU steuerfrei sein.",
             "Party_Answer": 0
@@ -2735,7 +2735,7 @@
         },
         {
             "Question_Number": 12,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die gemeinsame europäische Polizeibehörde Europol soll weitere Befugnisse erhalten.",
             "Party_Answer": 0
@@ -2973,7 +2973,7 @@
         },
         {
             "Question_Number": 13,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll länderübergreifende, mehrsprachige Angebote des öffentlich-rechtlichen Rundfunks stärker finanziell fördern.",
             "Party_Answer": 0
@@ -3211,7 +3211,7 @@
         },
         {
             "Question_Number": 14,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll das Ziel verwerfen, klimaneutral zu werden.",
             "Party_Answer": 0
@@ -3449,7 +3449,7 @@
         },
         {
             "Question_Number": 15,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Bei den Wahlen zum Europäischen Parlament sollen die Parteien weiterhin frei entscheiden können, wie groß der Anteil der Geschlechter auf ihren Listen ist.",
             "Party_Answer": 0
@@ -3687,7 +3687,7 @@
         },
         {
             "Question_Number": 16,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll Vorgaben für die Höhe der sozialen Grundsicherung in den Mitgliedstaaten machen.",
             "Party_Answer": 0
@@ -3925,7 +3925,7 @@
         },
         {
             "Question_Number": 17,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Betreiber sozialer Netzwerke sollen frei entscheiden dürfen, wie sie mit Desinformation auf ihren Plattformen umgehen.",
             "Party_Answer": 0
@@ -4163,7 +4163,7 @@
         },
         {
             "Question_Number": 18,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "In der EU sollen mehr Flächen als Naturschutzgebiete ausgewiesen werden.",
             "Party_Answer": 0
@@ -4401,7 +4401,7 @@
         },
         {
             "Question_Number": 19,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "EU-Fördermittel für Mitgliedstaaten, die Regeln und Werte der EU verletzen, sollen weiterhin zurückgehalten werden.",
             "Party_Answer": 0
@@ -4639,7 +4639,7 @@
         },
         {
             "Question_Number": 20,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll mehr Waffen für die Ukraine finanzieren.",
             "Party_Answer": 0
@@ -4877,7 +4877,7 @@
         },
         {
             "Question_Number": 21,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die zulässige Menge an Fischen, die in EU-Gewässern gefangen werden dürfen, soll gesenkt werden.",
             "Party_Answer": 0
@@ -5115,7 +5115,7 @@
         },
         {
             "Question_Number": 22,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die Einfuhrzölle der EU auf chinesische Elektroautos sollen erhöht werden.",
             "Party_Answer": 0
@@ -5353,7 +5353,7 @@
         },
         {
             "Question_Number": 23,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll sich dafür einsetzen, dass Schwangerschaftsabbrüche in allen Mitgliedstaaten straffrei möglich sind.",
             "Party_Answer": 0
@@ -5591,7 +5591,7 @@
         },
         {
             "Question_Number": 24,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Es sollen wieder dauerhafte Grenzkontrollen zwischen den Mitgliedstaaten der EU stattfinden.",
             "Party_Answer": 0
@@ -5829,7 +5829,7 @@
         },
         {
             "Question_Number": 25,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die Aufnahme neuer Staaten in die EU soll in allen Mitgliedstaaten durch Volksabstimmungen bestätigt werden müssen.",
             "Party_Answer": 0
@@ -6067,7 +6067,7 @@
         },
         {
             "Question_Number": 26,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll den Anbau von weiteren gentechnisch veränderten Pflanzensorten erlauben.",
             "Party_Answer": 0
@@ -6305,7 +6305,7 @@
         },
         {
             "Question_Number": 27,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Geschlechtsspezifische Gewalt gegen Frauen soll europaweit als Asylgrund anerkannt werden.",
             "Party_Answer": 0
@@ -6543,7 +6543,7 @@
         },
         {
             "Question_Number": 28,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Urheberrechtlich geschützte Werke (z.B. Fotos, Musik, Literatur) sollen in der EU für nicht-kommerzielle Zwecke kostenlos verwendet werden dürfen.",
             "Party_Answer": 0
@@ -6781,7 +6781,7 @@
         },
         {
             "Question_Number": 29,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die Sanktionen der EU gegen Russland sollen abgebaut werden.",
             "Party_Answer": 0
@@ -7019,7 +7019,7 @@
         },
         {
             "Question_Number": 30,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Das Erasmus+ Stipendium für Auslandsaufenthalte soll für Studierende, die über weniger finanzielle Mittel verfügen, höher sein.",
             "Party_Answer": 0
@@ -7257,7 +7257,7 @@
         },
         {
             "Question_Number": 31,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll Atomkraft weiterhin als nachhaltige Energiequelle einstufen.",
             "Party_Answer": 0
@@ -7495,7 +7495,7 @@
         },
         {
             "Question_Number": 32,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die Einwanderung von Fachkräften in die EU soll vereinfacht werden.",
             "Party_Answer": 0
@@ -7733,7 +7733,7 @@
         },
         {
             "Question_Number": 33,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die Beteiligung außereuropäischer Investoren an Unternehmen im Bereich kritischer Infrastruktur soll in der EU stärker beschränkt werden.",
             "Party_Answer": 0
@@ -7971,7 +7971,7 @@
         },
         {
             "Question_Number": 34,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Der Präsident bzw. die Präsidentin der Europäischen Kommission soll von den Bürgerinnen und Bürgern direkt gewählt werden.",
             "Party_Answer": 0
@@ -8209,7 +8209,7 @@
         },
         {
             "Question_Number": 35,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "In der EU sollen Unternehmen mehr für den Ausstoß von CO₂ zahlen müssen.",
             "Party_Answer": 0
@@ -8447,7 +8447,7 @@
         },
         {
             "Question_Number": 36,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Asylbewerberinnen und -bewerber sollen ihren Antrag vor Überschreiten der EU-Außengrenze stellen müssen und dort auf das Ergebnis warten.",
             "Party_Answer": 0
@@ -8685,7 +8685,7 @@
         },
         {
             "Question_Number": 37,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Die EU soll weiterhin in gemeinsame europäische Rüstungsprojekte investieren.",
             "Party_Answer": 0
@@ -8923,7 +8923,7 @@
         },
         {
             "Question_Number": 38,
-            "Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
+            "Party_Name": "PfsV",
             "Full_Party_Name": "Partei für schulmedizinische Verjüngungsforschung",
             "Question_Label": "Das Europäische Parlament soll weiterhin eine zentrale Rolle in der EU spielen.",
             "Party_Answer": 0

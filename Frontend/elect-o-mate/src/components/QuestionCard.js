@@ -194,7 +194,7 @@ const QuestionCard = ({
         </div>
       </ReactCardFlip>
       {partyAnswer ? (
-        <div className='flex flex-col h-[20dvh] md:h-20 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-600 mb-5 items-center justify-center'>
+        <div className='flex flex-col h-[20dvh] md:h-20 w-[75vw] lg:w-[800px] p-1 text-center text-white  rounded-xl shadow-lg shadow-gray-900 bg-gray-600 mb-5 items-center justify-center'>
           {partyAnswer['Full_Party_Name']} {t('party_voted_for')}{' '}
           {partyAnswer['Party_Answer'] === 1
             ? t('agree_button')
