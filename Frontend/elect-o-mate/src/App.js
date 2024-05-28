@@ -11,6 +11,8 @@ import LanguageSelector from './components/LanguageSelector';
 import './i18n';
 import OrangeCircle from './components/OrangeCircle';
 import HorizontalBarChart from './components/HorizontalBarChart';
+import InfoIcon from '@mui/icons-material/Info';
+import CloseIcon from '@mui/icons-material/Close';
 
 function App() {
   const [party, setParty] = useState(null);
@@ -269,6 +271,12 @@ function App() {
     fetchUserLanguageAndSetLanguage();
   }, [i18n, getUserLanguageFromIP]); // Include i18n in the dependency array`
 
+  const [isPopupOpen, setIsPopupOpen] = useState(true);
+
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
+
   return (
     <div
       className='flex flex-col relative overflow-hidden bg-gray-800'
@@ -312,19 +320,51 @@ function App() {
           />
         </div>
       </div>
-      <div ref={toResult} className='flex justify-center mt-24 '>
+      <div ref={toResult} className='flex justify-center mt-24'>
         {data !== null ? (
-          <div className='w-full h-[800px] mx-2 md:w-2/3'>
-            <HorizontalBarChart
-              data={data}
-              InformationRequest={InformationRequest}
-              setParty={setParty}
-            />
+          <div className='w-full h-auto mx-2 md:w-2/3 relative'>
+            {isPopupOpen ? (
+              <>
+                <CloseIcon
+                  onClick={togglePopup}
+                  className='absolute top-0 right-0 m-2 text-white scale-110  z-10'
+                />
+                <div className='absolute inset-0 bg-gray-700/90 rounded-xl flex items-center justify-center text-white'>
+                  <div className='flex flex-col  p-4 w-full h-full'>
+                    <div className='flex-shrink-0 flex items-center'>
+                      {t('how_graph_works_title')}
+                    </div>
+                    <div className='flex-grow flex items-center justify-center'>
+                      {t('how_graph_works_content')}
+                    </div>
+                  </div>
+                </div>
+                <HorizontalBarChart
+                  data={data}
+                  InformationRequest={InformationRequest}
+                  setParty={setParty}
+                />
+              </>
+            ) : (
+              <>
+                <InfoIcon
+                  onClick={togglePopup}
+                  className='absolute top-0 right-0 m-2 text-white scale-110'
+                />
+
+                <HorizontalBarChart
+                  data={data}
+                  InformationRequest={InformationRequest}
+                  setParty={setParty}
+                />
+              </>
+            )}
           </div>
         ) : (
           ''
         )}
       </div>
+
       <div className='relative mt-72'>
         <div
           className='absolute top-0 left-0 w-full bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] transform skew-y-3 h-100'

@@ -4,6 +4,7 @@ import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
 import EUstars from '../pictures/EUstars.png';
+import ProgressBar from './ProgressBar';
 
 const Questionnaire = ({
   handleSendMessage,
@@ -27,6 +28,8 @@ const Questionnaire = ({
       wheight: false,
     })
   );
+
+  const [questionCount, setQuestionCount] = useState(0);
 
   useEffect(() => {
     setQuestions(questionsData);
@@ -130,18 +133,27 @@ const Questionnaire = ({
         answer: updatedAnswers[currentQuestionIndex].answer,
         wheight: wheight,
       }; // first card with content has index 1
+
       return updatedAnswers;
     });
 
     scrollToQuestionnaire();
   };
+
   const handleAnswer = (answer) => {
     setAnswers((prevAnswers) => {
       const updatedAnswers = [...prevAnswers];
+      const prevAnswer = updatedAnswers[currentQuestionIndex].answer;
       updatedAnswers[currentQuestionIndex] = {
         answer: answer,
         wheight: updatedAnswers[currentQuestionIndex].wheight,
-      }; // first card with content has index 1
+      };
+
+      // Increment question_count if the question is answered for the first time
+      if (prevAnswer === null && answer !== null) {
+        setQuestionCount((prevCount) => prevCount + 1);
+      }
+
       return updatedAnswers;
     });
 
@@ -228,6 +240,7 @@ const Questionnaire = ({
           backgroundImage: 'linear-gradient(to right, #3D6964, #FDFFFD)',
         }}
       />
+
       <div className='absolute top-0 left-0 w-full h-0 md:h-full z-3 scale-125 overflow-hidden'>
         <img
           src={EUstars}
@@ -327,6 +340,9 @@ const Questionnaire = ({
               />
             </div>
           ))}
+        </div>
+        <div className='relative w-full px-10'>
+          <ProgressBar current={questionCount} total={questions.length - 4} />
         </div>
       </div>
     </div>

@@ -35,7 +35,8 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
         data: percentages,
         backgroundColor: 'rgba(75, 192, 192, 0.1)',
         borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 2,
+        borderWidth: 1,
+        borderRadius: 10,
       },
     ],
   };
@@ -90,9 +91,6 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
         color: '#ffffff',
         anchor: 'end',
         align: 'top', // Position the labels to the end (right) of the bars
-        formatter: function (value) {
-          return value + '%'; // Append percent sign
-        },
       },
     },
   };

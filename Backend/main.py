@@ -507,7 +507,7 @@ async def evaluate(user_answers: JsonData):
         for answer in user_answers.jsonData.data
     ]
     
-    prepared_data_user = prepared_data_user[2:40]
+    prepared_data_user = prepared_data_user[2:len(prepared_data_user) -2]
     print(len(prepared_data_user))
     print(prepared_data_user)
     # print(len(prepared_data_user))
