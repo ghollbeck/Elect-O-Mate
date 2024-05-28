@@ -219,6 +219,7 @@ function App() {
   };
 
   function getLanguageNameByCode(languageCode) {
+    languageCode = languageCode.slice(-2);
     const languageNameMap = {
       de: 'German',
       nl: 'Dutch',
@@ -250,34 +251,34 @@ function App() {
 
   const getUserLanguageFromIP = useCallback(async () => {
     const countryLanguageMap = {
-      AT: 'de', // Austria - German
-      BE: 'nl', // Belgium - Dutch
-      BG: 'bg', // Bulgaria - Bulgarian
-      CH: 'de',
-      CY: 'el', // Cyprus - Greek
-      CZ: 'cs', // Czech Republic - Czech
-      DE: 'de', // Germany - German
-      DK: 'da', // Denmark - Danish
-      EE: 'et', // Estonia - Estonian
-      ES: 'es', // Spain - Spanish
-      FI: 'fi', // Finland - Finnish
-      FR: 'fr', // France - French
-      GR: 'el', // Greece - Greek
-      HR: 'hr', // Croatia - Croatian
-      HU: 'hu', // Hungary - Hungarian
-      IE: 'en', // Ireland - English
-      IT: 'it', // Italy - Italian
-      LT: 'lt', // Lithuania - Lithuanian
-      LU: 'fr', // Luxembourg - French
-      LV: 'lv', // Latvia - Latvian
-      MT: 'en', // Malta - English
-      NL: 'nl', // Netherlands - Dutch
-      PL: 'pl', // Poland - Polish
-      PT: 'pt', // Portugal - Portuguese
-      RO: 'ro', // Romania - Romanian
-      SE: 'sv', // Sweden - Swedish
-      SI: 'sl', // Slovenia - Slovenian
-      SK: 'sk', // Slovakia - Slovak
+      AT: 'atde', // Austria - German
+      BE: 'benl', // Belgium - Dutch
+      BG: 'bgbg', // Bulgaria - Bulgarian
+      CH: 'dede',
+      CY: 'cyel', // Cyprus - Greek
+      CZ: 'czcs', // Czech Republic - Czech
+      DE: 'dede', // Germany - German
+      DK: 'dkda', // Denmark - Danish
+      EE: 'eeet', // Estonia - Estonian
+      ES: 'eses', // Spain - Spanish
+      FI: 'fifi', // Finland - Finnish
+      FR: 'frfr', // France - French
+      GR: 'elel', // Greece - Greek
+      HR: 'hrhr', // Croatia - Croatian
+      HU: 'huhu', // Hungary - Hungarian
+      IE: 'ieen', // Ireland - English
+      IT: 'itit', // Italy - Italian
+      LT: 'ltlt', // Lithuania - Lithuanian
+      LU: 'lufr', // Luxembourg - French
+      LV: 'lvlv', // Latvia - Latvian
+      MT: 'mten', // Malta - English
+      NL: 'nlnl', // Netherlands - Dutch
+      PL: 'plpl', // Poland - Polish
+      PT: 'ptpt', // Portugal - Portuguese
+      RO: 'roro', // Romania - Romanian
+      SE: 'sesv', // Sweden - Swedish
+      SI: 'sisl', // Slovenia - Slovenian
+      SK: 'sksk', // Slovakia - Slovak
     };
 
     try {
@@ -286,7 +287,7 @@ function App() {
       const countryCode = data.country;
       return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
     } catch (error) {
-      return 'en'; // Default to English in case of error
+      return 'deen'; // Default to English in case of error
     }
   }, []);
 
@@ -296,7 +297,7 @@ function App() {
         const userLanguage = await getUserLanguageFromIP();
         i18n.changeLanguage(userLanguage);
       } catch (error) {
-        i18n.changeLanguage('en');
+        i18n.changeLanguage('deen');
       }
     };
 
@@ -337,7 +338,7 @@ function App() {
           questionnaireAnswers={questionnaireAnswers}
           scrollToResult={scrollToResult}
           party={party}
-          country={i18n.language}
+          country={i18n.language.slice(0, 2)}
         />
       </div>
       <div ref={toChat} className='flex justify-center relative mt-64'>
