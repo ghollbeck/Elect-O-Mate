@@ -79,7 +79,7 @@ function App() {
       // Perform API request with streaming using Fetch API and AbortController
       const response = await fetch(
         // process.env.REACT_APP_BACKEND_URL + '/openai/stream',
-        'http://10.5.189.107:8000/openai/stream',
+        'http://10.5.184.225:8000/openai/stream',
         {
           method: 'POST',
           headers: {

@@ -47,7 +47,6 @@ import requests
 from pathlib import Path
 BASE = Path(__file__).resolve().parent
 
-
 app = FastAPI(
     title="LangChain Server",
     version="1.0",
@@ -209,13 +208,18 @@ def load_pdfs():
     return texts
 
 
-template = """Answer the question based only on the following context including a bullet point list of sources (as urls) in the bottom of the answer:
+template = """You are a helpful assistant for the EU-elections. Never provide an opinion, explain different perspectives instead.
+If the QUESTION is not relevant to the EU-elections or politics, do not answer it.
+
+Answer the question based only on the following context. If the context is relevant to the question of the usr, provide a list of sources as source name and url.
+
+This is the CONTEXT:
 
 {context}
 
 
 
-Question: {question}
+This is the users QUESTION: {question}
 """
 
 voice_template = """Answer the question based only on the following context. Respond with only one to two sentences.
