@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { useTranslation } from 'react-i18next';
 import {
@@ -10,6 +10,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import 'chartjs-plugin-datalabels'; // Import the datalabels plugin
 
 ChartJS.register(
   CategoryScale,
@@ -32,7 +33,7 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
       {
         label: '%',
         data: percentages,
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        backgroundColor: 'rgba(75, 192, 192, 0.1)',
         borderColor: 'rgba(75, 192, 192, 1)',
         borderWidth: 2,
       },
@@ -68,10 +69,13 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
       y: {
         ticks: {
           color: '#ffffff', // Set the y-axis text color to white
+          font: {
+            weight: 'bold', // Make ticks bold
+          },
+          mirror: true,
         },
       },
     },
-
     maintainAspectRatio: false,
     plugins: {
       legend: {
@@ -82,12 +86,19 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
         text: t('title_results'),
         color: '#ffffff',
       },
+      datalabels: {
+        color: '#ffffff',
+        anchor: 'end',
+        align: 'top', // Position the labels to the end (right) of the bars
+        formatter: function (value) {
+          return value + '%'; // Append percent sign
+        },
+      },
     },
-    // Change text color of labels
   };
 
   // Calculate height dynamically
-  const chartHeight = `${25 * data.length}px`;
+  const chartHeight = `${27 * data.length}px`;
 
   const chartStyle = {
     height: chartHeight,

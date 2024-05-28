@@ -26,7 +26,8 @@ const QuestionCard = ({
   const { t } = useTranslation();
   const [isFlipped, setIsFlipped] = useState(false);
   const partyAnswer = partyanswers.find(
-    (item) => item['Party_Name'] === party && item['Question_Number'] === index
+    (item) =>
+      item['Party_Name'] === party && item['Question_Number'] === index - 1
   );
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -84,7 +85,11 @@ const QuestionCard = ({
     <div>
       <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
         {/* Front of the card */}
-        <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5'>
+        <div
+          className={`flex flex-col ${
+            partyAnswer ? 'h-[45dvh]' : 'h-[70dvh]'
+          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5`}
+        >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
               {index}/{length - 3} {question.title}
@@ -178,7 +183,11 @@ const QuestionCard = ({
         </div>
 
         {/* Back of the card */}
-        <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5'>
+        <div
+          className={`flex flex-col ${
+            partyAnswer ? 'h-[45dvh]' : 'h-[70dvh]'
+          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5`}
+        >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
               {index}/{length - 3} {t(question.title)}
