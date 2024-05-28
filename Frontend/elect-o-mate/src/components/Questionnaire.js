@@ -3,6 +3,8 @@ import QuestionCard from './QuestionCard';
 import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
+import EUstars from '../pictures/EUstars.png';
+import ProgressBar from './ProgressBar';
 
 const Questionnaire = ({
   handleSendMessage,
@@ -12,9 +14,12 @@ const Questionnaire = ({
   scrollToQuestionnaire,
   questionnaireAnswers,
   scrollToResult,
+  country,
+  party,
 }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [questions, setQuestions] = useState([]);
+  const [partyanswers, setPartyAnswers] = useState([]);
   const containerRef = useRef(null);
   const isButtonScroll = useRef(false); // Track button clicks
   const [answers, setAnswers] = useState(
@@ -23,6 +28,8 @@ const Questionnaire = ({
       wheight: false,
     })
   );
+
+  const [questionCount, setQuestionCount] = useState(0);
 
   useEffect(() => {
     setQuestions(questionsData);
@@ -51,30 +58,35 @@ const Questionnaire = ({
   const abortControllerRef = useRef(null);
 
   const constructJSON = (answers) => {
-    return answers.map((message) => ({
+    const formattedAnswers = answers.map((message) => ({
       users_answer: message.answer === null ? 0 : message.answer,
       Wheights: message.wheight ? 'true' : 'false',
       Skipped: message.answer === null ? 'true' : 'false',
     }));
+
+    return {
+      country, // Include the country value as a key-value pair
+      data: formattedAnswers, // Add the formatted answer objects as an array
+    };
   };
 
   const submit = async () => {
     console.log('SUBMIT');
-
     abortControllerRef.current = new AbortController();
 
     const jsonData = constructJSON(answers);
-    console.warn({ answers: jsonData });
+    console.warn({ jsonData });
 
     try {
       const response = await fetch(
-        process.env.REACT_APP_BACKEND_URL + '/evaluate',
+        // process.env.REACT_APP_BACKEND_URL + '/evaluate',
+        'http://10.5.184.225:8000/evaluate',
         {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ answers: jsonData }),
+          body: JSON.stringify({ jsonData }),
           signal: abortControllerRef.current.signal,
         }
       );
@@ -82,6 +94,8 @@ const Questionnaire = ({
       const data = await response.json();
       console.log(data);
       questionnaireAnswers(data.result, abortControllerRef.current); // Pass the fetched data to questionnaireAnswers function
+      setPartyAnswers(data.party_answers);
+      console.warn(data.party_answers);
     } catch (error) {
       if (error.name === 'AbortError') {
         console.log('Fetch aborted');
@@ -89,7 +103,8 @@ const Questionnaire = ({
         console.error('Error fetching data:', error);
       }
     }
-    scrollToResult();
+    // setPartyAnswers();
+    scrollToChat();
   };
 
   const scrollToIndex = throttle((index) => {
@@ -118,18 +133,27 @@ const Questionnaire = ({
         answer: updatedAnswers[currentQuestionIndex].answer,
         wheight: wheight,
       }; // first card with content has index 1
+
       return updatedAnswers;
     });
 
     scrollToQuestionnaire();
   };
+
   const handleAnswer = (answer) => {
     setAnswers((prevAnswers) => {
       const updatedAnswers = [...prevAnswers];
+      const prevAnswer = updatedAnswers[currentQuestionIndex].answer;
       updatedAnswers[currentQuestionIndex] = {
         answer: answer,
         wheight: updatedAnswers[currentQuestionIndex].wheight,
-      }; // first card with content has index 1
+      };
+
+      // Increment question_count if the question is answered for the first time
+      if (prevAnswer === null && answer !== null) {
+        setQuestionCount((prevCount) => prevCount + 1);
+      }
+
       return updatedAnswers;
     });
 
@@ -208,7 +232,7 @@ const Questionnaire = ({
   const { t } = useTranslation();
 
   return (
-    <div className='flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>
+    <div className=' flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>
       <div
         className='absolute top-0 left-0 w-full transform scale-125 skew-y-3'
         style={{
@@ -216,6 +240,14 @@ const Questionnaire = ({
           backgroundImage: 'linear-gradient(to right, #3D6964, #FDFFFD)',
         }}
       />
+
+      <div className='absolute top-0 left-0 w-full h-0 md:h-full z-3 scale-125 overflow-hidden'>
+        <img
+          src={EUstars}
+          alt='Background Overlay'
+          className='h-full w-auto object-fit'
+        />
+      </div>
 
       <div className='relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
         {currentQuestionIndex > 1 && (
@@ -282,6 +314,8 @@ const Questionnaire = ({
               }`}
             >
               <QuestionCard
+                partyanswers={partyanswers}
+                party={party}
                 length={questions.length}
                 index={index}
                 question={{
@@ -289,6 +323,7 @@ const Questionnaire = ({
                   text: t(question.text),
                   title: t(question.title),
                   followup: t(question.followup),
+                  fact: t(question.fact),
                 }}
                 wheighted={answers[index].wheight}
                 answer={answers[index].answer}
@@ -305,6 +340,9 @@ const Questionnaire = ({
               />
             </div>
           ))}
+        </div>
+        <div className='relative w-full px-10'>
+          <ProgressBar current={questionCount} total={questions.length - 4} />
         </div>
       </div>
     </div>

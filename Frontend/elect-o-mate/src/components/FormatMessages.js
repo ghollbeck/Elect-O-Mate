@@ -7,9 +7,11 @@ const convertTextToLinks = (text) => {
     /(\b(?:https?|ftp|file):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/gi;
   let linkCounter = 0;
 
+  // Replace all occurrences of escaped double quotes with regular double quotes
   const formattedText = text
     .replace(/\\n/g, '\n') // Replace double backslashes with single newline
-    .split(urlRegex)
+    .replace(/\\"/g, '"') // Replace escaped double quotes
+    .split(urlRegex) // Split based on URL regex
     .map((part, index) => {
       if (urlRegex.test(part)) {
         linkCounter++;

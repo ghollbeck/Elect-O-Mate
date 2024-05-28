@@ -26,6 +26,9 @@
   "skip_button": "skip",
   "followup": "follow-up questions?",
   "question_card_back": "Each card has a question related to EU politics. If a question is unclear, you can use the search bar on the card to ask for more background.",
+  "how_it_works": "How It Works:",
+  "how_it_works_front": "Each Card has one questions. Press the icon in the top right to flip the card.",
+  "how_it_works_back": "On the back of the card, you can find interesting facts regarding the question.",
   "q1": "Should the EU increase its budget for climate protection initiatives?",
   "t1": "EU Climate Protection Initiatives",
   "f1": "How would increased funding for climate initiatives impact the EU's overall budget?",
@@ -142,5 +145,5 @@
   "f38": "How does the European Parliament contribute to the functioning of the EU?",
   "submit_text": "Thanks for completing the questionnaire! By clicking on the submit button, you will receive your score.",
   "submit_button": "submit",
-  "text_resutl":"Matching results"
+  "text_resutl": "Matching results"
 }

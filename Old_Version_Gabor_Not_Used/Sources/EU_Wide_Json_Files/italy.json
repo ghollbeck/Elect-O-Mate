@@ -1,0 +1,482 @@
+{
+  "Question 1": {
+    "question": "Should Ukraine become an EU member?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": 0
+    }
+  },
+  "Question 2": {
+    "question": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 3": {
+    "question": "Should asylum applications be processed at the border with rapid evaluation?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": -1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": -1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": -1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 4": {
+    "question": "Should the EU have a common army?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 0,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 0,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 5": {
+    "question": "Should the EU prohibit the legal recognition of same-sex marriages?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": -1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": -1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": -1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 6": {
+    "question": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+    "parties": {
+      "Alternativa Popolare": -1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 7": {
+    "question": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 0,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 8": {
+    "question": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": -1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 9": {
+    "question": "Should the EU adopt a common agricultural policy to ensure food security?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 10": {
+    "question": "Should the EU allow the cultivation of cannabis for personal use?",
+    "parties": {
+      "Alternativa Popolare": -1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 11": {
+    "question": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 12": {
+    "question": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": -1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": -1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 13": {
+    "question": "Should the EU impose sanctions on Russia?",
+    "parties": {
+      "Alternativa Popolare": -1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": -1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 14": {
+    "question": "Should the EU pursue disarmament policies?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": 0
+    }
+  },
+  "Question 15": {
+    "question": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 16": {
+    "question": "Should the EU allow same-sex marriage?",
+    "parties": {
+      "Alternativa Popolare": -1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 17": {
+    "question": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": -1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": 0
+    }
+  },
+  "Question 18": {
+    "question": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": -1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 19": {
+    "question": "Should the EU introduce more stringent pesticide regulations?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 0,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 20": {
+    "question": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 21": {
+    "question": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 22": {
+    "question": "Should the EU introduce a third gender option on passports?",
+    "parties": {
+      "Alternativa Popolare": -1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 23": {
+    "question": "Should the EU maintain permanent border controls within the Schengen area?",
+    "parties": {
+      "Alternativa Popolare": -1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": -1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": -1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": -1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 24": {
+    "question": "Should the EU abolish unanimity voting in the Council of the European Union?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 25": {
+    "question": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 26": {
+    "question": "Should the EU increase funding for the Erasmus student exchange program?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": 1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": 0
+    }
+  },
+  "Question 27": {
+    "question": "Should the EU support intensive farming practices to boost food production?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": -1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": -1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": 1
+    }
+  },
+  "Question 28": {
+    "question": "Should the EU provide financial and military support to Ukraine?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": 1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": 1,
+      "Democrazia Sovrana Popolare": -1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": 1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": 1,
+      "Movimento 5 Stelle": 1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 29": {
+    "question": "Should the EU support Israel's security and defense measures?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": -1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": -1,
+      "Stati Uniti d'Europa": -1,
+      "Fratelli d'Italia": -1,
+      "Alleanza Verdi e Sinistra": -1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": -1
+    }
+  },
+  "Question 30": {
+    "question": "Should the EU implement stricter border controls to prevent illegal immigration?",
+    "parties": {
+      "Alternativa Popolare": 1,
+      "Partito Democratico": -1,
+      "Pace, Terra, Dignità": -1,
+      "Azione-Siamo Europei": -1,
+      "Democrazia Sovrana Popolare": 1,
+      "Forza Italia-Noi Moderati": 1,
+      "Stati Uniti d'Europa": -1,
+      "Fratelli d'Italia": 1,
+      "Alleanza Verdi e Sinistra": -1,
+      "Movimento 5 Stelle": -1,
+      "Lega Salvini Premier": 1
+    }
+  }
+}

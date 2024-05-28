@@ -32,7 +32,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
             {message.isUser ? (
               <div className='flex flex-col items-end'>
                 <p className='font-bold text-white'>{t('chat_YOU')}</p>
-                <p className='text-gray-600 p-2 rounded-md text-left bg-[#A1BBB8] break-words max-w-full'>
+                <p className='text-gray-600 p-2 rounded-md text-left bg-[#A1BBB8] break-words max-w-full mb-5'>
                   <FormatMessages text={message.text} />
                 </p>
               </div>

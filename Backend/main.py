@@ -47,7 +47,6 @@ import requests
 from pathlib import Path
 BASE = Path(__file__).resolve().parent
 
-
 app = FastAPI(
     title="LangChain Server",
     version="1.0",
@@ -209,13 +208,18 @@ def load_pdfs():
     return texts
 
 
-template = """Answer the question based only on the following context including a bullet point list of sources (as urls) in the bottom of the answer:
+template = """You are a helpful assistant for the EU-elections. Never provide an opinion, explain different perspectives instead.
+If the QUESTION is not relevant to the EU-elections or politics, do not answer it.
+
+Answer the question based only on the following context. If the context is relevant to the question of the usr, provide a list of sources as source name and url.
+
+This is the CONTEXT:
 
 {context}
 
 
 
-Question: {question}
+This is the users QUESTION: {question}
 """
 
 voice_template = """Answer the question based only on the following context. Respond with only one to two sentences.
@@ -480,38 +484,39 @@ async def nonstreaming_handler(request: Request):
 
 # Evaluate endpoint
 class Answer(BaseModel):
-    users_answer: Optional[int]  # Optional to allow for null values
+    users_answer: int
     Wheights: str
     Skipped: str
 class UserAnswers(BaseModel):
-    answers: List[Answer]
+    country: str
+    data: List[Answer]
+class JsonData(BaseModel):
+    jsonData: UserAnswers
 
 @app.post("/evaluate")
-async def evaluate(user_answers: UserAnswers):
-    print("GOT SOMETHING")
-    print(user_answers.answers)
-    print(user_answers)
-    data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted.json")
-    data_User = user_answers.answers
-    # Prepare data_User for evaluation
+async def evaluate(user_answers: JsonData):
+    country = user_answers.jsonData.country
+    data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted_"+ country +".json")
+    
     prepared_data_user = [
         {
             "users_answer": answer.users_answer,
             "Wheights": answer.Wheights,
             "Skipped": answer.Skipped
         }
-        for answer in data_User
+        for answer in user_answers.jsonData.data
     ]
     
-    prepared_data_user = prepared_data_user[1:39]
+    prepared_data_user = prepared_data_user[2:len(prepared_data_user) -2]
     print(len(prepared_data_user))
     print(prepared_data_user)
-    print(len(prepared_data_user))
+    # print(len(prepared_data_user))
     # Call the evaluate_answers function with the prepared data
     result = evaluate_answers(data_Party, prepared_data_user)
-    print(result)
-    print(len(result))
-    return {"result": result, "test":"hi"}
+    # print(result)
+    # print(len(result))
+    return {"result": result, "party_answers": data_Party['party_answers']}
+    
 
 
 if __name__ == "__main__":
