@@ -1,0 +1,302 @@
+{
+  "Question 1": {
+    "question": "The European Union should limit itself to economic cooperation.",
+    "parties": {
+      "Trzecia Droga": -1,
+      "PiS": 0,
+      "Lewica": -1,
+      "Koalicja Obywatelska": -1,
+      "Konfederacja": 1,
+      "Bezpartyjni": 1,
+      "PolExit": 1
+    }
+  },
+  "Question 2": {
+    "question": "The European Union should have a common army.",
+    "parties": {
+      "Trzecia Droga": -1,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": -1,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": -1
+    }
+  },
+  "Question 3": {
+    "question": "The European Union should finance more arms purchases for Ukraine.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": 1,
+      "Bezpartyjni": 1,
+      "PolExit": -1
+    }
+  },
+  "Question 4": {
+    "question": "Ukraine should be admitted to the European Union.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": -1
+    }
+  },
+  "Question 5": {
+    "question": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
+    "parties": {
+      "Trzecia Droga": 0,
+      "PiS": 1,
+      "Lewica": -1,
+      "Koalicja Obywatelska": -1,
+      "Konfederacja": 1,
+      "Bezpartyjni": 1,
+      "PolExit": 1
+    }
+  },
+  "Question 6": {
+    "question": "Companies should pay more for their CO2 emissions.",
+    "parties": {
+      "Trzecia Droga": 0,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 0,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": -1
+    }
+  },
+  "Question 7": {
+    "question": "The European Union should leave all decisions regarding migration policy to the member states.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 1,
+      "Lewica": -1,
+      "Koalicja Obywatelska": 0,
+      "Konfederacja": 1,
+      "Bezpartyjni": 1,
+      "PolExit": 1
+    }
+  },
+  "Question 8": {
+    "question": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 1,
+      "Lewica": -1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": 1,
+      "Bezpartyjni": 1,
+      "PolExit": 1
+    }
+  },
+  "Question 9": {
+    "question": "The immigration of skilled workers to the European Union should be facilitated.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": 0,
+      "Bezpartyjni": 1,
+      "PolExit": 1
+    }
+  },
+  "Question 10": {
+    "question": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
+    "parties": {
+      "Trzecia Droga": -1,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 0,
+      "Konfederacja": -1,
+      "Bezpartyjni": 0,
+      "PolExit": -1
+    }
+  },
+  "Question 11": {
+    "question": "Imports of wheat from outside the European Union should be banned.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 1,
+      "Lewica": -1,
+      "Koalicja Obywatelska": -1,
+      "Konfederacja": 1,
+      "Bezpartyjni": 1,
+      "PolExit": 0
+    }
+  },
+  "Question 12": {
+    "question": "The European Green Deal in its current form should be rejected.",
+    "parties": {
+      "Trzecia Droga": 0,
+      "PiS": 1,
+      "Lewica": -1,
+      "Koalicja Obywatelska": -1,
+      "Konfederacja": 1,
+      "Bezpartyjni": 1,
+      "PolExit": 1
+    }
+  },
+  "Question 13": {
+    "question": "The European Union should ban fur farming.",
+    "parties": {
+      "Trzecia Droga": 0,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": -1
+    }
+  },
+  "Question 14": {
+    "question": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 0,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 0,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": 0
+    }
+  },
+  "Question 15": {
+    "question": "The European Union should withdraw the ban on registering combustion cars from 2035.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": -1,
+      "Konfederacja": 1,
+      "Bezpartyjni": 1,
+      "PolExit": 1
+    }
+  },
+  "Question 16": {
+    "question": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
+    "parties": {
+      "Trzecia Droga": 0,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": -1,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": -1
+    }
+  },
+  "Question 17": {
+    "question": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": -1,
+      "Bezpartyjni": 0,
+      "PolExit": -1
+    }
+  },
+  "Question 18": {
+    "question": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 0,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": 0,
+      "Bezpartyjni": 1,
+      "PolExit": -1
+    }
+  },
+  "Question 19": {
+    "question": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
+    "parties": {
+      "Trzecia Droga": -1,
+      "PiS": 1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 0,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": -1
+    }
+  },
+  "Question 20": {
+    "question": "More decisions in the European Union should be made by majority votes and not by unanimity.",
+    "parties": {
+      "Trzecia Droga": -1,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": -1,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": -1
+    }
+  },
+  "Question 21": {
+    "question": "The European Union should recognize Christian values as the fundamental source of European identity.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 1,
+      "Lewica": -1,
+      "Koalicja Obywatelska": 0,
+      "Konfederacja": 1,
+      "Bezpartyjni": -1,
+      "PolExit": 1
+    }
+  },
+  "Question 22": {
+    "question": "The European Union should continue to freeze funds for member states that violate EU law and values.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": -1
+    }
+  },
+  "Question 23": {
+    "question": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
+    "parties": {
+      "Trzecia Droga": -1,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 1,
+      "Konfederacja": -1,
+      "Bezpartyjni": 0,
+      "PolExit": -1
+    }
+  },
+  "Question 24": {
+    "question": "The European Union should ban the use of automated facial recognition by law enforcement.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": -1,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 0,
+      "Konfederacja": -1,
+      "Bezpartyjni": -1,
+      "PolExit": 1
+    }
+  },
+  "Question 25": {
+    "question": "Online advertising that uses data on user behavior should be banned.",
+    "parties": {
+      "Trzecia Droga": 1,
+      "PiS": 0,
+      "Lewica": 1,
+      "Koalicja Obywatelska": 0,
+      "Konfederacja": 1,
+      "Bezpartyjni": -1,
+      "PolExit": 1
+    }
+  }
+}
