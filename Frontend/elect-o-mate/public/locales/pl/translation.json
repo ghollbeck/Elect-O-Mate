@@ -1,5 +1,176 @@
 {
     "value": "pl",
     "label": "Polski",
-    "countryCode": "PL"
+    "countryCode": "PL",
+
+
+    "subheading": "Dostarczanie wyborcom jasnych i zwięzłych informacji, aby umożliwić podejmowanie świadomych decyzji podczas wyborów.",
+    "start_button": "Rozpocznij teraz!",
+    "sign_up": "Zarejestruj się, aby otrzymywać ważne aktualizacje",
+    "email_placeholder": "Adres e-mail",
+    "subscribe_to_newsletter": "Zapisz się",
+    "made_with_love": "Zrobione z miłością przez ludzi z całego świata.",
+    "open_source": "Open Source",
+    "open_source_p1": "Z Elect-O-Mate stworzyliśmy narzędzie wyborcze z integracją AI-Chatbota i jesteśmy świadomi etycznych implikacji, jakie to niesie. Wobec potencjalnych ryzyk, takich jak dezinformacja i stronniczość, które są nieodłączne w technologiach AI, zobowiązujemy się do przejrzystości i odpowiedzialności. Oto, jak to osiągamy:",
+    "transparency": "Przejrzystość:",
+    "transparency_content": "Cały nasz kod jest Open Source",
+    "accuracy": "Dokładność i sprawiedliwość:",
+    "accuracy_content": "Zaawansowana RAG-Pipeline dla najwyższej dokładności źródeł i LLM-Regelprüfer, aby zmaksymalizować sprawiedliwość",
+    "ethics": "Zaangażowanie etyczne:",
+    "ethics_content": "Nadzorujemy preferowane źródła przez ekspertów politycznych i otwarcie uczestniczymy w globalnej dyskusji na temat bezpieczeństwa i zgodności AI",
+    "open_source_p2": "Nawigując na styku technologii i demokracji, Wahl-O-Mat zobowiązuje się do przestrzegania najwyższych standardów i zapewnienia, że nasze narzędzia AI poprawiają informowane kształtowanie opinii, podejmowanie decyzji, zmniejszanie apatii politycznej oraz skracanie i dostępność istniejących narzędzi.",
+    "tech_report": "Przeczytaj raport techniczny",
+    "bot_greeting": "Cześć, jestem tutaj, aby Ci pomóc. Proszę, zadaj mi pytanie!",
+    "send_button_sending": "wysyłanie",
+    "send_button_send": "wyślij",
+    "chat_YOU": "Ty",
+    "chat_placeholder": "Zadaj pytanie...",
+    "agree_button": "tak",
+    "neutral_button": "neutralny",
+    "disagree_button": "nie",
+    "skip_button": "pomiń",
+    "submit_text": "Osiągnąłeś koniec kwestionariusza. Pamiętaj, że im więcej pytań odpowiesz, tym dokładniejsze wyniki otrzymasz.",
+    "submit_button": "Prześlij",
+    "title_results": "Twoje wyniki",
+    "informationRequest": "Proszę, dostarcz mi więcej informacji na temat ",
+    "party_voted_for": " głosuje za ",
+    "more_information": "Uzasadnienie",
+    "party_position_request_1": "Dlaczego ",
+    "party_position_request_2": " głosuje ",
+    "party_position_request_3": " w następującej kwestii?",
+    "how_it_works": "Jak to działa",
+    "how_it_works_front": "Każda karta ma pytanie. Kliknij ikonę w prawym górnym rogu, aby obrócić kartę.",
+    "how_it_works_back": "Na odwrocie kart znajdziesz fakty dotyczące pytania.",
+    "how_graph_works_info": "Jak używać wykresu",
+    "how_graph_works_title": "Ocena",
+    "how_graph_works_content": "Tutaj możesz zobaczyć swoje wyniki na wykresie słupkowym. Aby uzyskać więcej informacji o partii, kliknij na odpowiedni słupek. Jeśli chcesz porównać swoje wyniki z wynikami wybranej partii, możesz po prostu przewinąć z powrotem do pytań. \n Aby zobaczyć wyniki, kliknij x w prawym górnym rogu.",
+
+
+
+
+    "q1": "Unia Europejska powinna ograniczyć się do współpracy gospodarczej.",
+    "t1": "Polityka Unii Europejskiej",
+    "f1": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact1": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q2": "Unia Europejska powinna mieć wspólną armię.",
+    "t2": "Polityka Unii Europejskiej",
+    "f2": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact2": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q3": "Unia Europejska powinna finansować większe zakupy broni dla Ukrainy.",
+    "t3": "Polityka Unii Europejskiej",
+    "f3": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact3": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q4": "Ukraina powinna zostać przyjęta do Unii Europejskiej.",
+    "t4": "Regulacja UE",
+    "f4": "Dlaczego ta regulacja jest ważna?",
+    "fact4": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q5": "Unia Europejska powinna zrezygnować z celu osiągnięcia neutralności klimatycznej do 2050 roku.",
+    "t5": "Polityka Unii Europejskiej",
+    "f5": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact5": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q6": "Firmy powinny płacić więcej za emisję CO2.",
+    "t6": "Regulacje korporacyjne",
+    "f6": "Jak ta regulacja wpłynie na biznesy?",
+    "fact6": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q7": "Unia Europejska powinna zostawić wszystkie decyzje dotyczące polityki migracyjnej państwom członkowskim.",
+    "t7": "Polityka Unii Europejskiej",
+    "f7": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact7": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q8": "Migranci próbujący przekroczyć granicę Unii Europejskiej poza przejściami granicznymi powinni być zawracani.",
+    "t8": "Regulacja UE",
+    "f8": "Dlaczego ta regulacja jest ważna?",
+    "fact8": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q9": "Imigracja wykwalifikowanych pracowników do Unii Europejskiej powinna być ułatwiona.",
+    "t9": "Regulacja UE",
+    "f9": "Dlaczego ta regulacja jest ważna?",
+    "fact9": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q10": "Małżeństwa osób tej samej płci zawarte w jednym kraju Unii Europejskiej powinny być uznawane we wszystkich państwach członkowskich.",
+    "t10": "Regulacja UE",
+    "f10": "Dlaczego ta regulacja jest ważna?",
+    "fact10": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q11": "Import pszenicy spoza Unii Europejskiej powinien być zakazany.",
+    "t11": "Regulacja UE",
+    "f11": "Dlaczego ta regulacja jest ważna?",
+    "fact11": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q12": "Europejski Zielony Ład w jego obecnej formie powinien zostać odrzucony.",
+    "t12": "Polityka Unii Europejskiej",
+    "f12": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact12": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q13": "Unia Europejska powinna zakazać hodowli futer.",
+    "t13": "Regulacja UE",
+    "f13": "Dlaczego ta regulacja jest ważna?",
+    "fact13": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q14": "Wszystkie produkty spożywcze sprzedawane w Unii Europejskiej powinny być obowiązkowo oznaczane informacją o ich wpływie na środowisko.",
+    "t14": "Regulacja UE",
+    "f14": "Dlaczego ta regulacja jest ważna?",
+    "fact14": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q15": "Unia Europejska powinna wycofać zakaz rejestrowania samochodów spalinowych od 2035 roku.",
+    "t15": "Regulacja UE",
+    "f15": "Dlaczego ta regulacja jest ważna?",
+    "fact15": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q16": "Unia Europejska powinna skupić się na inwestowaniu w infrastrukturę kolejową kosztem rozbudowy dróg.",
+    "t16": "Regulacja UE",
+    "f16": "Dlaczego ta regulacja jest ważna?",
+    "fact16": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q17": "Wszystkie firmy powinny być zobowiązane do publikowania informacji o różnicy płac między kobietami a mężczyznami na tych samych stanowiskach.",
+    "t17": "Przejrzystość różnic płac",
+    "f17": "Jakie są korzyści z publikowania informacji o różnicy płac?",
+    "fact17": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q18": "Udział inwestorów spoza UE w europejskich firmach w sektorach strategicznych powinien być bardziej ograniczony.",
+    "t18": "Regulacja UE",
+    "f18": "Dlaczego ta regulacja jest ważna?",
+    "fact18": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q19": "Państwa członkowskie powinny znacznie zwiększyć swoje składki na rzecz Unii Europejskiej, aby umożliwić zwiększenie finansowania polityk UE.",
+    "t19": "Składki państw członkowskich",
+    "f19": "Jak zwiększenie składek wpłynie na polityki UE?",
+    "fact19": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q20": "Więcej decyzji w Unii Europejskiej powinno być podejmowanych większością głosów, a nie jednomyślnie.",
+    "t20": "Regulacja UE",
+    "f20": "Dlaczego ta regulacja jest ważna?",
+    "fact20": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q21": "Unia Europejska powinna uznać wartości chrześcijańskie za fundamentalne źródło tożsamości europejskiej.",
+    "t21": "Polityka Unii Europejskiej",
+    "f21": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact21": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q22": "Unia Europejska powinna kontynuować zamrażanie funduszy dla państw członkowskich, które naruszają prawo i wartości UE.",
+    "t22": "Polityka Unii Europejskiej",
+    "f22": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact22": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q23": "Prawo do bezpiecznej i legalnej aborcji powinno być uwzględnione w Karcie Praw Podstawowych UE.",
+    "t23": "Regulacja UE",
+    "f23": "Dlaczego ta regulacja jest ważna?",
+    "fact23": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q24": "Unia Europejska powinna zakazać używania automatycznego rozpoznawania twarzy przez organy ścigania.",
+    "t24": "Polityka Unii Europejskiej",
+    "f24": "Jakie są potencjalne skutki tej zmiany polityki?",
+    "fact24": "Ta polityka była przedmiotem debaty w UE.",
+    
+    "q25": "Reklamy online wykorzystujące dane o zachowaniu użytkowników powinny być zakazane.",
+    "t25": "Zakaz reklam online",
+    "f25": "Jakie są konsekwencje zakazu wykorzystania danych behawioralnych?",
+    "fact25": "Ta polityka była przedmiotem"
+        
 }
