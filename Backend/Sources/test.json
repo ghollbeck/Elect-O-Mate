@@ -1,0 +1,55 @@
+{ 
+    "question_number": 1,
+    "question_label": "Police facial recognition",
+    "question": "The EU should ban the use of automated facial recognition in law enforcement.",
+    "parties": [
+        {
+            "party_name": "Ecology in the center",
+            "party_answer": "Agree"
+        },
+        {
+            "party_name": "R&PS",
+            "party_answer": "Agree"
+        },
+        {
+            "party_name": "Ecology positive",
+            "party_answer": "Agree"
+        },
+        {
+            "party_name": "Equinoxe",
+            "party_answer": "Agree"
+        },
+        {
+            "party_name": "Europe Equitable",
+            "party_answer": "Agree"
+        },
+        {
+            "party_name": "Party Pirate",
+            "party_answer": "Agree"
+        },
+        {
+            "party_name": "MAY",
+            "party_answer": "Agree"
+        },
+        {
+            "party_name": "La France insoumise",
+            "party_answer": "Agree"
+        },
+        {
+            "party_name": "Volt",
+            "party_answer": "Neither"
+        },
+        {
+            "party_name": "EDE",
+            "party_answer": "Neither"
+        },
+        {
+            "party_name": "Republique sovereign",
+            "party_answer": "Neither"
+        },
+        {
+            "party_name": "CNIP",
+            "party_answer": "Neither"
+        }
+    ]
+}

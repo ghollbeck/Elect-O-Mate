@@ -1,5 +1,130 @@
 {
     "value": "pl",
     "label": "Polski",
-    "countryCode": "PL"
+    "countryCode": "PL",
+
+        "q1": "The European Union should limit itself to economic cooperation.",
+        "t1": "European Union Policy",
+        "f1": "What are the potential impacts of this policy change?",
+        "fact1": "This policy has been a subject of debate within the EU.",
+        
+        "q2": "The European Union should have a common army.",
+        "t2": "European Union Policy",
+        "f2": "What are the potential impacts of this policy change?",
+        "fact2": "This policy has been a subject of debate within the EU.",
+        
+        "q3": "The European Union should finance more arms purchases for Ukraine.",
+        "t3": "European Union Policy",
+        "f3": "What are the potential impacts of this policy change?",
+        "fact3": "This policy has been a subject of debate within the EU.",
+        
+        "q4": "Ukraine should be admitted to the European Union.",
+        "t4": "EU Regulation",
+        "f4": "Why is this regulation important?",
+        "fact4": "This policy has been a subject of debate within the EU.",
+        
+        "q5": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
+        "t5": "European Union Policy",
+        "f5": "What are the potential impacts of this policy change?",
+        "fact5": "This policy has been a subject of debate within the EU.",
+        
+        "q6": "Companies should pay more for their CO2 emissions.",
+        "t6": "Corporate Regulations",
+        "f6": "How would this regulation affect businesses?",
+        "fact6": "This policy has been a subject of debate within the EU.",
+        
+        "q7": "The European Union should leave all decisions regarding migration policy to the member states.",
+        "t7": "European Union Policy",
+        "f7": "What are the potential impacts of this policy change?",
+        "fact7": "This policy has been a subject of debate within the EU.",
+        
+        "q8": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
+        "t8": "EU Regulation",
+        "f8": "Why is this regulation important?",
+        "fact8": "This policy has been a subject of debate within the EU.",
+        
+        "q9": "The immigration of skilled workers to the European Union should be facilitated.",
+        "t9": "EU Regulation",
+        "f9": "Why is this regulation important?",
+        "fact9": "This policy has been a subject of debate within the EU.",
+        
+        "q10": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
+        "t10": "EU Regulation",
+        "f10": "Why is this regulation important?",
+        "fact10": "This policy has been a subject of debate within the EU.",
+        
+        "q11": "Imports of wheat from outside the European Union should be banned.",
+        "t11": "EU Regulation",
+        "f11": "Why is this regulation important?",
+        "fact11": "This policy has been a subject of debate within the EU.",
+        
+        "q12": "The European Green Deal in its current form should be rejected.",
+        "t12": "European Union Policy",
+        "f12": "What are the potential impacts of this policy change?",
+        "fact12": "This policy has been a subject of debate within the EU.",
+        
+        "q13": "The European Union should ban fur farming.",
+        "t13": "EU Regulation",
+        "f13": "Why is this regulation important?",
+        "fact13": "This policy has been a subject of debate within the EU.",
+        
+        "q14": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
+        "t14": "EU Regulation",
+        "f14": "Why is this regulation important?",
+        "fact14": "This policy has been a subject of debate within the EU.",
+        
+        "q15": "The European Union should withdraw the ban on registering combustion cars from 2035.",
+        "t15": "EU Regulation",
+        "f15": "Why is this regulation important?",
+        "fact15": "This policy has been a subject of debate within the EU.",
+        
+        "q16": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
+        "t16": "EU Regulation",
+        "f16": "Why is this regulation important?",
+        "fact16": "This policy has been a subject of debate within the EU.",
+        
+        "q17": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
+        "t17": "Pay Gap Transparency",
+        "f17": "What are the benefits of publishing pay gap information?",
+        "fact17": "This policy has been a subject of debate within the EU.",
+        
+        "q18": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
+        "t18": "EU Regulation",
+        "f18": "Why is this regulation important?",
+        "fact18": "This policy has been a subject of debate within the EU.",
+        
+        "q19": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
+        "t19": "Member States' Contributions",
+        "f19": "How would increased contributions impact EU policies?",
+        "fact19": "This policy has been a subject of debate within the EU.",
+        
+        "q20": "More decisions in the European Union should be made by majority votes and not by unanimity.",
+        "t20": "EU Regulation",
+        "f20": "Why is this regulation important?",
+        "fact20": "This policy has been a subject of debate within the EU.",
+        
+        "q21": "The European Union should recognize Christian values as the fundamental source of European identity.",
+        "t21": "European Union Policy",
+        "f21": "What are the potential impacts of this policy change?",
+        "fact21": "This policy has been a subject of debate within the EU.",
+        
+        "q22": "The European Union should continue to freeze funds for member states that violate EU law and values.",
+        "t22": "European Union Policy",
+        "f22": "What are the potential impacts of this policy change?",
+        "fact22": "This policy has been a subject of debate within the EU.",
+        
+        "q23": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
+        "t23": "EU Regulation",
+        "f23": "Why is this regulation important?",
+        "fact23": "This policy has been a subject of debate within the EU.",
+        
+        "q24": "The European Union should ban the use of automated facial recognition by law enforcement.",
+        "t24": "European Union Policy",
+        "f24": "What are the potential impacts of this policy change?",
+        "fact24": "This policy has been a subject of debate within the EU.",
+        
+        "q25": "Online advertising that uses data on user behavior should be banned.",
+        "t25": "Online Advertising Ban",
+        "f25": "What are the consequences of banning behavioral data use?",
+        "fact25": "This policy has been a subject of debate within the EU."  
 }
