@@ -1,0 +1,2327 @@
+{
+    "party_names": [
+        "Alternativa Popolare",
+        "Partito Democratico",
+        "Pace, Terra, Dignit'e0",
+        "Azione-Siamo Europei",
+        "Democrazia Sovrana Popolare",
+        "Forza Italia-Noi Moderati",
+        "Stati Uniti d'Europa",
+        "Fratelli d'Italia",
+        "Alleanza Verdi e Sinistra",
+        "Movimento 5 Stelle",
+        "Lega Salvini Premier"
+    ],
+    "party_answers": [
+        {
+            "Question_Number": 1,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should Ukraine become an EU member?",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU impose a minimum wage that requires all member states to enforce it according to their local conditions?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should asylum applications be processed at the border with rapid evaluation?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU have a common army?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU prohibit the legal recognition of same-sex marriages?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU impose a tax on carbon dioxide emissions to reduce pollution?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU impose stringent regulations on pesticide usage to protect the environment?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU allow the use of genetically modified organisms (GMOs) in agriculture?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU adopt a common agricultural policy to ensure food security?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU allow the cultivation of cannabis for personal use?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU ban the sale of new combustion engine vehicles by 2035?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU provide financial support to UNRWA for Palestinian refugees?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU impose sanctions on Russia?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU pursue disarmament policies?",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU ensure job access for non-EU citizens with a long-term residency?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU allow same-sex marriage?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU introduce Eurobonds to support member states in financial difficulty?",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU invest more in nuclear energy as a sustainable energy source?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU introduce more stringent pesticide regulations?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU enforce fiscal rules to limit budget deficits and debt?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU implement a common asylum policy with shared responsibilities among member states?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU introduce a third gender option on passports?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU maintain permanent border controls within the Schengen area?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU abolish unanimity voting in the Council of the European Union?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU make it mandatory to consider environmental impacts before approving any new projects?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU increase funding for the Erasmus student exchange program?",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU support intensive farming practices to boost food production?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU provide financial and military support to Ukraine?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU support Israel's security and defense measures?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Alternativa Popolare",
+            "Party_Full_Name": "Alternativa Popolare",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Partito Democratico",
+            "Party_Full_Name": "Partito Democratico",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Pace, Terra, Dignit'e0",
+            "Party_Full_Name": "Pace, Terra, Dignit'e0",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Azione-Siamo Europei",
+            "Party_Full_Name": "Azione-Siamo Europei",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Democrazia Sovrana Popolare",
+            "Party_Full_Name": "Democrazia Sovrana Popolare",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Forza Italia-Noi Moderati",
+            "Party_Full_Name": "Forza Italia-Noi Moderati",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Stati Uniti d'Europa",
+            "Party_Full_Name": "Stati Uniti d'Europa",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Fratelli d'Italia",
+            "Party_Full_Name": "Fratelli d'Italia",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Alleanza Verdi e Sinistra",
+            "Party_Full_Name": "Alleanza Verdi e Sinistra",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Movimento 5 Stelle",
+            "Party_Full_Name": "Movimento 5 Stelle",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Lega Salvini Premier",
+            "Party_Full_Name": "Lega Salvini Premier",
+            "Question_Label": "Should the EU implement stricter border controls to prevent illegal immigration?",
+            "Party_Answer": 1
+        }
+    ]
+}
