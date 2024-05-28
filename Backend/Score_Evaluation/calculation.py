@@ -9,17 +9,18 @@ def read_json_file(file_path):
     return data
 
 def evaluate_answers(data_Party, data_User):
+    num_questions = len(data_User)
     party_names = data_Party['party_names']
     
     party_names_array = np.array(party_names)
     data_Party = data_Party['party_answers']
-    user_answers_matrix = np.zeros((38, 1))
-    user_answers_matrix_Wheights = [0] * 38
-    user_answers_matrix_Skipped = [0] * 38
+    user_answers_matrix = np.zeros((num_questions, 1))
+    user_answers_matrix_Wheights = [0] * num_questions
+    user_answers_matrix_Skipped = [0] * num_questions
 
 
     #create an array with the User answers in -1,0,1
-    user_answers_matrix = np.zeros((38, 1))
+    user_answers_matrix = np.zeros((num_questions, 1))
     for i, item in enumerate(data_User):
         if 'users_answer' in item:
             user_answers_matrix[i] = item['users_answer']
@@ -41,8 +42,8 @@ def evaluate_answers(data_Party, data_User):
     
 
     # Initialize matrices
-    party_answers_array = np.zeros((38, len(party_names)))
-    Difference_Matrix = np.zeros((38, len(party_names)))
+    party_answers_array = np.zeros((num_questions, len(party_names)))
+    Difference_Matrix = np.zeros((num_questions, len(party_names)))
 
     # For each party, extract Party_Answer and append to matrix
     for i, party in enumerate(party_names):
@@ -75,7 +76,7 @@ def evaluate_answers(data_Party, data_User):
     column_sums = np.array([np.sum(Difference_Matrix[:,i]) for i in range(len(party_names))])
 
     #normalizong from the sum to a percentage, 76 is the max number one can get 
-    #with 38 questions, 2*counter is the extra amount point one can get with wheights
+    #with num_question questions, 2*counter is the extra amount point one can get with wheights
     column_sums = column_sums/(76 + 2*counter_wheighted - 2*counter_skipped) * 100
     column_sums = [round(column_sums[i], 1) for i in range(len(column_sums))]
 
