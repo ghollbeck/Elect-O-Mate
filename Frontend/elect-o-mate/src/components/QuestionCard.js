@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdHelpOutline, MdLoop } from 'react-icons/md';
 import TextInput from './TextInput';
+import HelpCard from './HelpCard';
 
 const QuestionCard = ({
   length,
@@ -52,8 +53,11 @@ const QuestionCard = ({
   // If question is empty, render an empty card
   if (!question || !question.text) {
     return (
-      <div className='flex flex-col h-60 md:h-80 w-[75vw] lg:w-[800px] items-center justify-center bg-transparent text-white flex-shrink-0'></div>
+      <div className='flex flex-col h-60 md:h-80 w-[75vw] lg:w-[800px] items-center justify-center bg-transparent flex-shrink-0'></div>
     );
+  }
+  if (question.text === 'help') {
+    return <HelpCard length={length} index={index} question={question} />;
   }
   if (question.text === 'submitcard') {
     return (

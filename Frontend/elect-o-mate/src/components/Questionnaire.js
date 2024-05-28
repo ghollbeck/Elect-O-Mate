@@ -77,7 +77,7 @@ const Questionnaire = ({
     try {
       const response = await fetch(
         // process.env.REACT_APP_BACKEND_URL + '/evaluate',
-        'http://0.0.0.0:8000/evaluate',
+        'http://10.5.184.225:8000/evaluate',
         {
           method: 'POST',
           headers: {

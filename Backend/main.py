@@ -491,13 +491,8 @@ class JsonData(BaseModel):
 
 @app.post("/evaluate")
 async def evaluate(user_answers: JsonData):
-    # print("GOT SOMETHING")
-    # print(user_answers.jsonData)
-    # print(user_answers)
     country = user_answers.jsonData.country
-    # print(country)
     data_Party = read_json_file("./Score_Evaluation/Party_Answers_Converted_"+ country +".json")
-    # Prepare data_User for evaluation
     
     prepared_data_user = [
         {
@@ -508,8 +503,8 @@ async def evaluate(user_answers: JsonData):
         for answer in user_answers.jsonData.data
     ]
     
-    prepared_data_user = prepared_data_user[1:39]
-    # print(len(prepared_data_user))
+    prepared_data_user = prepared_data_user[2:40]
+    print(len(prepared_data_user))
     print(prepared_data_user)
     # print(len(prepared_data_user))
     # Call the evaluate_answers function with the prepared data

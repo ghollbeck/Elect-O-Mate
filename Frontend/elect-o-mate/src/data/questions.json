@@ -1,5 +1,6 @@
 [
   { "title": "", "text": "" },
+  { "title": "how_it_works", "text": "help" },
   {
     "title": "t1",
     "text": "q1",
@@ -235,5 +236,4 @@
     "title": "",
     "text": ""
   }
-  
 ]
