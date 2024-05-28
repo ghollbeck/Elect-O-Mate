@@ -327,7 +327,7 @@ function App() {
               <>
                 <CloseIcon
                   onClick={togglePopup}
-                  className='absolute top-0 right-0 m-2 text-white scale-110  z-10'
+                  className='absolute top-0 right-0 m-2 text-white scale-110  z-10 cursor-pointer'
                 />
                 <div className='absolute inset-0 bg-gray-700/90 rounded-xl flex items-center justify-center text-white'>
                   <div className='flex flex-col  p-4 w-full h-full'>
@@ -349,7 +349,7 @@ function App() {
               <>
                 <InfoIcon
                   onClick={togglePopup}
-                  className='absolute top-0 right-0 m-2 text-white scale-110'
+                  className='absolute top-0 right-0 m-2 text-white scale-110 cursor-pointer'
                 />
 
                 <HorizontalBarChart
