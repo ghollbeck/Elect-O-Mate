@@ -5,229 +5,267 @@
     "title": "t1",
     "text": "q1",
     "followup": "f1",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact1"
   },
   {
     "title": "t2",
     "text": "q2",
     "followup": "f2",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact2"
   },
   {
     "title": "t3",
     "text": "q3",
     "followup": "f3",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact3"
   },
   {
     "title": "t4",
     "text": "q4",
     "followup": "f4",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact4"
   },
   {
     "title": "t5",
     "text": "q5",
     "followup": "f5",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact5"
   },
   {
     "title": "t6",
     "text": "q6",
     "followup": "f6",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact6"
   },
   {
     "title": "t7",
     "text": "q7",
     "followup": "f7",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact7"
   },
   {
     "title": "t8",
     "text": "q8",
     "followup": "f8",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact8"
   },
   {
     "title": "t9",
     "text": "q9",
     "followup": "f9",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact9"
   },
   {
     "title": "t10",
     "text": "q10",
     "followup": "f10",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact9"
   },
   {
     "title": "t11",
     "text": "q11",
     "followup": "f11",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact11"
   },
   {
     "title": "t12",
     "text": "q12",
     "followup": "f12",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact12"
   },
   {
     "title": "t13",
     "text": "q13",
     "followup": "f13",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact13"
   },
   {
     "title": "t14",
     "text": "q14",
     "followup": "f14",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact14"
   },
   {
     "title": "t15",
     "text": "q15",
     "followup": "f15",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact15"
   },
   {
     "title": "t16",
     "text": "q16",
     "followup": "f16",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact16"
   },
   {
     "title": "t17",
     "text": "q17",
     "followup": "f17",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact17"
   },
   {
     "title": "t18",
     "text": "q18",
     "followup": "f18",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact18"
   },
   {
     "title": "t19",
     "text": "q19",
     "followup": "f19",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact19"
   },
   {
     "title": "t20",
     "text": "q20",
     "followup": "f20",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact20"
   },
   {
     "title": "t21",
     "text": "q21",
     "followup": "f21",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact21"
   },
   {
     "title": "t22",
     "text": "q22",
     "followup": "f22",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact23"
   },
   {
     "title": "t23",
     "text": "q23",
     "followup": "f23",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact24"
   },
   {
     "title": "t24",
     "text": "q24",
     "followup": "f24",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact24"
   },
   {
     "title": "t25",
     "text": "q25",
     "followup": "f25",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact25"
   },
   {
     "title": "t26",
     "text": "q26",
     "followup": "f26",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact26"
   },
   {
     "title": "t27",
     "text": "q27",
     "followup": "f27",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact27"
   },
   {
     "title": "t28",
     "text": "q28",
     "followup": "f28",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact28"
   },
   {
     "title": "t29",
     "text": "q29",
     "followup": "f29",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact29"
   },
   {
     "title": "t30",
     "text": "q30",
     "followup": "f30",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact30"
   },
   {
     "title": "t31",
     "text": "q31",
     "followup": "f31",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact31"
   },
   {
     "title": "t32",
     "text": "q32",
     "followup": "f32",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact32"
   },
   {
     "title": "t33",
     "text": "q33",
     "followup": "f33",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact33"
   },
   {
     "title": "t34",
     "text": "q34",
     "followup": "f34",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact34"
   },
   {
     "title": "t35",
     "text": "q35",
     "followup": "f35",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact35"
   },
   {
     "title": "t36",
     "text": "q36",
     "followup": "f36",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact36"
   },
   {
     "title": "t37",
     "text": "q37",
     "followup": "f37",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact37"
   },
   {
     "title": "t38",
     "text": "q38",
     "followup": "f38",
-    "followup_short": "followup"
+    "followup_short": "followup",
+    "fact": "fact38"
   },
   {
     "text": "submitcard"

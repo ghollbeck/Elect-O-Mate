@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { MdHelpOutline, MdLoop } from 'react-icons/md';
 import TextInput from './TextInput';
 import HelpCard from './HelpCard';
+import InfoIcon from '@mui/icons-material/Info';
 
 const QuestionCard = ({
   length,
@@ -89,7 +90,7 @@ const QuestionCard = ({
               {index}/{length - 3} {question.title}
             </h2>
             <button onClick={handleFlip} className='ml-auto mr-2 text-xl'>
-              <MdHelpOutline />
+              <InfoIcon />
             </button>
           </div>
 
@@ -180,7 +181,7 @@ const QuestionCard = ({
         <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5'>
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
-              {index}/{length - 3} {t('answer_title')}
+              {index}/{length - 3} {t(question.title)}
             </h2>
             <button
               onClick={handleFlip}
@@ -192,7 +193,7 @@ const QuestionCard = ({
 
           <div className='flex-grow flex items-center justify-center'>
             <h2 className='text-sm md:text-lg font-semibold text-center overflow-hidden w-full break-words leading-tight p-2 md:p-5'>
-              {t('question_card_back')}
+              {question.fact}
             </h2>
           </div>
         </div>

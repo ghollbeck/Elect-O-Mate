@@ -310,6 +310,7 @@ const Questionnaire = ({
                   text: t(question.text),
                   title: t(question.title),
                   followup: t(question.followup),
+                  fact: t(question.fact),
                 }}
                 wheighted={answers[index].wheight}
                 answer={answers[index].answer}
