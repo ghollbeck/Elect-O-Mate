@@ -212,7 +212,7 @@ template = """You are a helpful assistant for the EU-elections. Never provide an
 If the QUESTION is not relevant to the EU-elections or politics, do not answer it.
 
 Answer the question based only on the following context. If the context is relevant to the question of the usr, provide a list of sources as source name and url.
-
+ALWAYS ANSWER THE QUESTION IN THE QUESTIONS LANGUAGE.
 This is the CONTEXT:
 
 {context}

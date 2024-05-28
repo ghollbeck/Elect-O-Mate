@@ -36,8 +36,9 @@
   "how_it_works": "So funktioniert's",
   "how_it_works_front": "Jede karte hat eine Frage. Clicke das Symbol oben rechts um die Karte zu wenden.",
   "how_it_works_back": "Auf der Rückseite der Karten findest du Fakten bezüglich der Frage.",
-  "how_graph_works_title": "So Kannst Du Den Graph Verweneden",
-  "how_graph_works_content": "Der Graph",
+  "how_graph_works_info": "So können Sie den Graph Verwenden",
+  "how_graph_works_title": "Auswertung",
+  "how_graph_works_content": "Hier können Sie Ihre Ergebnisse in einem Balkendiagramm ansehen. Um mehr Informationen über eine Partei zu erhalten klicken Sie auf den entsprechenden Balken. Wenn Sie Ihre Ergebnisse mit derer von der ausgewählten Partei vergleichen möchten, können Sie einfach zurück zu den Fragen scrollen. \nUm die Ergebnisse anzusehen, klicken Sie oben rechts auf das x.",
 
   "q1": "Soll die EU eigene Steuern erheben dürfen?",
   "t1": "Eigensteuerung in der EU",

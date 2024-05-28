@@ -27,11 +27,12 @@ function App() {
   const toResult = useRef(null);
 
   const questionnaireAnswers = (data, abortController) => {
-    const lang = i18n.language;
+    const lang = getLanguageNameByCode(i18n.language);
     const result = data;
+    console.warn(lang);
     setData(data);
     const instructions =
-      'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results- Please answer in ' +
+      'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results. ANSWER in ' +
       lang +
       '. Please add a note, that a graph listing the matching can be found when scrolling down where the user can click on a bar to find more information about the respective party and their positions can be seen back on the question cards. Offer them further assistance. DO NOT LIST ANY SOURCES!!';
     const resultString = JSON.stringify(result);
@@ -41,7 +42,7 @@ function App() {
 
   const formatMessage = (question, message) => {
     if (question !== '') {
-      const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
+      const fmessage = `The last question was ${question} answer this message from the user ${message} Please answer in the same language as the message, or the message before.`;
       return fmessage;
     }
     return message;
@@ -81,7 +82,7 @@ function App() {
       // Perform API request with streaming using Fetch API and AbortController
       const response = await fetch(
         // process.env.REACT_APP_BACKEND_URL + '/openai/stream',
-        'http://10.5.184.225:8000/openai/stream',
+        'http://10.5.189.107:8000/openai/stream',
         {
           method: 'POST',
           headers: {
@@ -217,6 +218,36 @@ function App() {
     i18n.changeLanguage(lang);
   };
 
+  function getLanguageNameByCode(languageCode) {
+    const languageNameMap = {
+      de: 'German',
+      nl: 'Dutch',
+      bg: 'Bulgarian',
+      el: 'Greek',
+      cs: 'Czech',
+      da: 'Danish',
+      et: 'Estonian',
+      es: 'Spanish',
+      fi: 'Finnish',
+      fr: 'French',
+      hr: 'Croatian',
+      hu: 'Hungarian',
+      en: 'English',
+      it: 'Italian',
+      lt: 'Lithuanian',
+      lv: 'Latvian',
+      pl: 'Polish',
+      pt: 'Portuguese',
+      ro: 'Romanian',
+      sv: 'Swedish',
+      sl: 'Slovenian',
+      sk: 'Slovak',
+    };
+
+    // Return the language name corresponding to the language code
+    return languageNameMap[languageCode] || 'English';
+  }
+
   const getUserLanguageFromIP = useCallback(async () => {
     const countryLanguageMap = {
       AT: 'de', // Austria - German
@@ -248,6 +279,7 @@ function App() {
       SI: 'sl', // Slovenia - Slovenian
       SK: 'sk', // Slovakia - Slovak
     };
+
     try {
       const response = await fetch('https://ipinfo.io/json');
       const data = await response.json();
@@ -332,10 +364,13 @@ function App() {
                 <div className='absolute inset-0 bg-gray-700/90 rounded-xl flex items-center justify-center text-white'>
                   <div className='flex flex-col  p-4 w-full h-full'>
                     <div className='flex-shrink-0 flex items-center'>
-                      {t('how_graph_works_title')}
+                      {t('how_graph_works_info')}
                     </div>
-                    <div className='flex-grow flex items-center justify-center'>
-                      {t('how_graph_works_content')}
+                    <div className='flex-grow flex flex-col items-center text-center justify-center p-20'>
+                      <h1 className=' text-xl font-bold m-5'>
+                        {t('how_graph_works_title')}
+                      </h1>
+                      <p>{t('how_graph_works_content')}</p>
                     </div>
                   </div>
                 </div>
