@@ -211,6 +211,10 @@ function App() {
     smoothScrollTo(toChat, 1000);
   };
 
+  const scrollToChatslow = () => {
+    smoothScrollTo(toChat, 2000);
+  };
+
   const scrollToResult = () => {
     smoothScrollTo(toResult, 1000);
   };
@@ -329,7 +333,7 @@ function App() {
             onButtonClick={scrollToQuestionnaire}
             handleSendMessage={handleSendMessage}
             isSending={isSending}
-            scrollToChat={scrollToChat}
+            scrollToChat={scrollToChatslow}
             setIsSending={setIsSending}
             question=''
           />
