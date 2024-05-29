@@ -319,10 +319,7 @@ function App() {
   const [questionnaireKey, setQuestionnaireKey] = useState(0);
 
   return (
-    <div
-      className='flex flex-col relative overflow-hidden bg-gray-800'
-      //style={{ backgroundImage: 'radial-gradient(#F0FFFF, #c8c5c9)' }}
-    >
+    <div className='flex flex-col relative overflow-hidden bg-gray-800'>
       <OrangeCircle />
 
       <LanguageSelector changeLanguage={changeLanguage} />
