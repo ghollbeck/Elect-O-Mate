@@ -176,7 +176,7 @@ const Questionnaire = ({
 
       // Increment question_count if the question is answered for the first time
       if (prevAnswer === null && answer !== null) {
-        setQuestionCount((prevCount) => prevCount + 1);
+        setQuestionCount(() => questionCount + 1);
       }
 
       return updatedAnswers;
