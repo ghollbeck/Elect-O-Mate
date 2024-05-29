@@ -3,7 +3,7 @@ import QuestionCard from './QuestionCard';
 // import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
-import EUstars from '../pictures/golden_stars.png';
+import EUstars from '../pictures/EUstars.png';
 import ProgressBar from './ProgressBar';
 
 const Questionnaire = ({
@@ -257,13 +257,13 @@ const Questionnaire = ({
   return (
     <div className=' flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>
       <div
-        className='absolute top-0 left-0 w-full transform scale-125 skew-y-3 bg-[#212d40]'
+        className='absolute top-0 left-0 w-full transform scale-125 skew-y-3 bg-gradient-to-r from-violet-200 to-pink-200'
         style={{
           height: '110%',
         }}
       />
 
-      <div className='absolute top-0 left-0 w-full h-0 md:h-full z-3 scale-125 overflow-hidden'>
+      {/*       <div className='absolute top-0 left-0 w-full h-0 md:h-full z-3 scale-125 overflow-hidden'>
         <img
           src={EUstars}
           alt='Background Overlay'
@@ -273,7 +273,7 @@ const Questionnaire = ({
             opacity: '0.1',
           }} // Adjust the values as needed
         />
-      </div>
+      </div> */}
 
       <div className='relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
         {currentQuestionIndex > 1 && (

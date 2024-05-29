@@ -159,7 +159,7 @@ const QuestionCard = ({
           </div>
 
           <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0 text-base'>
-            <div className='block md:hidden'>
+            <div className='block md:hidden text-white'>
               <TextInput
                 handleSendMessage={handleSendMessage}
                 setIsSending={setIsSending}

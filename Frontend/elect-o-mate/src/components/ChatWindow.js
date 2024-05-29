@@ -16,7 +16,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
 
   return (
     <div
-      className='relative flex flex-col overflow-y-auto border-none shadow-xl bg-gray-700/80 h-[80dvh] text-base'
+      className='relative flex flex-col overflow-y-auto border-none shadow-xl  bg-gradient-to-r from-violet-200 to-pink-200 h-[80dvh]  text-black font-light'
       style={{
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',
@@ -31,16 +31,16 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
           >
             {message.isUser ? (
               <div className='flex flex-col items-end'>
-                <p className='font-bold text-white'>{t('chat_YOU')}</p>
-                <p className='text-gray-600 p-2 rounded-md text-left bg-[#A1BBB8] break-words max-w-full mb-5'>
+                <p className='font-semibold text-black'>{t('chat_YOU')}</p>
+                <p className='p-2 rounded-md text-left bg-white break-words max-w-full mb-5'>
                   <FormatMessages text={message.text} />
                 </p>
               </div>
             ) : (
               <div className='flex flex-col items-start'>
                 <p
-                  className={`font-bold ${
-                    message.isError ? 'text-red-700' : 'text-white'
+                  className={`font-semibold ${
+                    message.isError ? 'text-red-700' : 'text-black'
                   }`}
                 >
                   <span className='inline-block align-middle rounded-full overflow-hidden m-2'>
@@ -52,7 +52,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
                   </span>
                   {message.isError ? 'Error' : 'Elect-O-Mate'}
                 </p>
-                <p className='text-gray-600 p-2 rounded-md text-left break-words bg-[#A1BBB8] max-w-full mb-5'>
+                <p className='p-2 rounded-md text-left break-words bg-white bg-opacity-50 max-w-full mb-5 font-light'>
                   <FormatMessages text={message.text} />
                 </p>
               </div>

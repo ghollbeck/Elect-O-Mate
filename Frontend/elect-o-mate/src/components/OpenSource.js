@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const OpenSourceSection = () => {
   const { t } = useTranslation();
   return (
-    <section className='bg-transparent text-white pt-10 z-0'>
+    <section className='bg-transparent text-black pt-10 z-0'>
       <div className='container mx-auto px-4'>
         <h2 className='text-4xl font-bold mb-6'>{t('open_source')}</h2>
 

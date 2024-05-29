@@ -324,7 +324,7 @@ function App() {
       <LanguageSelector changeLanguage={changeLanguage} />
 
       <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
-        <div className='w-full md:w-2/3 z-10 pt-0 md:pt-25'>
+        <div className='w-full z-10 pt-0 md:pt-25 flex justify-center'>
           <Top
             onButtonClick={scrollToQuestionnaire}
             handleSendMessage={handleSendMessage}
@@ -334,10 +334,8 @@ function App() {
             question=''
           />
         </div>
-        {/*         <div className='w-30px h-30px'>
-          <Spline />
-        </div> */}
       </div>
+
       <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
         <Questionnaire
           key={questionnaireKey}
@@ -415,10 +413,9 @@ function App() {
 
       <div className='relative mt-72'>
         <div
-          className='absolute top-0 left-0 w-full bg-gradient-to-r bg-[#003194] transform skew-y-3 h-100'
+          className='absolute top-0 left-0 w-full  bg-gradient-to-r from-violet-200 to-pink-200 transform skew-y-3 h-100'
           style={{
             height: '110%',
-            filter: ' saturate(40%) contrast(90%) brightness(90%)', // Adjust the values as needed
           }}
         />
         <div className='container mx-auto relative z-10 w-full md:w-1/2'>

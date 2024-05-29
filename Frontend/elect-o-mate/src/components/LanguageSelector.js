@@ -39,7 +39,7 @@ function LanguageSelector({ changeLanguage }) {
     <div className='m-2 relative'>
       <button
         ref={buttonRef}
-        className='flex items-center px-4 py-4 rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:scale-110 transition-transform duration-200 absolute right-0 top-0'
+        className='flex items-center px-4 py-4 rounded-full  bg-gradient-to-r from-violet-200 to-pink-200 text-white hover:bg-gradient-to-r hover:from-violet-200 hover:to-pink-200 hover:scale-110 transition-transform duration-200 absolute right-0 top-0'
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
         <LanguageIcon className='w-6 h-6' />
