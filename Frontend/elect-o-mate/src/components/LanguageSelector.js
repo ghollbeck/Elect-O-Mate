@@ -40,7 +40,7 @@ function LanguageSelector({ changeLanguage }) {
     <div className='m-2 relative'>
       <button
         ref={buttonRef}
-        className='flex items-center hover:scale-125 transition-transform duration-200 absolute right-4 top-4 flex-grow border-white bg-black bg-opacity-40'
+        className='flex items-center hover:scale-125 transition-transform duration-200 absolute right-4 top-4 flex-grow border-white'
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
         <ReactCountryFlag
@@ -55,7 +55,7 @@ function LanguageSelector({ changeLanguage }) {
       {dropdownVisible && (
         <div
           ref={dropdownRef}
-          className='absolute right-0 mt-16 p-2 text-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap'
+          className='absolute right-0 mt-16 p-2 text-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap bg-black bg-opacity-70 backdrop-blur-sm'
           style={{ minWidth: 'fit-content' }}
         >
           {options.map((option) => (
