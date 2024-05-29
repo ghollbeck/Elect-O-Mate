@@ -394,7 +394,10 @@ function App() {
                     onClick={togglePopup}
                     className='absolute top-0 right-0 m-2 text-white scale-110  z-10 cursor-pointer'
                   />
-                  <div className='absolute inset-0 bg-gray-700/90 rounded-xl flex items-center justify-center text-white'>
+                  <div
+                    onClick={togglePopup}
+                    className='absolute inset-0  bg-gradient-to-r from-violet-200 to-pink-200  rounded-xl flex items-center justify-center text-black'
+                  >
                     <div className='flex flex-col  p-4 w-full h-full'>
                       <div className='flex-shrink-0 flex items-center'>
                         {t('how_graph_works_info')}
