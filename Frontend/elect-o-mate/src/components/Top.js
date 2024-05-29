@@ -32,7 +32,7 @@ const Top = ({
             {t('start_now')}
           </div>
           <button
-            className=' py-4 px-9 rounded-full font-semibold  transition duration-300 ease-in-out transform hover:scale-110 text-xl shadow-lg border'
+            className=' py-4 px-9 rounded-full font-semibold transition duration-300 ease-in-out transform hover:scale-110 text-xl shadow-lg border'
             onClick={onButtonClick}
           >
             {t('start_button')}
