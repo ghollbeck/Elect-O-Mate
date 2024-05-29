@@ -294,8 +294,7 @@ function App() {
   useEffect(() => {
     const fetchUserLanguageAndSetLanguage = async () => {
       try {
-        // const userLanguage = await getUserLanguageFromIP();
-        // i18n.changeLanguage(userLanguage);
+        // cd18n.changeLanguage(userLanguage);
       } catch (error) {
         i18n.changeLanguage('deen');
       }
