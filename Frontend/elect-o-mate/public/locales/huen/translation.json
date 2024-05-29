@@ -3,7 +3,8 @@
   "label": "Magyar",
   "countryCode": "HU",
 
-  "subheading": "Provide voters with clear and concise information to enable informed decisions in elections.",
+  "subheading": "Ask me anything about the EU-Elections!",
+  "start_now": "Or start the quiz now",
   "start_button": "Start now!",
   "sign_up": "Sign up for important updates",
   "email_placeholder": "Email address",

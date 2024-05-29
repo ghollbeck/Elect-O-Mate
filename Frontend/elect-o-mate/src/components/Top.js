@@ -8,7 +8,6 @@ const Top = ({
   isSending,
   scrollToChat,
   setIsSending,
-  question = '',
 }) => {
   const { t } = useTranslation();
   return (
@@ -18,7 +17,7 @@ const Top = ({
         {/* <p className='mt-4'>{t('subheading')}</p> */}
         <div className='w-full flex-col justify-center mt-4'>
           <div className='text-2xl md:text-4xl font-extrabold mt-20 mb-20'>
-            Ask me anything about the upcoming EU-elections
+            {t('subheading')}
           </div>
           <div className='w-full  h-auto  rounded-xl text-white'>
             <TextInput
@@ -30,7 +29,7 @@ const Top = ({
             />
           </div>
           <div className='text-2xl md:text-3xl font-extrabold  mt-20 mb-10'>
-            Or start the Quiz Now
+            {t('start_now')}
           </div>
           <button
             className=' py-4 px-9 rounded-full font-semibold  transition duration-300 ease-in-out transform hover:scale-110 text-xl shadow-lg border'

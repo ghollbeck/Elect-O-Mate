@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import LanguageIcon from '@mui/icons-material/Translate';
 import ReactCountryFlag from 'react-country-flag';
 import options from '../data/languages.json';
+import i18n from '../i18n';
 
 function LanguageSelector({ changeLanguage }) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -39,10 +40,17 @@ function LanguageSelector({ changeLanguage }) {
     <div className='m-2 relative'>
       <button
         ref={buttonRef}
-        className='flex items-center px-4 py-4 rounded-full  bg-gradient-to-r from-violet-200 to-pink-200 text-white hover:bg-gradient-to-r hover:from-violet-200 hover:to-pink-200 hover:scale-110 transition-transform duration-200 absolute right-0 top-0'
+        className='flex items-center hover:scale-125 transition-transform duration-200 absolute right-4 top-4 flex-grow border-white'
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
-        <LanguageIcon className='w-6 h-6' />
+        <ReactCountryFlag
+          countryCode={i18n.language.slice(0, 2).toUpperCase()}
+          svg
+          style={{
+            width: '30px',
+            height: '30px',
+          }}
+        />
       </button>
       {dropdownVisible && (
         <div
