@@ -62,15 +62,15 @@ function LanguageSelector({ changeLanguage }) {
             <button
               key={option.value}
               onClick={() => handleLanguageChange(option.value)}
-              className='flex items-center w-full text-left hover:bg-gray-200 hover:text-black cursor-pointer'
+              className='flex items-center w-full text-left hover:bg-gray-200 hover:text-black cursor-pointer px-[12px] py-3 md:py-1'
             >
               <ReactCountryFlag
                 countryCode={option.countryCode}
                 svg
                 style={{
-                  width: '24px',
-                  height: '24px',
-                  marginRight: '8px',
+                  width: '32px',
+                  height: '32px',
+                  marginRight: '12px',
                 }}
                 title={option.label}
               />
