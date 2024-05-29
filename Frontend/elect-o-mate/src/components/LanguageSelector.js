@@ -33,15 +33,13 @@ function LanguageSelector({ changeLanguage }) {
   const handleLanguageChange = (value) => {
     setDropdownVisible(false);
     changeLanguage(value);
-    window.location.reload(); // Reload the page after language change
-    
   };
 
   return (
-    <div className='relative m-2'>
+    <div className='m-2 relative'>
       <button
         ref={buttonRef}
-        className='flex items-center px-4 py-4 rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:scale-110 transition-transform duration-200'
+        className='flex items-center px-4 py-4 rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:scale-110 transition-transform duration-200 absolute right-0 top-0'
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
         <LanguageIcon className='w-6 h-6' />
@@ -49,13 +47,14 @@ function LanguageSelector({ changeLanguage }) {
       {dropdownVisible && (
         <div
           ref={dropdownRef}
-          className='absolute right-0 mt-2 w-32 bg-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto'
+          className='absolute right-0 mt-16 p-2 bg-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap'
+          style={{ minWidth: 'fit-content' }}
         >
           {options.map((option) => (
             <button
               key={option.value}
-              onClick={() => handleLanguageChange(option.value)} // Use handleLanguageChange function
-              className='flex items-center p-2 w-full text-left hover:bg-gray-200 cursor-pointer'
+              onClick={() => handleLanguageChange(option.value)}
+              className='flex items-center w-full text-left hover:bg-gray-200 cursor-pointer'
             >
               <ReactCountryFlag
                 countryCode={option.countryCode}

@@ -38,7 +38,8 @@
   "party_position_request_2": " agree with ",
   "party_position_request_3": " on the following question?",
   "how_it_works": "How It Works",
-  "how_it_works_front": "Each card has a question. Click the symbol in the top right to flip the card.",
+  "how_it_works_front": "Each card has a question. After answering at least 15 questions, you can submit the questionnaire on the last card to see your result. Click the symbol in the top right to turn the card over.",
+
   "how_it_works_back": "On the back of the cards, you will find facts regarding the question.",
   "how_graph_works_info": "How to Use the Graph",
   "how_graph_works_title": "Evaluation",

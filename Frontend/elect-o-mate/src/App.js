@@ -81,8 +81,8 @@ function App() {
     try {
       // Perform API request with streaming using Fetch API and AbortController
       const response = await fetch(
-        // process.env.REACT_APP_BACKEND_URL + '/openai/stream',
-        'http://10.5.189.107:8000/openai/stream',
+        //process.env.REACT_APP_BACKEND_URL + '/openai/stream',
+        'http://10.5.176.177:8000/openai/stream',
         {
           method: 'POST',
           headers: {
@@ -214,6 +214,10 @@ function App() {
     smoothScrollTo(toResult, 1000);
   };
 
+  useEffect(() => {
+    setQuestionnaireKey((prevKey) => prevKey + 1);
+  }, [i18n.language]);
+
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
@@ -294,15 +298,17 @@ function App() {
   useEffect(() => {
     const fetchUserLanguageAndSetLanguage = async () => {
       try {
-        // const userLanguage = await getUserLanguageFromIP();
-        // i18n.changeLanguage(userLanguage);
+        const userLanguage = await getUserLanguageFromIP(); // Ensure getUserLanguageFromIP is called
+        i18n.changeLanguage(userLanguage);
       } catch (error) {
+        console.warn('error, could not find userlanguage.');
         i18n.changeLanguage('deen');
       }
     };
 
     fetchUserLanguageAndSetLanguage();
-  }, [i18n, getUserLanguageFromIP]); // Include i18n in the dependency array`
+  }, [i18n]);
+  // Include i18n in the dependency array`
 
   const [isPopupOpen, setIsPopupOpen] = useState(true);
 
@@ -310,15 +316,14 @@ function App() {
     setIsPopupOpen(!isPopupOpen);
   };
 
+  const [questionnaireKey, setQuestionnaireKey] = useState(0);
+
   return (
-    <div
-      className='flex flex-col relative overflow-hidden bg-gray-800'
-      //style={{ backgroundImage: 'radial-gradient(#F0FFFF, #c8c5c9)' }}
-    >
+    <div className='flex flex-col relative overflow-hidden bg-gray-800'>
       <OrangeCircle />
-      <div className='flex justify-end z-20'>
-        <LanguageSelector changeLanguage={changeLanguage} />
-      </div>
+
+      <LanguageSelector changeLanguage={changeLanguage} />
+
       <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={scrollToQuestionnaire} />
@@ -329,6 +334,7 @@ function App() {
       </div>
       <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
         <Questionnaire
+          key={questionnaireKey}
           scrollToChat={scrollToChat}
           handleSendMessage={handleSendMessage}
           scrollToQuestionnaire={scrollToQuestionnaire}

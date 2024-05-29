@@ -7,6 +7,7 @@ import EUstars from '../pictures/EUstars.png';
 import ProgressBar from './ProgressBar';
 
 const Questionnaire = ({
+  key,
   handleSendMessage,
   isSending,
   setIsSending,
@@ -16,7 +17,6 @@ const Questionnaire = ({
   scrollToResult,
   country,
   party,
-  
 }) => {
   const { t } = useTranslation();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
@@ -105,7 +105,7 @@ const Questionnaire = ({
     try {
       const response = await fetch(
         // process.env.REACT_APP_BACKEND_URL + '/evaluate',
-        'http://10.5.189.107:8000/evaluate',
+        'http://10.5.176.177:8000/evaluate',
         {
           method: 'POST',
           headers: {

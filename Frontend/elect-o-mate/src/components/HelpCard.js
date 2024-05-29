@@ -25,7 +25,7 @@ const QuestionCard = ({ length, index, question }) => {
               <MdHelpOutline />
             </button>
           </div>
-          <div className='flex flex-grow items-center justify-center text-sm md:text-lg font-semibold overflow-hidden break-words leading-tight p-2'>
+          <div className='flex flex-grow items-center justify-center text-sm md:text-lg font-semibold overflow-hidden break-words leading-tight p-2 text-center'>
             {t('how_it_works_front')}
           </div>
         </div>
@@ -43,7 +43,7 @@ const QuestionCard = ({ length, index, question }) => {
               <MdLoop />
             </button>
           </div>
-          <div className='flex flex-grow items-center justify-center text-sm md:text-lg font-semibold overflow-hidden break-words leading-tight p-2'>
+          <div className='flex flex-grow items-center justify-center text-sm md:text-lg font-semibold overflow-hidden break-words leading-tight p-2 text-center'>
             {t('how_it_works_back')}
           </div>
         </div>
