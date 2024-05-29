@@ -275,7 +275,7 @@ const Questionnaire = ({
         />
       </div> */}
 
-      <div className='relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
+      <div className='overflow-y-hidden  relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
         {currentQuestionIndex > 1 && (
           <button
             z

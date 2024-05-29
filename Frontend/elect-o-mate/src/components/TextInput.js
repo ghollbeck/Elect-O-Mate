@@ -115,7 +115,7 @@ const TextInput = ({
   };
 
   return (
-    <div className='mt-9 shadow-full relative border-none z-20'>
+    <div className='mt-9 shadow-full relative border-none z-20 '>
       <form
         onSubmit={handleSubmit}
         className='flex items-center w-full relative pb-[1px]'

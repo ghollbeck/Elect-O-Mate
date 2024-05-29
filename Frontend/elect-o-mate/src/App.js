@@ -324,7 +324,7 @@ function App() {
   const [questionnaireKey, setQuestionnaireKey] = useState(0);
 
   return (
-    <div className='flex flex-col relative overflow-hidden bg-black'>
+    <div className='flex flex-col relative overflow-hidden bg-black '>
       <LanguageSelector changeLanguage={changeLanguage} />
 
       <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
