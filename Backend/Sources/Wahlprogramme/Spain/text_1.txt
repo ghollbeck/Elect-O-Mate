@@ -1,0 +1,1 @@
+(1, 'Error opening data file /usr/share/tesseract-ocr/5/tessdata/spa.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'spa\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
