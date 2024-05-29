@@ -59,7 +59,7 @@ const QuestionCard = ({
     );
   }
   if (question.text === 'help') {
-    return <HelpCard length={length} index={index} question={question} />;
+    return <HelpCard length={length - 1} index={0} question={question} />;
   }
   if (question.text === 'submitcard') {
     return (
@@ -92,7 +92,7 @@ const QuestionCard = ({
         >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
-              {index}/{length - 3} {question.title}
+              {index - 1}/{length - 4} {question.title}
             </h2>
             <button onClick={handleFlip} className='ml-auto mr-2 text-xl'>
               <InfoIcon />
@@ -190,7 +190,7 @@ const QuestionCard = ({
         >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
-              {index}/{length - 3} {t(question.title)}
+              {index - 1}/{length - 4} {t(question.title)}
             </h2>
             <button
               onClick={handleFlip}

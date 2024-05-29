@@ -3,7 +3,6 @@
   "label": "Deutsch",
   "countryCode": "DE",
 
-
   "subheading": "Den Wählern klare und prägnante Informationen zur Verfügung stellen, um fundierte Entscheidungen bei Wahlen zu ermöglichen.",
   "start_button": "Jetzt starten!",
   "sign_up": "Melden Sie sich für wichtige Updates an",
@@ -233,5 +232,7 @@
   "q38": "Soll das Europäische Parlament weiterhin eine zentrale Rolle in der EU spielen?",
   "t38": "Rolle des Europäischen Parlaments in der EU",
   "f38": "Wie würde die Beibehaltung einer zentralen Rolle des Europäischen Parlaments die Demokratie und Repräsentation in der EU beeinflussen?",
-  "fact38": "Eine zentrale Rolle des Europäischen Parlaments könnte die demokratische Legitimität und die Repräsentation der Bürger in der EU stärken."
+  "fact38": "Eine zentrale Rolle des Europäischen Parlaments könnte die demokratische Legitimität und die Repräsentation der Bürger in der EU stärken.",
+
+  "0": "38"
 }
