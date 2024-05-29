@@ -325,7 +325,14 @@ function App() {
 
       <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-2/3 z-10 pt-0 md:pt-25'>
-          <Top onButtonClick={scrollToQuestionnaire} />
+          <Top
+            onButtonClick={scrollToQuestionnaire}
+            handleSendMessage={handleSendMessage}
+            isSending={isSending}
+            scrollToChat={scrollToChat}
+            setIsSending={setIsSending}
+            question=''
+          />
         </div>
         {/*         <div className='w-30px h-30px'>
           <Spline />

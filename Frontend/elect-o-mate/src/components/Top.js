@@ -2,7 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import TextInput from './TextInput';
 
-const Top = ({ onButtonClick }) => {
+const Top = ({ onButtonClick, handleSendMessage,
+          isSending,
+          scrollToChat,
+          setIsSending,
+          question='' }) => {
   const { t } = useTranslation();
   return (
     <div className='my-10 p-5'>
@@ -14,7 +18,13 @@ const Top = ({ onButtonClick }) => {
             Ask me anything about the upcoming EU-elections
           </div>
           <div className='w-full  h-auto  rounded-xl'>
-            <TextInput />
+            <TextInput
+              handleSendMessage={handleSendMessage}
+              isSending={isSending}
+              scrollToChat={scrollToChat}
+              setIsSending={setIsSending}
+              question=''
+            />
           </div>
           <div className='text-2xl md:text-3xl font-extrabold  mt-20 mb-10'>
             Or start the Quiz Now
