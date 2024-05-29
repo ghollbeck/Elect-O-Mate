@@ -109,6 +109,18 @@ const QuestionCard = ({
             <div className='flex space-x-1 md:space-x-4'>
               <button
                 className={`border w-full h-8 md:h-10 ${
+                  wheighted
+                    ? 'text-black bg-blue-100'
+                    : pressable
+                    ? 'md:hover:bg-blue-100 md:hover:text-black'
+                    : ''
+                } font-bold py-1 md:py-2 px-4 rounded-xl md:absolute left-0 md:left-2 md:w-14 md:rounded-full md:bottom-16`}
+                onClick={() => (pressable ? handleWheight(!wheighted) : null)}
+              >
+                x2
+              </button>
+              <button
+                className={`border w-full h-8 md:h-10 ${
                   answer === 1
                     ? 'text-black bg-blue-100'
                     : pressable
@@ -142,18 +154,6 @@ const QuestionCard = ({
                 onClick={() => (pressable ? onAnswer(-1) : null)}
               >
                 {t('disagree_button')}
-              </button>
-              <button
-                className={`border w-8 h-8 md:w-10 md:h-10 absolute left-0 bottom-14 ${
-                  wheighted
-                    ? 'text-black bg-blue-100'
-                    : pressable
-                    ? 'hover:bg-blue-100 hover:text-black'
-                    : ''
-                } font-bold py-1 md:py-2 px-4 rounded-full flex items-center justify-center`}
-                onClick={() => (pressable ? handleWheight(!wheighted) : null)}
-              >
-                x2
               </button>
             </div>
           </div>
