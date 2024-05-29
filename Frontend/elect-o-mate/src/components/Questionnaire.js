@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import QuestionCard from './QuestionCard';
-import questionsData from '../data/questions.json';
+// import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
 import EUstars from '../pictures/EUstars.png';
 import ProgressBar from './ProgressBar';
 
 const Questionnaire = ({
+  key,
   handleSendMessage,
   isSending,
   setIsSending,
@@ -17,13 +18,14 @@ const Questionnaire = ({
   country,
   party,
 }) => {
+  const { t } = useTranslation();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [questions, setQuestions] = useState([]);
   const [partyanswers, setPartyAnswers] = useState([]);
   const containerRef = useRef(null);
   const isButtonScroll = useRef(false); // Track button clicks
   const [answers, setAnswers] = useState(
-    Array(questionsData.length).fill({
+    Array(parseInt(t('0')) + 4).fill({
       answer: null,
       wheight: false,
     })
@@ -31,8 +33,31 @@ const Questionnaire = ({
 
   const [questionCount, setQuestionCount] = useState(0);
 
+  function generateQuestionArray(numQuestions) {
+    let questionArray = [
+      { title: '', text: '' },
+      { title: 'how_it_works', text: 'help' },
+    ];
+
+    for (let i = 1; i <= numQuestions; i++) {
+      let question = {
+        title: 't' + i,
+        text: 'q' + i,
+        followup: 'f' + i,
+        followup_short: 'followup',
+        fact: 'fact' + i,
+      };
+      questionArray.push(question);
+    }
+
+    questionArray.push({ text: 'submitcard' });
+    questionArray.push({ title: '', text: '' });
+
+    return questionArray;
+  }
   useEffect(() => {
-    setQuestions(questionsData);
+    setQuestions(generateQuestionArray(parseInt(t('0'))));
+    return;
   }, []);
 
   useEffect(() => {
@@ -80,7 +105,7 @@ const Questionnaire = ({
     try {
       const response = await fetch(
         // process.env.REACT_APP_BACKEND_URL + '/evaluate',
-        'http://10.5.184.225:8000/evaluate',
+        'http://10.5.176.177:8000/evaluate',
         {
           method: 'POST',
           headers: {
@@ -228,8 +253,6 @@ const Questionnaire = ({
       display: 'none', // Safari and Chrome
     },
   };
-
-  const { t } = useTranslation();
 
   return (
     <div className=' flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>

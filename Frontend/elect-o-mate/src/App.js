@@ -27,11 +27,12 @@ function App() {
   const toResult = useRef(null);
 
   const questionnaireAnswers = (data, abortController) => {
-    const lang = i18n.language;
+    const lang = getLanguageNameByCode(i18n.language);
     const result = data;
+    console.warn(lang);
     setData(data);
     const instructions =
-      'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results- Please answer in ' +
+      'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results. ANSWER in ' +
       lang +
       '. Please add a note, that a graph listing the matching can be found when scrolling down where the user can click on a bar to find more information about the respective party and their positions can be seen back on the question cards. Offer them further assistance. DO NOT LIST ANY SOURCES!!';
     const resultString = JSON.stringify(result);
@@ -41,7 +42,7 @@ function App() {
 
   const formatMessage = (question, message) => {
     if (question !== '') {
-      const fmessage = `The last question was ${question} answer this message from the user ${message}.`;
+      const fmessage = `The last question was ${question} answer this message from the user ${message} Please answer in the same language as the message, or the message before.`;
       return fmessage;
     }
     return message;
@@ -80,8 +81,8 @@ function App() {
     try {
       // Perform API request with streaming using Fetch API and AbortController
       const response = await fetch(
-        // process.env.REACT_APP_BACKEND_URL + '/openai/stream',
-        'http://10.5.184.225:8000/openai/stream',
+        //process.env.REACT_APP_BACKEND_URL + '/openai/stream',
+        'http://10.5.176.177:8000/openai/stream',
         {
           method: 'POST',
           headers: {
@@ -213,63 +214,101 @@ function App() {
     smoothScrollTo(toResult, 1000);
   };
 
+  useEffect(() => {
+    setQuestionnaireKey((prevKey) => prevKey + 1);
+  }, [i18n.language]);
+
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
 
+  function getLanguageNameByCode(languageCode) {
+    languageCode = languageCode.slice(-2);
+    const languageNameMap = {
+      de: 'German',
+      nl: 'Dutch',
+      bg: 'Bulgarian',
+      el: 'Greek',
+      cs: 'Czech',
+      da: 'Danish',
+      et: 'Estonian',
+      es: 'Spanish',
+      fi: 'Finnish',
+      fr: 'French',
+      hr: 'Croatian',
+      hu: 'Hungarian',
+      en: 'English',
+      it: 'Italian',
+      lt: 'Lithuanian',
+      lv: 'Latvian',
+      pl: 'Polish',
+      pt: 'Portuguese',
+      ro: 'Romanian',
+      sv: 'Swedish',
+      sl: 'Slovenian',
+      sk: 'Slovak',
+    };
+
+    // Return the language name corresponding to the language code
+    return languageNameMap[languageCode] || 'English';
+  }
+
   const getUserLanguageFromIP = useCallback(async () => {
     const countryLanguageMap = {
-      AT: 'de', // Austria - German
-      BE: 'nl', // Belgium - Dutch
-      BG: 'bg', // Bulgaria - Bulgarian
-      CH: 'de',
-      CY: 'el', // Cyprus - Greek
-      CZ: 'cs', // Czech Republic - Czech
-      DE: 'de', // Germany - German
-      DK: 'da', // Denmark - Danish
-      EE: 'et', // Estonia - Estonian
-      ES: 'es', // Spain - Spanish
-      FI: 'fi', // Finland - Finnish
-      FR: 'fr', // France - French
-      GR: 'el', // Greece - Greek
-      HR: 'hr', // Croatia - Croatian
-      HU: 'hu', // Hungary - Hungarian
-      IE: 'en', // Ireland - English
-      IT: 'it', // Italy - Italian
-      LT: 'lt', // Lithuania - Lithuanian
-      LU: 'fr', // Luxembourg - French
-      LV: 'lv', // Latvia - Latvian
-      MT: 'en', // Malta - English
-      NL: 'nl', // Netherlands - Dutch
-      PL: 'pl', // Poland - Polish
-      PT: 'pt', // Portugal - Portuguese
-      RO: 'ro', // Romania - Romanian
-      SE: 'sv', // Sweden - Swedish
-      SI: 'sl', // Slovenia - Slovenian
-      SK: 'sk', // Slovakia - Slovak
+      AT: 'atde', // Austria - German
+      BE: 'benl', // Belgium - Dutch
+      BG: 'bgbg', // Bulgaria - Bulgarian
+      CH: 'dede',
+      CY: 'cyel', // Cyprus - Greek
+      CZ: 'czcs', // Czech Republic - Czech
+      DE: 'dede', // Germany - German
+      DK: 'dkda', // Denmark - Danish
+      EE: 'eeet', // Estonia - Estonian
+      ES: 'eses', // Spain - Spanish
+      FI: 'fifi', // Finland - Finnish
+      FR: 'frfr', // France - French
+      GR: 'elel', // Greece - Greek
+      HR: 'hrhr', // Croatia - Croatian
+      HU: 'huhu', // Hungary - Hungarian
+      IE: 'ieen', // Ireland - English
+      IT: 'itit', // Italy - Italian
+      LT: 'ltlt', // Lithuania - Lithuanian
+      LU: 'lufr', // Luxembourg - French
+      LV: 'lvlv', // Latvia - Latvian
+      MT: 'mten', // Malta - English
+      NL: 'nlnl', // Netherlands - Dutch
+      PL: 'plpl', // Poland - Polish
+      PT: 'ptpt', // Portugal - Portuguese
+      RO: 'roro', // Romania - Romanian
+      SE: 'sesv', // Sweden - Swedish
+      SI: 'sisl', // Slovenia - Slovenian
+      SK: 'sksk', // Slovakia - Slovak
     };
+
     try {
       const response = await fetch('https://ipinfo.io/json');
       const data = await response.json();
       const countryCode = data.country;
       return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
     } catch (error) {
-      return 'en'; // Default to English in case of error
+      return 'deen'; // Default to English in case of error
     }
   }, []);
 
   useEffect(() => {
     const fetchUserLanguageAndSetLanguage = async () => {
       try {
-        const userLanguage = await getUserLanguageFromIP();
+        const userLanguage = await getUserLanguageFromIP(); // Ensure getUserLanguageFromIP is called
         i18n.changeLanguage(userLanguage);
       } catch (error) {
-        i18n.changeLanguage('en');
+        console.warn('error, could not find userlanguage.');
+        i18n.changeLanguage('deen');
       }
     };
 
     fetchUserLanguageAndSetLanguage();
-  }, [i18n, getUserLanguageFromIP]); // Include i18n in the dependency array`
+  }, [i18n]);
+  // Include i18n in the dependency array`
 
   const [isPopupOpen, setIsPopupOpen] = useState(true);
 
@@ -277,15 +316,14 @@ function App() {
     setIsPopupOpen(!isPopupOpen);
   };
 
+  const [questionnaireKey, setQuestionnaireKey] = useState(0);
+
   return (
-    <div
-      className='flex flex-col relative overflow-hidden bg-gray-800'
-      //style={{ backgroundImage: 'radial-gradient(#F0FFFF, #c8c5c9)' }}
-    >
+    <div className='flex flex-col relative overflow-hidden bg-gray-800'>
       <OrangeCircle />
-      <div className='flex justify-end z-20'>
-        <LanguageSelector changeLanguage={changeLanguage} />
-      </div>
+
+      <LanguageSelector changeLanguage={changeLanguage} />
+
       <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
         <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={scrollToQuestionnaire} />
@@ -296,6 +334,7 @@ function App() {
       </div>
       <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
         <Questionnaire
+          key={questionnaireKey}
           scrollToChat={scrollToChat}
           handleSendMessage={handleSendMessage}
           scrollToQuestionnaire={scrollToQuestionnaire}
@@ -305,7 +344,7 @@ function App() {
           questionnaireAnswers={questionnaireAnswers}
           scrollToResult={scrollToResult}
           party={party}
-          country={i18n.language}
+          country={i18n.language.slice(0, 2)}
         />
       </div>
       <div ref={toChat} className='flex justify-center relative mt-64'>
@@ -332,10 +371,13 @@ function App() {
                 <div className='absolute inset-0 bg-gray-700/90 rounded-xl flex items-center justify-center text-white'>
                   <div className='flex flex-col  p-4 w-full h-full'>
                     <div className='flex-shrink-0 flex items-center'>
-                      {t('how_graph_works_title')}
+                      {t('how_graph_works_info')}
                     </div>
-                    <div className='flex-grow flex items-center justify-center'>
-                      {t('how_graph_works_content')}
+                    <div className='flex-grow flex flex-col items-center text-center justify-center p-20'>
+                      <h1 className=' text-xl font-bold m-5'>
+                        {t('how_graph_works_title')}
+                      </h1>
+                      <p>{t('how_graph_works_content')}</p>
                     </div>
                   </div>
                 </div>
