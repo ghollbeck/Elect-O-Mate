@@ -335,7 +335,6 @@ function App() {
             isSending={isSending}
             scrollToChat={scrollToChatslow}
             setIsSending={setIsSending}
-            question=''
           />
         </div>
         {/*         <div className='w-30px h-30px'>

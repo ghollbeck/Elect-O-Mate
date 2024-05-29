@@ -8,7 +8,6 @@ const Top = ({
   isSending,
   scrollToChat,
   setIsSending,
-  question = '',
 }) => {
   const { t } = useTranslation();
   return (
