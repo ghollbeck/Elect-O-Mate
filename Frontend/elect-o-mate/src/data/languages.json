@@ -10,6 +10,16 @@
     "countryCode": "DE"
   },
   {
+    "value": "eses",
+    "label": "España",
+    "countryCode": "ES"
+  },
+  {
+    "value": "esen",
+    "label": "Spain",
+    "countryCode": "ES"
+  },
+  {
     "value": "huhu",
     "label": "Magyarország",
     "countryCode": "HU"
