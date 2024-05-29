@@ -63,7 +63,7 @@ const QuestionCard = ({
   }
   if (question.text === 'submitcard') {
     return (
-      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5'>
+      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5'>
         <div className='flex flex-col items-center justify-center h-full pt-2 pl-2 flex-shrink-0'>
           <h2 className='text-sm md:text-lg font-semibold text-center overflow-hidden w-full break-words leading-tight p-2 md:p-5'>
             {t('submit_text')}
@@ -88,7 +88,7 @@ const QuestionCard = ({
         <div
           className={`flex flex-col ${
             partyAnswer ? 'h-[45dvh]' : 'h-[70dvh]'
-          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5`}
+          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5`}
         >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
@@ -186,7 +186,7 @@ const QuestionCard = ({
         <div
           className={`flex flex-col ${
             partyAnswer ? 'h-[45dvh]' : 'h-[70dvh]'
-          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-gray-700/95 mb-5`}
+          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5`}
         >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
@@ -208,7 +208,7 @@ const QuestionCard = ({
         </div>
       </ReactCardFlip>
       {partyAnswer ? (
-        <div className='flex flex-col h-[20dvh] md:h-20 w-[75vw] lg:w-[800px] p-1 text-center text-white  rounded-xl shadow-lg shadow-gray-900 bg-gray-600 mb-5 items-center justify-center'>
+        <div className='flex flex-col h-[20dvh] md:h-20 w-[75vw] lg:w-[800px] p-1 text-center text-white  rounded-xl shadow-lg shadow-gray-900 bg-black mb-5 items-center justify-center'>
           {partyAnswer['Full_Party_Name']} {t('party_voted_for')}{' '}
           {partyAnswer['Party_Answer'] === 1
             ? t('agree_button')

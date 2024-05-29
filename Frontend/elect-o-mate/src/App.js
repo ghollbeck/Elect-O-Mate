@@ -13,6 +13,7 @@ import OrangeCircle from './components/OrangeCircle';
 import HorizontalBarChart from './components/HorizontalBarChart';
 import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
+import TextInput from './components/TextInput';
 
 function App() {
   const [party, setParty] = useState(null);
@@ -319,18 +320,16 @@ function App() {
   const [questionnaireKey, setQuestionnaireKey] = useState(0);
 
   return (
-    <div className='flex flex-col relative overflow-hidden bg-gray-800'>
-      <OrangeCircle />
-
+    <div className='flex flex-col relative overflow-hidden bg-black'>
       <LanguageSelector changeLanguage={changeLanguage} />
 
       <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
-        <div className='w-full md:w-1/2 z-10 pt-0 md:pt-25'>
+        <div className='w-full md:w-2/3 z-10 pt-0 md:pt-25'>
           <Top onButtonClick={scrollToQuestionnaire} />
         </div>
-        <div className='w-30px h-30px'>
+        {/*         <div className='w-30px h-30px'>
           <Spline />
-        </div>
+        </div> */}
       </div>
       <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
         <Questionnaire
@@ -409,8 +408,11 @@ function App() {
 
       <div className='relative mt-72'>
         <div
-          className='absolute top-0 left-0 w-full bg-gradient-to-r from-[#3D6964] to-[#FDFFFD] transform skew-y-3 h-100'
-          style={{ height: '110%' }}
+          className='absolute top-0 left-0 w-full bg-gradient-to-r bg-[#003194] transform skew-y-3 h-100'
+          style={{
+            height: '110%',
+            filter: ' saturate(40%) contrast(90%) brightness(90%)', // Adjust the values as needed
+          }}
         />
         <div className='container mx-auto relative z-10 w-full md:w-1/2'>
           <OpenSource />

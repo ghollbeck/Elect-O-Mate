@@ -3,7 +3,7 @@ import QuestionCard from './QuestionCard';
 // import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
-import EUstars from '../pictures/EUstars.png';
+import EUstars from '../pictures/golden_stars.png';
 import ProgressBar from './ProgressBar';
 
 const Questionnaire = ({
@@ -257,10 +257,9 @@ const Questionnaire = ({
   return (
     <div className=' flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>
       <div
-        className='absolute top-0 left-0 w-full transform scale-125 skew-y-3'
+        className='absolute top-0 left-0 w-full transform scale-125 skew-y-3 bg-[#212d40]'
         style={{
           height: '110%',
-          backgroundImage: 'linear-gradient(to right, #3D6964, #FDFFFD)',
         }}
       />
 
@@ -269,6 +268,10 @@ const Questionnaire = ({
           src={EUstars}
           alt='Background Overlay'
           className='h-full w-auto object-fit'
+          style={{
+            filter: 'saturate(30%) contrast(90%) brightness(90%)',
+            opacity: '0.1',
+          }} // Adjust the values as needed
         />
       </div>
 
@@ -332,8 +335,8 @@ const Questionnaire = ({
               key={index}
               className={`shrink-0 transition-opacity duration-800 snap-center relative ${
                 index === currentQuestionIndex
-                  ? 'transform scale-125 opacity-100 z-10 transition-transform duration-200'
-                  : 'transform scale-100 opacity-100 z-0 transition-transform duration-200'
+                  ? 'transform scale-125 opacity-80 z-10 transition-transform duration-200'
+                  : 'transform scale-100 opacity-60 z-0 transition-transform duration-200'
               }`}
             >
               <QuestionCard
