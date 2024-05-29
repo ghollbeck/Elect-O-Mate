@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import LanguageIcon from '@mui/icons-material/Translate';
 import ReactCountryFlag from 'react-country-flag';
 import options from '../data/languages.json';
+import i18n from '../i18n';
 
 function LanguageSelector({ changeLanguage }) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -39,22 +40,29 @@ function LanguageSelector({ changeLanguage }) {
     <div className='m-2 relative'>
       <button
         ref={buttonRef}
-        className='flex items-center px-4 py-4 rounded-full bg-blue-500 text-white hover:bg-blue-700 hover:scale-110 transition-transform duration-200 absolute right-0 top-0'
+        className='flex items-center hover:scale-125 transition-transform duration-200 absolute right-4 top-4 flex-grow border-white'
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
-        <LanguageIcon className='w-6 h-6' />
+        <ReactCountryFlag
+          countryCode={i18n.language.slice(0, 2).toUpperCase()}
+          svg
+          style={{
+            width: '30px',
+            height: '30px',
+          }}
+        />
       </button>
       {dropdownVisible && (
         <div
           ref={dropdownRef}
-          className='absolute right-0 mt-16 p-2 bg-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap'
+          className='absolute right-0 mt-16 p-2 text-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap bg-black bg-opacity-70 backdrop-blur-sm'
           style={{ minWidth: 'fit-content' }}
         >
           {options.map((option) => (
             <button
               key={option.value}
               onClick={() => handleLanguageChange(option.value)}
-              className='flex items-center w-full text-left hover:bg-gray-200 cursor-pointer'
+              className='flex items-center w-full text-left hover:bg-gray-200 hover:text-black cursor-pointer'
             >
               <ReactCountryFlag
                 countryCode={option.countryCode}

@@ -3,7 +3,8 @@
   "label": "Deutsch",
   "countryCode": "DE",
 
-  "subheading": "Provide voters with clear and concise information to enable informed decisions during elections.",
+  "subheading": "Ask me anything about the EU-Elections!",
+  "start_now": "Or start the quiz now",
   "start_button": "Start Now!",
   "sign_up": "Sign up for important updates",
   "email_placeholder": "Email Address",

@@ -6,12 +6,17 @@ const ProgressBar = ({ current, total }) => {
     <div className='relative h-5'>
       <div className='relative h-full bg-transparent w-full rounded-full border'>
         <div
-          className='h-full bg-gray-700/70 rounded-full transition-all duration-300'
-          style={{ width: `${percentage}%` }}
+          className='h-full bg-white rounded-full transition-all duration-300 bg-opacity-60'
+          style={{
+            width: `${percentage}%`,
+          }}
         ></div>
       </div>
-      <div className='absolute top-0 left-0 h-full w-full flex items-center justify-center text-white font-semibold'>
-        Answered: {current}/{total}
+      <div
+        className='absolute top-0 left-0 h-full w-full flex items-center justify-center text-black font-light bg-white rounded-full bg-opacity-10
+      '
+      >
+        {current}/{total}
       </div>
     </div>
   );

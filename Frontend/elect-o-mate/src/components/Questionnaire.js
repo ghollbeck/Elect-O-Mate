@@ -257,22 +257,25 @@ const Questionnaire = ({
   return (
     <div className=' flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>
       <div
-        className='absolute top-0 left-0 w-full transform scale-125 skew-y-3'
+        className='absolute top-0 left-0 w-full transform scale-125 skew-y-3 bg-gradient-to-r from-violet-200 to-pink-200'
         style={{
           height: '110%',
-          backgroundImage: 'linear-gradient(to right, #3D6964, #FDFFFD)',
         }}
       />
 
-      <div className='absolute top-0 left-0 w-full h-0 md:h-full z-3 scale-125 overflow-hidden'>
+      {/*       <div className='absolute top-0 left-0 w-full h-0 md:h-full z-3 scale-125 overflow-hidden'>
         <img
           src={EUstars}
           alt='Background Overlay'
           className='h-full w-auto object-fit'
+          style={{
+            filter: 'saturate(30%) contrast(90%) brightness(90%)',
+            opacity: '0.1',
+          }} // Adjust the values as needed
         />
-      </div>
+      </div> */}
 
-      <div className='relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
+      <div className='overflow-y-hidden  relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
         {currentQuestionIndex > 1 && (
           <button
             z
@@ -320,11 +323,12 @@ const Questionnaire = ({
 
         <div
           ref={containerRef}
-          className='w-full px-0 py-20 flex space-x overflow-x-auto height-100 relative snap-x snap-mandatory'
+          className='w-full px-0 py-20 flex space-x overflow-x-auto relative  snap-x snap-mandatory'
           style={{
             ...webkitScrollBarHideStyle,
             ...scrollBarHideStyle,
             WebkitOverflowScrolling: 'touch',
+            height: 'auto',
           }}
         >
           {questions.map((question, index) => (
@@ -332,8 +336,8 @@ const Questionnaire = ({
               key={index}
               className={`shrink-0 transition-opacity duration-800 snap-center relative ${
                 index === currentQuestionIndex
-                  ? 'transform scale-125 opacity-100 z-10 transition-transform duration-200'
-                  : 'transform scale-100 opacity-100 z-0 transition-transform duration-200'
+                  ? 'transform scale-[1.2] lg:scale-125  opacity-95 z-10 transition-transform duration-200'
+                  : 'transform scale-100 opacity-80 z-0 transition-transform duration-200'
               }`}
             >
               <QuestionCard
