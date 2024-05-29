@@ -19,7 +19,7 @@ const Chat = ({
           scrollToQuestionnaire={scrollToQuestionnaire}
         />
       </div>
-      <div className=' absolute bottom-0 w-full z-10 '>
+      <div className=' absolute bottom-0 w-full z-10'>
         <TextInput
           handleSendMessage={handleSendMessage}
           isSending={isSending}

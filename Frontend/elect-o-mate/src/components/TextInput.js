@@ -156,7 +156,6 @@ const TextInput = ({
               <StopCircleIcon
                 sx={{
                   fontWeight: '600', // font-semibold
-                  color: 'white', // text-white
                   transition: 'transform 0.2s ease-in-out', // transition duration-400 ease-in-out
                   transform: 'scale(1.25)', // initial scale
                   '&:hover': {
@@ -165,12 +164,12 @@ const TextInput = ({
                   marginRight: '0.35rem', // mr-1
                   marginY: '0.125rem', // my-0.5
                 }}
+                className='font-semibold text-white'
               />
             ) : (
               <SendIcon
                 sx={{
                   fontWeight: '600', // font-semibold
-                  color: 'white', // text-white
                   transition: 'transform 0.2s ease-in-out', // transition duration-400 ease-in-out
                   transform: 'scale(1.15)', // initial scale
                   '&:hover': {
@@ -179,7 +178,7 @@ const TextInput = ({
                   marginRight: '0.25rem', // mr-1
                   marginY: '0.125rem', // my-0.5
                 }}
-                className='font-semibold text-white '
+                className='font-semibold text-white'
               />
             )
           }
