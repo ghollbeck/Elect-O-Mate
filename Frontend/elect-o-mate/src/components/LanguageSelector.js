@@ -55,14 +55,14 @@ function LanguageSelector({ changeLanguage }) {
       {dropdownVisible && (
         <div
           ref={dropdownRef}
-          className='absolute right-0 mt-16 p-2 bg-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap'
+          className='absolute right-0 mt-16 p-2 text-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap'
           style={{ minWidth: 'fit-content' }}
         >
           {options.map((option) => (
             <button
               key={option.value}
               onClick={() => handleLanguageChange(option.value)}
-              className='flex items-center w-full text-left hover:bg-gray-200 cursor-pointer'
+              className='flex items-center w-full text-left hover:bg-gray-200 hover:text-black cursor-pointer'
             >
               <ReactCountryFlag
                 countryCode={option.countryCode}
