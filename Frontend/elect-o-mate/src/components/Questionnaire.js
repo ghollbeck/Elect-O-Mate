@@ -323,11 +323,12 @@ const Questionnaire = ({
 
         <div
           ref={containerRef}
-          className='w-full px-0 py-20 flex space-x overflow-x-auto height-100 relative snap-x snap-mandatory'
+          className='w-full px-0 py-20 flex space-x overflow-x-auto relative  snap-x snap-mandatory'
           style={{
             ...webkitScrollBarHideStyle,
             ...scrollBarHideStyle,
             WebkitOverflowScrolling: 'touch',
+            height: 'auto',
           }}
         >
           {questions.map((question, index) => (
@@ -335,8 +336,8 @@ const Questionnaire = ({
               key={index}
               className={`shrink-0 transition-opacity duration-800 snap-center relative ${
                 index === currentQuestionIndex
-                  ? 'transform scale-125 opacity-80 z-10 transition-transform duration-200'
-                  : 'transform scale-100 opacity-60 z-0 transition-transform duration-200'
+                  ? 'transform scale-[1.2] lg:scale-125  opacity-95 z-10 transition-transform duration-200'
+                  : 'transform scale-100 opacity-80 z-0 transition-transform duration-200'
               }`}
             >
               <QuestionCard
