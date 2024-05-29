@@ -150,7 +150,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold py-1 md:py-2 px-4 rounded-full flex items-center justify-center`}
+                } font-bold py-1 m-5 scale-110 md:py-2 px-4 rounded-full flex items-center justify-center`}
                 onClick={() => (pressable ? handleWheight(!wheighted) : null)}
               >
                 x2
