@@ -163,6 +163,7 @@ def load_pdfs(country: str):
             for page in document:
                 page.metadata = {**page.metadata, **doc_metadata}
                 page.metadata["source"] = page.metadata["url"]
+    
 
         documents = [page for pdf in documents for page in pdf]
 

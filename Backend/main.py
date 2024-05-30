@@ -15,6 +15,8 @@ from langserve import add_routes
 
 from langchain.chains.query_constructor.base import AttributeInfo
 from langchain.retrievers.self_query.base import SelfQueryRetriever
+from langchain_core.documents import Document
+
 
 from pydantic import BaseModel
 
@@ -68,6 +70,10 @@ def main():
     print("getting pdf content")
     pdf_texts_by_country = sources.build_pdf_datastructure(countries)
 
+    # reformat tags to be a string
+    for country in countries:
+        for document in pdf_texts_by_country[country]:
+            document.metadata["tags"] = ",".join(document.metadata["tags"])
 
     print("building vector db for website content")
 
@@ -114,9 +120,18 @@ def main():
     for country in countries:
         
         prompt = ChatPromptTemplate.from_template(prompts.prompts[f"template_{country}"])
+        
+        if not url_texts_by_country[country]:
+            url_texts_by_country[country] = [Document("")]
 
         url_db[country] = Chroma.from_documents(url_texts_by_country[country], cached_embedder_openai)
+        
+        if not pdf_texts_by_country[country]:
+            pdf_texts_by_country[country] = [Document("")]
+
         pdf_db[country] = Chroma.from_documents(pdf_texts_by_country[country], cached_embedder_openai)
+
+        
 
         self_retrievers[country] = SelfQueryRetriever.from_llm(
             openai,
