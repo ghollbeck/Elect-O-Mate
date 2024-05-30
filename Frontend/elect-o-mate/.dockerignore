@@ -3,6 +3,8 @@ node_modules/*
 .gitignore
 .prettierrc
 README.md
-yarn.lock
 .dockerignore
 .env
+.git
+**/npm-debug.log
+build
