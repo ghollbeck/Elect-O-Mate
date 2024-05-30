@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactCountryFlag from 'react-country-flag';
 import options from '../data/languages.json';
-import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
 import FlagWithEnglish from './FlagWithEnglish';
 
 function LanguageSelector({ changeLanguage }) {
@@ -39,31 +39,36 @@ function LanguageSelector({ changeLanguage }) {
   const isLastTwoCharsEn = (value) => {
     return value.slice(-2) === 'en';
   };
+  const { t, i18n } = useTranslation();
 
   return (
     <div className='m-2 relative'>
-      <button
-        ref={buttonRef}
-        className='flex items-center hover:scale-125 transition-transform duration-200 absolute right-4 top-4 flex-grow'
-        onClick={() => setDropdownVisible(!dropdownVisible)}
-      >
-        {isLastTwoCharsEn(i18n.language) ? (
-          <FlagWithEnglish
-            countryCode={i18n.language.slice(0, 2).toUpperCase()}
-          />
-        ) : (
-          <ReactCountryFlag
-            countryCode={i18n.language.slice(0, 2).toUpperCase()}
-            svg
-            style={{
-              width: '32px',
-              height: 'auto',
-              marginRight: '12px',
-              borderRadius: '5px',
-            }}
-          />
-        )}
-      </button>
+      <div className='absolute top-2 right-2 text-pink-100 flex items-center font-thin'>
+        <p className='mr-2'>{t('choose_country')}</p>
+        <button
+          ref={buttonRef}
+          className='flex items-center hover:scale-125 transition-transform duration-200'
+          onClick={() => setDropdownVisible(!dropdownVisible)}
+        >
+          {isLastTwoCharsEn(i18n.language) ? (
+            <FlagWithEnglish
+              countryCode={i18n.language.slice(0, 2).toUpperCase()}
+            />
+          ) : (
+            <ReactCountryFlag
+              countryCode={i18n.language.slice(0, 2).toUpperCase()}
+              svg
+              style={{
+                width: '32px',
+                height: 'auto',
+                marginRight: '12px',
+                borderRadius: '5px',
+              }}
+            />
+          )}
+        </button>
+      </div>
+
       {dropdownVisible && (
         <div
           ref={dropdownRef}

@@ -3,6 +3,8 @@
   "label": "Polski",
   "countryCode": "PL",
 
+  "choose_country": "Choose your country",
+
   "followup": "Chat with me!",
   "subheading": "Ask me something about the EU elections!",
   "start_now": "Or start the quiz now",

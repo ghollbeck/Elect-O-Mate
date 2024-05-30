@@ -3,6 +3,9 @@
   "subheading": "Ask me something about the EU elections!",
   "start_now": "Or start the quiz now",
   "start_button": "Start now!",
+
+  "choose_country": "Choose your country",
+
   "sign_up": "Sign up for important updates",
   "email_placeholder": "Email address",
   "subscribe_to_newsletter": "Subscribe",
@@ -41,7 +44,7 @@
   "how_graph_works_info": "How to use the graph",
   "how_graph_works_title": "Evaluation",
   "how_graph_works_content": "Here you can view your results in a bar chart. To get more information about a party, click on the corresponding bar. If you want to compare your results with those of the selected party, you can simply scroll back to the questions.\nTo view the results, click on the x at the top right.",
-  
+
   "q1": "Social policies should be maintained, even if that means raising taxes",
   "t1": "Social Policies and Taxation",
   "f1": "What are the long-term economic impacts?",

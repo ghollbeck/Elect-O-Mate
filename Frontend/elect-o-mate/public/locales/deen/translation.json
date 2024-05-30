@@ -3,6 +3,7 @@
   "label": "Deutsch",
   "countryCode": "DE",
 
+  "choose_country": "Choose your country",
   "followup": "Chat with me!",
   "subheading": "Ask me something about the EU elections!",
   "start_now": "Or start the quiz now",
@@ -45,7 +46,6 @@
   "how_graph_works_info": "How to use the graph",
   "how_graph_works_title": "Evaluation",
   "how_graph_works_content": "Here you can view your results in a bar chart. To get more information about a party, click on the corresponding bar. If you want to compare your results with those of the selected party, you can simply scroll back to the questions.\nTo view the results, click on the x at the top right.",
-
 
   "q1": "Should the EU be allowed to levy its own taxes?",
   "t1": "EU Taxation",

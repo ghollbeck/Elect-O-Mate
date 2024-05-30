@@ -11,11 +11,18 @@ const FlagWithEnglish = ({ countryCode }) => {
         width: '2em',
       }}
     >
-      <ReactCountryFlag
-        countryCode={countryCode}
-        svg
-        style={{ width: '100%', height: '100%', borderRadius: '5px' }}
-      />
+      <div
+        style={{
+          bottom: 0,
+          right: 0,
+        }}
+      >
+        <ReactCountryFlag
+          countryCode={countryCode}
+          svg
+          style={{ width: '100%', height: 'auto', borderRadius: '5px' }}
+        />
+      </div>
       <div
         style={{
           position: 'absolute',
@@ -29,7 +36,11 @@ const FlagWithEnglish = ({ countryCode }) => {
         <ReactCountryFlag
           countryCode='GB'
           svg
-          style={{ width: '100%', height: '100%', borderRadius: '5px' }}
+          style={{
+            width: '100%',
+            height: 'auto',
+            borderRadius: '5px',
+          }}
         />
       </div>
     </div>
