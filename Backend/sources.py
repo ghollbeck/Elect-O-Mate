@@ -100,64 +100,67 @@ def get_pdfs_links_by_country(country: str):
     return pdfs
 
 def load_pdfs(country: str):
-    doc_file = BASE / f"cache/pdf_documents_{country}.pkl"
     text_file = BASE / f"cache/pdf_texts_{country}.pkl"
-    if doc_file.exists():
-        with doc_file.open("rb") as f:
-            documents = pickle.load(f)
-    else:
-        pdfs = get_pdfs_links_by_country(country)
-        documents = []
-        for file in pdfs:
-            code  = check_url(file)
-            if code != 200:
-                print(f"URL {file} is not valid")
-                continue
-            loader = PyPDFLoader(file, headers = headers)
-            documents.append(loader.load())
-        with doc_file.open("wb") as f:
-            pickle.dump(documents, f)
-    
-    metadata_file = BASE / f"cache/pdf_metadata_{country}.pkl"
-
-    if metadata_file.exists():
-        with metadata_file.open("rb") as f:
-            metadata_dict = pickle.load(f)
-    else:
-        metadata_dict = {}
-        with metadata_file.open("wb") as f:
-            pickle.dump(metadata_dict, f)
-
-    for document in documents:
-        document_file_name = document[0].metadata["source"]
-        if document_file_name not in metadata_dict:
-            # check if url works
-            code  = check_url(document_file_name)
-            if code != 200:
-                print(f"URL {file} is not valid")
-                continue
-            print(f"generating metadata for {document_file_name}")
-            metadata_dict[document_file_name] = metadata.get_metadata(document_file_name, country=country)
-        with metadata_file.open("wb") as f:
-            pickle.dump(metadata_dict, f)
-
-
-    # iterate through pages and add metadata
-    for document in documents:
-        document_file_name = document[0].metadata["source"]
-
-        doc_metadata = metadata_dict[document_file_name]
-
-        for page in document:
-            page.metadata = {**page.metadata, **doc_metadata}
-            page.metadata["source"] = page.metadata["url"]
-
-    documents = [page for pdf in documents for page in pdf]
-
+    # check if pdf texts are already in cache
     if text_file.exists():
         with text_file.open("rb") as f:
             texts = pickle.load(f)
     else:
+        doc_file = BASE / f"cache/pdf_documents_{country}.pkl"
+        if doc_file.exists():
+            with doc_file.open("rb") as f:
+                documents = pickle.load(f)
+        else:
+            pdfs = get_pdfs_links_by_country(country)
+            documents = []
+            for file in pdfs:
+                code  = check_url(file)
+                if code != 200:
+                    print(f"URL {file} is not valid")
+                    continue
+                loader = PyPDFLoader(file, headers = headers)
+                documents.append(loader.load())
+            with doc_file.open("wb") as f:
+                pickle.dump(documents, f)
+        
+        metadata_file = BASE / f"cache/pdf_metadata_{country}.pkl"
+
+        if metadata_file.exists():
+            with metadata_file.open("rb") as f:
+                metadata_dict = pickle.load(f)
+        else:
+            metadata_dict = {}
+            with metadata_file.open("wb") as f:
+                pickle.dump(metadata_dict, f)
+
+        for document in documents:
+            document_file_name = document[0].metadata["source"]
+            if document_file_name not in metadata_dict:
+                # check if url works
+                code  = check_url(document_file_name)
+                if code != 200:
+                    print(f"URL {file} is not valid")
+                    continue
+                print(f"generating metadata for {document_file_name}")
+                metadata_dict[document_file_name] = metadata.get_metadata(document_file_name, country=country)
+            with metadata_file.open("wb") as f:
+                pickle.dump(metadata_dict, f)
+
+
+        # iterate through pages and add metadata
+        for document in documents:
+            document_file_name = document[0].metadata["source"]
+
+            doc_metadata = metadata_dict[document_file_name]
+
+            for page in document:
+                page.metadata = {**page.metadata, **doc_metadata}
+                page.metadata["source"] = page.metadata["url"]
+
+        documents = [page for pdf in documents for page in pdf]
+
+
+        
         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
         texts = text_splitter.split_documents(documents)
         with text_file.open("wb") as f:
@@ -178,31 +181,6 @@ def build_pdf_datastructure(countries: List[str]) -> Dict:
             pickle.dump(pdf_texts, f)
     return pdf_texts
 
-def build_pdf_datastructure_parallel(countries: List[str]) -> Dict:
-    pdf_texts = {}
-    if (BASE / "cache/pdf_texts_all_countries.pkl").exists():
-        with (BASE / "cache/pdf_texts_all_countries.pkl").open("rb") as f:
-            pdf_texts = pickle.load(f)
-    else:
-
-        # Execute the for loop in parallel using ThreadPoolExecutor
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            # Map each country to the load_pdfs_for_country function
-            results = executor.map(load_pdfs, countries)
-
-            # Collect the results and populate the pdf_texts dictionary
-            for country, texts in results:
-                pdf_texts[country] = texts
-
-
-        with (BASE / "cache/pdf_texts_all_countries.pkl").open("wb") as f:
-            pickle.dump(pdf_texts, f)
-            
-    return pdf_texts
-
-
-
-
 
 print("getting pdf content")
-pdf_texts = build_pdf_datastructure_parallel(["DE", "FR", "IT", "ES", "HU", "PL", "DK"])
+pdf_texts = build_pdf_datastructure(["DE", "FR", "IT", "ES", "HU", "PL", "DK"])

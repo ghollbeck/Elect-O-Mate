@@ -80,8 +80,23 @@ def count_tokens(text: str) -> int:
     # Return the number of tokens
     return len(tokens)
 
+def split_string_into_chunks(text: str, chunk_size: int) -> list:
+    # Initialize the tokenizer with the 'cl100k_base' encoding, which is used for GPT-3.5-turbo
+    tokenizer = tiktoken.get_encoding("cl100k_base")
+    
+    # Tokenize the input text
+    tokens = tokenizer.encode(text)
+    
+    # Split tokens into chunks of fixed length
+    chunks = [tokens[i:i+chunk_size] for i in range(0, len(tokens), chunk_size)]
+    
+    # Decode each chunk of tokens back to string
+    chunk_texts = [tokenizer.decode(chunk) for chunk in chunks]
+    
+    return chunk_texts
 
-def generate_keywords(text, chunck_keywords=10, n_keywords=20):
+
+def generate_keywords(text, chunck_keywords=10, n_keywords=50):
 
     # Initialize the OpenAI API
     openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -99,14 +114,12 @@ def generate_keywords(text, chunck_keywords=10, n_keywords=20):
     # Generate keywords for each chunk and collect them
     keywords = []
     for chunk in text:
-        if count_tokens(chunk.page_content) > 15000:
-            length = len(chunk.page_content)
-            chunk1 = chunk.page_content[0:length-500] 
-            chunk2 = chunk.page_content[length-500:]
-            response1 = chain.invoke({"text": chunk1, "n_keywords": chunck_keywords})
-            response2 = chain.invoke({"text": chunk2, "n_keywords": chunck_keywords})
-            keywords.extend(response1.content.split("\n"))
-            keywords.extend(response2.content.split("\n"))
+        # handle large texts by splitting them into smaller chunks
+        if count_tokens(chunk.page_content) > 10000:
+            chunk_texts = split_string_into_chunks(chunk.page_content, 10000)
+            for chunk_text in chunk_texts:
+                response = chain.invoke({"text": chunk_text, "n_keywords": chunck_keywords})
+                keywords.extend(response.content.split("\n"))
         else:
             response = chain.invoke({"text": chunk.page_content, "n_keywords": chunck_keywords})
             keywords.extend(response.content.split("\n"))
@@ -120,8 +133,15 @@ def generate_keywords(text, chunck_keywords=10, n_keywords=20):
     final_keywords_chain = final_keywords_template | llm
 
     keywords_text = "\n".join(keywords)
+    
+    if count_tokens(keywords_text) > 15000:
+        keywords_text = split_string_into_chunks(keywords_text, 10000)
+        final_keywords = []
+        for chunk in keywords_text:
+            final_keywords.extend(final_keywords_chain.invoke({"text": chunk, "n_keywords": n_keywords}).content.split("\n"))
 
-    final_keywords = final_keywords_chain.invoke({"text": keywords_text, "n_keywords": n_keywords})
+
+    final_keywords = final_keywords_chain.invoke({"text": "\n".join(final_keywords), "n_keywords": n_keywords})
 
 
     # Deduplicate and return the keywords
