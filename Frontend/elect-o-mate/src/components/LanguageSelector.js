@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactCountryFlag from 'react-country-flag';
 import options from '../data/languages.json';
 import i18n from '../i18n';
+import FlagWithEnglish from './FlagWithEnglish';
 
 function LanguageSelector({ changeLanguage }) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -35,6 +36,10 @@ function LanguageSelector({ changeLanguage }) {
     changeLanguage(value);
   };
 
+  const isLastTwoCharsEn = (value) => {
+    return value.slice(-2) === 'en';
+  };
+
   return (
     <div className='m-2 relative'>
       <button
@@ -64,17 +69,21 @@ function LanguageSelector({ changeLanguage }) {
               onClick={() => handleLanguageChange(option.value)}
               className='flex items-center w-full text-left hover:bg-gray-200 hover:text-black cursor-pointer px-[12px] py-3 md:py-1'
             >
-              <ReactCountryFlag
-                countryCode={option.countryCode}
-                svg
-                style={{
-                  width: '32px',
-                  height: 'auto',
-                  marginRight: '12px',
-                  borderRadius: '5px',
-                }}
-                title={option.label}
-              />
+              {isLastTwoCharsEn(option.value) ? (
+                <FlagWithEnglish countryCode={option.countryCode} />
+              ) : (
+                <ReactCountryFlag
+                  countryCode={option.countryCode}
+                  svg
+                  style={{
+                    width: '32px',
+                    height: 'auto',
+                    marginRight: '12px',
+                    borderRadius: '5px',
+                  }}
+                />
+              )}
+
               {option.label}
             </button>
           ))}
