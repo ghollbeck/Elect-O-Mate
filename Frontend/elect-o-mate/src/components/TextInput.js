@@ -115,10 +115,10 @@ const TextInput = ({
   };
 
   return (
-    <div className='mt-9 shadow-full relative border-none z-20 '>
+    <div className='shadow-full relative border border-white rounded-3xl backdrop-blur-sm'>
       <form
         onSubmit={handleSubmit}
-        className='flex items-center w-full relative pb-[1px]'
+        className='flex items-center w-full relative'
       >
         <textarea
           ref={textareaRef}
@@ -129,10 +129,8 @@ const TextInput = ({
           onChange={handleChange}
           autoComplete='off'
           rows='1'
-          className='shadow-xl bg-transparent overflow-y-hidden backdrop-blur-md appearance-none border border-white w-full py-2 px-3 leading-tight focus:outline-none rounded-xl box-border placeholder-gray-400 resize-none'
+          className='bg-transparent overflow-y-hidden appearance-none w-full py-2 px-3 leading-tight focus:outline-none box-border placeholder-gray-400 resize-none'
           style={{
-            position: 'absolute',
-            bottom: 0,
             width: textareaWidth,
           }}
           onClick={handleTextareaClick} // Add onClick event handler
@@ -143,13 +141,11 @@ const TextInput = ({
           onClick={stopStreaming} // stiopStreaming checks if isSending is true
           sx={{
             backgroundColor: 'transparent',
-            border: '1px solid white',
-            borderRadius: '0.75rem',
             position: 'absolute',
+            bottom: '0',
             right: 0,
-            bottom: 0,
             background: 'transparent', // fixed: background needs quotes
-            backdropFilter: 'blur(10px)',
+            borderRadius: '1.5rem',
           }}
           endIcon={
             isSending ? (

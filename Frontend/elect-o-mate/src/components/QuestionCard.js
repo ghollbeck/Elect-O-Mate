@@ -63,7 +63,7 @@ const QuestionCard = ({
   }
   if (question.text === 'submitcard') {
     return (
-      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5'>
+      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-3xl shadow-lg shadow-gray-900 bg-black mb-5'>
         <div className='flex flex-col items-center justify-center h-full pt-2 pl-2 flex-shrink-0'>
           <h2 className='text-sm md:text-lg font-semibold text-center overflow-hidden w-full break-words leading-tight p-2 md:p-5'>
             {t('submit_text')}
@@ -88,7 +88,7 @@ const QuestionCard = ({
         <div
           className={`flex flex-col ${
             partyAnswer ? 'h-[45dvh]' : 'h-[70dvh]'
-          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5`}
+          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-3xl shadow-lg shadow-gray-900 bg-black mb-5`}
         >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
@@ -159,7 +159,7 @@ const QuestionCard = ({
           </div>
 
           <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0 text-base'>
-            <div className='block md:hidden text-white'>
+            <div className='block md:hidden text-white mt-10'>
               <TextInput
                 handleSendMessage={handleSendMessage}
                 setIsSending={setIsSending}
@@ -169,7 +169,7 @@ const QuestionCard = ({
                 question={question.text}
               />
             </div>
-            <div className='hidden md:block'>
+            <div className='hidden md:block mt-5'>
               <TextInput
                 handleSendMessage={handleSendMessage}
                 setIsSending={setIsSending}
@@ -186,7 +186,7 @@ const QuestionCard = ({
         <div
           className={`flex flex-col ${
             partyAnswer ? 'h-[45dvh]' : 'h-[70dvh]'
-          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5`}
+          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-3xl shadow-lg shadow-gray-900 bg-black mb-5`}
         >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
