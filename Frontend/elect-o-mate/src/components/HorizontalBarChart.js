@@ -27,7 +27,7 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
   const { t, i18n } = useTranslation();
   const percentages = data.map((item) => item[0]);
   const labels = data.map((item) => item[1]);
-
+  const parytnames = data.map((item) => item[2]);
   const chartData = {
     labels: labels,
     datasets: [
@@ -48,13 +48,15 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
       if (elements.length > 0) {
         const index = elements[0].index;
         const label = labels[index];
+        const partyname = parytnames[index];
         if (abortControllerRef.current) {
           abortControllerRef.current.abort();
         }
         abortControllerRef.current = new AbortController();
         const abortController = abortControllerRef.current;
         setParty(label);
-        InformationRequest(label, abortController);
+        console.warn(data)
+        InformationRequest(partyname, abortController);
       }
     },
     scales: {

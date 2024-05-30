@@ -11,6 +11,7 @@ def read_json_file(file_path):
 def evaluate_answers(data_Party, data_User):
     num_questions = len(data_User)
     party_names = data_Party['party_names']
+    party_full_names = data_Party['party_full_names']
     
     party_names_array = np.array(party_names)
     data_Party = data_Party['party_answers']
@@ -81,8 +82,7 @@ def evaluate_answers(data_Party, data_User):
     column_sums = [round(column_sums[i], 1) for i in range(len(column_sums))]
 
 
-    # Combining the two lists of Overlap of the user and the party (column_sums) and the party names
-    combined_list = [(a, b) for a, b in zip(column_sums, party_names_array)] #ALTERNATIVE LIST APPENING
+    combined_list = [(a, b, c) for a, b, c in zip(column_sums, party_names, party_full_names)]
     combined_list.sort(key=lambda x: x[0], reverse=True)  
 
     return combined_list

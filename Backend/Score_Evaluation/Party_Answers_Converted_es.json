@@ -1,109 +1,8 @@
 {
 	"party_names" : ["Cs", "Ara Republicas", "PP", "PSOE", "Podemos"],
-	"questions_OG": [
-		"Las políticas sociales deberían mantenerse aunque eso implique una subida de impuestos", 
-		"El estado debería elevar las ayudas económicas a las personas en situación de desempleo", 
-		"La Unión Europea debería castigar rigurosamente a los estados miembros que incumplan las reglas de déficit europeo", 
-		"Las solicitudes de asilo deberían distribuirse proporcionalmente entre los estados miembros a través de un sistema de reubicación", "Las políticas de control de la inmigración en España deberían ser más restrictivas", 
-		"España debería exigir a los inmigrantes no comunitarios (fuera de la UE) la aceptación de nuestra cultura y valores", 
-		"La legalización del matrimonio homosexual es algo positivo", 
-		"Legalizar el uso personal de drogas blandas sería una medida positiva", 
-		"La eutanasia debería ser legal", 
-		"Debería reducirse el gasto público para poder bajar los impuestos", 
-		"La Unión Europea debería tener sus propios poderes fiscales", 
-		"Los beneficios bancarios y del mercado financiero deberían tener impuestos más altos", 
-		"Debería promocionarse el transporte público a través de políticas verdes (por ejemplo, más peajes o impuestos a las carreteras)", 
-		"Las energías renovables, como la solar o la eólica, deberían promocionarse más a pesar de su mayor coste económico", 
-		"Debería restringirse la privacidad personal en internet por motivos de seguridad pública", 
-		"Los delincuentes y criminales deberían tener condenas más severas", 
-		"La Unión Europea debería reforzar sus políticas de defensa y seguridad", 
-		"La Unión Europea debería tener una postura única en materia de política exterior", 
-		"La integración europea es algo positivo", 
-		"La moneda única europea (Euro) es algo negativo", 
-		"Los estados miembros de la Unión Europea deberían tener menos poder de veto", 
-		"En las elecciones al Parlamento Europeo, los ciudadanos europeos deberían poder votar a partidos o candidatos de otros estados miembros"
-	],
-
-	"questions": [
-		"Social policies should be maintained, even if that means raising taxes", 
-		"The state should increase financial support for the unemployed", "The European Union should severely punish member states that do not comply with European deficit rules", 
-		"The European Union should severely punish member states that do not comply with European deficit rules", 
-		"Asylum applications should be distributed proportionally among member states through a relocation system", "Spain's immigration control policies should be more restrictive", 
-		"Spain should require non-EU (non-EU) immigrants to accept our culture and values", "Spain should require non-EU (non-EU) immigrants to accept our culture and values", 
-		"The legalisation of same-sex marriage is a good thing", 
-		"Legalising the personal use of soft drugs would be a positive step", 
-		"Euthanasia should be legal", 
-		"Public spending should be reduced so that taxes can be lowered", 
-		"The European Union should have its own taxation powers", "The European Union should have its own taxation powers", 
-		"Banking and financial market profits should be taxed more heavily", 
-		"Public transport should be promoted through green policies (e.g. more road tolls or taxes)", 
-		"Renewable energies, such as solar or wind, should be promoted more despite their higher economic cost", 
-		"Personal privacy on the internet should be restricted for public safety reasons", 
-		"Criminals and criminals should be given harsher sentences", 
-		"The European Union should strengthen its defence and security policies", 
-		"The EU should have a single foreign policy stance", "The EU should have a single foreign policy stance", 
-		"European integration is a good thing", 
-		"The single European currency (Euro) is a bad thing", 
-		"EU member states should have less veto power", "EU member states should have less veto power", 
-		"In elections to the European Parliament, European citizens should be able to vote for parties or candidates from other member states"
-	],
-	"party_answers": 
-	{
-    "party_names": [
-        "Cs",
-        "Ara Republicas",
-        "PP",
-        "PSOE",
-        "Podemos"
-    ],
-    "questions_OG": [
-        "Las políticas sociales deberían mantenerse aunque eso implique una subida de impuestos",
-        "El estado debería elevar las ayudas económicas a las personas en situación de desempleo",
-        "La Unión Europea debería castigar rigurosamente a los estados miembros que incumplan las reglas de déficit europeo",
-        "Las solicitudes de asilo deberían distribuirse proporcionalmente entre los estados miembros a través de un sistema de reubicación",
-        "Las políticas de control de la inmigración en España deberían ser más restrictivas",
-        "España debería exigir a los inmigrantes no comunitarios (fuera de la UE) la aceptación de nuestra cultura y valores",
-        "La legalización del matrimonio homosexual es algo positivo",
-        "Legalizar el uso personal de drogas blandas sería una medida positiva",
-        "La eutanasia debería ser legal",
-        "Debería reducirse el gasto público para poder bajar los impuestos",
-        "La Unión Europea debería tener sus propios poderes fiscales",
-        "Los beneficios bancarios y del mercado financiero deberían tener impuestos más altos",
-        "Debería promocionarse el transporte público a través de políticas verdes (por ejemplo, más peajes o impuestos a las carreteras)",
-        "Las energías renovables, como la solar o la eólica, deberían promocionarse más a pesar de su mayor coste económico",
-        "Debería restringirse la privacidad personal en internet por motivos de seguridad pública",
-        "Los delincuentes y criminales deberían tener condenas más severas",
-        "La Unión Europea debería reforzar sus políticas de defensa y seguridad",
-        "La Unión Europea debería tener una postura única en materia de política exterior",
-        "La integración europea es algo positivo",
-        "La moneda única europea (Euro) es algo negativo",
-        "Los estados miembros de la Unión Europea deberían tener menos poder de veto",
-        "En las elecciones al Parlamento Europeo, los ciudadanos europeos deberían poder votar a partidos o candidatos de otros estados miembros"
-    ],
-    "questions": [
-        "Social policies should be maintained, even if that means raising taxes",
-        "The state should increase financial support for the unemployed",
-        "The European Union should severely punish member states that do not comply with European deficit rules",
-        "Asylum applications should be distributed proportionally among member states through a relocation system",
-        "Spain's immigration control policies should be more restrictive",
-        "Spain should require non-EU (non-EU) immigrants to accept our culture and values",
-        "The legalisation of same-sex marriage is a good thing",
-        "Legalising the personal use of soft drugs would be a positive step",
-        "Euthanasia should be legal",
-        "Public spending should be reduced so that taxes can be lowered",
-        "The European Union should have its own taxation powers",
-        "Banking and financial market profits should be taxed more heavily",
-        "Public transport should be promoted through green policies (e.g. more road tolls or taxes)",
-        "Renewable energies, such as solar or wind, should be promoted more despite their higher economic cost",
-        "Personal privacy on the internet should be restricted for public safety reasons",
-        "Criminals and criminals should be given harsher sentences",
-        "The European Union should strengthen its defence and security policies",
-        "The EU should have a single foreign policy stance",
-        "European integration is a good thing",
-        "The single European currency (Euro) is a bad thing",
-        "EU member states should have less veto power",
-        "In elections to the European Parliament, European citizens should be able to vote for parties or candidates from other member states"
-    ],
+	"party_full_names" : ["Ciudadanos", "Ara Republicas", "Partido Popolar", "Partido Socialista Obrero Español"], 
+	
+    
     "party_answers": [
         {
             "Question_Number": 1,
@@ -986,5 +885,4 @@
             "Question_Label_OG": "En las elecciones al Parlamento Europeo, los ciudadanos europeos deberían poder votar a partidos o candidatos de otros estados miembros"
         }
     ]
-}
 }
