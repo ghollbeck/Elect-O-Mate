@@ -23,7 +23,6 @@ import metadata
 #TODO: save CHROMA DB
 #TODO: load new sources
 
-countries = ["DE", "FR", "IT", "ES", "HU", "PL", "DK"]
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
@@ -62,7 +61,7 @@ def get_url_text(country: str) -> List[str]:
     return texts
 
 
-def build_text_datastructure() -> Dict:
+def build_url_datastructure(countries: List[str]) -> Dict:
     url_texts = {}
 
     # load all country URLs
@@ -158,7 +157,7 @@ def load_pdfs(country: str):
     
     return texts
 
-def build_pdf_datastructure() -> Dict:
+def build_pdf_datastructure(countries: List[str]) -> Dict:
     pdf_texts = {}
     if (BASE / "cache/pdf_texts_all_countries.pkl").exists():
         with (BASE / "cache/pdf_texts_all_countries.pkl").open("rb") as f:

@@ -34,13 +34,18 @@ import json
 from typing import List
 
 from dotenv import load_dotenv
-import os
-import pickle
+# import os
+# import pickle
 
-import requests
+# import requests
+
+import sources
 
 from pathlib import Path
 BASE = Path(__file__).resolve().parent
+
+countries = ["DE", "FR", "IT", "ES", "HU", "PL", "DK"]
+
 
 app = FastAPI(
     title="LangChain Server",
@@ -57,95 +62,87 @@ app.add_middleware(
 )
 
 
-def load_dotenv_file():
-    
-    load_dotenv('./.env')
-    openai_key = os.getenv("OPENAI_API_KEY")
-    groq_key = os.getenv("GROQ_API_KEY")
 
-load_dotenv_file()
+# def get_urls(filename: str = "./Sources/URLS/bpb_2_Wahlomat.txt") -> List[str]:
+#    with open(filename, "r") as f:
+#        urls = f.readlines()
+#     #remove the newline character
+#    urls = [url.strip() for url in urls]
+#    return urls
 
+# # faulty function test before using the one below
+# def get_urls_from_git(url: str) -> List[str]:
+#     response = requests.get(url)
+#     response.raise_for_status() #Notice bad responses
+#     urls = response.text.splitlines()
+#     return [url.strip() for url in urls]
 
-def get_urls(filename: str = "./Sources/URLS/bpb_2_Wahlomat.txt") -> List[str]:
-   with open(filename, "r") as f:
-       urls = f.readlines()
-    #remove the newline character
-   urls = [url.strip() for url in urls]
-   return urls
+# def load_web():
+#     urls = get_urls()
+#     # urls = get_urls_from_git('https://github.com/ghollbeck/Elect-O-Mate/blob/cfd1bee938d7b0326055f817ced7adf73361c191/Old_Version_Gabor_Not_Used/Sources/URLS/bpb_2_Wahlomat.txt')
+#     loader = WebBaseLoader(urls)
+#     documents = loader.load()
+#     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
+#     texts = text_splitter.split_documents(documents)
+#     return texts
 
-# faulty function test before using the one below
-def get_urls_from_git(url: str) -> List[str]:
-    response = requests.get(url)
-    response.raise_for_status() #Notice bad responses
-    urls = response.text.splitlines()
-    return [url.strip() for url in urls]
-
-def load_web():
-    urls = get_urls()
-    # urls = get_urls_from_git('https://github.com/ghollbeck/Elect-O-Mate/blob/cfd1bee938d7b0326055f817ced7adf73361c191/Old_Version_Gabor_Not_Used/Sources/URLS/bpb_2_Wahlomat.txt')
-    loader = WebBaseLoader(urls)
-    documents = loader.load()
-    text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
-    texts = text_splitter.split_documents(documents)
-    return texts
-
-def get_url_text() -> List[str]:
-    # check if url texts are already in cache
-    if (BASE / "cache/url_texts.pkl").exists():
-        with (BASE / "cache/url_texts.pkl").open("rb") as f:
-            texts = pickle.load(f)
+# def get_url_text() -> List[str]:
+#     # check if url texts are already in cache
+#     if (BASE / "cache/url_texts.pkl").exists():
+#         with (BASE / "cache/url_texts.pkl").open("rb") as f:
+#             texts = pickle.load(f)
         
-    else:
-        texts = load_web()
-        with (BASE / "cache/url_texts.pkl").open("wb") as f:
-            pickle.dump(texts, f)
+#     else:
+#         texts = load_web()
+#         with (BASE / "cache/url_texts.pkl").open("wb") as f:
+#             pickle.dump(texts, f)
         
-    return texts
+#     return texts
 
 
-def get_pdfs():
-    pdfs = []
-    for filename in os.listdir("./Sources/PDFs"):
-        if filename.endswith(".pdf"):
-            pdfs.append(f"./Sources/PDFs/{filename}")
-    return pdfs
+# def get_pdfs():
+#     pdfs = []
+#     for filename in os.listdir("./Sources/PDFs"):
+#         if filename.endswith(".pdf"):
+#             pdfs.append(f"./Sources/PDFs/{filename}")
+#     return pdfs
 
-def load_pdfs():
-    doc_file = BASE / "cache/pdf_documents.pkl"
-    text_file = BASE / "cache/pdf_texts.pkl"
-    if doc_file.exists():
-        with doc_file.open("rb") as f:
-            documents = pickle.load(f)
-    else:
-        pdfs = get_pdfs()
-        documents = []
-        for file in pdfs:
-            loader = PyPDFLoader(file)
-            documents.append(loader.load())
-        with doc_file.open("wb") as f:
-            pickle.dump(documents, f)
+# def load_pdfs():
+#     doc_file = BASE / "cache/pdf_documents.pkl"
+#     text_file = BASE / "cache/pdf_texts.pkl"
+#     if doc_file.exists():
+#         with doc_file.open("rb") as f:
+#             documents = pickle.load(f)
+#     else:
+#         pdfs = get_pdfs()
+#         documents = []
+#         for file in pdfs:
+#             loader = PyPDFLoader(file)
+#             documents.append(loader.load())
+#         with doc_file.open("wb") as f:
+#             pickle.dump(documents, f)
     
-    # iterate through pages and add metadata
-    for document in documents:
-        document_file_name = document[0].metadata["source"]
-        metadata_file_name = document_file_name.replace(".pdf", ".meta.json")
-        with open (metadata_file_name, "r") as f:
-            metadata = json.load(f)
-        for page in document:
-            page.metadata = {**page.metadata, **metadata}
-            page.metadata["source"] = page.metadata["url"]
+#     # iterate through pages and add metadata
+#     for document in documents:
+#         document_file_name = document[0].metadata["source"]
+#         metadata_file_name = document_file_name.replace(".pdf", ".meta.json")
+#         with open (metadata_file_name, "r") as f:
+#             metadata = json.load(f)
+#         for page in document:
+#             page.metadata = {**page.metadata, **metadata}
+#             page.metadata["source"] = page.metadata["url"]
 
-    documents = [page for pdf in documents for page in pdf]
+#     documents = [page for pdf in documents for page in pdf]
 
-    if text_file.exists():
-        with text_file.open("rb") as f:
-            texts = pickle.load(f)
-    else:
-        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
-        texts = text_splitter.split_documents(documents)
-        with text_file.open("wb") as f:
-            pickle.dump(texts, f)
-    return texts
+#     if text_file.exists():
+#         with text_file.open("rb") as f:
+#             texts = pickle.load(f)
+#     else:
+#         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
+#         texts = text_splitter.split_documents(documents)
+#         with text_file.open("wb") as f:
+#             pickle.dump(texts, f)
+#     return texts
 
 
 template = """You are a helpful assistant for the EU-elections. Never provide an opinion, explain different perspectives instead.
@@ -185,85 +182,98 @@ cached_embedder_openai = CacheBackedEmbeddings.from_bytes_store(embeddings_opena
 
 
 print("getting website content")
-url_texts = get_url_text()
+url_texts_by_country = sources.build_url_datastructure(countries)
 
 print("getting pdf content")
-pdf_texts = load_pdfs()
+pdf_texts_by_country = sources.build_pdf_datastructure(countries)
 
 
 print("building vector db for website content")
 
-url_db_openai = Chroma.from_documents(url_texts, cached_embedder_openai)
-pdf_db_openai = Chroma.from_documents(pdf_texts, cached_embedder_openai)
 
-metadata_field_info = [
-    AttributeInfo(
-        name="party_name",
-        description="The abbreviated name of the political party",
-        type="string",
-    ),
-    AttributeInfo(
-        name="party_full_name",
-        description="The full name of the party",
-        type="integer",
-    ),
-    AttributeInfo(
-        name="date",
-        description="The date when the source was embedded",
-        type="string",
-    ),
-    AttributeInfo(
-        name="country",
-        description="The country the source is from can also be EU if it is a EU party",
-        type="string",
-    ),
-    AttributeInfo(
-        name="language",
-        description="The language of the source",
-        type="string",
-    ),
-    AttributeInfo(
-        name="url",
-        description="The url of the source",
-        type="string",
-    ),
+def setup_endpoints():
+
+    pdf_metadata_field_info = [
         AttributeInfo(
-        name="tags",
-        description="tags associated with the source",
-        type="list",
-    ),
-]
+            name="party_shorthand",
+            description="The abbreviated name of the political party",
+            type="string",
+        ),
+        AttributeInfo(
+            name="party_name",
+            description="The full name of the party",
+            type="integer",
+        ),
+        AttributeInfo(
+            name="date",
+            description="The date when the source was embedded",
+            type="string",
+        ),
+        AttributeInfo(
+            name="country",
+            description="The country the source is from can also be EU if it is a EU party",
+            type="string",
+        ),
+        AttributeInfo(
+            name="url",
+            description="The url of the source",
+            type="string",
+        ),
+            AttributeInfo(
+            name="tags",
+            description="tags associated with the source",
+            type="list",
+        ),
+    ]
 
-metadata_retreiver = SelfQueryRetriever.from_llm(
-    openai,
-    pdf_db_openai,
-    metadata_field_info=metadata_field_info,
-    document_contents="Political party programmes"
-)
+
+    url_db = {}
+    pdf_db = {}
+    self_retrievers = {}
+    ensemble_retreivers = {}
+    chains = {}
+
+    for country in countries:
+        url_db[country] = Chroma.from_documents(url_texts_by_country[country], cached_embedder_openai)
+        pdf_db[country] = Chroma.from_documents(pdf_texts_by_country[country], cached_embedder_openai)
+
+        self_retrievers[country] = SelfQueryRetriever.from_llm(
+            openai,
+            pdf_db[country],
+            metadata_field_info=pdf_metadata_field_info,
+            document_contents="Political party programmes"
+        )
+
+        ensemble_retreivers[country] = EnsembleRetriever(retrievers=[url_db[country].as_retriever(), self_retrievers[country]], weights=[0.5, 0.5])
 
 
-retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), metadata_retreiver], weights=[0.5, 0.5])
 
-chain_openai = (
-    {"context": retriever_openai , "question": RunnablePassthrough()}
-    | prompt  
-    | openai
-    | StrOutputParser()
-)
+        chains[country] = (
+            {"context": ensemble_retreivers[country] , "question": RunnablePassthrough()}
+            | prompt  
+            | openai
+            | StrOutputParser()
+        )
 
+        add_routes(
+            app,
+            chains[country],
+            path=f"/{country}",
+        )
+
+    return chains, ensemble_retreivers
+
+
+_,retreivers = setup_endpoints()
 
 voice_chain_openai = (
-    {"context": retriever_openai , "question": RunnablePassthrough()}
+    {"context": retreivers["DE"] , "question": RunnablePassthrough()}
     | voice_prompt
     | openai
     | StrOutputParser()
 )
 
-add_routes(
-    app,
-    chain_openai,
-    path="/openai",
-)
+
 
 
 # for voice, we need a streaming endpoint
