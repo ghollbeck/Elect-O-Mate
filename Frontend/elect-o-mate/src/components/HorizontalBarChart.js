@@ -97,7 +97,7 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
   };
 
   // Calculate height dynamically
-  const chartHeight = `${27 * data.length}px`;
+  const chartHeight = `${Math.max(500, 27 * data.length)}px`;
 
   const chartStyle = {
     height: chartHeight,

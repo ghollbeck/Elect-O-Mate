@@ -3,7 +3,7 @@
   "label": "Deutsch",
   "countryCode": "DE",
 
-  "followup": "Fragen?",
+  "followup": "Chatte mit mir!",
   "subheading": "Frag mich etwas über die EU-Wahlen!",
   "start_now": "Oder beginne jetzt das Quiz",
   "start_button": "Jetzt starten!",
@@ -40,7 +40,7 @@
   "party_position_request_2": " mit ",
   "party_position_request_3": " bei folgender Frage ab?",
   "how_it_works": "So funktioniert's",
-  "how_it_works_front": "Jede karte hat eine Frage. Wenn Sie mindestens 15 Fragen beantwortet haben, können Sie auf der letzten Karte die Fragen abgeben und Ihr Ergebnis sehen. Klicke das Symbol oben rechts um die Karte zu wenden.",
+  "how_it_works_front": "Jede Karte hat eine Aussage und zudem drei Auswahlmöglichkeiten, wobei Sie die auswählen sollen, die Ihrer Meinung zu der Aussage am ehesten entspricht. Wenn Ihnen ein Thema besonders wichtig ist, können Sie mit der Auswahl von x2 die Frage doppelt gewichten. Nachdem Sie alle Fragen beantwortet haben, können Sie auf der letzten Karte die Fragen abgeben und Ihr Ergebnis sehen. Um die Karten zu wenden und weitere Informationen zu den Statements zu erhalten, können Sie auf das Symbol oben rechts klicken. Fall Sie personalisierte Fragen haben, können Sie im Textfeld ihre Frage stellen und mit Elect-O-Mate chatten.",
   "how_it_works_back": "Auf der Rückseite der Karten findest du Fakten bezüglich der Frage.",
   "how_graph_works_info": "So können Sie den Graph Verwenden",
   "how_graph_works_title": "Auswertung",
