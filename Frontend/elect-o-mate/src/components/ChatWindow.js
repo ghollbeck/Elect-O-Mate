@@ -16,11 +16,10 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
 
   return (
     <div
-      className='relative flex flex-col overflow-y-auto border-none shadow-xl  bg-gradient-to-r from-violet-200 to-pink-200 h-[80dvh]  text-black font-light'
+      className='relative flex flex-col overflow-y-auto border-none shadow-xl  bg-gradient-to-r from-violet-200 to-pink-200 h-[80dvh]  text-black font-light rounded-3xl'
       style={{
         WebkitOverflowScrolling: 'touch',
         scrollbarWidth: 'thin',
-        borderRadius: '10px',
       }}
     >
       <div className='p-4 flex-grow overflow-y-auto' ref={chatContentRef}>
@@ -61,7 +60,7 @@ const ChatWindow = ({ messages, scrollToQuestionnaire }) => {
         ))}
       </div>
       <button
-        className='absolute px-2 py-1 text-white rounded-full font-thin transition duration-300 ease-in-out transform hover:scale-110 text-xl right-1 bottom-11  bg-black bg-opacity-20 backdrop-blur-lg'
+        className='absolute px-2 py-1 text-white rounded-full font-thin transition duration-300 ease-in-out transform hover:scale-110 text-xl right-1 bottom-11  bg-black bg-opacity-20 backdrop-blur-lg z-30'
         onClick={scrollToQuestionnaire}
       >
         <ArrowUpwardIcon />

@@ -16,7 +16,7 @@ const QuestionCard = ({ length, index, question }) => {
     <div>
       <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
         {/* Front of the card */}
-        <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5'>
+        <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-3xl shadow-lg shadow-gray-900 bg-black mb-5'>
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
               {index}/{length - 3} {t(question.title)}
@@ -31,7 +31,7 @@ const QuestionCard = ({ length, index, question }) => {
         </div>
 
         {/* Back of the card */}
-        <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5'>
+        <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-3xl shadow-lg shadow-gray-900 bg-black mb-5'>
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
               {index}/{length - 3} {t(question.title)}

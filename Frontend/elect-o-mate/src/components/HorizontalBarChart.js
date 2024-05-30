@@ -11,6 +11,7 @@ import {
   Legend,
 } from 'chart.js';
 import 'chartjs-plugin-datalabels'; // Import the datalabels plugin
+import { ClassNames } from '@emotion/react';
 
 ChartJS.register(
   CategoryScale,
@@ -33,8 +34,8 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
       {
         label: '%',
         data: percentages,
-        backgroundColor: 'rgba(75, 192, 192, 0.1)',
-        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(251, 207, 232, 0.2)',
+        borderColor: '#f7d0eb',
         borderWidth: 1,
         borderRadius: 10,
       },
@@ -96,7 +97,7 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
   };
 
   // Calculate height dynamically
-  const chartHeight = `${27 * data.length}px`;
+  const chartHeight = `${Math.max(500, 27 * data.length)}px`;
 
   const chartStyle = {
     height: chartHeight,

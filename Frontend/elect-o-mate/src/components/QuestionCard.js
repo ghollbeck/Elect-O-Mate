@@ -1,7 +1,7 @@
 import ReactCardFlip from 'react-card-flip';
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdHelpOutline, MdLoop } from 'react-icons/md';
+import { MdLoop } from 'react-icons/md';
 import TextInput from './TextInput';
 import HelpCard from './HelpCard';
 import InfoIcon from '@mui/icons-material/Info';
@@ -63,7 +63,7 @@ const QuestionCard = ({
   }
   if (question.text === 'submitcard') {
     return (
-      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5'>
+      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-3xl shadow-lg shadow-gray-900 bg-black mb-5'>
         <div className='flex flex-col items-center justify-center h-full pt-2 pl-2 flex-shrink-0'>
           <h2 className='text-sm md:text-lg font-semibold text-center overflow-hidden w-full break-words leading-tight p-2 md:p-5'>
             {t('submit_text')}
@@ -88,7 +88,7 @@ const QuestionCard = ({
         <div
           className={`flex flex-col ${
             partyAnswer ? 'h-[45dvh]' : 'h-[70dvh]'
-          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5`}
+          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-3xl shadow-lg shadow-gray-900 bg-black mb-5`}
         >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>
@@ -105,8 +105,20 @@ const QuestionCard = ({
             </h2>
           </div>
 
-          <div className='flex justify-center items-end flex-shrink-0 pb-2 md:pb-8'>
-            <div className='flex space-x-1 md:space-x-4'>
+          <div className='flex justify-center items-end flex-shrink-0 pb-2 md:pb-8 max-w-full'>
+            <div className='flex space-x-2 sm:space-x-4 max-w-full text-xl'>
+              <button
+                className={`border w-full h-8 md:h-10 ${
+                  wheighted
+                    ? 'text-black bg-blue-100'
+                    : pressable
+                    ? 'md:hover:bg-blue-100 md:hover:text-black'
+                    : ''
+                } font-bold  md:py-2 px-2 md:px-4 rounded-xl md:absolute left-0 md:left-2 md:w-14 md:rounded-full md:bottom-16`}
+                onClick={() => (pressable ? handleWheight(!wheighted) : null)}
+              >
+                x2
+              </button>
               <button
                 className={`border w-full h-8 md:h-10 ${
                   answer === 1
@@ -114,7 +126,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold py-1 md:py-2 px-4 rounded-xl`}
+                } font-bold  md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(1) : null)}
               >
                 {t('agree_button')}
@@ -126,7 +138,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold py-1 md:py-2 px-4 rounded-xl`}
+                } font-bold  md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(0) : null)}
               >
                 {t('neutral_button')}
@@ -138,28 +150,16 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold py-1 md:py-2 px-4 rounded-xl`}
+                } font-bold md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(-1) : null)}
               >
                 {t('disagree_button')}
-              </button>
-              <button
-                className={`border w-8 h-8 md:w-10 md:h-10 absolute left-0 bottom-14 ${
-                  wheighted
-                    ? 'text-black bg-blue-100'
-                    : pressable
-                    ? 'hover:bg-blue-100 hover:text-black'
-                    : ''
-                } font-bold py-1 md:py-2 px-4 rounded-full flex items-center justify-center`}
-                onClick={() => (pressable ? handleWheight(!wheighted) : null)}
-              >
-                x2
               </button>
             </div>
           </div>
 
           <div className='flex flex-col justify-end text-gray-400 hover:text-gray-200 w-full flex-shrink-0 text-base'>
-            <div className='block md:hidden text-white'>
+            <div className='block md:hidden text-white mt-10'>
               <TextInput
                 handleSendMessage={handleSendMessage}
                 setIsSending={setIsSending}
@@ -169,7 +169,7 @@ const QuestionCard = ({
                 question={question.text}
               />
             </div>
-            <div className='hidden md:block'>
+            <div className='hidden md:block mt-5'>
               <TextInput
                 handleSendMessage={handleSendMessage}
                 setIsSending={setIsSending}
@@ -186,7 +186,7 @@ const QuestionCard = ({
         <div
           className={`flex flex-col ${
             partyAnswer ? 'h-[45dvh]' : 'h-[70dvh]'
-          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-xl shadow-lg shadow-gray-900 bg-black mb-5`}
+          } md:h-80 w-[75vw] lg:w-[800px] p-1 text-white rounded-3xl shadow-lg shadow-gray-900 bg-black mb-5`}
         >
           <div className='flex items-start h-auto pt-2 pl-2 flex-shrink-0'>
             <h2 className='text-xs md:text-xl font-thin break-words'>

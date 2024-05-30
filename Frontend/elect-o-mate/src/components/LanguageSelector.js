@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import LanguageIcon from '@mui/icons-material/Translate';
 import ReactCountryFlag from 'react-country-flag';
 import options from '../data/languages.json';
 import i18n from '../i18n';
+import FlagWithEnglish from './FlagWithEnglish';
 
 function LanguageSelector({ changeLanguage }) {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -36,44 +36,61 @@ function LanguageSelector({ changeLanguage }) {
     changeLanguage(value);
   };
 
+  const isLastTwoCharsEn = (value) => {
+    return value.slice(-2) === 'en';
+  };
+
   return (
     <div className='m-2 relative'>
       <button
         ref={buttonRef}
-        className='flex items-center hover:scale-125 transition-transform duration-200 absolute right-4 top-4 flex-grow border-white'
+        className='flex items-center hover:scale-125 transition-transform duration-200 absolute right-4 top-4 flex-grow'
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
-        <ReactCountryFlag
-          countryCode={i18n.language.slice(0, 2).toUpperCase()}
-          svg
-          style={{
-            width: '30px',
-            height: '30px',
-          }}
-        />
+        {isLastTwoCharsEn(i18n.language) ? (
+          <FlagWithEnglish
+            countryCode={i18n.language.slice(0, 2).toUpperCase()}
+          />
+        ) : (
+          <ReactCountryFlag
+            countryCode={i18n.language.slice(0, 2).toUpperCase()}
+            svg
+            style={{
+              width: '32px',
+              height: 'auto',
+              marginRight: '12px',
+              borderRadius: '5px',
+            }}
+          />
+        )}
       </button>
       {dropdownVisible && (
         <div
           ref={dropdownRef}
-          className='absolute right-0 mt-16 p-2 text-white border rounded shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap bg-black bg-opacity-70 backdrop-blur-sm'
+          className='absolute right-0 mt-16 p-2 text-white border rounded-xl shadow-lg z-20 max-h-96 overflow-y-auto whitespace-nowrap bg-black bg-opacity-70 backdrop-blur-sm'
           style={{ minWidth: 'fit-content' }}
         >
           {options.map((option) => (
             <button
               key={option.value}
               onClick={() => handleLanguageChange(option.value)}
-              className='flex items-center w-full text-left hover:bg-gray-200 hover:text-black cursor-pointer'
+              className='flex items-center w-full text-left hover:bg-gray-200 hover:text-black cursor-pointer px-[12px] py-3 md:py-1'
             >
-              <ReactCountryFlag
-                countryCode={option.countryCode}
-                svg
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  marginRight: '8px',
-                }}
-                title={option.label}
-              />
+              {isLastTwoCharsEn(option.value) ? (
+                <FlagWithEnglish countryCode={option.countryCode} />
+              ) : (
+                <ReactCountryFlag
+                  countryCode={option.countryCode}
+                  svg
+                  style={{
+                    width: '32px',
+                    height: 'auto',
+                    marginRight: '12px',
+                    borderRadius: '5px',
+                  }}
+                />
+              )}
+
               {option.label}
             </button>
           ))}

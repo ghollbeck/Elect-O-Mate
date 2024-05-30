@@ -1,19 +1,30 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useLocation,
+} from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './index.css';
 import Footer from './components/Footer';
 import Chat from './components/Chat';
 import Top from './components/Top';
 import OpenSource from './components/OpenSource';
-import Spline from './components/Spline';
 import Questionnaire from './components/Questionnaire';
 import LanguageSelector from './components/LanguageSelector';
 import './i18n';
-import OrangeCircle from './components/OrangeCircle';
 import HorizontalBarChart from './components/HorizontalBarChart';
 import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
-import TextInput from './components/TextInput';
+import { initGA, logPageView } from './analytics';
+
+function usePageViews() {
+  let location = useLocation();
+  useEffect(() => {
+    logPageView();
+  }, [location]);
+}
 
 function App() {
   const [party, setParty] = useState(null);
@@ -40,6 +51,12 @@ function App() {
     const str = instructions + resultString;
     sendMessageToAPI(str, abortController);
   };
+
+  useEffect(() => {
+    initGA();
+    logPageView();
+    window.addEventListener('popstate', logPageView);
+  }, []);
 
   const formatMessage = (question, message) => {
     if (question !== '') {
@@ -83,7 +100,7 @@ function App() {
       // Perform API request with streaming using Fetch API and AbortController
       const response = await fetch(
         //process.env.REACT_APP_BACKEND_URL + '/openai/stream',
-        'http://10.5.176.177:8000/openai/stream',
+        'http://10.5.187.62:8000/openai/stream',
         {
           method: 'POST',
           headers: {
@@ -324,111 +341,117 @@ function App() {
   const [questionnaireKey, setQuestionnaireKey] = useState(0);
 
   return (
-    <div className='flex flex-col relative overflow-hidden bg-black '>
-      <LanguageSelector changeLanguage={changeLanguage} />
+    <Router>
+      <usePageViews />
+      <div className='flex flex-col relative overflow-hidden bg-black '>
+        <LanguageSelector changeLanguage={changeLanguage} />
 
-      <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
-        <div className='w-full z-10 pt-0 md:pt-25 flex justify-center'>
-          <Top
-            onButtonClick={scrollToQuestionnaire}
-            handleSendMessage={handleSendMessage}
-            isSending={isSending}
-            scrollToChat={scrollToChatslow}
-            setIsSending={setIsSending}
-          />
+        <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
+          <div className='w-full md:w-2/3 z-10 pt-0 md:pt-25 flex justify-center'>
+            <Top
+              onButtonClick={scrollToQuestionnaire}
+              handleSendMessage={handleSendMessage}
+              isSending={isSending}
+              scrollToChat={scrollToChatslow}
+              setIsSending={setIsSending}
+            />
+          </div>
         </div>
-      </div>
 
-      <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
-        <Questionnaire
-          key={questionnaireKey}
-          scrollToChat={scrollToChat}
-          handleSendMessage={handleSendMessage}
-          scrollToQuestionnaire={scrollToQuestionnaire}
-          isSending={isSending}
-          smoothScrollTo={smoothScrollTo}
-          setIsSending={setIsSending}
-          questionnaireAnswers={questionnaireAnswers}
-          scrollToResult={scrollToResult}
-          party={party}
-          country={i18n.language.slice(0, 2)}
-        />
-      </div>
-      <div ref={toChat} className='flex justify-center relative mt-64'>
-        <div className='w-full mx-2 md:w-1/2 '>
-          <Chat
+        <div ref={toQuestionnaire} className='relative mb-10 z-10 mt-64'>
+          <Questionnaire
+            key={questionnaireKey}
+            scrollToChat={scrollToChat}
+            handleSendMessage={handleSendMessage}
             scrollToQuestionnaire={scrollToQuestionnaire}
-            scrolltoChat={scrollToChat}
-            messages={messages}
-            handleSendMessage={handleSendMessage}
             isSending={isSending}
+            smoothScrollTo={smoothScrollTo}
             setIsSending={setIsSending}
+            questionnaireAnswers={questionnaireAnswers}
+            scrollToResult={scrollToResult}
+            party={party}
+            country={i18n.language.slice(0, 2)}
           />
         </div>
-      </div>
-      <div ref={toResult} className='flex justify-center mt-24'>
-        {data !== null ? (
-          <div className='w-full h-auto mx-2 md:w-2/3 relative'>
-            {isPopupOpen ? (
-              <>
-                <CloseIcon
-                  onClick={togglePopup}
-                  className='absolute top-0 right-0 m-2 text-white scale-110  z-10 cursor-pointer'
-                />
-                <div className='absolute inset-0 bg-gray-700/90 rounded-xl flex items-center justify-center text-white'>
-                  <div className='flex flex-col  p-4 w-full h-full'>
-                    <div className='flex-shrink-0 flex items-center'>
-                      {t('how_graph_works_info')}
-                    </div>
-                    <div className='flex-grow flex flex-col items-center text-center justify-center p-20'>
-                      <h1 className=' text-xl font-bold m-5'>
-                        {t('how_graph_works_title')}
-                      </h1>
-                      <p>{t('how_graph_works_content')}</p>
+        <div ref={toChat} className='flex justify-center relative mt-64'>
+          <div className='w-full mx-2 lg:w-1/2 '>
+            <Chat
+              scrollToQuestionnaire={scrollToQuestionnaire}
+              scrolltoChat={scrollToChat}
+              messages={messages}
+              handleSendMessage={handleSendMessage}
+              isSending={isSending}
+              setIsSending={setIsSending}
+            />
+          </div>
+        </div>
+        <div ref={toResult} className='flex justify-center mt-24'>
+          {data !== null ? (
+            <div className='w-full h-auto mx-2 md:w-2/3 relative'>
+              {isPopupOpen ? (
+                <>
+                  <CloseIcon
+                    onClick={togglePopup}
+                    className='absolute top-0 right-0 m-2 text-white scale-110  z-10 cursor-pointer'
+                  />
+                  <div
+                    onClick={togglePopup}
+                    className='absolute inset-0  bg-gradient-to-r from-violet-200 to-pink-200  rounded-xl flex items-center justify-center text-black'
+                  >
+                    <div className='flex flex-col  p-4 w-full h-full'>
+                      <div className='flex-shrink-0 flex items-center'>
+                        {t('how_graph_works_info')}
+                      </div>
+                      <div className='flex-grow flex flex-col items-center text-center justify-center p-20'>
+                        <h1 className=' text-xl font-bold m-5'>
+                          {t('how_graph_works_title')}
+                        </h1>
+                        <p>{t('how_graph_works_content')}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <HorizontalBarChart
-                  data={data}
-                  InformationRequest={InformationRequest}
-                  setParty={setParty}
-                />
-              </>
-            ) : (
-              <>
-                <InfoIcon
-                  onClick={togglePopup}
-                  className='absolute top-0 right-0 m-2 text-white scale-110 cursor-pointer'
-                />
+                  <HorizontalBarChart
+                    data={data}
+                    InformationRequest={InformationRequest}
+                    setParty={setParty}
+                  />
+                </>
+              ) : (
+                <>
+                  <InfoIcon
+                    onClick={togglePopup}
+                    className='absolute top-0 right-0 m-2 text-white scale-110 cursor-pointer'
+                  />
 
-                <HorizontalBarChart
-                  data={data}
-                  InformationRequest={InformationRequest}
-                  setParty={setParty}
-                />
-              </>
-            )}
+                  <HorizontalBarChart
+                    data={data}
+                    InformationRequest={InformationRequest}
+                    setParty={setParty}
+                  />
+                </>
+              )}
+            </div>
+          ) : (
+            ''
+          )}
+        </div>
+
+        <div className='relative mt-72'>
+          <div
+            className='absolute top-0 left-0 w-full  bg-gradient-to-r from-violet-200 to-pink-200 transform skew-y-3 h-100'
+            style={{
+              height: '110%',
+            }}
+          />
+          <div className='container mx-auto relative z-10 w-full md:w-1/2'>
+            <OpenSource />
           </div>
-        ) : (
-          ''
-        )}
-      </div>
-
-      <div className='relative mt-72'>
-        <div
-          className='absolute top-0 left-0 w-full  bg-gradient-to-r from-violet-200 to-pink-200 transform skew-y-3 h-100'
-          style={{
-            height: '110%',
-          }}
-        />
-        <div className='container mx-auto relative z-10 w-full md:w-1/2'>
-          <OpenSource />
+        </div>
+        <div className='w-full'>
+          <Footer />
         </div>
       </div>
-      <div className='w-full'>
-        <Footer />
-      </div>
-    </div>
+    </Router>
   );
 }
 
