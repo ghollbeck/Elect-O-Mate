@@ -47,15 +47,22 @@ function LanguageSelector({ changeLanguage }) {
         className='flex items-center hover:scale-125 transition-transform duration-200 absolute right-4 top-4 flex-grow'
         onClick={() => setDropdownVisible(!dropdownVisible)}
       >
-        <ReactCountryFlag
-          countryCode={i18n.language.slice(0, 2).toUpperCase()}
-          svg
-          style={{
-            width: '30px',
-            height: 'auto',
-            borderRadius: '5px',
-          }}
-        />
+        {isLastTwoCharsEn(i18n.language) ? (
+          <FlagWithEnglish
+            countryCode={i18n.language.slice(0, 2).toUpperCase()}
+          />
+        ) : (
+          <ReactCountryFlag
+            countryCode={i18n.language.slice(0, 2).toUpperCase()}
+            svg
+            style={{
+              width: '32px',
+              height: 'auto',
+              marginRight: '12px',
+              borderRadius: '5px',
+            }}
+          />
+        )}
       </button>
       {dropdownVisible && (
         <div
