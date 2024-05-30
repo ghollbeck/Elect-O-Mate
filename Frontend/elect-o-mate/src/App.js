@@ -30,9 +30,11 @@ function App() {
   const [party, setParty] = useState(null);
   const [data, setData] = useState(null);
   const { t, i18n } = useTranslation();
+
   const [messages, setMessages] = useState([
     { text: t('bot_greeting'), isUser: false },
   ]);
+
   const [isSending, setIsSending] = useState(false);
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
@@ -242,6 +244,12 @@ function App() {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    setMessages((prevMessages) => {
+      // Update only the first message
+      const updatedMessages = [...prevMessages];
+      updatedMessages[0] = { ...updatedMessages[0], text: t('bot_greeting') };
+      return updatedMessages;
+    });
   };
 
   function getLanguageNameByCode(languageCode) {
