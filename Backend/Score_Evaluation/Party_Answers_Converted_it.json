@@ -12,6 +12,19 @@
         "Movimento 5 Stelle",
         "Lega Salvini Premier"
     ],
+    "party_full_names": [
+        "Alternativa Popolare",
+        "Partito Democratico",
+        "Pace, Terra, Dignit'e0",
+        "Azione-Siamo Europei",
+        "Democrazia Sovrana Popolare",
+        "Forza Italia-Noi Moderati",
+        "Stati Uniti d'Europa",
+        "Fratelli d'Italia",
+        "Alleanza Verdi e Sinistra",
+        "Movimento 5 Stelle",
+        "Lega Salvini Premier"
+    ],
     "party_answers": [
         {
             "Question_Number": 1,
