@@ -39,6 +39,7 @@ function LanguageSelector({ changeLanguage }) {
   const isLastTwoCharsEn = (value) => {
     return value.slice(-2) === 'en';
   };
+
   const { t, i18n } = useTranslation();
 
   return (

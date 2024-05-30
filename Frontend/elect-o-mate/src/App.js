@@ -19,17 +19,11 @@ import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
 import { initGA, logPageView } from './analytics';
 
-function usePageViews() {
-  let location = useLocation();
-  useEffect(() => {
-    logPageView();
-  }, [location]);
-}
-
 function App() {
+  const { t, i18n } = useTranslation();
+
   const [party, setParty] = useState(null);
   const [data, setData] = useState(null);
-  const { t, i18n } = useTranslation();
 
   const [messages, setMessages] = useState([
     { text: t('bot_greeting'), isUser: false },
