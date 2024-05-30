@@ -78,7 +78,7 @@ def evaluate_answers(data_Party, data_User):
 
     #normalizong from the sum to a percentage, 76 is the max number one can get 
     #with num_question questions, 2*counter is the extra amount point one can get with wheights
-    column_sums = column_sums/(76 + 2*counter_wheighted - 2*counter_skipped) * 100
+    column_sums = column_sums/(num_questions*2 + 2*counter_wheighted - 2*counter_skipped) * 100
     column_sums = [round(column_sums[i], 1) for i in range(len(column_sums))]
 
 
