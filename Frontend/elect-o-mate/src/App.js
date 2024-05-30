@@ -18,9 +18,24 @@ import HorizontalBarChart from './components/HorizontalBarChart';
 import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
 import { initGA, logPageView } from './analytics';
+import Cookies from 'js-cookie';
 
 function App() {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = Cookies.get('languageApp');
+
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage.toLowerCase());
+    } else {
+      Cookies.set('languageApp', i18n.language.toLowerCase(), { expires: 7 });
+    }
+  }, [i18n]);
+
+  useEffect(() => {
+    Cookies.set('languageApp', i18n.language.toLowerCase(), { expires: 7 });
+  }, [i18n.language]);
 
   const [party, setParty] = useState(null);
   const [data, setData] = useState(null);
@@ -37,7 +52,6 @@ function App() {
   const questionnaireAnswers = (data, abortController) => {
     const lang = getLanguageNameByCode(i18n.language);
     const result = data;
-    console.warn(lang);
     setData(data);
     const instructions =
       'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results. ANSWER in ' +
@@ -278,6 +292,7 @@ function App() {
   }
 
   const getUserLanguageFromIP = useCallback(async () => {
+    console.warn('IP');
     const countryLanguageMap = {
       AT: 'atde', // Austria - German
       BE: 'benl', // Belgium - Dutch
@@ -319,7 +334,7 @@ function App() {
     }
   }, []);
 
-  useEffect(() => {
+  /*  useEffect(() => {
     const fetchUserLanguageAndSetLanguage = async () => {
       try {
         const userLanguage = await getUserLanguageFromIP(); // Ensure getUserLanguageFromIP is called
@@ -331,6 +346,22 @@ function App() {
     };
 
     fetchUserLanguageAndSetLanguage();
+  }, [i18n]); */
+
+  useEffect(() => {
+    const checkAndSetLanguage = async () => {
+      const savedLanguage = Cookies.get('languageApp');
+
+      if (savedLanguage) {
+        i18n.changeLanguage(savedLanguage.toLowerCase());
+      } else {
+        const userLanguage = await getUserLanguageFromIP();
+        i18n.changeLanguage(userLanguage.toLowerCase());
+        Cookies.set('languageApp', userLanguage.toLowerCase(), { expires: 7 });
+      }
+    };
+
+    checkAndSetLanguage();
   }, [i18n]);
   // Include i18n in the dependency array`
 

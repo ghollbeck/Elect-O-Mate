@@ -24,6 +24,7 @@ const Questionnaire = ({
   const [partyanswers, setPartyAnswers] = useState([]);
   const containerRef = useRef(null);
   const isButtonScroll = useRef(false); // Track button clicks
+
   const [answers, setAnswers] = useState(
     Array(parseInt(t('0')) + 4).fill({
       answer: null,
