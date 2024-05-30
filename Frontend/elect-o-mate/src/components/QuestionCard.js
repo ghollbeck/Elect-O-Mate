@@ -1,7 +1,7 @@
 import ReactCardFlip from 'react-card-flip';
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdHelpOutline, MdLoop } from 'react-icons/md';
+import { MdLoop } from 'react-icons/md';
 import TextInput from './TextInput';
 import HelpCard from './HelpCard';
 import InfoIcon from '@mui/icons-material/Info';
@@ -106,7 +106,7 @@ const QuestionCard = ({
           </div>
 
           <div className='flex justify-center items-end flex-shrink-0 pb-2 md:pb-8 max-w-full'>
-            <div className='flex space-x-1 md:space-x-4 max-w-full'>
+            <div className='flex space-x-2 sm:space-x-4 max-w-full text-xl'>
               <button
                 className={`border w-full h-8 md:h-10 ${
                   wheighted
@@ -114,7 +114,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'md:hover:bg-blue-100 md:hover:text-black'
                     : ''
-                } font-bold py-1 md:py-2 px-4 rounded-xl md:absolute left-0 md:left-2 md:w-14 md:rounded-full md:bottom-16`}
+                } font-bold  md:py-2 px-2 md:px-4 rounded-xl md:absolute left-0 md:left-2 md:w-14 md:rounded-full md:bottom-16`}
                 onClick={() => (pressable ? handleWheight(!wheighted) : null)}
               >
                 x2
@@ -126,7 +126,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold py-1 md:py-2 px-4 rounded-xl`}
+                } font-bold  md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(1) : null)}
               >
                 {t('agree_button')}
@@ -138,7 +138,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold py-1 md:py-2 px-4 rounded-xl`}
+                } font-bold  md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(0) : null)}
               >
                 {t('neutral_button')}
@@ -150,7 +150,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold py-1 md:py-2 px-4 rounded-xl`}
+                } font-bold md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(-1) : null)}
               >
                 {t('disagree_button')}
