@@ -33,11 +33,18 @@ BASE = Path(__file__).resolve().parent
 
 
 def get_urls_from_file(filename: str) -> List[str]:
-   with open(filename, "r") as f:
-       urls = f.readlines()
+    with open(filename, "r") as f:
+        urls = f.readlines()
     #remove the newline character
-   urls = [url.strip() for url in urls]
-   return urls
+    urls = [url.strip() for url in urls]
+
+    final_urls = []
+    # check if url is valid
+    for url in urls:
+        if check_url(url) == 200:
+            final_urls.append(url)
+
+    return final_urls
 
 def load_web(country: str):
     folder = BASE / f"Sources/ActiveSources/{country}"
@@ -57,7 +64,7 @@ def get_url_text(country: str) -> List[str]:
         
     else:
         texts = load_web(country)
-        with (BASE / "cache/url_{country}.pkl").open("wb") as f:
+        with (BASE / f"cache/url_{country}.pkl").open("wb") as f:
             pickle.dump(texts, f)
         
     return texts
