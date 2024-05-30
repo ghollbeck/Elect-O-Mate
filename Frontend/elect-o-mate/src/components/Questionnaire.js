@@ -3,8 +3,8 @@ import QuestionCard from './QuestionCard';
 // import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
-import EUstars from '../pictures/EUstars.png';
 import ProgressBar from './ProgressBar';
+import Cookies from 'js-cookie';
 
 const Questionnaire = ({
   key,
@@ -32,6 +32,19 @@ const Questionnaire = ({
   );
 
   const [questionCount, setQuestionCount] = useState(0);
+
+  useEffect(() => {
+    const savedAnswers = Cookies.get('questionnaireAnswers');
+    if (savedAnswers) {
+      const parsedAnswers = JSON.parse(savedAnswers);
+      setAnswers(parsedAnswers);
+      const nonNullAnswers = parsedAnswers.filter(
+        (answer) => answer.answer !== null
+      ).length;
+      setQuestionCount(nonNullAnswers);
+    }
+    setQuestions(generateQuestionArray(parseInt(t('0'))));
+  }, []);
 
   function generateQuestionArray(numQuestions) {
     let questionArray = [
@@ -158,6 +171,9 @@ const Questionnaire = ({
         answer: updatedAnswers[currentQuestionIndex].answer,
         wheight: wheight,
       }; // first card with content has index 1
+      Cookies.set('questionnaireAnswers', JSON.stringify(updatedAnswers), {
+        expires: 2 / 144,
+      });
 
       return updatedAnswers;
     });
@@ -178,6 +194,9 @@ const Questionnaire = ({
       if (prevAnswer === null && answer !== null) {
         setQuestionCount(() => questionCount + 1);
       }
+      Cookies.set('questionnaireAnswers', JSON.stringify(updatedAnswers), {
+        expires: 2 / 144,
+      });
 
       return updatedAnswers;
     });
