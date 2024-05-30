@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import LanguageIcon from '@mui/icons-material/Translate';
 import ReactCountryFlag from 'react-country-flag';
 import options from '../data/languages.json';
 import i18n from '../i18n';
@@ -48,7 +47,8 @@ function LanguageSelector({ changeLanguage }) {
           svg
           style={{
             width: '30px',
-            height: '30px',
+            height: 'auto',
+            borderRadius: '5px',
           }}
         />
       </button>
@@ -69,8 +69,9 @@ function LanguageSelector({ changeLanguage }) {
                 svg
                 style={{
                   width: '32px',
-                  height: '32px',
+                  height: 'auto',
                   marginRight: '12px',
+                  borderRadius: '5px',
                 }}
                 title={option.label}
               />
