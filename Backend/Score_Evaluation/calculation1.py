@@ -4,7 +4,7 @@ import pprint
 pp = pprint.PrettyPrinter(indent=4)
 import matplotlib.pyplot as plt
 
-file_path_Party_Answers = "./Party_Answers_Converted.json"
+file_path_Party_Answers = "./Party_Answers_Converted_TEST.json"
 file_path_My_Answers = '/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/-1_0_1_User_Answers.json' 
 file_path_Abrevs = "/Users/gaborhollbeck/Desktop/GitHub/1_Elect-O-Mate/Backend/Score_Evaluation/OptionalGraphs/WahlOMAT_Datensatz_QuestionsAbrev.csv"
 
