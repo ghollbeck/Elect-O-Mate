@@ -96,10 +96,14 @@ function App() {
   const sendMessageToAPI = async (text, abortController) => {
     setIsSending(true);
 
+    const countryCode = i18n.language.slice(0, 2).toUpperCase();
+    const languageCode = i18n.language.slice(2,4).toUpperCase();
+
+
     try {
       // Perform API request with streaming using Fetch API and AbortController
       const response = await fetch(
-        process.env.REACT_APP_BACKEND_URL + '/openai/stream',
+        process.env.REACT_APP_BACKEND_URL + '/'+ countryCode + "/" + languageCode +'/stream',
         //'http://10.5.187.62:8000/openai/stream',
         {
           method: 'POST',
