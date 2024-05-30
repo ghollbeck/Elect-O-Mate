@@ -19,6 +19,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
 import { initGA, logPageView } from './analytics';
 import Cookies from 'js-cookie';
+import langs from './data/languages.json';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -324,11 +325,17 @@ function App() {
       SK: 'sksk', // Slovakia - Slovak
     };
 
+    function isCountryPresent(countryCode) {
+      return langs.some((country) => country.countryCode === countryCode);
+    }
+
     try {
       const response = await fetch('https://ipinfo.io/json');
       const data = await response.json();
       const countryCode = data.country;
-      return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
+      if (countryCode && isCountryPresent(countryCode)) {
+        return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
+      }
     } catch (error) {
       return 'deen'; // Default to English in case of error
     }
