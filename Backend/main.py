@@ -12,10 +12,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.document_loaders import WebBaseLoader
 
-
-from langchain_community.vectorstores import FAISS
-from langchain_community.vectorstores import Chroma
-
 from langchain_community.vectorstores import Chroma
 
 from langchain_text_splitters import CharacterTextSplitter
@@ -30,7 +26,6 @@ from langchain.retrievers.self_query.base import SelfQueryRetriever
 
 from pydantic import BaseModel
 from Score_Evaluation.calculation import read_json_file, evaluate_answers 
-from typing import List, Optional
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -114,61 +109,6 @@ def get_pdfs():
         if filename.endswith(".pdf"):
             pdfs.append(f"./Sources/PDFs/{filename}")
     return pdfs
-#
-#def get_pdfs_from_git(local_dir: str) -> List[str]:
-#    api_url = f"https://api.github.com/repos/ghollbeck/Elect-O-Mate/contents/Old_Version_Gabor_Not_Used/Sources/PDFs?ref=8246ed94cb735d4af12af18d8db326d1c76dda09"
-#    response = requests.get(api_url)
-#    response.raise_for_status() #Bad responses again
-#    contents = response.json()
-#    
-#    if not os.path.exists(local_dir):
-#        os.makedirs(local_dir)
-#    
-#    pdf_files = []
-#    for item in contents:
-#        if item['name'].endswith(".pdf"):
-#            pdf_url = f"https://raw.githubusercontent.com/ghollbeck/Elect-O-Mate/8246ed94cb735d4af12af18d8db326d1c76dda09/Old_Version_Gabor_Not_Used/Sources/PDFs/{item['name']}"
-#            pdf_path = os.path.join(local_dir, item['name'])
-#            download_pdf(pdf_url, pdf_path)
-#            pdf_files.append(pdf_path)
-#            
-#    return pdf_files
-#
-#def download_pdf(url: str, local_path: str):
-#    response = requests.get(url)
-#    response.raise_for_status() #Baddd responses
-#    with open(local_path, 'wb') as f:
-#        f.write(response.content)
-#         
-# def load_git_pdfs(pdf_files: List[str]):
-#     doc_file = "./cache/pdf_documents.pkl"
-#     text_file = "./cache/pdf_texts.pkl"
-#     local_pdf_dir = "./cache/pdfs" 
-#     
-#     if os.path.exists(doc_file):
-#         with open(doc_file, "rb") as f:
-#             documents = pickle.load(f)
-#     else:
-#         pdfs = get_pdfs_from_git(local_pdf_dir)
-#         documents = []
-#         for file in pdfs:
-#             loader = PyPDFLoader(file)
-#             documents.append(loader.load())
-#         with open(doc_file, "wb") as f:
-#             pickle.dump(documents, f)
-#     
-#     documents = [page for pdf in documents for page in pdf]
-# 
-#     if os.path.exists(text_file):
-#         with open(text_file, "rb") as f:
-#             texts = pickle.load(f)
-#     else:
-#         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
-#         texts = text_splitter.split_documents(documents)
-#         with open(text_file, "wb") as f:
-#             pickle.dump(texts, f)
-#     
-#     return texts
 
 def load_pdfs():
     doc_file = BASE / "cache/pdf_documents.pkl"
@@ -238,15 +178,10 @@ voice_prompt = ChatPromptTemplate.from_template(voice_template)
 openai = ChatOpenAI()
 embeddings_openai = OpenAIEmbeddings()
 
-# groq = ChatGroq(model_name="llama3-70b-8192")
-
-# ollama = Ollama(model="llama2")
-# embeddings_ollama = OllamaEmbeddings()
 
 embedding_cache = LocalFileStore(str((BASE / "cache/embedding_cache").resolve()))
 
 cached_embedder_openai = CacheBackedEmbeddings.from_bytes_store(embeddings_openai, embedding_cache, namespace=embeddings_openai.model)
-# cached_embedder_ollama = CacheBackedEmbeddings.from_bytes_store(embeddings_ollama, embedding_cache, namespace=embeddings_ollama.model)
 
 
 print("getting website content")
@@ -257,8 +192,6 @@ pdf_texts = load_pdfs()
 
 
 print("building vector db for website content")
-# url_db_openai = FAISS.from_documents(url_texts, cached_embedder_openai)
-# pdf_db_openai = FAISS.from_documents(pdf_texts, cached_embedder_openai)
 
 url_db_openai = Chroma.from_documents(url_texts, cached_embedder_openai)
 pdf_db_openai = Chroma.from_documents(pdf_texts, cached_embedder_openai)
@@ -310,7 +243,6 @@ metadata_retreiver = SelfQueryRetriever.from_llm(
 
 
 retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), metadata_retreiver], weights=[0.5, 0.5])
-# retriever_ollama = EnsembleRetriever(retrievers=[url_db_ollama.as_retriever(), pdf_db_ollama.as_retriever()], weights=[0.5, 0.5])
 
 chain_openai = (
     {"context": retriever_openai , "question": RunnablePassthrough()}
@@ -318,18 +250,7 @@ chain_openai = (
     | openai
     | StrOutputParser()
 )
-# chain_ollama = (
-#     {"context": retriever_ollama , "question": RunnablePassthrough()}
-#     | prompt
-#     | model
-#     | StrOutputParser()
-# )
-# chain_groq = (
-#     {"context": retriever_ollama, "question": RunnablePassthrough()}
-#     | prompt
-#     | groq
-#     | StrOutputParser()
-# )
+
 
 voice_chain_openai = (
     {"context": retriever_openai , "question": RunnablePassthrough()}
@@ -343,18 +264,6 @@ add_routes(
     chain_openai,
     path="/openai",
 )
-
-# add_routes(
-#     app,
-#     chains=chain_ollama,
-#     path="/ollama",
-# )
-
-# add_routes(
-#     app,
-#     chains=chain_groq,
-#     path="/groq",
-# )
 
 
 # for voice, we need a streaming endpoint
