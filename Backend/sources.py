@@ -20,6 +20,8 @@ from langchain_community.vectorstores import Chroma
 
 import metadata
 
+import concurrent.futures
+
 #TODO: save CHROMA DB
 #TODO: load new sources
 
@@ -129,6 +131,12 @@ def load_pdfs(country: str):
     for document in documents:
         document_file_name = document[0].metadata["source"]
         if document_file_name not in metadata_dict:
+            # check if url works
+            code  = check_url(document_file_name)
+            if code != 200:
+                print(f"URL {file} is not valid")
+                continue
+            print(f"generating metadata for {document_file_name}")
             metadata_dict[document_file_name] = metadata.get_metadata(document_file_name, country=country)
         with metadata_file.open("wb") as f:
             pickle.dump(metadata_dict, f)
@@ -170,71 +178,31 @@ def build_pdf_datastructure(countries: List[str]) -> Dict:
             pickle.dump(pdf_texts, f)
     return pdf_texts
 
-# openai = ChatOpenAI()
-# embeddings_openai = OpenAIEmbeddings()
+def build_pdf_datastructure_parallel(countries: List[str]) -> Dict:
+    pdf_texts = {}
+    if (BASE / "cache/pdf_texts_all_countries.pkl").exists():
+        with (BASE / "cache/pdf_texts_all_countries.pkl").open("rb") as f:
+            pdf_texts = pickle.load(f)
+    else:
+
+        # Execute the for loop in parallel using ThreadPoolExecutor
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            # Map each country to the load_pdfs_for_country function
+            results = executor.map(load_pdfs, countries)
+
+            # Collect the results and populate the pdf_texts dictionary
+            for country, texts in results:
+                pdf_texts[country] = texts
 
 
-# embedding_cache = LocalFileStore(str((BASE / "cache/embedding_cache").resolve()))
+        with (BASE / "cache/pdf_texts_all_countries.pkl").open("wb") as f:
+            pickle.dump(pdf_texts, f)
+            
+    return pdf_texts
 
-# cached_embedder_openai = CacheBackedEmbeddings.from_bytes_store(embeddings_openai, embedding_cache, namespace=embeddings_openai.model)
 
 
-# print("getting website content")
-# url_texts = get_url_text()
+
 
 print("getting pdf content")
-pdf_texts = build_pdf_datastructure()
-
-
-# print("building vector db for website content")
-
-# url_db_openai = Chroma.from_documents(url_texts, cached_embedder_openai)
-# pdf_db_openai = Chroma.from_documents(pdf_texts, cached_embedder_openai)
-
-# metadata_field_info = [
-#     AttributeInfo(
-#         name="party_name",
-#         description="The abbreviated name of the political party",
-#         type="string",
-#     ),
-#     AttributeInfo(
-#         name="party_full_name",
-#         description="The full name of the party",
-#         type="integer",
-#     ),
-#     AttributeInfo(
-#         name="date",
-#         description="The date when the source was embedded",
-#         type="string",
-#     ),
-#     AttributeInfo(
-#         name="country",
-#         description="The country the source is from can also be EU if it is a EU party",
-#         type="string",
-#     ),
-#     AttributeInfo(
-#         name="language",
-#         description="The language of the source",
-#         type="string",
-#     ),
-#     AttributeInfo(
-#         name="url",
-#         description="The url of the source",
-#         type="string",
-#     ),
-#         AttributeInfo(
-#         name="tags",
-#         description="tags associated with the source",
-#         type="list",
-#     ),
-# ]
-
-# metadata_retreiver = SelfQueryRetriever.from_llm(
-#     openai,
-#     pdf_db_openai,
-#     metadata_field_info=metadata_field_info,
-#     document_contents="Political party programmes"
-# )
-
-
-# retriever_openai = EnsembleRetriever(retrievers=[url_db_openai.as_retriever(), metadata_retreiver], weights=[0.5, 0.5])
+pdf_texts = build_pdf_datastructure_parallel(["DE", "FR", "IT", "ES", "HU", "PL", "DK"])

@@ -63,87 +63,6 @@ app.add_middleware(
 
 
 
-# def get_urls(filename: str = "./Sources/URLS/bpb_2_Wahlomat.txt") -> List[str]:
-#    with open(filename, "r") as f:
-#        urls = f.readlines()
-#     #remove the newline character
-#    urls = [url.strip() for url in urls]
-#    return urls
-
-# # faulty function test before using the one below
-# def get_urls_from_git(url: str) -> List[str]:
-#     response = requests.get(url)
-#     response.raise_for_status() #Notice bad responses
-#     urls = response.text.splitlines()
-#     return [url.strip() for url in urls]
-
-# def load_web():
-#     urls = get_urls()
-#     # urls = get_urls_from_git('https://github.com/ghollbeck/Elect-O-Mate/blob/cfd1bee938d7b0326055f817ced7adf73361c191/Old_Version_Gabor_Not_Used/Sources/URLS/bpb_2_Wahlomat.txt')
-#     loader = WebBaseLoader(urls)
-#     documents = loader.load()
-#     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
-#     texts = text_splitter.split_documents(documents)
-#     return texts
-
-# def get_url_text() -> List[str]:
-#     # check if url texts are already in cache
-#     if (BASE / "cache/url_texts.pkl").exists():
-#         with (BASE / "cache/url_texts.pkl").open("rb") as f:
-#             texts = pickle.load(f)
-        
-#     else:
-#         texts = load_web()
-#         with (BASE / "cache/url_texts.pkl").open("wb") as f:
-#             pickle.dump(texts, f)
-        
-#     return texts
-
-
-# def get_pdfs():
-#     pdfs = []
-#     for filename in os.listdir("./Sources/PDFs"):
-#         if filename.endswith(".pdf"):
-#             pdfs.append(f"./Sources/PDFs/{filename}")
-#     return pdfs
-
-# def load_pdfs():
-#     doc_file = BASE / "cache/pdf_documents.pkl"
-#     text_file = BASE / "cache/pdf_texts.pkl"
-#     if doc_file.exists():
-#         with doc_file.open("rb") as f:
-#             documents = pickle.load(f)
-#     else:
-#         pdfs = get_pdfs()
-#         documents = []
-#         for file in pdfs:
-#             loader = PyPDFLoader(file)
-#             documents.append(loader.load())
-#         with doc_file.open("wb") as f:
-#             pickle.dump(documents, f)
-    
-#     # iterate through pages and add metadata
-#     for document in documents:
-#         document_file_name = document[0].metadata["source"]
-#         metadata_file_name = document_file_name.replace(".pdf", ".meta.json")
-#         with open (metadata_file_name, "r") as f:
-#             metadata = json.load(f)
-#         for page in document:
-#             page.metadata = {**page.metadata, **metadata}
-#             page.metadata["source"] = page.metadata["url"]
-
-#     documents = [page for pdf in documents for page in pdf]
-
-#     if text_file.exists():
-#         with text_file.open("rb") as f:
-#             texts = pickle.load(f)
-#     else:
-#         text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
-#         texts = text_splitter.split_documents(documents)
-#         with text_file.open("wb") as f:
-#             pickle.dump(texts, f)
-#     return texts
-
 
 template = """You are a helpful assistant for the EU-elections. Never provide an opinion, explain different perspectives instead.
 If the QUESTION is not relevant to the EU-elections or politics, do not answer it.
@@ -442,13 +361,3 @@ if __name__ == "__main__":
     import uvicorn
     print("starting server...")
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
-# while True:
-#     m = input("> ")
-#     if m == "exit":
-#         break
-#     elif not m:
-#         continue
-#     result = chain.invoke(m)
-#     print(result)
-#     print("\n\n")

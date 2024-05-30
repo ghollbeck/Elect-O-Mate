@@ -13,3 +13,5 @@ python-slugify
 langchain-chroma
 langchain-chroma
 lark
+tiktoken
+pycryptodome

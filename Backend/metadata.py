@@ -1,7 +1,6 @@
 import os
 from slugify import slugify
-import shutil
-import json
+import tiktoken
 from datetime import datetime
 from dotenv import load_dotenv
 
@@ -13,9 +12,12 @@ from langchain_core.prompts import PromptTemplate
 from langchain_community.document_loaders import WebBaseLoader
 
 
+headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+
+
 def load_pdf(filename: str):
 
-    document = PyPDFLoader(filename).load()
+    document = PyPDFLoader(filename, headers=headers).load()
 
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
     text = text_splitter.split_documents(document)
@@ -69,6 +71,16 @@ def generate_party_name(text):
 
     return shorthand, full_name
 
+def count_tokens(text: str) -> int:
+    tokenizer = tiktoken.get_encoding("cl100k_base")
+    
+    # Tokenize the input text
+    tokens = tokenizer.encode(text)
+    
+    # Return the number of tokens
+    return len(tokens)
+
+
 def generate_keywords(text, chunck_keywords=10, n_keywords=20):
 
     # Initialize the OpenAI API
@@ -87,8 +99,17 @@ def generate_keywords(text, chunck_keywords=10, n_keywords=20):
     # Generate keywords for each chunk and collect them
     keywords = []
     for chunk in text:
-        response = chain.invoke({"text": chunk.page_content, "n_keywords": chunck_keywords})
-        keywords.extend(response.content.split("\n"))
+        if count_tokens(chunk.page_content) > 15000:
+            length = len(chunk.page_content)
+            chunk1 = chunk.page_content[0:length-500] 
+            chunk2 = chunk.page_content[length-500:]
+            response1 = chain.invoke({"text": chunk1, "n_keywords": chunck_keywords})
+            response2 = chain.invoke({"text": chunk2, "n_keywords": chunck_keywords})
+            keywords.extend(response1.content.split("\n"))
+            keywords.extend(response2.content.split("\n"))
+        else:
+            response = chain.invoke({"text": chunk.page_content, "n_keywords": chunck_keywords})
+            keywords.extend(response.content.split("\n"))
 
 
     final_keywords_template = PromptTemplate(
