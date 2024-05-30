@@ -1,0 +1,2294 @@
+{
+    "party_names": [
+        "Écologie au centre",
+        "Écologie positive",
+        "Europe Équitable",
+        "EDE",
+        "Parti Pirate",
+        "CNIP",
+        "R&PS",
+        "Volt",
+        "Équinoxe",
+        "Parti fédéraliste européen",
+        "MEI",
+        "La France insoumise",
+        "République souveraine"
+    ],
+    "party_answers": [
+        {
+            "Question_Number": 1,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Les réseaux sociaux doivent pouvoir décider eux-mêmes de la manière dont ils gèrent la désinformation sur leur plateforme.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Les grandes entreprises internationales doivent payer un impôt minimum dans chaque État membre de l'UE où elles sont actives.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'UE doit autoriser les États membres à avoir des déficits budgétaires plus importants.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Il faut limiter la participation d'investisseurs non européens dans des entreprises européennes dans les secteurs stratégiques.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'UE doit continuer à considérer l'énergie nucléaire comme une énergie durable.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Les pesticides qui contiennent du glyphosate doivent être totalement interdits dans l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Les grosses entreprises doivent payer plus pour leurs émissions de CO2.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'Ukraine doit intégrer l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Les Etats membres de l'UE qui ne respectent pas les principes démocratiques doivent recevoir moins de subsides de l'UE.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'UE doit autoriser davantage de cultures de plantes OGM (organismes génétiquement modifiés).",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'UE ne doit plus subsidier l'élevage intensif d'animaux.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Il faut créer une armée européenne commune.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'UE doit financer plus d'armes pour l'Ukraine.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Les pays qui ne n'acceptent pas de reprendre les demandeurs d'asile déboutés doivent recevoir moins d'aide au développement de la part de l'UE.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Les demandeurs d'asile doivent introduire leur demande d'asile dans les pays qui se situent aux frontières de l'UE et attendre le résultat de leur démarche.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'immigration dans l'UE doit être facilitée pour les métiers en pénurie.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Le président de la Commission européenne doit être élu directement par les citoyens de l'UE.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Il faut rétablir les contrôles aux frontières entre tous les États membres de l'Union européenne.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'UE doit recommander à ses États membres de supprimer toute mention de sexe sur leurs passeports.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'Union européenne doit investir dans plus de lignes de chemin de fer internationales.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Tous les produits alimentaires doivent porter une étiquette indiquant l'impact environnemental du produit.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'importation de voitures électriques chinoises vers l'Union européenne doit être plus chère.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "L'UE doit imposer des normes environnementales plus strictes aux produits provenant de pays extérieurs à l'UE.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "CNIP",
+            "Party_Full_Name": "CNIP",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Écologie au centre",
+            "Party_Full_Name": "Écologie au centre",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "R&PS",
+            "Party_Full_Name": "R&PS",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Écologie positive",
+            "Party_Full_Name": "Écologie positive",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Équinoxe",
+            "Party_Full_Name": "Équinoxe",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Europe Équitable",
+            "Party_Full_Name": "Europe Équitable",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Parti Pirate",
+            "Party_Full_Name": "Parti Pirate",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Parti fédéraliste européen",
+            "Party_Full_Name": "Parti fédéraliste européen",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "MEI",
+            "Party_Full_Name": "MEI",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "La France insoumise",
+            "Party_Full_Name": "La France insoumise",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "République souveraine",
+            "Party_Full_Name": "République souveraine",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "EDE",
+            "Party_Full_Name": "EDE",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Volt",
+            "Party_Full_Name": "Volt",
+            "Question_Label": "Les étudiants qui ont moins de moyens doivent recevoir une bourse Erasmus+ plus élevée que ceux qui ont plus de moyens.",
+            "Party_Answer": -1
+        }
+    ]
+}
