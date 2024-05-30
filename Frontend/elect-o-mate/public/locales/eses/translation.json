@@ -3,6 +3,8 @@
   "label": "Espa\u00f1a",
   "countryCode": "ES",
   "subheading": "¿Qué te gustaría saber sobre las elecciones al Parlamento Europeo?",
+  "followup": "¿preguntas?",
+
   "start_now": "O comienza ahora el cuestionario",
   "start_button": "¡Empiece ya!",
   "sign_up": "Suscríbase para recibir actualizaciones importantes",

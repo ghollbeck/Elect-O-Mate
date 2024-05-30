@@ -105,8 +105,8 @@ const QuestionCard = ({
             </h2>
           </div>
 
-          <div className='flex justify-center items-end flex-shrink-0 pb-2 md:pb-8'>
-            <div className='flex space-x-1 md:space-x-4'>
+          <div className='flex justify-center items-end flex-shrink-0 pb-2 md:pb-8 max-w-full'>
+            <div className='flex space-x-1 md:space-x-4 max-w-full'>
               <button
                 className={`border w-full h-8 md:h-10 ${
                   wheighted

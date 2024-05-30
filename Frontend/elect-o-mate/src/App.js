@@ -374,7 +374,7 @@ function App() {
           />
         </div>
         <div ref={toChat} className='flex justify-center relative mt-64'>
-          <div className='w-full mx-2 md:w-1/2 '>
+          <div className='w-full mx-2 lg:w-1/2 '>
             <Chat
               scrollToQuestionnaire={scrollToQuestionnaire}
               scrolltoChat={scrollToChat}

@@ -3,6 +3,8 @@
   "label": "Spain",
   "countryCode": "ES",
   "subheading": "Ask me anything about the EU-Elections!",
+
+  "followup": "Questions?",
   "start_now": "Or start the quiz now",
   "start_button": "Start Now!",
   "sign_up": "Sign up for important updates",
