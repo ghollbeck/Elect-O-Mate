@@ -31,6 +31,11 @@ import sources
 import prompts
 
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+
+
+
 
 BASE = Path(__file__).resolve().parent
 
@@ -54,7 +59,10 @@ app.add_middleware(
 
 
 def main():
+    load_dotenv()
 
+    # Ensure that the key is loaded
+    assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY not found in environment"
     openai = ChatOpenAI()
     embeddings_openai = OpenAIEmbeddings()
 
