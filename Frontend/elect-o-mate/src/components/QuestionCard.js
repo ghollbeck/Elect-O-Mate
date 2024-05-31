@@ -27,7 +27,7 @@ const QuestionCard = ({
   const [isFlipped, setIsFlipped] = useState(false);
   const partyAnswer = partyanswers.find(
     (item) =>
-      item['Full_Party_Name'] === party && item['Question_Number'] === index - 1
+      item['Party_Name'] === party && item['Question_Number'] === index - 1
   );
   const handleFlip = () => {
     setIsFlipped(!isFlipped);

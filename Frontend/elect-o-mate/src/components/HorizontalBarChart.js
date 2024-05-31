@@ -55,8 +55,7 @@ const HorizontalBarChart = ({ data, InformationRequest, setParty }) => {
         abortControllerRef.current = new AbortController();
         const abortController = abortControllerRef.current;
         setParty(label);
-        console.warn(data)
-        InformationRequest(partyname, abortController);
+        InformationRequest(label, partyname, abortController);
       }
     },
     scales: {
