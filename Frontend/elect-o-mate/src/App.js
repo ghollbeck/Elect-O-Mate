@@ -25,8 +25,14 @@ function App() {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    const savedLanguage = Cookies.get('languageApp');
+    var savedLanguage = Cookies.get('languageApp');
 
+    if(savedLanguage){
+      if(!isValidLang(savedLanguage)){
+        savedLanguage = "deen";
+      }
+    }
+    
     if (savedLanguage) {
       i18n.changeLanguage(savedLanguage.toLowerCase());
     } else {
@@ -109,6 +115,7 @@ function App() {
 
     const countryCode = i18n.language.slice(0, 2).toUpperCase();
     const languageCode = i18n.language.slice(2,4).toUpperCase();
+    
 
 
     try {
@@ -204,6 +211,37 @@ function App() {
       setIsSending(false); // Reset isSending after API call completes
     }
   };
+
+  function isValidLang(string) {
+    const languageCodes = [
+      'atde', // Austria - German
+      'benl', // Belgium - Dutch
+      'bgbg', // Bulgaria - Bulgarian
+      'czcs', // Czech Republic - Czech
+      'dkda', // Denmark - Danish
+      'eeet', // Estonia - Estonian
+      'eses', // Spain - Spanish
+      'fifi', // Finland - Finnish
+      'frfr', // France - French
+      'elel', // Greece - Greek
+      'hrhr', // Croatia - Croatian
+      'huhu', // Hungary - Hungarian
+      'ieen', // Ireland - English
+      'itit', // Italy - Italian
+      'ltlt', // Lithuania - Lithuanian
+      'lvlv', // Latvia - Latvian
+      'lufr', // Luxembourg - French
+      'mten', // Malta - English
+      'nlnl', // Netherlands - Dutch
+      'plpl', // Poland - Polish
+      'ptpt', // Portugal - Portuguese
+      'roro', // Romania - Romanian
+      'sesv', // Sweden - Swedish
+      'sisl', // Slovenia - Slovenian
+      'sksk'  // Slovakia - Slovak
+  ];
+    return languageCodes.includes(string);
+  }
 
   // Use this function to scroll smoothly to a target element
   const smoothScrollTo = (ref, duration) => {
@@ -361,7 +399,13 @@ function App() {
 
   useEffect(() => {
     const checkAndSetLanguage = async () => {
-      const savedLanguage = Cookies.get('languageApp');
+      var savedLanguage = Cookies.get('languageApp');
+
+      if(savedLanguage ){
+        if(!isValidLang(savedLanguage)){
+          savedLanguage = "deen";
+        }
+      }
 
       if (savedLanguage) {
         i18n.changeLanguage(savedLanguage.toLowerCase());
