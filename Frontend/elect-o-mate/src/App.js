@@ -103,9 +103,9 @@ function App() {
     sendMessageToAPI(text, abortController);
   };
 
-  const InformationRequest = async (party, abortController) => {
+  const InformationRequest = async (party, partyName, abortController) => {
     setParty(party);
-    const text = t('informationRequest') + ' ' + party;
+    const text = t('informationRequest') + ' ' + partyName;
     handleSendMessage('', text, abortController);
     scrollToChat();
   };
