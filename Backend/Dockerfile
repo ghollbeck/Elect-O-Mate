@@ -9,8 +9,11 @@ WORKDIR /app
 COPY main.py /app
 COPY requirements.txt /app
 COPY cache /app/cache
-COPY Sources /app/Sources
+COPY Sources/ActiveSources /app/Sources/ActiveSources
 COPY Score_Evaluation /app/Score_Evaluation
+COPY sources.py /app/sources.py
+COPY prompts.py /app/prompts.py
+COPY metadata.py /app/metadata.py
 
 RUN pip install -r requirements.txt
 

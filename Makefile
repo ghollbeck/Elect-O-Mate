@@ -1,8 +1,12 @@
 
-test:
-	docker compose build
+build:
 	docker compose pull
-	docker compose up 
+	docker compose build --build-arg REACT_APP_BACKEND_URL=http://localhost:8000
+
+up:
+	docker compose up
+
+test: build up
 
 down:
 	docker compose down

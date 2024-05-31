@@ -13,6 +13,6 @@ services:
       restart: unless-stopped
       build: ./Frontend/elect-o-mate
       environment:
-        - REACT_APP_BACKEND_URL=http://localhost:8000
+        - REACT_APP_BACKEND_URL=https://backend.elect-o-mate.eu
       ports:
-        - 80:3000
+        - 80:80
