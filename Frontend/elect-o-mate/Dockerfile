@@ -3,7 +3,7 @@ FROM node:22-alpine AS builder
 LABEL MAINTAINER="Lorin Urbantat"
 LABEL org.opencontainers.image.source https://github.com/ghollbeck/Elect-O-Mate/
 
-ARG BACKEND_URL=http://localhost:8000
+ARG BACKEND_URL=https://backend.elect-o-mate.eu
 ENV REACT_APP_BACKEND_URL=$BACKEND_URL
 
 WORKDIR /app

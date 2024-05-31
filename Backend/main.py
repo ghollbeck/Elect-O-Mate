@@ -115,8 +115,8 @@ def main():
     cached_embedder_openai = {}
 
     for country in countries:
-        
-        prompt = ChatPromptTemplate.from_template(prompts.prompts[f"template_{country}"])
+        # for now we are using the english prompt for all countries as this yields the best results
+        prompt = ChatPromptTemplate.from_template(prompts.prompts[f"template_EN_improved"])
 
         embedding_cache[country] = LocalFileStore(str((BASE / f"cache/embedding_cache/{country}").resolve()))
 
