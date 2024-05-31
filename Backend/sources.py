@@ -1,26 +1,19 @@
 
-import os
+
 from pathlib import Path
 from typing import List, Dict
 
-import json
 import requests
 import pickle
 
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_text_splitters import CharacterTextSplitter
-from langchain.chains.query_constructor.base import AttributeInfo
-from langchain.retrievers.self_query.base import SelfQueryRetriever
-from langchain.retrievers import EnsembleRetriever
-from langchain.embeddings import CacheBackedEmbeddings
-from langchain_community.document_loaders import PyPDFLoader
-from langchain.storage import LocalFileStore
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from langchain_community.vectorstores import Chroma
+from langchain_community.document_loaders import PyPDFLoader
 
 import metadata
 
-import concurrent.futures
 
 #TODO: save CHROMA DB
 #TODO: load new sources
@@ -52,7 +45,7 @@ def load_web(country: str):
     urls = get_urls_from_file(filename)
     loader = WebBaseLoader(urls)
     documents = loader.load()
-    text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=50)
     texts = text_splitter.split_documents(documents)
     return texts
 
@@ -189,6 +182,10 @@ def build_pdf_datastructure(countries: List[str]) -> Dict:
             pickle.dump(pdf_texts, f)
     return pdf_texts
 
-
-print("getting pdf content")
-pdf_texts = build_pdf_datastructure(["DE", "FR", "IT", "ES", "HU", "PL", "DK"])
+if __name__ == "__main__":
+    countries = ["DE", "DK", "ES", "FR", "EN"]
+    url_texts_by_country = build_url_datastructure(countries)
+    pdf_texts_by_country = build_pdf_datastructure(countries)
+    print(url_texts_by_country)
+    print(pdf_texts_by_country)
+    print("done")

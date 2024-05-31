@@ -59,11 +59,6 @@ def main():
     embeddings_openai = OpenAIEmbeddings()
 
 
-    embedding_cache = LocalFileStore(str((BASE / "cache/embedding_cache").resolve()))
-
-    cached_embedder_openai = CacheBackedEmbeddings.from_bytes_store(embeddings_openai, embedding_cache, namespace=embeddings_openai.model)
-
-
     print("getting website content")
     url_texts_by_country = sources.build_url_datastructure(countries)
 
@@ -116,20 +111,27 @@ def main():
     self_retrievers = {}
     ensemble_retreivers = {}
     chains = {}
+    embedding_cache = {}
+    cached_embedder_openai = {}
 
     for country in countries:
         
         prompt = ChatPromptTemplate.from_template(prompts.prompts[f"template_{country}"])
+
+        embedding_cache[country] = LocalFileStore(str((BASE / f"cache/embedding_cache/{country}").resolve()))
+
+        cached_embedder_openai[country] = CacheBackedEmbeddings.from_bytes_store(embeddings_openai, embedding_cache[country], namespace=f"{country}_{embeddings_openai.model}")
+
         
         if not url_texts_by_country[country]:
             url_texts_by_country[country] = [Document("")]
 
-        url_db[country] = Chroma.from_documents(url_texts_by_country[country], cached_embedder_openai)
+        url_db[country] = Chroma.from_documents(url_texts_by_country[country], cached_embedder_openai[country],collection_name=f"url_{country}")
         
         if not pdf_texts_by_country[country]:
             pdf_texts_by_country[country] = [Document("")]
 
-        pdf_db[country] = Chroma.from_documents(pdf_texts_by_country[country], cached_embedder_openai)
+        pdf_db[country] = Chroma.from_documents(pdf_texts_by_country[country], cached_embedder_openai[country],collection_name=f"pdf_{country}")
 
         
 
@@ -143,13 +145,13 @@ def main():
         ensemble_retreivers[country] = EnsembleRetriever(retrievers=[url_db[country].as_retriever(), self_retrievers[country]], weights=[0.5, 0.5])
 
         chains[country] = (
-            {"context": ensemble_retreivers[country] , "question": RunnablePassthrough()}
+            {"context": self_retrievers[country] , "question": RunnablePassthrough()}
             | prompt  
             | openai
             | StrOutputParser()
         )
         chains[f"{country}_EN"] = (
-            {"context": ensemble_retreivers[country] , "question": RunnablePassthrough()}
+            {"context": self_retrievers[country] , "question": RunnablePassthrough()}
             | ChatPromptTemplate.from_template(prompts.prompts["template_EN"])
             | openai
             | StrOutputParser()
@@ -167,7 +169,7 @@ def main():
             path=f"/{country}/EN"
         )
 
-
+    return self_retrievers, ensemble_retreivers, chains, url_db, pdf_db, cached_embedder_openai, embedding_cache
 
 # Evaluate endpoint
 class Answer(BaseModel):
@@ -206,6 +208,6 @@ async def evaluate(user_answers: JsonData):
     
 if __name__ == "__main__":
     import uvicorn
-    main()
+    _, _, _, _, _, _, _ = main()
     print("starting server...")
     uvicorn.run(app, host="0.0.0.0", port=8000)
