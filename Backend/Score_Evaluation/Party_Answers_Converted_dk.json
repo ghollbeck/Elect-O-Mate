@@ -12,6 +12,19 @@
         "Enhedslisten",
         "Alternativet"
     ],
+    "party_full_names": [
+        "Socialdemokratiet",
+        "Radikale Venstre",
+        "Det Konservative Folkeparti",
+        "Socialistisk Folkeparti",
+        "Liberal Alliance",
+        "Moderaterne",
+        "Dansk Folkeparti",
+        "Venstre",
+        "Danmarksdemokraterne",
+        "Enhedslisten",
+        "Alternativet"
+    ],
     "party_answers": [
         {
             "Question_Number": 1,

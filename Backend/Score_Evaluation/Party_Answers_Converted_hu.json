@@ -9,6 +9,16 @@
         "2RK",
         "MKKP"
     ],
+    "party_full_names": [
+        "Mi Hazánk Mozgalom",
+        "Lehet Más a Politika",
+        "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+        "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+        "Mindenki Magyarországa Mozgalom",
+        "Momentum Mozgalom",
+        "Kétfarkú Kutya Párt",
+        "Magyar Kétfarkú Kutya Párt"
+    ],
     "party_answers": [
         {
             "Question_Number": 1,

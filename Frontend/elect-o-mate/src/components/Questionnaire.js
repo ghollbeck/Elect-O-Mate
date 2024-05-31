@@ -18,12 +18,13 @@ const Questionnaire = ({
   country,
   party,
 }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [questions, setQuestions] = useState([]);
   const [partyanswers, setPartyAnswers] = useState([]);
   const containerRef = useRef(null);
   const isButtonScroll = useRef(false); // Track button clicks
+
   const [answers, setAnswers] = useState(
     Array(parseInt(t('0')) + 4).fill({
       answer: null,
@@ -31,6 +32,23 @@ const Questionnaire = ({
     })
   );
 
+  const clearCookies = () => {
+    const allCookies = Cookies.get(); // Get all cookies
+    for (const cookie in allCookies) {
+      Cookies.remove(cookie); // Remove each cookie
+    }
+  };
+
+  useEffect(() => {
+    const savedLanguage = Cookies.get('language');
+    const currentLanguage = i18n.language.slice(0, 2).toUpperCase();
+    if (savedLanguage && savedLanguage !== currentLanguage) {
+      clearCookies();
+    }
+    Cookies.set('language', currentLanguage, {
+      expires: 2 / 144,
+    });
+  }, [i18n.language]);
   const [questionCount, setQuestionCount] = useState(0);
 
   useEffect(() => {
@@ -141,7 +159,6 @@ const Questionnaire = ({
         console.error('Error fetching data:', error);
       }
     }
-    // setPartyAnswers();
     scrollToChat();
   };
 

@@ -18,21 +18,33 @@ import HorizontalBarChart from './components/HorizontalBarChart';
 import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
 import { initGA, logPageView } from './analytics';
-
-function usePageViews() {
-  let location = useLocation();
-  useEffect(() => {
-    logPageView();
-  }, [location]);
-}
+import Cookies from 'js-cookie';
+import langs from './data/languages.json';
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = Cookies.get('languageApp');
+
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage.toLowerCase());
+    } else {
+      Cookies.set('languageApp', i18n.language.toLowerCase(), { expires: 7 });
+    }
+  }, [i18n]);
+
+  useEffect(() => {
+    Cookies.set('languageApp', i18n.language.toLowerCase(), { expires: 7 });
+  }, [i18n.language]);
+
   const [party, setParty] = useState(null);
   const [data, setData] = useState(null);
-  const { t, i18n } = useTranslation();
+
   const [messages, setMessages] = useState([
     { text: t('bot_greeting'), isUser: false },
   ]);
+
   const [isSending, setIsSending] = useState(false);
   const toChat = useRef(null);
   const toQuestionnaire = useRef(null);
@@ -41,7 +53,6 @@ function App() {
   const questionnaireAnswers = (data, abortController) => {
     const lang = getLanguageNameByCode(i18n.language);
     const result = data;
-    console.warn(lang);
     setData(data);
     const instructions =
       'This is my matching with the parties. The first number is the percentage of alignment, the second string is the name of the party. Please list the 10 parties I match best in this format: party (percentage%) new line. If I have any other questions regarding the results, please provide them based on these results. ANSWER in ' +
@@ -246,6 +257,12 @@ function App() {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    setMessages((prevMessages) => {
+      // Update only the first message
+      const updatedMessages = [...prevMessages];
+      updatedMessages[0] = { ...updatedMessages[0], text: t('bot_greeting') };
+      return updatedMessages;
+    });
   };
 
   function getLanguageNameByCode(languageCode) {
@@ -280,6 +297,7 @@ function App() {
   }
 
   const getUserLanguageFromIP = useCallback(async () => {
+    console.warn('IP');
     const countryLanguageMap = {
       AT: 'atde', // Austria - German
       BE: 'benl', // Belgium - Dutch
@@ -311,17 +329,23 @@ function App() {
       SK: 'sksk', // Slovakia - Slovak
     };
 
+    function isCountryPresent(countryCode) {
+      return langs.some((country) => country.countryCode === countryCode);
+    }
+
     try {
       const response = await fetch('https://ipinfo.io/json');
       const data = await response.json();
       const countryCode = data.country;
-      return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
+      if (countryCode && isCountryPresent(countryCode)) {
+        return countryLanguageMap[countryCode] || 'en'; // Default to English if country not found
+      }
     } catch (error) {
       return 'deen'; // Default to English in case of error
     }
   }, []);
 
-  useEffect(() => {
+  /*  useEffect(() => {
     const fetchUserLanguageAndSetLanguage = async () => {
       try {
         const userLanguage = await getUserLanguageFromIP(); // Ensure getUserLanguageFromIP is called
@@ -333,6 +357,22 @@ function App() {
     };
 
     fetchUserLanguageAndSetLanguage();
+  }, [i18n]); */
+
+  useEffect(() => {
+    const checkAndSetLanguage = async () => {
+      const savedLanguage = Cookies.get('languageApp');
+
+      if (savedLanguage) {
+        i18n.changeLanguage(savedLanguage.toLowerCase());
+      } else {
+        const userLanguage = await getUserLanguageFromIP();
+        i18n.changeLanguage(userLanguage.toLowerCase());
+        Cookies.set('languageApp', userLanguage.toLowerCase(), { expires: 7 });
+      }
+    };
+
+    checkAndSetLanguage();
   }, [i18n]);
   // Include i18n in the dependency array`
 

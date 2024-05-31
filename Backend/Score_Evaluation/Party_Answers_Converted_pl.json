@@ -8,6 +8,15 @@
         "Bezpartyjni",
         "PolExit"
     ],
+    "party_full_names": [
+        "Trzecia Droga",
+        "PiS",
+        "Lewica",
+        "Koalicja Obywatelska",
+        "Konfederacja",
+        "Bezpartyjni",
+        "PolExit"
+    ],
     "party_answers": [
         {
             "Question_Number": 1,
