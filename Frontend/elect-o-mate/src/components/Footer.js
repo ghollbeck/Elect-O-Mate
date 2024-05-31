@@ -82,10 +82,13 @@ export default function App() {
           <p>{t('made_with_love')}</p>
         </section>
       </div>
+      Imprint:
       <div className='bg-black text-center pb-3'>
+        Adress: Clausiusstrasse 16, 8006 Zürich
+        <br />
         Contact:
-        <a className='text-white ml-2' href='mailto:brissanikolaus@gmail.com'>
-          brissanikolaus@gmail.com
+        <a className='text-white ml-2' href='mailto:contact@elect-o-mate.eu'>
+          contact@elect-o-mate.eu
         </a>
       </div>
       <div className='bg-black text-center pb-3'>
