@@ -92,6 +92,7 @@ const Questionnaire = ({
   }, []);
 
   useEffect(() => {
+    //console.warn('scroll to index 1');
     scrollToIndex(1); // Scroll to index 1 when component mounts
   }, []); // Empty dependency array means it only runs once, on mount
 
@@ -298,18 +299,6 @@ const Questionnaire = ({
           height: '110%',
         }}
       />
-
-      {/*       <div className='absolute top-0 left-0 w-full h-0 md:h-full z-3 scale-125 overflow-hidden'>
-        <img
-          src={EUstars}
-          alt='Background Overlay'
-          className='h-full w-auto object-fit'
-          style={{
-            filter: 'saturate(30%) contrast(90%) brightness(90%)',
-            opacity: '0.1',
-          }} // Adjust the values as needed
-        />
-      </div> */}
 
       <div className='overflow-y-hidden  relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
         {currentQuestionIndex > 1 && (
