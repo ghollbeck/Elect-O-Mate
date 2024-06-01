@@ -55,7 +55,7 @@ const QuestionCard = ({
   // If question is empty, render an empty card
   if (!question || !question.text) {
     return (
-      <div className='flex flex-col h-[70dvh] md:h-80 w-[75vw] lg:w-[800px] items-center bg-transparent flex-shrink-0'></div>
+      <div className='flex flex-col h-60 md:h-80 w-[75vw] lg:w-[800px] items-center justify-center bg-transparent flex-shrink-0'></div>
     );
   }
   if (question.text === 'help') {
@@ -114,7 +114,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'md:hover:bg-blue-100 md:hover:text-black'
                     : ''
-                } font-bold  px-2 md:px-4 rounded-xl md:absolute left-0 md:left-2 md:w-14 md:rounded-full md:bottom-16`}
+                } font-bold  md:py-2 px-2 md:px-4 rounded-xl md:absolute left-0 md:left-2 md:w-14 md:rounded-full md:bottom-16`}
                 onClick={() => (pressable ? handleWheight(!wheighted) : null)}
               >
                 x2
@@ -126,7 +126,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold  px-2 sm:px-4 rounded-3xl`}
+                } font-bold  md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(1) : null)}
               >
                 {t('agree_button')}
@@ -138,7 +138,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold  px-2 sm:px-4 rounded-3xl`}
+                } font-bold  md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(0) : null)}
               >
                 {t('neutral_button')}
@@ -150,7 +150,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold px-2 sm:px-4 rounded-3xl`}
+                } font-bold md:py-2 px-2 sm:px-4 rounded-xl`}
                 onClick={() => (pressable ? onAnswer(-1) : null)}
               >
                 {t('disagree_button')}

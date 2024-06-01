@@ -23,16 +23,32 @@ import langs from './data/languages.json';
 
 function App() {
   const { t, i18n } = useTranslation();
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!init) {
+        setInit(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [init]);
 
   useEffect(() => {
     var savedLanguage = Cookies.get('languageApp');
 
-    if(savedLanguage){
-      if(!isValidLang(savedLanguage)){
-        savedLanguage = "deen";
+    if (savedLanguage) {
+      if (!isValidLang(savedLanguage)) {
+        savedLanguage = 'deen';
       }
     }
-    
+
     if (savedLanguage) {
       i18n.changeLanguage(savedLanguage.toLowerCase());
     } else {
@@ -69,6 +85,7 @@ function App() {
     sendMessageToAPI(str, abortController);
   };
 
+  
   useEffect(() => {
     initGA();
     logPageView();
@@ -77,7 +94,7 @@ function App() {
 
   const formatMessage = (question, message) => {
     if (question !== '') {
-      const fmessage = `The last question was ${question} answer this message from the user ${message} Please answer in the same language as the message, or the message before.`;
+      const fmessage = `This is the statement I have a question to: ${question}. The question is: ${message} Please answer in the same language as the message, or the message before.`;
       return fmessage;
     }
     return message;
@@ -95,7 +112,8 @@ function App() {
         { text: question, isUser: true },
       ]);
 
-      text = alter(question, text);
+      text = alter(question, text, messages);
+      
     } else {
       setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
     }
@@ -105,7 +123,7 @@ function App() {
 
   const InformationRequest = async (party, partyName, abortController) => {
     setParty(party);
-    const text = t('informationRequest') + ' ' + partyName;
+    const text = partyName;
     handleSendMessage('', text, abortController);
     scrollToChat();
   };
@@ -114,14 +132,17 @@ function App() {
     setIsSending(true);
 
     const countryCode = i18n.language.slice(0, 2).toUpperCase();
-    const languageCode = i18n.language.slice(2,4).toUpperCase();
-    
-
+    const languageCode = i18n.language.slice(2, 4).toUpperCase();
 
     try {
       // Perform API request with streaming using Fetch API and AbortController
       const response = await fetch(
-        process.env.REACT_APP_BACKEND_URL + '/'+ countryCode + "/" + languageCode +'/stream',
+        process.env.REACT_APP_BACKEND_URL +
+          '/' +
+          countryCode +
+          '/' +
+          languageCode +
+          '/stream',
         //'http://10.5.187.62:8000/openai/stream',
         {
           method: 'POST',
@@ -238,8 +259,8 @@ function App() {
       'roro', // Romania - Romanian
       'sesv', // Sweden - Swedish
       'sisl', // Slovenia - Slovenian
-      'sksk'  // Slovakia - Slovak
-  ];
+      'sksk', // Slovakia - Slovak
+    ];
     return languageCodes.includes(string);
   }
 
@@ -401,9 +422,9 @@ function App() {
     const checkAndSetLanguage = async () => {
       var savedLanguage = Cookies.get('languageApp');
 
-      if(savedLanguage ){
-        if(!isValidLang(savedLanguage)){
-          savedLanguage = "deen";
+      if (savedLanguage) {
+        if (!isValidLang(savedLanguage)) {
+          savedLanguage = 'deen';
         }
       }
 
@@ -459,6 +480,7 @@ function App() {
             scrollToResult={scrollToResult}
             party={party}
             country={i18n.language.slice(0, 2)}
+            init = {init}
           />
         </div>
         <div ref={toChat} className='flex justify-center relative mt-64'>
@@ -480,7 +502,7 @@ function App() {
                 <>
                   <CloseIcon
                     onClick={togglePopup}
-                    className='absolute top-0 right-0 m-2 text-white scale-110  z-10 cursor-pointer'
+                    className='absolute top-0 right-0 m-2 text-black scale-125 border-2 border-black rounded-full   z-10 cursor-pointer'
                   />
                   <div
                     onClick={togglePopup}
@@ -508,7 +530,7 @@ function App() {
                 <>
                   <InfoIcon
                     onClick={togglePopup}
-                    className='absolute top-0 right-0 m-2 text-white scale-110 cursor-pointer'
+                    className='absolute top-0 right-0 m-2 text-white scale-125 cursor-pointer'
                   />
 
                   <HorizontalBarChart
