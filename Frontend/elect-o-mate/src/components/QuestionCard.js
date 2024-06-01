@@ -71,7 +71,7 @@ const QuestionCard = ({
           <button
             className={`border h-8 md:h-10 ${
               pressable ? 'hover:bg-blue-100 hover:text-black' : ''
-            } font-bold py-1 md:py-2 px-4 rounded-xl`}
+            } font-bold py-1 md:py-2 px-4 rounded-3xl`}
             onClick={() => (pressable ? submit() : null)}
           >
             {t('submit_button')}
@@ -114,7 +114,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'md:hover:bg-blue-100 md:hover:text-black'
                     : ''
-                } font-bold  md:py-2 px-2 md:px-4 rounded-xl md:absolute left-0 md:left-2 md:w-14 md:rounded-full md:bottom-16`}
+                } font-bold px-2 md:px-4 rounded-3xl md:absolute left-0 md:left-2 md:w-14 md:rounded-full md:bottom-16`}
                 onClick={() => (pressable ? handleWheight(!wheighted) : null)}
               >
                 x2
@@ -126,7 +126,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold  md:py-2 px-2 sm:px-4 rounded-xl`}
+                } font-bold px-2 sm:px-4 rounded-3xl`}
                 onClick={() => (pressable ? onAnswer(1) : null)}
               >
                 {t('agree_button')}
@@ -138,7 +138,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold  md:py-2 px-2 sm:px-4 rounded-xl`}
+                } font-bold px-2 sm:px-4 rounded-3xl`}
                 onClick={() => (pressable ? onAnswer(0) : null)}
               >
                 {t('neutral_button')}
@@ -150,7 +150,7 @@ const QuestionCard = ({
                     : pressable
                     ? 'hover:bg-blue-100 hover:text-black'
                     : ''
-                } font-bold md:py-2 px-2 sm:px-4 rounded-xl`}
+                } font-bold px-2 sm:px-4 rounded-3xl`}
                 onClick={() => (pressable ? onAnswer(-1) : null)}
               >
                 {t('disagree_button')}
