@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import QuestionCard from './QuestionCard';
-// import questionsData from '../data/questions.json';
 import { throttle } from 'lodash';
 import { useTranslation } from 'react-i18next';
 import ProgressBar from './ProgressBar';
@@ -17,13 +16,14 @@ const Questionnaire = ({
   scrollToResult,
   country,
   party,
+  init,
 }) => {
   const { t, i18n } = useTranslation();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
   const [questions, setQuestions] = useState([]);
   const [partyanswers, setPartyAnswers] = useState([]);
   const containerRef = useRef(null);
-  const isButtonScroll = useRef(false); // Track button clicks
+  const isButtonScroll = useRef(false);
 
   const [answers, setAnswers] = useState(
     Array(parseInt(t('0')) + 4).fill({
@@ -33,11 +33,18 @@ const Questionnaire = ({
   );
 
   const clearCookies = () => {
-    const allCookies = Cookies.get(); // Get all cookies
+    const allCookies = Cookies.get();
     for (const cookie in allCookies) {
-      Cookies.remove(cookie); // Remove each cookie
+      Cookies.remove(cookie);
     }
   };
+
+  useEffect(() => {
+    if (init) {
+      // Assuming scrollToIndex is a function defined in your child component
+      scrollToIndex(1);
+    }
+  }, [init]);
 
   useEffect(() => {
     const savedLanguage = Cookies.get('language');
@@ -49,6 +56,7 @@ const Questionnaire = ({
       expires: 2 / 144,
     });
   }, [i18n.language]);
+
   const [questionCount, setQuestionCount] = useState(0);
 
   useEffect(() => {
@@ -86,20 +94,15 @@ const Questionnaire = ({
 
     return questionArray;
   }
-  useEffect(() => {
-    setQuestions(generateQuestionArray(parseInt(t('0'))));
-    return;
-  }, []);
 
   useEffect(() => {
-    //console.warn('scroll to index 1');
-    scrollToIndex(1); // Scroll to index 1 when component mounts
-  }, []); // Empty dependency array means it only runs once, on mount
+    setQuestions(generateQuestionArray(parseInt(t('0'))));
+  }, [t]);
 
   useEffect(
     throttle(() => {
       if (containerRef.current && containerRef.current.firstChild) {
-        const cardWidth = containerRef.current.firstChild.offsetWidth; // This is the cardwidth PLUS Marging/Padding
+        const cardWidth = containerRef.current.firstChild.offsetWidth; // This is the cardwidth PLUS Margin/Padding
         const scrollPosition =
           cardWidth * currentQuestionIndex -
           (containerRef.current.offsetWidth / 2 - cardWidth / 2);
@@ -122,8 +125,8 @@ const Questionnaire = ({
     }));
 
     return {
-      country, // Include the country value as a key-value pair
-      data: formattedAnswers, // Add the formatted answer objects as an array
+      country,
+      data: formattedAnswers,
     };
   };
 
@@ -137,7 +140,6 @@ const Questionnaire = ({
     try {
       const response = await fetch(
         process.env.REACT_APP_BACKEND_URL + '/evaluate',
-        //'http://10.5.187.62:8000/evaluate',
         {
           method: 'POST',
           headers: {
@@ -150,7 +152,7 @@ const Questionnaire = ({
 
       const data = await response.json();
       console.log(data);
-      questionnaireAnswers(data.result, abortControllerRef.current); // Pass the fetched data to questionnaireAnswers function
+      questionnaireAnswers(data.result, abortControllerRef.current);
       setPartyAnswers(data.party_answers);
       console.warn(data.party_answers);
     } catch (error) {
@@ -188,7 +190,7 @@ const Questionnaire = ({
       updatedAnswers[currentQuestionIndex] = {
         answer: updatedAnswers[currentQuestionIndex].answer,
         wheight: wheight,
-      }; // first card with content has index 1
+      };
       Cookies.set('questionnaireAnswers', JSON.stringify(updatedAnswers), {
         expires: 2 / 144,
       });
@@ -208,7 +210,6 @@ const Questionnaire = ({
         wheight: updatedAnswers[currentQuestionIndex].wheight,
       };
 
-      // Increment question_count if the question is answered for the first time
       if (prevAnswer === null && answer !== null) {
         setQuestionCount(() => questionCount + 1);
       }
@@ -236,7 +237,7 @@ const Questionnaire = ({
   useEffect(() => {
     const handleScroll = throttle(() => {
       if (isButtonScroll.current) {
-        isButtonScroll.current = false; // Reset button scroll flag
+        isButtonScroll.current = false;
         return;
       }
       if (containerRef.current) {
@@ -279,20 +280,19 @@ const Questionnaire = ({
   }, [questions]);
 
   const scrollBarHideStyle = {
-    overflow: 'auto', // Enable scrolling
-    msOverflowStyle: 'none', // IE and Edge
-    scrollbarWidth: 'none', // Firefox
+    overflow: 'auto',
+    msOverflowStyle: 'none',
+    scrollbarWidth: 'none',
   };
 
-  // Additional style for WebKit browsers
   const webkitScrollBarHideStyle = {
     '::WebkitScrollbar': {
-      display: 'none', // Safari and Chrome
+      display: 'none',
     },
   };
 
   return (
-    <div className=' flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>
+    <div className='flex-grow bg-red h-auto md:py-20 flex items-center justify-center relative w-full scroll-snap-x snap-mandatory py-6'>
       <div
         className='absolute top-0 left-0 w-full transform scale-125 skew-y-3 bg-gradient-to-r from-violet-200 to-pink-200'
         style={{
@@ -300,10 +300,9 @@ const Questionnaire = ({
         }}
       />
 
-      <div className='overflow-y-hidden  relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
+      <div className='overflow-y-hidden relative w-full overflow-x-hidden scroll-snap-x snap-mandatory'>
         {currentQuestionIndex > 1 && (
           <button
-            z
             onClick={handleLeft}
             className='hidden lg:block absolute left-20 top-1/2 transform -translate-y-1/2 bg-white text-black p-6 rounded-full z-30'
           >
@@ -348,7 +347,7 @@ const Questionnaire = ({
 
         <div
           ref={containerRef}
-          className='w-full px-0 py-20 flex space-x overflow-x-auto relative  snap-x snap-mandatory'
+          className='w-full px-0 py-20 flex space-x overflow-x-auto relative snap-x snap-mandatory'
           style={{
             ...webkitScrollBarHideStyle,
             ...scrollBarHideStyle,
@@ -361,7 +360,7 @@ const Questionnaire = ({
               key={index}
               className={`shrink-0 transition-opacity duration-800 snap-center relative ${
                 index === currentQuestionIndex
-                  ? 'transform scale-[1.2] lg:scale-125  opacity-95 z-10 transition-transform duration-200'
+                  ? 'transform scale-[1.2] lg:scale-125 opacity-95 z-10 transition-transform duration-200'
                   : 'transform scale-100 opacity-80 z-0 transition-transform duration-200'
               }`}
             >
