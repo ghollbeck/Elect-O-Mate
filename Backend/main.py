@@ -33,13 +33,13 @@ import prompts
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-
+import time
 
 
 
 BASE = Path(__file__).resolve().parent
 
-countries = ["DE", "FR", "IT", "ES", "HU", "PL", "DK"]
+countries = ["DE", "FR", "IT", "ES", "HU", "PL", "DK", "AT", "BE", "BG"]
 
 
 app = FastAPI(
@@ -59,7 +59,7 @@ app.add_middleware(
 
 
 def main():
-    load_dotenv()
+    load_dotenv("../.env")
 
     # Ensure that the key is loaded
     assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY not found in environment"
@@ -130,18 +130,24 @@ def main():
 
         cached_embedder_openai[country] = CacheBackedEmbeddings.from_bytes_store(embeddings_openai, embedding_cache[country], namespace=f"{country}_{embeddings_openai.model}")
 
-        
         if not url_texts_by_country[country]:
             url_texts_by_country[country] = [Document("")]
 
         url_db[country] = Chroma.from_documents(url_texts_by_country[country], cached_embedder_openai[country],collection_name=f"url_{country}")
         
-        if not pdf_texts_by_country[country]:
-            pdf_texts_by_country[country] = [Document("")]
-
-        pdf_db[country] = Chroma.from_documents(pdf_texts_by_country[country], cached_embedder_openai[country],collection_name=f"pdf_{country}")
-
+        if(country == "BE"):
+            # rate limit for the openai api
+            pdf_db[country] = Chroma.from_documents([document], cached_embedder_openai[country],collection_name=f"pdf_{country}")
+            for i in range(1,len(pdf_texts_by_country[country])):
+                time.sleep(0.0001)
+                pdf_db[country].from_documents([pdf_texts_by_country[country][i]], cached_embedder_openai[country],collection_name=f"pdf_{country}")
         
+        else:
+            if not pdf_texts_by_country[country]:
+                pdf_texts_by_country[country] = [Document("")]
+
+            pdf_db[country] = Chroma.from_documents(pdf_texts_by_country[country], cached_embedder_openai[country],collection_name=f"pdf_{country}")
+
 
         self_retrievers[country] = SelfQueryRetriever.from_llm(
             openai,
