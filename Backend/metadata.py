@@ -134,12 +134,14 @@ def generate_keywords(text, chunck_keywords=10, n_keywords=50):
 
     keywords_text = "\n".join(keywords)
     
+    # handle large texts by splitting them into smaller chunks
     if count_tokens(keywords_text) > 15000:
         keywords_text = split_string_into_chunks(keywords_text, 10000)
         final_keywords = []
         for chunk in keywords_text:
             final_keywords.extend(final_keywords_chain.invoke({"text": chunk, "n_keywords": n_keywords}).content.split("\n"))
-
+    else:
+        final_keywords = [keywords_text]
 
     final_keywords = final_keywords_chain.invoke({"text": "\n".join(final_keywords), "n_keywords": n_keywords})
 
