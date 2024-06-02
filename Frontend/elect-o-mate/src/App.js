@@ -85,7 +85,6 @@ function App() {
     sendMessageToAPI(str, abortController);
   };
 
-  
   useEffect(() => {
     initGA();
     logPageView();
@@ -113,7 +112,6 @@ function App() {
       ]);
 
       text = alter(question, text, messages);
-      
     } else {
       setMessages((prevMessages) => [...prevMessages, { text, isUser: true }]);
     }
@@ -316,6 +314,7 @@ function App() {
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    setInit(false);
     setMessages((prevMessages) => {
       // Update only the first message
       const updatedMessages = [...prevMessages];
@@ -480,7 +479,7 @@ function App() {
             scrollToResult={scrollToResult}
             party={party}
             country={i18n.language.slice(0, 2)}
-            init = {init}
+            init={init}
           />
         </div>
         <div ref={toChat} className='flex justify-center relative mt-64'>
