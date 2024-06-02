@@ -2,17 +2,7 @@ http://www.n-va.be/sites/n-va.be/files/2024-04/Verkiezingsprogramma.pdf
 
 https://assets.nationbuilder.com/cdenv/pages/8534/attachments/original/1713685808/VKprog_vcongresapril.pdf?1713685808
 
-https://www.openvld.be/defensieplan_open_vld
-https://www.openvld.be/woonplan_open_vld
-https://www.openvld.be/landbouwplan_open_vld
-https://www.openvld.be/singleplan_open_vld
-https://www.openvld.be/groeiplan
-https://www.openvld.be/onze_kandidaten
-https://www.openvld.be/regelvrij_plan
-https://www.openvld.be/open_vld_verkiezingsprogramma
-https://www.openvld.be/wtf_ik_ga_stemmen
-https://www.openvld.be/werken_doen_lonen_rd
-https://www.openvld.be/zelfstandigenplan
+./bg_openvld.pdf
 
 https://www.pvda.be/europees-programma/geen-austerity-20-maar-een-europa-van-solidariteit
 https://www.pvda.be/europees-programma/geen-ons-kent-ons-maar-een-europa-waar-de-mensen-het-voor-het-zeggen-hebben
