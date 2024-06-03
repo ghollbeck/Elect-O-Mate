@@ -143,5 +143,6 @@
     "q25": "L'Union européenne doit interdire l'utilisation de caméras à reconnaissance faciale par la police.",
     "t25": "Reconnaissance faciale par la police",
     "f25": "Quels sont les enjeux éthiques liés à l'utilisation de la reconnaissance faciale par les forces de l'ordre?",
-    "fact25": "La reconnaissance faciale soulève des questions de confidentialité et de surveillance massive, nécessitant des régulations strictes."
+    "fact25": "La reconnaissance faciale soulève des questions de confidentialité et de surveillance massive, nécessitant des régulations strictes.",
+    "0":"25"
 }

@@ -1,44 +1,137 @@
 {
+  "choose_country": "Choose your country",
   "followup": "Chat with me!",
-  "subheading": "Ask me something about the EU elections!",
+  "subheading": "Ask me something about the European elections!",
   "start_now": "Or start the quiz now",
   "start_button": "Start now!",
   "sign_up": "Sign up for important updates",
   "email_placeholder": "Email address",
-  "subscribe_to_newsletter": "Subscribe",
-  "made_with_love": "Made with love by people from all over the world.",
-  "open_source": "Open Source",
-  "open_source_p1": "With Elect-O-Mate, we have developed an election tool with AI chatbot integration and are very aware of the ethical implications that come with it. Given the potential risks, such as misinformation and bias inherent in AI technologies, we are committed to transparency and accountability. Here's how we approach this:",
-  "transparency": "Transparency: ",
-  "transparency_content": " Our entire code is open source",
-  "accuracy": "Accuracy and Fairness: ",
-  "accuracy_content": " Advanced RAG pipeline for the highest source accuracy and LLM rule checker to maximize fairness",
-  "ethics": "Ethical Commitment: ",
-  "ethics_content": " We have had preferred sources overseen by political experts and openly participate in the global discussion on AI safety and alignment",
-  "open_source_p2": "Navigating the intersection of technology and democracy, Elect-O-Mate is committed to adhering to the highest standards, ensuring that our AI tools enhance informed opinion formation, decision-making, reduce political apathy, and shorten and improve the accessibility of existing tools.",
+  "subscribe_to_newsletter": "Subscribe to",
+  "made_with_love": "Made with care by people from all over the world.",
+  "open_source": "Open source",
+  "open_source_p1": "With Elect-O-Mate, we developed an election tool with AI chatbot integration, being aware of the ethical considerations this includes. Given the potential risks like misinformation and biases inherent in AI technologies, we commit to transparency and accountability. Here's how we approach this:",
+  "transparency": "Transparency:",
+  "transparency_content": " We work entirely with open source",
+  "accuracy": "Accuracy and correctness:",
+  "accuracy_content": " An advanced generation series with additional information retrieval (RAG) for the highest source accuracy and rule verification of the Large Language Model (LLM) for maximum correctness",
+  "ethics": "Ethical commitment:",
+  "ethics_content": " We had preferred sources, overseen by political experts and openly participate in the global discussion on AI safety and adaptation",
+  "open_source_p2": "At the intersection of technology and democracy, Elect-O-Mate is committed to adhering to the highest standards, ensuring our AI tools improve informed opinion formation and decision-making, reduce political apathy, and enhance the accessibility of existing tools.",
   "tech_report": "Read the technical report",
-  "bot_greeting": "Hello, I am here to help you. Please ask me a question!",
+  "bot_greeting": "Hello, I’m here to help you. Please ask me a question!",
   "send_button_sending": "sending",
   "send_button_send": "send",
   "chat_YOU": "You",
   "chat_placeholder": "Ask a question...",
-  "agree_button": "yes",
+  "agree_button": "agree",
   "neutral_button": "neutral",
-  "disagree_button": "no",
+  "disagree_button": "disagree",
   "skip_button": "skip",
-  "submit_text": "You have reached the end of the questionnaire. Please note that by answering more questions, you will receive more accurate results. ",
+  "submit_text": "You've reached the end of the questionnaire. Please note that by answering more questions, you will get more accurate results.",
   "submit_button": "Submit",
-  "title_results": "Your Results",
-  "informationRequest": "Please provide me more information about the ",
-  "party_voted_for": " votes for ",
+  "title_results": "Your results",
+  "informationRequest": "Please give me more information about ",
+  "party_voted_for": " voted for ",
   "more_information": "Explanation",
-  "party_position_request_1": "Why does the ",
+  "party_position_request_1": "Why ",
   "party_position_request_2": " agree with ",
   "party_position_request_3": " on the following question?",
   "how_it_works": "How it works",
-  "how_it_works_front": "Each card has a statement and three options, from which you should choose the one that best matches your opinion on the statement. If a topic is particularly important to you, you can double the weight of the question by selecting x2. After answering all the questions, you can submit your answers on the last card and see your results. To flip the cards and get more information about the statements, you can click on the symbol at the top right. If you have personalized questions, you can ask them in the text field and chat with Elect-O-Mate.",
-  "how_it_works_back": "On the back of the cards, you will find facts regarding the question.",
+  "how_it_works_front": "Each card has a statement and three options from which you need to choose the one that best matches your opinion on the statement. If a topic is particularly important to you, you can double the weight of the question by selecting x2. After answering all the questions, you can submit your answers on the last card and see your results. To flip the cards and get more information about the statements, you can click on the symbol in the top right corner. If you have personalized questions, you can ask them in the text box and chat with Elect-O-Mate.",
+  "how_it_works_back": "On the back of the cards, you will find facts about the question.",
   "how_graph_works_info": "How to use the graph",
   "how_graph_works_title": "Evaluation",
-  "how_graph_works_content": "Here you can view your results in a bar chart. To get more information about a party, click on the corresponding bar. If you want to compare your results with those of the selected party, you can simply scroll back to the questions.\nTo view the results, click on the x at the top right."
+  "how_graph_works_content": "Here you can see your results in a bar chart. To get more information about a particular party, click on the corresponding bar. If you want to compare your results with those of the selected country, you can simply scroll back to the questions. To see the results, click on x in the top right corner.",
+
+  "q1": "Social programs should be supported even at the cost of increased taxation",
+  "t1": "Funding social programs",
+
+  "q2": "The state should provide more financial support for the unemployed",
+  "t2": "Financial support for the unemployed",
+
+  "q3": "Government spending should be reduced to lower the tax burden",
+  "t3": "Government spending",
+
+  "q4": "Taxes on the wealthiest should be raised",
+  "t4": "Taxation of the wealthy",
+
+  "q5": "The retirement age should be raised to ensure the sustainability of the pension system",
+  "t5": "Retirement age",
+
+  "q6": "The state should intervene directly to control rising prices of basic goods",
+  "t6": "State control of prices",
+
+  "q7": "Legalizing same-sex marriages is a good thing",
+  "t7": "Same-sex marriages",
+
+  "q8": "It is good to legalize the use of light drugs for individual purposes",
+  "t8": "Light drugs",
+
+  "q9": "Access to abortion should be restricted",
+  "t9": "Access to abortion",
+
+  "q10": "Gender quotas (minimum number of seats reserved for women) are a good thing",
+  "t10": "Gender quotas",
+
+  "q11": "Immigrants coming from outside Europe should be required to adopt our culture and values",
+  "t11": "Immigrants and culture",
+
+  "q12": "Immigration policy in Bulgaria should be more restrictive",
+  "t12": "Immigration policy",
+
+  "q13": "The use of public transport should be encouraged through green taxes (e.g., road taxes)",
+  "t13": "Green taxes",
+
+  "q14": "Renewable energy sources (such as solar and wind) should be supported, even if they are more expensive",
+  "t14": "Renewable energy sources",
+
+  "q15": "As envisaged by the European Green Deal, the EU should impose a ban on the sale of internal combustion engine vehicles by 2035",
+  "t15": "Ban on petrol cars",
+
+  "q16": "The European Union should more strictly punish member states that violate the EU deficit rules/do not adhere to financial discipline",
+  "t16": "Deficit penalties",
+
+  "q17": "The European Union should acquire the authority to collect taxes",
+  "t17": "EU tax collection",
+
+  "q18": "The single European currency (Euro) is a bad thing",
+  "t18": "Euro currency",
+
+  "q19": "The EU should speak with one voice on foreign policy issues",
+  "t19": "EU unity in foreign policy",
+
+  "q20": "Refugees should be proportionally distributed among member states through a mandatory distribution system",
+  "t20": "Proportional distribution of refugees",
+
+  "q21": "The European Union should tighten its security and defense policy",
+  "t21": "Security and defense policy",
+
+  "q22": "To combat illegal immigration, the EU should take responsibility for guarding its borders",
+  "t22": "Illegal immigration",
+
+  "q23": "European integration is a good thing",
+  "t23": "European integration",
+
+  "q24": "Individual EU member states should have fewer opportunities for veto power",
+  "t24": "Veto power",
+
+  "q25": "The EU should impose sanctions on member states that undermine the rule of law",
+  "t25": "Sanctions for breaking the law",
+
+  "q26": "The EU should enhance regulation of artificial intelligence technologies, even if it slows down innovation",
+  "t26": "Artificial intelligence",
+
+  "q27": "The EU should protect European farmers from external competition, even if it leads to higher food prices",
+  "t27": "European farmers",
+
+  "q28": "Bulgaria should increase its military spending",
+  "t28": "Military spending",
+
+  "q29": "The European Union should continue to provide military assistance (such as weapons and ammunition) to Ukraine",
+  "t29": "Military assistance to Ukraine",
+
+  "q30": "The European Union should expand to include Ukraine",
+  "t30": "Admitting Ukraine to the EU",
+
+  "0": "30"
 }
