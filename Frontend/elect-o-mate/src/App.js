@@ -121,6 +121,7 @@ function App() {
 
   const InformationRequest = async (party, partyName, abortController) => {
     setParty(party);
+    ////console.warn(party);
     const text = partyName;
     handleSendMessage('', text, abortController);
     scrollToChat();
@@ -359,7 +360,7 @@ function App() {
   }
 
   const getUserLanguageFromIP = useCallback(async () => {
-    console.warn('IP');
+    //console.warn('IP');
     const countryLanguageMap = {
       AT: 'atde', // Austria - German
       BE: 'benl', // Belgium - Dutch
@@ -413,7 +414,7 @@ function App() {
         const userLanguage = await getUserLanguageFromIP(); // Ensure getUserLanguageFromIP is called
         i18n.changeLanguage(userLanguage);
       } catch (error) {
-        console.warn('error, could not find userlanguage.');
+        //console.warn('error, could not find userlanguage.');
         i18n.changeLanguage('deen');
       }
     };

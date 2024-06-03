@@ -75,7 +75,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "CDU / CSU",
-            "Party_Full_Name": "Christlich Demokratische Union Deutschlands / Christlich-Soziale Union in Bayern e.V.",
+            "Full_Party_Name": "Christlich Demokratische Union Deutschlands / Christlich-Soziale Union in Bayern e.V.",
             "Question_Label": "Die EU soll eigene Steuern erheben dürfen.",
             "Party_Answer": -1
         },

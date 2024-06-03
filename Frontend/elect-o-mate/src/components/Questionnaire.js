@@ -16,7 +16,7 @@ const Questionnaire = ({
   scrollToResult,
   country,
   party,
-  init
+  init,
 }) => {
   const { t, i18n } = useTranslation();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
@@ -99,7 +99,6 @@ const Questionnaire = ({
     setQuestions(generateQuestionArray(parseInt(t('0'))));
   }, [t]);
 
-
   useEffect(
     throttle(() => {
       if (containerRef.current && containerRef.current.firstChild) {
@@ -132,11 +131,11 @@ const Questionnaire = ({
   };
 
   const submit = async () => {
-    console.log('SUBMIT');
+    //console.log('SUBMIT');
     abortControllerRef.current = new AbortController();
 
     const jsonData = constructJSON(answers);
-    console.warn({ jsonData });
+    // console.warn({ jsonData });
 
     try {
       const response = await fetch(
@@ -152,10 +151,10 @@ const Questionnaire = ({
       );
 
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       questionnaireAnswers(data.result, abortControllerRef.current);
       setPartyAnswers(data.party_answers);
-      console.warn(data.party_answers);
+      //console.warn(data.party_answers);
     } catch (error) {
       if (error.name === 'AbortError') {
         console.log('Fetch aborted');
@@ -279,8 +278,6 @@ const Questionnaire = ({
       }
     };
   }, [questions]);
-
-   
 
   const scrollBarHideStyle = {
     overflow: 'auto',
