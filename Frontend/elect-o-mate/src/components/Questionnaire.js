@@ -16,7 +16,7 @@ const Questionnaire = ({
   scrollToResult,
   country,
   party,
-  init,
+  init
 }) => {
   const { t, i18n } = useTranslation();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
@@ -98,6 +98,7 @@ const Questionnaire = ({
   useEffect(() => {
     setQuestions(generateQuestionArray(parseInt(t('0'))));
   }, [t]);
+
 
   useEffect(
     throttle(() => {
@@ -278,6 +279,8 @@ const Questionnaire = ({
       }
     };
   }, [questions]);
+
+   
 
   const scrollBarHideStyle = {
     overflow: 'auto',
