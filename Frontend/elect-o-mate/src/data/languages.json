@@ -1,5 +1,35 @@
 [
   {
+    "value": "atde",
+    "label": "Österreich",
+    "countryCode": "AT"
+  },
+  {
+    "value": "aten",
+    "label": "Austria",
+    "countryCode": "AT"
+  },
+  {
+    "value": "benl",
+    "label": "Belgien",
+    "countryCode": "BE"
+  },
+  {
+    "value": "benl",
+    "label": "Belgium",
+    "countryCode": "BE"
+  },
+  {
+    "value": "bgbg",
+    "label": "България",
+    "countryCode": "BG"
+  },
+  {
+    "value": "bgen",
+    "label": "Bulgaria",
+    "countryCode": "BG"
+  },
+  {
     "value": "dede",
     "label": "Deutschland",
     "countryCode": "DE"
@@ -18,6 +48,16 @@
     "value": "esen",
     "label": "Spain",
     "countryCode": "ES"
+  },
+  {
+    "value": "frfr",
+    "label": "France",
+    "countryCode": "FR"
+  },
+  {
+    "value": "fren",
+    "label": "France",
+    "countryCode": "FR"
   },
   {
     "value": "huhu",

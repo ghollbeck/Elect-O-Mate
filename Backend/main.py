@@ -139,7 +139,7 @@ def main():
             # rate limit for the openai api
             pdf_db[country] = Chroma.from_documents([document], cached_embedder_openai[country],collection_name=f"pdf_{country}")
             for i in range(1,len(pdf_texts_by_country[country])):
-                time.sleep(0.0001)
+                # time.sleep(0.0001) -- if already generated we dont need this
                 pdf_db[country].from_documents([pdf_texts_by_country[country][i]], cached_embedder_openai[country],collection_name=f"pdf_{country}")
         
         else:
