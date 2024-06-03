@@ -116,9 +116,7 @@
     "q18": "Should the EU impose sanctions on member states that violate the principles of the rule of law?",
     "t18": "Sanctions against Member States",
     "f18": "How would imposing sanctions affect the unity of the EU?",
-    "fact18": "Poland and Hungary are
-
- currently under observation by the EU for violations of the rule of law.",
+    "fact18": "Poland and Hungary are currently under observation by the EU for violations of the rule of law.",
     "q19": "Should the EU have the right to levy its own taxes?",
     "t19": "EU Taxation Rights",
     "f19": "How would the EU's right to levy taxes affect its financial autonomy?",
@@ -166,6 +164,6 @@
     "q30": "Should the EU continue to support Ukraine?",
     "t30": "Support for Ukraine",
     "f30": "How would continued support for Ukraine affect stability in Europe?",
-    "fact30": "Since 2014, the EU has provided extensive aid programs to Ukraine to support reforms and economic stability."
+    "fact30": "Since 2014, the EU has provided extensive aid programs to Ukraine to support reforms and economic stability.",
+    "0":"30"
 }
-```
