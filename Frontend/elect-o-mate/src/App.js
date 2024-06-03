@@ -130,7 +130,11 @@ function App() {
     setIsSending(true);
 
     const countryCode = i18n.language.slice(0, 2).toUpperCase();
-    const languageCode = i18n.language.slice(2, 4).toUpperCase();
+    var languageCode = i18n.language.slice(2, 4).toUpperCase();
+    
+    if(languageCode != 'EN'){
+      languageCode = countryCode;
+    }
 
     try {
       // Perform API request with streaming using Fetch API and AbortController
@@ -250,7 +254,7 @@ function App() {
       'ltlt', // Lithuania - Lithuanian
       'lvlv', // Latvia - Latvian
       'lufr', // Luxembourg - French
-      'mten', // Malta - English
+      'mten', // Malta - Englishx
       'nlnl', // Netherlands - Dutch
       'plpl', // Poland - Polish
       'ptpt', // Portugal - Portuguese
