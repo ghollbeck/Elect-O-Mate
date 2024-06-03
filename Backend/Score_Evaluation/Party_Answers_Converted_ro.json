@@ -19,7 +19,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Social programmes should be maintained even in the face of higher taxes",
             "Question_Label_OG": "Programele sociale ar trebui men\u0163inute chiar \u00een situa\u0163ia unor taxe mai ridicate",
             "Party_Answer": 1
@@ -27,7 +27,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Social programmes should be maintained even in the face of higher taxes",
             "Question_Label_OG": "Programele sociale ar trebui men\u0163inute chiar \u00een situa\u0163ia unor taxe mai ridicate",
             "Party_Answer": 1
@@ -35,7 +35,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Social programmes should be maintained even in the face of higher taxes",
             "Question_Label_OG": "Programele sociale ar trebui men\u0163inute chiar \u00een situa\u0163ia unor taxe mai ridicate",
             "Party_Answer": -1
@@ -43,7 +43,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Social programmes should be maintained even in the face of higher taxes",
             "Question_Label_OG": "Programele sociale ar trebui men\u0163inute chiar \u00een situa\u0163ia unor taxe mai ridicate",
             "Party_Answer": 1
@@ -51,7 +51,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Social programmes should be maintained even in the face of higher taxes",
             "Question_Label_OG": "Programele sociale ar trebui men\u0163inute chiar \u00een situa\u0163ia unor taxe mai ridicate",
             "Party_Answer": 1
@@ -59,7 +59,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Social programmes should be maintained even in the face of higher taxes",
             "Question_Label_OG": "Programele sociale ar trebui men\u0163inute chiar \u00een situa\u0163ia unor taxe mai ridicate",
             "Party_Answer": -1
@@ -67,7 +67,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "The state should provide the unemployed with more financial support",
             "Question_Label_OG": "Statul ar trebui s\u0103 ofere \u015fomerilor sprijin financiar mai consistent",
             "Party_Answer": 0
@@ -75,7 +75,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "The state should provide the unemployed with more financial support",
             "Question_Label_OG": "Statul ar trebui s\u0103 ofere \u015fomerilor sprijin financiar mai consistent",
             "Party_Answer": 1
@@ -83,7 +83,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "The state should provide the unemployed with more financial support",
             "Question_Label_OG": "Statul ar trebui s\u0103 ofere \u015fomerilor sprijin financiar mai consistent",
             "Party_Answer": -1
@@ -91,7 +91,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "The state should provide the unemployed with more financial support",
             "Question_Label_OG": "Statul ar trebui s\u0103 ofere \u015fomerilor sprijin financiar mai consistent",
             "Party_Answer": -1
@@ -99,7 +99,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "The state should provide the unemployed with more financial support",
             "Question_Label_OG": "Statul ar trebui s\u0103 ofere \u015fomerilor sprijin financiar mai consistent",
             "Party_Answer": 1
@@ -107,7 +107,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "The state should provide the unemployed with more financial support",
             "Question_Label_OG": "Statul ar trebui s\u0103 ofere \u015fomerilor sprijin financiar mai consistent",
             "Party_Answer": -1
@@ -115,7 +115,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "The European Union should severely punish Member States that violate EU deficit rules",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103 pedepseasc\u0103 sever Statele Membre care \u00eencalc\u0103 regulile de deficit ale UE",
             "Party_Answer": 0
@@ -123,7 +123,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "The European Union should severely punish Member States that violate EU deficit rules",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103 pedepseasc\u0103 sever Statele Membre care \u00eencalc\u0103 regulile de deficit ale UE",
             "Party_Answer": -1
@@ -131,7 +131,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "The European Union should severely punish Member States that violate EU deficit rules",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103 pedepseasc\u0103 sever Statele Membre care \u00eencalc\u0103 regulile de deficit ale UE",
             "Party_Answer": 0
@@ -139,7 +139,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "The European Union should severely punish Member States that violate EU deficit rules",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103 pedepseasc\u0103 sever Statele Membre care \u00eencalc\u0103 regulile de deficit ale UE",
             "Party_Answer": 1
@@ -147,7 +147,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "The European Union should severely punish Member States that violate EU deficit rules",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103 pedepseasc\u0103 sever Statele Membre care \u00eencalc\u0103 regulile de deficit ale UE",
             "Party_Answer": 1
@@ -155,7 +155,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "The European Union should severely punish Member States that violate EU deficit rules",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103 pedepseasc\u0103 sever Statele Membre care \u00eencalc\u0103 regulile de deficit ale UE",
             "Party_Answer": -1
@@ -163,7 +163,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Asylum seekers should be shared proportionally among EU Member States through a compulsory distribution system",
             "Question_Label_OG": "Solicitan\u021bii de azil ar trebui \u00eemp\u0103r\u021bi\u021bi \u00een mod propor\u021bional \u00eentre Statele Membre UE printr-un sistem obligatoriu de distribuire",
             "Party_Answer": 0
@@ -171,7 +171,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Asylum seekers should be shared proportionally among EU Member States through a compulsory distribution system",
             "Question_Label_OG": "Solicitan\u021bii de azil ar trebui \u00eemp\u0103r\u021bi\u021bi \u00een mod propor\u021bional \u00eentre Statele Membre UE printr-un sistem obligatoriu de distribuire",
             "Party_Answer": -1
@@ -179,7 +179,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Asylum seekers should be shared proportionally among EU Member States through a compulsory distribution system",
             "Question_Label_OG": "Solicitan\u021bii de azil ar trebui \u00eemp\u0103r\u021bi\u021bi \u00een mod propor\u021bional \u00eentre Statele Membre UE printr-un sistem obligatoriu de distribuire",
             "Party_Answer": -1
@@ -187,7 +187,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Asylum seekers should be shared proportionally among EU Member States through a compulsory distribution system",
             "Question_Label_OG": "Solicitan\u021bii de azil ar trebui \u00eemp\u0103r\u021bi\u021bi \u00een mod propor\u021bional \u00eentre Statele Membre UE printr-un sistem obligatoriu de distribuire",
             "Party_Answer": 0
@@ -195,7 +195,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Asylum seekers should be shared proportionally among EU Member States through a compulsory distribution system",
             "Question_Label_OG": "Solicitan\u021bii de azil ar trebui \u00eemp\u0103r\u021bi\u021bi \u00een mod propor\u021bional \u00eentre Statele Membre UE printr-un sistem obligatoriu de distribuire",
             "Party_Answer": -1
@@ -203,7 +203,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Asylum seekers should be shared proportionally among EU Member States through a compulsory distribution system",
             "Question_Label_OG": "Solicitan\u021bii de azil ar trebui \u00eemp\u0103r\u021bi\u021bi \u00een mod propor\u021bional \u00eentre Statele Membre UE printr-un sistem obligatoriu de distribuire",
             "Party_Answer": 1
@@ -211,7 +211,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Immigration to Romania should be further restricted",
             "Question_Label_OG": "Imigra\u0163ia \u00een Rom\u00e2nia ar trebui restric\u0163ionat\u0103 mai mult",
             "Party_Answer": -1
@@ -219,7 +219,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Immigration to Romania should be further restricted",
             "Question_Label_OG": "Imigra\u0163ia \u00een Rom\u00e2nia ar trebui restric\u0163ionat\u0103 mai mult",
             "Party_Answer": 1
@@ -227,7 +227,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Immigration to Romania should be further restricted",
             "Question_Label_OG": "Imigra\u0163ia \u00een Rom\u00e2nia ar trebui restric\u0163ionat\u0103 mai mult",
             "Party_Answer": -1
@@ -235,7 +235,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Immigration to Romania should be further restricted",
             "Question_Label_OG": "Imigra\u0163ia \u00een Rom\u00e2nia ar trebui restric\u0163ionat\u0103 mai mult",
             "Party_Answer": 0
@@ -243,7 +243,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Immigration to Romania should be further restricted",
             "Question_Label_OG": "Imigra\u0163ia \u00een Rom\u00e2nia ar trebui restric\u0163ionat\u0103 mai mult",
             "Party_Answer": 0
@@ -251,7 +251,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Immigration to Romania should be further restricted",
             "Question_Label_OG": "Imigra\u0163ia \u00een Rom\u00e2nia ar trebui restric\u0163ionat\u0103 mai mult",
             "Party_Answer": -1
@@ -259,7 +259,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Immigrants from outside Europe should accept our culture and values",
             "Question_Label_OG": "Imigran\u0163ii din afara Europei ar trebui s\u0103 accepte cultura \u015fi valorile noastre",
             "Party_Answer": 0
@@ -267,7 +267,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Immigrants from outside Europe should accept our culture and values",
             "Question_Label_OG": "Imigran\u0163ii din afara Europei ar trebui s\u0103 accepte cultura \u015fi valorile noastre",
             "Party_Answer": 0
@@ -275,7 +275,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Immigrants from outside Europe should accept our culture and values",
             "Question_Label_OG": "Imigran\u0163ii din afara Europei ar trebui s\u0103 accepte cultura \u015fi valorile noastre",
             "Party_Answer": 0
@@ -283,7 +283,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Immigrants from outside Europe should accept our culture and values",
             "Question_Label_OG": "Imigran\u0163ii din afara Europei ar trebui s\u0103 accepte cultura \u015fi valorile noastre",
             "Party_Answer": 1
@@ -291,7 +291,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Immigrants from outside Europe should accept our culture and values",
             "Question_Label_OG": "Imigran\u0163ii din afara Europei ar trebui s\u0103 accepte cultura \u015fi valorile noastre",
             "Party_Answer": 1
@@ -299,7 +299,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Immigrants from outside Europe should accept our culture and values",
             "Question_Label_OG": "Imigran\u0163ii din afara Europei ar trebui s\u0103 accepte cultura \u015fi valorile noastre",
             "Party_Answer": 1
@@ -307,7 +307,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Legalising same-sex marriage is a good thing",
             "Question_Label_OG": "Legalizarea c\u0103s\u0103toriilor \u00eentre persoanele de acela\u015fi sex este un lucru bun",
             "Party_Answer": 0
@@ -315,7 +315,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Legalising same-sex marriage is a good thing",
             "Question_Label_OG": "Legalizarea c\u0103s\u0103toriilor \u00eentre persoanele de acela\u015fi sex este un lucru bun",
             "Party_Answer": -1
@@ -323,7 +323,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Legalising same-sex marriage is a good thing",
             "Question_Label_OG": "Legalizarea c\u0103s\u0103toriilor \u00eentre persoanele de acela\u015fi sex este un lucru bun",
             "Party_Answer": -1
@@ -331,7 +331,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Legalising same-sex marriage is a good thing",
             "Question_Label_OG": "Legalizarea c\u0103s\u0103toriilor \u00eentre persoanele de acela\u015fi sex este un lucru bun",
             "Party_Answer": -1
@@ -339,7 +339,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Legalising same-sex marriage is a good thing",
             "Question_Label_OG": "Legalizarea c\u0103s\u0103toriilor \u00eentre persoanele de acela\u015fi sex este un lucru bun",
             "Party_Answer": -1
@@ -347,7 +347,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Legalising same-sex marriage is a good thing",
             "Question_Label_OG": "Legalizarea c\u0103s\u0103toriilor \u00eentre persoanele de acela\u015fi sex este un lucru bun",
             "Party_Answer": 1
@@ -355,7 +355,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Legalisation of soft drugs for personal use is desirable",
             "Question_Label_OG": "Legalizarea utiliz\u0103rii de droguri u\u015foare pentru uz personal este dezirabil\u0103",
             "Party_Answer": -1
@@ -363,7 +363,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Legalisation of soft drugs for personal use is desirable",
             "Question_Label_OG": "Legalizarea utiliz\u0103rii de droguri u\u015foare pentru uz personal este dezirabil\u0103",
             "Party_Answer": 0
@@ -371,7 +371,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Legalisation of soft drugs for personal use is desirable",
             "Question_Label_OG": "Legalizarea utiliz\u0103rii de droguri u\u015foare pentru uz personal este dezirabil\u0103",
             "Party_Answer": -1
@@ -379,7 +379,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Legalisation of soft drugs for personal use is desirable",
             "Question_Label_OG": "Legalizarea utiliz\u0103rii de droguri u\u015foare pentru uz personal este dezirabil\u0103",
             "Party_Answer": -1
@@ -387,7 +387,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Legalisation of soft drugs for personal use is desirable",
             "Question_Label_OG": "Legalizarea utiliz\u0103rii de droguri u\u015foare pentru uz personal este dezirabil\u0103",
             "Party_Answer": -1
@@ -395,7 +395,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Legalisation of soft drugs for personal use is desirable",
             "Question_Label_OG": "Legalizarea utiliz\u0103rii de droguri u\u015foare pentru uz personal este dezirabil\u0103",
             "Party_Answer": 0
@@ -403,7 +403,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Euthanasia should be legalised",
             "Question_Label_OG": "Eutanasia ar trebui legalizat\u0103",
             "Party_Answer": 0
@@ -411,7 +411,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Euthanasia should be legalised",
             "Question_Label_OG": "Eutanasia ar trebui legalizat\u0103",
             "Party_Answer": 0
@@ -419,7 +419,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Euthanasia should be legalised",
             "Question_Label_OG": "Eutanasia ar trebui legalizat\u0103",
             "Party_Answer": 0
@@ -427,7 +427,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Euthanasia should be legalised",
             "Question_Label_OG": "Eutanasia ar trebui legalizat\u0103",
             "Party_Answer": 0
@@ -435,7 +435,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Euthanasia should be legalised",
             "Question_Label_OG": "Eutanasia ar trebui legalizat\u0103",
             "Party_Answer": -1
@@ -443,7 +443,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Euthanasia should be legalised",
             "Question_Label_OG": "Eutanasia ar trebui legalizat\u0103",
             "Party_Answer": 0
@@ -451,7 +451,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Government spending should be cut to reduce taxes",
             "Question_Label_OG": "Cheltuielile guvernamentale ar trebui reduse pentru a reduce taxele",
             "Party_Answer": 1
@@ -459,7 +459,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Government spending should be cut to reduce taxes",
             "Question_Label_OG": "Cheltuielile guvernamentale ar trebui reduse pentru a reduce taxele",
             "Party_Answer": -1
@@ -467,7 +467,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Government spending should be cut to reduce taxes",
             "Question_Label_OG": "Cheltuielile guvernamentale ar trebui reduse pentru a reduce taxele",
             "Party_Answer": 1
@@ -475,7 +475,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Government spending should be cut to reduce taxes",
             "Question_Label_OG": "Cheltuielile guvernamentale ar trebui reduse pentru a reduce taxele",
             "Party_Answer": 1
@@ -483,7 +483,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Government spending should be cut to reduce taxes",
             "Question_Label_OG": "Cheltuielile guvernamentale ar trebui reduse pentru a reduce taxele",
             "Party_Answer": 0
@@ -491,7 +491,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Government spending should be cut to reduce taxes",
             "Question_Label_OG": "Cheltuielile guvernamentale ar trebui reduse pentru a reduce taxele",
             "Party_Answer": 1
@@ -499,7 +499,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "The EU should acquire the right to introduce its own taxes",
             "Question_Label_OG": "UE ar trebui s\u0103 dob\u00e2ndeasc\u0103 dreptul de a introduce taxe proprii",
             "Party_Answer": 0
@@ -507,7 +507,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "The EU should acquire the right to introduce its own taxes",
             "Question_Label_OG": "UE ar trebui s\u0103 dob\u00e2ndeasc\u0103 dreptul de a introduce taxe proprii",
             "Party_Answer": 0
@@ -515,7 +515,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "The EU should acquire the right to introduce its own taxes",
             "Question_Label_OG": "UE ar trebui s\u0103 dob\u00e2ndeasc\u0103 dreptul de a introduce taxe proprii",
             "Party_Answer": 0
@@ -523,7 +523,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "The EU should acquire the right to introduce its own taxes",
             "Question_Label_OG": "UE ar trebui s\u0103 dob\u00e2ndeasc\u0103 dreptul de a introduce taxe proprii",
             "Party_Answer": 0
@@ -531,7 +531,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "The EU should acquire the right to introduce its own taxes",
             "Question_Label_OG": "UE ar trebui s\u0103 dob\u00e2ndeasc\u0103 dreptul de a introduce taxe proprii",
             "Party_Answer": 1
@@ -539,7 +539,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "The EU should acquire the right to introduce its own taxes",
             "Question_Label_OG": "UE ar trebui s\u0103 dob\u00e2ndeasc\u0103 dreptul de a introduce taxe proprii",
             "Party_Answer": 0
@@ -547,7 +547,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Earnings from banking and stock exchanges should be taxed more",
             "Question_Label_OG": "C\u00e2\u015ftigurile ob\u0163inute din opera\u0163iunile bancare \u015fi la bursele de valori ar trebui s\u0103 fie impozitate mai mult",
             "Party_Answer": 0
@@ -555,7 +555,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Earnings from banking and stock exchanges should be taxed more",
             "Question_Label_OG": "C\u00e2\u015ftigurile ob\u0163inute din opera\u0163iunile bancare \u015fi la bursele de valori ar trebui s\u0103 fie impozitate mai mult",
             "Party_Answer": 1
@@ -563,7 +563,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Earnings from banking and stock exchanges should be taxed more",
             "Question_Label_OG": "C\u00e2\u015ftigurile ob\u0163inute din opera\u0163iunile bancare \u015fi la bursele de valori ar trebui s\u0103 fie impozitate mai mult",
             "Party_Answer": -1
@@ -571,7 +571,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Earnings from banking and stock exchanges should be taxed more",
             "Question_Label_OG": "C\u00e2\u015ftigurile ob\u0163inute din opera\u0163iunile bancare \u015fi la bursele de valori ar trebui s\u0103 fie impozitate mai mult",
             "Party_Answer": 0
@@ -579,7 +579,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Earnings from banking and stock exchanges should be taxed more",
             "Question_Label_OG": "C\u00e2\u015ftigurile ob\u0163inute din opera\u0163iunile bancare \u015fi la bursele de valori ar trebui s\u0103 fie impozitate mai mult",
             "Party_Answer": 1
@@ -587,7 +587,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Earnings from banking and stock exchanges should be taxed more",
             "Question_Label_OG": "C\u00e2\u015ftigurile ob\u0163inute din opera\u0163iunile bancare \u015fi la bursele de valori ar trebui s\u0103 fie impozitate mai mult",
             "Party_Answer": 1
@@ -595,7 +595,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Promotion of public transport should be facilitated by environmental taxes (e.g. road tolls)",
             "Question_Label_OG": "Promovarea transportului public ar trebui facilitat\u0103 prin taxe de mediu (de exemplu rovinieta)",
             "Party_Answer": 1
@@ -603,7 +603,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Promotion of public transport should be facilitated by environmental taxes (e.g. road tolls)",
             "Question_Label_OG": "Promovarea transportului public ar trebui facilitat\u0103 prin taxe de mediu (de exemplu rovinieta)",
             "Party_Answer": 1
@@ -611,7 +611,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Promotion of public transport should be facilitated by environmental taxes (e.g. road tolls)",
             "Question_Label_OG": "Promovarea transportului public ar trebui facilitat\u0103 prin taxe de mediu (de exemplu rovinieta)",
             "Party_Answer": 0
@@ -619,7 +619,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Promotion of public transport should be facilitated by environmental taxes (e.g. road tolls)",
             "Question_Label_OG": "Promovarea transportului public ar trebui facilitat\u0103 prin taxe de mediu (de exemplu rovinieta)",
             "Party_Answer": 0
@@ -627,7 +627,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Promotion of public transport should be facilitated by environmental taxes (e.g. road tolls)",
             "Question_Label_OG": "Promovarea transportului public ar trebui facilitat\u0103 prin taxe de mediu (de exemplu rovinieta)",
             "Party_Answer": 1
@@ -635,7 +635,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Promotion of public transport should be facilitated by environmental taxes (e.g. road tolls)",
             "Question_Label_OG": "Promovarea transportului public ar trebui facilitat\u0103 prin taxe de mediu (de exemplu rovinieta)",
             "Party_Answer": -1
@@ -643,7 +643,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Renewable energy sources (e.g. solar or wind power) should be supported even if this involves higher energy costs",
             "Question_Label_OG": "Sursele de energie regenerabil\u0103 (de exemplu energia solar\u0103 sau eolian\u0103) ar trebui sprijinite chiar dac\u0103 aceasta implic\u0103 costuri energetice mai ridicate",
             "Party_Answer": 1
@@ -651,7 +651,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Renewable energy sources (e.g. solar or wind power) should be supported even if this involves higher energy costs",
             "Question_Label_OG": "Sursele de energie regenerabil\u0103 (de exemplu energia solar\u0103 sau eolian\u0103) ar trebui sprijinite chiar dac\u0103 aceasta implic\u0103 costuri energetice mai ridicate",
             "Party_Answer": 1
@@ -659,7 +659,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Renewable energy sources (e.g. solar or wind power) should be supported even if this involves higher energy costs",
             "Question_Label_OG": "Sursele de energie regenerabil\u0103 (de exemplu energia solar\u0103 sau eolian\u0103) ar trebui sprijinite chiar dac\u0103 aceasta implic\u0103 costuri energetice mai ridicate",
             "Party_Answer": 1
@@ -667,7 +667,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Renewable energy sources (e.g. solar or wind power) should be supported even if this involves higher energy costs",
             "Question_Label_OG": "Sursele de energie regenerabil\u0103 (de exemplu energia solar\u0103 sau eolian\u0103) ar trebui sprijinite chiar dac\u0103 aceasta implic\u0103 costuri energetice mai ridicate",
             "Party_Answer": 1
@@ -675,7 +675,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Renewable energy sources (e.g. solar or wind power) should be supported even if this involves higher energy costs",
             "Question_Label_OG": "Sursele de energie regenerabil\u0103 (de exemplu energia solar\u0103 sau eolian\u0103) ar trebui sprijinite chiar dac\u0103 aceasta implic\u0103 costuri energetice mai ridicate",
             "Party_Answer": 1
@@ -683,7 +683,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Renewable energy sources (e.g. solar or wind power) should be supported even if this involves higher energy costs",
             "Question_Label_OG": "Sursele de energie regenerabil\u0103 (de exemplu energia solar\u0103 sau eolian\u0103) ar trebui sprijinite chiar dac\u0103 aceasta implic\u0103 costuri energetice mai ridicate",
             "Party_Answer": -1
@@ -691,7 +691,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Restrictions on internet privacy should be accepted for reasons of public safety",
             "Question_Label_OG": "Restric\u0163iile asupra vie\u0163ii private pe Internet ar trebui acceptate din motive de securitate public\u0103",
             "Party_Answer": 0
@@ -699,7 +699,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Restrictions on internet privacy should be accepted for reasons of public safety",
             "Question_Label_OG": "Restric\u0163iile asupra vie\u0163ii private pe Internet ar trebui acceptate din motive de securitate public\u0103",
             "Party_Answer": 1
@@ -707,7 +707,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Restrictions on internet privacy should be accepted for reasons of public safety",
             "Question_Label_OG": "Restric\u0163iile asupra vie\u0163ii private pe Internet ar trebui acceptate din motive de securitate public\u0103",
             "Party_Answer": 1
@@ -715,7 +715,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Restrictions on internet privacy should be accepted for reasons of public safety",
             "Question_Label_OG": "Restric\u0163iile asupra vie\u0163ii private pe Internet ar trebui acceptate din motive de securitate public\u0103",
             "Party_Answer": 0
@@ -723,7 +723,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Restrictions on internet privacy should be accepted for reasons of public safety",
             "Question_Label_OG": "Restric\u0163iile asupra vie\u0163ii private pe Internet ar trebui acceptate din motive de securitate public\u0103",
             "Party_Answer": -1
@@ -731,7 +731,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Restrictions on internet privacy should be accepted for reasons of public safety",
             "Question_Label_OG": "Restric\u0163iile asupra vie\u0163ii private pe Internet ar trebui acceptate din motive de securitate public\u0103",
             "Party_Answer": -1
@@ -739,7 +739,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "Criminals should be punished more severely",
             "Question_Label_OG": "Infractorii ar trebui pedepsi\u0163i mai sever",
             "Party_Answer": 1
@@ -747,7 +747,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "Criminals should be punished more severely",
             "Question_Label_OG": "Infractorii ar trebui pedepsi\u0163i mai sever",
             "Party_Answer": -1
@@ -755,7 +755,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "Criminals should be punished more severely",
             "Question_Label_OG": "Infractorii ar trebui pedepsi\u0163i mai sever",
             "Party_Answer": 1
@@ -763,7 +763,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "Criminals should be punished more severely",
             "Question_Label_OG": "Infractorii ar trebui pedepsi\u0163i mai sever",
             "Party_Answer": 1
@@ -771,7 +771,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "Criminals should be punished more severely",
             "Question_Label_OG": "Infractorii ar trebui pedepsi\u0163i mai sever",
             "Party_Answer": -1
@@ -779,7 +779,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "Criminals should be punished more severely",
             "Question_Label_OG": "Infractorii ar trebui pedepsi\u0163i mai sever",
             "Party_Answer": -1
@@ -787,7 +787,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "The European Union should strengthen its security and defence policy",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103-\u015fi \u00eent\u0103reasc\u0103 politica de securitate \u015fi ap\u0103rare",
             "Party_Answer": 1
@@ -795,7 +795,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "The European Union should strengthen its security and defence policy",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103-\u015fi \u00eent\u0103reasc\u0103 politica de securitate \u015fi ap\u0103rare",
             "Party_Answer": -1
@@ -803,7 +803,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "The European Union should strengthen its security and defence policy",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103-\u015fi \u00eent\u0103reasc\u0103 politica de securitate \u015fi ap\u0103rare",
             "Party_Answer": 1
@@ -811,7 +811,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "The European Union should strengthen its security and defence policy",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103-\u015fi \u00eent\u0103reasc\u0103 politica de securitate \u015fi ap\u0103rare",
             "Party_Answer": 0
@@ -819,7 +819,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "The European Union should strengthen its security and defence policy",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103-\u015fi \u00eent\u0103reasc\u0103 politica de securitate \u015fi ap\u0103rare",
             "Party_Answer": 1
@@ -827,7 +827,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "The European Union should strengthen its security and defence policy",
             "Question_Label_OG": "Uniunea European\u0103 ar trebui s\u0103-\u015fi \u00eent\u0103reasc\u0103 politica de securitate \u015fi ap\u0103rare",
             "Party_Answer": 1
@@ -835,7 +835,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "The European Union should present a common position on foreign affairs",
             "Question_Label_OG": "\u00cen ceea ce prive\u015fte afacerile externe Uniunea European\u0103 ar trebui s\u0103 prezinte o pozi\u0163ie comun\u0103",
             "Party_Answer": 1
@@ -843,7 +843,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "The European Union should present a common position on foreign affairs",
             "Question_Label_OG": "\u00cen ceea ce prive\u015fte afacerile externe Uniunea European\u0103 ar trebui s\u0103 prezinte o pozi\u0163ie comun\u0103",
             "Party_Answer": 1
@@ -851,7 +851,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "The European Union should present a common position on foreign affairs",
             "Question_Label_OG": "\u00cen ceea ce prive\u015fte afacerile externe Uniunea European\u0103 ar trebui s\u0103 prezinte o pozi\u0163ie comun\u0103",
             "Party_Answer": 1
@@ -859,7 +859,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "The European Union should present a common position on foreign affairs",
             "Question_Label_OG": "\u00cen ceea ce prive\u015fte afacerile externe Uniunea European\u0103 ar trebui s\u0103 prezinte o pozi\u0163ie comun\u0103",
             "Party_Answer": 1
@@ -867,7 +867,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "The European Union should present a common position on foreign affairs",
             "Question_Label_OG": "\u00cen ceea ce prive\u015fte afacerile externe Uniunea European\u0103 ar trebui s\u0103 prezinte o pozi\u0163ie comun\u0103",
             "Party_Answer": 1
@@ -875,7 +875,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "The European Union should present a common position on foreign affairs",
             "Question_Label_OG": "\u00cen ceea ce prive\u015fte afacerile externe Uniunea European\u0103 ar trebui s\u0103 prezinte o pozi\u0163ie comun\u0103",
             "Party_Answer": 1
@@ -883,7 +883,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "European integration is a good thing",
             "Question_Label_OG": "Integrarea european\u0103 este un lucru bun",
             "Party_Answer": 1
@@ -891,7 +891,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "European integration is a good thing",
             "Question_Label_OG": "Integrarea european\u0103 este un lucru bun",
             "Party_Answer": -1
@@ -899,7 +899,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "European integration is a good thing",
             "Question_Label_OG": "Integrarea european\u0103 este un lucru bun",
             "Party_Answer": 1
@@ -907,7 +907,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "European integration is a good thing",
             "Question_Label_OG": "Integrarea european\u0103 este un lucru bun",
             "Party_Answer": 1
@@ -915,7 +915,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "European integration is a good thing",
             "Question_Label_OG": "Integrarea european\u0103 este un lucru bun",
             "Party_Answer": 1
@@ -923,7 +923,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "European integration is a good thing",
             "Question_Label_OG": "Integrarea european\u0103 este un lucru bun",
             "Party_Answer": 1
@@ -931,7 +931,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "The European single currency (Euro) is a bad thing",
             "Question_Label_OG": "Moneda unic\u0103 european\u0103 (Euro) este un lucru r\u0103u",
             "Party_Answer": -1
@@ -939,7 +939,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "The European single currency (Euro) is a bad thing",
             "Question_Label_OG": "Moneda unic\u0103 european\u0103 (Euro) este un lucru r\u0103u",
             "Party_Answer": -1
@@ -947,7 +947,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "The European single currency (Euro) is a bad thing",
             "Question_Label_OG": "Moneda unic\u0103 european\u0103 (Euro) este un lucru r\u0103u",
             "Party_Answer": -1
@@ -955,7 +955,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "The European single currency (Euro) is a bad thing",
             "Question_Label_OG": "Moneda unic\u0103 european\u0103 (Euro) este un lucru r\u0103u",
             "Party_Answer": -1
@@ -963,7 +963,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "The European single currency (Euro) is a bad thing",
             "Question_Label_OG": "Moneda unic\u0103 european\u0103 (Euro) este un lucru r\u0103u",
             "Party_Answer": -1
@@ -971,7 +971,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "The European single currency (Euro) is a bad thing",
             "Question_Label_OG": "Moneda unic\u0103 european\u0103 (Euro) este un lucru r\u0103u",
             "Party_Answer": -1
@@ -979,7 +979,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "EU Member States should have less veto power",
             "Question_Label_OG": "Statele Membre ale Uniunii Europene ar trebui s\u0103 aib\u0103 mai pu\u0163in\u0103 putere de veto",
             "Party_Answer": -1
@@ -987,7 +987,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "EU Member States should have less veto power",
             "Question_Label_OG": "Statele Membre ale Uniunii Europene ar trebui s\u0103 aib\u0103 mai pu\u0163in\u0103 putere de veto",
             "Party_Answer": -1
@@ -995,7 +995,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "EU Member States should have less veto power",
             "Question_Label_OG": "Statele Membre ale Uniunii Europene ar trebui s\u0103 aib\u0103 mai pu\u0163in\u0103 putere de veto",
             "Party_Answer": 1
@@ -1003,7 +1003,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "EU Member States should have less veto power",
             "Question_Label_OG": "Statele Membre ale Uniunii Europene ar trebui s\u0103 aib\u0103 mai pu\u0163in\u0103 putere de veto",
             "Party_Answer": 1
@@ -1011,7 +1011,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "EU Member States should have less veto power",
             "Question_Label_OG": "Statele Membre ale Uniunii Europene ar trebui s\u0103 aib\u0103 mai pu\u0163in\u0103 putere de veto",
             "Party_Answer": 1
@@ -1019,7 +1019,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "EU Member States should have less veto power",
             "Question_Label_OG": "Statele Membre ale Uniunii Europene ar trebui s\u0103 aib\u0103 mai pu\u0163in\u0103 putere de veto",
             "Party_Answer": 0
@@ -1027,7 +1027,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "USR",
-            "Party_Full_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Salva\u021bi Rom\u00e2nia",
             "Question_Label": "In European Parliament elections, EU citizens should be allowed to vote for a party or candidate from any other member state",
             "Question_Label_OG": "\u00cen alegerile pentru Parlamentul European, cet\u0103\u021benilor UE ar trebui s\u0103 li se permit\u0103 s\u0103 voteze pentru un partid sau un candidat din orice alt stat membru",
             "Party_Answer": 0
@@ -1035,7 +1035,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "PSD",
-            "Party_Full_Name": "Partidul Social Democrat",
+            "Full_Party_Name": "Partidul Social Democrat",
             "Question_Label": "In European Parliament elections, EU citizens should be allowed to vote for a party or candidate from any other member state",
             "Question_Label_OG": "\u00cen alegerile pentru Parlamentul European, cet\u0103\u021benilor UE ar trebui s\u0103 li se permit\u0103 s\u0103 voteze pentru un partid sau un candidat din orice alt stat membru",
             "Party_Answer": -1
@@ -1043,7 +1043,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "PMP",
-            "Party_Full_Name": "Partidul Mi\u0219carea Popular\u0103",
+            "Full_Party_Name": "Partidul Mi\u0219carea Popular\u0103",
             "Question_Label": "In European Parliament elections, EU citizens should be allowed to vote for a party or candidate from any other member state",
             "Question_Label_OG": "\u00cen alegerile pentru Parlamentul European, cet\u0103\u021benilor UE ar trebui s\u0103 li se permit\u0103 s\u0103 voteze pentru un partid sau un candidat din orice alt stat membru",
             "Party_Answer": 0
@@ -1051,7 +1051,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "PNL",
-            "Party_Full_Name": "Partidul Na\u021bional Liberal",
+            "Full_Party_Name": "Partidul Na\u021bional Liberal",
             "Question_Label": "In European Parliament elections, EU citizens should be allowed to vote for a party or candidate from any other member state",
             "Question_Label_OG": "\u00cen alegerile pentru Parlamentul European, cet\u0103\u021benilor UE ar trebui s\u0103 li se permit\u0103 s\u0103 voteze pentru un partid sau un candidat din orice alt stat membru",
             "Party_Answer": 0
@@ -1059,7 +1059,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "UDMR",
-            "Party_Full_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
+            "Full_Party_Name": "Uniunea Democrat\u0103 Maghiar\u0103 din Rom\u00e2nia",
             "Question_Label": "In European Parliament elections, EU citizens should be allowed to vote for a party or candidate from any other member state",
             "Question_Label_OG": "\u00cen alegerile pentru Parlamentul European, cet\u0103\u021benilor UE ar trebui s\u0103 li se permit\u0103 s\u0103 voteze pentru un partid sau un candidat din orice alt stat membru",
             "Party_Answer": -1
@@ -1067,7 +1067,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "ALDE",
-            "Party_Full_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
+            "Full_Party_Name": "Partidul Alian\u021ba Liberalilor \u0219i Democra\u021bilor",
             "Question_Label": "In European Parliament elections, EU citizens should be allowed to vote for a party or candidate from any other member state",
             "Question_Label_OG": "\u00cen alegerile pentru Parlamentul European, cet\u0103\u021benilor UE ar trebui s\u0103 li se permit\u0103 s\u0103 voteze pentru un partid sau un candidat din orice alt stat membru",
             "Party_Answer": 0

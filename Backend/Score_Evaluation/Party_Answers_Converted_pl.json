@@ -21,1225 +21,1225 @@
         {
             "Question_Number": 1,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should limit itself to economic cooperation.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 1,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should limit itself to economic cooperation.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 1,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should limit itself to economic cooperation.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 1,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should limit itself to economic cooperation.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 1,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should limit itself to economic cooperation.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 1,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should limit itself to economic cooperation.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 1,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should limit itself to economic cooperation.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 2,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should have a common army.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 2,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should have a common army.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 2,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should have a common army.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 2,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should have a common army.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 2,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should have a common army.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 2,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should have a common army.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 2,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should have a common army.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 3,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should finance more arms purchases for Ukraine.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 3,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should finance more arms purchases for Ukraine.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 3,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should finance more arms purchases for Ukraine.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 3,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should finance more arms purchases for Ukraine.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 3,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should finance more arms purchases for Ukraine.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 3,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should finance more arms purchases for Ukraine.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 3,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should finance more arms purchases for Ukraine.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 4,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "Ukraine should be admitted to the European Union.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 4,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "Ukraine should be admitted to the European Union.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 4,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "Ukraine should be admitted to the European Union.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 4,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "Ukraine should be admitted to the European Union.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 4,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "Ukraine should be admitted to the European Union.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 4,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "Ukraine should be admitted to the European Union.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 4,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "Ukraine should be admitted to the European Union.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 5,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 5,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 5,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 5,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 5,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 5,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 5,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should abandon its goal of achieving climate neutrality by 2050.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 6,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "Companies should pay more for their CO2 emissions.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 6,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "Companies should pay more for their CO2 emissions.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 6,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "Companies should pay more for their CO2 emissions.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 6,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "Companies should pay more for their CO2 emissions.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 6,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "Companies should pay more for their CO2 emissions.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 6,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "Companies should pay more for their CO2 emissions.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 6,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "Companies should pay more for their CO2 emissions.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 7,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should leave all decisions regarding migration policy to the member states.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 7,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should leave all decisions regarding migration policy to the member states.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 7,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should leave all decisions regarding migration policy to the member states.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 7,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should leave all decisions regarding migration policy to the member states.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 7,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should leave all decisions regarding migration policy to the member states.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 7,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should leave all decisions regarding migration policy to the member states.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 7,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should leave all decisions regarding migration policy to the member states.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 8,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 8,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 8,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 8,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 8,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 8,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 8,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "Migrants trying to cross the European Union border outside border crossings should be sent back.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 9,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The immigration of skilled workers to the European Union should be facilitated.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 9,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The immigration of skilled workers to the European Union should be facilitated.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 9,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The immigration of skilled workers to the European Union should be facilitated.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 9,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The immigration of skilled workers to the European Union should be facilitated.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 9,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The immigration of skilled workers to the European Union should be facilitated.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 9,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The immigration of skilled workers to the European Union should be facilitated.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 9,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The immigration of skilled workers to the European Union should be facilitated.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 10,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 10,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 10,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 10,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 10,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 10,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 10,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "Same-sex marriages concluded in one European Union country should be recognized in all Member States.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 11,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "Imports of wheat from outside the European Union should be banned.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 11,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "Imports of wheat from outside the European Union should be banned.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 11,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "Imports of wheat from outside the European Union should be banned.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 11,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "Imports of wheat from outside the European Union should be banned.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 11,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "Imports of wheat from outside the European Union should be banned.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 11,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "Imports of wheat from outside the European Union should be banned.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 11,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "Imports of wheat from outside the European Union should be banned.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 12,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Green Deal in its current form should be rejected.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 12,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Green Deal in its current form should be rejected.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 12,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Green Deal in its current form should be rejected.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 12,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Green Deal in its current form should be rejected.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 12,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Green Deal in its current form should be rejected.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 12,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Green Deal in its current form should be rejected.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 12,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Green Deal in its current form should be rejected.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 13,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should ban fur farming.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 13,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should ban fur farming.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 13,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should ban fur farming.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 13,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should ban fur farming.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 13,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should ban fur farming.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 13,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should ban fur farming.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 13,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should ban fur farming.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 14,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 14,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 14,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 14,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 14,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 14,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 14,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "All food products sold in the European Union should be obligatorily labeled with information about their impact on the environment.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 15,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should withdraw the ban on registering combustion cars from 2035.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 15,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should withdraw the ban on registering combustion cars from 2035.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 15,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should withdraw the ban on registering combustion cars from 2035.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 15,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should withdraw the ban on registering combustion cars from 2035.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 15,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should withdraw the ban on registering combustion cars from 2035.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 15,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should withdraw the ban on registering combustion cars from 2035.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 15,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should withdraw the ban on registering combustion cars from 2035.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 16,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 16,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 16,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 16,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 16,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 16,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 16,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should focus on investing in railway infrastructure at the expense of road expansion.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 17,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 17,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 17,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 17,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 17,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 17,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 17,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "All companies should be obliged to publish information on the pay gap between women and men in the same positions.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 18,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 18,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 18,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 18,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 18,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 18,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 18,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The participation of non-EU investors in European companies in strategic sectors should be more limited.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 19,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 19,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 19,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 19,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 19,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 19,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 19,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "Member States should significantly increase their contributions to the European Union to enable increased financing of EU policies.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 20,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "More decisions in the European Union should be made by majority votes and not by unanimity.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 20,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "More decisions in the European Union should be made by majority votes and not by unanimity.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 20,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "More decisions in the European Union should be made by majority votes and not by unanimity.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 20,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "More decisions in the European Union should be made by majority votes and not by unanimity.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 20,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "More decisions in the European Union should be made by majority votes and not by unanimity.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 20,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "More decisions in the European Union should be made by majority votes and not by unanimity.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 20,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "More decisions in the European Union should be made by majority votes and not by unanimity.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 21,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should recognize Christian values as the fundamental source of European identity.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 21,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should recognize Christian values as the fundamental source of European identity.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 21,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should recognize Christian values as the fundamental source of European identity.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 21,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should recognize Christian values as the fundamental source of European identity.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 21,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should recognize Christian values as the fundamental source of European identity.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 21,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should recognize Christian values as the fundamental source of European identity.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 21,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should recognize Christian values as the fundamental source of European identity.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 22,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should continue to freeze funds for member states that violate EU law and values.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 22,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should continue to freeze funds for member states that violate EU law and values.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 22,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should continue to freeze funds for member states that violate EU law and values.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 22,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should continue to freeze funds for member states that violate EU law and values.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 22,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should continue to freeze funds for member states that violate EU law and values.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 22,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should continue to freeze funds for member states that violate EU law and values.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 22,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should continue to freeze funds for member states that violate EU law and values.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 23,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 23,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 23,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 23,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 23,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 23,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 23,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The right to safe and legal abortion should be included in the EU Charter of Fundamental Rights.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 24,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "The European Union should ban the use of automated facial recognition by law enforcement.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 24,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "The European Union should ban the use of automated facial recognition by law enforcement.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 24,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "The European Union should ban the use of automated facial recognition by law enforcement.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 24,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "The European Union should ban the use of automated facial recognition by law enforcement.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 24,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "The European Union should ban the use of automated facial recognition by law enforcement.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 24,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "The European Union should ban the use of automated facial recognition by law enforcement.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 24,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "The European Union should ban the use of automated facial recognition by law enforcement.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 25,
             "Party_Name": "Trzecia Droga",
-            "Party_Full_Name": "Trzecia Droga",
+            "Full_Party_Name": "Trzecia Droga",
             "Question_Label": "Online advertising that uses data on user behavior should be banned.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 25,
             "Party_Name": "PiS",
-            "Party_Full_Name": "PiS",
+            "Full_Party_Name": "PiS",
             "Question_Label": "Online advertising that uses data on user behavior should be banned.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 25,
             "Party_Name": "Lewica",
-            "Party_Full_Name": "Lewica",
+            "Full_Party_Name": "Lewica",
             "Question_Label": "Online advertising that uses data on user behavior should be banned.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 25,
             "Party_Name": "Koalicja Obywatelska",
-            "Party_Full_Name": "Koalicja Obywatelska",
+            "Full_Party_Name": "Koalicja Obywatelska",
             "Question_Label": "Online advertising that uses data on user behavior should be banned.",
             "Party_Answer": 0
         },
         {
             "Question_Number": 25,
             "Party_Name": "Konfederacja",
-            "Party_Full_Name": "Konfederacja",
+            "Full_Party_Name": "Konfederacja",
             "Question_Label": "Online advertising that uses data on user behavior should be banned.",
             "Party_Answer": 1
         },
         {
             "Question_Number": 25,
             "Party_Name": "Bezpartyjni",
-            "Party_Full_Name": "Bezpartyjni",
+            "Full_Party_Name": "Bezpartyjni",
             "Question_Label": "Online advertising that uses data on user behavior should be banned.",
             "Party_Answer": -1
         },
         {
             "Question_Number": 25,
             "Party_Name": "PolExit",
-            "Party_Full_Name": "PolExit",
+            "Full_Party_Name": "PolExit",
             "Question_Label": "Online advertising that uses data on user behavior should be banned.",
             "Party_Answer": 1
         }

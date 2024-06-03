@@ -23,7 +23,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Large companies should pay a minimum profit tax in each member state where they operate.",
             "Question_Label_OG": "A nagyvállalatok fizessenek egy minimális nyereségadót minden tagállamban, ahol működnek.",
             "Party_Answer": 1
@@ -31,7 +31,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Large companies should pay a minimum profit tax in each member state where they operate.",
             "Question_Label_OG": "A nagyvállalatok fizessenek egy minimális nyereségadót minden tagállamban, ahol működnek.",
             "Party_Answer": 1
@@ -39,7 +39,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Large companies should pay a minimum profit tax in each member state where they operate.",
             "Question_Label_OG": "A nagyvállalatok fizessenek egy minimális nyereségadót minden tagállamban, ahol működnek.",
             "Party_Answer": 1
@@ -47,7 +47,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Large companies should pay a minimum profit tax in each member state where they operate.",
             "Question_Label_OG": "A nagyvállalatok fizessenek egy minimális nyereségadót minden tagállamban, ahol működnek.",
             "Party_Answer": -1
@@ -55,7 +55,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Large companies should pay a minimum profit tax in each member state where they operate.",
             "Question_Label_OG": "A nagyvállalatok fizessenek egy minimális nyereségadót minden tagállamban, ahol működnek.",
             "Party_Answer": 1
@@ -63,7 +63,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Large companies should pay a minimum profit tax in each member state where they operate.",
             "Question_Label_OG": "A nagyvállalatok fizessenek egy minimális nyereségadót minden tagállamban, ahol működnek.",
             "Party_Answer": 1
@@ -71,7 +71,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Large companies should pay a minimum profit tax in each member state where they operate.",
             "Question_Label_OG": "A nagyvállalatok fizessenek egy minimális nyereségadót minden tagállamban, ahol működnek.",
             "Party_Answer": 1
@@ -79,7 +79,7 @@
         {
             "Question_Number": 1,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Large companies should pay a minimum profit tax in each member state where they operate.",
             "Question_Label_OG": "A nagyvállalatok fizessenek egy minimális nyereségadót minden tagállamban, ahol működnek.",
             "Party_Answer": 1
@@ -87,7 +87,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Non-EU investors' participation in European companies operating in strategic sectors should be limited.",
             "Question_Label_OG": "Korlátozni kell a nem uniós befektetők részvételét azokban az európai vállalatokban, amelyek stratégiai ágazatokban tevékenykednek.",
             "Party_Answer": 1
@@ -95,7 +95,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Non-EU investors' participation in European companies operating in strategic sectors should be limited.",
             "Question_Label_OG": "Korlátozni kell a nem uniós befektetők részvételét azokban az európai vállalatokban, amelyek stratégiai ágazatokban tevékenykednek.",
             "Party_Answer": 1
@@ -103,7 +103,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Non-EU investors' participation in European companies operating in strategic sectors should be limited.",
             "Question_Label_OG": "Korlátozni kell a nem uniós befektetők részvételét azokban az európai vállalatokban, amelyek stratégiai ágazatokban tevékenykednek.",
             "Party_Answer": 1
@@ -111,7 +111,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Non-EU investors' participation in European companies operating in strategic sectors should be limited.",
             "Question_Label_OG": "Korlátozni kell a nem uniós befektetők részvételét azokban az európai vállalatokban, amelyek stratégiai ágazatokban tevékenykednek.",
             "Party_Answer": -1
@@ -119,7 +119,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Non-EU investors' participation in European companies operating in strategic sectors should be limited.",
             "Question_Label_OG": "Korlátozni kell a nem uniós befektetők részvételét azokban az európai vállalatokban, amelyek stratégiai ágazatokban tevékenykednek.",
             "Party_Answer": 1
@@ -127,7 +127,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Non-EU investors' participation in European companies operating in strategic sectors should be limited.",
             "Question_Label_OG": "Korlátozni kell a nem uniós befektetők részvételét azokban az európai vállalatokban, amelyek stratégiai ágazatokban tevékenykednek.",
             "Party_Answer": 1
@@ -135,7 +135,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Non-EU investors' participation in European companies operating in strategic sectors should be limited.",
             "Question_Label_OG": "Korlátozni kell a nem uniós befektetők részvételét azokban az európai vállalatokban, amelyek stratégiai ágazatokban tevékenykednek.",
             "Party_Answer": 1
@@ -143,7 +143,7 @@
         {
             "Question_Number": 2,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Non-EU investors' participation in European companies operating in strategic sectors should be limited.",
             "Question_Label_OG": "Korlátozni kell a nem uniós befektetők részvételét azokban az európai vállalatokban, amelyek stratégiai ágazatokban tevékenykednek.",
             "Party_Answer": 1
@@ -151,7 +151,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should develop a cross-border European railway network.",
             "Question_Label_OG": "Az EU fejlessze a határokon átívelő európai vasúthálózatot.",
             "Party_Answer": 1
@@ -159,7 +159,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should develop a cross-border European railway network.",
             "Question_Label_OG": "Az EU fejlessze a határokon átívelő európai vasúthálózatot.",
             "Party_Answer": 1
@@ -167,7 +167,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should develop a cross-border European railway network.",
             "Question_Label_OG": "Az EU fejlessze a határokon átívelő európai vasúthálózatot.",
             "Party_Answer": 1
@@ -175,7 +175,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should develop a cross-border European railway network.",
             "Question_Label_OG": "Az EU fejlessze a határokon átívelő európai vasúthálózatot.",
             "Party_Answer": 1
@@ -183,7 +183,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should develop a cross-border European railway network.",
             "Question_Label_OG": "Az EU fejlessze a határokon átívelő európai vasúthálózatot.",
             "Party_Answer": 1
@@ -191,7 +191,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should develop a cross-border European railway network.",
             "Question_Label_OG": "Az EU fejlessze a határokon átívelő európai vasúthálózatot.",
             "Party_Answer": 1
@@ -199,7 +199,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should develop a cross-border European railway network.",
             "Question_Label_OG": "Az EU fejlessze a határokon átívelő európai vasúthálózatot.",
             "Party_Answer": 1
@@ -207,7 +207,7 @@
         {
             "Question_Number": 3,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should develop a cross-border European railway network.",
             "Question_Label_OG": "Az EU fejlessze a határokon átívelő európai vasúthálózatot.",
             "Party_Answer": 1
@@ -215,7 +215,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The import duty on Chinese electric cars should be increased.",
             "Question_Label_OG": "A kínai elektromos autókra kivetett importadót meg kell emelni.",
             "Party_Answer": 0
@@ -223,7 +223,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The import duty on Chinese electric cars should be increased.",
             "Question_Label_OG": "A kínai elektromos autókra kivetett importadót meg kell emelni.",
             "Party_Answer": 1
@@ -231,7 +231,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The import duty on Chinese electric cars should be increased.",
             "Question_Label_OG": "A kínai elektromos autókra kivetett importadót meg kell emelni.",
             "Party_Answer": 1
@@ -239,7 +239,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The import duty on Chinese electric cars should be increased.",
             "Question_Label_OG": "A kínai elektromos autókra kivetett importadót meg kell emelni.",
             "Party_Answer": -1
@@ -247,7 +247,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The import duty on Chinese electric cars should be increased.",
             "Question_Label_OG": "A kínai elektromos autókra kivetett importadót meg kell emelni.",
             "Party_Answer": 1
@@ -255,7 +255,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The import duty on Chinese electric cars should be increased.",
             "Question_Label_OG": "A kínai elektromos autókra kivetett importadót meg kell emelni.",
             "Party_Answer": 1
@@ -263,7 +263,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The import duty on Chinese electric cars should be increased.",
             "Question_Label_OG": "A kínai elektromos autókra kivetett importadót meg kell emelni.",
             "Party_Answer": 0
@@ -271,7 +271,7 @@
         {
             "Question_Number": 4,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The import duty on Chinese electric cars should be increased.",
             "Question_Label_OG": "A kínai elektromos autókra kivetett importadót meg kell emelni.",
             "Party_Answer": 1
@@ -279,7 +279,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should allow member states to have higher budget deficits.",
             "Question_Label_OG": "Az EU-nak lehetővé kellene tennie a tagállamok számára, hogy magasabb költségvetési hiányt mutassanak ki.",
             "Party_Answer": 0
@@ -287,7 +287,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should allow member states to have higher budget deficits.",
             "Question_Label_OG": "Az EU-nak lehetővé kellene tennie a tagállamok számára, hogy magasabb költségvetési hiányt mutassanak ki.",
             "Party_Answer": 1
@@ -295,7 +295,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should allow member states to have higher budget deficits.",
             "Question_Label_OG": "Az EU-nak lehetővé kellene tennie a tagállamok számára, hogy magasabb költségvetési hiányt mutassanak ki.",
             "Party_Answer": 1
@@ -303,7 +303,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should allow member states to have higher budget deficits.",
             "Question_Label_OG": "Az EU-nak lehetővé kellene tennie a tagállamok számára, hogy magasabb költségvetési hiányt mutassanak ki.",
             "Party_Answer": 1
@@ -311,7 +311,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should allow member states to have higher budget deficits.",
             "Question_Label_OG": "Az EU-nak lehetővé kellene tennie a tagállamok számára, hogy magasabb költségvetési hiányt mutassanak ki.",
             "Party_Answer": 1
@@ -319,7 +319,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should allow member states to have higher budget deficits.",
             "Question_Label_OG": "Az EU-nak lehetővé kellene tennie a tagállamok számára, hogy magasabb költségvetési hiányt mutassanak ki.",
             "Party_Answer": 1
@@ -327,7 +327,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should allow member states to have higher budget deficits.",
             "Question_Label_OG": "Az EU-nak lehetővé kellene tennie a tagállamok számára, hogy magasabb költségvetési hiányt mutassanak ki.",
             "Party_Answer": 0
@@ -335,7 +335,7 @@
         {
             "Question_Number": 5,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should allow member states to have higher budget deficits.",
             "Question_Label_OG": "Az EU-nak lehetővé kellene tennie a tagállamok számára, hogy magasabb költségvetési hiányt mutassanak ki.",
             "Party_Answer": -1
@@ -343,7 +343,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Hungary should adopt the Euro within 10 years.",
             "Question_Label_OG": "Magyarország 10 éven belül vezesse be az Eurót.",
             "Party_Answer": -1
@@ -351,7 +351,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Hungary should adopt the Euro within 10 years.",
             "Question_Label_OG": "Magyarország 10 éven belül vezesse be az Eurót.",
             "Party_Answer": -1
@@ -359,7 +359,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Hungary should adopt the Euro within 10 years.",
             "Question_Label_OG": "Magyarország 10 éven belül vezesse be az Eurót.",
             "Party_Answer": 1
@@ -367,7 +367,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Hungary should adopt the Euro within 10 years.",
             "Question_Label_OG": "Magyarország 10 éven belül vezesse be az Eurót.",
             "Party_Answer": -1
@@ -375,7 +375,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Hungary should adopt the Euro within 10 years.",
             "Question_Label_OG": "Magyarország 10 éven belül vezesse be az Eurót.",
             "Party_Answer": 1
@@ -383,7 +383,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Hungary should adopt the Euro within 10 years.",
             "Question_Label_OG": "Magyarország 10 éven belül vezesse be az Eurót.",
             "Party_Answer": 1
@@ -391,7 +391,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Hungary should adopt the Euro within 10 years.",
             "Question_Label_OG": "Magyarország 10 éven belül vezesse be az Eurót.",
             "Party_Answer": 1
@@ -399,7 +399,7 @@
         {
             "Question_Number": 6,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Hungary should adopt the Euro within 10 years.",
             "Question_Label_OG": "Magyarország 10 éven belül vezesse be az Eurót.",
             "Party_Answer": 1
@@ -407,7 +407,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should continue to recognize nuclear energy as a sustainable energy source.",
             "Question_Label_OG": "Az EU továbbra is ismerje el fenntartható energiaforrásként az atomenergiát.",
             "Party_Answer": 1
@@ -415,7 +415,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should continue to recognize nuclear energy as a sustainable energy source.",
             "Question_Label_OG": "Az EU továbbra is ismerje el fenntartható energiaforrásként az atomenergiát.",
             "Party_Answer": -1
@@ -423,7 +423,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should continue to recognize nuclear energy as a sustainable energy source.",
             "Question_Label_OG": "Az EU továbbra is ismerje el fenntartható energiaforrásként az atomenergiát.",
             "Party_Answer": -1
@@ -431,7 +431,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should continue to recognize nuclear energy as a sustainable energy source.",
             "Question_Label_OG": "Az EU továbbra is ismerje el fenntartható energiaforrásként az atomenergiát.",
             "Party_Answer": 1
@@ -439,7 +439,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should continue to recognize nuclear energy as a sustainable energy source.",
             "Question_Label_OG": "Az EU továbbra is ismerje el fenntartható energiaforrásként az atomenergiát.",
             "Party_Answer": 1
@@ -447,7 +447,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should continue to recognize nuclear energy as a sustainable energy source.",
             "Question_Label_OG": "Az EU továbbra is ismerje el fenntartható energiaforrásként az atomenergiát.",
             "Party_Answer": 1
@@ -455,7 +455,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should continue to recognize nuclear energy as a sustainable energy source.",
             "Question_Label_OG": "Az EU továbbra is ismerje el fenntartható energiaforrásként az atomenergiát.",
             "Party_Answer": 0
@@ -463,7 +463,7 @@
         {
             "Question_Number": 7,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should continue to recognize nuclear energy as a sustainable energy source.",
             "Question_Label_OG": "Az EU továbbra is ismerje el fenntartható energiaforrásként az atomenergiát.",
             "Party_Answer": -1
@@ -471,7 +471,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "All food products sold in the EU should indicate their environmental impact on the label.",
             "Question_Label_OG": "Az EU-ban értékesített összes élelmiszeripari termék címkéjén fel kell tüntetni a környezetre gyakorolt hatásukat.",
             "Party_Answer": 0
@@ -479,7 +479,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "All food products sold in the EU should indicate their environmental impact on the label.",
             "Question_Label_OG": "Az EU-ban értékesített összes élelmiszeripari termék címkéjén fel kell tüntetni a környezetre gyakorolt hatásukat.",
             "Party_Answer": 1
@@ -487,7 +487,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "All food products sold in the EU should indicate their environmental impact on the label.",
             "Question_Label_OG": "Az EU-ban értékesített összes élelmiszeripari termék címkéjén fel kell tüntetni a környezetre gyakorolt hatásukat.",
             "Party_Answer": 1
@@ -495,7 +495,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "All food products sold in the EU should indicate their environmental impact on the label.",
             "Question_Label_OG": "Az EU-ban értékesített összes élelmiszeripari termék címkéjén fel kell tüntetni a környezetre gyakorolt hatásukat.",
             "Party_Answer": 1
@@ -503,7 +503,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "All food products sold in the EU should indicate their environmental impact on the label.",
             "Question_Label_OG": "Az EU-ban értékesített összes élelmiszeripari termék címkéjén fel kell tüntetni a környezetre gyakorolt hatásukat.",
             "Party_Answer": 1
@@ -511,7 +511,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "All food products sold in the EU should indicate their environmental impact on the label.",
             "Question_Label_OG": "Az EU-ban értékesített összes élelmiszeripari termék címkéjén fel kell tüntetni a környezetre gyakorolt hatásukat.",
             "Party_Answer": 1
@@ -519,7 +519,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "All food products sold in the EU should indicate their environmental impact on the label.",
             "Question_Label_OG": "Az EU-ban értékesített összes élelmiszeripari termék címkéjén fel kell tüntetni a környezetre gyakorolt hatásukat.",
             "Party_Answer": 1
@@ -527,7 +527,7 @@
         {
             "Question_Number": 8,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "All food products sold in the EU should indicate their environmental impact on the label.",
             "Question_Label_OG": "Az EU-ban értékesített összes élelmiszeripari termék címkéjén fel kell tüntetni a környezetre gyakorolt hatásukat.",
             "Party_Answer": 1
@@ -535,7 +535,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should introduce stricter environmental regulations for imported goods.",
             "Question_Label_OG": "Az EU-nak szigorúbb környezetvédelmi előírásokat kellene bevezetnie az importált árukra.",
             "Party_Answer": 1
@@ -543,7 +543,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should introduce stricter environmental regulations for imported goods.",
             "Question_Label_OG": "Az EU-nak szigorúbb környezetvédelmi előírásokat kellene bevezetnie az importált árukra.",
             "Party_Answer": 1
@@ -551,7 +551,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should introduce stricter environmental regulations for imported goods.",
             "Question_Label_OG": "Az EU-nak szigorúbb környezetvédelmi előírásokat kellene bevezetnie az importált árukra.",
             "Party_Answer": 1
@@ -559,7 +559,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should introduce stricter environmental regulations for imported goods.",
             "Question_Label_OG": "Az EU-nak szigorúbb környezetvédelmi előírásokat kellene bevezetnie az importált árukra.",
             "Party_Answer": 1
@@ -567,7 +567,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should introduce stricter environmental regulations for imported goods.",
             "Question_Label_OG": "Az EU-nak szigorúbb környezetvédelmi előírásokat kellene bevezetnie az importált árukra.",
             "Party_Answer": 1
@@ -575,7 +575,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should introduce stricter environmental regulations for imported goods.",
             "Question_Label_OG": "Az EU-nak szigorúbb környezetvédelmi előírásokat kellene bevezetnie az importált árukra.",
             "Party_Answer": 1
@@ -583,7 +583,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should introduce stricter environmental regulations for imported goods.",
             "Question_Label_OG": "Az EU-nak szigorúbb környezetvédelmi előírásokat kellene bevezetnie az importált árukra.",
             "Party_Answer": 1
@@ -591,7 +591,7 @@
         {
             "Question_Number": 9,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should introduce stricter environmental regulations for imported goods.",
             "Question_Label_OG": "Az EU-nak szigorúbb környezetvédelmi előírásokat kellene bevezetnie az importált árukra.",
             "Party_Answer": 1
@@ -599,7 +599,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Ukraine should become a member of the EU.",
             "Question_Label_OG": "Ukrajnának az EU tagjává kell válnia.",
             "Party_Answer": -1
@@ -607,7 +607,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Ukraine should become a member of the EU.",
             "Question_Label_OG": "Ukrajnának az EU tagjává kell válnia.",
             "Party_Answer": 0
@@ -615,7 +615,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Ukraine should become a member of the EU.",
             "Question_Label_OG": "Ukrajnának az EU tagjává kell válnia.",
             "Party_Answer": 1
@@ -623,7 +623,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Ukraine should become a member of the EU.",
             "Question_Label_OG": "Ukrajnának az EU tagjává kell válnia.",
             "Party_Answer": -1
@@ -631,7 +631,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Ukraine should become a member of the EU.",
             "Question_Label_OG": "Ukrajnának az EU tagjává kell válnia.",
             "Party_Answer": 1
@@ -639,7 +639,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Ukraine should become a member of the EU.",
             "Question_Label_OG": "Ukrajnának az EU tagjává kell válnia.",
             "Party_Answer": 1
@@ -647,7 +647,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Ukraine should become a member of the EU.",
             "Question_Label_OG": "Ukrajnának az EU tagjává kell válnia.",
             "Party_Answer": -1
@@ -655,7 +655,7 @@
         {
             "Question_Number": 10,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Ukraine should become a member of the EU.",
             "Question_Label_OG": "Ukrajnának az EU tagjává kell válnia.",
             "Party_Answer": 1
@@ -663,7 +663,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The European Union should continue to freeze EU funds for member states that violate EU laws and values.",
             "Question_Label_OG": "Az Európai Unió továbbra is fagyassza be az uniós forrásokat azon tagállamok számára, amelyek megsértik az uniós törvényeket és értékeket.",
             "Party_Answer": -1
@@ -671,7 +671,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The European Union should continue to freeze EU funds for member states that violate EU laws and values.",
             "Question_Label_OG": "Az Európai Unió továbbra is fagyassza be az uniós forrásokat azon tagállamok számára, amelyek megsértik az uniós törvényeket és értékeket.",
             "Party_Answer": -1
@@ -679,7 +679,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The European Union should continue to freeze EU funds for member states that violate EU laws and values.",
             "Question_Label_OG": "Az Európai Unió továbbra is fagyassza be az uniós forrásokat azon tagállamok számára, amelyek megsértik az uniós törvényeket és értékeket.",
             "Party_Answer": 1
@@ -687,7 +687,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The European Union should continue to freeze EU funds for member states that violate EU laws and values.",
             "Question_Label_OG": "Az Európai Unió továbbra is fagyassza be az uniós forrásokat azon tagállamok számára, amelyek megsértik az uniós törvényeket és értékeket.",
             "Party_Answer": -1
@@ -695,7 +695,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The European Union should continue to freeze EU funds for member states that violate EU laws and values.",
             "Question_Label_OG": "Az Európai Unió továbbra is fagyassza be az uniós forrásokat azon tagállamok számára, amelyek megsértik az uniós törvényeket és értékeket.",
             "Party_Answer": 1
@@ -703,7 +703,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The European Union should continue to freeze EU funds for member states that violate EU laws and values.",
             "Question_Label_OG": "Az Európai Unió továbbra is fagyassza be az uniós forrásokat azon tagállamok számára, amelyek megsértik az uniós törvényeket és értékeket.",
             "Party_Answer": 1
@@ -711,7 +711,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The European Union should continue to freeze EU funds for member states that violate EU laws and values.",
             "Question_Label_OG": "Az Európai Unió továbbra is fagyassza be az uniós forrásokat azon tagállamok számára, amelyek megsértik az uniós törvényeket és értékeket.",
             "Party_Answer": -1
@@ -719,7 +719,7 @@
         {
             "Question_Number": 11,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The European Union should continue to freeze EU funds for member states that violate EU laws and values.",
             "Question_Label_OG": "Az Európai Unió továbbra is fagyassza be az uniós forrásokat azon tagállamok számára, amelyek megsértik az uniós törvényeket és értékeket.",
             "Party_Answer": 1
@@ -727,7 +727,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "A common European Union army is needed.",
             "Question_Label_OG": "Közös európai uniós hadseregre van szükség.",
             "Party_Answer": -1
@@ -735,7 +735,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "A common European Union army is needed.",
             "Question_Label_OG": "Közös európai uniós hadseregre van szükség.",
             "Party_Answer": 1
@@ -743,7 +743,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "A common European Union army is needed.",
             "Question_Label_OG": "Közös európai uniós hadseregre van szükség.",
             "Party_Answer": 1
@@ -751,7 +751,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "A common European Union army is needed.",
             "Question_Label_OG": "Közös európai uniós hadseregre van szükség.",
             "Party_Answer": 1
@@ -759,7 +759,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "A common European Union army is needed.",
             "Question_Label_OG": "Közös európai uniós hadseregre van szükség.",
             "Party_Answer": 1
@@ -767,7 +767,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "A common European Union army is needed.",
             "Question_Label_OG": "Közös európai uniós hadseregre van szükség.",
             "Party_Answer": 1
@@ -775,7 +775,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "A common European Union army is needed.",
             "Question_Label_OG": "Közös európai uniós hadseregre van szükség.",
             "Party_Answer": 1
@@ -783,7 +783,7 @@
         {
             "Question_Number": 12,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "A common European Union army is needed.",
             "Question_Label_OG": "Közös európai uniós hadseregre van szükség.",
             "Party_Answer": 1
@@ -791,7 +791,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Further European Union financing for arms shipments to Ukraine is needed.",
             "Question_Label_OG": "Az ukrajnai fegyverszállítások további európai uniós finanszírozására van szükség.",
             "Party_Answer": -1
@@ -799,7 +799,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Further European Union financing for arms shipments to Ukraine is needed.",
             "Question_Label_OG": "Az ukrajnai fegyverszállítások további európai uniós finanszírozására van szükség.",
             "Party_Answer": -1
@@ -807,7 +807,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Further European Union financing for arms shipments to Ukraine is needed.",
             "Question_Label_OG": "Az ukrajnai fegyverszállítások további európai uniós finanszírozására van szükség.",
             "Party_Answer": 1
@@ -815,7 +815,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Further European Union financing for arms shipments to Ukraine is needed.",
             "Question_Label_OG": "Az ukrajnai fegyverszállítások további európai uniós finanszírozására van szükség.",
             "Party_Answer": -1
@@ -823,7 +823,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Further European Union financing for arms shipments to Ukraine is needed.",
             "Question_Label_OG": "Az ukrajnai fegyverszállítások további európai uniós finanszírozására van szükség.",
             "Party_Answer": 1
@@ -831,7 +831,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Further European Union financing for arms shipments to Ukraine is needed.",
             "Question_Label_OG": "Az ukrajnai fegyverszállítások további európai uniós finanszírozására van szükség.",
             "Party_Answer": 1
@@ -839,7 +839,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Further European Union financing for arms shipments to Ukraine is needed.",
             "Question_Label_OG": "Az ukrajnai fegyverszállítások további európai uniós finanszírozására van szükség.",
             "Party_Answer": 1
@@ -847,7 +847,7 @@
         {
             "Question_Number": 13,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Further European Union financing for arms shipments to Ukraine is needed.",
             "Question_Label_OG": "Az ukrajnai fegyverszállítások további európai uniós finanszírozására van szükség.",
             "Party_Answer": 1
@@ -855,7 +855,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "EU member states should jointly purchase more defense equipment.",
             "Question_Label_OG": "Az EU tagállamainak több védelmi felszerelést kellene közösen vásárolniuk.",
             "Party_Answer": -1
@@ -863,7 +863,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "EU member states should jointly purchase more defense equipment.",
             "Question_Label_OG": "Az EU tagállamainak több védelmi felszerelést kellene közösen vásárolniuk.",
             "Party_Answer": 1
@@ -871,7 +871,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "EU member states should jointly purchase more defense equipment.",
             "Question_Label_OG": "Az EU tagállamainak több védelmi felszerelést kellene közösen vásárolniuk.",
             "Party_Answer": 1
@@ -879,7 +879,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "EU member states should jointly purchase more defense equipment.",
             "Question_Label_OG": "Az EU tagállamainak több védelmi felszerelést kellene közösen vásárolniuk.",
             "Party_Answer": 1
@@ -887,7 +887,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "EU member states should jointly purchase more defense equipment.",
             "Question_Label_OG": "Az EU tagállamainak több védelmi felszerelést kellene közösen vásárolniuk.",
             "Party_Answer": 1
@@ -895,7 +895,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "EU member states should jointly purchase more defense equipment.",
             "Question_Label_OG": "Az EU tagállamainak több védelmi felszerelést kellene közösen vásárolniuk.",
             "Party_Answer": 1
@@ -903,7 +903,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "EU member states should jointly purchase more defense equipment.",
             "Question_Label_OG": "Az EU tagállamainak több védelmi felszerelést kellene közösen vásárolniuk.",
             "Party_Answer": 1
@@ -911,7 +911,7 @@
         {
             "Question_Number": 14,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "EU member states should jointly purchase more defense equipment.",
             "Question_Label_OG": "Az EU tagállamainak több védelmi felszerelést kellene közösen vásárolniuk.",
             "Party_Answer": 1
@@ -919,7 +919,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU sanctions against Russia are working.",
             "Question_Label_OG": "Az Oroszország ellen hozott uniós szankciók működnek.",
             "Party_Answer": -1
@@ -927,7 +927,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU sanctions against Russia are working.",
             "Question_Label_OG": "Az Oroszország ellen hozott uniós szankciók működnek.",
             "Party_Answer": 1
@@ -935,7 +935,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU sanctions against Russia are working.",
             "Question_Label_OG": "Az Oroszország ellen hozott uniós szankciók működnek.",
             "Party_Answer": 1
@@ -943,7 +943,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU sanctions against Russia are working.",
             "Question_Label_OG": "Az Oroszország ellen hozott uniós szankciók működnek.",
             "Party_Answer": -1
@@ -951,7 +951,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU sanctions against Russia are working.",
             "Question_Label_OG": "Az Oroszország ellen hozott uniós szankciók működnek.",
             "Party_Answer": 1
@@ -959,7 +959,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU sanctions against Russia are working.",
             "Question_Label_OG": "Az Oroszország ellen hozott uniós szankciók működnek.",
             "Party_Answer": 1
@@ -967,7 +967,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU sanctions against Russia are working.",
             "Question_Label_OG": "Az Oroszország ellen hozott uniós szankciók működnek.",
             "Party_Answer": 1
@@ -975,7 +975,7 @@
         {
             "Question_Number": 15,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU sanctions against Russia are working.",
             "Question_Label_OG": "Az Oroszország ellen hozott uniós szankciók működnek.",
             "Party_Answer": 1
@@ -983,7 +983,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should allow further cultivation of genetically modified plants (GMOs).",
             "Question_Label_OG": "Az EU engedélyezze további génmódosított növények (GMO-k) termesztését.",
             "Party_Answer": -1
@@ -991,7 +991,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should allow further cultivation of genetically modified plants (GMOs).",
             "Question_Label_OG": "Az EU engedélyezze további génmódosított növények (GMO-k) termesztését.",
             "Party_Answer": -1
@@ -999,7 +999,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should allow further cultivation of genetically modified plants (GMOs).",
             "Question_Label_OG": "Az EU engedélyezze további génmódosított növények (GMO-k) termesztését.",
             "Party_Answer": -1
@@ -1007,7 +1007,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should allow further cultivation of genetically modified plants (GMOs).",
             "Question_Label_OG": "Az EU engedélyezze további génmódosított növények (GMO-k) termesztését.",
             "Party_Answer": -1
@@ -1015,7 +1015,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should allow further cultivation of genetically modified plants (GMOs).",
             "Question_Label_OG": "Az EU engedélyezze további génmódosított növények (GMO-k) termesztését.",
             "Party_Answer": -1
@@ -1023,7 +1023,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should allow further cultivation of genetically modified plants (GMOs).",
             "Question_Label_OG": "Az EU engedélyezze további génmódosított növények (GMO-k) termesztését.",
             "Party_Answer": -1
@@ -1031,7 +1031,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should allow further cultivation of genetically modified plants (GMOs).",
             "Question_Label_OG": "Az EU engedélyezze további génmódosított növények (GMO-k) termesztését.",
             "Party_Answer": -1
@@ -1039,7 +1039,7 @@
         {
             "Question_Number": 16,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should allow further cultivation of genetically modified plants (GMOs).",
             "Question_Label_OG": "Az EU engedélyezze további génmódosított növények (GMO-k) termesztését.",
             "Party_Answer": -1
@@ -1047,7 +1047,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should completely ban plant protection products containing glyphosate.",
             "Question_Label_OG": "Az EU-nak teljesen be kellene tiltania a glifozátot tartalmazó növényvédő szereket.",
             "Party_Answer": 0
@@ -1055,7 +1055,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should completely ban plant protection products containing glyphosate.",
             "Question_Label_OG": "Az EU-nak teljesen be kellene tiltania a glifozátot tartalmazó növényvédő szereket.",
             "Party_Answer": 1
@@ -1063,7 +1063,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should completely ban plant protection products containing glyphosate.",
             "Question_Label_OG": "Az EU-nak teljesen be kellene tiltania a glifozátot tartalmazó növényvédő szereket.",
             "Party_Answer": 1
@@ -1071,7 +1071,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should completely ban plant protection products containing glyphosate.",
             "Question_Label_OG": "Az EU-nak teljesen be kellene tiltania a glifozátot tartalmazó növényvédő szereket.",
             "Party_Answer": -1
@@ -1079,7 +1079,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should completely ban plant protection products containing glyphosate.",
             "Question_Label_OG": "Az EU-nak teljesen be kellene tiltania a glifozátot tartalmazó növényvédő szereket.",
             "Party_Answer": 1
@@ -1087,7 +1087,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should completely ban plant protection products containing glyphosate.",
             "Question_Label_OG": "Az EU-nak teljesen be kellene tiltania a glifozátot tartalmazó növényvédő szereket.",
             "Party_Answer": 1
@@ -1095,7 +1095,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should completely ban plant protection products containing glyphosate.",
             "Question_Label_OG": "Az EU-nak teljesen be kellene tiltania a glifozátot tartalmazó növényvédő szereket.",
             "Party_Answer": 1
@@ -1103,7 +1103,7 @@
         {
             "Question_Number": 17,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should completely ban plant protection products containing glyphosate.",
             "Question_Label_OG": "Az EU-nak teljesen be kellene tiltania a glifozátot tartalmazó növényvédő szereket.",
             "Party_Answer": 1
@@ -1111,7 +1111,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should stop subsidizing intensive livestock farming.",
             "Question_Label_OG": "Az EU-nak fel kellene hagynia az intenzív állattenyésztés támogatásával.",
             "Party_Answer": -1
@@ -1119,7 +1119,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should stop subsidizing intensive livestock farming.",
             "Question_Label_OG": "Az EU-nak fel kellene hagynia az intenzív állattenyésztés támogatásával.",
             "Party_Answer": 1
@@ -1127,7 +1127,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should stop subsidizing intensive livestock farming.",
             "Question_Label_OG": "Az EU-nak fel kellene hagynia az intenzív állattenyésztés támogatásával.",
             "Party_Answer": -1
@@ -1135,7 +1135,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should stop subsidizing intensive livestock farming.",
             "Question_Label_OG": "Az EU-nak fel kellene hagynia az intenzív állattenyésztés támogatásával.",
             "Party_Answer": -1
@@ -1143,7 +1143,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should stop subsidizing intensive livestock farming.",
             "Question_Label_OG": "Az EU-nak fel kellene hagynia az intenzív állattenyésztés támogatásával.",
             "Party_Answer": 1
@@ -1151,7 +1151,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should stop subsidizing intensive livestock farming.",
             "Question_Label_OG": "Az EU-nak fel kellene hagynia az intenzív állattenyésztés támogatásával.",
             "Party_Answer": 1
@@ -1159,7 +1159,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should stop subsidizing intensive livestock farming.",
             "Question_Label_OG": "Az EU-nak fel kellene hagynia az intenzív állattenyésztés támogatásával.",
             "Party_Answer": -1
@@ -1167,7 +1167,7 @@
         {
             "Question_Number": 18,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should stop subsidizing intensive livestock farming.",
             "Question_Label_OG": "Az EU-nak fel kellene hagynia az intenzív állattenyésztés támogatásával.",
             "Party_Answer": 1
@@ -1175,7 +1175,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Asylum seekers should submit their applications at the EU's external borders and wait for the result.",
             "Question_Label_OG": "A menedékkérőknek az EU külső határain kelljen benyújtani kérelmüket, és megvárni ennek eredményét.",
             "Party_Answer": 1
@@ -1183,7 +1183,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Asylum seekers should submit their applications at the EU's external borders and wait for the result.",
             "Question_Label_OG": "A menedékkérőknek az EU külső határain kelljen benyújtani kérelmüket, és megvárni ennek eredményét.",
             "Party_Answer": 1
@@ -1191,7 +1191,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Asylum seekers should submit their applications at the EU's external borders and wait for the result.",
             "Question_Label_OG": "A menedékkérőknek az EU külső határain kelljen benyújtani kérelmüket, és megvárni ennek eredményét.",
             "Party_Answer": -1
@@ -1199,7 +1199,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Asylum seekers should submit their applications at the EU's external borders and wait for the result.",
             "Question_Label_OG": "A menedékkérőknek az EU külső határain kelljen benyújtani kérelmüket, és megvárni ennek eredményét.",
             "Party_Answer": 1
@@ -1207,7 +1207,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Asylum seekers should submit their applications at the EU's external borders and wait for the result.",
             "Question_Label_OG": "A menedékkérőknek az EU külső határain kelljen benyújtani kérelmüket, és megvárni ennek eredményét.",
             "Party_Answer": 1
@@ -1215,7 +1215,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Asylum seekers should submit their applications at the EU's external borders and wait for the result.",
             "Question_Label_OG": "A menedékkérőknek az EU külső határain kelljen benyújtani kérelmüket, és megvárni ennek eredményét.",
             "Party_Answer": 1
@@ -1223,7 +1223,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Asylum seekers should submit their applications at the EU's external borders and wait for the result.",
             "Question_Label_OG": "A menedékkérőknek az EU külső határain kelljen benyújtani kérelmüket, és megvárni ennek eredményét.",
             "Party_Answer": -1
@@ -1231,7 +1231,7 @@
         {
             "Question_Number": 19,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Asylum seekers should submit their applications at the EU's external borders and wait for the result.",
             "Question_Label_OG": "A menedékkérőknek az EU külső határain kelljen benyújtani kérelmüket, és megvárni ennek eredményét.",
             "Party_Answer": -1
@@ -1239,7 +1239,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should limit development aid to countries that do not accept rejected asylum seekers.",
             "Question_Label_OG": "Az EU korlátozza a fejlesztési segélyek küldését azon országoknak, amelyek nem fogadják a visszautasított menedékkérőket.",
             "Party_Answer": -1
@@ -1247,7 +1247,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should limit development aid to countries that do not accept rejected asylum seekers.",
             "Question_Label_OG": "Az EU korlátozza a fejlesztési segélyek küldését azon országoknak, amelyek nem fogadják a visszautasított menedékkérőket.",
             "Party_Answer": 1
@@ -1255,7 +1255,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should limit development aid to countries that do not accept rejected asylum seekers.",
             "Question_Label_OG": "Az EU korlátozza a fejlesztési segélyek küldését azon országoknak, amelyek nem fogadják a visszautasított menedékkérőket.",
             "Party_Answer": 1
@@ -1263,7 +1263,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should limit development aid to countries that do not accept rejected asylum seekers.",
             "Question_Label_OG": "Az EU korlátozza a fejlesztési segélyek küldését azon országoknak, amelyek nem fogadják a visszautasított menedékkérőket.",
             "Party_Answer": 1
@@ -1271,7 +1271,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should limit development aid to countries that do not accept rejected asylum seekers.",
             "Question_Label_OG": "Az EU korlátozza a fejlesztési segélyek küldését azon országoknak, amelyek nem fogadják a visszautasított menedékkérőket.",
             "Party_Answer": -1
@@ -1279,7 +1279,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should limit development aid to countries that do not accept rejected asylum seekers.",
             "Question_Label_OG": "Az EU korlátozza a fejlesztési segélyek küldését azon országoknak, amelyek nem fogadják a visszautasított menedékkérőket.",
             "Party_Answer": 0
@@ -1287,7 +1287,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should limit development aid to countries that do not accept rejected asylum seekers.",
             "Question_Label_OG": "Az EU korlátozza a fejlesztési segélyek küldését azon országoknak, amelyek nem fogadják a visszautasított menedékkérőket.",
             "Party_Answer": -1
@@ -1295,7 +1295,7 @@
         {
             "Question_Number": 20,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should limit development aid to countries that do not accept rejected asylum seekers.",
             "Question_Label_OG": "Az EU korlátozza a fejlesztési segélyek küldését azon országoknak, amelyek nem fogadják a visszautasított menedékkérőket.",
             "Party_Answer": -1
@@ -1303,7 +1303,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Facilitating the immigration of skilled workers into the EU should be made easier.",
             "Question_Label_OG": "Meg kell könnyíteni a szakképzett munkavállalók bevándorlását az EU-ba.",
             "Party_Answer": -1
@@ -1311,7 +1311,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Facilitating the immigration of skilled workers into the EU should be made easier.",
             "Question_Label_OG": "Meg kell könnyíteni a szakképzett munkavállalók bevándorlását az EU-ba.",
             "Party_Answer": -1
@@ -1319,7 +1319,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Facilitating the immigration of skilled workers into the EU should be made easier.",
             "Question_Label_OG": "Meg kell könnyíteni a szakképzett munkavállalók bevándorlását az EU-ba.",
             "Party_Answer": -1
@@ -1327,7 +1327,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Facilitating the immigration of skilled workers into the EU should be made easier.",
             "Question_Label_OG": "Meg kell könnyíteni a szakképzett munkavállalók bevándorlását az EU-ba.",
             "Party_Answer": 1
@@ -1335,7 +1335,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Facilitating the immigration of skilled workers into the EU should be made easier.",
             "Question_Label_OG": "Meg kell könnyíteni a szakképzett munkavállalók bevándorlását az EU-ba.",
             "Party_Answer": 1
@@ -1343,7 +1343,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Facilitating the immigration of skilled workers into the EU should be made easier.",
             "Question_Label_OG": "Meg kell könnyíteni a szakképzett munkavállalók bevándorlását az EU-ba.",
             "Party_Answer": 0
@@ -1351,7 +1351,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Facilitating the immigration of skilled workers into the EU should be made easier.",
             "Question_Label_OG": "Meg kell könnyíteni a szakképzett munkavállalók bevándorlását az EU-ba.",
             "Party_Answer": 1
@@ -1359,7 +1359,7 @@
         {
             "Question_Number": 21,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Facilitating the immigration of skilled workers into the EU should be made easier.",
             "Question_Label_OG": "Meg kell könnyíteni a szakképzett munkavállalók bevándorlását az EU-ba.",
             "Party_Answer": 1
@@ -1367,7 +1367,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Students from lower-income households should receive higher Erasmus+ scholarships than those from higher-income households.",
             "Question_Label_OG": "Az alacsonyabb jövedelmű háztartásokból érkező hallgatók magasabb Erasmus+ ösztöndíjat kapjanak, mint magasabb jövedelmű háztartásokból érkező hallgatók.",
             "Party_Answer": 0
@@ -1375,7 +1375,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Students from lower-income households should receive higher Erasmus+ scholarships than those from higher-income households.",
             "Question_Label_OG": "Az alacsonyabb jövedelmű háztartásokból érkező hallgatók magasabb Erasmus+ ösztöndíjat kapjanak, mint magasabb jövedelmű háztartásokból érkező hallgatók.",
             "Party_Answer": 1
@@ -1383,7 +1383,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Students from lower-income households should receive higher Erasmus+ scholarships than those from higher-income households.",
             "Question_Label_OG": "Az alacsonyabb jövedelmű háztartásokból érkező hallgatók magasabb Erasmus+ ösztöndíjat kapjanak, mint magasabb jövedelmű háztartásokból érkező hallgatók.",
             "Party_Answer": 1
@@ -1391,7 +1391,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Students from lower-income households should receive higher Erasmus+ scholarships than those from higher-income households.",
             "Question_Label_OG": "Az alacsonyabb jövedelmű háztartásokból érkező hallgatók magasabb Erasmus+ ösztöndíjat kapjanak, mint magasabb jövedelmű háztartásokból érkező hallgatók.",
             "Party_Answer": 1
@@ -1399,7 +1399,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Students from lower-income households should receive higher Erasmus+ scholarships than those from higher-income households.",
             "Question_Label_OG": "Az alacsonyabb jövedelmű háztartásokból érkező hallgatók magasabb Erasmus+ ösztöndíjat kapjanak, mint magasabb jövedelmű háztartásokból érkező hallgatók.",
             "Party_Answer": 1
@@ -1407,7 +1407,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Students from lower-income households should receive higher Erasmus+ scholarships than those from higher-income households.",
             "Question_Label_OG": "Az alacsonyabb jövedelmű háztartásokból érkező hallgatók magasabb Erasmus+ ösztöndíjat kapjanak, mint magasabb jövedelmű háztartásokból érkező hallgatók.",
             "Party_Answer": -1
@@ -1415,7 +1415,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Students from lower-income households should receive higher Erasmus+ scholarships than those from higher-income households.",
             "Question_Label_OG": "Az alacsonyabb jövedelmű háztartásokból érkező hallgatók magasabb Erasmus+ ösztöndíjat kapjanak, mint magasabb jövedelmű háztartásokból érkező hallgatók.",
             "Party_Answer": 1
@@ -1423,7 +1423,7 @@
         {
             "Question_Number": 22,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Students from lower-income households should receive higher Erasmus+ scholarships than those from higher-income households.",
             "Question_Label_OG": "Az alacsonyabb jövedelmű háztartásokból érkező hallgatók magasabb Erasmus+ ösztöndíjat kapjanak, mint magasabb jövedelmű háztartásokból érkező hallgatók.",
             "Party_Answer": 1
@@ -1431,7 +1431,7 @@
         {
             "Question_Number": 23,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should be given educational policy competences in order to ensure that the educational systems of different countries perform uniformly.",
             "Question_Label_OG": "Az EU-t fel kell ruházni oktatáspolitikai kompetenciákkal abból a célból, hogy a különböző országok oktatási rendszerei egységes teljesítményt nyújtsanak.",
             "Party_Answer": -1
@@ -1439,7 +1439,7 @@
         {
             "Question_Number": 23,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should be given educational policy competences in order to ensure that the educational systems of different countries perform uniformly.",
             "Question_Label_OG": "Az EU-t fel kell ruházni oktatáspolitikai kompetenciákkal abból a célból, hogy a különböző országok oktatási rendszerei egységes teljesítményt nyújtsanak.",
             "Party_Answer": 0
@@ -1447,7 +1447,7 @@
         {
             "Question_Number": 23,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should be given educational policy competences in order to ensure that the educational systems of different countries perform uniformly.",
             "Question_Label_OG": "Az EU-t fel kell ruházni oktatáspolitikai kompetenciákkal abból a célból, hogy a különböző országok oktatási rendszerei egységes teljesítményt nyújtsanak.",
             "Party_Answer": 1
@@ -1455,7 +1455,7 @@
         {
             "Question_Number": 23,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should be given educational policy competences in order to ensure that the educational systems of different countries perform uniformly.",
             "Question_Label_OG": "Az EU-t fel kell ruházni oktatáspolitikai kompetenciákkal abból a célból, hogy a különböző országok oktatási rendszerei egységes teljesítményt nyújtsanak.",
             "Party_Answer": -1
@@ -1463,7 +1463,7 @@
         {
             "Question_Number": 23,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should be given educational policy competences in order to ensure that the educational systems of different countries perform uniformly.",
             "Question_Label_OG": "Az EU-t fel kell ruházni oktatáspolitikai kompetenciákkal abból a célból, hogy a különböző országok oktatási rendszerei egységes teljesítményt nyújtsanak.",
             "Party_Answer": 1
@@ -1471,7 +1471,7 @@
         {
             "Question_Number": 23,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should be given educational policy competences in order to ensure that the educational systems of different countries perform uniformly.",
             "Question_Label_OG": "Az EU-t fel kell ruházni oktatáspolitikai kompetenciákkal abból a célból, hogy a különböző országok oktatási rendszerei egységes teljesítményt nyújtsanak.",
             "Party_Answer": 0
@@ -1479,7 +1479,7 @@
         {
             "Question_Number": 23,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should be given educational policy competences in order to ensure that the educational systems of different countries perform uniformly.",
             "Question_Label_OG": "Az EU-t fel kell ruházni oktatáspolitikai kompetenciákkal abból a célból, hogy a különböző országok oktatási rendszerei egységes teljesítményt nyújtsanak.",
             "Party_Answer": 0
@@ -1487,7 +1487,7 @@
         {
             "Question_Number": 23,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should be given educational policy competences in order to ensure that the educational systems of different countries perform uniformly.",
             "Question_Label_OG": "Az EU-t fel kell ruházni oktatáspolitikai kompetenciákkal abból a célból, hogy a különböző országok oktatási rendszerei egységes teljesítményt nyújtsanak.",
             "Party_Answer": 1
@@ -1495,7 +1495,7 @@
         {
             "Question_Number": 24,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The President of the European Commission should be directly elected by EU citizens.",
             "Question_Label_OG": "Az Európai Bizottság elnökét közvetlenül az EU polgárai válasszák meg.",
             "Party_Answer": 0
@@ -1503,7 +1503,7 @@
         {
             "Question_Number": 24,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The President of the European Commission should be directly elected by EU citizens.",
             "Question_Label_OG": "Az Európai Bizottság elnökét közvetlenül az EU polgárai válasszák meg.",
             "Party_Answer": 0
@@ -1511,7 +1511,7 @@
         {
             "Question_Number": 24,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The President of the European Commission should be directly elected by EU citizens.",
             "Question_Label_OG": "Az Európai Bizottság elnökét közvetlenül az EU polgárai válasszák meg.",
             "Party_Answer": 1
@@ -1519,7 +1519,7 @@
         {
             "Question_Number": 24,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The President of the European Commission should be directly elected by EU citizens.",
             "Question_Label_OG": "Az Európai Bizottság elnökét közvetlenül az EU polgárai válasszák meg.",
             "Party_Answer": -1
@@ -1527,7 +1527,7 @@
         {
             "Question_Number": 24,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The President of the European Commission should be directly elected by EU citizens.",
             "Question_Label_OG": "Az Európai Bizottság elnökét közvetlenül az EU polgárai válasszák meg.",
             "Party_Answer": 1
@@ -1535,7 +1535,7 @@
         {
             "Question_Number": 24,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The President of the European Commission should be directly elected by EU citizens.",
             "Question_Label_OG": "Az Európai Bizottság elnökét közvetlenül az EU polgárai válasszák meg.",
             "Party_Answer": 1
@@ -1543,7 +1543,7 @@
         {
             "Question_Number": 24,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The President of the European Commission should be directly elected by EU citizens.",
             "Question_Label_OG": "Az Európai Bizottság elnökét közvetlenül az EU polgárai válasszák meg.",
             "Party_Answer": 0
@@ -1551,7 +1551,7 @@
         {
             "Question_Number": 24,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The President of the European Commission should be directly elected by EU citizens.",
             "Question_Label_OG": "Az Európai Bizottság elnökét közvetlenül az EU polgárai válasszák meg.",
             "Party_Answer": 1
@@ -1559,7 +1559,7 @@
         {
             "Question_Number": 25,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The institution of an EU-wide referendum should be introduced.",
             "Question_Label_OG": "Vezessék be az egész EU-ra kiterjedő népszavazás intézményét.",
             "Party_Answer": -1
@@ -1567,7 +1567,7 @@
         {
             "Question_Number": 25,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The institution of an EU-wide referendum should be introduced.",
             "Question_Label_OG": "Vezessék be az egész EU-ra kiterjedő népszavazás intézményét.",
             "Party_Answer": 1
@@ -1575,7 +1575,7 @@
         {
             "Question_Number": 25,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The institution of an EU-wide referendum should be introduced.",
             "Question_Label_OG": "Vezessék be az egész EU-ra kiterjedő népszavazás intézményét.",
             "Party_Answer": 1
@@ -1583,7 +1583,7 @@
         {
             "Question_Number": 25,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The institution of an EU-wide referendum should be introduced.",
             "Question_Label_OG": "Vezessék be az egész EU-ra kiterjedő népszavazás intézményét.",
             "Party_Answer": -1
@@ -1591,7 +1591,7 @@
         {
             "Question_Number": 25,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The institution of an EU-wide referendum should be introduced.",
             "Question_Label_OG": "Vezessék be az egész EU-ra kiterjedő népszavazás intézményét.",
             "Party_Answer": 1
@@ -1599,7 +1599,7 @@
         {
             "Question_Number": 25,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The institution of an EU-wide referendum should be introduced.",
             "Question_Label_OG": "Vezessék be az egész EU-ra kiterjedő népszavazás intézményét.",
             "Party_Answer": 1
@@ -1607,7 +1607,7 @@
         {
             "Question_Number": 25,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The institution of an EU-wide referendum should be introduced.",
             "Question_Label_OG": "Vezessék be az egész EU-ra kiterjedő népszavazás intézményét.",
             "Party_Answer": 1
@@ -1615,7 +1615,7 @@
         {
             "Question_Number": 25,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The institution of an EU-wide referendum should be introduced.",
             "Question_Label_OG": "Vezessék be az egész EU-ra kiterjedő népszavazás intézményét.",
             "Party_Answer": 1
@@ -1623,7 +1623,7 @@
         {
             "Question_Number": 26,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Hungary should join the European Public Prosecutor's Office.",
             "Question_Label_OG": "Magyarország csatlakozzon az Európai Ügyészséghez.",
             "Party_Answer": -1
@@ -1631,7 +1631,7 @@
         {
             "Question_Number": 26,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Hungary should join the European Public Prosecutor's Office.",
             "Question_Label_OG": "Magyarország csatlakozzon az Európai Ügyészséghez.",
             "Party_Answer": 1
@@ -1639,7 +1639,7 @@
         {
             "Question_Number": 26,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Hungary should join the European Public Prosecutor's Office.",
             "Question_Label_OG": "Magyarország csatlakozzon az Európai Ügyészséghez.",
             "Party_Answer": 1
@@ -1647,7 +1647,7 @@
         {
             "Question_Number": 26,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Hungary should join the European Public Prosecutor's Office.",
             "Question_Label_OG": "Magyarország csatlakozzon az Európai Ügyészséghez.",
             "Party_Answer": -1
@@ -1655,7 +1655,7 @@
         {
             "Question_Number": 26,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Hungary should join the European Public Prosecutor's Office.",
             "Question_Label_OG": "Magyarország csatlakozzon az Európai Ügyészséghez.",
             "Party_Answer": 1
@@ -1663,7 +1663,7 @@
         {
             "Question_Number": 26,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Hungary should join the European Public Prosecutor's Office.",
             "Question_Label_OG": "Magyarország csatlakozzon az Európai Ügyészséghez.",
             "Party_Answer": 1
@@ -1671,7 +1671,7 @@
         {
             "Question_Number": 26,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Hungary should join the European Public Prosecutor's Office.",
             "Question_Label_OG": "Magyarország csatlakozzon az Európai Ügyészséghez.",
             "Party_Answer": 1
@@ -1679,7 +1679,7 @@
         {
             "Question_Number": 26,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Hungary should join the European Public Prosecutor's Office.",
             "Question_Label_OG": "Magyarország csatlakozzon az Európai Ügyészséghez.",
             "Party_Answer": 1
@@ -1687,7 +1687,7 @@
         {
             "Question_Number": 27,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Western Balkan countries should join the EU by 2030.",
             "Question_Label_OG": "A Nyugat-Balkáni államok 2030-ig csatlakozzanak az EU-hoz.",
             "Party_Answer": -1
@@ -1695,7 +1695,7 @@
         {
             "Question_Number": 27,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Western Balkan countries should join the EU by 2030.",
             "Question_Label_OG": "A Nyugat-Balkáni államok 2030-ig csatlakozzanak az EU-hoz.",
             "Party_Answer": 1
@@ -1703,7 +1703,7 @@
         {
             "Question_Number": 27,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Western Balkan countries should join the EU by 2030.",
             "Question_Label_OG": "A Nyugat-Balkáni államok 2030-ig csatlakozzanak az EU-hoz.",
             "Party_Answer": 1
@@ -1711,7 +1711,7 @@
         {
             "Question_Number": 27,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Western Balkan countries should join the EU by 2030.",
             "Question_Label_OG": "A Nyugat-Balkáni államok 2030-ig csatlakozzanak az EU-hoz.",
             "Party_Answer": 1
@@ -1719,7 +1719,7 @@
         {
             "Question_Number": 27,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Western Balkan countries should join the EU by 2030.",
             "Question_Label_OG": "A Nyugat-Balkáni államok 2030-ig csatlakozzanak az EU-hoz.",
             "Party_Answer": 1
@@ -1727,7 +1727,7 @@
         {
             "Question_Number": 27,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Western Balkan countries should join the EU by 2030.",
             "Question_Label_OG": "A Nyugat-Balkáni államok 2030-ig csatlakozzanak az EU-hoz.",
             "Party_Answer": 0
@@ -1735,7 +1735,7 @@
         {
             "Question_Number": 27,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Western Balkan countries should join the EU by 2030.",
             "Question_Label_OG": "A Nyugat-Balkáni államok 2030-ig csatlakozzanak az EU-hoz.",
             "Party_Answer": 1
@@ -1743,7 +1743,7 @@
         {
             "Question_Number": 27,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Western Balkan countries should join the EU by 2030.",
             "Question_Label_OG": "A Nyugat-Balkáni államok 2030-ig csatlakozzanak az EU-hoz.",
             "Party_Answer": 1
@@ -1751,7 +1751,7 @@
         {
             "Question_Number": 28,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU is too restrictive of Hungary's sovereignty.",
             "Question_Label_OG": "Magyarország szuverenitását az EU túl erősen korlátozza.",
             "Party_Answer": 1
@@ -1759,7 +1759,7 @@
         {
             "Question_Number": 28,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU is too restrictive of Hungary's sovereignty.",
             "Question_Label_OG": "Magyarország szuverenitását az EU túl erősen korlátozza.",
             "Party_Answer": -1
@@ -1767,7 +1767,7 @@
         {
             "Question_Number": 28,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU is too restrictive of Hungary's sovereignty.",
             "Question_Label_OG": "Magyarország szuverenitását az EU túl erősen korlátozza.",
             "Party_Answer": -1
@@ -1775,7 +1775,7 @@
         {
             "Question_Number": 28,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU is too restrictive of Hungary's sovereignty.",
             "Question_Label_OG": "Magyarország szuverenitását az EU túl erősen korlátozza.",
             "Party_Answer": 1
@@ -1783,7 +1783,7 @@
         {
             "Question_Number": 28,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU is too restrictive of Hungary's sovereignty.",
             "Question_Label_OG": "Magyarország szuverenitását az EU túl erősen korlátozza.",
             "Party_Answer": -1
@@ -1791,7 +1791,7 @@
         {
             "Question_Number": 28,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU is too restrictive of Hungary's sovereignty.",
             "Question_Label_OG": "Magyarország szuverenitását az EU túl erősen korlátozza.",
             "Party_Answer": -1
@@ -1799,7 +1799,7 @@
         {
             "Question_Number": 28,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU is too restrictive of Hungary's sovereignty.",
             "Question_Label_OG": "Magyarország szuverenitását az EU túl erősen korlátozza.",
             "Party_Answer": -1
@@ -1807,7 +1807,7 @@
         {
             "Question_Number": 28,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU is too restrictive of Hungary's sovereignty.",
             "Question_Label_OG": "Magyarország szuverenitását az EU túl erősen korlátozza.",
             "Party_Answer": -1
@@ -1815,7 +1815,7 @@
         {
             "Question_Number": 29,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "Social media companies should be free to decide how to handle misinformation on their platforms.",
             "Question_Label_OG": "A közösségi médiavállalatoknak szabadon kellene dönteniük arról, hogy miként kezelik a platformjukon megjelenő dezinformációt.",
             "Party_Answer": -1
@@ -1823,7 +1823,7 @@
         {
             "Question_Number": 29,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "Social media companies should be free to decide how to handle misinformation on their platforms.",
             "Question_Label_OG": "A közösségi médiavállalatoknak szabadon kellene dönteniük arról, hogy miként kezelik a platformjukon megjelenő dezinformációt.",
             "Party_Answer": -1
@@ -1831,7 +1831,7 @@
         {
             "Question_Number": 29,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "Social media companies should be free to decide how to handle misinformation on their platforms.",
             "Question_Label_OG": "A közösségi médiavállalatoknak szabadon kellene dönteniük arról, hogy miként kezelik a platformjukon megjelenő dezinformációt.",
             "Party_Answer": -1
@@ -1839,7 +1839,7 @@
         {
             "Question_Number": 29,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "Social media companies should be free to decide how to handle misinformation on their platforms.",
             "Question_Label_OG": "A közösségi médiavállalatoknak szabadon kellene dönteniük arról, hogy miként kezelik a platformjukon megjelenő dezinformációt.",
             "Party_Answer": -1
@@ -1847,7 +1847,7 @@
         {
             "Question_Number": 29,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "Social media companies should be free to decide how to handle misinformation on their platforms.",
             "Question_Label_OG": "A közösségi médiavállalatoknak szabadon kellene dönteniük arról, hogy miként kezelik a platformjukon megjelenő dezinformációt.",
             "Party_Answer": -1
@@ -1855,7 +1855,7 @@
         {
             "Question_Number": 29,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "Social media companies should be free to decide how to handle misinformation on their platforms.",
             "Question_Label_OG": "A közösségi médiavállalatoknak szabadon kellene dönteniük arról, hogy miként kezelik a platformjukon megjelenő dezinformációt.",
             "Party_Answer": -1
@@ -1863,7 +1863,7 @@
         {
             "Question_Number": 29,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "Social media companies should be free to decide how to handle misinformation on their platforms.",
             "Question_Label_OG": "A közösségi médiavállalatoknak szabadon kellene dönteniük arról, hogy miként kezelik a platformjukon megjelenő dezinformációt.",
             "Party_Answer": 1
@@ -1871,7 +1871,7 @@
         {
             "Question_Number": 29,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "Social media companies should be free to decide how to handle misinformation on their platforms.",
             "Question_Label_OG": "A közösségi médiavállalatoknak szabadon kellene dönteniük arról, hogy miként kezelik a platformjukon megjelenő dezinformációt.",
             "Party_Answer": -1
@@ -1879,7 +1879,7 @@
         {
             "Question_Number": 30,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should ban the use of automated facial recognition in law enforcement.",
             "Question_Label_OG": "Az EU-nak be kellene tiltania az automatizált arcfelismerés alkalmazását a bűnüldözésben.",
             "Party_Answer": 0
@@ -1887,7 +1887,7 @@
         {
             "Question_Number": 30,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should ban the use of automated facial recognition in law enforcement.",
             "Question_Label_OG": "Az EU-nak be kellene tiltania az automatizált arcfelismerés alkalmazását a bűnüldözésben.",
             "Party_Answer": -1
@@ -1895,7 +1895,7 @@
         {
             "Question_Number": 30,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should ban the use of automated facial recognition in law enforcement.",
             "Question_Label_OG": "Az EU-nak be kellene tiltania az automatizált arcfelismerés alkalmazását a bűnüldözésben.",
             "Party_Answer": -1
@@ -1903,7 +1903,7 @@
         {
             "Question_Number": 30,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should ban the use of automated facial recognition in law enforcement.",
             "Question_Label_OG": "Az EU-nak be kellene tiltania az automatizált arcfelismerés alkalmazását a bűnüldözésben.",
             "Party_Answer": -1
@@ -1911,7 +1911,7 @@
         {
             "Question_Number": 30,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should ban the use of automated facial recognition in law enforcement.",
             "Question_Label_OG": "Az EU-nak be kellene tiltania az automatizált arcfelismerés alkalmazását a bűnüldözésben.",
             "Party_Answer": -1
@@ -1919,7 +1919,7 @@
         {
             "Question_Number": 30,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should ban the use of automated facial recognition in law enforcement.",
             "Question_Label_OG": "Az EU-nak be kellene tiltania az automatizált arcfelismerés alkalmazását a bűnüldözésben.",
             "Party_Answer": 1
@@ -1927,7 +1927,7 @@
         {
             "Question_Number": 30,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should ban the use of automated facial recognition in law enforcement.",
             "Question_Label_OG": "Az EU-nak be kellene tiltania az automatizált arcfelismerés alkalmazását a bűnüldözésben.",
             "Party_Answer": -1
@@ -1935,7 +1935,7 @@
         {
             "Question_Number": 30,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should ban the use of automated facial recognition in law enforcement.",
             "Question_Label_OG": "Az EU-nak be kellene tiltania az automatizált arcfelismerés alkalmazását a bűnüldözésben.",
             "Party_Answer": 0
@@ -1943,7 +1943,7 @@
         {
             "Question_Number": 31,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should recommend that member states include a third gender category in their passports.",
             "Question_Label_OG": "Az EU-nak azt kellene javasolnia a tagállamoknak, hogy útleveleiket egészítsék ki egy harmadik nemi kategóriával.",
             "Party_Answer": -1
@@ -1951,7 +1951,7 @@
         {
             "Question_Number": 31,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should recommend that member states include a third gender category in their passports.",
             "Question_Label_OG": "Az EU-nak azt kellene javasolnia a tagállamoknak, hogy útleveleiket egészítsék ki egy harmadik nemi kategóriával.",
             "Party_Answer": -1
@@ -1959,7 +1959,7 @@
         {
             "Question_Number": 31,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should recommend that member states include a third gender category in their passports.",
             "Question_Label_OG": "Az EU-nak azt kellene javasolnia a tagállamoknak, hogy útleveleiket egészítsék ki egy harmadik nemi kategóriával.",
             "Party_Answer": -1
@@ -1967,7 +1967,7 @@
         {
             "Question_Number": 31,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should recommend that member states include a third gender category in their passports.",
             "Question_Label_OG": "Az EU-nak azt kellene javasolnia a tagállamoknak, hogy útleveleiket egészítsék ki egy harmadik nemi kategóriával.",
             "Party_Answer": -1
@@ -1975,7 +1975,7 @@
         {
             "Question_Number": 31,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should recommend that member states include a third gender category in their passports.",
             "Question_Label_OG": "Az EU-nak azt kellene javasolnia a tagállamoknak, hogy útleveleiket egészítsék ki egy harmadik nemi kategóriával.",
             "Party_Answer": -1
@@ -1983,7 +1983,7 @@
         {
             "Question_Number": 31,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should recommend that member states include a third gender category in their passports.",
             "Question_Label_OG": "Az EU-nak azt kellene javasolnia a tagállamoknak, hogy útleveleiket egészítsék ki egy harmadik nemi kategóriával.",
             "Party_Answer": 1
@@ -1991,7 +1991,7 @@
         {
             "Question_Number": 31,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should recommend that member states include a third gender category in their passports.",
             "Question_Label_OG": "Az EU-nak azt kellene javasolnia a tagállamoknak, hogy útleveleiket egészítsék ki egy harmadik nemi kategóriával.",
             "Party_Answer": -1
@@ -1999,7 +1999,7 @@
         {
             "Question_Number": 31,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should recommend that member states include a third gender category in their passports.",
             "Question_Label_OG": "Az EU-nak azt kellene javasolnia a tagállamoknak, hogy útleveleiket egészítsék ki egy harmadik nemi kategóriával.",
             "Party_Answer": 1
@@ -2007,7 +2007,7 @@
         {
             "Question_Number": 32,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should take targeted measures to support equal involvement of fathers and mothers in childcare.",
             "Question_Label_OG": "Az EU célzott intézkedésekkel támogassa, hogy az apák és anyák egyenlő mértékben vegyék ki részüket a gyereknevelésben.",
             "Party_Answer": -1
@@ -2015,7 +2015,7 @@
         {
             "Question_Number": 32,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should take targeted measures to support equal involvement of fathers and mothers in childcare.",
             "Question_Label_OG": "Az EU célzott intézkedésekkel támogassa, hogy az apák és anyák egyenlő mértékben vegyék ki részüket a gyereknevelésben.",
             "Party_Answer": 1
@@ -2023,7 +2023,7 @@
         {
             "Question_Number": 32,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should take targeted measures to support equal involvement of fathers and mothers in childcare.",
             "Question_Label_OG": "Az EU célzott intézkedésekkel támogassa, hogy az apák és anyák egyenlő mértékben vegyék ki részüket a gyereknevelésben.",
             "Party_Answer": 1
@@ -2031,7 +2031,7 @@
         {
             "Question_Number": 32,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should take targeted measures to support equal involvement of fathers and mothers in childcare.",
             "Question_Label_OG": "Az EU célzott intézkedésekkel támogassa, hogy az apák és anyák egyenlő mértékben vegyék ki részüket a gyereknevelésben.",
             "Party_Answer": -1
@@ -2039,7 +2039,7 @@
         {
             "Question_Number": 32,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should take targeted measures to support equal involvement of fathers and mothers in childcare.",
             "Question_Label_OG": "Az EU célzott intézkedésekkel támogassa, hogy az apák és anyák egyenlő mértékben vegyék ki részüket a gyereknevelésben.",
             "Party_Answer": -1
@@ -2047,7 +2047,7 @@
         {
             "Question_Number": 32,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should take targeted measures to support equal involvement of fathers and mothers in childcare.",
             "Question_Label_OG": "Az EU célzott intézkedésekkel támogassa, hogy az apák és anyák egyenlő mértékben vegyék ki részüket a gyereknevelésben.",
             "Party_Answer": 1
@@ -2055,7 +2055,7 @@
         {
             "Question_Number": 32,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should take targeted measures to support equal involvement of fathers and mothers in childcare.",
             "Question_Label_OG": "Az EU célzott intézkedésekkel támogassa, hogy az apák és anyák egyenlő mértékben vegyék ki részüket a gyereknevelésben.",
             "Party_Answer": 1
@@ -2063,7 +2063,7 @@
         {
             "Question_Number": 32,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should take targeted measures to support equal involvement of fathers and mothers in childcare.",
             "Question_Label_OG": "Az EU célzott intézkedésekkel támogassa, hogy az apák és anyák egyenlő mértékben vegyék ki részüket a gyereknevelésben.",
             "Party_Answer": 1
@@ -2071,7 +2071,7 @@
         {
             "Question_Number": 33,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should harmonize legislation on sexual violence, especially rape.",
             "Question_Label_OG": "Az EU egységesítse a nemi erőszak, különösen a megerőszakolás büntetésére vonatkozó jogszabályokat.",
             "Party_Answer": -1
@@ -2079,7 +2079,7 @@
         {
             "Question_Number": 33,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should harmonize legislation on sexual violence, especially rape.",
             "Question_Label_OG": "Az EU egységesítse a nemi erőszak, különösen a megerőszakolás büntetésére vonatkozó jogszabályokat.",
             "Party_Answer": 0
@@ -2087,7 +2087,7 @@
         {
             "Question_Number": 33,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should harmonize legislation on sexual violence, especially rape.",
             "Question_Label_OG": "Az EU egységesítse a nemi erőszak, különösen a megerőszakolás büntetésére vonatkozó jogszabályokat.",
             "Party_Answer": 1
@@ -2095,7 +2095,7 @@
         {
             "Question_Number": 33,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should harmonize legislation on sexual violence, especially rape.",
             "Question_Label_OG": "Az EU egységesítse a nemi erőszak, különösen a megerőszakolás büntetésére vonatkozó jogszabályokat.",
             "Party_Answer": -1
@@ -2103,7 +2103,7 @@
         {
             "Question_Number": 33,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should harmonize legislation on sexual violence, especially rape.",
             "Question_Label_OG": "Az EU egységesítse a nemi erőszak, különösen a megerőszakolás büntetésére vonatkozó jogszabályokat.",
             "Party_Answer": -1
@@ -2111,7 +2111,7 @@
         {
             "Question_Number": 33,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should harmonize legislation on sexual violence, especially rape.",
             "Question_Label_OG": "Az EU egységesítse a nemi erőszak, különösen a megerőszakolás büntetésére vonatkozó jogszabályokat.",
             "Party_Answer": 1
@@ -2119,7 +2119,7 @@
         {
             "Question_Number": 33,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should harmonize legislation on sexual violence, especially rape.",
             "Question_Label_OG": "Az EU egységesítse a nemi erőszak, különösen a megerőszakolás büntetésére vonatkozó jogszabályokat.",
             "Party_Answer": -1
@@ -2127,7 +2127,7 @@
         {
             "Question_Number": 33,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should harmonize legislation on sexual violence, especially rape.",
             "Question_Label_OG": "Az EU egységesítse a nemi erőszak, különösen a megerőszakolás büntetésére vonatkozó jogszabályokat.",
             "Party_Answer": 1
@@ -2135,7 +2135,7 @@
         {
             "Question_Number": 34,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should encourage the legalization of medical cannabis in member states.",
             "Question_Label_OG": "Az EU ösztönözze az orvosi kannabisz legalizálását a tagállamokban.",
             "Party_Answer": -1
@@ -2143,7 +2143,7 @@
         {
             "Question_Number": 34,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should encourage the legalization of medical cannabis in member states.",
             "Question_Label_OG": "Az EU ösztönözze az orvosi kannabisz legalizálását a tagállamokban.",
             "Party_Answer": 1
@@ -2151,7 +2151,7 @@
         {
             "Question_Number": 34,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should encourage the legalization of medical cannabis in member states.",
             "Question_Label_OG": "Az EU ösztönözze az orvosi kannabisz legalizálását a tagállamokban.",
             "Party_Answer": 1
@@ -2159,7 +2159,7 @@
         {
             "Question_Number": 34,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should encourage the legalization of medical cannabis in member states.",
             "Question_Label_OG": "Az EU ösztönözze az orvosi kannabisz legalizálását a tagállamokban.",
             "Party_Answer": -1
@@ -2167,7 +2167,7 @@
         {
             "Question_Number": 34,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should encourage the legalization of medical cannabis in member states.",
             "Question_Label_OG": "Az EU ösztönözze az orvosi kannabisz legalizálását a tagállamokban.",
             "Party_Answer": 1
@@ -2175,7 +2175,7 @@
         {
             "Question_Number": 34,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should encourage the legalization of medical cannabis in member states.",
             "Question_Label_OG": "Az EU ösztönözze az orvosi kannabisz legalizálását a tagállamokban.",
             "Party_Answer": 1
@@ -2183,7 +2183,7 @@
         {
             "Question_Number": 34,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should encourage the legalization of medical cannabis in member states.",
             "Question_Label_OG": "Az EU ösztönözze az orvosi kannabisz legalizálását a tagállamokban.",
             "Party_Answer": -1
@@ -2191,7 +2191,7 @@
         {
             "Question_Number": 34,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should encourage the legalization of medical cannabis in member states.",
             "Question_Label_OG": "Az EU ösztönözze az orvosi kannabisz legalizálását a tagállamokban.",
             "Party_Answer": 1
@@ -2199,7 +2199,7 @@
         {
             "Question_Number": 35,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The European Union is a community of values.",
             "Question_Label_OG": "Az Európai Unió egy értékközösség.",
             "Party_Answer": -1
@@ -2207,7 +2207,7 @@
         {
             "Question_Number": 35,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The European Union is a community of values.",
             "Question_Label_OG": "Az Európai Unió egy értékközösség.",
             "Party_Answer": -1
@@ -2215,7 +2215,7 @@
         {
             "Question_Number": 35,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The European Union is a community of values.",
             "Question_Label_OG": "Az Európai Unió egy értékközösség.",
             "Party_Answer": 1
@@ -2223,7 +2223,7 @@
         {
             "Question_Number": 35,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The European Union is a community of values.",
             "Question_Label_OG": "Az Európai Unió egy értékközösség.",
             "Party_Answer": -1
@@ -2231,7 +2231,7 @@
         {
             "Question_Number": 35,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The European Union is a community of values.",
             "Question_Label_OG": "Az Európai Unió egy értékközösség.",
             "Party_Answer": 1
@@ -2239,7 +2239,7 @@
         {
             "Question_Number": 35,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The European Union is a community of values.",
             "Question_Label_OG": "Az Európai Unió egy értékközösség.",
             "Party_Answer": 1
@@ -2247,7 +2247,7 @@
         {
             "Question_Number": 35,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The European Union is a community of values.",
             "Question_Label_OG": "Az Európai Unió egy értékközösség.",
             "Party_Answer": 1
@@ -2255,7 +2255,7 @@
         {
             "Question_Number": 35,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The European Union is a community of values.",
             "Question_Label_OG": "Az Európai Unió egy értékközösség.",
             "Party_Answer": 1
@@ -2263,7 +2263,7 @@
         {
             "Question_Number": 36,
             "Party_Name": "Mi Hazánk",
-            "Party_Full_Name": "Mi Hazánk Mozgalom",
+            "Full_Party_Name": "Mi Hazánk Mozgalom",
             "Question_Label": "The EU should place greater emphasis on Europe's common past and the influence of Christianity on our culture.",
             "Question_Label_OG": "Az EU nagyobb hangsúlyt fektessen Európa közös múltjára és a kereszténység kultúránkra gyakorolt befolyására.",
             "Party_Answer": 1
@@ -2271,7 +2271,7 @@
         {
             "Question_Number": 36,
             "Party_Name": "LMP",
-            "Party_Full_Name": "Lehet Más a Politika",
+            "Full_Party_Name": "Lehet Más a Politika",
             "Question_Label": "The EU should place greater emphasis on Europe's common past and the influence of Christianity on our culture.",
             "Question_Label_OG": "Az EU nagyobb hangsúlyt fektessen Európa közös múltjára és a kereszténység kultúránkra gyakorolt befolyására.",
             "Party_Answer": 1
@@ -2279,7 +2279,7 @@
         {
             "Question_Number": 36,
             "Party_Name": "DK-MSZP-P",
-            "Party_Full_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
+            "Full_Party_Name": "Demokratikus Koalíció - Magyar Szocialista Párt - Párbeszéd",
             "Question_Label": "The EU should place greater emphasis on Europe's common past and the influence of Christianity on our culture.",
             "Question_Label_OG": "Az EU nagyobb hangsúlyt fektessen Európa közös múltjára és a kereszténység kultúránkra gyakorolt befolyására.",
             "Party_Answer": 0
@@ -2287,7 +2287,7 @@
         {
             "Question_Number": 36,
             "Party_Name": "FIDESZ-KDNP",
-            "Party_Full_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
+            "Full_Party_Name": "Fidesz – Magyar Polgári Szövetség – Kereszténydemokrata Néppárt",
             "Question_Label": "The EU should place greater emphasis on Europe's common past and the influence of Christianity on our culture.",
             "Question_Label_OG": "Az EU nagyobb hangsúlyt fektessen Európa közös múltjára és a kereszténység kultúránkra gyakorolt befolyására.",
             "Party_Answer": 1
@@ -2295,7 +2295,7 @@
         {
             "Question_Number": 36,
             "Party_Name": "MMN",
-            "Party_Full_Name": "Mindenki Magyarországa Mozgalom",
+            "Full_Party_Name": "Mindenki Magyarországa Mozgalom",
             "Question_Label": "The EU should place greater emphasis on Europe's common past and the influence of Christianity on our culture.",
             "Question_Label_OG": "Az EU nagyobb hangsúlyt fektessen Európa közös múltjára és a kereszténység kultúránkra gyakorolt befolyására.",
             "Party_Answer": 1
@@ -2303,7 +2303,7 @@
         {
             "Question_Number": 36,
             "Party_Name": "MOMENTUM",
-            "Party_Full_Name": "Momentum Mozgalom",
+            "Full_Party_Name": "Momentum Mozgalom",
             "Question_Label": "The EU should place greater emphasis on Europe's common past and the influence of Christianity on our culture.",
             "Question_Label_OG": "Az EU nagyobb hangsúlyt fektessen Európa közös múltjára és a kereszténység kultúránkra gyakorolt befolyására.",
             "Party_Answer": 0
@@ -2311,7 +2311,7 @@
         {
             "Question_Number": 36,
             "Party_Name": "2RK",
-            "Party_Full_Name": "Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Kétfarkú Kutya Párt",
             "Question_Label": "The EU should place greater emphasis on Europe's common past and the influence of Christianity on our culture.",
             "Question_Label_OG": "Az EU nagyobb hangsúlyt fektessen Európa közös múltjára és a kereszténység kultúránkra gyakorolt befolyására.",
             "Party_Answer": 1
@@ -2319,7 +2319,7 @@
         {
             "Question_Number": 36,
             "Party_Name": "MKKP",
-            "Party_Full_Name": "Magyar Kétfarkú Kutya Párt",
+            "Full_Party_Name": "Magyar Kétfarkú Kutya Párt",
             "Question_Label": "The EU should place greater emphasis on Europe's common past and the influence of Christianity on our culture.",
             "Question_Label_OG": "Az EU nagyobb hangsúlyt fektessen Európa közös múltjára és a kereszténység kultúránkra gyakorolt befolyására.",
             "Party_Answer": -1
