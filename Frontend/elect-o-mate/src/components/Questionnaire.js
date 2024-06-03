@@ -138,14 +138,17 @@ const Questionnaire = ({
     // console.warn({ jsonData });
 
     try {
-      const response = await fetch('http://0.0.0.0:8000' + '/evaluate', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ jsonData }),
-        signal: abortControllerRef.current.signal,
-      });
+      const response = await fetch(
+        process.env.REACT_APP_BACKEND_URL + '/evaluate',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ jsonData }),
+          signal: abortControllerRef.current.signal,
+        }
+      );
 
       const data = await response.json();
       // console.log(data);
