@@ -2,8 +2,6 @@
 
 Build Your Opinion for the upcoming EU Elections. This tool offers you additional information. Additionally you can have a chat with an expert AI ChatBot or just voice call with the the database & web.
 
-![Example Image](./pictures/ElectomateIphone.png)
-
 ## Demo
 
 Demo Screenrecording
@@ -35,24 +33,11 @@ In navigating the intersection of technology and democracy, Wahl-O-Mat pledges t
 
 ## Backend Structure
 
-Lorem Ipsum..... \
-Lorem Ipsum..... \
-Lorem Ipsum..... \
-Lorem Ipsum.....
 
 ## Evaluation
 
-Lorem Ipsum..... \
-Lorem Ipsum..... \
-Lorem Ipsum..... \
-Lorem Ipsum.....
-
 ## Install
 
-Lorem Ipsum..... \
-Lorem Ipsum..... \
-Lorem Ipsum..... \
-Lorem Ipsum.....
 
 ## References and acknowledgment
 
