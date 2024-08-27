@@ -225,7 +225,7 @@ function App() {
         setMessages((prevMessages) => [
           ...prevMessages,
           {
-            text: 'An error occurred. Please try again.',
+            text: 'Sorry, the chat feature is currently under testing & improvement, we will bring it back very soon!',
             isUser: false,
             isError: true,
           },
