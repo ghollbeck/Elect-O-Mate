@@ -64,7 +64,7 @@ def main():
 
     # Ensure that the key is loaded
     assert os.getenv("OPENAI_API_KEY"), "OPENAI_API_KEY not found in environment"
-    openai = ChatOpenAI(model="gpt-4o")
+    openai = ChatOpenAI()
     embeddings_openai = OpenAIEmbeddings()
 
 
