@@ -21,6 +21,9 @@ import { initGA, logPageView } from './analytics';
 import Cookies from 'js-cookie';
 import langs from './data/languages.json';
 
+import LandingPage from './components/LandingPage';
+
+
 function App() {
   const { t, i18n } = useTranslation();
   const [init, setInit] = useState(false);
@@ -451,14 +454,49 @@ function App() {
     setIsPopupOpen(!isPopupOpen);
   };
 
+
+
   const [questionnaireKey, setQuestionnaireKey] = useState(0);
 
-  return (
-    <Router>
-      <usePageViews />
+
+
+
+
+
+
+
+// ------- HERE the SETSCREEN Fucntions start ----------
+
+
+const [currentScreen, setCurrentScreen] = useState('newScreen');
+
+const setScreen = (screen) => {
+  setCurrentScreen(screen);
+};
+
+
+
+// ------- UNTIL HERE ----------
+
+
+
+
+return (
+  <Router>
+    <usePageViews />
+    {currentScreen === 'newScreen' ? (
+      <LandingPage onButtonClick={() => setScreen('main')} />
+    ) : (
       <div className='flex flex-col relative overflow-hidden bg-black '>
+        <button
+          onClick={() => setScreen('newScreen')}
+          className='absolute top-4 left-4 bg-blue-500 text-white px-4 py-2 rounded-md'
+        >
+          Go to New Screen
+        </button>
         <LanguageSelector changeLanguage={changeLanguage} />
 
+        {/* Existing main screen content */}
         <div className='flex flex-col items-center mt-20 pt-0 md:pt-20 mb-0 md:pb-10 w-full z-10'>
           <div className='w-full md:w-2/3 z-10 pt-0 md:pt-25 flex justify-center'>
             <Top
@@ -565,8 +603,11 @@ function App() {
           <Footer />
         </div>
       </div>
-    </Router>
-  );
+    )}
+  </Router>
+);
+
+
 }
 
 export default App;

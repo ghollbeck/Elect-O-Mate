@@ -13,7 +13,7 @@ const Top = ({
   return (
     <div className='my-10 p-5'>
       <header className='text-center  bg-gradient-to-r from-violet-100 to-pink-300 inline-block text-transparent bg-clip-text '>
-        <h1 className='text-6xl md:text-9xl font-extrabold'>Elect-O-Mate</h1>
+        <h1 className='text-6xl md:text-8xl font-extrabold'>Elect-O-Mate</h1>
         {/* <p className='mt-4'>{t('subheading')}</p> */}
         <div className='w-full flex-col justify-center mt-4'>
           <div className='text-2xl md:text-4xl font-extrabold mt-20 mb-20'>
