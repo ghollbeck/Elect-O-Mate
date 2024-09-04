@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Tailwind.css';
 
 export default function InterestForm() {
   const [formType, setFormType] = useState(null);
@@ -28,9 +29,9 @@ export default function InterestForm() {
 
 <div className="bg-black ">
                 <div className='flex justify-center '>
-                    <h1 className='text-6xl md:text-7xl font-extrabold text-white mb-10 mt-10'>Contact Us</h1>
+                    <h1 className='text-6xl md:text-7xl font-extrabold text-white mb-10 mt-10 custom-gradient6'>Contact Us</h1>
                 </div>
-                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-10">
+                <div className="text-justify text-white w-[66%] mx-auto pb-10">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -187,12 +188,12 @@ const formStyle = {
 const getInputStyle = (isHovered) => ({
   backgroundColor: 'transparent',
   color: 'white',
-  border: `1px solid ${isHovered ? 'white' : 'rgba(255, 255, 255, 0.3)'}`, // Change stroke opacity on hover
+  border: `1px solid ${isHovered ? 'white' : 'rgba(255, 255, 255, 1)'}`, // Change stroke opacity on hover
   borderRadius: '1.5rem',
   padding: '10px 10px 10px 20px', // Added left padding to move placeholder text to the right
   margin: '10px 0',
   width: '100%',
-  opacity: 0.6,
+  opacity: 1,
   transition: 'background-color 0.3s',
 });
 

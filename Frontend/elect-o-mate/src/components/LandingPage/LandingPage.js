@@ -1,3 +1,5 @@
+/* global Vara */
+
 import React, { useState, useEffect } from 'react';
 import { ComposableMap, Geographies, Geography, Graticule } from 'react-simple-maps';
 import { Tooltip } from 'react-tooltip';
@@ -6,13 +8,34 @@ import Footer from './../Footer';
 import ETHLOGO from './../../pictures/ETH_SPH_LogoWhite.png'; // Import this icon to @mui
 import MICROSOFTLOGO from './../../pictures/Microsoft-for-StartupsLogo.png';
 import './Tailwind.css';
+import { motion } from 'framer-motion';
+
+import MadeWithLove from './../../pictures/MadeWithLoveRed.png';
+
+
 
 import GABORPORTRAIT from './../../pictures/Portrait Gabor.jpeg';
 import TEAMSECTION from './TeamSection';
-import ADVISORS from './Advisors';
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 const implementedCountries = ['040', '056', '100', '276', '724', '250', '348', '380', '616', '840', '076', '288', '756'];
+
+
+const HandWritingAnimation = ({ text }) => {
+    return (
+        <div>
+            <motion.h2
+                className="text-secondary font-nautigal md:text-6xl text-5xl"
+                initial={{ opacity: 0, x: -20 }}  // Starts with opacity 0 and slightly off the left
+                animate={{ opacity: 1, x: 0 }}    // Animates to full opacity and 0 x-position
+                transition={{ duration: 2 }}      // Duration of 2 seconds for the transition
+            >
+                {text}
+            </motion.h2>
+        </div>
+    );
+};
+
 
 const LandingPage = ({ onButtonClick }) => {
     const [rotation, setRotation] = useState([-100, -10, 0]);
@@ -20,6 +43,8 @@ const LandingPage = ({ onButtonClick }) => {
     const [manualRotation, setManualRotation] = useState(null); // Tracks the new start point after manual rotation
     const [scrollFraction, setScrollFraction] = useState(0); // Track how far the user has scrolled (0 to 1)
     const [hasManualRotation, setHasManualRotation] = useState(false); // Flag to check if the globe was rotated manually
+    const [mapOpacity, setMapOpacity] = useState(0.5); // Initial opacity
+
 
     const [textPosition, setTextPosition] = useState(0); // Initial position
 
@@ -51,12 +76,14 @@ const LandingPage = ({ onButtonClick }) => {
 
 
         // Manual configurations for scale and rotation
-        const maxScale = 3;  // Max scale of the globe
-        const minScale = 1.8;  // Min scale of the globe
-        const startRotation = [-100, -50, 0];  // Start rotation (x, y, z)
+        const maxScale = 2.2;  // Max scale of the globe
+        const minScale = 3;  // Min scale of the globe
+        const startRotation = [70, -46, 0];  // Start rotation (x, y, z)
         const endRotation = [-9, -40, 0];  // End rotation (x, y, z)
-        const maxScroll = 400;  // Set this to your desired maximum scroll position
+        const maxScroll = 600;  // Set this to your desired maximum scroll position
 
+
+        
 
         const handleMouseMove = (event) => {
             if (isDragging) {
@@ -73,40 +100,51 @@ const LandingPage = ({ onButtonClick }) => {
             }
         };
         
+        const easeInOutCubic = (t) => {
+            return t < 0.4 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        };
 
+        
         useEffect(() => {
             const handleScroll = () => {
-                const scrollPosition = Math.min(window.scrollY, maxScroll); // Cap scroll position at maxScroll
-                const scrollFraction = scrollPosition / maxScroll;  // A value between 0 and 1, based on maxScroll
+                const scrollPosition = window.scrollY;
+                const startOpacityScroll = 100; // Scroll position where opacity transition starts
+                const endOpacityScroll = 500;   // Scroll position where opacity transition ends
         
-                // Determine the current base rotation: if manually rotated, use manualRotation, else use startRotation
+                // Cap scroll position at maxScroll for scaling and rotation purposes
+                const cappedScrollPosition = Math.min(scrollPosition, maxScroll);
+                const scrollFraction = cappedScrollPosition / maxScroll;
+                const easedScrollFraction = easeInOutCubic(scrollFraction);
+        
+                // Calculate the new rotation based on the eased scroll fraction
                 const currentStartRotation = hasManualRotation ? manualRotation : startRotation;
-                console.log("Current Start Rotation is:", hasManualRotation ? "manualRotation" : "startRotation"); // Log whether it's manualRotation or startRotation
-        
-                // Calculate the new rotation based on the capped scroll position
                 const newRotation = [
-                    currentStartRotation[0] + (endRotation[0] - currentStartRotation[0]) * scrollFraction,
-                    currentStartRotation[1] + (endRotation[1] - currentStartRotation[1]) * scrollFraction,
-                    currentStartRotation[2] + (endRotation[2] - currentStartRotation[2]) * scrollFraction,
+                    currentStartRotation[0] + (endRotation[0] - currentStartRotation[0]) * easedScrollFraction,
+                    currentStartRotation[1] + (endRotation[1] - currentStartRotation[1]) * easedScrollFraction,
+                    currentStartRotation[2] + (endRotation[2] - currentStartRotation[2]) * easedScrollFraction,
                 ];
+                setRotation(newRotation);
         
-                // Calculate the new scale based on capped scroll position
-                const newScale = minScale + (maxScale - minScale) * scrollFraction;
-         
-                // Calculate the new text position based on scroll position
-          const startTextPosition = 0; // Initial text position (in pixels)
-          const endTextPosition = -200; // Final text position when fully scrolled (in pixels)
-          const newTextPosition = startTextPosition + (endTextPosition - startTextPosition) * scrollFraction;
-  
-          setRotation(newRotation);
-          setGlobeScale(newScale);
-          setTextPosition(newTextPosition); // Update text position
-  
+                // Calculate the new scale
+                const newScale = minScale + (maxScale - minScale) * easedScrollFraction;
+                setGlobeScale(newScale);
         
-                // Reset manual rotation flag if the user scrolls back to the top
-                // if (scrollPosition === 0) {
-                //     setHasManualRotation(false);
-                // }
+              // Calculate opacity based on scroll position
+if (scrollPosition <= startOpacityScroll) {
+    // console.log("1");
+    // Before the starting point, keep the opacity at the initial value
+    setMapOpacity(0.5); // Keep the initial opacity
+} else if (scrollPosition > startOpacityScroll && scrollPosition <= endOpacityScroll) {
+    // console.log("2");
+    // Between start and end, gradually increase the opacity
+    const opacityFraction = (scrollPosition - startOpacityScroll) / (endOpacityScroll - startOpacityScroll);
+    setMapOpacity(0.3 + opacityFraction * 0.7); // Adjust opacity from 0.5 to 1
+} else {
+    // console.log("3");
+    // After the endOpacityScroll, keep opacity at 100%
+    setMapOpacity(1);
+}
+
             };
         
             window.addEventListener('scroll', handleScroll);
@@ -115,21 +153,71 @@ const LandingPage = ({ onButtonClick }) => {
             };
         }, [maxScale, minScale, startRotation, endRotation, maxScroll, manualRotation, hasManualRotation]);
         
+
         
 
-
+        // useEffect(() => {
+        //     // Initialize Vara after the component mounts
+        //     new Vara(
+        //         "#vara-container", 
+        //         "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Satisfy/SatisfySL.json", 
+        //         [
+        //             {
+        //                 text:"Hello World", // String, text to be shown
+        //                 fontSize:24, // Number, size of the text
+        //                 strokeWidth:.5, // Width / Thickness of the stroke
+        //                 color:"black", // Color of the text
+        //                 id:"", // String or integer, for if animations are called manually or when using the get() method. Default is the index of the object.
+        //                 duration:2000, // Number, Duration of the animation in milliseconds
+        //                 textAlign:"left", // String, text align, accepted values are left,center,right
+        //                 x:0, // Number, x coordinate of the text
+        //                 y:0, // Number, y coordinate of the text
+        //                 fromCurrentPosition:{ // Whether the x or y coordinate should be from its calculated position, ie the position if x or y coordinates were not applied
+        //                     x:true, // Boolean
+        //                     y:true, // Boolean
+        //                 },
+        //                 autoAnimation:true, // Boolean, Whether to animate the text automatically
+        //                 queued:true, // Boolean, Whether the animation should be in a queue
+        //                 delay:0,     // Delay before the animation starts in milliseconds
+        //                 /* Letter spacing can be a number or an object, if number, the spacing will be applied to every character.
+        //                 If object, each letter can be assigned a different spacing as follows,
+        //                 letterSpacing: {
+        //                     a: 4,
+        //                     j: -6,
+        //                     global: -1
+        //                 }
+        //                 The global property is used to set spacing of all other characters
+        //                 */
+        //                 letterSpacing:0
+        //             }],{
+        //                 // The options given below will be applicable to every text created,
+        //                 // however they will not override the options set above.
+        //                 // They will work as secondary options.
+        //                 fontSize:24, // Number, size of the text
+        //                 strokeWidth:.5, // Width / Thickness of the stroke
+        //                 color:"black", // Color of the text
+        //                 duration:2000, // Number, Duration of the animation in milliseconds
+        //                 textAlign:"left", // String, text align, accepted values are left,center,right
+        //                 autoAnimation:true, // Boolean, Whether to animate the text automatically
+        //                 queued:true, // Boolean, Whether the animation should be in a queue
+        //                 letterSpacing:0
+        //             }
+        //     );
+        // }, []);
+    
 
     const radius = '20%';
     const transitionSharpness = '20%';
 
     return (
         <div className="min-h-screen bg-black text-white">
-            <div className="bg-black p-6 ">
+             <div className="p-6" style={{ zIndex: 10, position: 'relative', background: 'linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))' }}>
                 <nav>
                     <div className="flex justify-center">
-                        <div className="flex space-x-32">
+                        <div className="flex space-x-32 font-bold">
                             <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('home-section')}>Home</div>
                             <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('how-it-works')}>How It Works</div>
+                            <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('Q&A')}>Q&A</div>
                             <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('about-us')}>About Us</div>
                             <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('contact-section')}>Contact</div>
                         </div>
@@ -137,17 +225,21 @@ const LandingPage = ({ onButtonClick }) => {
                 </nav>
             </div>
 
+            <div id="home-section" className="flex justify-center my-40" style={{ zIndex: 10, position: 'relative' }}>
+            <header className='text-center  inline-block w-full'>                    
+                <h1 className='text-center custom-gradient text-6xl md:text-9xl font-extrabold '>
+                        Electomate
+                    </h1>
+                    <h1 className="text-center custom-gradient2 text-6xl md:text-3xl">Conversational Voting Advice Application</h1>
+                    {/* <h1 className="text-center custom-gradient2 text-xs md:text-xl">Made with love by people from all over the world</h1> */}
+                    {/* <div id="vara-container" style={{ height: '200px', width: '100%' }}> </div> */}
+                    <div className="flex justify-center my-4">
+                <img src={MadeWithLove} alt="Made with Love" className="h-16" />
+            </div>
+                </header>
+            
+            </div>
 
-
-
-
-            <div id="home-section" className='flex justify-center my-40'>
-    <div className='text-center text-white inline-block' style={{ transform: `translateY(${textPosition}px)` }}>
-        <h1 className='text-6xl md:text-9xl font-extrabold text-white'>Electomate</h1>
-        <h1 className='text-6xl md:text-3xl '>Conversational Voting Advice Application</h1>
-        <h1 className='text-xs md:text-2xl'>Select the country:</h1>
-    </div>
-</div>
 
 
 
@@ -156,14 +248,17 @@ const LandingPage = ({ onButtonClick }) => {
             {/* World Map - Interactive globe that allows users to explore different regions */}
 
             <div
-                className="mx-auto"
-                style={{ 
-                    transform: `scale(${globeScale})`, 
-                    overflow: 'hidden', 
-                    maxWidth: '1000px', 
-                    maxHeight: '1000px' 
-                }}
-            >
+    className="mx-auto"
+    style={{
+        transform: `scale(${globeScale})`,
+        overflow: 'hidden',
+        maxWidth: '1000px',
+        maxHeight: '1000px',
+        opacity: mapOpacity, // Apply the opacity dynamically
+        transition: 'opacity 0.3s ease' // Optional: smooth opacity transition
+    }}
+>
+
                 <div
                     className=""
                     onMouseDown={handleMouseDown}
@@ -187,8 +282,8 @@ const LandingPage = ({ onButtonClick }) => {
           {/* Define the gradient inside SVG defs */}
     <defs>
         <linearGradient id="countryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopColor: "rgba(60,60, 60, 1)", stopOpacity: 1 }} />
-            <stop offset="100%" style={{ stopColor: "rgba(100, 100, 100, 1)", stopOpacity: 1 }} />
+            <stop offset="0%" style={{ stopColor: "rgba(120,120, 120, 1)", stopOpacity: 1 }} />
+            <stop offset="100%" style={{ stopColor: "rgba(180, 180, 180, 1)", stopOpacity: 1 }} />
         </linearGradient>
     </defs>
 
@@ -199,7 +294,21 @@ const LandingPage = ({ onButtonClick }) => {
         </linearGradient>
     </defs>
 
-        <Graticule stroke="rgba(255, 255, 255, 0.1)" strokeWidth={0.4} />
+    <defs>
+  <filter id="glowEffect" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="0.6" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+
+
+
+
+        <Graticule stroke="rgba(255, 255, 255, 0.3)" strokeWidth={0.4} />
 
         <Geographies geography={geoUrl}>
             {({ geographies }) =>
@@ -209,9 +318,12 @@ const LandingPage = ({ onButtonClick }) => {
                         <Geography
                             key={geo.rsmKey}
                             geography={geo}
-                        fill={isImplementedCountry ? "url(#countryGradient)" : "rgba(244, 244, 244, 0.1)"} // Reference the gradient in the fill
-                            stroke={isImplementedCountry ? "rgba(255, 255, 255, 0.1)" : "rgba(255, 255, 255, 0.3)"} // Transparent for implemented countries, 0.3 opacity for others
-                            strokeWidth={isImplementedCountry ? 0.4 : 0.1}// Adjust this value to reduce the stroke width
+                        fill={isImplementedCountry ? "url(#countryGradient)" : "rgba(244, 244, 244, 0.2)"} // Reference the gradient in the fill
+                            stroke={isImplementedCountry ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.3)"} // Transparent for implemented countries, 0.3 opacity for others
+                            filter = { isImplementedCountry ? "url(#glowEffect)" : "none"} // Add glow effect for implemented countries
+
+                            strokeWidth={isImplementedCountry ? 0.1 : 0.1}// Adjust this value to reduce the stroke width
+
 
                             onMouseEnter={() => {
                                 const { name } = geo.properties; // Access the country name from the 'name' property
@@ -223,7 +335,12 @@ const LandingPage = ({ onButtonClick }) => {
                             onClick={() => onButtonClick(geo.id)} // Call onButtonClick with the country ID
                             style={{
                                 default: { outline: 'none' },
-                                hover: { fill: isImplementedCountry ? "rgba(228, 228, 228, 0.5)" : "rgba(255, 0, 0, 0.5)", outline: 'none' }, // Green (rgba) for implemented countries, red (rgba) for others
+                                hover: { 
+                                    fill: isImplementedCountry ? "rgba(8, 228, 8, 0.2)" : "rgba(255, 0, 0, 0.1)", 
+                                    stroke: isImplementedCountry ? "rgba(5, 255, 5, 0.6)" : "rgba(255, 5, 5, 0.8)", // Stroke color for hover
+                                    strokeWidth: isImplementedCountry ? 0.5 : 0.5, // Added stroke width for hover effect
+                                    filter: isImplementedCountry ? "url(#glowEffect)" : "url(#glowEffect)" // Add glow effect for implemented countries
+                                }, // Green (rgba) for implemented countries, red (rgba) for others
                                 pressed: { fill: "#E42", outline: 'none' },
                             }}
                             data-tip={geo.properties.name} // Set the tooltip content to the country name
@@ -239,7 +356,9 @@ const LandingPage = ({ onButtonClick }) => {
  <div
             className="map-overlay"
             style={{
-                transform: `scale(${globeScale/4})`
+                transform: `scale(${globeScale/4})`,
+                zIndex: 0 // Ensure the overlay is behind other elements
+
             }}
         ></div></div>
 </div>
@@ -249,21 +368,56 @@ const LandingPage = ({ onButtonClick }) => {
 
 
 
-            {/* Button to navigate to the main screen */}
-            <div className="flex justify-center mb-10 mt-[500px]">
-                <button
-                    onClick={onButtonClick}
-                    className="bg-[rgb(0,128,0)] text-white px-4 py-2 rounded-3xl"
-                >
-                    Try out for EU-Elections
-                </button>
+         
+
+            <div  className="">
+
+            <div className='flex justify-center mb-10 mt-[200px]'>
+                    <h1 className='text-6xl custom-gradient2 md:text-3xl font-extrabold text-white mb-10 mt-10'>Countries available</h1>
+                </div>
+              
+
+                </div>
+
+
+             
+                
+                    <div className="flex justify-center items-center">
+                        <div className="flex flex-wrap justify-center space-x-10 w-[60%]">
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Germany</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>France</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Italy</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Spain</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Hungary</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Belgium</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Austria</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Poland</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Bulgaria</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Denmark</div>
+
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>United States (soon)</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Brazil (soon)</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Ghana (soon)</div>
+                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={onButtonClick}>Switzerland (soon)</div>
+                           
+                         
+                        </div>
+                    </div>
+                    
+        
+
+
+
+
+            <div id="how-it-works" className="h-10 mt-10">
             </div>
 
-            <div id="how-it-works" className="bg-black ">
+            <div  className="bg-black mt-12">
+                
                 <div className='flex justify-center '>
-                    <h1 className='text-6xl md:text-7xl font-extrabold text-white mb-10 mt-10'>How It Works</h1>
+                    <h1 className='text-6xl md:text-7xl font-extrabold mb-10  custom-gradient3'>How It Works</h1>
                 </div>
-                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
+                <div className="text-justify text-white w-[66%] mx-auto ">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -276,30 +430,18 @@ const LandingPage = ({ onButtonClick }) => {
                 </div>
 
 
+                
 
-                <div className='flex justify-start ml-20 '>
-                    <h1 className='text-6xl md:text-5xl font-extrabold text-white mb-10 mt-10'>Features</h1>
+                <div className='flex justify-center'>
+                <div className='w-[66%] '>
+                    <h1 className='text-6xl text-left md:text-5xl font-extrabold text-white mb-10 mt-10 custom-gradient3'>Features</h1>
                 </div>
-                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-
-
-
-                <div className='flex justify-end mr-20 '>
-                    <h1 className='text-6xl md:text-5xl font-extrabold text-white mb-10 mt-10'>Architecture</h1>
                 </div>
                
+                <div className='flex justify-center'>
+                <div className='w-[66%] '>
+                <div className="w-1/2 text-left">
 
-                <div className=" justify-end text-white w-1/2 pb-32">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -310,13 +452,23 @@ const LandingPage = ({ onButtonClick }) => {
                         culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
-
-
-
-                <div className='flex justify-start ml-20 '>
-                    <h1 className='text-6xl md:text-5xl font-extrabold text-white mb-10 mt-10'>Performance</h1>
                 </div>
-                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
+                </div>
+              
+
+
+
+                <div className='flex justify-center'>
+                <div className='w-[66%] '>
+                    <h1 className='text-6xl text-right md:text-5xl font-extrabold text-white mb-10 mt-10 custom-gradient3'>Architecture</h1>
+                </div>
+                </div>
+               
+                <div className='flex justify-center'>
+                <div className='w-[66%] '>
+                <div className='flex justify-end'>
+                <div className="w-1/2 text-right">
+
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -327,166 +479,112 @@ const LandingPage = ({ onButtonClick }) => {
                         culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
+                </div>
+                </div>
+                </div>
+              
 
 
 
+
+
+
+                <div className='flex justify-center'>
+                <div className='w-[66%] '>
+                    <h1 className='text-6xl text-left md:text-5xl font-extrabold text-white mb-10 mt-10 custom-gradient3'>Performance</h1>
+                </div>
+                </div>
+               
+                <div className='flex justify-center'>
+                <div className='w-[66%] '>
+                <div className="w-1/2 text-left">
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                </div>
+                </div>
+              
+
+
+             {/* Q&A SECTION */}
+            </div>
+            <div id="Q&A" className="h-10 mt-10">
             </div>
 
-            <FAQSection />
 
-            <div id="about-us" className="bg-black ">
-                <div className='flex justify-center '>
-                    <h1 className='text-6xl md:text-7xl font-extrabold text-white mb-10 mt-10'>About Us</h1>
+            <div className='flex justify-center'>
+                <div className='w-[66%] bg-black  '>
+                    <   FAQSection />
                 </div>
-                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
-                    <p>
-                        We started this project as a bunch of students at ETH Zurich, who are interested in politics and AI4Good. 
-                        By now we have grown to a diverse team of students and advisors from diverse fields. 
-                        We have expertise in political science, economy, international affairs, computer science, law and design. 
-                        We are constituted as a politically neutral non-profit organization located in Zurich, Switzerland. 
-                        Over the lanst months we have grown a community of over 20 volounteers from all over the world to contribute to a globally implemented tool.
+            </div>
 
+
+
+
+             {/* ABOUT US SECTION */}
+            <div id="about-us" className="h-10 mt-10">
+            </div>
+
+            <div  className="bg-black mt-12">
+            <div className='flex justify-center '>
+                    <h1 className='text-6xl md:text-7xl font-extrabold mb-10  custom-gradient4'>About Us</h1>
+                </div>
+                <div className="text-justify text-white w-[66%] mx-auto ">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
 
-                <div className='flex justify-center '>
-                    <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-10 mt-10'>Team</h1>
-                </div>
-             
-                <div className="text-justify text-white px-4 w-[60%] mx-auto">
+                <div className="text-justify text-white px-4 w-[60%] mx-auto mt-10">
                     <TEAMSECTION />
                 </div>
 
-                <div className='flex justify-center '>
-                    <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-0 mt-10'>Advisors</h1>
-                </div>
-
-                <div className="text-justify text-white px-4 w-[80%] mx-auto">
-                    <ADVISORS />
-                </div>
-            
-
-
-
-                <div className='flex justify-center '>
-                    <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-10 mt-10'>Contributors</h1>
-                </div>
-                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
-                    <ul className="flex flex-col">
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">PR&Marketing</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Gisbel Quiroz-Biland</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Bulgaria</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Vincent B. Schult</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Bulgaria</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Vincent B. Schult Girlfriend</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Denmark, Belgium</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Alexander Herforth</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Poland</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Yuri Simantob</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Italy</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Nicholas Scheurenbrand</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Backend Engineer</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Alec McGail</span>
-                            
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Germany</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Lara Voss</span>
-                        </li>
-
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Brazil</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Marco Silva</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">India</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Nina Patel</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">United Arab Emirates</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Omar Al-Farsi</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">South Korea</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Sofia Kim</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Germany</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Lara Voss</span>
-                        </li>
-
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">Brazil</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Marco Silva</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">India</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Nina Patel</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">United Arab Emirates</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Omar Al-Farsi</span>
-                        </li>
-                        <li className="flex justify-between">
-                            <span className="text-right w-1/2">South Korea</span>
-                            <span className="mx-2">-</span>
-                            <span className="text-left w-1/2">Sofia Kim</span>
-                        </li>
-                        
-                    </ul>
-                </div>
           
+
+             
+
+
+
+
+
             </div>
 
-            <div id="contact-section" className="bg-black pb-20">
+            <div id="contact-section" className="bg-black mt-24">
                 <InterestForm />
             </div>
 
             <div className='flex justify-center '>
-                <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-0 mt-10'>We are supported by</h1>
+                <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-0 mt-32'>We are supported by</h1>
             </div>
-            <div className="text-justify text-white px-4 w-1/2 mx-auto ">
+            <div className="text-justify text-white px-4 w-1/2 mx-auto mb-20 ">
                 <div className="flex justify-center mt-12">
                     <img src={ETHLOGO} style={{ maxWidth: '200px', height: 'auto', marginRight: 72 }} />
                     <img src={MICROSOFTLOGO} style={{ maxWidth: '200px', height: 'auto' }} />
                 </div>
             </div>
 
-            <div className='w-full'>
+            <div className='w-full opacity-35'>
                 <Footer />
             </div>
         </div>
     );
 };
+
+
 
 const FAQSection = () => {
     const [openOverview, setOpenOverview] = useState(false);
@@ -503,9 +601,9 @@ const FAQSection = () => {
     return (
         <div className="bg-black text-white">
             <div className='flex justify-center'>
-                <h1 className='text-6xl md:text-7xl font-extrabold mb-10 mt-10'>Q&A</h1>
+                <h1 className='text-6xl md:text-7xl font-extrabold mb-10  custom-gradient5'>Q&A</h1>
             </div>
-            <div className="px-4 w-1/2 mx-auto pb-32">
+            <div className=" mx-auto ">
                 <div className="border-b border-gray-700">
                     <button className="flex justify-between w-full py-4 text-left" onClick={() => setOpenSafety(!openSafety)}>
                         <span>How do you ensure safety and privacy?</span>

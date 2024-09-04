@@ -86,7 +86,7 @@ export default function App() {
             </RedditShareButton>
             <a
               href='https://github.com/elect-o-mate' // Replace with the actual GitHub URL
-              className=' '
+              className='transition-transform ease-in-out transform hover:scale-125'
               target='_blank'
               rel='noopener noreferrer'
             >
