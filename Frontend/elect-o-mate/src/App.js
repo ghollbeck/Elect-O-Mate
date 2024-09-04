@@ -21,12 +21,13 @@ import { initGA, logPageView } from './analytics';
 import Cookies from 'js-cookie';
 import langs from './data/languages.json';
 
-import LandingPage from './components/LandingPage';
+import LandingPage from './components/LandingPage/LandingPage';
 
 
 function App() {
   const { t, i18n } = useTranslation();
   const [init, setInit] = useState(false);
+  const toHowItWorks = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {

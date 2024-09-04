@@ -1,0 +1,15 @@
+/* Add this in your CSS file (e.g., global.css or a dedicated CSS file) */
+:root {
+  --radius: 30%; /* Define the radius */
+  --transitionSharpness: 30%; /* Define the transition sharpness */
+}
+
+.map-overlay {
+    @apply absolute inset-0 pointer-events-none;
+    background: radial-gradient(circle at 51% 50%, transparent var(--radius), rgb(0, 0, 0, 0.8) calc(var(--radius) + var(--transitionSharpness)));
+}
+
+
+.gradient-implemented {
+    background: linear-gradient(to right, rgba(255, 105, 180, 1), rgb(173, 0, 242));
+}

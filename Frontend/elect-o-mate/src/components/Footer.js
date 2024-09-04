@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaSquareXTwitter } from "react-icons/fa6";
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -9,13 +9,21 @@ import {
   TelegramShareButton,
   EmailShareButton,
   RedditShareButton,
-  FacebookIcon,
+  FacebookIconWhite,
   LinkedinIcon,
   WhatsappIcon,
   TelegramIcon,
   EmailIcon,
   RedditIcon,
 } from 'react-share';
+
+
+import { ImFacebook2 } from "react-icons/im";
+import { ImLinkedin } from "react-icons/im";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaSquareReddit } from "react-icons/fa6";
+
+
 
 export default function App() {
   const { t } = useTranslation();
@@ -29,25 +37,25 @@ export default function App() {
           <div className='flex justify-center items-center space-x-4'>
             <FacebookShareButton
               url={url}
-              className='transition-transform ease-in-out transform hover:scale-125'
+              className='transition-transform ease-in-out transform hover:scale-125 text-white'
             >
-              <FacebookIcon size={32} round />
+              <ImFacebook2 size={32} className='text-white' />
             </FacebookShareButton>
             <TwitterShareButton
               url={url}
               title={title}
               className='transition-transform ease-in-out transform hover:scale-125'
             >
-              <FaXTwitter size={32} />
+              <FaSquareXTwitter size={32} />
             </TwitterShareButton>
             <LinkedinShareButton
               url={url}
               title={title}
               className='transition-transform ease-in-out transform hover:scale-125'
             >
-              <LinkedinIcon size={32} round />
+              <ImLinkedin size={32} />
             </LinkedinShareButton>
-            <WhatsappShareButton
+            {/* <WhatsappShareButton
               url={url}
               title={title}
               className='transition-transform ease-in-out transform hover:scale-125'
@@ -68,35 +76,48 @@ export default function App() {
               className='transition-transform ease-in-out transform hover:scale-125'
             >
               <EmailIcon size={32} round />
-            </EmailShareButton>
+            </EmailShareButton> */}
             <RedditShareButton
               url={url}
               title={title}
               className='transition-transform ease-in-out transform hover:scale-125'
             >
-              <RedditIcon size={32} round />
+              <FaSquareReddit size={32} round />
             </RedditShareButton>
+            <a
+              href='https://github.com/elect-o-mate' // Replace with the actual GitHub URL
+              className=' '
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaSquareGithub size={32} />
+            </a>
           </div>
         </section>
         <section className='mb-8'>
           <p>{t('made_with_love')}</p>
         </section>
       </div>
-      Imprint:
+     
       <div className='bg-black text-center pb-3'>
-        Adress: Clausiusstrasse 16, 8006 Zürich
-        <br />
-        Contact:
-        <a className='text-white ml-2' href='mailto:contact@elect-o-mate.eu'>
-          contact@elect-o-mate.eu
-        </a>
-      </div>
-      <div className='bg-black text-center pb-3'>
-        © 2024 Copyright:
-        <a className='text-white ml-2' href='https://elect-o-mate.eu/'>
-          Elect-O-Mate
-        </a>
-      </div>
+         <a className='text-white ml-2' 
+        href='mailto:contact@elect-o-mate.eu'>contact@elect-o-mate.eu</a> 
+
+         <span className='mx-6'> 
+        </span> 
+        
+        <a className='text-white' 
+           href='https://elect-o-mate.eu/'>
+            Elect-O-Mate</a>
+
+            
+            <span className='mx-6'>
+            </span> 
+
+        Last updated 03.09.2024 
+        
+            </div>
     </footer>
   );
+
 }

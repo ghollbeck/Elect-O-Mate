@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ComposableMap, Geographies, Geography, Graticule } from 'react-simple-maps';
 import { Tooltip } from 'react-tooltip';
-import InterestForm from './InterestFrom';
-import Footer from './Footer';
-import ETHLOGO from './../pictures/ETH_SPH_LogoWhite.png'; // Import this icon to @mui
-import MICROSOFTLOGO from './../pictures/Microsoft-for-StartupsLogo.png';
+import InterestForm from './InterestForm'; // Fixed typo in InterestForm import
+import Footer from './../Footer';
+import ETHLOGO from './../../pictures/ETH_SPH_LogoWhite.png'; // Import this icon to @mui
+import MICROSOFTLOGO from './../../pictures/Microsoft-for-StartupsLogo.png';
 
+import GABORPORTRAIT from './../../pictures/Portrait Gabor.jpeg';
+import TEAMSECTION from './TeamSection';
+import ADVISORS from './Advisors';
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 const implementedCountries = ['040', '056', '100', '276', '724', '250', '348', '380', '616', '840', '076', '288', '756'];
@@ -34,28 +37,82 @@ const LandingPage = ({ onButtonClick }) => {
         }
     };
 
+    const smoothScrollTo = (elementId) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            window.scrollTo({
+                top: element.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+
+
+
+    const [scrollY, setScrollY] = useState(0);
+
+    const handleScroll = () => {
+        setScrollY(window.scrollY);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    // Calculate the scale and translate values based on scrollY
+    // const clampedScrollY = Math.min(Math.max(scrollY, 0), 1000); // Example clamping
+
+    const scale = Math.pow(1.02, scrollY / 5); // Adjust the base and divisor for scaling speed
+    const translateY = scrollY / 10;   // Adjust the divisor for movement speed
+
+   // Exponential decay for opacity
+   const opacityThreshold = 700; // Opacity reduction starts after 200px scroll
+   const maxOpacityThreshold = 900; // Opacity becomes zero after 700px scroll
+
+   const opacity = scrollY > opacityThreshold
+    ? Math.max(1 - ((scrollY - opacityThreshold) / (maxOpacityThreshold - opacityThreshold)), 0)
+    : 1;
+
+   const transformStyle = {
+       transform: `scale(${scale}) translateY(${translateY}px)`,
+       opacity: opacity,
+   };
+
+
     return (
         <div className="min-h-screen bg-black text-white">
             <div className="bg-transparent p-6 ">
                 <nav>
                     <div className="flex justify-center">
                         <div className="flex space-x-32">
-                            <div className="text-white">Home</div>
-                            <div className="text-white">How It Works</div>
-                            <div className="text-white">About Us</div>
-                            <div className="text-white">Contact</div>
+                            <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('home-section')}>Home</div>
+                            <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('how-it-works')}>How It Works</div>
+                            <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('about-us')}>About Us</div>
+                            <div className="text-white cursor-pointer hover:underline" onClick={() => smoothScrollTo('contact-section')}>Contact</div>
                         </div>
                     </div>
                 </nav>
             </div>
 
-            <div className='flex justify-center my-40'>
-                <div className='text-center text-whiteinline-block '>
+
+
+
+
+
+            <div id="home-section" className='flex justify-center my-40'>
+                <div className='text-center text-white inline-block' style={transformStyle}>
                     <h1 className='text-6xl md:text-9xl font-extrabold text-white'>Electomate</h1>
                     <h1 className='text-6xl md:text-3xl '>Conversational Voting Advice Application</h1>
                     <h1 className='text-xs md:text-2xl'>Select the country:</h1>
                 </div>
             </div>
+
+
+
 
             {/* World Map - Interactive globe that allows users to explore different regions */}
             <div
@@ -123,7 +180,7 @@ const LandingPage = ({ onButtonClick }) => {
                 </button>
             </div>
 
-            <div className="bg-black ">
+            <div id="how-it-works" className="bg-black ">
                 <div className='flex justify-center '>
                     <h1 className='text-6xl md:text-7xl font-extrabold text-white mb-10 mt-10'>How It Works</h1>
                 </div>
@@ -138,13 +195,11 @@ const LandingPage = ({ onButtonClick }) => {
                         culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
-            </div>
 
-            <FAQSection />
 
-            <div className="bg-black ">
-                <div className='flex justify-center '>
-                    <h1 className='text-6xl md:text-7xl font-extrabold text-white mb-10 mt-10'>About Us</h1>
+
+                <div className='flex justify-start ml-20 '>
+                    <h1 className='text-6xl md:text-5xl font-extrabold text-white mb-10 mt-10'>Features</h1>
                 </div>
                 <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
                     <p>
@@ -158,36 +213,198 @@ const LandingPage = ({ onButtonClick }) => {
                     </p>
                 </div>
 
+
+
+                <div className='flex justify-end mr-20 '>
+                    <h1 className='text-6xl md:text-5xl font-extrabold text-white mb-10 mt-10'>Architecture</h1>
+                </div>
+               
+
+                <div className=" justify-end text-white w-1/2 pb-32">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+
+
+                <div className='flex justify-start ml-20 '>
+                    <h1 className='text-6xl md:text-5xl font-extrabold text-white mb-10 mt-10'>Performance</h1>
+                </div>
+                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+
+
+            </div>
+
+            <FAQSection />
+
+            <div id="about-us" className="bg-black ">
+                <div className='flex justify-center '>
+                    <h1 className='text-6xl md:text-7xl font-extrabold text-white mb-10 mt-10'>About Us</h1>
+                </div>
+                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
+                    <p>
+                        We started this project as a bunch of students at ETH Zurich, who are interested in politics and AI4Good. 
+                        By now we have grown to a diverse team of students and advisors from diverse fields. 
+                        We have expertise in political science, economy, international affairs, computer science, law and design. 
+                        We are constituted as a politically neutral non-profit organization located in Zurich, Switzerland. 
+                        Over the lanst months we have grown a community of over 20 volounteers from all over the world to contribute to a globally implemented tool.
+
+                    </p>
+                </div>
+
+                <div className='flex justify-center '>
+                    <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-10 mt-10'>Team</h1>
+                </div>
+             
+                <div className="text-justify text-white px-4 w-[60%] mx-auto">
+                    <TEAMSECTION />
+                </div>
+
+                <div className='flex justify-center '>
+                    <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-0 mt-10'>Advisors</h1>
+                </div>
+
+                <div className="text-justify text-white px-4 w-[80%] mx-auto">
+                    <ADVISORS />
+                </div>
+            
+
+
+
+                <div className='flex justify-center '>
+                    <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-10 mt-10'>Contributors</h1>
+                </div>
+                <div className="text-justify text-white px-4 w-1/2 mx-auto pb-32">
+                    <ul className="flex flex-col">
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">PR&Marketing</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Gisbel Quiroz-Biland</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Bulgaria</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Vincent B. Schult</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Bulgaria</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Vincent B. Schult Girlfriend</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Denmark, Belgium</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Alexander Herforth</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Poland</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Yuri Simantob</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Italy</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Nicholas Scheurenbrand</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Backend Engineer</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Alec McGail</span>
+                            
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Germany</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Lara Voss</span>
+                        </li>
+
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Brazil</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Marco Silva</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">India</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Nina Patel</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">United Arab Emirates</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Omar Al-Farsi</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">South Korea</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Sofia Kim</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Germany</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Lara Voss</span>
+                        </li>
+
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">Brazil</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Marco Silva</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">India</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Nina Patel</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">United Arab Emirates</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Omar Al-Farsi</span>
+                        </li>
+                        <li className="flex justify-between">
+                            <span className="text-right w-1/2">South Korea</span>
+                            <span className="mx-2">-</span>
+                            <span className="text-left w-1/2">Sofia Kim</span>
+                        </li>
+                        
+                    </ul>
+                </div>
           
             </div>
 
-            <div className="bg-black pb-20">
-               
-
-
-            <InterestForm />
+            <div id="contact-section" className="bg-black pb-20">
+                <InterestForm />
             </div>
 
-
             <div className='flex justify-center '>
-                    <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-0 mt-10'>We are supported by</h1>
+                <h1 className='text-6xl md:text-3xl font-extrabold text-white mb-0 mt-10'>We are supported by</h1>
+            </div>
+            <div className="text-justify text-white px-4 w-1/2 mx-auto ">
+                <div className="flex justify-center mt-12">
+                    <img src={ETHLOGO} style={{ maxWidth: '200px', height: 'auto', marginRight: 72 }} />
+                    <img src={MICROSOFTLOGO} style={{ maxWidth: '200px', height: 'auto' }} />
                 </div>
-                <div className="text-justify text-white px-4 w-1/2 mx-auto ">
-                    <div className="flex justify-center mt-12">
-                      <img src={ETHLOGO} style={{ maxWidth: '200px', height: 'auto', marginRight: 72 }} />
-                      
-                      <img src={MICROSOFTLOGO} style={{ maxWidth: '200px', height: 'auto' }} />
-                    </div>
-                    
-                </div>
+            </div>
 
-
-
-
-            
             <div className='w-full'>
-          <Footer />
-        </div>
+                <Footer />
+            </div>
         </div>
     );
 };
