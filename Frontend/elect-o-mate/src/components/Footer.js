@@ -31,7 +31,7 @@ export default function App() {
   const title = 'Check out this website!'; // Title for sharing
 
   return (
-    <footer className='bg-black text-center text-white pt-40 -z-10'>
+    <footer className='bg-black text-center text-white pt-32 -z-10'>
       <div className='container mx-auto'>
         <section className='mb-4'>
           <div className='flex justify-center items-center space-x-4'>
@@ -46,7 +46,7 @@ export default function App() {
               title={title}
               className='transition-transform ease-in-out transform hover:scale-125'
             >
-              <FaSquareXTwitter size={32} />
+              <FaSquareXTwitter size={38} />
             </TwitterShareButton>
             <LinkedinShareButton
               url={url}
@@ -82,40 +82,45 @@ export default function App() {
               title={title}
               className='transition-transform ease-in-out transform hover:scale-125'
             >
-              <FaSquareReddit size={32} round />
+              <FaSquareReddit size={38} round />
             </RedditShareButton>
             <a
-              href='https://github.com/elect-o-mate' // Replace with the actual GitHub URL
+              href='https://github.com/ghollbeck/Elect-O-Mate/tree/main' // Replace with the actual GitHub URL
               className='transition-transform ease-in-out transform hover:scale-125'
               target='_blank'
               rel='noopener noreferrer'
             >
-              <FaSquareGithub size={32} />
+              <FaSquareGithub size={38} />
             </a>
           </div>
         </section>
-        <section className='mb-8'>
-          <p>{t('made_with_love')}</p>
+        <section className='mb-4'>
+          <p>Made with love by people from all over the world.
+
+</p>
         </section>
       </div>
-     
-      <div className='bg-black text-center pb-3'>
-         <a className='text-white ml-2' 
+
+
+
+      <div className='bg-black text-center pb-3 flex flex-wrap items-center justify-center'>
+         <a className='text-white ml-2  text-xs md:text-base' 
         href='mailto:contact@elect-o-mate.eu'>contact@elect-o-mate.eu</a> 
 
-         <span className='mx-6'> 
+         <span className='mx-2 md:mx-6'> 
         </span> 
         
-        <a className='text-white' 
+        <a className='text-white text-xs md:text-base' 
            href='https://elect-o-mate.eu/'>
             Elect-O-Mate</a>
 
             
-            <span className='mx-6'>
+            <span className='md:mx-6 mx-2'>
             </span> 
 
-        Last updated 03.09.2024 
         
+        <a className='text-white ml-2  text-xs md:text-base' 
+        >Last updated 03.09.2024 </a> 
             </div>
     </footer>
   );

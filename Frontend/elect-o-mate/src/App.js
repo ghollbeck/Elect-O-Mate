@@ -20,6 +20,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import { initGA, logPageView } from './analytics';
 import Cookies from 'js-cookie';
 import langs from './data/languages.json';
+import { FaArrowLeft } from 'react-icons/fa'; // Import the back arrow icon from react-icons
+
 
 import LandingPage from './components/LandingPage/LandingPage';
 
@@ -475,6 +477,11 @@ const setScreen = (screen) => {
   setCurrentScreen(screen);
 };
 
+useEffect(() => {
+  if (currentScreen === 'main') {
+    window.scrollTo(0, 0);
+  }
+}, [currentScreen]);
 
 
 // ------- UNTIL HERE ----------
@@ -486,15 +493,16 @@ return (
   <Router>
     <usePageViews />
     {currentScreen === 'newScreen' ? (
-      <LandingPage onButtonClick={() => setScreen('main')} />
-    ) : (
+  <LandingPage onButtonClick={() => setScreen('main')} changeLanguage={changeLanguage} />
+) : (
       <div className='flex flex-col relative overflow-hidden bg-black '>
         <button
           onClick={() => setScreen('newScreen')}
-          className='absolute top-4 left-4 bg-blue-500 text-white px-4 py-2 rounded-md'
-        >
-          Go to New Screen
-        </button>
+          className='absolute top-4 left-4 border-[1px] border-[rgb(128,128,128)] text-[rgb(128,128,128)] px-4 py-1 rounded-3xl md:text-base text-xs flex items-center hover:border-[rgb(228,228,228)] hover:text-[rgb(228,228,228)] transition-transform duration-200 transform hover:scale-105'
+      >
+          <FaArrowLeft className='mr-2' /> {/* Back arrow icon */}
+          Back Home
+      </button>
         <LanguageSelector changeLanguage={changeLanguage} />
 
         {/* Existing main screen content */}
