@@ -9,6 +9,7 @@ import LORIN from './../../pictures/Team_Photos/Lorin.png';
 import MERCEDES from './../../pictures/Team_Photos/Mercedes.png';
 import NIKI from './../../pictures/Team_Photos/Niki.png';
 import SIMO from './../../pictures/Team_Photos/Simo.png';
+import JISBEL from './../../pictures/Team_Photos/Jisbel.png';
 
 import { FaLinkedin } from 'react-icons/fa'; // Import LinkedIn icon
 import { FaSquareGithub } from "react-icons/fa6";
@@ -176,6 +177,18 @@ const TeamSection = () => {
         github: "",
         website: "#",
         email: "lkustermann@student.ethz.ch" // Added email
+      }
+    } ,
+    {
+      name: "Jisbel Quiroz",
+      role: "PR & Marketing",
+      image: JISBEL,
+      socialLinks: {
+        Linkedin: "https://www.linkedin.com/in/gisbelquiroz/",
+        twitter: "#",
+        github: "",
+        website: "#",
+        email: "jisbel@outlook.com" // Added email
       }
     } 
   ];
@@ -369,14 +382,12 @@ const TeamSection = () => {
 
                 <div className="flex justify-center items-center">
                         <div className="flex flex-wrap justify-center space-x-5 ">
-                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={() => window.open('https://dummyurl.com/Gisbel-Quiroz-Biland')}>Gisbel Quiroz</div>
-                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={() => window.open('https://dummyurl.com/Vincent-B-Schult')}>Vincent B. Schult</div>
-                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={() => window.open('https://dummyurl.com/Vincent-B-Schult-Girlfriend')}>Vincent B. Schult Girlfriend</div>
-                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={() => window.open('https://dummyurl.com/Alexander-Herforth')}>Alexander Herforth</div>
-                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={() => window.open('https://dummyurl.com/Yuri-Simantob')}>Yuri Simantob</div>
-                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={() => window.open('https://dummyurl.com/Nicholas-Scheurenbrand')}>Nicholas Scheurenbrand</div>
-                            <div className="text-white cursor-pointer hover:underline mb-3" onClick={() => window.open('https://dummyurl.com/Alec-McGail')}>Alec McGail</div>
-                           
+                            <div className="text-white mb-3">Vincent B. Schult</div>
+                            <div className="text-white mb-3">Stefani Stefanova</div>
+                            <div className="text-white mb-3">Alexander Herforth</div>
+                            <div className="text-white mb-3">Yuri Simantob</div>
+                            <div className="text-white mb-3">Nicholas Scheurenbrand</div>
+                            <div className="text-white mb-3">Alec McGail</div>
                          
                         </div>
                     </div>

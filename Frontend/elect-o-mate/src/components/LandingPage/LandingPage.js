@@ -971,29 +971,29 @@ const FAQSection = () => {
                 </div>
                 <div className="border-b border-gray-700">
                     <button className="flex justify-between w-full py-4 text-left" onClick={() => toggleSection('features')}>
-                        <span>What are the main features of Elect-O-Mate?</span>
+                        <span>What are the main features of Electomate?</span>
                         <span>{openSection === 'features' ? '-' : '+'}</span>
                     </button>
                     {openSection === 'features' && (
                         <p className="text-justify" style={{ marginBottom: '20px' }}>
-                            Elect-O-Mate offers several key features including AI-powered chat with party programs, Party rankings according to overlap with answers, and referencing sources. In future we will add overlap graphs (spider, grid plot) and different sourcing options.
+                            Electomate offers several key features including AI-powered chat with party programs, Party rankings according to overlap with answers, and referencing sources. In future we will add overlap graphs (spider, grid plot) and different sourcing options.
                         </p>
                     )}
                 </div>
                 <div className="border-b border-gray-700">
                     <button className="flex justify-between w-full py-4 text-left" onClick={() => toggleSection('sources')}>
-                        <span>What sources does Elect-O-Mate use?</span>
+                        <span>What sources does Electomate use?</span>
                         <span>{openSection === 'sources' ? '-' : '+'}</span>
                     </button>
                     {openSection === 'sources' && (
                         <p className="text-justify" style={{ marginBottom: '20px' }}>
-                            Elect-O-Mate exclusively uses official party programs and party websites as its sources. This ensures that the information provided is reliable, up-to-date, and directly from the source.
+                            Electomate exclusively uses official party programs and party websites as its sources. This ensures that the information provided is reliable, up-to-date, and directly from the source.
                         </p>
                     )}
                 </div>
                 <div className="border-b border-gray-700">
                     <button className="flex justify-between w-full py-4 text-left" onClick={() => toggleSection('longTerm')}>
-                        <span>What are the long-term goals for Elect-O-Mate?</span>
+                        <span>What are the long-term goals for Electomate?</span>
                         <span>{openSection === 'longTerm' ? '-' : '+'}</span>
                     </button>
                     {openSection === 'longTerm' && (
