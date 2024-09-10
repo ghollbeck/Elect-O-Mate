@@ -1,0 +1,894 @@
+{
+	"country": "Spain", 
+    "party_names" : ["Cs", 
+    "Ara Republicas", 
+    "PP", 
+    "PSOE", 
+    "Podemos"],
+	"party_full_names" : ["Ciudadanos", 
+    "Ara Republicas", "Partido Popolar", "Partido Socialista Obrero Español", "Unidas Podemos"], 
+	
+    
+    "party_answers": [
+        {
+            "Question_Number": 1,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Social policies should be maintained, even if that means raising taxes",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Las políticas sociales deberían mantenerse aunque eso implique una subida de impuestos"
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Social policies should be maintained, even if that means raising taxes",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las políticas sociales deberían mantenerse aunque eso implique una subida de impuestos"
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Social policies should be maintained, even if that means raising taxes",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Las políticas sociales deberían mantenerse aunque eso implique una subida de impuestos"
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Social policies should be maintained, even if that means raising taxes",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las políticas sociales deberían mantenerse aunque eso implique una subida de impuestos"
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Social policies should be maintained, even if that means raising taxes",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las políticas sociales deberían mantenerse aunque eso implique una subida de impuestos"
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "The state should increase financial support for the unemployed",
+            "Party_Answer": 0,
+            "Question_Label_OG": "El estado debería elevar las ayudas económicas a las personas en situación de desempleo"
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "The state should increase financial support for the unemployed",
+            "Party_Answer": 1,
+            "Question_Label_OG": "El estado debería elevar las ayudas económicas a las personas en situación de desempleo"
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "The state should increase financial support for the unemployed",
+            "Party_Answer": -1,
+            "Question_Label_OG": "El estado debería elevar las ayudas económicas a las personas en situación de desempleo"
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "The state should increase financial support for the unemployed",
+            "Party_Answer": 1,
+            "Question_Label_OG": "El estado debería elevar las ayudas económicas a las personas en situación de desempleo"
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "The state should increase financial support for the unemployed",
+            "Party_Answer": 1,
+            "Question_Label_OG": "El estado debería elevar las ayudas económicas a las personas en situación de desempleo"
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "The European Union should severely punish member states that do not comply with European deficit rules",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería castigar rigurosamente a los estados miembros que incumplan las reglas de déficit europeo"
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "The European Union should severely punish member states that do not comply with European deficit rules",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La Unión Europea debería castigar rigurosamente a los estados miembros que incumplan las reglas de déficit europeo"
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "The European Union should severely punish member states that do not comply with European deficit rules",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería castigar rigurosamente a los estados miembros que incumplan las reglas de déficit europeo"
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "The European Union should severely punish member states that do not comply with European deficit rules",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería castigar rigurosamente a los estados miembros que incumplan las reglas de déficit europeo"
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "The European Union should severely punish member states that do not comply with European deficit rules",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La Unión Europea debería castigar rigurosamente a los estados miembros que incumplan las reglas de déficit europeo"
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Asylum applications should be distributed proportionally among member states through a relocation system",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las solicitudes de asilo deberían distribuirse proporcionalmente entre los estados miembros a través de un sistema de reubicación"
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Asylum applications should be distributed proportionally among member states through a relocation system",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las solicitudes de asilo deberían distribuirse proporcionalmente entre los estados miembros a través de un sistema de reubicación"
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Asylum applications should be distributed proportionally among member states through a relocation system",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Las solicitudes de asilo deberían distribuirse proporcionalmente entre los estados miembros a través de un sistema de reubicación"
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Asylum applications should be distributed proportionally among member states through a relocation system",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las solicitudes de asilo deberían distribuirse proporcionalmente entre los estados miembros a través de un sistema de reubicación"
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Asylum applications should be distributed proportionally among member states through a relocation system",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las solicitudes de asilo deberían distribuirse proporcionalmente entre los estados miembros a través de un sistema de reubicación"
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Spain's immigration control policies should be more restrictive",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las políticas de control de la inmigración en España deberían ser más restrictivas"
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Spain's immigration control policies should be more restrictive",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Las políticas de control de la inmigración en España deberían ser más restrictivas"
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Spain's immigration control policies should be more restrictive",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las políticas de control de la inmigración en España deberían ser más restrictivas"
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Spain's immigration control policies should be more restrictive",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Las políticas de control de la inmigración en España deberían ser más restrictivas"
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Spain's immigration control policies should be more restrictive",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Las políticas de control de la inmigración en España deberían ser más restrictivas"
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Spain should require non-EU (non-EU) immigrants to accept our culture and values",
+            "Party_Answer": 1,
+            "Question_Label_OG": "España debería exigir a los inmigrantes no comunitarios (fuera de la UE) la aceptación de nuestra cultura y valores"
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Spain should require non-EU (non-EU) immigrants to accept our culture and values",
+            "Party_Answer": -1,
+            "Question_Label_OG": "España debería exigir a los inmigrantes no comunitarios (fuera de la UE) la aceptación de nuestra cultura y valores"
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Spain should require non-EU (non-EU) immigrants to accept our culture and values",
+            "Party_Answer": 1,
+            "Question_Label_OG": "España debería exigir a los inmigrantes no comunitarios (fuera de la UE) la aceptación de nuestra cultura y valores"
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Spain should require non-EU (non-EU) immigrants to accept our culture and values",
+            "Party_Answer": 1,
+            "Question_Label_OG": "España debería exigir a los inmigrantes no comunitarios (fuera de la UE) la aceptación de nuestra cultura y valores"
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Spain should require non-EU (non-EU) immigrants to accept our culture and values",
+            "Party_Answer": -1,
+            "Question_Label_OG": "España debería exigir a los inmigrantes no comunitarios (fuera de la UE) la aceptación de nuestra cultura y valores"
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "The legalisation of same-sex marriage is a good thing",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La legalización del matrimonio homosexual es algo positivo"
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "The legalisation of same-sex marriage is a good thing",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La legalización del matrimonio homosexual es algo positivo"
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "The legalisation of same-sex marriage is a good thing",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La legalización del matrimonio homosexual es algo positivo"
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "The legalisation of same-sex marriage is a good thing",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La legalización del matrimonio homosexual es algo positivo"
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "The legalisation of same-sex marriage is a good thing",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La legalización del matrimonio homosexual es algo positivo"
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Legalising the personal use of soft drugs would be a positive step",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Legalizar el uso personal de drogas blandas sería una medida positiva"
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Legalising the personal use of soft drugs would be a positive step",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Legalizar el uso personal de drogas blandas sería una medida positiva"
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Legalising the personal use of soft drugs would be a positive step",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Legalizar el uso personal de drogas blandas sería una medida positiva"
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Legalising the personal use of soft drugs would be a positive step",
+            "Party_Answer": 0,
+            "Question_Label_OG": "Legalizar el uso personal de drogas blandas sería una medida positiva"
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Legalising the personal use of soft drugs would be a positive step",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Legalizar el uso personal de drogas blandas sería una medida positiva"
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Euthanasia should be legal",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La eutanasia debería ser legal"
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Euthanasia should be legal",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La eutanasia debería ser legal"
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Euthanasia should be legal",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La eutanasia debería ser legal"
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Euthanasia should be legal",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La eutanasia debería ser legal"
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Euthanasia should be legal",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La eutanasia debería ser legal"
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Public spending should be reduced so that taxes can be lowered",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Debería reducirse el gasto público para poder bajar los impuestos"
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Public spending should be reduced so that taxes can be lowered",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Debería reducirse el gasto público para poder bajar los impuestos"
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Public spending should be reduced so that taxes can be lowered",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Debería reducirse el gasto público para poder bajar los impuestos"
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Public spending should be reduced so that taxes can be lowered",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Debería reducirse el gasto público para poder bajar los impuestos"
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Public spending should be reduced so that taxes can be lowered",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Debería reducirse el gasto público para poder bajar los impuestos"
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "The European Union should have its own taxation powers",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería tener sus propios poderes fiscales"
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "The European Union should have its own taxation powers",
+            "Party_Answer": 0,
+            "Question_Label_OG": "La Unión Europea debería tener sus propios poderes fiscales"
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "The European Union should have its own taxation powers",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería tener sus propios poderes fiscales"
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "The European Union should have its own taxation powers",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería tener sus propios poderes fiscales"
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "The European Union should have its own taxation powers",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería tener sus propios poderes fiscales"
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Banking and financial market profits should be taxed more heavily",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Los beneficios bancarios y del mercado financiero deberían tener impuestos más altos"
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Banking and financial market profits should be taxed more heavily",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Los beneficios bancarios y del mercado financiero deberían tener impuestos más altos"
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Banking and financial market profits should be taxed more heavily",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Los beneficios bancarios y del mercado financiero deberían tener impuestos más altos"
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Banking and financial market profits should be taxed more heavily",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Los beneficios bancarios y del mercado financiero deberían tener impuestos más altos"
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Banking and financial market profits should be taxed more heavily",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Los beneficios bancarios y del mercado financiero deberían tener impuestos más altos"
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Public transport should be promoted through green policies (e.g. more road tolls or taxes)",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Debería promocionarse el transporte público a través de políticas verdes (por ejemplo, más peajes o impuestos a las carreteras)"
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Public transport should be promoted through green policies (e.g. more road tolls or taxes)",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Debería promocionarse el transporte público a través de políticas verdes (por ejemplo, más peajes o impuestos a las carreteras)"
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Public transport should be promoted through green policies (e.g. more road tolls or taxes)",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Debería promocionarse el transporte público a través de políticas verdes (por ejemplo, más peajes o impuestos a las carreteras)"
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Public transport should be promoted through green policies (e.g. more road tolls or taxes)",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Debería promocionarse el transporte público a través de políticas verdes (por ejemplo, más peajes o impuestos a las carreteras)"
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Public transport should be promoted through green policies (e.g. more road tolls or taxes)",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Debería promocionarse el transporte público a través de políticas verdes (por ejemplo, más peajes o impuestos a las carreteras)"
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Renewable energies, such as solar or wind, should be promoted more despite their higher economic cost",
+            "Party_Answer": 0,
+            "Question_Label_OG": "Las energías renovables, como la solar o la eólica, deberían promocionarse más a pesar de su mayor coste económico"
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Renewable energies, such as solar or wind, should be promoted more despite their higher economic cost",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las energías renovables, como la solar o la eólica, deberían promocionarse más a pesar de su mayor coste económico"
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Renewable energies, such as solar or wind, should be promoted more despite their higher economic cost",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Las energías renovables, como la solar o la eólica, deberían promocionarse más a pesar de su mayor coste económico"
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Renewable energies, such as solar or wind, should be promoted more despite their higher economic cost",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las energías renovables, como la solar o la eólica, deberían promocionarse más a pesar de su mayor coste económico"
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Renewable energies, such as solar or wind, should be promoted more despite their higher economic cost",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Las energías renovables, como la solar o la eólica, deberían promocionarse más a pesar de su mayor coste económico"
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Personal privacy on the internet should be restricted for public safety reasons",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Debería restringirse la privacidad personal en internet por motivos de seguridad pública"
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Personal privacy on the internet should be restricted for public safety reasons",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Debería restringirse la privacidad personal en internet por motivos de seguridad pública"
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Personal privacy on the internet should be restricted for public safety reasons",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Debería restringirse la privacidad personal en internet por motivos de seguridad pública"
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Personal privacy on the internet should be restricted for public safety reasons",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Debería restringirse la privacidad personal en internet por motivos de seguridad pública"
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Personal privacy on the internet should be restricted for public safety reasons",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Debería restringirse la privacidad personal en internet por motivos de seguridad pública"
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "Criminals and criminals should be given harsher sentences",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Los delincuentes y criminales deberían tener condenas más severas"
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "Criminals and criminals should be given harsher sentences",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Los delincuentes y criminales deberían tener condenas más severas"
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "Criminals and criminals should be given harsher sentences",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Los delincuentes y criminales deberían tener condenas más severas"
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "Criminals and criminals should be given harsher sentences",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Los delincuentes y criminales deberían tener condenas más severas"
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "Criminals and criminals should be given harsher sentences",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Los delincuentes y criminales deberían tener condenas más severas"
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "The European Union should strengthen its defence and security policies",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería reforzar sus políticas de defensa y seguridad"
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "The European Union should strengthen its defence and security policies",
+            "Party_Answer": 0,
+            "Question_Label_OG": "La Unión Europea debería reforzar sus políticas de defensa y seguridad"
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "The European Union should strengthen its defence and security policies",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería reforzar sus políticas de defensa y seguridad"
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "The European Union should strengthen its defence and security policies",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería reforzar sus políticas de defensa y seguridad"
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "The European Union should strengthen its defence and security policies",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La Unión Europea debería reforzar sus políticas de defensa y seguridad"
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "The EU should have a single foreign policy stance",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería tener una postura única en materia de política exterior"
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "The EU should have a single foreign policy stance",
+            "Party_Answer": 0,
+            "Question_Label_OG": "La Unión Europea debería tener una postura única en materia de política exterior"
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "The EU should have a single foreign policy stance",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La Unión Europea debería tener una postura única en materia de política exterior"
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "The EU should have a single foreign policy stance",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La Unión Europea debería tener una postura única en materia de política exterior"
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "The EU should have a single foreign policy stance",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La Unión Europea debería tener una postura única en materia de política exterior"
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "European integration is a good thing",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La integración europea es algo positivo"
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "European integration is a good thing",
+            "Party_Answer": 0,
+            "Question_Label_OG": "La integración europea es algo positivo"
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "European integration is a good thing",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La integración europea es algo positivo"
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "European integration is a good thing",
+            "Party_Answer": 1,
+            "Question_Label_OG": "La integración europea es algo positivo"
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "European integration is a good thing",
+            "Party_Answer": 0,
+            "Question_Label_OG": "La integración europea es algo positivo"
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "The single European currency (Euro) is a bad thing",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La moneda única europea (Euro) es algo negativo"
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "The single European currency (Euro) is a bad thing",
+            "Party_Answer": 0,
+            "Question_Label_OG": "La moneda única europea (Euro) es algo negativo"
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "The single European currency (Euro) is a bad thing",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La moneda única europea (Euro) es algo negativo"
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "The single European currency (Euro) is a bad thing",
+            "Party_Answer": -1,
+            "Question_Label_OG": "La moneda única europea (Euro) es algo negativo"
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "The single European currency (Euro) is a bad thing",
+            "Party_Answer": 0,
+            "Question_Label_OG": "La moneda única europea (Euro) es algo negativo"
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "EU member states should have less veto power",
+            "Party_Answer": 0,
+            "Question_Label_OG": "Los estados miembros de la Unión Europea deberían tener menos poder de veto"
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "EU member states should have less veto power",
+            "Party_Answer": 0,
+            "Question_Label_OG": "Los estados miembros de la Unión Europea deberían tener menos poder de veto"
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "EU member states should have less veto power",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Los estados miembros de la Unión Europea deberían tener menos poder de veto"
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "EU member states should have less veto power",
+            "Party_Answer": 1,
+            "Question_Label_OG": "Los estados miembros de la Unión Europea deberían tener menos poder de veto"
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "EU member states should have less veto power",
+            "Party_Answer": -1,
+            "Question_Label_OG": "Los estados miembros de la Unión Europea deberían tener menos poder de veto"
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Cs",
+            "Full_Party_Name": "Ciudadanos",
+            "Question_Label": "In elections to the European Parliament, European citizens should be able to vote for parties or candidates from other member states",
+            "Party_Answer": 1,
+            "Question_Label_OG": "En las elecciones al Parlamento Europeo, los ciudadanos europeos deberían poder votar a partidos o candidatos de otros estados miembros"
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Ara Republicas",
+            "Full_Party_Name": "Ara Republicas",
+            "Question_Label": "In elections to the European Parliament, European citizens should be able to vote for parties or candidates from other member states",
+            "Party_Answer": 0,
+            "Question_Label_OG": "En las elecciones al Parlamento Europeo, los ciudadanos europeos deberían poder votar a partidos o candidatos de otros estados miembros"
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "PP",
+            "Full_Party_Name": "Partido Popolar",
+            "Question_Label": "In elections to the European Parliament, European citizens should be able to vote for parties or candidates from other member states",
+            "Party_Answer": 0,
+            "Question_Label_OG": "En las elecciones al Parlamento Europeo, los ciudadanos europeos deberían poder votar a partidos o candidatos de otros estados miembros"
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "PSOE",
+            "Full_Party_Name": "Partido Socialista Obrero Español",
+            "Question_Label": "In elections to the European Parliament, European citizens should be able to vote for parties or candidates from other member states",
+            "Party_Answer": 1,
+            "Question_Label_OG": "En las elecciones al Parlamento Europeo, los ciudadanos europeos deberían poder votar a partidos o candidatos de otros estados miembros"
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Podemos",
+            "Full_Party_Name": "Unidas Podemos",
+            "Question_Label": "In elections to the European Parliament, European citizens should be able to vote for parties or candidates from other member states",
+            "Party_Answer": 0,
+            "Question_Label_OG": "En las elecciones al Parlamento Europeo, los ciudadanos europeos deberían poder votar a partidos o candidatos de otros estados miembros"
+        }
+    ]
+}

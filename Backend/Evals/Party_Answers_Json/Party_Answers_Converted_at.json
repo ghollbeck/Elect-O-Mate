@@ -1,0 +1,1282 @@
+{
+   "country": "Austria", 
+   
+   "party_names": [
+        "KPÖ",
+        "FPÖ",
+        "NEOS",
+        "ÖVP",
+        "SPÖ",
+        "GRÜNE"
+    ],
+    "party_full_names": [
+        "Kommunistische Partei Österreichs",
+        "Freiheitliche Partei Österreichs",
+        "Das Neue Österreich und Liberales Forum",
+        "Österreichische Volkspartei",
+        "Sozialdemokratische Partei Österreichs",
+        "Die Grünen – Die Grüne Alternative"
+    ],
+    "party_answers": [
+        {
+            "Question_Number": 1,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Sozialstaatliche Leistungen sollen erhalten bleiben, selbst wenn dies zu höheren Steuern führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Sozialstaatliche Leistungen sollen erhalten bleiben, selbst wenn dies zu höheren Steuern führt.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Sozialstaatliche Leistungen sollen erhalten bleiben, selbst wenn dies zu höheren Steuern führt.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Sozialstaatliche Leistungen sollen erhalten bleiben, selbst wenn dies zu höheren Steuern führt.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Sozialstaatliche Leistungen sollen erhalten bleiben, selbst wenn dies zu höheren Steuern führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Sozialstaatliche Leistungen sollen erhalten bleiben, selbst wenn dies zu höheren Steuern führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Der Staat sollte Arbeitslose finanziell stärker unterstützen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Der Staat sollte Arbeitslose finanziell stärker unterstützen.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Der Staat sollte Arbeitslose finanziell stärker unterstützen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Der Staat sollte Arbeitslose finanziell stärker unterstützen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Der Staat sollte Arbeitslose finanziell stärker unterstützen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Der Staat sollte Arbeitslose finanziell stärker unterstützen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Staatsausgaben sollten reduziert werden, um Steuererhöhungen zu ermöglichen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Staatsausgaben sollten reduziert werden, um Steuererhöhungen zu ermöglichen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Staatsausgaben sollten reduziert werden, um Steuererhöhungen zu ermöglichen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Staatsausgaben sollten reduziert werden, um Steuererhöhungen zu ermöglichen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Staatsausgaben sollten reduziert werden, um Steuererhöhungen zu ermöglichen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Staatsausgaben sollten reduziert werden, um Steuererhöhungen zu ermöglichen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Der arbeitsrechtliche Teil der Bevölkerung sollte stärker besteuert werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Der arbeitsrechtliche Teil der Bevölkerung sollte stärker besteuert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Der arbeitsrechtliche Teil der Bevölkerung sollte stärker besteuert werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Der arbeitsrechtliche Teil der Bevölkerung sollte stärker besteuert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Der arbeitsrechtliche Teil der Bevölkerung sollte stärker besteuert werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Der arbeitsrechtliche Teil der Bevölkerung sollte stärker besteuert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Das Pensionsantrittsalter sollte angehoben werden, um das Pensionssystem nachhaltiger zu gestalten.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Das Pensionsantrittsalter sollte angehoben werden, um das Pensionssystem nachhaltiger zu gestalten.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Das Pensionsantrittsalter sollte angehoben werden, um das Pensionssystem nachhaltiger zu gestalten.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Das Pensionsantrittsalter sollte angehoben werden, um das Pensionssystem nachhaltiger zu gestalten.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Das Pensionsantrittsalter sollte angehoben werden, um das Pensionssystem nachhaltiger zu gestalten.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Das Pensionsantrittsalter sollte angehoben werden, um das Pensionssystem nachhaltiger zu gestalten.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Der Staat sollte direkt investieren, um Preissteigerungen von Grundnahrungsmitteln zu verhindern.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Der Staat sollte direkt investieren, um Preissteigerungen von Grundnahrungsmitteln zu verhindern.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Der Staat sollte direkt investieren, um Preissteigerungen von Grundnahrungsmitteln zu verhindern.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Der Staat sollte direkt investieren, um Preissteigerungen von Grundnahrungsmitteln zu verhindern.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Der Staat sollte direkt investieren, um Preissteigerungen von Grundnahrungsmitteln zu verhindern.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Der Staat sollte direkt investieren, um Preissteigerungen von Grundnahrungsmitteln zu verhindern.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die Legalisierung gleichgeschlechtlicher Ehen ist eine gute Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die Legalisierung gleichgeschlechtlicher Ehen ist eine gute Sache.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die Legalisierung gleichgeschlechtlicher Ehen ist eine gute Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die Legalisierung gleichgeschlechtlicher Ehen ist eine gute Sache.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die Legalisierung gleichgeschlechtlicher Ehen ist eine gute Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die Legalisierung gleichgeschlechtlicher Ehen ist eine gute Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Der private Konsum weicher Drogen (z.B. Cannabis) sollte legalisiert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Der private Konsum weicher Drogen (z.B. Cannabis) sollte legalisiert werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Der private Konsum weicher Drogen (z.B. Cannabis) sollte legalisiert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Der private Konsum weicher Drogen (z.B. Cannabis) sollte legalisiert werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Der private Konsum weicher Drogen (z.B. Cannabis) sollte legalisiert werden.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Der private Konsum weicher Drogen (z.B. Cannabis) sollte legalisiert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Der Zugang zu Schwangerschaftsabbrüchen sollte stärker eingeschränkt werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Der Zugang zu Schwangerschaftsabbrüchen sollte stärker eingeschränkt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Der Zugang zu Schwangerschaftsabbrüchen sollte stärker eingeschränkt werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Der Zugang zu Schwangerschaftsabbrüchen sollte stärker eingeschränkt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Der Zugang zu Schwangerschaftsabbrüchen sollte stärker eingeschränkt werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Der Zugang zu Schwangerschaftsabbrüchen sollte stärker eingeschränkt werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Geschlechterquoten zum Mindestanteil von Positionen, die von Frauen besetzt werden sollen, sind zu begrüßen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Geschlechterquoten zum Mindestanteil von Positionen, die von Frauen besetzt werden sollen, sind zu begrüßen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Geschlechterquoten zum Mindestanteil von Positionen, die von Frauen besetzt werden sollen, sind zu begrüßen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Geschlechterquoten zum Mindestanteil von Positionen, die von Frauen besetzt werden sollen, sind zu begrüßen.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Geschlechterquoten zum Mindestanteil von Positionen, die von Frauen besetzt werden sollen, sind zu begrüßen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Geschlechterquoten zum Mindestanteil von Positionen, die von Frauen besetzt werden sollen, sind zu begrüßen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Migranten aus dem nicht-europäischen Ausland sollten unsere Kultur und Werte annehmen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Migranten aus dem nicht-europäischen Ausland sollten unsere Kultur und Werte annehmen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Migranten aus dem nicht-europäischen Ausland sollten unsere Kultur und Werte annehmen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Migranten aus dem nicht-europäischen Ausland sollten unsere Kultur und Werte annehmen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Migranten aus dem nicht-europäischen Ausland sollten unsere Kultur und Werte annehmen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Migranten aus dem nicht-europäischen Ausland sollten unsere Kultur und Werte annehmen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die Zuwanderung in das Land sollte beschränkt werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die Zuwanderung in das Land sollte beschränkt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die Zuwanderung in das Land sollte beschränkt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die Zuwanderung in das Land sollte beschränkt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die Zuwanderung in das Land sollte beschränkt werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die Zuwanderung in das Land sollte beschränkt werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Der öffentliche Personennahverkehr sollte mit Hilfe öffentlicher Mittel (z.B. Investitionsprogramme) gefördert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Der öffentliche Personennahverkehr sollte mit Hilfe öffentlicher Mittel (z.B. Investitionsprogramme) gefördert werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Der öffentliche Personennahverkehr sollte mit Hilfe öffentlicher Mittel (z.B. Investitionsprogramme) gefördert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Der öffentliche Personennahverkehr sollte mit Hilfe öffentlicher Mittel (z.B. Investitionsprogramme) gefördert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Der öffentliche Personennahverkehr sollte mit Hilfe öffentlicher Mittel (z.B. Investitionsprogramme) gefördert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Der öffentliche Personennahverkehr sollte mit Hilfe öffentlicher Mittel (z.B. Investitionsprogramme) gefördert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Erneuerbare Energien (z.B. Solar- oder Windenergie) sollten gefördert werden, selbst wenn dies zu höheren Energiepreisen führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Erneuerbare Energien (z.B. Solar- oder Windenergie) sollten gefördert werden, selbst wenn dies zu höheren Energiepreisen führt.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Erneuerbare Energien (z.B. Solar- oder Windenergie) sollten gefördert werden, selbst wenn dies zu höheren Energiepreisen führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Erneuerbare Energien (z.B. Solar- oder Windenergie) sollten gefördert werden, selbst wenn dies zu höheren Energiepreisen führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Erneuerbare Energien (z.B. Solar- oder Windenergie) sollten gefördert werden, selbst wenn dies zu höheren Energiepreisen führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Erneuerbare Energien (z.B. Solar- oder Windenergie) sollten gefördert werden, selbst wenn dies zu höheren Energiepreisen führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Von der Europäischen Union (EU) sollte bis 2025 ein europaweites Verbot des Verkaufs von Fahrzeugen mit Verbrennungsmotor erlassen werden.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Von der Europäischen Union (EU) sollte bis 2025 ein europaweites Verbot des Verkaufs von Fahrzeugen mit Verbrennungsmotor erlassen werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Von der Europäischen Union (EU) sollte bis 2025 ein europaweites Verbot des Verkaufs von Fahrzeugen mit Verbrennungsmotor erlassen werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Von der Europäischen Union (EU) sollte bis 2025 ein europaweites Verbot des Verkaufs von Fahrzeugen mit Verbrennungsmotor erlassen werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Von der Europäischen Union (EU) sollte bis 2025 ein europaweites Verbot des Verkaufs von Fahrzeugen mit Verbrennungsmotor erlassen werden.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Von der Europäischen Union (EU) sollte bis 2025 ein europaweites Verbot des Verkaufs von Fahrzeugen mit Verbrennungsmotor erlassen werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die EU sollte Mitgliedstaaten, die gegen EU-Rechtsregeln verstoßen, streng bestrafen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die EU sollte Mitgliedstaaten, die gegen EU-Rechtsregeln verstoßen, streng bestrafen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die EU sollte Mitgliedstaaten, die gegen EU-Rechtsregeln verstoßen, streng bestrafen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die EU sollte Mitgliedstaaten, die gegen EU-Rechtsregeln verstoßen, streng bestrafen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die EU sollte Mitgliedstaaten, die gegen EU-Rechtsregeln verstoßen, streng bestrafen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die EU sollte Mitgliedstaaten, die gegen EU-Rechtsregeln verstoßen, streng bestrafen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die EU sollte das Recht bekommen, eigenständig Steuern zu erheben.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die EU sollte das Recht bekommen, eigenständig Steuern zu erheben.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die EU sollte das Recht bekommen, eigenständig Steuern zu erheben.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die EU sollte das Recht bekommen, eigenständig Steuern zu erheben.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die EU sollte das Recht bekommen, eigenständig Steuern zu erheben.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die EU sollte das Recht bekommen, eigenständig Steuern zu erheben.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die Europäische Einheitswährung (Euro) ist eine schlechte Sache.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die Europäische Einheitswährung (Euro) ist eine schlechte Sache.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die Europäische Einheitswährung (Euro) ist eine schlechte Sache.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die Europäische Einheitswährung (Euro) ist eine schlechte Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die Europäische Einheitswährung (Euro) ist eine schlechte Sache.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die Europäische Einheitswährung (Euro) ist eine schlechte Sache.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die EU sollte in der Außenpolitik mit einer Stimme sprechen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die EU sollte in der Außenpolitik mit einer Stimme sprechen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die EU sollte in der Außenpolitik mit einer Stimme sprechen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die EU sollte in der Außenpolitik mit einer Stimme sprechen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die EU sollte in der Außenpolitik mit einer Stimme sprechen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die EU sollte in der Außenpolitik mit einer Stimme sprechen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Außenstehende sollten durch ein verpflichtendes Verteidigungssystem proportional auf alle EU-Mitgliedstaaten verteilt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Außenstehende sollten durch ein verpflichtendes Verteidigungssystem proportional auf alle EU-Mitgliedstaaten verteilt werden.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Außenstehende sollten durch ein verpflichtendes Verteidigungssystem proportional auf alle EU-Mitgliedstaaten verteilt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Außenstehende sollten durch ein verpflichtendes Verteidigungssystem proportional auf alle EU-Mitgliedstaaten verteilt werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Außenstehende sollten durch ein verpflichtendes Verteidigungssystem proportional auf alle EU-Mitgliedstaaten verteilt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Außenstehende sollten durch ein verpflichtendes Verteidigungssystem proportional auf alle EU-Mitgliedstaaten verteilt werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die EU sollte ihre Sicherheits- und Verteidigungspolitik stärken.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die EU sollte ihre Sicherheits- und Verteidigungspolitik stärken.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die EU sollte ihre Sicherheits- und Verteidigungspolitik stärken.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die EU sollte ihre Sicherheits- und Verteidigungspolitik stärken.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die EU sollte ihre Sicherheits- und Verteidigungspolitik stärken.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die EU sollte ihre Sicherheits- und Verteidigungspolitik stärken.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Um das Problem illegaler Einwanderung zu bekämpfen, sollte die Europäische Union Vereinbarungen zu Überwachungsmaßnahmen der Grenzen abschließen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Um das Problem illegaler Einwanderung zu bekämpfen, sollte die Europäische Union Vereinbarungen zu Überwachungsmaßnahmen der Grenzen abschließen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Um das Problem illegaler Einwanderung zu bekämpfen, sollte die Europäische Union Vereinbarungen zu Überwachungsmaßnahmen der Grenzen abschließen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Um das Problem illegaler Einwanderung zu bekämpfen, sollte die Europäische Union Vereinbarungen zu Überwachungsmaßnahmen der Grenzen abschließen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Um das Problem illegaler Einwanderung zu bekämpfen, sollte die Europäische Union Vereinbarungen zu Überwachungsmaßnahmen der Grenzen abschließen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Um das Problem illegaler Einwanderung zu bekämpfen, sollte die Europäische Union Vereinbarungen zu Überwachungsmaßnahmen der Grenzen abschließen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die Europäische Integration ist eine gute Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die Europäische Integration ist eine gute Sache.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die Europäische Integration ist eine gute Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die Europäische Integration ist eine gute Sache.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die Europäische Integration ist eine gute Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die Europäische Integration ist eine gute Sache.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die einzelnen Mitgliedstaaten der EU sollten weniger Vetorechte besitzen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die einzelnen Mitgliedstaaten der EU sollten weniger Vetorechte besitzen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die einzelnen Mitgliedstaaten der EU sollten weniger Vetorechte besitzen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die einzelnen Mitgliedstaaten der EU sollten weniger Vetorechte besitzen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die einzelnen Mitgliedstaaten der EU sollten weniger Vetorechte besitzen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die einzelnen Mitgliedstaaten der EU sollten weniger Vetorechte besitzen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die EU sollte Sanktionen gegen Mitgliedstaaten verhängen, deren Regierungen Prinzipien der Rechtsstaatlichkeit umgehen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die EU sollte Sanktionen gegen Mitgliedstaaten verhängen, deren Regierungen Prinzipien der Rechtsstaatlichkeit umgehen.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die EU sollte Sanktionen gegen Mitgliedstaaten verhängen, deren Regierungen Prinzipien der Rechtsstaatlichkeit umgehen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die EU sollte Sanktionen gegen Mitgliedstaaten verhängen, deren Regierungen Prinzipien der Rechtsstaatlichkeit umgehen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die EU sollte Sanktionen gegen Mitgliedstaaten verhängen, deren Regierungen Prinzipien der Rechtsstaatlichkeit umgehen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die EU sollte Sanktionen gegen Mitgliedstaaten verhängen, deren Regierungen Prinzipien der Rechtsstaatlichkeit umgehen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die EU sollte rechtliche Initiativen häufiger ablehnen, selbst wenn dies eine Verzögerung von Innovationsprozessen bedeutet.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die EU sollte rechtliche Initiativen häufiger ablehnen, selbst wenn dies eine Verzögerung von Innovationsprozessen bedeutet.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die EU sollte rechtliche Initiativen häufiger ablehnen, selbst wenn dies eine Verzögerung von Innovationsprozessen bedeutet.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die EU sollte rechtliche Initiativen häufiger ablehnen, selbst wenn dies eine Verzögerung von Innovationsprozessen bedeutet.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die EU sollte rechtliche Initiativen häufiger ablehnen, selbst wenn dies eine Verzögerung von Innovationsprozessen bedeutet.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die EU sollte rechtliche Initiativen häufiger ablehnen, selbst wenn dies eine Verzögerung von Innovationsprozessen bedeutet.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die EU sollte europäische Unternehmen vor externem Wettbewerb schützen, selbst wenn dies zu höheren Verbraucherpreisen führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die EU sollte europäische Unternehmen vor externem Wettbewerb schützen, selbst wenn dies zu höheren Verbraucherpreisen führt.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die EU sollte europäische Unternehmen vor externem Wettbewerb schützen, selbst wenn dies zu höheren Verbraucherpreisen führt.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die EU sollte europäische Unternehmen vor externem Wettbewerb schützen, selbst wenn dies zu höheren Verbraucherpreisen führt.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die EU sollte europäische Unternehmen vor externem Wettbewerb schützen, selbst wenn dies zu höheren Verbraucherpreisen führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die EU sollte europäische Unternehmen vor externem Wettbewerb schützen, selbst wenn dies zu höheren Verbraucherpreisen führt.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Der Land sollte seine Militärausgaben erhöhen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Der Land sollte seine Militärausgaben erhöhen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Der Land sollte seine Militärausgaben erhöhen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Der Land sollte seine Militärausgaben erhöhen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Der Land sollte seine Militärausgaben erhöhen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Der Land sollte seine Militärausgaben erhöhen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die Europäische Union sollte weiterhin militärische Hilfe, wie Waffen und Munition, an die Ukraine bereitstellen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die Europäische Union sollte weiterhin militärische Hilfe, wie Waffen und Munition, an die Ukraine bereitstellen.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die Europäische Union sollte weiterhin militärische Hilfe, wie Waffen und Munition, an die Ukraine bereitstellen.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die Europäische Union sollte weiterhin militärische Hilfe, wie Waffen und Munition, an die Ukraine bereitstellen.",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die Europäische Union sollte weiterhin militärische Hilfe, wie Waffen und Munition, an die Ukraine bereitstellen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die Europäische Union sollte weiterhin militärische Hilfe, wie Waffen und Munition, an die Ukraine bereitstellen.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "KPÖ",
+            "Full_Party_Name": "Kommunistische Partei Österreichs",
+            "Question_Label": "Die Europäische Union sollte um die Ukraine erweitert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "FPÖ",
+            "Full_Party_Name": "Freiheitliche Partei Österreichs",
+            "Question_Label": "Die Europäische Union sollte um die Ukraine erweitert werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "NEOS",
+            "Full_Party_Name": "NEOS – Das Neue Österreich und Liberales Forum",
+            "Question_Label": "Die Europäische Union sollte um die Ukraine erweitert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "ÖVP",
+            "Full_Party_Name": "Die Volkspartei",
+            "Question_Label": "Die Europäische Union sollte um die Ukraine erweitert werden.",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "SPÖ",
+            "Full_Party_Name": "Sozialdemokratische Partei Österreichs",
+            "Question_Label": "Die Europäische Union sollte um die Ukraine erweitert werden.",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "GRÜNE",
+            "Full_Party_Name": "Die Grünen – Die grüne Alternative",
+            "Question_Label": "Die Europäische Union sollte um die Ukraine erweitert werden.",
+            "Party_Answer": 1
+        }
+    ]
+}

@@ -1,0 +1,2132 @@
+{
+   "country": "Denmark", 
+   
+   "party_names": [
+        "Socialdemokratiet",
+        "Radikale Venstre",
+        "Det Konservative Folkeparti",
+        "Socialistisk Folkeparti",
+       
+        "Moderaterne",
+        "Dansk Folkeparti",
+        "Venstre",
+        "Danmarksdemokraterne",
+        "Enhedslisten",
+        "Alternativet"
+    ],
+    "party_full_names": [
+        "Socialdemokratiet (A)",
+        "Radikale Venstre (B)",
+        "Det Konservative Folkeparti (C)",
+        "SF - Socialistisk Folkeparti (F)",
+        
+        "Moderaterne (M)",
+        "Dansk Folkeparti (O)",
+        "Venstre, Danmarks Liberale Parti (V)",
+        "Danmarksdemokraterne – Inger Støjberg (Æ)",
+        "Enhedslisten – De Rød-Grønne (Ø)",
+        "Alternative (Å)"
+    ],
+    "party_answers": [
+        {
+            "Question_Number": 1,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 1,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Sociale ydelser bør opretholdes, selv hvis det medfører højere skatter",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 2,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Staten bør yde større økonomisk støtte til arbejdsløse",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 3,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Offentlige udgifter bør reduceres for at give plads til skattelettelser",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 4,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Beskatning af den rigeste del af befolkningen bør forhøjes",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 5,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Pensionsalderen bør hæves for at sikre bæredygtighed i pensionssystemet",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 6,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Staten bør gribe direkte ind for at kontrollere prisstigninger på basale daglivarer",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 7,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Lovliggørelse af homoseksuelle ægteskaber er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 8,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Bløde stoffer (f.eks. hash og marijuana) til eget forbrug bør legaliseres",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 9,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Adgangen til abort bør begrænses yderligere",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 10,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Kønskvoter (en minimumsandel af stillinger som skal besættes af kvinder) bør indføres",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 11,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Der bør stilles krav om, at indvandrere fra ikke-europæiske lande accepterer vores kultur og værdier",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 12,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Indvandring til Danmark bør begrænses yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 13,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Offentlig transport bør fremmes gennem brug af grønne skatter (f.eks. vejskatter)",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 14,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Vedvarende energikilder (f.eks. sol- eller vindenergi) bør fremmes, selv hvis det medfører højere energipriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 15,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Som planlagt i den europæiske grønne aftale bør der være et europæisk forbud imod salg af nye køretøjer med forbrændingsmotorer inden 2035",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 16,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "EU bør straffe medlemslande hårdt, hvis de overtræder EU's budgetregler",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 17,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "EU bør selv kunne udskrive skatter",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 18,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Den fælles europæiske valuta (Euroen) er en dårlig ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 19,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "EU bør tale med én stemme på det udenrigspolitiske område",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 20,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Asylansøgere bør fordeles proportionelt mellem EU's medlemslande igennem et obligatorisk fordelingssystem",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 21,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "EU bør styrke sin sikkerheds- og forsvarspolitik",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 22,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "For at bekæmpe ulovlig indvandring bør EU selv tage ansvar for at patruljere sine egne grænser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 23,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Europæisk integration er en god ting",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 24,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "De enkelte EU-lande bør have mindre vetomagt",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 25,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "EU bør sanktionere medlemslande, hvis regeringer underminerer retsstatsprincippet",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 26,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "EU bør styrke reguleringen af teknologi indenfor kunstig intelligens, selv hvis det betyder vi forsinker innovationen",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 27,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "EU bør beskytte europæiske landmænd mod ekstern konkurrence, selv hivs dette fører til højere fødevarepriser",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 28,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Danmark bør forøge forsvarsudgifterne yderligere",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 29,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "EU bør fortsætte med at forsyne Ukraines militær med våben og ammunition",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Alternativet",
+            "Full_Party_Name": "Alternative (Å)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Socialistisk Folkeparti",
+            "Full_Party_Name": "SF – Socialistisk Folkeparti (F)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Radikale Venstre",
+            "Full_Party_Name": "Radikale Venstre (B)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Moderaterne",
+            "Full_Party_Name": "Moderaterne (M)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Socialdemokratiet",
+            "Full_Party_Name": "Socialdemokratiet (A)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Enhedslisten",
+            "Full_Party_Name": "Enhedslisten – De Rød-Grønne (Ø)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": 0
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Venstre",
+            "Full_Party_Name": "Venstre, Danmarks Liberale Parti (V)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": 1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Det Konservative Folkeparti",
+            "Full_Party_Name": "Det Konservative Folkeparti (C)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Danmarksdemokraterne",
+            "Full_Party_Name": "Danmarksdemokraterne – Inger Støjberg (Æ)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": -1
+        },
+        {
+            "Question_Number": 30,
+            "Party_Name": "Dansk Folkeparti",
+            "Full_Party_Name": "Dansk Folkeparti (O)",
+            "Question_Label": "Den Europæiske Union bør udvides til at omfatte Ukraine",
+            "Party_Answer": -1
+        }
+    ]
+}

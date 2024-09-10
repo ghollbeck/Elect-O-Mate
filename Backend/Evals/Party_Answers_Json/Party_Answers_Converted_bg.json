@@ -1,0 +1,2129 @@
+{
+  
+  "country": "Bulgaria", 
+  "party_names": ["ПП","ДСБ", "ИТН", "ДБ", "ДПС", "ГЕРБ", "Възраждане", "ВМРО", "БВ", "БСП"],
+  "party_full_names" : [
+    "Партия на Потребителите",
+    "Демократическа сила за България",
+    "Има такъв народ",
+    "Демократична България",
+    "Движение за права и свободи",
+    "Граждани за европейско развитие на България",
+    "Възраждане",
+    "Вътрешна македонска революционна организация - Българско национално движение",
+    "Българско Възраждане",
+    "Българска социалистическа партия"
+],
+
+  "party_answers": [
+      {
+        "Question_Number": 1,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "ПП",
+        "Full_Party_Name": "Продължаваме Промяната",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 1
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "ДСБ",
+        "Full_Party_Name": "Демократи за Силна България",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 1
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "ИТН",
+        "Full_Party_Name": "Има Такъв Народ",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 1
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "ДБ",
+        "Full_Party_Name": "Да България",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 1
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "ДПС",
+        "Full_Party_Name": "Движение за Права и Свободи",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 1
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "ГЕРБ",
+        "Full_Party_Name": "Граждани за Европейско Развитие на България",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 1
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "Възраждане",
+        "Full_Party_Name": "Възраждане",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 0
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "ВМРО",
+        "Full_Party_Name": "ВМРО-Българско национално движение",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 0
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "БВ",
+        "Full_Party_Name": "Български Възход",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": 0
+      },
+
+      {
+        "Question_Number": 1,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Social programs should be maintained even at the cost of higher taxes",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 2,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The state should provide stronger financial support to unemployed workers",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 3,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Government spending should be reduced in order to lower taxes",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 4,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Taxation on the wealthiest part of the population should be increased",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 5,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Retirement age should be raised in order to make the pension system more sustainable",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 6,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The state should intervene directly to control the rising prices of basic commodities",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 7,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The legalisation of same sex marriages is a good thing",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 8,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The legalisation of the personal use of soft drugs is to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 9,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Access to abortion should become more restricted",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 10,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Gender quotas (e.g. a minimum share of positions to be filled by women) are to be welcomed",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 11,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Immigrants from outside Europe should be required to accept our culture and values",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 12,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Immigration into Bulgaria should be made more restrictive",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 13,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The promotion of public transport should be fostered through green taxes (e.g. road taxing)",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 14,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Renewable sources of energy (e.g. solar or wind energy) should be supported even if this means higher energy costs",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 15,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "As planned in the European Green Deal, there should be a Europe-wide ban on selling internal combustion engine vehicles by 2035",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 16,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The EU should rigorously punish member states that violate the EU deficit rules",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 17,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The EU should acquire its own tax raising powers",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 18,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The single European currency (Euro) is a bad thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 19,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "On foreign policy issues the EU should speak with one voice",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 20,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Asylum-seekers should be distributed proportionally among EU member states through a mandatory relocation system",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 21,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The European Union should strengthen its security and defence policy",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 22,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "To fight the problem of illegal immigration, the European Union should take responsibility in patrolling its borders",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 23,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "European integration is a good thing",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 24,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Individual member states of the EU should have less veto power",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 25,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The EU should sanction member states whose governments undermine the rule of law",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 26,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The EU should strenghten the regulation of Artificial Intelligence technology even if this means slowing down innovation",
+        "Party_Answer": 0
+      },
+      {
+        "Question_Number": 27,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The EU should protect European farmers from external competition even if this leads to higher food prices",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 28,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "Bulgaria should increase military spending",
+        "Party_Answer": 1
+      },
+      {
+        "Question_Number": 29,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The European Union should continue providing military aid, such as weapons and ammunition, to Ukraine",
+        "Party_Answer": -1
+      },
+      {
+        "Question_Number": 30,
+        "Party_Name": "БСП",
+        "Full_Party_Name": "Българска Социалистическа Партия",
+        "Question_Label": "The European Union should be enlarged to include Ukraine",
+        "Party_Answer": -1
+      }
+    ]
+}
