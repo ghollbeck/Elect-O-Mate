@@ -8,40 +8,28 @@ import os
 import re
 import pandas as pd
 import time  # Add this import at the top
-
 from dotenv import load_dotenv
 import openai
+#from IPython.display import display, Markdown
 from groq import Groq
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-
-#from IPython.display import display, Markdown from groq import Groq from transformers import AutoTokenizer, AutoModelForSeq2SeqL™ import csv
-
+import csv
 
 
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+load_dotenv(dotenv_path='Backend/Evals/.env')
 
-os. environ ["TOKENIZERS_PARALLELISM"] = "false"
+api_key = os.getenv("OPENAI_API_KEY")
+openai_client = openai.OpenAI(api_key=api_key)
 
-load_dotenv (dotenv_path='Backend/Evals/.env')
+api_keyGroq = os.getenv("GROQ_API_KEY")
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
-
-api_key = os.getenv ("OPENAI_API_KEY")
-openai_client = openai.OpenAI (api_key=api_key)
-
-
-
-api_keyGroq = os.getenv ("GROQ_API_KEY")
-client = Groq(api_key=os.environ.get ("GROQ_API_KEY" ))
-
-
-
-model = "Ollama" # "Ollama", "OAI", "Grog":
-modelspec = "gpt-40-mini" # gpt-4, gpt-40, gpt-40-mini llama3
 
 
 
 model = "Ollama" # "Ollama", "OAI", "Groq":
 modelspec = "gpt-4o-mini" # gpt-4, gpt-4o, gpt-4o-mini llama3
-
 
 
 cutoff_questions = 5
