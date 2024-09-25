@@ -1,8 +1,9 @@
 {
   "dependencies": {
+    "@sendgrid/mail": "^8.1.3",
     "@splinetool/react-spline": "^2.2.6",
     "axios": "^1.6.8",
-    "spline": "^0.0.0",
-    "react-card-flip":"^1.2.2"
+    "react-card-flip": "^1.2.2",
+    "spline": "^0.0.0"
   }
 }

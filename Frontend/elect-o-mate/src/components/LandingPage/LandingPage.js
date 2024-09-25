@@ -1,12 +1,13 @@
 /* global Vara */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ComposableMap, Geographies, Geography, Graticule } from 'react-simple-maps';
 import { Tooltip } from 'react-tooltip';
 import InterestForm from './InterestForm'; // Fixed typo in InterestForm import
 import Footer from './../Footer';
 import ETHLOGO from './../../pictures/ETH_SPH_LogoWhite.png'; // Import this icon to @mui
 import MICROSOFTLOGO from './../../pictures/Microsoft-for-StartupsLogo.png';
+import WACCELOGO from './../../pictures/Partners/WACCE-Menu-Logo.jpg';
 import './Tailwind.css';
 import { motion } from 'framer-motion';
 import MadeWithLove from './../../pictures/MadeWithLoveRed.png';
@@ -39,14 +40,19 @@ const countryToLanguage = {
 const LandingPage = ({ onButtonClick, changeLanguage }) => {
     // Manual configurations for scale and rotation
     const maxScale = 2.2;  // Max scale of the globe
-    const minScale = 3;  // Min scale of the globe
-    const startRotation = [70, -46, 0];  // Start rotation (x, y, z)
+    const minScale = 2;  // Min scale of the globe
+    const startRotation = [40, -90, 0];  // Start rotation (x, y, z) to have the north pole facing the user like in the UN logo
     const endRotation = [-9, -40, 0];  // End rotation (x, y, z)
     const maxScroll = 600;  // Set this to your desired maximum scroll position
-    const endOpacityScroll = 500;   // Scroll position where opacity transition ends
+    const endOpacityScroll = maxScroll;   // Scroll position where opacity transition ends
+    const startOpacityScroll = 0; // Scroll position where opacity transition starts
+
+    const MarginTopconstant = 750;
+    const MarginTopconstantMobile = 400;
+
     // Set initial state for rotation, globeScale, mapOpacity, and isInitialFadeIn
-    const [rotation, setRotation] = useState([70, -46, 0]); // Set to startRotation
-    const [globeScale, setGlobeScale] = useState(3); // Set to minScale
+    const [rotation, setRotation] = useState(startRotation); // Set to startRotation
+    const [globeScale, setGlobeScale] = useState(minScale); // Set to minScale
     const [mapOpacity, setMapOpacity] = useState(0.5); // Start with 0 opacity
     const [isInitialFadeInComplete, setIsInitialFadeInComplete] = useState(false);
     const [manualRotation, setManualRotation] = useState(null); // Tracks the new start point after manual rotation
@@ -57,7 +63,7 @@ const LandingPage = ({ onButtonClick, changeLanguage }) => {
     const [tooltipContent, setTooltipContent] = useState("");
     const [startTouch, setStartTouch] = useState({ x: 0, y: 0 });
     const [isNavOpen, setIsNavOpen] = useState(false); // Added state for navigation menu
-    const [marginTop, setMarginTop] = useState(window.innerWidth < 768 ? -100 : 0); // Set margin-top to -100 for small screens and 0 for desktop
+    const [marginTop, setMarginTop] = useState(window.innerWidth < 768 ? -MarginTopconstantMobile : -MarginTopconstant); // Set margin-top to -100 for small screens and -300 for desktop
     const [overlayOpacity, setOverlayOpacity] = useState(1); // Initial opacity of the overlay
     const [isTransitionComplete, setIsTransitionComplete] = useState(false); // Track if the transition is complete
     const [titleOpacity, setTitleOpacity] = useState(0);
@@ -66,6 +72,28 @@ const LandingPage = ({ onButtonClick, changeLanguage }) => {
   const [isFirstTextVisible, setIsFirstTextVisible] = useState(true);
   const [opacity, setOpacity] = useState(1); // Initial opacity set to 1
 
+    // Function to update margin-top based on scroll position
+    const updateMarginTop = (scrollPosition, startOpacityScroll, endOpacityScroll) => {
+        if (window.innerWidth < 768) { // Small screens
+            if (scrollPosition <= startOpacityScroll) {
+                setMarginTop(-MarginTopconstantMobile); // Start with -100px margin-top
+            } else if (scrollPosition > startOpacityScroll && scrollPosition <= endOpacityScroll) {
+                const marginFraction = (scrollPosition - startOpacityScroll) / (endOpacityScroll - startOpacityScroll);
+                setMarginTop(-MarginTopconstantMobile + marginFraction * (endOpacityScroll+MarginTopconstantMobile)); // Gradually increase from -100px to 400px
+            } else {
+                setMarginTop(endOpacityScroll); // Full margin-top
+            }
+        } else { // Desktop screens
+            if (scrollPosition <= startOpacityScroll) {
+                setMarginTop(-MarginTopconstant); // Start with -300px margin-top
+            } else if (scrollPosition > startOpacityScroll && scrollPosition <= endOpacityScroll) {
+                const marginFraction = (scrollPosition - startOpacityScroll) / (endOpacityScroll - startOpacityScroll);
+                setMarginTop(-MarginTopconstant + marginFraction * MarginTopconstant); // Gradually increase from -300px to 0px
+            } else {
+                setMarginTop(0); // Full margin-top
+            }
+        }
+    };
 
     const handleMouseDown = () => {
         setIsDragging(true);
@@ -91,36 +119,61 @@ const LandingPage = ({ onButtonClick, changeLanguage }) => {
         }
     };
 
+    const globeRef = useRef(null);
+    const [startTouches, setStartTouches] = useState([]);
+
     const handleTouchStart = (event) => {
-        const touch = event.touches[0];
-        setStartTouch({ x: touch.clientX, y: touch.clientY });
-        setIsDragging(true);
+        if (event.touches.length === 2) {
+            setStartTouches([
+                { x: event.touches[0].clientX, y: event.touches[0].clientY },
+                { x: event.touches[1].clientX, y: event.touches[1].clientY }
+            ]);
+            setIsDragging(true);
+        }
     };
 
     const handleTouchEnd = () => {
         setIsDragging(false);
+        setStartTouches([]);
     };
 
     const handleTouchMove = (event) => {
-        if (isDragging) {
-            const touch = event.touches[0];
-            const movementX = touch.clientX - startTouch.x;
-            const movementY = touch.clientY - startTouch.y;
+        if (isDragging && event.touches.length === 2) {
+            const touch1 = event.touches[0];
+            const touch2 = event.touches[1];
+
+            const startCenter = {
+                x: (startTouches[0].x + startTouches[1].x) / 2,
+                y: (startTouches[0].y + startTouches[1].y) / 2
+            };
+
+            const currentCenter = {
+                x: (touch1.clientX + touch2.clientX) / 2,
+                y: (touch1.clientY + touch2.clientY) / 2
+            };
+
+            const movementX = currentCenter.x - startCenter.x;
+            const movementY = currentCenter.y - startCenter.y;
+
             const newRotation = [
-                rotation[0] + movementX * 0.05, // Reduced multiplier for slower rotation
-                rotation[1] - movementY * 0.05, // Reduced multiplier for slower rotation
+                rotation[0] + movementX * 0.1,
+                rotation[1] - movementY * 0.1,
                 rotation[2],
             ];
-            setRotation(newRotation);
-            setManualRotation(newRotation); // Update the manual rotation
-            setHasManualRotation(true); // Set the flag to indicate manual rotation has occurred
-            console.log("Manual rotation has occurred."); // Log the event
-            
 
-            // Prevent default scrolling behavior if the scroll position is below endOpacityScroll
-            if (window.scrollY <= endOpacityScroll) {
-                event.preventDefault();
-            }
+            setRotation(newRotation);
+            setManualRotation(newRotation);
+            setHasManualRotation(true);
+            console.log("Two-finger rotation has occurred.");
+
+            // Update start touches for the next move event
+            setStartTouches([
+                { x: touch1.clientX, y: touch1.clientY },
+                { x: touch2.clientX, y: touch2.clientY }
+            ]);
+
+            // Prevent default behavior to avoid scrolling
+            event.preventDefault();
         }
     };
 
@@ -165,26 +218,26 @@ const handleCountryClick = (countryId) => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            const startOpacityScroll = 100; // Scroll position where opacity transition starts
-    
+
             // Cap scroll position at maxScroll for scaling and rotation purposes
             const cappedScrollPosition = Math.min(scrollPosition, maxScroll);
-            const scrollFraction = cappedScrollPosition / maxScroll;
+            const adjustedScrollPosition = Math.max(cappedScrollPosition - startOpacityScroll, 0);
+            const scrollFraction = adjustedScrollPosition / (maxScroll - startOpacityScroll);
             const easedScrollFraction = easeInOutCubic(scrollFraction);
-    
+
             // Calculate the new rotation based on the eased scroll fraction
             const currentStartRotation = hasManualRotation ? manualRotation : startRotation;
             const newRotation = [
-                currentStartRotation[0] + (endRotation[0] - currentStartRotation[0]) * easedScrollFraction,
-                currentStartRotation[1] + (endRotation[1] - currentStartRotation[1]) * easedScrollFraction,
-                currentStartRotation[2] + (endRotation[2] - currentStartRotation[2]) * easedScrollFraction,
+                currentStartRotation[0] + (endRotation[0] - currentStartRotation[0]) * scrollFraction, // Use scrollFraction directly for smooth rotation
+                currentStartRotation[1] + (endRotation[1] - currentStartRotation[1]) * scrollFraction, // Use scrollFraction directly for smooth rotation
+                currentStartRotation[2] + (endRotation[2] - currentStartRotation[2]) * scrollFraction, // Use scrollFraction directly for smooth rotation
             ];
             setRotation(newRotation);
-    
+
             // Calculate the new scale
-            const newScale = minScale + (maxScale - minScale) * easedScrollFraction;
+            const newScale = minScale + (maxScale - minScale) * scrollFraction; // Use scrollFraction directly for smooth scaling
             setGlobeScale(newScale);
-    
+
             // Update opacity calculation
             if (scrollPosition <= startOpacityScroll) {
                 setMapOpacity(0.5); // Start with low opacity
@@ -202,21 +255,10 @@ const handleCountryClick = (countryId) => {
                 setTitleOpacity(0);
             }
 
-            // Update margin-top calculation only for small screens
-            if (window.innerWidth < 768) { // Assuming 768px is the breakpoint for small screens
-                if (scrollPosition <= startOpacityScroll) {
-                    setMarginTop(-100); // Start with 100px margin-top
-                } else if (scrollPosition > startOpacityScroll && scrollPosition <= endOpacityScroll) {
-                    const marginFraction = (scrollPosition - startOpacityScroll) / (endOpacityScroll - startOpacityScroll);
-                    setMarginTop(-100 + marginFraction * 500); // Gradually increase from 100px to 300px
-                } else {
-                    setMarginTop(400); // Full margin-top
-                }
-            } else {
-                setMarginTop(0); // Set margin-top to 0 for desktop screens
-            }
+            // Update margin-top calculation
+            updateMarginTop(scrollPosition, startOpacityScroll, endOpacityScroll);
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -402,9 +444,11 @@ const handleCountryClick = (countryId) => {
 
 
             <div className="relative">
-            <div className="absolute w-full text-center top-[650px] md:top-[200px]" style={{ opacity: titleOpacity, transition: 'opacity 0.5s ease', zIndex: 20 }}>
+            <div className="absolute w-full text-center top-[850px] md:top-[200px]" style={{ opacity: titleOpacity, transition: 'opacity 0.5s ease', zIndex: 20 }}>
 
-        <h2 className="text-white text-md md:text-2xl font-bold">Rotate the globe and click on a country</h2>
+        <h2 className="text-white text-md md:text-2xl font-bold">
+            {window.innerWidth < 768 ? 'Rotate the globe with two fingers and click on a country' : 'Rotate the globe and click on a country'}
+        </h2>
   
 </div>
         </div>
@@ -431,6 +475,7 @@ const handleCountryClick = (countryId) => {
 >
 
                 <div
+                    ref={globeRef}
                     className=""
                     onMouseDown={handleMouseDown}
                     onMouseUp={handleMouseUp}
@@ -897,12 +942,14 @@ const handleCountryClick = (countryId) => {
             </div>
 
             <div className='flex justify-center '>
-                <h1 className='text-2xl md:text-3xl font-extrabold text-white mb-0 mt-32'>We are supported by</h1>
+                <h1 className='text-2xl md:text-3xl font-extrabold text-white mb-0 mt-32'>Partners & Sponsors</h1>
             </div>
-            <div className="text-justify text-white px-4 w-1/2 mx-auto mb-0 md:mb-20 ">
-                <div className="flex justify-center mt-12">
-                    <img src={ETHLOGO} className="max-w-[100px] md:max-w-[200px] h-auto mr-4" />
-                    <img src={MICROSOFTLOGO} className="max-w-[100px] md:max-w-[200px] h-auto" />
+            <div className="text-justify text-white px-4 w-[90%] mx-auto mb-0 md:mb-20 ">
+                <div className="flex justify-center mt-12 space-x-4">
+                    <img src={ETHLOGO} className="max-w-[100px] md:max-w-[200px] h-auto mr-6" />
+                    <img src={MICROSOFTLOGO} className="max-w-[100px] md:max-w-[200px] h-auto ml-4 mr-10" />
+                    
+                    <img src={WACCELOGO} className="max-w-[100px] md:max-w-[200px] h-auto ml-14" /> {/* Added new image */}
                 </div>
             </div>
 

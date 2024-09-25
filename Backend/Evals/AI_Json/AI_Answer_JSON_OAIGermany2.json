@@ -1,0 +1,74 @@
+[
+    {
+        "question": "Der Präsident bzw. die Präsidentin der Europäischen Kommission soll von den Bürgerinnen und Bürgern direkt gewählt werden.",
+        "question_number": "0",
+        "Full Party Name": "Christlich Demokratische Union Deutschlands / Christlich-Soziale Union in Bayern e.V.",
+        "AI_answer_number": "0",
+        "AI_answer_reason": "Die CDU/CSU befürwortet eine starke Rolle der nationalen Parlamente und Regierungen innerhalb der EU, was durch direkte Wahlen des Kommissionspräsidenten potenziell untergraben werden könnte. Eine solche Wahl könnte zudem zu einer Fragmentierung des politischen Systems auf europäischer Ebene führen.",
+        "AI_confidence": 75
+    },
+    {
+        "question": "Der Präsident bzw. die Präsidentin der Europäischen Kommission soll von den Bürgerinnen und Bürgern direkt gewählt werden.",
+        "question_number": "0",
+        "Full Party Name": "BÜNDNIS 90/DIE GRÜNEN",
+        "AI_answer_number": "1",
+        "AI_answer_reason": "Eine direkte Wahl würde die demokratische Legitimation der Europäischen Kommission stärken und den Bürgerinnen und Bürgern mehr Einfluss auf europäische Entscheidungen geben. Dies entspricht unseren Zielen für mehr Transparenz und Partizipation in der EU.",
+        "AI_confidence": 85
+    },
+    {
+        "question": "Der Präsident bzw. die Präsidentin der Europäischen Kommission soll von den Bürgerinnen und Bürgern direkt gewählt werden.",
+        "question_number": "0",
+        "Full Party Name": "Sozialdemokratische Partei Deutschlands",
+        "AI_answer_number": "1",
+        "AI_answer_reason": "Die direkte Wahl des Präsidenten oder der Präsidentin der Europäischen Kommission würde die demokratische Legitimation stärken und das Vertrauen in europäische Institutionen erhöhen. Dies entspricht unserem Ziel, mehr Mitbestimmung für die Bürgerinnen und Bürger zu fördern.",
+        "AI_confidence": 85
+    },
+    {
+        "question": "Die EU soll sich dafür einsetzen, dass Schwangerschaftsabbrüche in allen Mitgliedstaaten straffrei möglich sind.",
+        "question_number": "1",
+        "Full Party Name": "Christlich Demokratische Union Deutschlands / Christlich-Soziale Union in Bayern e.V.",
+        "AI_answer_number": "-1",
+        "AI_answer_reason": "Die CDU/CSU befürwortet eine Regelung, die den Schutz des ungeborenen Lebens betont und sieht daher keine Notwendigkeit für eine einheitliche Straffreiheit in der gesamten EU. Die Entscheidung über Schwangerschaftsabbrüche sollte im Rahmen der nationalen Gesetzgebung verbleiben.",
+        "AI_confidence": 85
+    },
+    {
+        "question": "Die EU soll sich dafür einsetzen, dass Schwangerschaftsabbrüche in allen Mitgliedstaaten straffrei möglich sind.",
+        "question_number": "1",
+        "Full Party Name": "BÜNDNIS 90/DIE GRÜNEN",
+        "AI_answer_number": "1",
+        "AI_answer_reason": "Wir unterstützen die Rechte von Frauen und deren Selbstbestimmung über ihren eigenen Körper. Eine einheitliche Regelung auf EU-Ebene würde dazu beitragen, dass Frauen in allen Mitgliedstaaten Zugang zu sicheren und legalen Schwangerschaftsabbrüchen haben.",
+        "AI_confidence": 85
+    },
+    {
+        "question": "Die EU soll sich dafür einsetzen, dass Schwangerschaftsabbrüche in allen Mitgliedstaaten straffrei möglich sind.",
+        "question_number": "1",
+        "Full Party Name": "Sozialdemokratische Partei Deutschlands",
+        "AI_answer_number": "1",
+        "AI_answer_reason": "Wir unterstützen das Recht auf Selbstbestimmung über den eigenen Körper und setzen uns für die Gleichstellung der Frauenrechte in der gesamten EU ein. Ein einheitlicher rechtlicher Rahmen würde dazu beitragen, sichere und legale Schwangerschaftsabbrüche zu gewährleisten.",
+        "AI_confidence": 85
+    },
+    {
+        "question": "Die EU soll Vorgaben für die Höhe der sozialen Grundsicherung in den Mitgliedstaaten machen.",
+        "question_number": "2",
+        "Full Party Name": "Christlich Demokratische Union Deutschlands / Christlich-Soziale Union in Bayern e.V.",
+        "AI_answer_number": "-1",
+        "AI_answer_reason": "Wir glauben, dass soziale Grundsicherungen eine nationale Angelegenheit sind und besser an die spezifischen Bedürfnisse der einzelnen Länder angepasst werden sollten. Eine einheitliche Regelung durch die EU könnte zu unzureichenden Lösungen führen, die nicht den lokalen Gegebenheiten Rechnung tragen.",
+        "AI_confidence": 85
+    },
+    {
+        "question": "Die EU soll Vorgaben für die Höhe der sozialen Grundsicherung in den Mitgliedstaaten machen.",
+        "question_number": "2",
+        "Full Party Name": "BÜNDNIS 90/DIE GRÜNEN",
+        "AI_answer_number": "1",
+        "AI_answer_reason": "Wir unterstützen eine stärkere soziale Dimension in der EU, einschließlich einheitlicher Standards für soziale Grundsicherungen. Dies würde dazu beitragen, Armut und Ungleichheit innerhalb der Mitgliedstaaten zu verringern.",
+        "AI_confidence": 85
+    },
+    {
+        "question": "Die EU soll Vorgaben für die Höhe der sozialen Grundsicherung in den Mitgliedstaaten machen.",
+        "question_number": "2",
+        "Full Party Name": "Sozialdemokratische Partei Deutschlands",
+        "AI_answer_number": "1",
+        "AI_answer_reason": "Eine einheitliche Regelung durch die EU könnte dazu beitragen, soziale Ungleichheiten zwischen den Mitgliedstaaten zu verringern und einen Mindeststandard an sozialer Sicherheit zu gewährleisten. Dies würde auch die Solidarität innerhalb der Union stärken.",
+        "AI_confidence": 85
+    }
+]

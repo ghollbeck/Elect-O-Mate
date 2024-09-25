@@ -33,7 +33,7 @@ const TeamSection = () => {
   const teamMembers = [
     {
       name: "Gabor Hollbeck",
-      role: "Founder - Project Lead",
+      role: "Founder - Full Stack Engineer",
       image: GABORPORTRAIT,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/gaborhollbeck/",
@@ -46,7 +46,7 @@ const TeamSection = () => {
     
     {
       name: "Antonio Guillebau",
-      role: "PR & RM - Switzerland",
+      role: "Strategic Partnerships",
       image: ANTONIO,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/antonio-guillebeau-1547061b9/",
@@ -58,7 +58,7 @@ const TeamSection = () => {
     },
     {
       name: "Mercedes Scheible",
-      role: "PR & RM - Ghana & USA",
+      role: "Global Affairs Coordination",
       image: MERCEDES,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/mercedesscheible/",
@@ -69,20 +69,32 @@ const TeamSection = () => {
       }
     },
     {
-      name: "Mohammed Kerraz",
-      role: "Software Engineer",
-      image: SIMO,
+      name: "Jisbel Quiroz",
+      role: "PR & Marketing",
+      image: JISBEL,
       socialLinks: {
-        Linkedin: "https://www.linkedin.com/in/mohammed-kerraz-84411b238/",
+        Linkedin: "https://www.linkedin.com/in/gisbelquiroz/",
+        twitter: "#",
+        github: "",
+        website: "#",
+        email: "jisbel@outlook.com" // Added email
+      }
+    } ,
+    {
+      name: "Jonathan Maillefaud",
+      role: "Full Stack Engineer",
+      image: JONATHAN,
+      socialLinks: {
+        Linkedin: "https://www.linkedin.com/in/jmaillefaud/",
         twitter: "#",
         github: "#",
         website: "#",
-        email: "mohammed.kerraz@example.com" // Added email
+        email: "jonathan.maillefaud@example.com" // Added email
       }
     },
     {
       name: "Eugenia Batista",
-      role: "Community Manager",
+      role: "Strategic Partnerships",
       image: EUGENIA,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/eugenia-brotons-batista/",
@@ -93,15 +105,15 @@ const TeamSection = () => {
       }
     },
     {
-      name: "Jonathan Maillefaud",
-      role: "Software Engineer",
-      image: JONATHAN,
+      name: "Mohammed Kerraz",
+      role: "Full Stack Engineer",
+      image: SIMO,
       socialLinks: {
-        Linkedin: "https://www.linkedin.com/in/jmaillefaud/",
+        Linkedin: "https://www.linkedin.com/in/mohammed-kerraz-84411b238/",
         twitter: "#",
         github: "#",
         website: "#",
-        email: "jonathan.maillefaud@example.com" // Added email
+        email: "mohammed.kerraz@example.com" // Added email
       }
     }
   ];
@@ -145,7 +157,7 @@ const TeamSection = () => {
     // },
     {
       name: "Nikolaus Brissa",
-      role: "Co-Founder - Backend & Frontend Developer",
+      role: "Co-Founder - Full Stack Engineer",
       image: NIKI,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/nikolaus-brissa/",
@@ -157,7 +169,7 @@ const TeamSection = () => {
     },
     {
       name: "Lorin Urbantat,",
-      role: "Co-Founder - Backend Developer",
+      role: "Co-Founder - Full Stack Engineer",
       image: LORIN,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/bruol/",
@@ -169,7 +181,7 @@ const TeamSection = () => {
     },
     {
       name: "Leo Kustermann",
-      role: "Co-Founder - Frontend Developer",
+      role: "Co-Founder - Full Stack Engineer",
       image: LEO,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/lkustermann/",
@@ -177,18 +189,6 @@ const TeamSection = () => {
         github: "",
         website: "#",
         email: "lkustermann@student.ethz.ch" // Added email
-      }
-    } ,
-    {
-      name: "Jisbel Quiroz",
-      role: "PR & Marketing",
-      image: JISBEL,
-      socialLinks: {
-        Linkedin: "https://www.linkedin.com/in/gisbelquiroz/",
-        twitter: "#",
-        github: "",
-        website: "#",
-        email: "jisbel@outlook.com" // Added email
       }
     } 
   ];
