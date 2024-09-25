@@ -1,6 +1,6 @@
 /* global Vara */
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ComposableMap, Geographies, Geography, Graticule } from 'react-simple-maps';
 import { Tooltip } from 'react-tooltip';
 import InterestForm from './InterestForm'; // Fixed typo in InterestForm import
@@ -119,61 +119,36 @@ const LandingPage = ({ onButtonClick, changeLanguage }) => {
         }
     };
 
-    const globeRef = useRef(null);
-    const [startTouches, setStartTouches] = useState([]);
-
     const handleTouchStart = (event) => {
-        if (event.touches.length === 2) {
-            setStartTouches([
-                { x: event.touches[0].clientX, y: event.touches[0].clientY },
-                { x: event.touches[1].clientX, y: event.touches[1].clientY }
-            ]);
-            setIsDragging(true);
-        }
+        const touch = event.touches[0];
+        setStartTouch({ x: touch.clientX, y: touch.clientY });
+        setIsDragging(true);
     };
 
     const handleTouchEnd = () => {
         setIsDragging(false);
-        setStartTouches([]);
     };
 
     const handleTouchMove = (event) => {
-        if (isDragging && event.touches.length === 2) {
-            const touch1 = event.touches[0];
-            const touch2 = event.touches[1];
-
-            const startCenter = {
-                x: (startTouches[0].x + startTouches[1].x) / 2,
-                y: (startTouches[0].y + startTouches[1].y) / 2
-            };
-
-            const currentCenter = {
-                x: (touch1.clientX + touch2.clientX) / 2,
-                y: (touch1.clientY + touch2.clientY) / 2
-            };
-
-            const movementX = currentCenter.x - startCenter.x;
-            const movementY = currentCenter.y - startCenter.y;
-
+        if (isDragging) {
+            const touch = event.touches[0];
+            const movementX = touch.clientX - startTouch.x;
+            const movementY = touch.clientY - startTouch.y;
             const newRotation = [
-                rotation[0] + movementX * 0.1,
-                rotation[1] - movementY * 0.1,
+                rotation[0] + movementX * 0.05, // Reduced multiplier for slower rotation
+                rotation[1] - movementY * 0.05, // Reduced multiplier for slower rotation
                 rotation[2],
             ];
-
             setRotation(newRotation);
-            setManualRotation(newRotation);
-            setHasManualRotation(true);
-            console.log("Two-finger rotation has occurred.");
+            setManualRotation(newRotation); // Update the manual rotation
+            setHasManualRotation(true); // Set the flag to indicate manual rotation has occurred
+            console.log("Manual rotation has occurred."); // Log the event
+            
 
-            // Update start touches for the next move event
-            setStartTouches([
-                { x: touch1.clientX, y: touch1.clientY },
-                { x: touch2.clientX, y: touch2.clientY }
-            ]);
-
-            // Prevent default behavior to avoid scrolling
-            event.preventDefault();
+            // Prevent default scrolling behavior if the scroll position is below endOpacityScroll
+            if (window.scrollY <= endOpacityScroll) {
+                event.preventDefault();
+            }
         }
     };
 
@@ -446,9 +421,7 @@ const handleCountryClick = (countryId) => {
             <div className="relative">
             <div className="absolute w-full text-center top-[850px] md:top-[200px]" style={{ opacity: titleOpacity, transition: 'opacity 0.5s ease', zIndex: 20 }}>
 
-        <h2 className="text-white text-md md:text-2xl font-bold">
-            {window.innerWidth < 768 ? 'Rotate the globe with two fingers and click on a country' : 'Rotate the globe and click on a country'}
-        </h2>
+        <h2 className="text-white text-md md:text-2xl font-bold">Rotate the globe and click on a country</h2>
   
 </div>
         </div>
@@ -475,7 +448,6 @@ const handleCountryClick = (countryId) => {
 >
 
                 <div
-                    ref={globeRef}
                     className=""
                     onMouseDown={handleMouseDown}
                     onMouseUp={handleMouseUp}
@@ -937,7 +909,11 @@ const handleCountryClick = (countryId) => {
             <div className='flex justify-center '>
           <h1 id="contact-section-mobile"  className='text-4xl md:text-7xl font-extrabold text-white mb-10 mt-10 custom-gradient66'>Contact Us</h1>
         </div>
-                <InterestForm />
+                {/* <InterestForm /> */}
+
+            <div className="text-center text-white mt-4">
+                <p>Contact us on info@electomate.com</p>
+            </div>
 
             </div>
 

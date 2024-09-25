@@ -105,7 +105,7 @@ export default function App() {
 
       <div className='bg-black text-center pb-3 flex flex-wrap items-center justify-center'>
          <a className='text-white ml-2  text-xs md:text-base' 
-        href='mailto:contact@elect-o-mate.eu'>contact@elect-o-mate.eu</a> 
+        href='mailto:info@electomate.com'> info@electomate.com</a> 
 
          <span className='mx-2 md:mx-6'> 
         </span> 
