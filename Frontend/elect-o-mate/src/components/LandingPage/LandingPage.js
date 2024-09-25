@@ -135,8 +135,8 @@ const LandingPage = ({ onButtonClick, changeLanguage }) => {
             const movementX = touch.clientX - startTouch.x;
             const movementY = touch.clientY - startTouch.y;
             const newRotation = [
-                rotation[0] + movementX * 0.05, // Reduced multiplier for slower rotation
-                rotation[1] - movementY * 0.05, // Reduced multiplier for slower rotation
+                rotation[0] + movementX * 0.005, // Reduced multiplier for slower rotation
+                rotation[1] - movementY * 0.005, // Reduced multiplier for slower rotation
                 rotation[2],
             ];
             setRotation(newRotation);
