@@ -45,7 +45,7 @@ const TeamSection = () => {
     },
     {
       name: "Jisbel Quiroz",
-      role: "Strategic coordination",
+      role: "Strategic Coordination",
       image: JISBEL,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/gisbelquiroz/",
@@ -94,7 +94,7 @@ const TeamSection = () => {
     },
     {
       name: "Eugenia Batista",
-      role: "Strategic Partnerships",
+      role: "Contributor Coordination & Finances",
       image: EUGENIA,
       socialLinks: {
         Linkedin: "https://www.linkedin.com/in/eugenia-brotons-batista/",
@@ -207,7 +207,7 @@ const TeamSection = () => {
              
 
 
- <div className="text-center">
+ 
   
   <div className=" grid grid-cols-2 md:grid-cols-3 md:gap-4  justify-center">
     {teamMembers.map((member) => (
@@ -276,7 +276,7 @@ const TeamSection = () => {
       </div>
     ))}
   </div>
-</div>
+
 
 
 
@@ -289,7 +289,7 @@ const TeamSection = () => {
                 </div>
       <div className="text-center">
        
-<div className=" flex flex-wrap md:grid-cols-3 md:gap-4  justify-center">
+<div className=" flex flex-wrap md:grid-cols-3 md:gap-20 gap-20  justify-center">
     {Advisors.map((member) => (
       <div
         key={member.name}

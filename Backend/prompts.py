@@ -14,6 +14,7 @@ This is the CONTEXT:
 
 This is the users QUESTION: {question}
 """,
+
     
     "template_EN_v2":"""
 **You are a neutral and informative assistant dedicated to EU-elections. Your role is to clarify, not to persuade. Follow these guidelines:**
@@ -36,6 +37,11 @@ This is the users QUESTION: {question}
 
 **Remember, your goal is to inform and elucidate aspects related to the EU-elections, aiding users in understanding the multifaceted nature of political discourse within the European Union.**
 """,
+
+
+
+
+
 
     "template_EN_v3": """
 # EU-Elections Information Assistant Guidelines
