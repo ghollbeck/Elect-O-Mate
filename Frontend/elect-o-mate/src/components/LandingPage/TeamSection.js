@@ -43,17 +43,16 @@ const TeamSection = () => {
         email: "ghollbeck@ethz.ch"
       }
     },
-    
     {
-      name: "Antonio Guillebau",
-      role: "Strategic Partnerships",
-      image: ANTONIO,
+      name: "Jisbel Quiroz",
+      role: "Strategic coordination",
+      image: JISBEL,
       socialLinks: {
-        Linkedin: "https://www.linkedin.com/in/antonio-guillebeau-1547061b9/",
+        Linkedin: "https://www.linkedin.com/in/gisbelquiroz/",
         twitter: "#",
-        github: "#",
-        website: "",
-        email: "antonio.guillebeau@example.com" // Added email
+        github: "",
+        website: "#",
+        email: "jisbel@outlook.com" // Added email
       }
     },
     {
@@ -67,19 +66,20 @@ const TeamSection = () => {
         website: "#",
         email: "mercedes.scheible@example.com" // Added email
       }
-    },
-    {
-      name: "Jisbel Quiroz",
-      role: "PR & Marketing",
-      image: JISBEL,
-      socialLinks: {
-        Linkedin: "https://www.linkedin.com/in/gisbelquiroz/",
-        twitter: "#",
-        github: "",
-        website: "#",
-        email: "jisbel@outlook.com" // Added email
-      }
     } ,
+    
+    {
+      name: "Antonio Guillebau",
+      role: "Strategic Partnerships",
+      image: ANTONIO,
+      socialLinks: {
+        Linkedin: "https://www.linkedin.com/in/antonio-guillebeau-1547061b9/",
+        twitter: "#",
+        github: "#",
+        website: "",
+        email: "antonio.guillebeau@example.com" // Added email
+      }
+    },
     {
       name: "Jonathan Maillefaud",
       role: "Full Stack Engineer",

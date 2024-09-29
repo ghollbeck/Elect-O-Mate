@@ -8,6 +8,8 @@ import Footer from './../Footer';
 import ETHLOGO from './../../pictures/ETH_SPH_LogoWhite.png'; // Import this icon to @mui
 import MICROSOFTLOGO from './../../pictures/Microsoft-for-StartupsLogo.png';
 import WACCELOGO from './../../pictures/Partners/WACCE-Menu-Logo.jpg';
+import HSGLOGO from './../../pictures/Partners/HSG_Logo_EN_RGB_Weiss-1024x213.png';
+
 import './Tailwind.css';
 import { motion } from 'framer-motion';
 import MadeWithLove from './../../pictures/MadeWithLoveRed.png';
@@ -685,7 +687,7 @@ const handleCountryClick = (countryId) => {
                     <ul className="list-none space-y-3">
                         <li className="flex items-center text-md md:text-lg">
                             <span className="text-xl md:text-3xl font-extrabold mr-4">1.</span>
-                            <span>Party ranking according to overlap with answers</span>
+                            <span> Party ranking according to overlap with answers</span>
                         </li>
                         <li className="flex items-center text-md md:text-lg">
                             <span className="text-xl md:text-3xl font-extrabold mr-4">2.</span>
@@ -836,10 +838,34 @@ const handleCountryClick = (countryId) => {
                 <h2 className=' textl-xl md:text-4xl text-left md:text-right font-bold text-white mb-4 custom-gradient33'>Abstract</h2>
                 <p className="text-justify text-white text-sm md:text-md">
                
+                In the past decade Voting Advice Applications (VAAs) have become an established source of information for elections in 
+                many countries around the world. With the rise of generative AI, these simple and deterministic VAAs are facing a potential 
+                extension with probabilistic and more complex competitors. Moreover, AI models show clear political tendencies when applied to 
+                questions of conventional VAAs. How does this affect the output of LLMs in queries related to voting advice and election information, 
+                and how can we mitigate that bias?
+                <br />
+                This research performs a risk analysis and provides a new benchmark for large language models (LLMs) in the realm of election information and VAAs. 
+                Specific subjects of exploration are bias, hallucination, predictive accuracy of election pledges and party statements. Key methodologies include sentiment 
+                analysis and examination of the influence of factors, such as the political party, topic, model choice, country, and context, on the accuracy of Retrieval 
+                Augmented Generation (RAG). Various sourcing techniques, such as manifestos, domain- restricted searches, unrestricted searches, and YouTube videos provide 
+                contexts of controllability. Additionally, a synthetically upscaled hybrid dataset is created based on official party and candidate documents and statements is used as an 
+                instruction fine-tuning (IFT) dataset. A thorough comparison of a newly one-party fine-tuned model (+ RAG) and our RAG implementation is carried out. Lastly, the study compares 
+                AI-generated predictions of party answers with actual election pledges and past legislative resolutions, providing an analysis of the improvements brought by AI-driven VAAs over traditional VAAs.
+                <br /><br />
+                The initial findings show very low accuracy (40% - 75%, depending on model and party) of state-of-the-art models in the predictions of party pledges, 
+                with roughly 50% of the misses being the exact opposite of the party stances. The research on context extension shows a significant increase in both prediction
+                accuracy and reasoning. This examination framework is provided in the form of a new benchmark that reflects predictive power on election pledges, reasons, and 
+                political bias. The fine-tuned model shows little to significant increase in accuracy and decrease in bias. By providing a statistical framework for evaluating 
+                LLM behaviour in political issues, we enhance the safety and reliability of AI in and outside of election times.
+
+
+ </p>
+
+{/* 
                     This research explores the potential of AI-driven Voting Advice Applications (AIVAAs). The study discusses the challenges and risks associated with using AI in this domain, such as bias, misinformation, and the reliability of sourcing techniques. Key methodologies include bias testing, sentiment analysis, and the examination of how the accuracy of Retrieval Augmented Generation (RAG) driven AIVAAs is influenced by factors such as the political party, topic, AI model and different context. A detailed comparison is provided of various sourcing techniques, including the use of exclusively manifestos, domain-restricted searches, unrestricted searches, and YouTube videos. The research also evaluates the predictive accuracy of different AI models (e.g., GPT-4o, Claude 3.5 Sonnet, Gemini Pro 2m, Llama 3.1 405B, Grok) across various sourcing techniques, providing a comprehensive analysis of their effectiveness.
                     <br /><br />
                     Additionally, the study compares the AI-generated predictions of party answers with actual election pledges and past legislative resolutions, assessing how well AI VAAs align with official party positions provided to traditional VAAs when using different sourcing methods.
-                </p>
+                </p> */}
                 <p className="italic text-white mt-4">Performance report will be published soon. </p>
 
                 
@@ -883,11 +909,9 @@ const handleCountryClick = (countryId) => {
                 </div>
                 <div className="text-justify text-white md:w-[66%] w-[80%] mx-auto ">
                     <p>
-                        We are a group of students from ETH Zurich, the University of St. Gallen (HSG), and the University of 
-                        Zurich (UZH) with diverse backgrounds in computer science, international affairs, and economics. 
+                        This project is worked on and is supervised by over 20 researchers and students at ETH Zürich, Hochschule Sankt Gallen, and Universität Zürich. 
                         Many of us connected through Model United Nations, driven by a strong desire to support democracy 
-                        through the power of technology. Our mission is to create accessible information for elections, 
-                        empowering voters with the knowledge they need to make informed decisions.
+                        through the power of technology.Our mission is to provide accessible and reliable information on politics in and outside of elections.
                     </p>
                 </div>
 
@@ -920,12 +944,13 @@ const handleCountryClick = (countryId) => {
             <div className='flex justify-center '>
                 <h1 className='text-2xl md:text-3xl font-extrabold text-white mb-0 mt-32'>Partners & Sponsors</h1>
             </div>
-            <div className="text-justify text-white px-4 w-[90%] mx-auto mb-0 md:mb-20 ">
-                <div className="flex justify-center mt-12 space-x-4">
-                    <img src={ETHLOGO} className="max-w-[100px] md:max-w-[200px] h-auto mr-6" />
-                    <img src={MICROSOFTLOGO} className="max-w-[100px] md:max-w-[200px] h-auto ml-4 mr-10" />
-                    
-                    <img src={WACCELOGO} className="max-w-[100px] md:max-w-[200px] h-auto ml-14" /> {/* Added new image */}
+
+            <div className="text-justify text-white px-4 w-[90%] h-auto mx-auto mb-0 md:mb-20 ">
+                <div className="flex justify-center mt-12 flex-wrap lg:flex-nowrap md:space-x-12 space-x-8 ">
+                    <img src={ETHLOGO} className="h-[35px] md:h-[70px] w-auto mb-5 object-contain" />
+                    <img src={MICROSOFTLOGO} className="h-[35px] md:h-[70px] w-auto mb-5 object-contain" />
+                    <img src={WACCELOGO} className="h-[35px] md:h-[70px] w-auto mb-5 object-contain" />
+                    <img src={HSGLOGO} className="h-[35px] md:h-[70px] w-auto mb-5 object-contain" />
                 </div>
             </div>
 
@@ -1021,8 +1046,7 @@ const FAQSection = () => {
                     </button>
                     {openSection === 'longTerm' && (
                         <p className="text-justify" style={{ marginBottom: '20px' }}>
-                            Our long-term goals include adapting the tool for other elections around the world and integrating AI chat and voice call functionalities into institutional websites, such as VAAs, Elections offices, to make interactions more efficient and user-friendly. We are expanding a network of contributors worldwide who are all dedicated to making democracy more transparent and accessible. These contributors provide election data and connect us with local institutions, elections officers and governmental representatives.
-                        </p>
+                         Our long-term goals include adapting the tool for elections globally and integrating AI-powered chat and voice functionalities into institutional websites, such as VAAs and election offices. This will make interactions more efficient and user-friendly. We are building a global network of contributors committed to enhancing the transparency and accessibility of democracy. These contributors supply election data and connect us with local institutions, election officers, and government representatives.                        </p>
                     )}
                 </div>
             </div>
