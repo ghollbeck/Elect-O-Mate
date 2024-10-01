@@ -40,7 +40,7 @@ import time
 
 BASE = Path(__file__).resolve().parent
 
-countries = ["DE", "FR", "IT", "ES", "HU", "PL", "DK", "AT", "BE", "BG"]
+countries = ["DE", "FR", "IT", "ES", "HU", "PL", "DK", "AT", "BE", "BG", "GH"]
 
 
 app = FastAPI(
@@ -125,7 +125,10 @@ def main():
 
     for country in countries:
         # for now we are using the english prompt for all countries as this yields the best results
-        prompt = ChatPromptTemplate.from_template(prompts.prompts[f"template_EN_v2"])
+        if country == "GH":
+            prompt = ChatPromptTemplate.from_template(prompts.prompts["template_GH_EN_v2"])
+        else:
+            prompt = ChatPromptTemplate.from_template(prompts.prompts["template_EN_v2"])
 
         embedding_cache[country] = LocalFileStore(str((BASE / f"cache/embedding_cache/{country}").resolve()))
 

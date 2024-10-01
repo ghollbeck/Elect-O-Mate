@@ -396,6 +396,7 @@ function App() {
       SE: 'sesv', // Sweden - Swedish
       SI: 'sisl', // Slovenia - Slovenian
       SK: 'sksk', // Slovakia - Slovak
+      GH: 'ghgh', // Ghana - Ghanaese
     };
 
     function isCountryPresent(countryCode) {
@@ -495,6 +496,12 @@ return (
     {currentScreen === 'newScreen' ? (
   <LandingPage onButtonClick={() => setScreen('main')} changeLanguage={changeLanguage} />
 ) : (
+
+
+
+
+
+
       <div className='flex flex-col relative overflow-hidden bg-black '>
         <button
           onClick={() => setScreen('newScreen')}

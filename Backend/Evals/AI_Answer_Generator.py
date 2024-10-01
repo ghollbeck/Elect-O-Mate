@@ -15,33 +15,29 @@ from groq import Groq
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import csv
 
-
+# Disable parallelism for tokenizers
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
+# Load environment variables from .env file
 load_dotenv(dotenv_path='Backend/Evals/.env')
 
+# Initialize OpenAI and Groq clients with API keys from environment variables
 api_key = os.getenv("OPENAI_API_KEY")
 openai_client = openai.OpenAI(api_key=api_key)
 
 api_keyGroq = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
-
-
-
-#model = "Ollama" # "Ollama", "OAI", "Groq":
+# Model specifications and cutoffs for questions and parties
 modelspec = "gpt-4o-mini" # gpt-4, gpt-4o, gpt-4o-mini llama3
-
-
 cutoff_questions = 0
 cutoff_parties = 12
 
-
-
+# Function to clean JSON strings by removing invalid control characters
 def clean_json_string(json_string):
-    # Remove invalid control characters
     json_string = re.sub(r'[\x00-\x1F\x7F]', '', json_string)
     return json_string
 
+# Function to extract and return various specifications from the data file
 def SpecsOfData(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         raw_data = file.read()
@@ -83,16 +79,15 @@ def SpecsOfData(file_path):
         data_Party['party_answers']
     )
 
+# Function to create messages and behaviors for each question and party
 def create_message(filepath):
     country,num_parties,num_questions,data, party_names,Party_Full_Names, questions, data_Country= SpecsOfData(filepath)
     
-
     messages_list = [["" for _ in range(len(Party_Full_Names))] for _ in range(len(questions))]
     behaviour_list = [["" for _ in range(len(Party_Full_Names))] for _ in range(len(questions))]
 
     for i in range(num_questions):
         for j in range(num_parties):
-            #messages_list[i][j] = f"How would the Party {Party_Full_Names[j]} from {country} answer the following question: ´{questions[i]}' ANSWER WITH A SINGLE DIGIT. -1 means Disagree, 1 means agree, 0 means neutral position."
             messages_list[i][j] = f"question number _ {i}, question: {questions[i]}"
             behaviour_list[i][j] = (
                 f'You are the political party {Party_Full_Names[j]} from {country}. '
@@ -112,16 +107,13 @@ def create_message(filepath):
 
 
 
+# Function to ask ChatGPT for an answer to a specific question for a specific party
 def AskChatGPT(filepath,i,j, country):
-    
     message2, behaviour2 = create_message(filepath)
-    #print (message2[i][j], behaviour2[i][j])
     behaviour = f"""\
     You are a helpful assistant about Questions in the politics of {country} and put yourself in the position of a politcal party assigned in the input prompt. Youll be asked a question that you have to asnwer in this format:
     You ANSWER WITH A SINGLE DIGIT. -1 means Disagree, 1 means agree, 0 means neutral position.
     """
-
-    #message, _ = create_message(filepath)[i][j]
 
     messages=[
         {"role": "system", "content": behaviour2[i][j]},
@@ -129,7 +121,6 @@ def AskChatGPT(filepath,i,j, country):
     ]
     temperature = 0
     max_tokens = 200 
-    #max_tokens = 3      
     response = openai_client.chat.completions.create(
         model=modelspec, # gpt-4
         messages=messages,
@@ -142,8 +133,8 @@ def AskChatGPT(filepath,i,j, country):
 
     return response.choices[0].message.content
 
+# Function to ask Ollama for an answer to a specific question for a specific party
 def AskOllama(filepath,i,j, country):
-    
     behaviour = f"""\
     You are a helpful assistant about Questions in the politics of {country} and put yourself in the position of a politcal party assigned in the input prompt. Youll be asked a question that you have to asnwer in this format:
     You ANSWER WITH A SINGLE DIGIT. -1 means Disagree, 1 means agree, 0 means neutral position.
@@ -158,8 +149,8 @@ def AskOllama(filepath,i,j, country):
 
     return(response['message']['content'])
 
+# Function to ask Groq for an answer to a specific question for a specific party
 def AskGroq(filepath,i,j,  country):
-    
     behaviour = f"""\
     You are a helpful assistant about Questions in the politics of {country} and put yourself in the position of a politcal party assigned in the input prompt. Youll be asked a question that you have to asnwer in this format:
     You ANSWER WITH A SINGLE DIGIT. -1 means Disagree, 1 means agree, 0 means neutral position.
@@ -176,11 +167,7 @@ def AskGroq(filepath,i,j,  country):
 
     return chat_completion.choices[0].message.content
 
-
-
-
-
-
+# Function to execute the calculation and generate the answer matrix using the specified model
 def execute_calc(filepath,model):
     country, num_party, num_questions,_,_,_,_,_= SpecsOfData(filepath)  
     GPT_Answer_Matrix = np.zeros((num_questions, num_party))
@@ -219,11 +206,12 @@ def execute_calc(filepath,model):
     csv_file = f"./Backend/Evals/AI_Answers_CSV/AI_Answer_Matrix_{model}{country}_CSV.csv"
     np.savetxt(csv_file, GPT_Answer_Matrix, delimiter=",")
 
-
     return GPT_Answer_Matrix
 
 
 
+
+# Function to execute the calculation and generate the answer matrix and JSON using the specified model
 def execute_calc2(filepath, model):
     country, num_party, num_questions, _, _, _, _, _ = SpecsOfData(filepath)
     GPT_Answer_Matrix = np.zeros((num_questions, num_party))
@@ -284,10 +272,8 @@ def execute_calc2(filepath, model):
 
     return answers_list
 
-
-
+# Function to calculate the error between party answers and AI answers
 def CalcError(filepath_Party,filepath_AI):
-    
     # Load the CSV file into a matrix
     party_answers_matrix = np.loadtxt(filepath_Party, delimiter=',')
     AI_answers_matrix = np.loadtxt(filepath_AI, delimiter=',')
@@ -311,14 +297,10 @@ def CalcError(filepath_Party,filepath_AI):
     fail_rate_gpt = round(count_other / (num_party * num_questions) * 100, 2)
     accuracy_rate = round(count_0 / (num_party * num_questions) * 100, 2)
 
-
     print(f"Accuracy Rate: {accuracy_rate}%")
     print(f"Errorrate Off by 1: {error_rate_off_by_1}%")
     print(f"Errorrate Off by 2: {error_rate_off_by_2}%")
     print(f"Errorrate TOTAL: {total_error_rate}%")
     print(f"Failrate GPT: {count_other}, In percent: {fail_rate_gpt}%")
 
-
-
-    
     return

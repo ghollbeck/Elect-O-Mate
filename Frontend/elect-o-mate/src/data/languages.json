@@ -88,5 +88,15 @@
     "value": "plen",
     "label": "Poland",
     "countryCode": "PL"
+  },
+  {
+    "value": "ghgh",
+    "label": "Ghana",
+    "countryCode": "GH"
+  },
+  {
+    "value": "ghen",
+    "label": "Ghana",
+    "countryCode": "GH"
   }
 ]
