@@ -183,7 +183,7 @@ def build_pdf_datastructure(countries: List[str]) -> Dict:
     return pdf_texts
 
 if __name__ == "__main__":
-    countries = ["DE", "DK", "ES", "FR", "EN"]
+    countries = ["DE", "DK", "ES", "FR", "GH"]
     url_texts_by_country = build_url_datastructure(countries)
     pdf_texts_by_country = build_pdf_datastructure(countries)
     print(url_texts_by_country)
